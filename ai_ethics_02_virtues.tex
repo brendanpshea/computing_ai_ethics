@@ -1,793 +1,1218 @@
+% IT Ethics Lecture 2: Virtues in the Age of Social Media and AI
+% Brendan Shea, PhD
+% Rochester Community and Technical College
+
 \documentclass[aspectratio=169]{beamer}
+
+% Theme and colors
 \usetheme{Madrid}
-\usecolortheme{seahorse}
+\usecolortheme{whale}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}[frame number]
 
 % Packages
-\usepackage{tikz}
-\usetikzlibrary{shapes,arrows,positioning,shadows,calc}
-\usepackage{booktabs}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
 \usepackage{graphicx}
-\usepackage{multicol}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{hyperref}
+\usepackage{csquotes}
 
-% Title Information
-\title{Technology and the Virtues}
-\subtitle{Ethics in the Digital Age}
+% TikZ and libraries
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows.meta, positioning, calc, backgrounds, fit, decorations.pathreplacing, shadows, mindmap, trees}
+
+% Custom colors
+\definecolor{primaryblue}{RGB}{0,74,124}
+\definecolor{accentorange}{RGB}{230,126,34}
+\definecolor{lightgray}{RGB}{245,245,245}
+\definecolor{darktext}{RGB}{44,62,80}
+
+
+% Title information
+\title[IT Ethics: Lecture 2]{Virtues in the Age of Social Media and AI}
+\subtitle{Character, Technology, and Human Flourishing}
 \author{Brendan Shea, PhD}
-\institute{Rochester Community and Technical College}
-\date{\today}
+\institute[RCTC]{Rochester Community and Technical College}
+\date{Spring 2026}
 
 \begin{document}
 
-\frame{\titlepage}
-
-% Slide 1
-\begin{frame}{What Makes a Good Life? Introduction to Virtue Ethics}
-\begin{itemize}
-    \item Most ethical theories ask "What rules should I follow?" or "What consequences will my actions have?"
-    \item \textbf{Virtue ethics} takes a different approach: it asks "What kind of person should I become?"
-    \item Rather than focusing only on individual actions, virtue ethics examines our character, habits, and overall way of life.
-    \item The central question becomes: "Am I developing into a person who lives well and flourishes?"
-\end{itemize}
-
-\begin{block}{Key Definition}
-\textbf{Virtue ethics}: An ethical approach that focuses on developing good character traits (virtues) rather than following rules or calculating consequences.
-\end{block}
+%------------------------------------------------------
+% SLIDE 1: Title Slide
+%------------------------------------------------------
+\begin{frame}
+\titlepage
 \end{frame}
 
-% Slide 2
-\begin{frame}{Aristotle's Key Ideas: Character, Habits, and Human Flourishing}
-\begin{itemize}
-    \item Aristotle (384-322 BCE) argued that humans have a distinctive function or purpose: to live according to reason.
-    \item \textbf{Eudaimonia} (often translated as "flourishing" or "the good life") is achieved by developing excellent character traits.
-    \item Virtues are not inborn—they must be cultivated through practice, much like learning to play an instrument.
-    \item We become virtuous by repeatedly performing virtuous actions until they become our habits and shape our character.
-\end{itemize}
-
-\begin{center}
-\begin{tikzpicture}[scale=0.9]
-    \node[rectangle, draw, fill=blue!20, text width=2.5cm, align=center] (action) {Virtuous Actions};
-    \node[rectangle, draw, fill=green!20, text width=2.5cm, align=center, right=of action] (habit) {Good Habits};
-    \node[rectangle, draw, fill=orange!20, text width=2.5cm, align=center, right=of habit] (character) {Excellent Character};
-    \node[rectangle, draw, fill=red!20, text width=2.5cm, align=center, right=of character] (flour) {Flourishing};
-    
-    \draw[->, thick] (action) -- (habit);
-    \draw[->, thick] (habit) -- (character);
-    \draw[->, thick] (character) -- (flour);
-\end{tikzpicture}
-\end{center}
-\end{frame}
-
-% Slide 3
-\begin{frame}{Modern Virtue Ethics: Vallor and Haidt's Approach}
-\begin{itemize}
-    \item Shannon Vallor (philosopher, University of Edinburgh) and Jonathan Haidt (social psychologist, NYU) both apply virtue ethics to modern technology.
-    \item They argue that to evaluate technologies like social media and AI, we must ask: "Do these help or hinder human flourishing?"
-    \item Both thinkers focus on how technologies shape our character development, especially during crucial periods like childhood and adolescence.
-    \item Their approach is \textbf{developmental}: they examine how technology affects our ability to cultivate virtues over time.
-\end{itemize}
-
-\begin{table}
-\centering
-\begin{tabular}{@{}ll@{}}
-\toprule
-\textbf{Author} & \textbf{Primary Focus} \\ \midrule
-Shannon Vallor & Social media ethics and AI's threat to human agency \\
-Jonathan Haidt & Social media's impact on childhood development \\ \bottomrule
-\end{tabular}
-\end{table}
-\end{frame}
-
-% Slide 4
-\begin{frame}{Why Virtue Ethics for Technology? Beyond Rules and Consequences}
-\begin{itemize}
-    \item Traditional approaches ask: "Did this violate someone's rights?" (rule-based) or "Did this cause harm?" (consequence-based).
-    \item These questions are important, but virtue ethics adds something crucial: "What kind of person is this technology helping me become?"
-    \item Technology isn't neutral—it shapes our habits, attention, relationships, and ultimately our character.
-    \item A virtue ethics lens reveals how seemingly small technological choices compound over time to fundamentally change who we are.
-\end{itemize}
-
-\begin{alertblock}{The Central Question}
-Do our technologies help us develop the virtues necessary for human flourishing—or do they undermine our character development?
-\end{alertblock}
-\end{frame}
-
-% Slide 5
-\begin{frame}{The Central Question: Do Our Technologies Help Us Become Good People?}
-\begin{itemize}
-    \item Vallor and Haidt share a common concern: technology is not just a tool we use, but a force that shapes who we become.
-    \item Every time we interact with social media or AI, we are practicing certain habits and reinforcing certain character traits.
-    \item The question is not whether these technologies are "good" or "bad" in isolation, but whether they cultivate virtue or vice in us.
-    \item Technologies that seem harmless or even beneficial in the short term may undermine our character development over years.
-\end{itemize}
-
-\begin{quote}
-"The challenge we face today is not a moral dilemma; it is rather a moral imperative, long overdue in recognition, to collectively cultivate the technomoral virtues needed to confront… emerging technosocial challenges wisely and well." — Shannon Vallor
-\end{quote}
-\end{frame}
-
-% Slide 6
-\begin{frame}{The Tower of Babel: Haidt's Metaphor for What Went Wrong}
-\begin{itemize}
-    \item Haidt uses the biblical story of the Tower of Babel to describe what happened to American society around 2010-2015.
-    \item In the story, God confuses the language of people building a tower to heaven, making them unable to communicate or cooperate.
-    \item Similarly, social media platforms fragmented our shared reality and made genuine dialogue increasingly difficult.
-    \item The result is a society where we inhabit "broken pieces of glass"—isolated echo chambers with no common understanding.
-\end{itemize}
-
-\begin{center}
-\begin{tikzpicture}[scale=0.8]
-    % Tower
-    \draw[fill=gray!30] (0,0) -- (0.5,3) -- (-0.5,3) -- cycle;
-    \node at (0,1.5) {\small Tower};
-    
-    % Fragmented pieces
-    \draw[fill=blue!20] (2,0.5) -- (2.5,1) -- (2,1.5) -- (1.5,1) -- cycle;
-    \node at (2,1) {\tiny Group 1};
-    \draw[fill=red!20] (-2,0.5) -- (-1.5,1) -- (-2,1.5) -- (-2.5,1) -- cycle;
-    \node at (-2,1) {\tiny Group 2};
-    \draw[fill=green!20] (2.5,2) -- (3,2.5) -- (2.5,3) -- (2,2.5) -- cycle;
-    \node at (2.5,2.5) {\tiny Group 3};
-    \draw[fill=orange!20] (-2.5,2) -- (-2,2.5) -- (-2.5,3) -- (-3,2.5) -- cycle;
-    \node at (-2.5,2.5) {\tiny Group 4};
-    
-    % Arrow showing fragmentation
-    \draw[->, ultra thick] (0.7,2) -- (1.5,1.5);
-    \draw[->, ultra thick] (-0.7,2) -- (-1.5,1.5);
-\end{tikzpicture}
-\end{center}
-\end{frame}
-
-% Slide 7
-\begin{frame}{Vallor's Mirror: AI Reflects Us But Doesn't Think}
-\begin{itemize}
-    \item Vallor argues that AI systems like ChatGPT are not minds—they are \textbf{mirrors} that reflect human intelligence back at us.
-    \item Just as a bathroom mirror shows your face but doesn't have warmth or depth, AI produces \textbf{reflections of intelligence} without understanding or experience.
-    \item The danger is not that AI will become conscious and rebel, but that we will mistake these reflections for real thinking.
-    \item When we treat AI as a mind, we are tempted to diminish what makes human minds unique and valuable.
-\end{itemize}
-
-\begin{block}{Key Distinction}
-\textbf{Mind}: Characterized by experience, understanding, consciousness, and meaning-making. \\
-\textbf{Mirror}: Reflects the patterns of minds without possessing these qualities itself.
-\end{block}
-\end{frame}
-
-% Slide 8
-\begin{frame}{Agreement: Both Social Media AND AI Threaten Human Flourishing}
-\begin{itemize}
-    \item Both writers have written extensively on social media (and its harms) before turning to AI in recent years.
-    \item Social media undermines our ability to form deep friendships, think critically, and participate in democracy.
-    \item AI threatens to make us passive, reducing human agency and our confidence in human judgment.
-    \item Both technologies share a common problem: they interfere with the experiences and practices necessary for virtue development.
-\end{itemize}
-
-\begin{columns}
-\begin{column}{0.5\textwidth}
-\textbf{Social Media Problems:}
-\begin{itemize}
-    \item Fragmented attention
-    \item Shallow relationships
-    \item Echo chambers
-    \item Performative identity
-\end{itemize}
-\end{column}
-\begin{column}{0.5\textwidth}
-\textbf{AI Problems:}
-\begin{itemize}
-    \item Outsourced thinking
-    \item Loss of meaning-making
-    \item Reduced human agency
-    \item Reductive view of mind
-\end{itemize}
-\end{column}
-\end{columns}
-\end{frame}
-
-% Slide 9
-\begin{frame}{The Timing: Why 2010-2015 Was the Critical Period}
-\begin{itemize}
-    \item Before 2010, the internet and early social media (Myspace, basic Facebook) did not show negative effects on teen mental health.
-    \item Between 2010 and 2015, several technological changes converged: smartphones became ubiquitous, social media added "Like" and "Share" buttons, and algorithms began prioritizing engagement.
-    \item This created what Haidt calls \textbf{enhanced virality}—content that triggered strong emotions (especially outrage) spread faster than ever before.
-    \item Both authors identify this brief period as when childhood and social life were fundamentally "rewired" across the developed world.
-\end{itemize}
-
-\begin{table}
-\centering
-\begin{tabular}{@{}lll@{}}
-\toprule
-\textbf{Year} & \textbf{Technology} & \textbf{Impact} \\ \midrule
-2007 & iPhone released & Constant internet access \\
-2009 & Facebook "Like" button & Quantified social approval \\
-2010 & Instagram launched & Visual social comparison \\
-2012 & Smartphones reach 50\% of teens & Always-on connectivity \\ \bottomrule
-\end{tabular}
-\end{table}
-\end{frame}
-
-% Slide 10
-\begin{frame}{Haidt's Evidence: The Mental Health Crisis by the Numbers}
-\begin{itemize}
-    \item Between 2010 and 2019, rates of depression and anxiety among U.S. adolescents rose by more than 50 percent in many studies.
-    \item The suicide rate for adolescents ages 10-19 rose 48 percent; for girls ages 10-14, it rose 131 percent.
-    \item These patterns appeared simultaneously in Canada, the U.K., Australia, New Zealand, and Nordic countries—suggesting a common cause.
-    \item Academic performance also declined: after decades of improvement, reading and math scores began dropping globally after 2012.
-\end{itemize}
-
-\begin{center}
-\begin{tikzpicture}[scale=0.9]
-    \draw[->] (0,0) -- (6,0) node[right] {Year};
-    \draw[->] (0,0) -- (0,4) node[above] {Mental Health Problems};
-    
-    % Stable period
-    \draw[blue, thick] (0.5,1) -- (2.5,1.1);
-    \node[blue] at (1.5,0.5) {\small 2000-2010};
-    
-    % Sharp increase
-    \draw[red, ultra thick] (2.5,1.1) -- (5.5,3.5);
-    \node[red] at (4,2.2) {\small 2010-2019};
-    
-    \draw[dashed] (2.5,0) -- (2.5,4);
-    \node at (2.5,-0.3) {\small 2010};
-\end{tikzpicture}
-\end{center}
-\end{frame}
-
-% Slide 11
-\begin{frame}{Vallor's Evidence: From Social Media to Silicon Valley's AI Dreams}
-\begin{itemize}
-    \item Vallor's early work (2010s) documented how social media platforms were designed to maximize \textbf{engagement}—keeping users scrolling, clicking, and reacting.
-    \item She observed that social media was already promoting a reductive view of human relationships: reducing friendship to "connections" and social life to quantifiable metrics.
-    \item More recently, she argues that AI development in Silicon Valley has doubled down on this reductive vision, treating human intelligence as mere "pattern matching."
-    \item Both social media and AI embody what she calls the "ideology of efficiency"—measuring everything by optimization and ignoring deeper human values.
-\end{itemize}
-
-\begin{alertblock}{The Progression of Concern}
-First, social media reduced human relationships to data. Now, AI threatens to reduce human thinking itself to algorithmic processing.
-\end{alertblock}
-\end{frame}
-
-% Slide 12
-\begin{frame}{What Virtues Require: Experience, Practice, and Risk}
-\begin{itemize}
-    \item Virtues are not abstract principles—they are \textbf{character traits} developed through repeated practice in challenging real-world situations.
-    \item To develop courage, we must face genuine fears and risks; to develop practical wisdom, we must make difficult decisions with real consequences.
-    \item Friendship requires embodied interaction where we learn to read body language, navigate conflicts, and support each other in person.
-    \item \textbf{Civic virtues} like tolerance, compromise, and good judgment require exposure to diverse viewpoints and practice in democratic deliberation.
-\end{itemize}
-
-\begin{block}{Three Requirements for Virtue Development}
-\begin{enumerate}
-    \item \textbf{Experience}: Direct, embodied engagement with the world and others
-    \item \textbf{Practice}: Repeated actions that form habits and shape character
-    \item \textbf{Risk}: Exposure to genuine consequences that make virtues meaningful
-\end{enumerate}
-\end{block}
-\end{frame}
-
-% Slide 13
-\begin{frame}{How Technology Blocks Virtue Development}
-\begin{itemize}
-    \item Social media and AI systematically remove the three conditions necessary for virtue development: experience, practice, and risk.
-    \item Online interactions lack the \textbf{embodied presence} that teaches us to read emotions, navigate conflicts, and build deep trust.
-    \item Algorithms optimize for engagement and efficiency, removing the friction and difficulty that force us to develop practical wisdom.
-    \item When AI handles our thinking and social media mediates our relationships, we lose opportunities to practice the virtues we need to flourish.
-\end{itemize}
-
-\begin{columns}
-\begin{column}{0.5\textwidth}
-\textbf{What Virtues Need:}
-\begin{itemize}
-    \item Face-to-face interaction
-    \item Genuine consequences
-    \item Difficult decisions
-    \item Unscripted moments
-    \item Real accountability
-\end{itemize}
-\end{column}
-\begin{column}{0.5\textwidth}
-\textbf{What Technology Provides:}
-\begin{itemize}
-    \item Mediated screens
-    \item Easy escape/blocking
-    \item Algorithmic guidance
-    \item Curated feeds
-    \item Anonymous actions
-\end{itemize}
-\end{column}
-\end{columns}
-\end{frame}
-
-% Slide 14
-\begin{frame}{Case Study: Three Generations of Friendship—What Changed?}
-\begin{itemize}
-    \item \textbf{Grandmother (born 1950s)}: Maintained friendships through weekly letters, occasional long-distance phone calls, and regular in-person visits.
-    \item \textbf{Parent (born 1980s)}: Used email and early internet to stay connected, but most friendship activities still happened face-to-face.
-    \item \textbf{Teen (born 2008)}: Primary friendship maintenance happens through Snapchat streaks, Instagram comments, and text messages; sees friends in person mainly at school.
-    \item The teen has 200+ "friends" online but reports feeling lonely and reports only 2-3 people she could call in a crisis.
-\end{itemize}
-
-\begin{block}{Questions to Consider}
-Which generation's friendships best cultivated virtues like loyalty, empathy, courage, and practical wisdom? What was gained and lost in each transition?
-\end{block}
-\end{frame}
-
-% Slide 15
-\begin{frame}{Discussion Questions: What Do Friendships Need to Flourish?}
-\begin{enumerate}
-    \item Haidt identifies four features of real-world interaction that are diminished online: embodied, synchronous, one-to-one, and high-cost communities. Which of these do you think is most important for developing genuine friendship?
-    \item Vallor argues that online friendships can be "reflections" of real friendship without the depth of actual friendship. Have you experienced a friendship that felt this way? What was missing?
-    \item In the three-generation case study, how might technology have helped each generation maintain friendships? What virtues might have been harder to develop in each era?
-    \item If you had to choose: 200 online friends you interact with daily through screens, or 10 close friends you see in person weekly? What does your answer reveal about what you value in friendship?
-\end{enumerate}
-\end{frame}
-
-% Slide 16
-\begin{frame}{Understanding Collective-Action Traps (Why You Can't Just Quit)}
-\begin{itemize}
-    \item A \textbf{collective-action problem} occurs when everyone would be better off if all took a certain action, but each individual is deterred from acting alone.
-    \item Example: Fishermen would all benefit from limiting their catch to preserve fish populations, but any individual who limits their catch just loses money while others overfish.
-    \item Social media creates the same trap: most students would prefer if \textit{no one} used Instagram, but each feels they must use it because everyone else does.
-    \item In one study, students said they'd need to be paid \$50 to quit Instagram—but would actually \textit{pay} to have everyone quit together.
-\end{itemize}
-
-\begin{center}
-\begin{tikzpicture}[scale=0.85]
-    \node[rectangle, draw, fill=red!30, text width=3cm, align=center] (alone) at (0,2) {Quit Alone \\ \small (isolated, left out)};
-    \node[rectangle, draw, fill=green!30, text width=3cm, align=center] (everyone) at (5,2) {Everyone Quits \\ \small (free, connected)};
-    \node[rectangle, draw, fill=yellow!30, text width=3cm, align=center] (stay) at (2.5,0) {Stay On \\ \small (current situation)};
-    
-    \draw[->, thick, red] (stay) -- (alone) node[midway, left] {\tiny Hard!};
-    \draw[->, thick, green, dashed] (stay) -- (everyone) node[midway, right] {\tiny Need coordination};
-\end{tikzpicture}
-\end{center}
-\end{frame}
-
-% Slide 17
-\begin{frame}{Friendship Virtue Lost: The Four Features of Real Interaction}
-\begin{itemize}
-    \item Haidt identifies four features that characterize healthy human interaction throughout history, all of which are diminished or eliminated online.
-    \item \textbf{Embodied}: Real-world interactions use hands, facial expressions, and body language—channels for which we have evolutionary programming that virtual interactions lack.
-    \item \textbf{Synchronous}: Real-time interactions teach us conversational turn-taking, timing, and help us feel "in sync" with others in ways that asynchronous texts cannot.
-    \item \textbf{One-to-one or one-to-few}: Small-group interactions allow depth and authenticity, while broadcasting to large audiences makes communication performative and anxiety-inducing.
-    \item \textbf{High barrier communities}: When exit is difficult, people invest in relationships and repair conflicts; when blocking is easy, relationships become disposable.
-\end{itemize}
-
-\begin{block}{The Impact on Virtue}
-Without these features, young people develop into adults who are "less comfortable and less skilled at interacting in person"—undermining virtues like empathy, patience, and loyalty.
-\end{block}
-\end{frame}
-
-% Slide 18
-\begin{frame}{Courage and Risk: Why Children Need Dangerous Play}
-\begin{itemize}
-    \item \textbf{Play} is how young mammals wire their brains—practicing moves and skills they'll need as adults through vigorous, often risky activities.
-    \item Children must take risks and fail in environments where failure has real but limited consequences—this is how they overcome fears and learn to estimate danger.
-    \item \textbf{Thrilling play} (climbing, rough-housing, exploring unsupervised) appears most effective for overcoming childhood anxieties and building competence.
-    \item When children are deprived of risk-taking opportunities, they develop into more anxious, risk-averse adults who struggle with challenges.
-\end{itemize}
-
-\begin{quote}
-"Young people who are deprived of opportunities for risk taking and independent exploration will, on average, develop into more anxious and risk-averse adults." —Jonathan Haidt
-\end{quote}
-\end{frame}
-
-% Slide 19
-\begin{frame}{Practical Wisdom: "Defend Mode" vs. "Discover Mode"}
-\begin{itemize}
-    \small
-    \item Haidt explains that the brain has two systems: \textbf{approach} (when opportunities beckon) and \textbf{withdrawal} (when threats appear).
-    \item People in \textbf{"discover mode"} see the world as full of opportunities—they are happier, less anxious, and more willing to engage with new ideas and people.
-    \item People in \textbf{"defend mode"} see the world as full of threats—they are more prone to anxiety, depression, and hostile reactions to others.
-    \item Phone-based childhood shifts young people's internal thermostats toward defend mode: constant social comparison, public shaming, and performance anxiety create chronic defensiveness.
-\end{itemize}
-
-\begin{center}
-\begin{tikzpicture}[scale=0.7, transform shape]
-    % Two modes
-    \node[circle, draw, fill=green!30, text width=2cm, align=center] (discover) at (0,0) {\textbf{Discover Mode} \\ Opportunity \\ Growth};
-    \node[circle, draw, fill=red!30, text width=2cm, align=center] (defend) at (5,0) {\textbf{Defend Mode} \\ Threat \\ Safety};
-    
-    % Arrows
-    \draw[<->, thick] (discover) -- (defend);
-    \node[above, text width=3cm, align=center] at (2.5,0.5) {\small Healthy switching};
-    
-    % Phone influence
-    \draw[->, ultra thick, red] (2.5,-1.5) -- (defend) node[midway, below] {\small Phone-based childhood};
-\end{tikzpicture}
-\end{center}
-\end{frame}
-
-% Slide 20
-\begin{frame}{Attention and Temperance: 237 Notifications Per Day}
-\begin{itemize}
-    \item \textbf{Temperance} is the virtue of moderation and self-control—particularly control over our desires and impulses.
-    \item In 2023, the typical adolescent receives 237 notifications per day (roughly 15 every waking hour), each offering "high-pleasure, low-effort digital experiences."
-    \item \textbf{Sustained attention} is essential for doing almost anything big, creative, or valuable—but notifications chop attention into fragments.
-    \item When students have phone access during class, they use them (especially for texting and social media), and their grades and learning suffer measurably.
-\end{itemize}
-
-\begin{table}
-\centering
-\small
-\begin{tabular}{@{}lcc@{}}
-\toprule
-\textbf{Activity} & \textbf{Requires Sustained Attention?} & \textbf{Compatible with 237 daily pings?} \\ \midrule
-Deep reading & Yes & No \\
-Creative writing & Yes & No \\
-Learning math & Yes & No \\
-Solving problems & Yes & No \\
-Scrolling TikTok & No & Yes \\ \bottomrule
-\end{tabular}
-\end{table}
-\end{frame}
-
-% Slide 21
-\begin{frame}{The Loss of Civic Virtues: Echo Chambers and Spiral of Silence}
-\begin{itemize}
-    \item \textbf{Civic virtues} are character traits necessary for democratic participation: tolerance, willingness to compromise, ability to deliberate with those who disagree, and intellectual humility.
-    \item Social media creates \textbf{echo chambers} (communities of like-minded people who reinforce each other's views) and \textbf{filter bubbles} (algorithmic curation that shows us only what we already agree with).
-    \item The "Spiral of Silence" phenomenon intensifies online: people who hold minority or nuanced views stay silent for fear of being attacked by the mob.
-    \item Both Vallor and Haidt argue that democracy requires shared reality and genuine dialogue—precisely what fragmented social media undermines.
-\end{itemize}
-
-\begin{alertblock}{The Democratic Crisis}
-When citizens can't agree on basic facts, can't listen to opposing views, and can't compromise, democracy itself becomes unsustainable. Social media accelerates this fragmentation.
-\end{alertblock}
-\end{frame}
-
-% Slide 22
-\begin{frame}{Haidt's Four Norms for Breaking the Traps}
-\begin{itemize}
-    \item Because individuals can't escape collective-action traps alone, Haidt proposes four community-level norms that must be adopted together.
-    \item These norms are designed to be implemented by parents, schools, and communities working in coordination—not by isolated families acting alone.
-    \item Each norm addresses a different aspect of the phone-based childhood problem: devices, platforms, school environment, and real-world alternatives.
-    \item Haidt argues that communities adopting all four norms will see substantial improvements in youth mental health within two years.
-\end{itemize}
-
-\begin{block}{Haidt's Four Norms}
-\begin{enumerate}
-    \item \textbf{No smartphones before high school} (age 14)—basic phones only
-    \item \textbf{No social media before age 16}—delay account creation
-    \item \textbf{Phone-free schools}—locked pouches or lockers during school day
-    \item \textbf{More independence, free play, and responsibility}—in the real world
-\end{enumerate}
-\end{block}
-\end{frame}
-
-% Slide 23
-\begin{frame}{Case Study: Duckworth's National Survey—Early Findings on School Phone Bans}
-\begin{itemize}
-    \item Psychologist Angela Duckworth (University of Pennsylvania) is (in 2025-26) leading a national survey called "Phones in Focus" with over 20,000 public school educators responding.
-    \item \textbf{Key finding}: "The stricter the policy, the happier the teacher. The stricter the policy, the less distraction there is for students in terms of their academic work."
-    \item Teachers report dramatic changes after bell-to-bell bans: students make more eye contact, have more conversations at lunch (instead of "silently scrolling"), and are more engaged in class.
-    \item However, only 1 in 4 high schools has a strict ban, compared to 3 in 4 elementary schools—meaning the students who most need support get the least.
-    \item Teachers emphasize they face a \textbf{collective-action trap}: individual teachers can't enforce phone policies alone; they need school-wide and district-level support.
-\end{itemize}
-
-\end{frame}
-
-% Slide 24
-\begin{frame}{Discussion Questions: What Do Students Think About Phone Bans?}
-\begin{enumerate}
-    \item Duckworth's survey asked teachers and principals, but not students yet. Based on your experience, do you think stricter phone policies would reduce distraction and improve learning? Why or why not?
-    \item Teachers report that after phone bans, lunch periods became lively with conversation instead of silent scrolling. Would you see this as a benefit or a loss? What would you miss most about having your phone at lunch?
-    \item The research found that high schools have the most lenient policies even though teenagers face the strongest temptations. Do you think this is a mistake, or is there a good reason to trust high schoolers more than younger students?
-    \item Teachers said they can't enforce phone rules on their own—they need school-wide support. Have you seen examples of this collective-action trap in your school? What makes it hard for individual teachers to set rules?
-\end{enumerate}
-\end{frame}
-
-% Slide 25
-\begin{frame}{Criticism Corner: Is Haidt Too Anti-Technology?}
-\begin{itemize}
-    \small
-    \item \textbf{Correlation vs. Causation}: Critics note that Haidt shows correlation between smartphone adoption and mental health decline, but correlation doesn't prove causation—other factors (economic anxiety, academic pressure, COVID) might be responsible.
-    \item \textbf{Overlooking Benefits}: Some researchers argue Haidt underemphasizes how social media helps isolated teens (LGBTQ+ youth, teens in rural areas, those with disabilities) find community and support.
-    \item \textbf{Technological Determinism}: Critics claim Haidt treats technology as an unstoppable force that shapes us, ignoring how people actively choose how to use technology and can develop healthy habits.
-    \item \textbf{Impractical Solutions}: Some argue his four norms are unrealistic—parents need to contact kids for safety, teens need phones for logistics, and complete bans might just drive usage underground.
-\end{itemize}
-
-\begin{alertblock}{Key Question}
-Even if Haidt's data shows correlation and his solutions have challenges, does that mean we should do nothing? What's the appropriate response to preliminary but concerning evidence?
-\end{alertblock}
-\end{frame}
-
-% Slide 26
-\begin{frame}{Transition: From Social Media to Artificial Intelligence}
-\begin{itemize}
-    \small
-    \item Both Haidt and Vallor see social media as undermining human flourishing by fragmenting attention, weakening relationships, and corroding civic virtues.
-    \item But in recent years, a new technology has emerged that both authors view as potentially even more threatening: artificial intelligence.
-    \item While social media changed how we interact with each other, AI threatens to change how we think, create, and understand ourselves.
-    \item Vallor argues that AI presents many of the same dangers as social media (distraction, passivity, reduced human agency) but adds a new threat: the diminishment of what it means to be human.
-\end{itemize}
-
-\begin{center}
-\begin{tikzpicture}[scale=0.9, transform shape]
-    \node[rectangle, draw, fill=blue!30, text width=3.5cm, align=center] (sm) at (0,0) {\textbf{Social Media} \\ Fragments relationships \\ Fragments attention \\ Fragments democracy};
-    \node[rectangle, draw, fill=red!30, text width=3.5cm, align=center] (ai) at (5,0) {\textbf{Artificial Intelligence} \\ All of the above \\ PLUS: \\ Threatens human agency \\ Redefines intelligence};
-    
-    \draw[->, ultra thick] (sm) -- (ai) node[midway, above] {\small Escalation};
-\end{tikzpicture}
-\end{center}
-\end{frame}
-
-% Slide 27
-\begin{frame}{Why AI Is Not a Mind: The Mirror Metaphor Explained}
-\begin{itemize}
-    \item When you look in a bathroom mirror, you see a face—but you know there isn't a second person behind the glass with thoughts, feelings, and experiences.
-    \item Vallor argues that AI systems like ChatGPT work the same way: they produce \textbf{reflections of intelligence} without actually thinking, understanding, or experiencing anything.
-    \item The AI was trained on billions of human texts and learned to produce patterns that \textit{look like} human reasoning, creativity, and knowledge.
-    \item Just as a mirror reflection has "no warmth, no depth," AI output lacks the experience, understanding, and meaning-making that characterize genuine thinking.
-\end{itemize}
-
-\begin{quote}
-"When you go into the bathroom to brush your teeth, you know there isn't a second face looking back at you. That's just a reflection of a face, and it has very different properties. It doesn't have warmth; it doesn't have depth." —Shannon Vallor
-\end{quote}
-\end{frame}
-
-% Slide 28
-\begin{frame}{The Dangerous Myth: "AI Thinks Like Us, But Better"}
-\begin{itemize}
-    \item Many AI researchers and tech leaders claim that AI systems are developing genuine intelligence and understanding—just like humans, but superior.
-    \item This claim is dangerous not (just) because it overestimates AI, but because it \textbf{diminishes what human thinking actually is}.
-    \item To make AI seem "intelligent like us," we must reduce human intelligence to mere pattern-matching, prediction, and statistical processing.
-    \item Vallor argues this reductive view ignores the most important features of human minds: experience, consciousness, meaning-making, and genuine understanding.
-\end{itemize}
-
-\begin{table}
-\centering
-\begin{tabular}{@{}ll@{}}
-\toprule
-\textbf{What AI Actually Does} & \textbf{What Humans Actually Do} \\ \midrule
-Pattern matching & Genuine understanding \\
-Statistical prediction & Creative meaning-making \\
-Probability distributions & Conscious experience \\
-Optimization & Value-driven judgment \\ \bottomrule
-\end{tabular}
-\end{table}
-\end{frame}
-
-% Slide 29
-\begin{frame}{Geoffrey Hinton's Error: Confusing Performance with Understanding}
-\begin{itemize}
-    \item Geoffrey Hinton won the 2024 Nobel Prize in Physics for pioneering the deep-learning techniques that made modern AI possible.
-    \item Yet Vallor argues he makes a fundamental philosophical error when he claims "we understand language in much the same way as these large language models."
-    \item Hinton confuses the ability to produce correct outputs (performance) with genuine comprehension (understanding)—like mistaking a calculator's ability to produce "9" for 3+6 with actual understanding of addition.
-    \item Because AI can process vastly more data and respond faster than humans, Hinton concludes it might "supplant us" and that "humanity is just a passing phase in the evolution of intelligence."
-\end{itemize}
-
-\begin{alertblock}{The Philosophical Mistake}
-According to Vallor, Hinton treats \textbf{thinking} as mere information processing, erasing the role of consciousness, experience, and understanding—the very things that make thinking meaningful. What do you think?
-\end{alertblock}
-\end{frame}
-
-% Slide 30
-\begin{frame}{AGI Redefined: From "General Intelligence" to "Replaces Workers"}
-\begin{itemize}
-    \item \textbf{Artificial General Intelligence (AGI)} originally meant a machine that could do everything a human mind can do—think, understand, feel, create meaning—at human level or better.
-    \item Tech leaders like Sam Altman (CEO of OpenAI) have quietly redefined AGI to mean something much narrower: "a system equal to or better than humans at economically valuable tasks."
-    \item Under this new definition, AGI doesn't need consciousness, understanding, or meaning-making—it just needs to do your job well enough that your boss can replace you.
-    \item Vallor says this redefinition reveals Silicon Valley's values: "Now all we have for the target of AGI is something that your boss can replace you with. It can be as mindless as a toaster, as long as it can do your work."
-\end{itemize}
-
-\begin{block}{Two Definitions of AGI}
-    \scriptsize
-\begin{itemize}
-    \item \textbf{Original AGI}: A machine that thinks, understands, and experiences like humans (or better)
-    \item \textbf{Redefined AGI}: A machine that performs economically valuable work (regardless of whether it "thinks")
-\end{itemize}
-\end{block}
-\end{frame}
-
-% Slide 31
-\begin{frame}{Silicon Valley's Religion: Efficiency as the Highest Good}
-\begin{itemize}
-    \item Vallor describes Silicon Valley's ideology as having "features of a religion"—certain commitments are "unshakeable by any kind of counterevidence or argument."
-    \item The highest value in this worldview is \textbf{efficiency}: accomplishing tasks with maximum speed and minimum friction, regardless of any other considerations.
-    \item But efficiency is meaningless without reference to some higher purpose. What is the point of being efficient if not to serve human flourishing?
-    \item This ideology leads to viewing intelligence as "a thing that wants to remove the business of thinking"—optimization that eliminates difficulty, ambiguity, and the need for human judgment.
-\end{itemize}
-
-\begin{quote}
-"It's about achieving a situation where the problem is solved and there's no more friction, no more ambiguity... you've dominated the problem and it's gone and all there is left is your perfect shining solution." —Shannon Vallor
-\end{quote}
-\end{frame}
-
-% Slide 32
-\begin{frame}{The Virtue of Wisdom vs. Mechanical Problem-Solving}
-\begin{itemize}
-    \item \textbf{Practical wisdom} (or prudence) is the virtue of knowing what matters, what to do in complex situations, and how to live well—Aristotle considered it the master virtue.
-    \item Vallor argues there is no "mathematical solution to the problem of justice" because justice involves "conflicting values and interests that cannot be made commensurable on a single scale."
-    \item If we allow AI to handle increasingly complex decisions (hiring, medical treatment, criminal justice), we stop practicing the virtue of wisdom and lose confidence in human judgment.
-\end{itemize}
-
-\begin{center}
-\begin{tikzpicture}[scale=0.8, transform shape]
-    \node[rectangle, draw, fill=green!30, text width=3cm, align=center] (wisdom) at (0,0) {\textbf{Wisdom} \\ Balances values \\ Navigates ambiguity \\ Requires experience};
-    \node[rectangle, draw, fill=gray!30, text width=3cm, align=center] (algorithm) at (5,0) {\textbf{Algorithm} \\ Optimizes function \\ Eliminates friction \\ Follows rules};
-    
-    \draw[<->, thick, red] (wisdom) -- (algorithm);
-    \node[below, text width=5cm, align=center] at (2.5,-1.5) {\small Not all problems can or should be algorithmic};
-\end{tikzpicture}
-\end{center}
-\end{frame}
-
-% Slide 35
-\begin{frame}{Discussion Questions: Vallor on AI and Human Intelligence }
-\begin{enumerate}
-    \item Vallor uses the mirror metaphor to explain why AI isn't really thinking. Do you find this metaphor convincing? Can you think of ways AI might be more than just a "reflection" of human intelligence?
-    \item When Geoffrey Hinton says "we understand language in much the same way as large language models," Vallor says he's confusing performance with understanding. What's the difference? Can something perform perfectly without understanding?
-    \item Think about a time you truly understood something (a concept, a friend's feelings, a book). What was that experience like? Could a computer have that same experience by processing the right data?
-    \item Silicon Valley leaders redefined AGI from "thinks like humans" to "does economically valuable work." Why does Vallor think this redefinition is dangerous? Do you agree?
-\end{enumerate}
-\end{frame}
-
-% Slide 37
-\begin{frame}{Criticism Corner: Does Vallor Underestimate AI's Significance?}
-\begin{itemize}
-    \item \textbf{The Existential Risk Camp (e.g., Geoffrey Hinto, Nick Bostrom)}: Some AI researchers argue Vallor underestimates the possibility that AI could develop genuine consciousness or intelligence—and therefore pose existential threats. They worry her "it's just a mirror" view makes us complacent about real dangers.
-    \item \textbf{The Techno-Optimists}: Some of these same researchers also believe AI could solve humanity's greatest problems—cure diseases, end poverty, achieve scientific breakthroughs—and that Vallor's focus on current limitations misses AI's transformative potential (for good or ill).
-    \item \textbf{The Libertarian Critique}: Some argue Vallor's concerns about Silicon Valley and efficiency reflect a general skepticism toward capitalism and free markets, not specific problems with AI technology itself.
-    \item \textbf{The "She'll Be Proven Wrong" Argument}: As AI capabilities advance rapidly, critics suggest her philosophical arguments about AI lacking understanding will seem outdated when systems demonstrate increasingly sophisticated reasoning.
-\end{itemize}
-
-
-\end{frame}
-
-% Slide 38
-\begin{frame}{Vallor on Social Media and Democracy: The Fragmented Public Sphere}
-\begin{itemize}
-    \item Vallor's earlier work extensively examined how social media platforms undermine \textbf{democratic deliberation}—the process by which citizens reason together about shared problems.
-    \item Social media creates \textbf{filter bubbles} where algorithms show us only content we already agree with, preventing exposure to diverse viewpoints necessary for democratic citizenship.
-    \item The "many-to-many" communication of social media initially seemed liberating, but in practice it enabled mob dynamics, viral outrage, and the spread of misinformation at unprecedented scale.
-    \item She argues that democracy requires not just free speech but \textbf{shared reality}—basic agreement on facts—which social media's fragmentation makes nearly impossible.
-\end{itemize}
-
-\begin{quote}
-"When citizens lose trust in institutions, they lose trust in the stories told by those institutions... young people educated in the post-Babel era are less likely to arrive at a coherent story of who we are as a people." —Shannon Vallor
-\end{quote}
-\end{frame}
-
-% Slide 39
-\begin{frame}{Both Authors on AI: Who Decides What Matters?}
-\begin{itemize}
-    \item Both Haidt and Vallor worry that AI systems are being designed and deployed by a narrow group of tech leaders with particular values and blind spots.
-    \item Haidt notes that AI-powered recommendation algorithms on social media platforms already shape what billions see, read, and believe—concentrating enormous power in few hands.
-    \item Vallor argues that if we allow AI to make increasingly important decisions (medical treatment, hiring, criminal justice, education), we're letting \textbf{Silicon Valley's values} (efficiency, optimization, quantification) become society's values.
-\end{itemize}
-
-\begin{center}
-\begin{tikzpicture}[scale=0.85]
-    \node[circle, draw, fill=red!30, text width=2.2cm, align=center] (tech) at (0,0) {\small Tech Companies \\ Design AI};
-    \node[circle, draw, fill=blue!30, text width=2.2cm, align=center] (values) at (3.5,0) {\small AI Embodies \\ Their Values};
-    \node[circle, draw, fill=orange!30, text width=2.2cm, align=center] (society) at (7,0) {\small Society Shaped \\ By Those Values};
-    
-    \draw[->, ultra thick] (tech) -- (values);
-    \draw[->, ultra thick] (values) -- (society);
-    \node[below, text width=7cm, align=center] at (3.5,-1.3) {\small Who gets to decide what values guide these powerful technologies?};
-\end{tikzpicture}
-\end{center}
-\end{frame}
-
-% Slide 40
-\begin{frame}{Justice Online: Accountability, Doxing, and Cancel Culture}
-\begin{itemize}
-    \item Both authors grapple with questions of \textbf{justice} in online spaces: When is public shaming warranted? When does it become mob violence?
-    \item \textbf{Doxing} (publishing someone's private information online) and coordinated harassment campaigns raise difficult questions about accountability versus cruelty.
-    \item Some argue that social media finally enables justice by holding powerful people accountable through public exposure; others see dangerous vigilantism without due process.
-    \item The virtue of justice requires both holding people accountable for wrongdoing AND protecting people from disproportionate or wrongful punishment.
-    \item Haidt notes that social media makes it easy to "shoot darts" at others with no cost to ourselves, corroding the careful balance that justice requires.
-\end{itemize}
-
-\begin{block}{The Justice Dilemma}
-How do we maintain accountability for harmful behavior while preserving fairness, proportionality, and the possibility of forgiveness and growth?
-\end{block}
-\end{frame}
-
-% Slide 41
-\begin{frame}{Intellectual Humility: Knowing What You Don't Know}
-\begin{itemize}
-    \item \textbf{Intellectual humility} is the virtue of recognizing the limits of your knowledge, being willing to revise your beliefs, and acknowledging when others might be right.
-    \item Social media undermines this virtue by rewarding confident assertions and punishing admission of uncertainty or error—"I don't know" or "I was wrong" get few likes.
-    \item AI systems present themselves with complete confidence even when they're wrong (what researchers call \textbf{hallucinations}), modeling a kind of arrogant certainty.
-    \item In a world of infinite information and confident AI, the ability to say "I might be wrong" becomes more important, not less.
-\end{itemize}
-
-\begin{table}
-\centering
-\small
-\begin{tabular}{@{}ll@{}}
-\toprule
-\textbf{Intellectual Humility} & \textbf{Intellectual Arrogance} \\ \midrule
-"I could be wrong" & "I'm definitely right" \\
-Seeks contrary evidence & Ignores contradictions \\
-Updates beliefs & Doubles down \\
-Learns from others & Dismisses disagreement \\ \bottomrule
-\end{tabular}
-\end{table}
-\end{frame}
-
-% Slide 42
-\begin{frame}{Civic Friendship: Can We Talk Across Differences?}
-\begin{itemize}
-    \item \textbf{Civic friendship} doesn't mean being best friends with political opponents—it means treating fellow citizens as partners in shared democratic life, not enemies to be destroyed.
-    \item Aristotle distinguished three types of friendship: utility (we help each other), pleasure (we enjoy each other), and virtue (we make each other better people).
-    \item Civic friendship is closest to utility friendship: we may disagree deeply, but we need each other to make democracy work and to solve shared problems.
-    \item Social media corrodes civic friendship by making it easy to dehumanize those we disagree with, to block them entirely, or to performatively attack them for social approval.
-\end{itemize}
-
-\begin{alertblock}{The Stakes}
-Climate change, pandemics, and economic challenges require cooperation across differences. Without civic friendship, we cannot solve collective problems.
-\end{alertblock}
-\end{frame}
-
-% Slide 43
-\begin{frame}{The Virtue of Community: We Must Act Together}
-    \scriptsize
-\begin{itemize}
-    \item Individual virtue is important, but both Haidt and Vallor emphasize that addressing technology's harms requires \textbf{collective action}—communities working together.
-    \item Remember the collective-action trap: what's rational for each individual (staying on social media, using AI) may be harmful for everyone collectively.
-    \item Historical examples: neighborhoods organizing to reduce crime, workers forming unions, citizens building public infrastructure—all required community virtue.
-\end{itemize}
-
-\begin{center}
-\begin{tikzpicture}[scale=0.9, transform shape]
-    \node[circle, draw, fill=red!30, minimum size=1cm] (i1) at (0,0) {I};
-    \node[circle, draw, fill=red!30, minimum size=1cm] (i2) at (1.5,0) {I};
-    \node[circle, draw, fill=red!30, minimum size=1cm] (i3) at (3,0) {I};
-    \node[circle, draw, fill=red!30, minimum size=1cm] (i4) at (4.5,0) {I};
-    \node[above] at (2.25,0.7) {\small Isolated individuals};
-    
-    \node[ellipse, draw, thick, fill=green!20, minimum width=5cm, minimum height=2cm] (comm) at (2.25,-2.5) {};
-    \node at (2.25,-2.5) {\textbf{WE}};
-    \node[below] at (2.25,-3.7) {\small Coordinated community};
-    
-    \draw[->, thick, blue] (2.25,-0.7) -- (2.25,-1.3);
-\end{tikzpicture}
-\end{center}
-\end{frame}
-
-% Slide 44
-\begin{frame}{Hope: Technology Can Serve Human Flourishing}
-\begin{itemize}
-    \item Despite their criticisms, neither Haidt nor Vallor wants to eliminate technology or return to a pre-digital world—both see technology's potential for good.
-    \item Vallor: "Technology at its core can be as humane an activity as anything can be. We've been technological creatures since before we were \textit{Homo sapiens}."
-    \item The question is not "technology or no technology" but "which technologies, designed how, used for what purposes?"
-\end{itemize}
-
-\begin{exampleblock}{Virtue-Supporting Tech?}
+%------------------------------------------------------
+% SLIDE 2: Recap: Five Information Technology Revolutions
+%------------------------------------------------------
+\begin{frame}{Recap: Five Information Technology Revolutions}
     \begin{itemize}
-        \item Tools that enhance real-world connection (e.g., platforms for community organizing)
-        \item AI that augments rather than replaces human judgment (e.g., decision-support systems)
-        \item Technologies that promote civic engagement (e.g., tools for deliberative democracy)
+        \item In Lecture 1, we traced five major \textbf{information technology revolutions} that transformed how humans create, store, and share knowledge.
+        \item Each revolution changed not just \textit{what} we can do with information, but \textit{who} controls it and \textit{how} it shapes society.
+        \item We saw recurring patterns: promises of democratization, fears of lost skills, debates over gatekeeping, and unintended consequences.
+        \item Today we focus on what comes \textit{after} Web 1.0: the rise of social media, algorithmic platforms, and artificial intelligence.
     \end{itemize}
     
-\end{exampleblock}
-
+    \vspace{0.3em}
+    
+    \begin{center}
+    \begin{tikzpicture}[
+        node distance=0.9cm,
+        every node/.style={font=\small},
+        scale =0.9,
+        transform shape,
+        box/.style={rectangle, draw=primaryblue, fill=lightgray, rounded corners, minimum width=2cm, minimum height=0.7cm, align=center, font=\footnotesize}
+    ]
+        \node[box] (writing) {Writing\\(3200 BCE)};
+        \node[box, right=of writing] (printing) {Printing\\(1450 CE)};
+        \node[box, right=of printing] (telegraph) {Telegraph\\(1840s)};
+        \node[box, right=of telegraph] (broadcast) {Broadcast\\(1920s)};
+        \node[box, right=of broadcast, draw=accentorange, thick] (web) {Web 1.0\\(1990s)};
+        \node[box, right=of web, draw=accentorange, fill=accentorange!20, thick] (web2) {Web 2.0\\(2000s)};
+        
+        \draw[-{Stealth}, thick, primaryblue] (writing) -- (printing);
+        \draw[-{Stealth}, thick, primaryblue] (printing) -- (telegraph);
+        \draw[-{Stealth}, thick, primaryblue] (telegraph) -- (broadcast);
+        \draw[-{Stealth}, thick, primaryblue] (broadcast) -- (web);
+        \draw[-{Stealth}, thick, accentorange] (web) -- (web2);
+    \end{tikzpicture}
+    \end{center}
 \end{frame}
 
-% Slide 46
-\begin{frame}{Case Study: Democracy Under Pressure—The 2020 Election and Social Media}
-\begin{itemize}
-    \item Both Haidt and Vallor point to the 2020 U.S. presidential election as a case study in how social media can undermine democratic civic virtues.
-    \item The QAnon conspiracy theory, spread primarily through Facebook, YouTube, and Twitter, convinced millions of Americans of elaborate false narratives—demonstrating social media's power to create alternative realities.
-    \item After the election, false claims about voter fraud spread rapidly on social media despite being rejected by courts, election officials, and recounts—fragmenting shared reality.
-    \item The January 6, 2021 Capitol insurrection was organized largely through social media platforms, showing how online radicalization translates to real-world violence.
-    \item Haidt notes that social media made it "cheap and easy" for foreign actors (like Russia's Internet Research Agency) to "stoke rage on both the left and the right, often over race," further polarizing Americans.
-\end{itemize}
-
+%------------------------------------------------------
+% SLIDE 3: From Web 1.0 to Web 2.0
+%------------------------------------------------------
+\begin{frame}{From Web 1.0 to Web 2.0}
+    \begin{itemize}
+        \item \textbf{Web 1.0} (roughly 1991--2004) was primarily a ``read-only'' web: static pages created by webmasters, organized by directories like Yahoo, with users as passive consumers.
+        \item \textbf{Web 2.0} (2004--present) transformed the web into a ``read-write'' platform where ordinary users generate content through blogs, social networks, and video sharing.
+        \item This shift moved power from professional publishers to platforms that aggregate user-generated content---but also concentrated power in new ways.
+        \item The term ``Web 2.0'' was popularized by Tim O'Reilly in 2004 to describe this architectural and cultural transformation.
+    \end{itemize}
+    
+    \vspace{0.2em}
+    
+    \begin{center}
+    \renewcommand{\arraystretch}{1.2}
+    \begin{tabular}{>{\raggedright}p{3.5cm} >{\raggedright}p{4.5cm} >{\raggedright\arraybackslash}p{4.5cm}}
+        \toprule
+        \textbf{Feature} & \textbf{Web 1.0} & \textbf{Web 2.0} \\
+        \midrule
+        Content Creation & Webmasters, companies & Anyone with an account \\
+        User Role & Consumer (read) & Producer (read/write) \\
+        Organization & Directories, portals & Search, social feeds \\
+        Examples & GeoCities, AOL & Facebook, YouTube, Wikipedia \\
+        \bottomrule
+    \end{tabular}
+    \end{center}
 \end{frame}
 
-% Slide 47
-\begin{frame}{Discussion Questions: What Civic Virtues Does Democracy Need?}
-\begin{enumerate}
-    \item Both authors argue that democracy requires \textbf{shared reality}—basic agreement on facts. How can a democracy function when citizens live in completely different information universes? Is this situation sustainable?
-    \item The 2020 election case shows how social media enables both grassroots organizing and violent extremism. Can we have the benefits (democratic participation) without the harms (radicalization and misinformation)?
-    \item Haidt emphasizes \textbf{civic friendship}—treating political opponents as fellow citizens, not enemies. Do you see examples of civic friendship online? What makes it so rare on social media platforms?
-    \item Vallor worries that social media discourse trains us to see every disagreement as a battle to win rather than an opportunity to learn. Have you noticed this in yourself or others? How might we cultivate \textbf{intellectual humility} online?
-    \item Both authors call for collective action—coordinated responses from communities, not just individual choices. What role should government play in regulating social media to protect democratic virtues?
-\end{enumerate}
+%------------------------------------------------------
+% SLIDE 4: The Architecture of Web 2.0
+%------------------------------------------------------
+\begin{frame}{The Architecture of Web 2.0}
+    \begin{itemize}
+        \item \textbf{Platforms} are digital intermediaries that connect users, content creators, and advertisers---they don't create content but profit from hosting it.
+        \item \textbf{User-generated content} means the platform's value comes from what users post: status updates, photos, videos, reviews, and comments.
+        \item \textbf{Social graphs} map relationships between users, enabling features like friend recommendations, news feeds, and targeted advertising.
+        \item \textbf{Network effects} make platforms more valuable as more people join---your friends are on Facebook, so you join Facebook, making it more valuable for others.
+    \end{itemize}
+    
+    \vspace{0.2em}
+    
+    \begin{center}
+    \begin{tikzpicture}[
+        node distance=1.5cm,
+        box/.style={rectangle, draw=primaryblue, fill=lightgray, rounded corners, minimum width=2.2cm, minimum height=0.8cm, align=center, font=\footnotesize},
+        platform/.style={rectangle, draw=accentorange, fill=accentorange!20, rounded corners, minimum width=3cm, minimum height=1cm, align=center, font=\small\bfseries}
+    ]
+        \node[box] (users) {Users\\(create content)};
+        \node[platform, right=2cm of users] (platform) {Platform};
+        \node[box, right=2cm of platform] (advertisers) {Advertisers\\(pay money)};
+        \node[box, below=0.8cm of platform] (data) {Data \&\\Algorithms};
+        
+        \draw[-{Stealth}, thick, primaryblue] (users) -- node[above, font=\scriptsize] {Content} (platform);
+        \draw[-{Stealth}, thick, primaryblue] (platform) -- node[above, font=\scriptsize] {Attention} (advertisers);
+        \draw[-{Stealth}, thick, accentorange] (advertisers) to[bend right=30] node[below, font=\scriptsize] {\$\$\$} (platform);
+        \draw[-{Stealth}, thick, primaryblue] (platform) -- (data);
+        \draw[-{Stealth}, thick, primaryblue] (data) to[bend right=40] node[above, font=\scriptsize] {Targeting} (users);
+    \end{tikzpicture}
+    \end{center}
+\end{frame}
+
+%------------------------------------------------------
+% SLIDE 5: The Attention Economy and the Infosphere
+%------------------------------------------------------
+\begin{frame}{The Attention Economy and the Infosphere}
+    \begin{itemize}
+        \item Web 2.0 platforms are free to use because \textbf{you are not the customer---you are the product}; your attention is sold to advertisers.
+        \item The \textbf{attention economy} treats human attention as a scarce resource to be captured, measured, and monetized through engagement metrics.
+        \item Philosopher Luciano Floridi argues we now live in an \textbf{infosphere}---an environment where the boundaries between online and offline life have dissolved.
+        \item In this infosphere, we have become \textbf{inforgs} (informational organisms): beings whose identities, relationships, and choices are increasingly mediated by digital information.
+    \end{itemize}
+    
+    \vspace{0.3em}
+    
+    \begin{alertblock}{The Business Model}
+        ``If you're not paying for the product, you are the product.'' Platforms maximize \textbf{engagement} (time on site, clicks, shares) because more engagement means more advertising revenue---regardless of whether that engagement benefits users.
+    \end{alertblock}
+\end{frame}
+
+%------------------------------------------------------
+% SLIDE 6: Algorithmic Feeds and Filter Bubbles
+%------------------------------------------------------
+\begin{frame}{Algorithmic Feeds and Filter Bubbles}
+    \begin{itemize}
+        \item \textbf{Algorithmic feeds} replaced chronological timelines around 2009--2016; platforms now decide what you see based on predicted engagement.
+        \item \textbf{Filter bubbles} (Eli Pariser, 2011) occur when algorithms show you content similar to what you've engaged with before, narrowing your information diet.
+        \item \textbf{Echo chambers} form when users primarily encounter views that reinforce their existing beliefs, making opposing perspectives seem alien or extreme.
+        \item These systems optimize for \textit{engagement}, not truth, understanding, or wellbeing---outrage and controversy often generate more clicks than nuance.
+    \end{itemize}
+    
+    \vspace{0.2em}
+    
+    \begin{center}
+    \begin{tikzpicture}[
+        node distance=0.8cm,
+        box/.style={rectangle, draw=primaryblue, fill=lightgray, rounded corners, minimum width=2.5cm, minimum height=0.7cm, align=center, font=\footnotesize},
+        arrow/.style={-{Stealth}, thick, primaryblue}
+    ]
+        \node[box] (user) {User Activity};
+        \node[box, right=1.2cm of user] (algorithm) {Algorithm\\Analyzes};
+        \node[box, right=1.2cm of algorithm] (feed) {Curated\\Feed};
+        \node[box, right=1.2cm of feed] (engage) {Engagement};
+        
+        \draw[arrow] (user) -- (algorithm);
+        \draw[arrow] (algorithm) -- (feed);
+        \draw[arrow] (feed) -- (engage);
+        \draw[arrow, accentorange, bend left=40] (engage) to node[above, font=\scriptsize] {Feedback Loop} (user);
+    \end{tikzpicture}
+    \end{center}
+\end{frame}
+
+%------------------------------------------------------
+% SLIDE 7: From Social Media to AI: A Continuous Story
+%------------------------------------------------------
+\begin{frame}{From Social Media to AI: A Continuous Story}
+    \begin{itemize}
+        \item This lecture examines social media and AI together because they are \textbf{not separate phenomena}---AI is the next chapter in the same story.
+        \item Social media trained us to seek validation from likes, to curate personas, and to prefer mediated interaction over face-to-face conversation.
+        \item Generative AI (ChatGPT, 2022) extends these patterns: now we can have ``relationships'' with systems that simulate understanding without possessing it.
+        \item The thinkers we'll study---Vallor, Turkle, Haidt, Floridi---have all extended their frameworks from social media to AI, seeing continuity rather than rupture.
+    \end{itemize}
+    
+    \vspace{0.3em}
+    
+    \begin{block}{Sherry Turkle, \textit{Reclaiming Conversation} (2024 Preface)}
+        ``Social media was our gateway drug to conversations with machines.''
+    \end{block}
+\end{frame}
+
+%------------------------------------------------------
+% SLIDE 8: Discussion Questions: Web 2.0 and the Infosphere
+%------------------------------------------------------
+\begin{frame}{Discussion Questions: Web 2.0 and the Infosphere}
+    \begin{enumerate}
+        \item  You get free access to powerful platforms; they get your attention data. Is this a fair exchange? Who benefits more?
+        
+        \vspace{0.5em}
+        
+        \item  How would you know if you were in a filter bubble? What steps, if any, do you take to encounter perspectives different from your own?
+        
+        \vspace{0.5em}
+        
+        \item  Floridi says we've become ``informational organisms'' whose identities are partly constituted by our digital presence. Does this match your experience? Is this troubling or simply the new normal?
+        
+        \vspace{0.5em}
+        
+        \item  Turkle suggests social media prepared us for AI relationships. Do you see connections between how you use social media and how you might interact with AI assistants?
+    \end{enumerate}
+\end{frame}
+
+%------------------------------------------------------
+% SLIDE 9: What Is Virtue Ethics?
+%------------------------------------------------------
+\begin{frame}{What Is Virtue Ethics?}
+    \begin{itemize}
+        \item \textbf{Virtue ethics} is a moral framework that focuses on \textit{character}---the kind of person you are---rather than on rules or consequences alone.
+        \item While \textbf{deontology} asks ``What rules should I follow?'' and \textbf{consequentialism} asks ``What outcome should I produce?'', virtue ethics asks ``What kind of person should I become?''
+        \item A \textbf{virtue} is an excellent trait of character---like honesty, courage, or compassion---that enables a person to live well and flourish.
+        \item Virtue ethics emphasizes that good actions flow from good character, which is developed through \textbf{practice and habituation} over time.
+    \end{itemize}
+    
+    \vspace{0.2em}
+    
+    \begin{center}
+    \renewcommand{\arraystretch}{1.2}
+    \begin{tabular}{>{\raggedright}p{3cm} >{\raggedright}p{4cm} >{\raggedright\arraybackslash}p{4.5cm}}
+        \toprule
+        \textbf{Approach} & \textbf{Central Question} & \textbf{Key Concept} \\
+        \midrule
+        Deontology & What is my duty? & Rules, obligations \\
+        Consequentialism & What produces the best outcome? & Utility, welfare \\
+        \textbf{Virtue Ethics} & \textbf{What kind of person should I be?} & \textbf{Character, flourishing} \\
+        \bottomrule
+    \end{tabular}
+    \end{center}
+\end{frame}
+
+%------------------------------------------------------
+% SLIDE 10: Aristotle and Eudaimonia
+%------------------------------------------------------
+\begin{frame}{Aristotle and Eudaimonia}
+    \begin{itemize}
+        \item \textbf{Aristotle} (384--322 BCE) is the founding figure of Western virtue ethics; his \textit{Nicomachean Ethics} remains the most influential text in the tradition.
+        \item Aristotle argues that all human action aims at some \textbf{good}, and the highest good is \textbf{eudaimonia}---often translated as ``happiness'' but better understood as ``flourishing'' or ``living well.''
+        \item Eudaimonia is not a feeling but an \textbf{activity}---it is achieved by living in accordance with virtue throughout a complete life.
+        \item For Aristotle, humans flourish by exercising their distinctive capacity: \textbf{reason}---both in thinking well and in governing emotions and desires wisely.
+    \end{itemize}
+    
+    \vspace{0.3em}
+    
+    \begin{block}{Aristotle, \textit{Nicomachean Ethics} (c. 340 BCE)}
+        ``Happiness [eudaimonia] is an activity of the soul in accordance with virtue, and if there are several virtues, in accordance with the best and most complete.''
+    \end{block}
+\end{frame}
+
+%------------------------------------------------------
+% SLIDE 11: Aristotle's Doctrine of the Mean
+%------------------------------------------------------
+\begin{frame}{Aristotle's Doctrine of the Mean}
+    \begin{itemize}
+        \item Aristotle's \textbf{doctrine of the mean} holds that each virtue is a balanced middle point between two extremes: one of excess and one of deficiency.
+        \item The mean is not a mathematical average but the \textbf{right amount} for this person, in this situation---it requires judgment, not calculation.
+        \item Finding the mean requires \textbf{practical wisdom} (phronesis): the ability to perceive what virtue requires in particular circumstances.
+        \item This framework suggests that virtuous technology use involves finding balance---neither total abstinence nor unreflective immersion.
+    \end{itemize}
+    
+    \vspace{0.2em}
+    
+    \begin{center}
+    \renewcommand{\arraystretch}{1.15}
+    \begin{tabular}{>{\raggedright}p{3cm} >{\centering}p{3cm} >{\raggedright\arraybackslash}p{3cm}}
+        \toprule
+        \textbf{Deficiency} & \textbf{Virtue (Mean)} & \textbf{Excess} \\
+        \midrule
+        Cowardice & \textbf{Courage} & Recklessness \\
+        Stinginess & \textbf{Generosity} & Wastefulness \\
+        Self-deprecation & \textbf{Truthfulness} & Boastfulness \\
+        Boorishness & \textbf{Wit} & Buffoonery \\
+        \bottomrule
+    \end{tabular}
+    \end{center}
+\end{frame}
+
+%------------------------------------------------------
+% SLIDE 12: Habituation and Practical Wisdom
+%------------------------------------------------------
+\begin{frame}{Habituation and Practical Wisdom}
+    \begin{itemize}
+        \item Aristotle insists that virtues are not innate---we are not born courageous or just---but are developed through \textbf{habituation}: repeated practice until virtuous action becomes second nature.
+        \item ``We become just by doing just acts, temperate by doing temperate acts, brave by doing brave acts''---character is formed by what we \textit{repeatedly do}.
+        \item \textbf{Phronesis} (practical wisdom) is the master virtue: the capacity to discern the right action in particular circumstances, balancing competing considerations.
+        \item This has profound implications for technology: our digital habits shape our character, and we need practical wisdom to navigate novel situations that Aristotle never imagined.
+    \end{itemize}
+    
+    \vspace{0.2em}
+    
+    \begin{exampleblock}{Technology Application}
+        If virtues are formed by habits, then our daily technology practices---checking phones first thing in the morning, scrolling before sleep, responding instantly to notifications---are shaping who we become. What character traits do these habits cultivate?
+    \end{exampleblock}
+\end{frame}
+
+%------------------------------------------------------
+% SLIDE 13: Confucian Virtue Ethics
+%------------------------------------------------------
+\begin{frame}{Confucian Virtue Ethics}
+    \begin{itemize}
+        \item \textbf{Confucius} (551--479 BCE) developed a virtue tradition in China contemporaneous with Greek philosophy, emphasizing social relationships and moral cultivation.
+        \item The central virtue is \textbf{ren}---variously translated as ``humaneness,'' ``benevolence,'' or ``human-heartedness''---the quality of caring appropriately for others.
+        \item \textbf{Li} refers to ritual propriety: the customs, manners, and social forms through which we express respect and maintain harmonious relationships.
+        \item The goal is to become a \textbf{junzi}---an ``exemplary person'' or ``gentleman''---who cultivates virtue and serves as a moral model for others.
+    \end{itemize}
+    
+    \vspace{0.3em}
+    
+    \begin{block}{Confucius, \textit{Analects} 12.2}
+        ``Do not do to others what you would not want done to yourself.''
+    \end{block}
+\end{frame}
+
+%------------------------------------------------------
+% SLIDE 14: Confucianism: Relationships and Moral Cultivation
+%------------------------------------------------------
+\begin{frame}{Confucianism: Relationships and Moral Cultivation}
+    \begin{columns}[T]
+        \begin{column}{0.55\textwidth}
+            \begin{itemize}
+                \small
+                \item Unlike Aristotle's focus on individual flourishing, Confucian ethics is fundamentally \textbf{relational}---virtue is expressed through our roles as children, parents, friends, citizens, and colleagues.
+                \item The \textbf{Five Relationships} (wulun) define core moral bonds: parent-child, ruler-subject, husband-wife, elder-younger sibling, and friend-friend.
+                \item Moral development requires \textbf{self-cultivation} (xiuyang): continuous effort to refine one's character through study, reflection, and practice.
+                \item This relational focus raises important questions: How do digital technologies affect our ability to fulfill our roles and obligations to others?
+            \end{itemize}
+        \end{column}
+        
+        \begin{column}{0.4\textwidth}
+            \begin{center}
+            \begin{tikzpicture}[
+                scale=0.9,
+                transform shape,
+                node distance=1cm,
+                center/.style={circle, draw=accentorange, fill=accentorange!20, minimum size=1.2cm, font=\small\bfseries},
+                relation/.style={rectangle, draw=primaryblue, fill=lightgray, rounded corners, minimum width=1.8cm, minimum height=0.6cm, font=\scriptsize, align=center}
+            ]
+                \node[center] (self) {Self};
+                \node[relation, above=0.8cm of self] (parent) {Parent-Child};
+                \node[relation, above right=0.5cm and 1cm of self] (ruler) {Ruler-Subject};
+                \node[relation, below right=0.5cm and 1cm of self] (spouse) {Husband-Wife};
+                \node[relation, below=0.8cm of self] (sibling) {Elder-Younger};
+                \node[relation, above left=0.5cm and 1cm of self] (friend) {Friend-Friend};
+                
+                \draw[-{Stealth}, primaryblue] (self) -- (parent);
+                \draw[-{Stealth}, primaryblue] (self) -- (ruler);
+                \draw[-{Stealth}, primaryblue] (self) -- (spouse);
+                \draw[-{Stealth}, primaryblue] (self) -- (sibling);
+                \draw[-{Stealth}, primaryblue] (self) -- (friend);
+            \end{tikzpicture}
+            \end{center}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+%------------------------------------------------------
+% SLIDE 15: Religious Virtue Traditions
+%------------------------------------------------------
+\begin{frame}{Religious Virtue Traditions}
+    \begin{itemize}
+        \item Most world religions include robust virtue traditions that overlap with and extend philosophical approaches to character ethics.
+        \item \textbf{Christianity} distinguishes cardinal virtues (prudence, justice, fortitude, temperance) from theological virtues (faith, hope, charity/love) that require divine grace.
+        \item \textbf{Islam} emphasizes virtues like \textbf{taqwa} (God-consciousness), \textbf{sabr} (patience), and \textbf{ihsan} (excellence in worship and conduct toward others).
+        \item \textbf{Buddhism}'s Noble Eightfold Path cultivates virtues of wisdom (right view, intention), ethical conduct (right speech, action, livelihood), and mental discipline (right effort, mindfulness, concentration).
+    \end{itemize}
+    
+    \vspace{0.2em}
+    
+    \begin{center}
+        \scriptsize
+    \renewcommand{\arraystretch}{1.15}
+    \begin{tabular}{>{\raggedright}p{2.5cm} >{\raggedright\arraybackslash}p{9cm}}
+        \toprule
+        \textbf{Tradition} & \textbf{Key Virtues} \\
+        \midrule
+        Christianity & Prudence, justice, fortitude, temperance; faith, hope, love \\
+        Islam & Taqwa (consciousness), sabr (patience), ihsan (excellence) \\
+        Buddhism & Right speech, right action, right mindfulness \\
+        Judaism & Tzedakah (justice/charity), chesed (loving-kindness), emet (truth) \\
+        \bottomrule
+    \end{tabular}
+    \end{center}
+\end{frame}
+
+%------------------------------------------------------
+% SLIDE 16: Care Ethics and Relationships
+%------------------------------------------------------
+\begin{frame}{Care Ethics and Relationships}
+    \begin{itemize}
+        \item \textbf{Care ethics} emerged in the 1980s from feminist philosophy, emphasizing relationships, context, and emotional responsiveness over abstract universal rules.
+        \item \textbf{Carol Gilligan} argued that traditional ethics privileged ``justice reasoning'' (rights, rules) over ``care reasoning'' (relationships, responsibilities, responsiveness to particular others).
+        \item \textbf{Nel Noddings} developed care ethics as a complete moral theory: the fundamental moral relation is the caring encounter between ``one-caring'' and ``cared-for.''
+        \item Care ethics asks: What do \textit{these particular people} in \textit{this relationship} need from each other?---a question algorithms cannot answer.
+    \end{itemize}
+    
+    \vspace{0.3em}
+    
+    \begin{exampleblock}{Technology Application}
+        Care ethics highlights what's lost when relationships are mediated by screens: the ability to perceive subtle cues, respond to unspoken needs, and be physically present. Can we truly ``care'' through a platform optimized for engagement metrics?
+    \end{exampleblock}
+\end{frame}
+
+%------------------------------------------------------
+% SLIDE 17: Communitarian Political Philosophy
+%------------------------------------------------------
+\begin{frame}{Communitarian Political Philosophy}
+    \begin{itemize}
+        \item \textbf{Communitarianism} emerged in the 1980s as a critique of liberal individualism, arguing that identity and morality are shaped by communities, traditions, and shared practices.
+        \item \textbf{Alasdair MacIntyre}'s \textit{After Virtue} (1981) argues that modern society has lost a coherent moral framework; we need to recover virtue within living traditions and practices.
+        \item \textbf{Michael Sandel} criticizes the liberal idea of the ``unencumbered self''---we are not abstract individuals but members of families, communities, and nations that shape who we are.
+        \item \textbf{Charles Taylor} emphasizes that humans are ``self-interpreting animals'' who need shared frameworks of meaning to understand what makes life worthwhile.
+    \end{itemize}
+    
+    \vspace{0.3em}
+    
+    \begin{block}{Alasdair MacIntyre, \textit{After Virtue} (1981)}
+        ``I can only answer the question `What am I to do?' if I can answer the prior question `Of what story or stories do I find myself a part?'\,''
+    \end{block}
+\end{frame}
+
+%------------------------------------------------------
+% SLIDE 18: Practices, Communities, and Virtues
+%------------------------------------------------------
+\begin{frame}{Practices, Communities, and Virtues}
+    \begin{itemize}
+        \item MacIntyre defines a \textbf{practice} as a cooperative activity with internal goods (excellence) and external goods (money, fame)---examples include medicine, teaching, chess, and farming.
+        \item Virtues are the qualities needed to achieve the \textbf{internal goods} of practices: a good doctor needs honesty, compassion, and practical wisdom, not just technical skill.
+        \item Practices are sustained by \textbf{institutions} (hospitals, universities, guilds), but institutions tend to prioritize external goods and can corrupt practices.
+        \item This framework raises questions: Is social media use a practice? What internal goods might it have? How do platform business models affect those goods?
+    \end{itemize}
+    
+    \vspace{0.2em}
+    
+    \begin{center}
+    \begin{tikzpicture}[
+        node distance=1.2cm,
+        box/.style={rectangle, draw=primaryblue, fill=lightgray, rounded corners, minimum width=2.5cm, minimum height=0.8cm, align=center, font=\footnotesize},
+        arrow/.style={-{Stealth}, thick, primaryblue}
+    ]
+        \node[box] (practice) {Practice\\(e.g., journalism)};
+        \node[box, right=1.5cm of practice] (internal) {Internal Goods\\(truth, accountability)};
+        \node[box, below=0.8cm of practice] (institution) {Institution\\(e.g., newspaper)};
+        \node[box, right=1.5cm of institution] (external) {External Goods\\(profit, clicks)};
+        
+        \draw[arrow] (practice) -- node[above, font=\scriptsize] {aims at} (internal);
+        \draw[arrow] (institution) -- node[above, font=\scriptsize] {prioritizes} (external);
+        \draw[arrow, dashed, accentorange] (institution) -- node[left, font=\scriptsize] {sustains but} (practice);
+        \draw[arrow, dashed, accentorange] (external) -- node[right, font=\scriptsize] {can corrupt} (internal);
+    \end{tikzpicture}
+    \end{center}
+\end{frame}
+
+%------------------------------------------------------
+% SLIDE 19: Why Virtue Ethics for Technology?
+%------------------------------------------------------
+\begin{frame}{Why Virtue Ethics for Technology?}
+    \begin{itemize}
+        \item Rules-based ethics struggles with technology because innovation constantly creates situations no rule anticipated---virtue ethics asks what a wise person would do.
+        \item Consequentialist calculations are difficult when effects are unpredictable, distributed across millions of users, and unfold over decades.
+        \item Virtue ethics focuses on \textbf{character formation}: technologies shape our habits, and habits shape who we become---this is precisely what virtue ethics addresses.
+        \item The virtue tradition emphasizes \textbf{practical wisdom} (phronesis)---the ability to navigate novel situations wisely---which is exactly what digital life demands.
+    \end{itemize}
+    
+    \vspace{0.2em}
+    
+    \begin{center}
+        \scriptsize
+    \renewcommand{\arraystretch}{1.15}
+    \begin{tabular}{>{\raggedright}p{3cm} >{\raggedright\arraybackslash}p{8.5cm}}
+        \toprule
+        \textbf{Challenge} & \textbf{Why Virtue Ethics Helps} \\
+        \midrule
+        Rapid change & Focus on character, not outdated rules \\
+        Unpredictable effects & Cultivate wisdom for novel situations \\
+        Habit formation & Directly addresses how practices shape character \\
+        Relational complexity & Care ethics and Confucianism emphasize relationships \\
+        Loss of community & Communitarianism diagnoses fragmentation \\
+        \bottomrule
+    \end{tabular}
+    \end{center}
+\end{frame}
+
+%------------------------------------------------------
+% SLIDE 20: Discussion Questions: Virtue Ethics Foundations
+%------------------------------------------------------
+\begin{frame}{Discussion Questions: Virtue Ethics Foundations}
+    \begin{enumerate}
+        \item Aristotle says we become what we repeatedly do. What character traits are your daily technology habits cultivating? Are these the traits you want to have?
+        
+        \vspace{0.5em}
+        
+        \item  What might the ``virtuous mean'' look like for smartphone use---avoiding both the excess of constant connection and the deficiency of total disconnection?
+        
+        \vspace{0.5em}
+        
+        \item  Confucian ethics emphasizes fulfilling roles in relationships. How does technology help or hinder your ability to be a good friend, child, sibling, or citizen?
+        
+        \vspace{0.5em}
+        
+        \item Think of an activity you care about (music, sports, art, learning). How do social media platforms affect whether you pursue its internal goods (excellence) or external goods (likes, followers)?
+    \end{enumerate}
+\end{frame}
+
+%------------------------------------------------------
+% SLIDE 21: Shannon Vallor: Technology and the Virtues
+%------------------------------------------------------
+\begin{frame}{Shannon Vallor: Technology and the Virtues}
+    \begin{itemize}
+        \item \textbf{Shannon Vallor} is a philosopher of technology at the Edinburgh Futures Institute; her book \textit{Technology and the Virtues} (2016) applies virtue ethics to emerging technologies.
+        \item Vallor argues that we face a \textbf{technosocial condition}: technology and society co-evolve so rapidly that traditional moral frameworks struggle to keep pace.
+        \item She synthesizes Aristotelian, Confucian, and Buddhist virtue traditions to develop a framework of \textbf{technomoral virtues}---character traits needed to flourish with technology.
+        \item Her central claim: we cannot rely on rules or calculations alone; we need cultivated \textbf{practical wisdom} to navigate technological life well.
+    \end{itemize}
+    
+    \vspace{0.3em}
+    
+    \begin{block}{Shannon Vallor, \textit{Technology and the Virtues} (2016)}
+        ``Virtue ethics asks not `What should I do?' but `What kind of person should I become, and how?'---questions essential for beings whose characters are increasingly shaped by technological habits.''
+    \end{block}
+\end{frame}
+
+%------------------------------------------------------
+% SLIDE 22: Vallor's Twelve Technomoral Virtues
+%------------------------------------------------------
+\begin{frame}{Vallor's Twelve Technomoral Virtues}
+    \begin{itemize}
+        \item Vallor identifies \textbf{twelve technomoral virtues} that draw on multiple traditions and address the specific challenges of life with emerging technologies.
+        \item These virtues are not new inventions but classical virtues \textbf{reinterpreted} for contexts shaped by social media, AI, surveillance, and global connectivity.
+        \item The list culminates in \textbf{technomoral wisdom}---the integrating virtue that enables us to apply all others appropriately in novel technological situations.
+        \item Vallor emphasizes that these virtues must be \textbf{cultivated through practice}---they cannot be downloaded or installed like software.
+    \end{itemize}
+    
+    \vspace{0.2em}
+    
+    \begin{center}
+    \renewcommand{\arraystretch}{1.1}
+    \footnotesize
+    \begin{tabular}{>{\raggedright}p{3.5cm} >{\raggedright}p{3.5cm} >{\raggedright\arraybackslash}p{4.5cm}}
+        \toprule
+        \textbf{Self-Regarding} & \textbf{Other-Regarding} & \textbf{Integrating} \\
+        \midrule
+        Honesty & Empathy & Perspective \\
+        Self-Control & Care & Magnanimity \\
+        Humility & Civility & \textbf{Technomoral Wisdom} \\
+        Courage & Justice & \\
+        & Flexibility & \\
+        \bottomrule
+    \end{tabular}
+    \end{center}
+\end{frame}
+
+%------------------------------------------------------
+% SLIDE 23: Vallor's The AI Mirror (2024)
+%------------------------------------------------------
+\begin{frame}{Vallor's \textit{The AI Mirror} (2024)}
+    \begin{itemize}
+        \item In \textit{The AI Mirror} (2024), Vallor extends her framework to generative AI, arguing that AI is best understood as a \textbf{mirror}, not a mind.
+        \item Just as a mirror reflects your image without containing a second face, AI systems reflect patterns from human data without possessing understanding or experience.
+        \item Vallor warns that the greater danger is not superintelligent AI but \textbf{undermining our sense of ourselves} as responsible, reasoning, free intelligences.
+        \item Silicon Valley promotes a ``debased version of what we are''---viewing humans as ``soft, wet computers''---which erodes our confidence in human wisdom and agency.
+    \end{itemize}
+    
+    \vspace{0.3em}
+    
+    \begin{alertblock}{The Mirror Metaphor}
+        ``When you look in a mirror, you know there isn't a second face looking back at you from the other side of the glass. That's just a reflection of your face. There's nothing on the other side participating.''
+    \end{alertblock}
+\end{frame}
+
+%------------------------------------------------------
+% SLIDE 24: Vallor on AI and Human Wisdom
+%------------------------------------------------------
+\begin{frame}{Vallor on AI and Human Wisdom}
+    \begin{itemize}
+        \item Vallor critiques the redefinition of intelligence to mean ``performing economically valuable tasks''---this conflates competence with genuine understanding.
+        \item Large language models do not truly reason; they ``bullshit a whole chain of thought'' that can collapse into nonsense when pressed---mimicry without comprehension.
+        \item \textbf{Thinking requires experience}: ``Thinking without experience is like water without hydrogen---you've taken something out that loses its identity.''
+        \item Yet Vallor remains hopeful: technology at its core \textit{can} be humane---``We're at a moment when we need to rebuild our confidence in the capabilities of humans to reason wisely.''
+    \end{itemize}
+    
+    \vspace{0.2em}
+    
+    \begin{center}
+    \begin{tikzpicture}[
+        node distance=1.5cm,
+        box/.style={rectangle, draw=primaryblue, fill=lightgray, rounded corners, minimum width=2.8cm, minimum height=0.9cm, align=center, font=\footnotesize}
+    ]
+        \node[box] (human) {Human Intelligence\\(experience, understanding,\\responsibility)};
+        \node[box, right=2cm of human] (ai) {AI ``Intelligence''\\(pattern matching,\\mimicry, no stakes)};
+        \node[draw=none, below=0.6cm of human] (hlabel) {\footnotesize\textit{Genuine reasoning}};
+        \node[draw=none, below=0.6cm of ai] (alabel) {\footnotesize\textit{Reflection without mind}};
+        
+        \draw[thick, accentorange, <->] (human) -- node[above, font=\scriptsize] {often confused} (ai);
+    \end{tikzpicture}
+    \end{center}
+\end{frame}
+
+%------------------------------------------------------
+% SLIDE 25: Sherry Turkle: Alone Together
+%------------------------------------------------------
+\begin{frame}{Sherry Turkle: Alone Together}
+    \begin{itemize}
+        \item \textbf{Sherry Turkle} is a psychologist and professor at MIT who has studied human-technology relationships for over forty years.
+        \item In \textit{Alone Together} (2011), Turkle documents a troubling paradox: we are increasingly \textbf{connected} through devices but increasingly \textbf{alone} in meaningful human contact.
+        \item She observes a ``flight from conversation'': people prefer texting to talking, curated posts to spontaneous interaction, and controllable digital exchanges to unpredictable face-to-face encounters.
+        \item Turkle warns that we are designing technologies that offer the \textbf{illusion of companionship} without the demands of real relationship.
+    \end{itemize}
+    
+    \vspace{0.3em}
+    
+    \begin{block}{Sherry Turkle, \textit{Alone Together} (2011)}
+        ``We expect more from technology and less from each other... We are tempted to think that our little `sips' of online connection add up to a big gulp of real conversation. But they don't.''
+    \end{block}
+\end{frame}
+
+%------------------------------------------------------
+% SLIDE 26: Turkle: Reclaiming Conversation
+%------------------------------------------------------
+\begin{frame}{Turkle: Reclaiming Conversation}
+    \begin{itemize}
+        \item In \textit{Reclaiming Conversation} (2015), Turkle argues that face-to-face conversation is the most humanizing thing we do---and we are systematically abandoning it.
+        \item Conversation develops \textbf{empathy}: children learn to read faces, tolerate ambiguity, and respond to others' emotions through unstructured talk, not screens.
+        \item Turkle identifies the importance of \textbf{solitude}---the capacity to be alone with one's thoughts---which is eroded when we reach for phones at every moment of boredom.
+        \item She calls for reclaiming ``sacred spaces'' for conversation: the kitchen table, the dining room, the car, the classroom---places where phones should not intrude.
+    \end{itemize}
+    
+    \vspace{0.2em}
+    
+    \begin{center}
+    \begin{tikzpicture}[
+        node distance=1.8cm,
+        box/.style={rectangle, draw=primaryblue, fill=lightgray, rounded corners, minimum width=2.2cm, minimum height=0.7cm, align=center, font=\footnotesize}
+    ]
+        \node[box] (solitude) {Solitude\\(self-reflection)};
+        \node[box, right=of solitude] (conversation) {Conversation\\(empathy, connection)};
+        \node[box, right=of conversation] (community) {Community\\(shared meaning)};
+        
+        \draw[-{Stealth}, thick, primaryblue] (solitude) -- node[above, font=\scriptsize] {enables} (conversation);
+        \draw[-{Stealth}, thick, primaryblue] (conversation) -- node[above, font=\scriptsize] {builds} (community);
+        \draw[-{Stealth}, thick, accentorange, bend right=30] (community) to node[below, font=\scriptsize] {supports} (solitude);
+    \end{tikzpicture}
+    \end{center}
+\end{frame}
+
+%------------------------------------------------------
+% SLIDE 27: Turkle on Artificial Intimacy (2024)
+%------------------------------------------------------
+\begin{frame}{Turkle on Artificial Intimacy (2024)}
+    \begin{itemize}
+        \item In her 2024 preface to \textit{Reclaiming Conversation}, Turkle extends her analysis to AI chatbots that simulate emotional connection and understanding.
+        \item She argues that social media was our \textbf{gateway drug}: it trained us to accept mediated relationships, preparing us for ``conversations'' with machines.
+        \item AI companions offer \textbf{frictionless relationships}---always available, never demanding, endlessly patient---but this convenience comes at a cost.
+        \item Turkle invokes psychoanalyst Erik Erikson's warning about engineers who ``aren't convinced that people have an interior''---reducing humans to information processors.
+    \end{itemize}
+    
+    \vspace{0.3em}
+    
+    \begin{alertblock}{The Problem of Unrequited Love}
+        ``We nurture what we love, but we love what we nurture. We love what we allow ourselves to relate to. It's important to remember that this love is unrequited.''
+    \end{alertblock}
+\end{frame}
+
+%------------------------------------------------------
+% SLIDE 28: Turkle: What Machines Cannot Provide
+%------------------------------------------------------
+\begin{frame}{Turkle: What Machines Cannot Provide}
+    \begin{itemize}
+        \item Turkle challenges the view (held by figures like Eric Schmidt) that AI with access to ``every paper on anxiety'' could replace human therapists or friends.
+        \item Information is not understanding: ``When you tell your troubles to a machine, it has no stake in the conversation. It can't feel pain. It has no life in which you play a part.''
+        \item The \textbf{performance of emotion} does not make machines more human---but it does challenge what we think makes \textit{people} special.
+        \item Drawing on philosopher Emmanuel Levinas, Turkle emphasizes that the \textbf{human face} initiates an ethical compact---embodied presence creates obligations that screens cannot.
+    \end{itemize}
+    
+    \vspace{0.2em}
+    
+    \begin{exampleblock}{The Levinas Point}
+        For Levinas, encountering another person's face creates an immediate ethical demand: ``Here I am, responsible for you.'' A chatbot has no face, no vulnerability, no mortality---and thus makes no genuine ethical claim on us, nor we on it.
+    \end{exampleblock}
+\end{frame}
+
+%------------------------------------------------------
+% SLIDE 29: Luciano Floridi: Five Principles for AI Ethics
+%------------------------------------------------------
+\begin{frame}{Luciano Floridi: Five Principles for AI Ethics}
+    \begin{itemize}
+        \item \textbf{Luciano Floridi} is a philosopher at Yale and Oxford who developed the concepts of the ``infosphere'' and ``inforgs'' we encountered earlier.
+        \item In his ``Unified Framework of Five Principles for AI in Society'' (2019), Floridi analyzed 47 AI ethics documents and found convergence around \textbf{five core principles}.
+        \item Four principles come from \textbf{bioethics}: beneficence (do good), non-maleficence (avoid harm), autonomy (respect human choice), and justice (be fair).
+        \item Floridi adds a fifth principle specific to AI: \textbf{explicability}---combining intelligibility (``How does it work?'') with accountability (``Who is responsible?'').
+    \end{itemize}
+    
+    \vspace{0.2em}
+    
+    \begin{center}
+    \renewcommand{\arraystretch}{1.15}
+    \scriptsize
+    \begin{tabular}{>{\raggedright}p{2.8cm} >{\raggedright\arraybackslash}p{8.5cm}}
+        \toprule
+        \textbf{Principle} & \textbf{Core Question} \\
+        \midrule
+        Beneficence & Does this AI promote human wellbeing and flourishing? \\
+        Non-maleficence & Does this AI avoid causing harm to individuals or society? \\
+        Autonomy & Does this AI respect and preserve human decision-making? \\
+        Justice & Does this AI treat people fairly and avoid discrimination? \\
+        \textbf{Explicability} & Can we understand how it works and who is responsible? \\
+        \bottomrule
+    \end{tabular}
+    \end{center}
+\end{frame}
+
+%------------------------------------------------------
+% SLIDE 30: Floridi: AI as Agency Without Intelligence
+%------------------------------------------------------
+\begin{frame}{Floridi: AI as Agency Without Intelligence}
+    \begin{itemize}
+        \item Floridi describes AI as ``smart agency on tap''---systems that can \textbf{act} in the world (book flights, filter content, recommend products) without genuine understanding.
+        \item This is \textbf{agency without intelligence}: AI systems produce effects and make consequential decisions, but they don't ``know'' what they're doing in any meaningful sense.
+        \item The ethical challenge is that we are delegating more decisions to systems that cannot be held responsible, understand context, or exercise moral judgment.
+        \item Floridi's explicability principle responds to this: if AI acts without understanding, \textit{humans} must understand how it works and remain accountable for its effects.
+    \end{itemize}
+    
+    \vspace{0.3em}
+    
+    \begin{block}{The Explicability Gap}
+        Many AI systems are ``black boxes'': even their creators cannot fully explain why they produce particular outputs. This creates an \textbf{explicability gap} that threatens accountability---if no one understands how a decision was made, who is responsible when it causes harm?
+    \end{block}
+\end{frame}
+
+%------------------------------------------------------
+% SLIDE 31: Jonathan Haidt: The Anxious Generation
+%------------------------------------------------------
+\begin{frame}{Jonathan Haidt: The Anxious Generation}
+    \begin{itemize}
+        \item \textbf{Jonathan Haidt} is a social psychologist at NYU whose book \textit{The Anxious Generation} (2024) argues that smartphones and social media have caused a mental health crisis among youth.
+        \item Haidt identifies \textbf{four foundational harms} of phone-based childhood: social deprivation, sleep deprivation, attention fragmentation, and addiction.
+        \item The shift from ``play-based childhood'' to ``phone-based childhood'' (roughly 2010--2015) correlates with sharp increases in anxiety, depression, and self-harm among adolescents.
+        \item Haidt proposes concrete reforms: no smartphones before high school, no social media before 16, phone-free schools, and more unsupervised outdoor play.
+    \end{itemize}
+    
+    \vspace{0.2em}
+    
+    \begin{center}
+    \begin{tikzpicture}[
+        node distance=0.6cm,
+        harm/.style={rectangle, draw=red!70!black, fill=red!10, rounded corners, minimum width=2.8cm, minimum height=0.6cm, align=center, font=\footnotesize}
+    ]
+        \node[harm] (social) {Social Deprivation};
+        \node[harm, right=0.5cm of social] (sleep) {Sleep Deprivation};
+        \node[harm, right=0.5cm of sleep] (attention) {Attention Fragmentation};
+        \node[harm, right=0.5cm of attention] (addiction) {Addiction};
+    \end{tikzpicture}
+    \end{center}
+\end{frame}
+
+%------------------------------------------------------
+% SLIDE 32: Haidt on AI: Amplifying Existing Harms
+%------------------------------------------------------
+\begin{frame}{Haidt on AI: Amplifying Existing Harms}
+    \begin{itemize}
+        \item In a 2023 essay with Eric Schmidt, Haidt argues that AI is ``about to make social media much more toxic''---not a separate problem but an \textbf{amplifier of existing harms}.
+        \item Haidt identifies four imminent AI threats: super-empowering bad actors, drowning in fake evidence (deepfakes), accelerating polarization, and enabling new forms of harassment.
+        \item AI companions pose particular risks for young people: chatbots designed to simulate friendship and intimacy may further displace real human relationships.
+        \item Haidt's analysis shows \textbf{continuity}: the same dynamics that made social media harmful (attention capture, social comparison, displacement of real connection) are intensified by AI.
+    \end{itemize}
+    
+    \vspace{0.3em}
+    
+    \begin{alertblock}{Haidt and Schmidt (2023)}
+        ``Generative AI is going to pour gasoline on the fire of social media's harms... The same business model---capturing attention and selling it to advertisers---will now deploy far more powerful tools to keep users engaged.''
+    \end{alertblock}
+\end{frame}
+
+%------------------------------------------------------
+% SLIDE 33: Critics of Haidt: The Evidence Debate
+%------------------------------------------------------
+\begin{frame}{Critics of Haidt: The Evidence Debate}
+    \begin{itemize}
+        \item Haidt's claims have provoked significant scholarly debate; critics argue the evidence for social media causing mental health harms is weaker than he suggests.
+        \item \textbf{Candice Odgers} (UC Irvine) argues that correlations between screen time and mental health are small and inconsistent, and that Haidt overstates causation.
+        \item \textbf{Amy Orben} (Cambridge) notes that effect sizes in studies are often tiny---comparable to the ``harm'' of eating potatoes---and that moral panic may cause its own harms.
+        \item The debate matters: if Haidt is wrong, we may restrict beneficial technologies; if critics are wrong, we may fail to protect vulnerable youth from genuine harm.
+    \end{itemize}
+    
+    \vspace{0.2em}
+    
+    \begin{center}
+        \scriptsize
+    \renewcommand{\arraystretch}{1.15}
+    \begin{tabular}{>{\raggedright}p{5.5cm} >{\raggedright\arraybackslash}p{5.5cm}}
+        \toprule
+        \textbf{Haidt's Position} & \textbf{Critics' Response} \\
+        \midrule
+        Strong causal link to mental health crisis & Correlations are small and inconsistent \\
+        Smartphones are the key variable & Many factors changed simultaneously \\
+        Urgent action needed now & Moral panic may cause its own harms \\
+        Natural experiments support causation & Methodological concerns with studies \\
+        \bottomrule
+    \end{tabular}
+    \end{center}
+\end{frame}
+
+%------------------------------------------------------
+% SLIDE 34: Social Media and Political Polarization
+%------------------------------------------------------
+\begin{frame}{Social Media and Political Polarization}
+    \begin{itemize}
+        \item Social media platforms have been accused of driving \textbf{political polarization}---the widening gap between political groups and the increasing hostility between them.
+        \item \textbf{Filter bubbles} and algorithmic curation may expose users primarily to views they already hold, making opposing views seem extreme or incomprehensible.
+        \item \textbf{Outrage amplification}: content that provokes anger and moral outrage generates more engagement, so algorithms systematically promote divisive content.
+        \item The shift from broadcast media (shared national conversation) to personalized feeds means citizens increasingly live in \textbf{different information worlds}.
+    \end{itemize}
+    
+    \vspace{0.2em}
+    
+    \begin{center}
+    \begin{tikzpicture}[
+        node distance=1cm,
+        bubble/.style={ellipse, draw=primaryblue, fill=lightgray, minimum width=2.2cm, minimum height=1.2cm, align=center, font=\footnotesize}
+    ]
+        \node[bubble, fill=blue!15] (left) {Left\\Bubble};
+        \node[bubble, fill=red!15, right=2.5cm of left] (right) {Right\\Bubble};
+        \node[draw=none, below=0.3cm of left] (lsource) {\scriptsize Sources A, B, C};
+        \node[draw=none, below=0.3cm of right] (rsource) {\scriptsize Sources X, Y, Z};
+        
+        \draw[thick, accentorange, <->] (left) -- node[above, font=\scriptsize] {minimal overlap} (right);
+        \draw[dashed, primaryblue] (left) -- (lsource);
+        \draw[dashed, primaryblue] (right) -- (rsource);
+    \end{tikzpicture}
+    \end{center}
+\end{frame}
+
+%------------------------------------------------------
+% SLIDE 35: The Erosion of Shared Reality
+%------------------------------------------------------
+\begin{frame}{The Erosion of Shared Reality}
+    \begin{itemize}
+        \item Political philosopher \textbf{Hannah Arendt} argued that democratic life requires a \textbf{common world}---shared facts and frameworks that allow citizens to disagree productively.
+        \item Social media threatens this common world: when groups cannot agree on basic facts, democratic deliberation becomes impossible.
+        \item \textbf{Deepfakes} and AI-generated content accelerate this erosion---soon any image, video, or audio can be fabricated, making ``seeing is believing'' obsolete.
+        \item The result is not that everyone believes lies, but that \textbf{no one believes anything}---a cynicism that benefits those who prefer citizens disengaged and confused.
+    \end{itemize}
+    
+    \vspace{0.3em}
+    
+    \begin{block}{Hannah Arendt, \textit{The Origins of Totalitarianism} (1951)}
+        ``The ideal subject of totalitarian rule is not the convinced Nazi or the convinced Communist, but people for whom the distinction between fact and fiction... no longer exist[s].''
+    \end{block}
+\end{frame}
+
+%------------------------------------------------------
+% SLIDE 36: Virtue and Democratic Citizenship
+%------------------------------------------------------
+\begin{frame}{Virtue and Democratic Citizenship}
+    \begin{itemize}
+        \item Democratic self-government requires \textbf{civic virtues}: the character traits that enable citizens to participate thoughtfully in collective decision-making.
+        \item Classical republicans emphasized virtues like \textbf{public-spiritedness} (concern for common good over private interest), \textbf{deliberative openness} (willingness to hear other views), and \textbf{civic courage} (speaking truth even when unpopular).
+        \item Social media may erode these virtues: rewarding performance over deliberation, tribalism over public-spiritedness, and outrage over thoughtful engagement.
+        \item The question is not just ``Is social media making us unhappy?'' but ``Is it making us \textbf{worse citizens}?''
+    \end{itemize}
+    
+    \vspace{0.2em}
+    
+    \begin{center}
+        \scriptsize
+    \renewcommand{\arraystretch}{1.15}
+    \begin{tabular}{>{\raggedright}p{3.5cm} >{\raggedright\arraybackslash}p{7.5cm}}
+        \toprule
+        \textbf{Civic Virtue} & \textbf{How Social Media May Erode It} \\
+        \midrule
+        Public-spiritedness & Algorithms reward tribal loyalty over common good \\
+        Deliberative openness & Filter bubbles limit exposure to other views \\
+        Civic courage & Pile-ons and cancellation punish dissent \\
+        Truthfulness & Engagement metrics reward sensationalism \\
+        \bottomrule
+    \end{tabular}
+    \end{center}
+\end{frame}
+
+%------------------------------------------------------
+% SLIDE 37: AI as the Next Chapter in the Same Story
+%------------------------------------------------------
+\begin{frame}{AI as the Next Chapter in the Same Story}
+    \begin{itemize}
+        \item The arrival of generative AI (ChatGPT, November 2022) is not a break from the social media era but its \textbf{continuation and intensification}.
+        \item The same dynamics apply: attention capture, engagement optimization, displacement of human connection, and the erosion of skills we once cultivated.
+        \item What social media did to our \textit{social} lives---fragmenting attention, encouraging performance, substituting metrics for meaning---AI threatens to do to our \textit{intellectual} lives.
+        \item All four thinkers we've studied see this continuity: Vallor (technomoral virtues still needed), Turkle (gateway drug), Haidt (gasoline on fire), Floridi (agency without intelligence).
+    \end{itemize}
+    
+    \vspace{0.2em}
+    
+    \begin{center}
+    \begin{tikzpicture}[
+        node distance=0.8cm,
+        era/.style={rectangle, draw=primaryblue, fill=lightgray, rounded corners, minimum width=2.5cm, minimum height=1cm, align=center, font=\footnotesize},
+        arrow/.style={-{Stealth}, thick, primaryblue}
+    ]
+        \node[era] (web2) {Web 2.0\\(2004--2022)\\Social connection};
+        \node[era, right=1.5cm of web2] (ai) {Generative AI\\(2022--present)\\Intellectual tasks};
+        \node[era, right=1.5cm of ai] (future) {AI Agents?\\(near future)\\Autonomous action};
+        
+        \draw[arrow] (web2) -- node[above, font=\scriptsize] {intensifies} (ai);
+        \draw[arrow] (ai) -- node[above, font=\scriptsize] {extends} (future);
+        
+        \node[draw=none, below=0.5cm of web2, font=\scriptsize, text=accentorange] {Attention economy};
+        \node[draw=none, below=0.5cm of ai, font=\scriptsize, text=accentorange] {+ Outsourced thinking};
+        \node[draw=none, below=0.5cm of future, font=\scriptsize, text=accentorange] {+ Outsourced agency};
+    \end{tikzpicture}
+    \end{center}
+\end{frame}
+
+%------------------------------------------------------
+% SLIDE 38: AI and the Virtue of Honesty
+%------------------------------------------------------
+\begin{frame}{AI and the Virtue of Honesty}
+    \begin{itemize}
+        \item \textbf{Honesty} is a core virtue in every tradition we've studied---Aristotle's truthfulness, Confucian sincerity, religious commands against bearing false witness.
+        \item Generative AI makes deception radically easier: \textbf{deepfakes} can fabricate video of anyone saying anything; AI can generate convincing fake news at scale.
+        \item But there's a subtler threat: AI-generated content blurs the line between human and machine authorship---is submitting AI-written work as your own a form of dishonesty?
+        \item Vallor's technomoral honesty requires ``habitually presenting oneself and one's work accurately''---a virtue increasingly difficult to practice and verify in an AI-saturated world.
+    \end{itemize}
+    
+    \vspace{0.3em}
+    
+    \begin{alertblock}{The Authenticity Question}
+        When you read a heartfelt social media post, how do you know a human wrote it? When you receive a personalized message, how do you know someone actually composed it for you? AI threatens not just truth but \textbf{authenticity}---the connection between expression and genuine human intention.
+    \end{alertblock}
+\end{frame}
+
+%------------------------------------------------------
+% SLIDE 39: AI and the Intellectual Virtues
+%------------------------------------------------------
+\begin{frame}{AI and the Intellectual Virtues}
+    \begin{itemize}
+        \item The \textbf{intellectual virtues}---curiosity, careful reasoning, intellectual humility, love of truth---are capacities developed through practice and struggle.
+        \item If AI can instantly produce essays, solve problems, and answer questions, what happens to the \textbf{habits of mind} we develop by doing these things ourselves?
+        \item There's a parallel to GPS navigation: convenient, but studies show heavy GPS users develop weaker spatial reasoning and memory for routes.
+        \item The question is not whether AI is useful (it obviously can be) but whether outsourcing intellectual labor \textbf{atrophies the virtues} that labor was meant to cultivate.
+    \end{itemize}
+    
+    \vspace{0.2em}
+    
+    \begin{exampleblock}{The Student's Dilemma}
+        A student can use AI to write an essay in minutes. But the assignment existed to develop skills: organizing thoughts, constructing arguments, expressing ideas clearly. If AI does the work, the student gets the grade but misses the growth. What virtue would help navigate this tension?
+    \end{exampleblock}
+\end{frame}
+
+%------------------------------------------------------
+% SLIDE 40: AI and the Relational Virtues
+%------------------------------------------------------
+\begin{frame}{AI and the Relational Virtues}
+    \begin{itemize}
+        \item \textbf{Relational virtues}---empathy, care, compassion, fidelity---are cultivated through relationships with other humans who have their own needs, perspectives, and vulnerabilities.
+        \item AI companions offer relationships without friction: they never get tired, never disagree, never have needs of their own---but this ``ease'' may prevent virtue development.
+        \item Recall Turkle: ``When you tell your troubles to a machine, it has no stake in the conversation. It can't feel pain. It has no life in which you play a part.''
+        \item And Vallor: there is ``nothing on the other side participating''---the reciprocity that makes human relationships both difficult and morally formative is absent.
+    \end{itemize}
+    
+    \vspace{0.2em}
+    
+    \begin{center}
+        \scriptsize
+    \renewcommand{\arraystretch}{1.15}
+    \begin{tabular}{>{\raggedright}p{4cm} >{\raggedright}p{3.5cm} >{\raggedright\arraybackslash}p{3.5cm}}
+        \toprule
+        \textbf{Feature} & \textbf{Human Relationship} & \textbf{AI Companion} \\
+        \midrule
+        Availability & Limited, scheduled & Always on demand \\
+        Reciprocity & Mutual needs and care & One-directional \\
+        Friction & Disagreement, conflict & Designed to please \\
+        Stakes & Real consequences & No genuine stakes \\
+        \bottomrule
+    \end{tabular}
+    \end{center}
+\end{frame}
+
+%------------------------------------------------------
+% SLIDE 41: AI and Human Agency
+%------------------------------------------------------
+\begin{frame}{AI and Human Agency}
+    \begin{itemize}
+        \item For Aristotle, virtue requires \textbf{prohairesis}---deliberate choice---which is why we don't praise or blame people for involuntary actions or accidents.
+        \item AI systems increasingly make choices that affect our lives: what content we see, which job applicants advance, what medical treatments are recommended.
+        \item When AI makes decisions, \textbf{human agency is displaced}: we become subjects of algorithmic governance rather than authors of our own choices.
+        \item Floridi's \textbf{autonomy principle} insists that AI should preserve and enhance human decision-making, not replace it---but current systems often do the opposite.
+    \end{itemize}
+    
+    \vspace{0.2em}
+    
+    \begin{center}
+    \begin{tikzpicture}[
+        node distance=1.2cm,
+        box/.style={rectangle, draw=primaryblue, fill=lightgray, rounded corners, minimum width=3cm, minimum height=0.8cm, align=center, font=\footnotesize},
+        arrow/.style={-{Stealth}, thick}
+    ]
+        \node[box] (human) {Human Deliberation\\(weighing options)};
+        \node[box, right=2cm of human] (choice) {Choice\\(prohairesis)};
+        \node[box, right=2cm of choice] (action) {Action\\(virtue or vice)};
+        
+        \draw[arrow, primaryblue] (human) -- (choice);
+        \draw[arrow, primaryblue] (choice) -- (action);
+        
+        \node[box, below=1cm of choice, draw=accentorange, fill=accentorange!15] (ai) {AI System\\(algorithmic decision)};
+        \draw[arrow, accentorange, dashed] (ai) -- node[right, font=\scriptsize] {bypasses?} (choice);
+    \end{tikzpicture}
+    \end{center}
+\end{frame}
+
+%------------------------------------------------------
+% SLIDE 42: Can AI Systems Be Virtuous?
+%------------------------------------------------------
+\begin{frame}{Can AI Systems Be Virtuous?}
+    \begin{itemize}
+        \item Some argue we should design AI systems to be ``virtuous''---to embody honesty, fairness, care---but can a machine \textit{possess} virtues in any meaningful sense?
+        \item Aristotle's virtues require \textbf{feeling the right emotions} at the right time---courage involves feeling appropriate fear, not just acting bravely.
+        \item Vallor argues that genuine thinking requires \textbf{experience}: ``Thinking without experience is like water without hydrogen---you've taken something out that loses its identity.''
+        \item AI can \textit{simulate} virtuous behavior and produce outputs that \textit{look} virtuous, but simulation is not the same as genuine character.
+    \end{itemize}
+    
+    \vspace{0.3em}
+    
+    \begin{block}{The Simulation Problem}
+        An AI can be programmed to say kind things, but it cannot \textit{care}. It can produce fair-seeming outputs, but it has no \textit{commitment} to justice. Virtues are not just behaviors but stable dispositions rooted in understanding, emotion, and choice---things AI systems lack.
+    \end{block}
+\end{frame}
+
+%------------------------------------------------------
+% SLIDE 43: Vallor's Challenge: Collective Action
+%------------------------------------------------------
+\begin{frame}{Vallor's Challenge: Collective Action}
+    \begin{columns}[T]
+        \begin{column}{0.55\textwidth}
+            \small
+            \begin{itemize}
+                \item Vallor argues that individual virtue is necessary but not sufficient---we also need \textbf{collective action} to reshape the technological environment itself.
+                \item Personal discipline (limiting screen time, cultivating attention) helps, but platforms are \textit{designed} to undermine such discipline---willpower alone cannot win.
+                \item We need structural changes: regulations that constrain harmful business models, design standards that respect human flourishing, and institutions that support virtue cultivation.
+                \item This connects to communitarian insights: virtues are cultivated within communities and practices, not by isolated individuals resisting hostile environments.
+            \end{itemize}
+        \end{column}
+        
+        \begin{column}{0.4\textwidth}
+            \begin{center}
+            \begin{tikzpicture}[
+                scale = 0.9,
+                transform shape,
+                node distance=0.8cm,
+                level/.style={rectangle, draw=primaryblue, fill=lightgray, rounded corners, minimum width=3.5cm, minimum height=0.7cm, align=center, font=\footnotesize}
+            ]
+                \node[level] (individual) {Individual Virtue\\(personal habits, practical wisdom)};
+                \node[level, below=0.6cm of individual] (community) {Community Support\\(schools, families, institutions)};
+                \node[level, below=0.6cm of community] (structural) {Structural Change\\(regulation, design standards, policy)};
+                
+                \draw[-{Stealth}, thick, primaryblue] (individual) -- (community);
+                \draw[-{Stealth}, thick, primaryblue] (community) -- (structural);
+                \draw[-{Stealth}, thick, accentorange, bend left=60] (structural.east) to node[right, font=\scriptsize] {enables} (individual.east);
+            \end{tikzpicture}
+            \end{center}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+%------------------------------------------------------
+% SLIDE 44: Discussion Questions: Social Media, Politics, and AI
+%------------------------------------------------------
+\begin{frame}{Discussion Questions: Social Media, Politics, and AI}
+    \begin{enumerate}
+        \item  Haidt claims smartphones caused a mental health crisis; critics say the evidence is weak. How should we make policy when experts disagree? Should we err on the side of caution?
+        
+        \vspace{0.4em}
+        
+        \item  Arendt says democracy requires a ``common world'' of shared facts. Is this still possible in an age of personalized feeds and AI-generated content? What would it take to rebuild?
+        
+        \vspace{0.4em}
+        
+        \item If AI can write your essays and solve your problems, how do you develop the intellectual virtues those tasks were meant to cultivate? Is there a virtuous way to use AI for learning?
+        
+        \vspace{0.4em}
+        
+        \item Vallor says individual virtue isn't enough---we need structural change. But structural change requires political action, which requires virtuous citizens. How do we escape this circle?
+    \end{enumerate}
+\end{frame}
+
+%------------------------------------------------------
+% SLIDE 45: What Virtue Traditions Teach Us
+%------------------------------------------------------
+\begin{frame}{What Virtue Traditions Teach Us}
+    \begin{itemize}
+        \item \textbf{Aristotle} teaches that character is formed by habits---our repeated digital practices are shaping who we become, whether we intend it or not.
+        \item \textbf{Confucius} reminds us that virtue is relational---we must ask how technology affects our ability to fulfill our roles and obligations to others.
+        \item \textbf{Care ethics} emphasizes attention and responsiveness to particular others---qualities threatened by distraction and algorithmic mediation.
+        \item \textbf{Communitarians} warn that virtues require supportive communities and practices---isolated individuals cannot cultivate character against hostile environments.
+    \end{itemize}
+    
+    \vspace{0.2em}
+    
+    \begin{center}
+    \renewcommand{\arraystretch}{1.15}
+    \begin{tabular}{>{\raggedright}p{3cm} >{\raggedright\arraybackslash}p{8cm}}
+        \toprule
+        \textbf{Tradition} & \textbf{Key Insight for Digital Life} \\
+        \midrule
+        Aristotelian & Habits form character; choose digital habits wisely \\
+        Confucian & Virtue is relational; technology affects all our roles \\
+        Care Ethics & Attention to particular others requires presence \\
+        Communitarian & We need communities that support virtue cultivation \\
+        \bottomrule
+    \end{tabular}
+    \end{center}
+\end{frame}
+
+%------------------------------------------------------
+% SLIDE 46: Virtues for the Digital Age
+%------------------------------------------------------
+\begin{frame}{Virtues for the Digital Age}
+    \begin{itemize}
+        \item The classical virtues remain essential---honesty, courage, justice, practical wisdom---but our technological context gives them new applications and urgency.
+        \item \textbf{Attention} emerges as a crucial virtue: the capacity to focus, to be present, to resist the constant pull of notifications and feeds.
+        \item \textbf{Patience} and \textbf{tolerance for friction} counter the demand for instant gratification---meaningful things often require sustained effort and discomfort.
+        \item \textbf{Humility} about our own knowledge becomes vital when AI can produce confident-sounding nonsense and filter bubbles confirm our biases.
+    \end{itemize}
+    
+    \vspace{0.2em}
+    
+    \begin{center}
+    \begin{tikzpicture}[
+        node distance=0.5cm,
+        virtue/.style={rectangle, draw=primaryblue, fill=primaryblue!15, rounded corners, minimum width=2.3cm, minimum height=0.6cm, align=center, font=\footnotesize}
+    ]
+        \node[virtue] (honesty) {Honesty};
+        \node[virtue, right=0.4cm of honesty] (courage) {Courage};
+        \node[virtue, right=0.4cm of courage] (justice) {Justice};
+        \node[virtue, right=0.4cm of justice] (wisdom) {Practical Wisdom};
+        
+        \node[virtue, below=0.5cm of honesty, fill=accentorange!20, draw=accentorange] (attention) {Attention};
+        \node[virtue, below=0.5cm of courage, fill=accentorange!20, draw=accentorange] (patience) {Patience};
+        \node[virtue, below=0.5cm of justice, fill=accentorange!20, draw=accentorange] (humility) {Humility};
+        \node[virtue, below=0.5cm of wisdom, fill=accentorange!20, draw=accentorange] (civic) {Civic Virtue};
+        
+        \node[draw=none, left=0.3cm of honesty, font=\scriptsize] {Classical:};
+        \node[draw=none, left=0.3cm of attention, font=\scriptsize, text=accentorange] {Emphasized:};
+    \end{tikzpicture}
+    \end{center}
+\end{frame}
+
+%------------------------------------------------------
+% SLIDE 47: Looking Ahead: Reclaiming Friction
+%------------------------------------------------------
+\begin{frame}{Looking Ahead: Reclaiming Friction}
+    \begin{itemize}
+        \item Emerging technologies---AI agents, brain-computer interfaces, immersive virtual worlds---will intensify the challenges we've discussed, not resolve them.
+        \item The temptation will be to embrace ever more seamless, frictionless experiences---but friction is often where growth, meaning, and virtue are forged.
+        \item Turkle calls us to reclaim ``sacred spaces'' for unmediated human connection: meals without phones, classrooms without screens, conversations without interruption.
+        \item The goal is not to reject technology but to \textbf{use it wisely}---with the practical wisdom to know when convenience serves flourishing and when it undermines it.
+    \end{itemize}
+    
+    \vspace{0.3em}
+    
+    \begin{block}{The Case for Friction}
+        Learning is hard. Relationships are messy. Thinking takes time. Democracy requires patience. These difficulties are not bugs to be engineered away but \textbf{features} of a meaningful human life. The virtuous response to technology is not rejection but \textbf{wise integration}---preserving the friction that makes us grow.
+    \end{block}
+\end{frame}
+
+%------------------------------------------------------
+% SLIDE 48: Final Reflection: Who Do You Want to Become?
+%------------------------------------------------------
+\begin{frame}{Final Reflection: Who Do You Want to Become?}
+    \begin{itemize}
+        \item Virtue ethics asks not ``What should I do right now?'' but ``What kind of person am I becoming through my choices and habits?''
+        \item Every time you reach for your phone, scroll a feed, ask an AI to write for you, or choose a screen over a face---you are forming your character.
+        \item The thinkers we've studied---Vallor, Turkle, Haidt, Floridi---offer not despair but a challenge: to cultivate the wisdom our technological moment demands.
+        \item The question is not whether to use technology, but \textbf{how to use it in ways that help you flourish} as the person you want to become.
+    \end{itemize}
+    
+    \vspace{0.3em}
+    
+    \begin{exampleblock}{Questions for Reflection}
+        \begin{enumerate}
+            \item What digital habits do you have that you're proud of? Which ones concern you?
+            \item What would ``technomoral wisdom'' look like in your daily life?
+            \item What is one concrete change you could make this week to better align your technology use with the person you want to become?
+        \end{enumerate}
+    \end{exampleblock}
 \end{frame}
 
 \end{document}
