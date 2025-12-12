@@ -2384,10 +2384,14 @@
     <bcf:citekey order="8" intorder="1">pariser_filter_bubble</bcf:citekey>
     <bcf:citekey order="9" intorder="1">pew_teens_2024</bcf:citekey>
     <bcf:citekey order="10" intorder="1">konrath_empathy_decline</bcf:citekey>
-    <bcf:citekey order="11" intorder="1">woods_scott_sleep</bcf:citekey>
-    <bcf:citekey order="12" intorder="1">orben_przybylski</bcf:citekey>
-    <bcf:citekey order="13" intorder="1">odgers_anxious_review</bcf:citekey>
-    <bcf:citekey order="14" intorder="1">brown_critique</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">pew_teens_2024</bcf:citekey>
+    <bcf:citekey order="12" intorder="1">who_europe_2024</bcf:citekey>
+    <bcf:citekey order="13" intorder="1">who_europe_2024</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">woods_scott_sleep</bcf:citekey>
+    <bcf:citekey order="15" intorder="1">gallup_institutions_2024</bcf:citekey>
+    <bcf:citekey order="16" intorder="1">haidt_anxious_generation</bcf:citekey>
+    <bcf:citekey order="17" intorder="1">odgers_anxious_review</bcf:citekey>
+    <bcf:citekey order="18" intorder="1">brown_critique</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">
