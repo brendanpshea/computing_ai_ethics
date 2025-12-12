@@ -2386,6 +2386,8 @@
     <bcf:citekey order="10" intorder="1">konrath_empathy_decline</bcf:citekey>
     <bcf:citekey order="11" intorder="1">woods_scott_sleep</bcf:citekey>
     <bcf:citekey order="12" intorder="1">orben_przybylski</bcf:citekey>
+    <bcf:citekey order="13" intorder="1">odgers_anxious_review</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">brown_critique</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">
