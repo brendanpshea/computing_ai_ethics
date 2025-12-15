@@ -1,0 +1,8 @@
+[0] Config.pm:328> INFO - This is Biber 2.21
+[0] Config.pm:331> INFO - Logfile is 'PDFs/ai_ethics_03_free_speech.blg'
+[126] biber-MSWIN64:342> INFO - === 
+[177] Biber.pm:421> INFO - Reading 'PDFs/ai_ethics_03_free_speech.bcf'
+[314] Biber.pm:1002> INFO - Found 10 citekeys in bib section 0
+[329] Biber.pm:4487> INFO - Processing section 0
+[343] Biber.pm:4678> INFO - Looking for bibtex file 'refs.bib' for section 0
+[451] bibtex.pm:1713> INFO - LaTeX decoding ...
