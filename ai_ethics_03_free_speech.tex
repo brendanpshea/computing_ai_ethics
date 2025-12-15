@@ -20,6 +20,10 @@
 \usepackage{hyperref}
 \usepackage{csquotes}
 
+% References
+\usepackage[backend=biber,style=authoryear]{biblatex}
+\addbibresource{refs.bib}
+
 % TikZ and libraries
 \usepackage{tikz}
 \usetikzlibrary{shapes.geometric, arrows.meta, positioning, calc, backgrounds, fit, decorations.pathreplacing, shadows, mindmap, trees}
@@ -128,7 +132,7 @@
 %------------------------------------------------------
 \begin{frame}{Mill's Harm Principle}
     \begin{itemize}
-        \item The philosopher John Stuart Mill articulated the most influential liberal framework for free speech in his 1859 work \textit{On Liberty}.
+        \item The philosopher John Stuart Mill articulated the most influential liberal framework for free speech in his 1859 work \textit{On Liberty} \parencite*{mill1859liberty}.
         \item Mill's \textbf{harm principle} holds that the only legitimate reason for society to restrict an individual's liberty is to prevent harm to others---not to protect the individual from themselves or to enforce moral conformity.
         \item According to Mill, the fact that others find your speech offensive, immoral, or wrong is never sufficient justification for silencing you.
         \item This principle places the \textbf{burden of proof} on those who would restrict speech: they must demonstrate that the speech causes genuine harm to others, not merely that it is disagreeable or unpopular.
@@ -215,7 +219,7 @@
 %------------------------------------------------------
 \begin{frame}{The Rawls/Dworkin Approach: A Different Foundation}
     \begin{itemize}
-        \item Philosophers John Rawls and Ronald Dworkin offer a different justification for free speech that focuses on \textbf{equal dignity and respect} rather than on the good consequences of open debate.
+        \item Philosophers John Rawls \parencite*{rawls1971theory, rawls1993political} and Ronald Dworkin \parencite*{dworkin1996freedoms} offer a different justification for free speech that focuses on \textbf{equal dignity and respect} rather than on the good consequences of open debate.
         \item While Mill's argument is \textbf{consequentialist}---free speech is valuable because it produces good outcomes like truth and progress---the Rawls/Dworkin approach is \textbf{rights-based}.
         \item On this view, free speech is not just useful; it is \textit{required} by the basic moral principle that all persons deserve equal respect as autonomous agents capable of forming their own views.
         \item This means free speech protections don't depend on proving that the ``marketplace of ideas'' actually works---they follow directly from respecting persons as equals.
@@ -310,7 +314,7 @@
 \begin{frame}{The Case for Restricting Hate Speech}
     \begin{itemize}
         \item Defenders of hate speech restrictions argue that such speech causes serious \textbf{dignitary harm} by denying the equal moral standing of targeted groups.
-        \item Philosopher Jeremy Waldron argues that hate speech functions as \textbf{group defamation}---undermining the public assurance of equal citizenship.
+        \item Philosopher Jeremy Waldron \parencite*{waldron2012} argues that hate speech functions as \textbf{group defamation}---undermining the public assurance of equal citizenship.
         \item Perhaps most seriously, hate speech may lead to \textbf{physical violence} by normalizing hatred and dehumanizing targets---a pattern visible in genocides from the Holocaust to Rwanda.
     \end{itemize}
     
@@ -564,7 +568,7 @@
 %------------------------------------------------------
 \begin{frame}{MacKinnon's Feminist Critique}
     \begin{itemize}
-        \item Legal scholar \textbf{Catharine MacKinnon} reframed the pornography debate by arguing that the real harm is not moral corruption but \textbf{the subordination of women}.
+        \item Legal scholar \textbf{Catharine MacKinnon} \parencite*{mackinnon1987feminism, mackinnon1989toward, mackinnon1993only} reframed the pornography debate by arguing that the real harm is not moral corruption but \textbf{the subordination of women}.
         \item MacKinnon argues that pornography functions as a \textbf{speech act}: it doesn't merely express ideas about women but actually \textit{does} something---it defines them as objects existing for male pleasure.
         \item On this view, pornography \textbf{silences women} by shaping how their speech is heard: when a woman says ``no,'' pornography has trained viewers to interpret refusal as part of a sexual script.
         \item This challenges the liberal framework directly: if pornography itself causes harm and silencing, then restricting it doesn't limit free speech---it \textit{enables} speech.
@@ -827,7 +831,7 @@
 %------------------------------------------------------
 \begin{frame}{Platforms as the ``New Governors''}
     \begin{itemize}
-        \item Legal scholar Kate Klonick describes major platforms as \textbf{``the new governors''}---private companies that now make more decisions about permissible speech than any government.
+        \item Legal scholar Kate Klonick \parencite*{klonick2018governors} describes major platforms as \textbf{``the new governors''}---private companies that now make more decisions about permissible speech than any government.
         \item Unlike governments, platforms are not bound by the First Amendment; they can restrict speech for any reason, without due process.
         \item This raises a fundamental tension: we rely on private companies to host public discourse, yet they have no democratic accountability.
     \end{itemize}
@@ -856,7 +860,7 @@
 %------------------------------------------------------
 \begin{frame}{Section 230: The Law That Built the Internet}
     \begin{itemize}
-        \item \textbf{Section 230} of the Communications Decency Act (1996) states that platforms are not legally responsible for content posted by users---they are treated as distributors, not publishers.
+        \item \textbf{Section 230} of the Communications Decency Act \parencite*{cda230} states that platforms are not legally responsible for content posted by users---they are treated as distributors, not publishers.
         \item This ``safe harbor'' allowed platforms to grow without facing lawsuits for every defamatory, harmful, or illegal post made by their billions of users.
         \item Section 230 also protects platforms' right to moderate content without becoming liable for everything they miss---enabling them to remove some harmful content without assuming responsibility for all of it.
         \item Critics from both left and right now argue Section 230 should be reformed: conservatives claim platforms censor their views unfairly, while progressives argue platforms profit from hosting harmful content.
@@ -1039,6 +1043,10 @@
     \begin{block}{The Ongoing Conversation}
         Free speech online isn't a problem to be solved once; it's a challenge to be navigated continuously as technology evolves, norms shift, and new harms emerge. Your generation will shape what comes next.
     \end{block}
+\end{frame}
+
+\begin{frame}[allowframebreaks]{References}
+    \printbibliography
 \end{frame}
 
 \end{document}
