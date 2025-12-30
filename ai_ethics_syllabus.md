@@ -1,6 +1,6 @@
 # Computing & AI Ethics 🤖
 
-**PHIL 1150-71 | Fall 2025**
+**PHIL 1150-71 | Spring 2026**
 
 ## Course Information
 
