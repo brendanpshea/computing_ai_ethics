@@ -153,22 +153,11 @@ This course contributes to meeting the following RCTC Core Learning Outcome(s):
 
 Your final grade is a weighted average of the following:
 
-**Annotated Lectures/Quizzes and Short Essays on Perusall (50% total)**
-- Annotated Lectures/Quizzes: 25%
-- Short Essays: 25%
+**Lectures, Readings, and Quizzes on Perusall (30% total).** You'll receive credit for engaging with lectures and case studies on [www.perusall.com](http://www.perusall.com). Grading is based on a combination of (1) time spent actively working on the assignment, (2) number and quality of comments, and (3) score on the final quiz.
 
-You'll receive credit for engaging with lectures and case studies on [www.perusall.com](http://www.perusall.com). To get full credit, you should do the following for each assignment:
+**Midterm and Final Exams (50% total).**  These are the exams for the course. You'll have two hours to complete each. You'll need a computer with a **webcam** to take these.
 
-- Spend at least two hours actively reading, watching, and commenting
-- Leave at least SEVEN high-quality comments/annotations (either of your own, or in response to others)
-- Interact with your classmates (respond to them! Like their comments!)
-- Complete the quiz
-- Write a short essay (around 500 words) in response
-- **Note:** Lectures/quizzes are due THURSDAY, while short essays are due the NEXT MONDAY
-
-**Midterm and Final Exams (50% total)**
-
-These are the exams for the course. You'll have two hours to complete each. You'll need a computer with a **webcam** to take these.
+**Presentation (20% total)**. Near the end of the semester, you'll be designing and delvering your own 20-minute "lesson" on a topic related to AI and Computing Ethics. 
 
 ### Plagiarism and Academic Integrity ⚖️ 
 
@@ -186,32 +175,12 @@ Students in face-to-face classes should attend class regularly, while online stu
 
 Perusall is a digital platform that we're using to enhance your learning. It allows you to collaboratively annotate readings and engage with your classmates and me. The goal is to make reading more interactive and to deepen your understanding of the material.
 
-### What is Perusall and Why We Are Using It
-
-Perusall allows you to annotate readings and discuss them with others. We're using it because it encourages active reading, critical thinking, and class participation. It's a way for everyone to share insights and questions about the readings.
-
-### How to Access Perusall
-
 You'll access Perusall through links provided in our D2L-Brightspace course. Once you click on these links, you'll be directed to the readings assigned for our class.
-
-### Completing Assignments
 
 For each reading, you\'ll need to post annotations. These can be
 questions, comments, replies to comments of others, or reflections. Make
 sure to read others\' annotations, too, and respond when you can. This
 is part of your active participation.
-
-### Grading Criteria
-
-Your work on Perusall (out of 3 points) will be graded based mainly on three criteria:
-
-- **Quality of Annotations:** Insightful, relevant comments and questions. Aim for at least SEVEN high-quality annotations (of a few sentences each).
-
-- **Active Time:** The time you spend reading and annotating. Aim for at least TWO hours per assignment, and make sure to do the whole reading (or watch the whole video, etc.).
-
-- **Interaction:** How you engage with your classmates' annotations. Responding to others (and having others respond to you) can increase your grade. (Though this isn't as important as the first two).
-
-Remember, Perusall is a space for constructive and respectful academic discussion. Your engagement here is a vital part of your learning.
 
 ## Policy on Late Work ⏰
 
@@ -219,23 +188,15 @@ Remember, Perusall is a space for constructive and respectful academic discussio
 
 If you miss a quiz or activity due to a brief sickness, work conflict, class trip, computer malfunction, wedding, auto problem, court date, funeral, sporting event, etc., you do NOT need to email me (though it's okay if you want to give me a heads up). Here are my policies for making up missed or late work:
 
-1. Quizzes can be submitted up to two days late, with no loss of credit.
+Perusall reading assignments can be submitted up to two days late for reduced credit. Credit declines "linearly" (basically, if you submit it one minute late, you get 99.9% of the credit; if you submit it 1.5 days late, you'll get almost no credit).
 
-2. Perusall reading assignments can be submitted up to two days late for reduced credit. Credit declines "linearly" (basically, if you submit it one minute late, you get 99.9% of the credit; if you submit it 1.5 days late, you'll get almost no credit).
+Exams cannot be taken late without explicit permission from me, and should be for a good reason; late exams (if allowed) will receive reduced credit. 
 
 **I will make exceptions to these policies if you can demonstrate a genuine need.** Please talk to me if anything comes up that is preventing you from succeeding in class.
 
 ## Getting in Touch with Me 📧
 
 The best way to get ahold of me is by email, which I will aim to respond to within ONE working day (for simple questions) or TWO working days (for more complex ones). I don't generally check email on the weekends or holidays. If you don't hear from me by then, please try emailing me again. To help me provide you with quick, effective feedback, here's a general template for what I expect in an email.
-
-### Email Template
-
-*Dear Brendan (or Professor Shea):*
-
-*My name is [full name], and I'm a student in [this section] of [this class]. I had a question regarding [identify homework problem, textbook chapter, etc. Be specific and include a copy of anything I might need to answer your question, including the full problem text]. Here's everything I've tried so far to figure out the answer for myself [looked at the syllabus, notes, textbook, etc.], and here's my best guess as to the answer. Could you help me by doing the following? [Be specific in what you are asking me to do.] [Feel free to include anything else you'd like here. I'm always happy when students send along ideas/links/whatever vaguely relating to logic and philosophy!]*
-
-As a rule, I will not respond to emails asking me to exempt you from class policies without excellent reason (e.g., for late-work extensions outside the conditions outlined above) or emails that lack basic information (your full name, class, etc.). For long or complex questions, I highly encourage you to schedule an appointment so that we can talk (either in person, by phone, or via Zoom).
 
 ## Course Calendar 📅 
 
