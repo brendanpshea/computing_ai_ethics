@@ -200,11 +200,24 @@ The best way to get ahold of me is by email, which I will aim to respond to with
 
 ## Course Calendar 📅 
 
-The following calendar indicates the due dates for each assignment. I will let you know about any changes via D2L.
+The course schedule will be posted on D2L. Here is an overview of the topics we'll be covering week-by-week:
 
-**Note:** The course schedule will be posted on D2L. Generally:
-- Perusall readings and lecture quizzes are due on **Thursdays**
-- Short essays are due the following **Monday**
+- Week 1 - Syllabus
+- Week 2 - Lecture 1: Intro and History
+- Week 3 - Lecture 2: Technology and Virtues
+- Week 4 - Lecture 3: Free Speech Online
+- Week 5 - Lecture 4: Owning Ideas
+- Week 6 - Lecture 5: Digital Cash
+- Week 7 - Lecture 6: Surveillance 
+- Week 8 - Exam 1
+- Week 9 - Lecture 7 - Overview and History of AI
+- Week 10 - Lecture 8 - Ethical Issues with Predictive AI
+- Week 11 - Lecture 9 - Ethical Issues wih Generative AI
+- Week 12 - Lecture 10 - AI and the End of the World
+- Week 13 - Lecture 11 - Robot Rights
+- Week 14 - Lecture 12 - Games and Ethics
+- Week 15 - Exam 2
+- Week 16 - Work on Project 
 
 ---
 
