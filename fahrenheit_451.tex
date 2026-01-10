@@ -1,0 +1,471 @@
+\documentclass[aspectratio=169]{beamer}
+\usepackage{graphicx}
+\usepackage{tikz}
+
+% ============================================
+% 1953 PULP PAPERBACK THEME
+% Inspired by vintage sci-fi book covers
+% ============================================
+
+% --- Color Palette ---
+\definecolor{pulpCream}{HTML}{F5E6C8}
+\definecolor{pulpOrange}{HTML}{E85D04}
+\definecolor{pulpRed}{HTML}{9D0208}
+\definecolor{pulpBlack}{HTML}{1A1A1A}
+\definecolor{pulpBrown}{HTML}{3D2B1F}
+\definecolor{pulpYellow}{HTML}{FFBA08}
+
+% --- Base Theme ---
+\usetheme{default}
+\usecolortheme{default}
+
+% --- Fonts ---
+% Using default fonts that work with xelatex
+
+% --- Remove Navigation ---
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}{}
+
+% --- Background ---
+\setbeamercolor{background canvas}{bg=pulpCream}
+
+% --- Frame Title Styling ---
+\setbeamercolor{frametitle}{fg=pulpCream, bg=pulpRed}
+\setbeamerfont{frametitle}{size=\Large, series=\bfseries}
+\setbeamertemplate{frametitle}{
+    \vspace{-1pt}
+    \begin{beamercolorbox}[wd=\paperwidth, ht=1.2cm, dp=0.4cm, leftskip=0.5cm]{frametitle}
+        \usebeamerfont{frametitle}\insertframetitle
+    \end{beamercolorbox}
+}
+
+% --- Item Styling ---
+\setbeamertemplate{itemize items}{\textcolor{pulpOrange}{\textbullet}}
+\setbeamertemplate{itemize subitem}{\textcolor{pulpRed}{\textbullet}}
+\setbeamercolor{item}{fg=pulpBlack}
+\setbeamercolor{itemize item}{fg=pulpOrange}
+\setbeamerfont{itemize/enumerate body}{size=\normalsize}
+
+% --- Text Colors ---
+\setbeamercolor{normal text}{fg=pulpBrown}
+\setbeamercolor{structure}{fg=pulpRed}
+
+% --- Block Styling ---
+\setbeamercolor{block title}{fg=pulpCream, bg=pulpOrange}
+\setbeamercolor{block body}{fg=pulpBrown, bg=pulpCream!80!white}
+\setbeamerfont{block title}{series=\bfseries}
+
+% --- Alert/Emphasis ---
+\setbeamercolor{alerted text}{fg=pulpRed}
+\newcommand{\fire}[1]{\textcolor{pulpOrange}{\textbf{#1}}}
+\newcommand{\hot}[1]{\textcolor{pulpRed}{\textbf{#1}}}
+
+% ============================================
+% DOCUMENT BEGINS
+% ============================================
+
+\begin{document}
+
+% ============================================
+% TITLE SLIDE - Custom Layout
+% ============================================
+{
+\setbeamercolor{background canvas}{bg=pulpBlack}
+\begin{frame}[plain]
+\begin{tikzpicture}[remember picture, overlay]
+    % Flame accent bar at top
+    \fill[pulpOrange] (current page.north west) rectangle ([yshift=-1.5cm]current page.north east);
+    \fill[pulpRed] ([yshift=-1.5cm]current page.north west) rectangle ([yshift=-2cm]current page.north east);
+    
+    % Flame accent bar at bottom
+    \fill[pulpRed] (current page.south west) rectangle ([yshift=0.5cm]current page.south east);
+    \fill[pulpOrange] ([yshift=0.5cm]current page.south west) rectangle ([yshift=1cm]current page.south east);
+    
+    % Title
+    \node[anchor=center, text=pulpCream, font=\fontsize{42}{48}\selectfont\bfseries] 
+        at ([yshift=1.5cm]current page.center) {FAHRENHEIT 451};
+    
+    % Subtitle
+    \node[anchor=center, text=pulpOrange, font=\Large\bfseries] 
+        at ([yshift=0.2cm]current page.center) {TECHNOLOGY, CENSORSHIP \& THE LIFE OF THE MIND};
+    
+    % Decorative line
+    \draw[pulpYellow, line width=2pt] ([yshift=-0.5cm, xshift=-4cm]current page.center) -- ([yshift=-0.5cm, xshift=4cm]current page.center);
+    
+    % Course info
+    \node[anchor=center, text=pulpCream, font=\normalsize] 
+        at ([yshift=-1.3cm]current page.center) {PHIL 1150: Computing and AI Ethics};
+    
+    % "Book cover" style tagline
+    \node[anchor=center, text=pulpYellow, font=\small\itshape] 
+        at ([yshift=-2.5cm]current page.center) {``I wasn't trying to predict the future. I was trying to prevent it.''};
+    \node[anchor=center, text=pulpCream, font=\footnotesize] 
+        at ([yshift=-3cm]current page.center) {--- Ray Bradbury};
+\end{tikzpicture}
+\end{frame}
+}
+
+% ============================================
+% SLIDE 2: Meet Ray Bradbury
+% ============================================
+\begin{frame}{MEET RAY BRADBURY (1920--2012)}
+\begin{columns}[T]
+\begin{column}{0.65\textwidth}
+\begin{itemize}
+    \item \hot{Self-educated writer} who couldn't afford college and educated himself at public libraries.
+    \item Prolific author of science fiction, fantasy, horror, and mystery---over 600 short stories published.
+    \item Not primarily a ``tech pessimist''---he \fire{loved imagination} and feared the \emph{misuse} of technology.
+    \item Refused to drive a car; took buses everywhere.
+    \item Wrote \emph{Fahrenheit 451} on a rented typewriter in a UCLA library basement---10 cents for 30 minutes.
+\end{itemize}
+\end{column}
+\begin{column}{0.3\textwidth}
+\includegraphics[width=\textwidth]{images/ray_bradbury.jpg}
+\end{column}
+\end{columns}
+\end{frame}
+
+% ============================================
+% SLIDE 3: Cultural Context
+% ============================================
+{
+\setbeamercolor{background canvas}{bg=pulpRed}
+\setbeamercolor{frametitle}{fg=pulpCream, bg=pulpBlack}
+\setbeamercolor{normal text}{fg=pulpCream}
+\begin{frame}{CULTURAL CONTEXT: 1950s AMERICA}
+\usebeamercolor[fg]{normal text}
+\textbf{\textcolor{pulpYellow}{Cold War Anxieties}}\\[0.1cm]
+McCarthyism dominated American politics---loyalty oaths, blacklists, and fear of ``un-American'' ideas created a culture of conformity and suspicion.\\[0.35cm]
+
+\textbf{\textcolor{pulpYellow}{Rise of Television}}\\[0.1cm]
+TV ownership exploded from 9\% of households (1950) to 87\% (1960). Critics worried about passive consumption replacing active reading and civic engagement.\\[0.35cm]
+
+\textbf{\textcolor{pulpYellow}{Memory of Book Burnings}}\\[0.1cm]
+Nazi book burnings of the 1930s remained vivid in public memory---a visceral symbol of totalitarian thought control.\\[0.35cm]
+
+\textbf{\textcolor{pulpYellow}{Atomic Age Fears}}\\[0.1cm]
+The bomb demonstrated technology's capacity for total destruction. Could technology save us---or end us?
+\end{frame}
+}
+
+% ============================================
+% SLIDE 4: McCarthyism & HUAC
+% ============================================
+\begin{frame}{McCARTHYISM \& THE WITCH HUNTS}
+\begin{columns}[T]
+\begin{column}{0.55\textwidth}
+\small
+\textbf{\textcolor{pulpRed}{House Un-American Activities Committee}}\\[0.05cm]
+By 1947, HUAC was targeting Hollywood writers and actors suspected of Communist sympathies. Careers destroyed on rumor alone.\\[0.2cm]
+
+\textbf{\textcolor{pulpRed}{Senator Joseph McCarthy}}\\[0.05cm]
+In 1950, claimed Communists had infiltrated government. His name became synonymous with \fire{baseless accusations} and \fire{guilt by association}.\\[0.2cm]
+
+\textbf{\textcolor{pulpRed}{The ``Hollywood Ten''}}\\[0.05cm]
+Writers who refused to ``name names'' were jailed and blacklisted.\\[0.15cm]
+\textit{Arthur Miller's \textbf{The Crucible} (1953) used Salem witch trials as allegory for McCarthyism.}
+\end{column}
+\begin{column}{0.42\textwidth}
+\begin{block}{Echoes in F451}
+\begin{itemize}
+    \item Anonymous tip cards trigger raids
+    \item Neighbors inform on neighbors
+    \item Intellectuals hunted and exiled
+    \item Thinking = suspicious behavior
+    \item Mechanical Hound as secret police
+\end{itemize}
+\end{block}
+\end{column}
+\end{columns}
+\end{frame}
+
+% ============================================
+% SLIDE 5: The Novel's Origin
+% ============================================
+\begin{frame}{THE NOVEL'S ORIGIN}
+\begin{itemize}
+    \item Published in \hot{1953}; expanded from the short story ``The Fireman'' (1951).
+    \item Written in the \fire{UCLA library basement} on a pay typewriter---a nickel bought you 30 minutes of typing time.
+    \item Bradbury spent about \$9.80 total---roughly nine days of writing.
+    \item The title refers to the supposed \hot{auto-ignition temperature of paper} (though the actual science is more complicated).
+    \item Originally published as a paperback original by Ballantine Books---pulp fiction for the masses.
+\end{itemize}
+
+\vspace{0.5cm}
+\begin{block}{A Book About Books}
+There's something poetic about a book defending the life of the mind being written in a library, surrounded by the very things the novel fights to protect.
+\end{block}
+\end{frame}
+
+% ============================================
+% SLIDE 5: Premise
+% ============================================
+{
+\setbeamercolor{background canvas}{bg=pulpBlack}
+\setbeamercolor{frametitle}{fg=pulpOrange, bg=pulpBlack}
+\setbeamercolor{normal text}{fg=pulpCream}
+\begin{frame}{THE PREMISE}
+\usebeamercolor[fg]{normal text}
+In a future America, \textbf{\textcolor{pulpOrange}{books are banned}}.\\[0.35cm]
+``Firemen'' don't put out fires---they \textbf{\textcolor{pulpRed}{start them}}, burning books and the houses that hide them.\\[0.35cm]
+\textbf{\textcolor{pulpYellow}{Guy Montag}} is a fireman who has never questioned his work---until he meets a strange young woman who asks him if he's \emph{happy}.\\[0.35cm]
+Society is saturated with \textbf{\textcolor{pulpOrange}{interactive screens}}, immersive entertainment, and endless shallow stimulation.\\[0.35cm]
+The question isn't just ``who banned the books?''\\[0.2cm]
+It's ``\textbf{\textcolor{pulpYellow}{why did people let them go?}}''
+\end{frame}
+}
+
+% ============================================
+% SLIDE 7: Key Quote - Beatty's Speech
+% ============================================
+{
+\setbeamercolor{background canvas}{bg=pulpBlack}
+\setbeamercolor{frametitle}{fg=pulpYellow, bg=pulpBlack}
+\setbeamercolor{normal text}{fg=pulpCream}
+\begin{frame}{BEATTY EXPLAINS IT ALL}
+\usebeamercolor[fg]{normal text}
+\small
+Captain Beatty---the fire chief who \emph{knows} literature---explains how books came to be banned:\\[0.3cm]
+
+\textcolor{pulpOrange}{``Bigger the population, the more minorities. Don't step on the toes of the dog lovers, the cat lovers, doctors, lawyers, merchants, chiefs, Mormons, Baptists, Unitarians, second-generation Chinese, Swedes, Italians, Germans, Texans, Brooklynites, Irishmen, people from Oregon or Mexico. The bigger your market, Montag, the less you handle controversy, remember that! Authors, full of evil thoughts, lock up your typewriters. They did.''}\\[0.3cm]
+
+\textcolor{pulpYellow}{``We must all be alike. Not everyone born free and equal, as the Constitution says, but everyone \textbf{made} equal. Each man the image of every other; then all are happy, for there are no mountains to make them cower, to judge themselves against. So! A book is a loaded gun in the house next door. Burn it.''}\\[0.2cm]
+
+\hfill\textit{--- Captain Beatty, Part One}
+\end{frame}
+}
+
+% ============================================
+% SLIDE 8: Key Quote - Clarisse & Happiness
+% ============================================
+\begin{frame}{``ARE YOU HAPPY?''}
+\small
+\begin{columns}[T]
+\begin{column}{0.48\textwidth}
+\textbf{\textcolor{pulpRed}{Clarisse's Question}}\\[0.1cm]
+\textit{``Are you happy?'' she said.}\\
+\textit{``Am I what?'' he cried.}\\
+\textit{But she was gone---running in the moonlight.}\\[0.2cm]
+
+This simple question \fire{shatters} Montag's complacency.\\[0.2cm]
+
+\textbf{\textcolor{pulpRed}{Beatty on Happiness}}\\[0.1cm]
+\textit{``We're the Happiness Boys... We stand against the small tide of those who want to make everyone unhappy with conflicting theory and thought.''}
+\end{column}
+\begin{column}{0.48\textwidth}
+\textbf{\textcolor{pulpRed}{On Speed \& Thought}}\\[0.1cm]
+\textit{``Whirl man's mind around so fast under the pumping hands of publishers, exploiters, broadcasters that the centrifuge flings off all unnecessary, time-wasting thought!''}\\[0.2cm]
+
+\textbf{\textcolor{pulpRed}{On Intellectuals}}\\[0.1cm]
+\textit{``Surely you remember the boy in your own school class who was exceptionally `bright'... And wasn't it this bright boy you selected for beatings and tortures after hours? Of course it was.''}
+\end{column}
+\end{columns}
+\end{frame}
+
+% ============================================
+% SLIDE 9: Theme - Censorship
+% ============================================
+\begin{frame}{THEME: CENSORSHIP \& ITS ORIGINS}
+\begin{block}{Bradbury's Twist}
+The government didn't impose censorship first. \hot{People chose comfort over challenge}---censorship merely followed demand.
+\end{block}
+
+\vspace{0.3cm}
+\begin{itemize}
+    \item Books were condensed, then condensed again, until only ``torture-making'': plot summaries and trivia remained.
+    \item \fire{Minority pressure groups} demanded offensive content be removed---everyone's offense mattered, so everything offensive disappeared.
+    \item The firemen became necessary only \emph{after} most people had already stopped reading.
+\end{itemize}
+
+\vspace{0.3cm}
+\textbf{\textcolor{pulpRed}{Relevance Today:}} Content moderation debates, deplatforming, trigger warnings, algorithmic suppression---who decides what ideas are ``too dangerous'' to circulate?
+\end{frame}
+
+% ============================================
+% SLIDE 7: Theme - Technology as Sedative
+% ============================================
+{
+\setbeamercolor{background canvas}{bg=pulpOrange}
+\setbeamercolor{frametitle}{fg=pulpCream, bg=pulpBlack}
+\begin{frame}{THEME: TECHNOLOGY AS SEDATIVE}
+\begin{columns}[T]
+\begin{column}{0.48\textwidth}
+\textbf{\textcolor{pulpRed}{``Parlor Walls''}}\\[0.15cm]
+Wall-sized interactive TV screens that surround you with ``family''---scripted characters who call you by name.\\[0.4cm]
+
+\textbf{\textcolor{pulpRed}{``Seashell Radios''}}\\[0.15cm]
+Tiny earbuds that pump in music and chatter---worn constantly, even to sleep.\\[0.2cm]
+\textit{Sound familiar?}
+\end{column}
+\begin{column}{0.48\textwidth}
+\textbf{\textcolor{pulpRed}{The Design Philosophy}}\\[0.15cm]
+Technology designed to \textbf{occupy attention}, not provoke thought. Stimulation without substance.\\[0.4cm]
+
+\textbf{\textcolor{pulpRed}{Today's Parallels}}\\[0.15cm]
+The attention economy, algorithmic feeds optimized for engagement, infinite scroll, autoplay, notifications...\\[0.2cm]
+\textit{Are we being entertained or sedated?}
+\end{column}
+\end{columns}
+\end{frame}
+}
+
+% ============================================
+% SLIDE 8: Theme - Speed and Superficiality
+% ============================================
+\begin{frame}{THEME: SPEED \& SUPERFICIALITY}
+\begin{columns}[T]
+\begin{column}{0.55\textwidth}
+\begin{itemize}
+    \item Billboards are \hot{200 feet long} because cars drive too fast to read smaller ones.
+    \item Front porches disappeared---no time for sitting and talking.
+    \item School is mostly \fire{sports and TV}; discussion and debate are gone.
+    \item Conversations are reduced to shallow exchanges about products and programs.
+\end{itemize}
+
+\vspace{0.3cm}
+\textbf{\textcolor{pulpRed}{The Danger:}} Deep reading becomes a countercultural act. Reflection is suspicious.
+\end{column}
+\begin{column}{0.4\textwidth}
+\begin{block}{Relevance Today}
+\begin{itemize}
+    \item TikTok's 60-second maximum
+    \item Skim reading as default
+    \item Headlines without articles
+    \item ``tl;dr'' culture
+    \item Shrinking attention spans
+\end{itemize}
+\end{block}
+\end{column}
+\end{columns}
+\end{frame}
+
+% ============================================
+% SLIDE 9: Theme - Conformity
+% ============================================
+\begin{frame}{THEME: CONFORMITY VS. INDIVIDUALITY}
+\begin{itemize}
+    \item \fire{Happiness} is redefined as the \emph{absence of discomfort}---not fulfillment, not meaning, just... not being upset.
+    \item Dangerous ideas cause unhappiness; unhappiness is a social threat; therefore dangerous ideas must be eliminated.
+    \item Characters who think differently---like Clarisse---are labeled \hot{``antisocial''} and sent for treatment.
+    \item The goal is not oppression but \emph{sameness}: everyone pleasant, no one challenged.
+\end{itemize}
+
+\vspace{0.3cm}
+\begin{block}{Relevance Today}
+Echo chambers and filter bubbles. Algorithmic personalization that shows you only what you already believe. The campus debate over ``safe spaces'' and intellectual discomfort. When does protecting people from harm become protecting them from \emph{ideas}?
+\end{block}
+\end{frame}
+
+% ============================================
+% SLIDE 10: Theme - Memory and Knowledge
+% ============================================
+{
+\setbeamercolor{background canvas}{bg=pulpBlack}
+\setbeamercolor{frametitle}{fg=pulpOrange, bg=pulpBlack}
+\setbeamercolor{normal text}{fg=pulpCream}
+\begin{frame}{THEME: MEMORY, KNOWLEDGE \& HUMAN DIGNITY}
+\usebeamercolor[fg]{normal text}
+Books are more than paper and ink---they are \textbf{\textcolor{pulpYellow}{vessels of human memory}}.\\[0.3cm]
+
+Near the novel's end, Montag discovers the \textbf{\textcolor{pulpOrange}{``book people''}}: refugees who have each \textbf{memorized} an entire book, becoming living libraries.\\[0.3cm]
+
+When books burn, it's not just stories that die---it's the accumulated \textbf{\textcolor{pulpYellow}{wisdom, dissent, and conversation}} of human civilization.\\[0.4cm]
+
+\textbf{\textcolor{pulpOrange}{Questions for Today:}}\\[0.15cm]
+\textcolor{pulpYellow}{$\bullet$} What happens when platforms disappear and take our digital ``books'' with them?\\[0.1cm]
+\textcolor{pulpYellow}{$\bullet$} Link rot, defunct services, paywalled archives---is digital knowledge more fragile than paper?\\[0.1cm]
+\textcolor{pulpYellow}{$\bullet$} Who controls access to humanity's memory?
+\end{frame}
+}
+
+% ============================================
+% SLIDE 11: Connections to Computing & AI Ethics
+% ============================================
+\begin{frame}{CONNECTIONS TO COMPUTING \& AI ETHICS}
+\begin{columns}[T]
+\begin{column}{0.48\textwidth}
+\textbf{\textcolor{pulpRed}{Algorithmic Curation}}\\
+Who decides what you see? Feeds are filtered, search is personalized, recommendations are optimized---but for \emph{what}?\\[0.4cm]
+
+\textbf{\textcolor{pulpRed}{Persuasive Design}}\\
+Infinite scroll, autoplay, notifications: technology designed to capture and hold attention. Engagement über alles.\\[0.4cm]
+
+\textbf{\textcolor{pulpRed}{Surveillance \& Chilling Effects}}\\
+If you know you're watched, do you self-censor? The Mechanical Hound doesn't just hunt---it \emph{prevents}.
+\end{column}
+\begin{column}{0.48\textwidth}
+\textbf{\textcolor{pulpRed}{AI-Generated Content}}\\
+What happens to human authorship when machines can produce infinite ``content''? Does the flood drown out meaning?\\[0.4cm]
+
+\textbf{\textcolor{pulpRed}{The Ethics of Convenience}}\\
+Bradbury's citizens didn't lose books to tyranny---they traded them for ease. What are \emph{we} trading away?\\[0.4cm]
+
+\textbf{\textcolor{pulpRed}{Digital Preservation}}\\
+When the servers shut down, what survives? Are we building libraries or sandcastles?
+\end{column}
+\end{columns}
+\end{frame}
+
+% ============================================
+% SLIDE 16: Contemporary Dystopias - Classics
+% ============================================
+\begin{frame}{THE DYSTOPIAN TRADITION}
+\begin{columns}[T]
+\begin{column}{0.48\textwidth}
+\textbf{\textcolor{pulpRed}{The ``Big Three'' (1930s--50s)}}\\[0.1cm]
+\textbf{Brave New World} (Huxley, 1932)\\
+Control through pleasure, not pain. Soma and engineered happiness.\\[0.2cm]
+\textbf{1984} (Orwell, 1949)\\
+Control through surveillance, fear, and language manipulation.\\[0.2cm]
+\textbf{Fahrenheit 451} (Bradbury, 1953)\\
+Control through \emph{distraction}. Citizens chose to stop thinking.\\[0.2cm]
+\small\textit{Huxley feared what we love; Orwell feared what we hate; Bradbury feared we'd stop caring.}
+\end{column}
+\begin{column}{0.48\textwidth}
+\textbf{\textcolor{pulpRed}{Key Differences}}\\[0.1cm]
+\begin{itemize}
+    \item Orwell: \textbf{State-imposed} oppression
+    \item Huxley: \textbf{Pleasure-based} control
+    \item Bradbury: \textbf{Self-imposed} ignorance
+\end{itemize}
+\vspace{0.2cm}
+\begin{block}{Which Was Right?}
+Neil Postman's \textit{Amusing Ourselves to Death} (1985) argued we weren't conquered---we were entertained into submission.
+\end{block}
+\end{column}
+\end{columns}
+\end{frame}
+
+
+% ============================================
+% SLIDE 18: Reading with Purpose
+% ============================================
+{
+\setbeamercolor{background canvas}{bg=pulpRed}
+\setbeamercolor{frametitle}{fg=pulpYellow, bg=pulpBlack}
+\setbeamercolor{normal text}{fg=pulpCream}
+\begin{frame}{READING WITH PURPOSE}
+\usebeamercolor[fg]{normal text}
+\begin{columns}[T]
+\begin{column}{0.48\textwidth}
+\textbf{\textcolor{pulpYellow}{Characters to Watch:}}\\[0.2cm]
+\textbf{Mildred}---Montag's wife. Her relationship with the parlor walls. What does she represent?\\[0.25cm]
+\textbf{Clarisse}---The girl who asks questions. Why is curiosity dangerous?\\[0.25cm]
+\textbf{Captain Beatty}---The fire chief who \emph{knows books}. The most complex character. Listen to his speeches carefully.
+\end{column}
+\begin{column}{0.48\textwidth}
+\textbf{\textcolor{pulpYellow}{Discussion Questions:}}\\[0.2cm]
+Is Bradbury's dystopia driven by technology---or by human nature?\\[0.25cm]
+What would Bradbury think of smartphones and social media?\\[0.25cm]
+Are we choosing our own ``parlor walls''?\\[0.25cm]
+What's the difference between information and wisdom?
+\end{column}
+\end{columns}
+
+\vfill
+\centering
+\textcolor{pulpYellow}{\large\bfseries ``A book is a loaded gun in the house next door. Burn it.''}
+\end{frame}
+}
+
+\end{document}
