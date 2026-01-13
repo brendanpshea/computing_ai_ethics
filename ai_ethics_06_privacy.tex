@@ -2,6 +2,24 @@
 \usetheme{Madrid}
 \usecolortheme{default}
 
+% Fix navigation symbols overflow in 16:9
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}{
+    \leavevmode%
+    \hbox{%
+        \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+            \usebeamerfont{author in head/foot}\insertshortauthor
+        \end{beamercolorbox}%
+        \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+            \usebeamerfont{title in head/foot}\insertshorttitle
+        \end{beamercolorbox}%
+        \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+            \usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
+            \insertframenumber{} / \inserttotalframenumber\hspace*{2ex}
+        \end{beamercolorbox}}%
+    \vskip0pt%
+}
+
 % Custom colors
 \definecolor{privacyblue}{RGB}{0,82,147}
 \definecolor{privacygold}{RGB}{218,165,32}
@@ -63,9 +81,9 @@
 % Title information
 \title[Privacy]{Privacy in the Information Age}
 \subtitle{Surveillance, Data, and the Boundaries of the Self}
-\author{Computing and AI Ethics}
+\author{Computing and AI Ethics (PHIL 1150)}
 \institute{Rochester Community and Technical College}
-\date{}
+\date{Spring 2026}
 
 \begin{document}
 
@@ -253,7 +271,46 @@ Should the US adopt GDPR-style comprehensive protections?
 \textbf{Key tension}: Privacy as \emph{protection} vs. privacy as \emph{concealment}
 \end{frame}
 
-% Slide 10: Nothing to Hide Argument
+% Slide 10: Skeptical Views of Privacy - Thomson
+\begin{frame}{Skeptical Views: Is Privacy a Distinct Right?}
+\begin{conceptbox}[Judith Jarvis Thomson's Reductionist Challenge (1975)]
+\small
+Thomson argued that ``privacy'' is not a distinct right at all---it can be fully explained by other rights we already recognize.
+\end{conceptbox}
+
+\vspace{0.1em}
+\textbf{The argument in standard form}:
+\begin{enumerate}
+    \item Every privacy violation can be redescribed as a violation of property rights (entering your home) or bodily rights (touching you without consent).
+    \item If privacy violations are always also violations of these other rights, privacy adds nothing new.
+    \item Therefore, ``privacy'' is just a cluster concept, not a distinct right.
+\end{enumerate}
+
+\vspace{0.1em}
+{\small \textbf{Response}: Critics argue Thomson misses cases where no property or bodily right is violated---such as watching you through a telephoto lens from public property, or aggregating your public data into a profile.}
+\end{frame}
+
+% Slide 11: Skeptical Views - Posner
+\begin{frame}{Skeptical Views: The Economic Critique}
+\begin{objectionbox}[Richard Posner's Economic Argument (1978)]
+\small
+Posner argued that privacy is often economically inefficient because it enables people to conceal information others have legitimate interests in knowing.
+\end{objectionbox}
+
+\vspace{0.1em}
+\textbf{The argument in standard form}:
+\begin{enumerate}
+    \item Efficient markets require accurate information about participants.
+    \item Privacy allows people to hide negative information (health conditions, past behavior, debts).
+    \item Such concealment distorts decisions and creates inefficiencies.
+    \item Therefore, strong privacy protections impose social costs.
+\end{enumerate}
+
+\vspace{0.1em}
+{\small \textbf{Response}: This view treats people as mere economic actors and ignores power imbalances---the employer learns everything about you; you learn little about them. Privacy can \emph{correct} market failures by preventing irrelevant discrimination.}
+\end{frame}
+
+% Slide 12: Nothing to Hide Argument
 \begin{frame}{The ``Nothing to Hide'' Argument}
 \textbf{Common claim}: ``If you have nothing to hide, you have nothing to fear''
 
@@ -273,7 +330,7 @@ Should the US adopt GDPR-style comprehensive protections?
 \textbf{Daniel Solove}: The problem isn't isolated data, but the ``aggregation problem.''
 \end{frame}
 
-% Slide 11: Privacy Paradox
+% Slide 13: Privacy Paradox
 \begin{frame}{The Privacy Paradox}
 \begin{conceptbox}[The Paradox]
 People say they value privacy but act as if they don't.
@@ -295,7 +352,7 @@ Do your privacy behaviors match your stated privacy preferences?
 \end{alertblock}
 \end{frame}
 
-% Slide 12: Case Study - Right to Be Forgotten
+% Slide 14: Case Study - Right to Be Forgotten
 \begin{frame}{Case Study: The ``Right to Be Forgotten''}
 \begin{casestudybox}[Google Spain v. AEPD (2014)]
 \small
@@ -711,11 +768,11 @@ Russia's system is less comprehensive than China's but highly targeted:
 \begin{conceptbox}[Key Patterns]
 \small
 \begin{enumerate}
-    \item \textbf{Comprehensiveness}: Multiple overlapping systems
-    \item \textbf{Integration}: Linking databases for complete profiles
-    \item \textbf{Automation}: AI enables scale impossible with human monitors
-    \item \textbf{Normalization}: Gradual expansion of acceptable surveillance
-    \item \textbf{Chilling effects}: Self-censorship without direct enforcement
+    \item Multiple overlapping systems create \textbf{comprehensiveness}---no single point of failure.
+    \item Linking databases builds complete profiles through \textbf{integration}.
+    \item AI enables surveillance at a scale impossible with human monitors.
+    \item Gradual expansion normalizes what would once have been unthinkable.
+    \item Self-censorship occurs even without direct enforcement---the \textbf{chilling effect}.
 \end{enumerate}
 \end{conceptbox}
 
@@ -725,6 +782,38 @@ Russia's system is less comprehensive than China's but highly targeted:
 \begin{alertblock}{Discussion}
 At what point does surveillance cross from ``security'' to ``control''?
 \end{alertblock}
+\end{frame}
+
+% Slide 31: Transition - Could It Happen Here?
+\begin{frame}{From Authoritarianism to Democracy: Could It Happen Here?}
+\begin{columns}[T]
+\begin{column}{0.48\textwidth}
+\textbf{Key differences}:
+\begin{itemize}
+    \item Democratic accountability and elections
+    \item Independent judiciary
+    \item Free press that can investigate
+    \item Civil society and advocacy groups
+    \item Constitutional protections
+\end{itemize}
+\end{column}
+\begin{column}{0.48\textwidth}
+\textbf{Reasons for concern}:
+\begin{itemize}
+    \item Same technologies are available
+    \item Post-9/11 expansion of surveillance
+    \item Limited oversight has been documented
+    \item Mission creep is common
+    \item Democratic norms can erode
+\end{itemize}
+\end{column}
+\end{columns}
+
+\vspace{0.3em}
+\begin{quotebox}
+\small
+The question is not whether democracies \emph{would} build authoritarian surveillance systems---it's whether the tools they build for legitimate purposes could \emph{become} such systems under different leadership.
+\end{quotebox}
 \end{frame}
 
 %% PART IV: DEBATES IN LIBERAL DEMOCRACIES %%
@@ -759,44 +848,106 @@ At what point does surveillance cross from ``security'' to ``control''?
 \textbf{Question}: How do we evaluate surveillance in democracies?
 \end{frame}
 
-% Slide 31: Arguments FOR Surveillance
-\begin{frame}{Arguments FOR Surveillance (Security Perspective)}
-\begin{probox}[Pro-Surveillance Arguments]
+% Slide 33: Arguments FOR Surveillance - Overview
+\begin{frame}{The Case FOR Surveillance}
+\begin{probox}[Core Claims]
+\small
+Proponents argue surveillance is necessary for security, justice, and public safety:
+\begin{itemize}
+    \item Surveillance deters crime through visibility.
+    \item Surveillance helps solve crimes by providing evidence for prosecution.
+    \item Surveillance can prevent terrorism by identifying threats before attacks.
+    \item Public spaces carry no reasonable expectation of privacy anyway.
+\end{itemize}
+\end{probox}
+
+\vspace{0.3em}
+Let's examine one of these arguments more carefully...
+\end{frame}
+
+% Slide 34: The Deterrence Argument in Standard Form
+\begin{frame}{The Deterrence Argument (Standard Form)}
+\begin{probox}[Argument for Surveillance]
 \small
 \begin{enumerate}
-    \item \textbf{Crime prevention}: Deterrence through visibility
-    \item \textbf{Crime solving}: Evidence for prosecution
-    \item \textbf{Terrorism prevention}: Identifying threats before attacks
-    \item \textbf{Public safety}: Finding missing persons, emergency response
-    \item \textbf{Efficiency}: Faster, more accurate than human observation
-    \item \textbf{Consent}: Public spaces have no expectation of privacy
+    \item Deterring crime protects public safety, a legitimate government interest.
+    \item Surveillance deters crime: people behave better when they know they're watched.
+    \item If surveillance deters crime and deterring crime is legitimate, then surveillance is justified.
+    \item Therefore, surveillance is justified.
 \end{enumerate}
 \end{probox}
 
-\vspace{0.2em}
-\textbf{Common refrain}: ``If you've got nothing to hide, you've got nothing to fear''
+\vspace{0.1em}
+\begin{objectionbox}[Critique]
+\scriptsize
+\textbf{Premise 2 is empirically weak}: Studies on CCTV show mixed results. A 2019 meta-analysis found cameras reduce vehicle crime in parking lots but show ``no significant effect'' on violent crime.
+
+\textbf{Premise 3 assumes proportionality}: Even if surveillance provides \emph{some} benefit, the argument doesn't show the benefit outweighs the costs (chilling effects, mission creep, abuse potential).
+\end{objectionbox}
 \end{frame}
 
-% Slide 32: Arguments AGAINST Surveillance
-\begin{frame}{Arguments AGAINST Surveillance (Liberty Perspective)}
-\begin{objectionbox}[Anti-Surveillance Arguments]
+% Slide 35: Arguments AGAINST Surveillance - Overview
+\begin{frame}{The Case AGAINST Surveillance}
+\begin{objectionbox}[Core Claims]
 \small
+Critics argue surveillance threatens liberty, equality, and democracy:
+\begin{itemize}
+    \item Surveillance creates chilling effects---people self-censor when watched.
+    \item Surveillance creates dangerous power asymmetries between state and citizen.
+    \item Surveillance systems inevitably expand beyond their original purpose.
+    \item Surveillance technologies encode and amplify existing biases.
+\end{itemize}
+\end{objectionbox}
+
+\vspace{0.3em}
+Let's examine one of these arguments more carefully...
+\end{frame}
+
+% Slide 36: The Chilling Effects Argument in Standard Form
+\begin{frame}{The Chilling Effects Argument (Standard Form)}
+\begin{objectionbox}[Argument Against Surveillance]
+\scriptsize
 \begin{enumerate}
-    \item \textbf{Chilling effects}: People self-censor when watched
-    \item \textbf{Power asymmetry}: Government sees citizens, not reverse
-    \item \textbf{Mission creep}: Systems expand beyond original purpose
-    \item \textbf{Function creep}: Data used for unintended purposes
-    \item \textbf{Error rates}: False positives harm innocent people
-    \item \textbf{Bias}: Algorithms encode and amplify discrimination
-    \item \textbf{Abuse potential}: Tools \emph{will} be misused (history shows this)
+    \item A free society requires citizens can speak, associate, and explore ideas without fear.
+    \item When people know they're watched, they self-censor---avoiding controversial speech, associations, and searches, even legal ones.
+    \item Mass surveillance means people are (or believe they are) always watched.
+    \item Therefore, mass surveillance undermines the conditions necessary for a free society.
 \end{enumerate}
 \end{objectionbox}
 
-\vspace{0.2em}
-\textbf{Neil Richards}: ``A society in which everyone is watched by everyone else is less a utopia than a nightmare.''
+\vspace{0.05em}
+\begin{probox}[Response]
+\scriptsize
+\textbf{Empirical challenge}: Do chilling effects occur at scale? Post-Snowden studies found measurable decreases in terrorism-related searches, suggesting the effect is real.
+
+\textbf{Targeting response}: Supporters argue \emph{targeted} surveillance (with warrants) avoids mass chilling effects while preserving security benefits.
+\end{probox}
 \end{frame}
 
-% Slide 33: Facial Recognition Debate
+% Slide 37: The Nothing to Hide Argument Examined
+\begin{frame}{The ``Nothing to Hide'' Argument (Standard Form)}
+\begin{probox}[The Argument]
+\scriptsize
+\begin{enumerate}
+    \item Surveillance only harms people who have something to hide.
+    \item Law-abiding citizens have nothing to hide.
+    \item Therefore, law-abiding citizens are not harmed by surveillance.
+    \item Therefore, law-abiding citizens should not oppose surveillance.
+\end{enumerate}
+\end{probox}
+
+\begin{objectionbox}[Multiple Problems]
+\scriptsize
+\begin{itemize}
+    \item \textbf{Premise 1 is false}: Surveillance harms through chilling effects, power imbalances, errors, and abuse---none requiring wrongdoing.
+    \item \textbf{Premise 2 is misleading}: Everyone has \emph{something} to hide---legal but private matters. ``Nothing to hide'' conflates privacy with guilt.
+    \item \textbf{Ignores aggregation}: Innocuous data points combine into sensitive profiles.
+    \item \textbf{Assumes static law}: Today's legal behavior may be tomorrow's crime.
+\end{itemize}
+\end{objectionbox}
+\end{frame}
+
+% Slide 38: Facial Recognition Debate
 \begin{frame}{Facial Recognition---The Debate}
 \begin{columns}[T]
 \begin{column}{0.48\textwidth}
@@ -828,7 +979,7 @@ At what point does surveillance cross from ``security'' to ``control''?
 \textbf{Status}: Bans in San Francisco (2019, first US city), Boston, Oakland, 16+ municipalities
 \end{frame}
 
-% Slide 34: Clearview AI
+% Slide 39: Clearview AI
 \begin{frame}{Case Study: Clearview AI}
 \begin{casestudybox}[The Controversial Facial Recognition Company]
 \small
@@ -852,7 +1003,7 @@ Should police be able to identify anyone, anywhere, anytime?
 \end{alertblock}
 \end{frame}
 
-% Slide 35: Predictive Policing
+% Slide 40: Predictive Policing
 \begin{frame}{Predictive Policing}
 \begin{conceptbox}[Using Data to Predict Crime]
 \small
@@ -863,17 +1014,17 @@ Should police be able to identify anyone, anywhere, anytime?
 \vspace{0.3em}
 \textbf{Criticisms}:
 \begin{itemize}
-    \item \textbf{Feedback loops}: Police go where predicted $\rightarrow$ more arrests $\rightarrow$ more predictions
-    \item \textbf{Historical bias}: Trained on biased enforcement data
-    \item \textbf{Pre-crime problem}: Punishing predicted future acts
-    \item \textbf{Opacity}: Proprietary algorithms can't be challenged
-    \item \textbf{Efficacy}: Limited evidence it actually reduces crime
+    \item \textbf{Feedback loops} emerge: police go where predicted $\rightarrow$ more arrests $\rightarrow$ more predictions for that area.
+    \item Systems trained on historically biased enforcement data reproduce that bias.
+    \item The \textbf{pre-crime problem}: are we punishing predicted future acts?
+    \item Proprietary algorithms can't be challenged in court---an \textbf{opacity} problem.
+    \item Limited evidence these systems actually reduce crime.
 \end{itemize}
 
 \textbf{Case}: Los Angeles ended PredPol (2020) after bias concerns
 \end{frame}
 
-% Slide 36: Workplace Surveillance
+% Slide 41: Workplace Surveillance
 \begin{frame}{Workplace and Consumer Surveillance}
 \begin{columns}[T]
 \begin{column}{0.48\textwidth}
@@ -903,42 +1054,42 @@ Should police be able to identify anyone, anywhere, anytime?
 \textbf{Key point}: Government isn't the only surveillor---private companies too
 \end{frame}
 
-% Slide 37: Sophisticated Response to Nothing to Hide
+% Slide 42: Sophisticated Response to Nothing to Hide
 \begin{frame}{The ``Nothing to Fear'' Response---Revisited}
 \begin{objectionbox}[Sophisticated Responses to Surveillance]
 \small
 \begin{enumerate}
     \item \textbf{Definitional problem}: Who decides what's ``wrong''? Laws change.
-    \item \textbf{Contextual integrity}: Info appropriate in one context isn't in another
-    \item \textbf{Aggregation}: Combining innocuous data reveals sensitive information
-    \item \textbf{Chilling effects}: Even innocent people change behavior
-    \item \textbf{Power}: ``Show me yours first'' (government transparency)
-    \item \textbf{Equality}: Surveillance falls disproportionately on marginalized groups
+    \item Information appropriate in one context isn't in another---\textbf{contextual integrity}.
+    \item Innocuous data points combine into sensitive profiles---\textbf{aggregation}.
+    \item Even innocent people change behavior when watched---\textbf{chilling effects}.
+    \item Surveillance creates \textbf{power asymmetry}: ``Show me yours first.''
+    \item Surveillance falls disproportionately on marginalized groups---\textbf{equality}.
 \end{enumerate}
 \end{objectionbox}
 
-\vspace{0.2em}
+\vspace{0.1em}
 \textbf{Bruce Schneier}: ``Too many wrongly characterize the debate as `security versus privacy.' The real choice is liberty versus control.''
 \end{frame}
 
-% Slide 38: Frameworks for Democratic Surveillance
+% Slide 43: Frameworks for Democratic Surveillance
 \begin{frame}{Possible Frameworks for Democratic Surveillance}
 \begin{conceptbox}[Constraints for Democratic Surveillance]
 \small
 \begin{enumerate}
-    \item \textbf{Judicial oversight}: Warrants required, meaningful review
-    \item \textbf{Transparency}: Public knows what systems exist
-    \item \textbf{Purpose limitation}: Only for specified uses
-    \item \textbf{Minimization}: Collect only what's necessary
-    \item \textbf{Retention limits}: Delete after time period
-    \item \textbf{Audit trails}: Record who accesses what
-    \item \textbf{Accountability}: Consequences for misuse
-    \item \textbf{Sunset clauses}: Programs expire without reauthorization
+    \item Warrants should be required with meaningful \textbf{judicial oversight}.
+    \item The public should know what systems exist---\textbf{transparency}.
+    \item Data should only be used for specified purposes---\textbf{purpose limitation}.
+    \item Collect only what's necessary---the principle of \textbf{minimization}.
+    \item Data should be deleted after a set period---\textbf{retention limits}.
+    \item Record who accesses what data---\textbf{audit trails}.
+    \item There must be real consequences for misuse---\textbf{accountability}.
+    \item Programs should expire without reauthorization---\textbf{sunset clauses}.
 \end{enumerate}
 \end{conceptbox}
 \end{frame}
 
-% Slide 39: Key Tensions
+% Slide 44: Key Tensions
 \begin{frame}{Privacy in the Balance---Key Tensions}
 \begin{center}
 \begin{tikzpicture}[scale=0.7, every node/.style={font=\small}]
@@ -965,7 +1116,7 @@ Should police be able to identify anyone, anywhere, anytime?
 These tensions cannot be fully ``resolved''---they must be navigated case by case.
 \end{frame}
 
-% Slide 40: Conclusion
+% Slide 46: Conclusion
 \begin{frame}{Conclusion: Framework for Evaluation}
 \begin{conceptbox}[Questions to Ask About Any Surveillance System]
 \small
