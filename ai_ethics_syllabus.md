@@ -210,11 +210,11 @@ The course schedule will be posted on D2L. Here is an overview of the topics we'
 - Week 6 - Lecture 5: Digital Cash
 - Week 7 - Lecture 6: Surveillance 
 - Week 8 - Exam 1
-- Week 9 - Lecture 7 - Overview and History of AI
-- Week 10 - Lecture 8 - Ethical Issues with Predictive AI
-- Week 11 - Lecture 9 - Ethical Issues wih Generative AI
+- Week 9 - Lecture 7 - What is AI?
+- Week 10 - Lecture 8 - AI and the Future of Work and Art
+- Week 11 - Lecture 9 - Enviromental and Social Impact of AI
 - Week 12 - Lecture 10 - AI and the End of the World
-- Week 13 - Lecture 11 - Robot Rights
+- Week 13 - Lecture 11 - Robot Rights and the Moral Status of AI
 - Week 14 - Lecture 12 - Games and Ethics
 - Week 15 - Exam 2
 - Week 16 - Work on Project 
