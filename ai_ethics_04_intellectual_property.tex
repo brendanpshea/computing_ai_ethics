@@ -1,21 +1,13 @@
 \documentclass[aspectratio=169]{beamer}
 
-% Theme and colors
-\usetheme{Madrid}
-\usecolortheme{whale}
-\setbeamertemplate{navigation symbols}{}
-\setbeamertemplate{footline}[frame number]
+% Load common preamble (theme, packages, standard boxes)
+\input{lecture_preamble.tex}
 
-% Packages
-\usepackage{tikz}
-\usetikzlibrary{shapes,arrows,positioning,calc,decorations.pathreplacing}
-\usepackage{booktabs}
-\usepackage{graphicx}
-\usepackage{xcolor}
-\usepackage{tcolorbox}
-\usepackage{array}
+% ------------------------------------------------------------------------------
+% Lecture-Specific Customizations
+% ------------------------------------------------------------------------------
 
-% Custom colors
+% Lecture 4 color theme (intellectual property)
 \definecolor{ipblue}{RGB}{0,51,102}
 \definecolor{innovgreen}{RGB}{0,100,50}
 \definecolor{warningred}{RGB}{180,0,0}
@@ -23,44 +15,12 @@
 \definecolor{goldaccent}{RGB}{180,140,20}
 \definecolor{publicdomain}{RGB}{70,130,180}
 
-% Custom blocks
-\newtcolorbox{argumentbox}[1][]{
-  colback=ipblue!5,
-  colframe=ipblue,
-  fonttitle=\bfseries,
-  title={#1},
-  boxrule=1pt,
-  arc=2pt
-}
-
-\newtcolorbox{quotebox}[1][]{
-  colback=gray!10,
-  colframe=gray!50,
-  fonttitle=\itshape,
-  title={#1},
-  boxrule=0.5pt,
-  arc=2pt,
-  left=10pt,
-  right=10pt
-}
-
-\newtcolorbox{casestudybox}[1][]{
-  colback=goldaccent!10,
-  colframe=goldaccent,
-  fonttitle=\bfseries,
-  title={#1},
-  boxrule=1pt,
-  arc=2pt
-}
-
-\newtcolorbox{objectionbox}[1][]{
-  colback=warningred!5,
-  colframe=warningred,
-  fonttitle=\bfseries,
-  title={#1},
-  boxrule=1pt,
-  arc=2pt
-}
+% Apply lecture colors to beamer theme
+\setbeamercolor{structure}{fg=ipblue}
+\setbeamercolor{title}{fg=white,bg=ipblue}
+\setbeamercolor{frametitle}{fg=white,bg=ipblue}
+\setbeamercolor{block title}{fg=white,bg=ipblue}
+\setbeamercolor{block body}{bg=ipblue!10}
 
 % Title information
 \title[Intellectual Property]{Intellectual Property in the Digital Age}
@@ -70,6 +30,12 @@
 \date{}
 
 \begin{document}
+
+\section{Introduction: Intellectual Property in the Digital Age}
+
+\mode<article>{
+This lecture examines the philosophical foundations and practical challenges of intellectual property law in contexts of digital reproduction and distribution. Intellectual property differs fundamentally from physical property: ideas are non-rivalrous (my use need not prevent yours) and naturally non-excludable without legal intervention. We explore three competing justifications for IP rights---Locke's labor theory, utilitarian incentive arguments, and Hegelian personality theory---before considering how digital technology's capacity for perfect, costless copying has disrupted traditional IP business models and intensified debates about the appropriate balance between creator rights and public access to knowledge.
+}
 
 % ===== SLIDE 1: Title =====
 \begin{frame}
@@ -353,6 +319,13 @@ Does an AI have ``personality'' that could be expressed in creative works?
 \end{frame}
 
 % ===== PART II HEADER =====
+
+\section{Part II: The Digital Transformation}
+
+\mode<article>{
+Digital technology fundamentally challenges intellectual property law's assumptions. Perfect, costless copying eliminates the natural scarcity that historically protected information goods. Global, instantaneous distribution makes enforcement difficult at individual level. The Napster case exemplifies the music industry's struggle to adapt, ultimately leading to new business models based on streaming rather than ownership. The DMCA's anti-circumvention provisions attempted to restore artificial scarcity through "digital locks" but created tensions with fair use, security research, and right to repair. The shift from ownership to access models represents a broader transformation in how IP functions in practice.
+}
+
 \begin{frame}
 \begin{center}
 {\Huge \textbf{Part II}}\\[0.5cm]
@@ -493,6 +466,13 @@ Is ``access to everything'' better than ``owning some things''?
 \end{frame}
 
 % ===== PART III HEADER =====
+
+\section{Part III: Critiques and Abuses of IP}
+
+\mode<article>{
+Critical IP scholars like Peter Drahos, Cory Doctorow, and Tim Wu argue that contemporary IP law often serves concentrated corporate power rather than its stated goals of promoting innovation and creativity. Draho's "information feudalism" describes how IP has been globalized through trade agreements to benefit wealthy countries and large corporations at developing nations' expense. Doctorow's "chokepoint capitalism" shows how platforms use IP to maintain bottleneck control over markets. Case studies including Disney's copyright extensions, pharmaceutical patent abuses, and patent trolls demonstrate how IP can become a tool for rent-seeking rather than innovation.
+}
+
 \begin{frame}
 \begin{center}
 {\Huge \textbf{Part III}}\\[0.5cm]
@@ -665,6 +645,13 @@ Have you experienced enshittification? Which platforms?
 \end{frame}
 
 % ===== PART IV HEADER =====
+
+\section{Part IV: Big Tech and Platform IP}
+
+\mode<article>{
+Large technology companies deploy intellectual property strategically as competitive weapons and defensive shields. Patents accumulate in vast portfolios enabling cross-licensing among giants while creating barriers for smaller competitors. Terms of service agreements function as IP-like control mechanisms without traditional IP law's limitations. The Oracle v. Google case over API copyrightability illustrates how fundamental questions about interoperability and competition depend on IP boundaries. The right to repair movement challenges how manufacturers use IP to restrict product modifications and repairs, raising questions about the meaning of ownership in digital contexts.
+}
+
 \begin{frame}
 \begin{center}
 {\Huge \textbf{Part IV}}\\[0.5cm]
@@ -762,6 +749,13 @@ Do you own a device if you can't repair it?
 \end{frame}
 
 % ===== PART V HEADER =====
+
+\section{Part V: AI and Intellectual Property}
+
+\mode<article>{
+Artificial intelligence creates novel IP challenges that existing legal frameworks struggle to address. The training of large language models on copyrighted works raises questions about whether such use constitutes infringement or transformative fair use. Multiple lawsuits by publishers, authors, and artists against AI companies are currently working through courts. Additionally, the authorship status of AI-generated content remains contested, with U.S. authorities currently requiring human authorship for copyright protection. These issues will significantly shape both AI development and IP law's evolution, potentially determining whether AI capabilities remain concentrated among well-resourced actors or become more democratically accessible.
+}
+
 \begin{frame}
 \begin{center}
 {\Huge \textbf{Part V}}\\[0.5cm]
@@ -870,6 +864,13 @@ Market & Doesn't replace originals? & Competes with creators \\
 \end{frame}
 
 % ===== PART VI HEADER =====
+
+\section{Part VI: Open Source and Alternative Models}
+
+\mode<article>{
+The open source movement demonstrates that significant innovation and value creation can occur outside traditional IP incentive structures. Open source software licenses use copyright law itself to ensure works remain open rather than enclosed. Creative Commons provides similar frameworks for non-software content. These alternative models challenge utilitarian IP justifications by showing that other motivations---including reputation, community participation, and ideological commitment---can drive creation. The success of projects like Linux, Wikipedia, and countless open source libraries suggests that the optimal IP system may look quite different from current arrangements, particularly in contexts where collaborative and cumulative innovation predominate.
+}
+
 \begin{frame}
 \begin{center}
 {\Huge \textbf{Part VI}}\\[0.5cm]

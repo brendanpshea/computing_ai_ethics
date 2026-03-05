@@ -1,82 +1,25 @@
 \documentclass[aspectratio=169,11pt]{beamer}
-\usetheme{Madrid}
-\usecolortheme{default}
 
-% Fix navigation symbols overflow in 16:9
-\setbeamertemplate{navigation symbols}{}
-\setbeamertemplate{footline}{
-    \leavevmode%
-    \hbox{%
-        \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
-            \usebeamerfont{author in head/foot}\insertshortauthor
-        \end{beamercolorbox}%
-        \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
-            \usebeamerfont{title in head/foot}\insertshorttitle
-        \end{beamercolorbox}%
-        \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
-            \usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
-            \insertframenumber{} / \inserttotalframenumber\hspace*{2ex}
-        \end{beamercolorbox}}%
-    \vskip0pt%
-}
+% Load common preamble (theme, packages, standard boxes)
+\input{lecture_preamble.tex}
 
-% Custom colors
+% ------------------------------------------------------------------------------
+% Lecture-Specific Customizations
+% ------------------------------------------------------------------------------
+
+% Lecture 6 color theme (privacy)
 \definecolor{privacyblue}{RGB}{0,82,147}
 \definecolor{privacygold}{RGB}{218,165,32}
 \definecolor{privacygreen}{RGB}{34,139,34}
 \definecolor{privacyred}{RGB}{178,34,34}
 \definecolor{privacypurple}{RGB}{102,51,153}
 
+% Apply lecture colors to beamer theme
 \setbeamercolor{structure}{fg=privacyblue}
 \setbeamercolor{title}{fg=white,bg=privacyblue}
 \setbeamercolor{frametitle}{fg=white,bg=privacyblue}
 \setbeamercolor{block title}{fg=white,bg=privacyblue}
 \setbeamercolor{block body}{bg=privacyblue!10}
-
-% Packages
-\usepackage{tikz}
-\usetikzlibrary{shapes,arrows,positioning,decorations.pathreplacing,calc}
-\usepackage{booktabs}
-\usepackage{tcolorbox}
-\tcbuselibrary{skins,breakable}
-
-% Custom boxes
-\newtcolorbox{conceptbox}[1][]{
-    colback=privacyblue!5,
-    colframe=privacyblue,
-    fonttitle=\bfseries,
-    title=#1
-}
-
-\newtcolorbox{probox}[1][]{
-    colback=privacygreen!5,
-    colframe=privacygreen!80!black,
-    fonttitle=\bfseries,
-    title=#1
-}
-
-\newtcolorbox{objectionbox}[1][]{
-    colback=privacyred!5,
-    colframe=privacyred!80!black,
-    fonttitle=\bfseries,
-    title=#1
-}
-
-\newtcolorbox{casestudybox}[1][]{
-    colback=privacygold!10,
-    colframe=privacygold!80!black,
-    fonttitle=\bfseries,
-    title=#1
-}
-
-\newtcolorbox{quotebox}{
-    colback=gray!10,
-    colframe=gray!50,
-    left=10pt,
-    right=10pt,
-    boxrule=0pt,
-    leftrule=3pt
-}
 
 % Title information
 \title[Privacy]{Privacy in the Information Age}
@@ -86,6 +29,10 @@
 \date{}
 
 \begin{document}
+
+\mode<article>{
+This lecture examines privacy's philosophical foundations and practical challenges in the information age. We begin by defining privacy and explaining why it matters, both instrumentally (as means to other goods like autonomy and democracy) and intrinsically (as constitutive of personhood and dignity). Information technology has transformed privacy by enabling unprecedented surveillance, data collection, and processing. The history of privacy debates around successive technologies---from census-taking through telephone wiretaps to internet tracking---reveals recurring patterns and tensions. We consider how surveillance operates in authoritarian states versus liberal democracies, and whether these contexts present fundamentally different ethical questions. The lecture concludes by evaluating privacy protection strategies and considering privacy's status as a universal value versus culturally contingent preference.
+}
 
 % Slide 1: Title
 \begin{frame}
@@ -110,6 +57,10 @@ What's the last thing you did to protect your privacy online?
 
 %% PART I: UNDERSTANDING PRIVACY %%
 \section{Part I: Understanding Privacy}
+
+\mode<article>{
+Privacy proves surprisingly difficult to define precisely despite its intuitive importance. Early formulations like Warren and Brandeis's "right to be let alone" and information-control theories face challenges around boundary cases. Helen Nissenbaum's contextual integrity framework provides a more nuanced approach: privacy violations occur when information flows in ways inappropriate to social contexts. Privacy encompasses multiple dimensions---informational, physical, decisional, communicational, associational, and intellectual---each potentially requiring different protections. Instrumental arguments for privacy emphasize its functional importance for autonomy, intimacy, democracy, security, and power balance. Intrinsic arguments contend privacy has value beyond consequences as a requirement of human dignity and respect for persons as ends in themselves.
+}
 
 % Slide 3: What Is Privacy?
 \begin{frame}{What Is Privacy? Defining the Concept}

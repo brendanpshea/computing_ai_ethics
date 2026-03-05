@@ -1,81 +1,25 @@
 \documentclass[aspectratio=169,11pt]{beamer}
 
-% Theme and color setup
-\usetheme{Madrid}
+% Load common preamble (theme, packages, standard boxes)
+\input{lecture_preamble.tex}
+
+% ------------------------------------------------------------------------------
+% Lecture-Specific Customizations
+% ------------------------------------------------------------------------------
+
+% Lecture 5 color theme (cryptocurrency)
 \definecolor{cryptoblue}{RGB}{0,82,155}
 \definecolor{cryptogold}{RGB}{247,147,26}
 \definecolor{cryptogreen}{RGB}{39,174,96}
 \definecolor{cryptored}{RGB}{192,57,43}
 \definecolor{cryptopurple}{RGB}{142,68,173}
-\definecolor{lightgray}{RGB}{245,245,245}
 
-\usecolortheme[named=cryptoblue]{structure}
+% Apply lecture colors to beamer theme
+\setbeamercolor{structure}{fg=cryptoblue}
 \setbeamercolor{title}{fg=white,bg=cryptoblue}
 \setbeamercolor{frametitle}{fg=white,bg=cryptoblue}
 \setbeamercolor{block title}{fg=white,bg=cryptoblue}
-\setbeamercolor{block body}{bg=lightgray}
-
-% Packages
-\usepackage{tikz}
-\usetikzlibrary{shapes,arrows,positioning,calc,chains,decorations.pathreplacing}
-\usepackage{tcolorbox}
-\usepackage{booktabs}
-\usepackage{array}
-% fontawesome5 removed - not available
-\usepackage{graphicx}
-\usepackage{adjustbox}
-
-% Custom boxes
-\newtcolorbox{argumentbox}[1][]{
-  colback=cryptoblue!10,
-  colframe=cryptoblue,
-  title=#1,
-  fonttitle=\bfseries,
-  boxrule=1pt,
-  arc=2pt
-}
-
-\newtcolorbox{quotebox}[1][]{
-  colback=gray!10,
-  colframe=gray!50,
-  leftrule=4pt,
-  rightrule=0pt,
-  toprule=0pt,
-  bottomrule=0pt,
-  arc=0pt,
-  #1
-}
-
-\newtcolorbox{casestudybox}[1][]{
-  colback=cryptogold!10,
-  colframe=cryptogold,
-  title=#1,
-  fonttitle=\bfseries,
-  boxrule=1pt,
-  arc=2pt
-}
-
-\newtcolorbox{objectionbox}[1][]{
-  colback=cryptored!10,
-  colframe=cryptored,
-  title=#1,
-  fonttitle=\bfseries,
-  boxrule=1pt,
-  arc=2pt
-}
-
-\newtcolorbox{probox}[1][]{
-  colback=cryptogreen!10,
-  colframe=cryptogreen,
-  title=#1,
-  fonttitle=\bfseries,
-  boxrule=1pt,
-  arc=2pt
-}
-
-% Reduce spacing
-\setlength{\parskip}{0pt}
-\setbeamertemplate{navigation symbols}{}
+\setbeamercolor{block body}{bg=cryptoblue!10}
 
 % Title information
 \title[Cryptocurrency Philosophy]{The Political Philosophy of Cryptocurrency}
@@ -85,6 +29,10 @@
 \date{}
 
 \begin{document}
+
+\mode<article>{
+This lecture examines the political philosophy underlying cryptocurrency technologies. We begin by analyzing money as a social technology and exploring how different monetary systems embody different power relationships. Bitcoin and subsequent cryptocurrencies represent an attempt to create money independent of state control through cryptographic proof and decentralized consensus. We evaluate arguments both for and against cryptocurrency from perspectives including financial inclusion, individual liberty, environmental impact, and the appropriate role of state power in monetary systems. The debate over cryptocurrency regulation crystallizes fundamental questions about the relationship between technology, markets, and political authority.
+}
 
 % Title slide
 \begin{frame}
@@ -108,6 +56,10 @@ Have you ever used or owned cryptocurrency? What's your impression of it?
 
 %% PART I: UNDERSTANDING MONEY AND CRYPTOCURRENCY %%
 \section{Part I: Understanding Money and Cryptocurrency}
+
+\mode<article>{
+Money is a social technology whose form and control reflect underlying political arrangements. Throughout history, monetary systems have evolved from commodity money through representative currency backed by gold reserves to pure fiat currency based on government decree. Cryptocurrency represents a fourth paradigm: money based on cryptographic proof and algorithmic consensus rather than governmental or institutional authority. Understanding how money functions---as medium of exchange, store of value, and unit of account---is essential for evaluating cryptocurrency's promises and limitations. The history of banking crises helps explain why decentralized alternatives to traditional financial institutions appeal to many advocates.
+}
 
 % Slide 3: What Is Money?
 \begin{frame}{What Is Money? A Brief History}

@@ -1,65 +1,25 @@
 \documentclass[aspectratio=169]{beamer}
 
-% Theme and colors
-\usetheme{Madrid}
-\usecolortheme{whale}
-\setbeamertemplate{navigation symbols}{}
-\setbeamertemplate{footline}[frame number]
+% Load common preamble (theme, packages, standard boxes)
+\input{lecture_preamble.tex}
 
-% Packages
-\usepackage{tikz}
-\usetikzlibrary{shapes,arrows,positioning,calc,decorations.pathreplacing}
-\usepackage{booktabs}
-\usepackage{graphicx}
-\usepackage{xcolor}
-\usepackage{tcolorbox}
-\usepackage{array}
+% ------------------------------------------------------------------------------
+% Lecture-Specific Customizations
+% ------------------------------------------------------------------------------
 
-% Custom colors
+% Lecture 3 color theme (free speech)
 \definecolor{millblue}{RGB}{0,51,102}
 \definecolor{libertygreen}{RGB}{0,100,50}
 \definecolor{warningred}{RGB}{180,0,0}
 \definecolor{techgray}{RGB}{64,64,64}
 \definecolor{goldaccent}{RGB}{180,140,20}
 
-% Custom blocks
-\newtcolorbox{argumentbox}[1][]{
-  colback=millblue!5,
-  colframe=millblue,
-  fonttitle=\bfseries,
-  title={#1},
-  boxrule=1pt,
-  arc=2pt
-}
-
-\newtcolorbox{quotebox}[1][]{
-  colback=gray!10,
-  colframe=gray!50,
-  fonttitle=\itshape,
-  title={#1},
-  boxrule=0.5pt,
-  arc=2pt,
-  left=10pt,
-  right=10pt
-}
-
-\newtcolorbox{casestudybox}[1][]{
-  colback=goldaccent!10,
-  colframe=goldaccent,
-  fonttitle=\bfseries,
-  title={#1},
-  boxrule=1pt,
-  arc=2pt
-}
-
-\newtcolorbox{objectionbox}[1][]{
-  colback=warningred!5,
-  colframe=warningred,
-  fonttitle=\bfseries,
-  title={#1},
-  boxrule=1pt,
-  arc=2pt
-}
+% Apply lecture colors to beamer theme
+\setbeamercolor{structure}{fg=millblue}
+\setbeamercolor{title}{fg=white,bg=millblue}
+\setbeamercolor{frametitle}{fg=white,bg=millblue}
+\setbeamercolor{block title}{fg=white,bg=millblue}
+\setbeamercolor{block body}{bg=millblue!10}
 
 % Title information
 \title[Freedom of Speech]{Freedom of Speech in the Digital Age}
@@ -69,6 +29,12 @@
 \date{}
 
 \begin{document}
+
+\section{Introduction: Freedom of Speech in the Digital Age}
+
+\mode<article>{
+This lecture examines the philosophical foundations of free speech protections and their application to digital technologies. We begin with John Stuart Mill's classical liberal defense of free expression in \textit{On Liberty} (1859), exploring both utilitarian arguments from truth-seeking and deontological arguments from human autonomy. We then consider how Mill's framework applies to contemporary challenges posed by social media platforms, algorithmic amplification, and artificial intelligence. The central question is whether Mill's nineteenth-century principles remain adequate for twenty-first-century speech contexts characterized by unprecedented scale, speed, and private control over public discourse.
+}
 
 % ===== SLIDE 1: Title =====
 \begin{frame}
@@ -358,6 +324,13 @@ Does truth always win in the ``marketplace''? What might prevent it?
 \end{frame}
 
 % ===== PART II HEADER =====
+
+\section{Part II: Threats to Free Speech}
+
+\mode<article>{
+While government censorship represents the traditional threat to free expression, Mill recognized that social pressure can constitute an equally powerful form of tyranny. Contemporary digital contexts introduce additional threats through corporate platform power and economic barriers to being heard. Private companies now control the primary forums for public discourse, creating tensions between First Amendment protections against government censorship and the practical reality of corporate control over speech. Understanding these multiple threats is essential for developing adequate protections for meaningful free expression.
+}
+
 \begin{frame}
 \begin{center}
 {\Huge \textbf{Part II}}\\[0.5cm]
@@ -501,6 +474,13 @@ Does free speech mean anything if no one can hear you?
 \end{frame}
 
 % ===== PART III HEADER =====
+
+\section{Part III: The Limits of Free Speech}
+
+\mode<article>{
+Even strong defenders of free expression like Mill recognize that speech rights are not absolute. The challenge lies in determining where to draw the line between protected and unprotected speech. Mill's harm principle suggests that speech directly inciting imminent harm may be restricted, but contemporary debates over hate speech, silencing speech, and online harassment push this framework to its limits. We must consider whether categories of unprotected speech should be expanded to address harms Mill did not anticipate, while remaining mindful of the risks of government overreach and definitional manipulation.
+}
+
 \begin{frame}
 \begin{center}
 {\Huge \textbf{Part III}}\\[0.5cm]
@@ -661,6 +641,13 @@ Can speech itself be a form of censorship? Or is that a contradiction in terms?
 \end{frame}
 
 % ===== PART IV HEADER =====
+
+\section{Part IV: Historical Applications}
+
+\mode<article>{
+Examining how free speech principles have been applied to previous communication technologies provides essential context for current debates. The broadcast era's scarcity rationale justified content regulations like the Fairness Doctrine that would be unconstitutional if applied to print media. The elimination of the Fairness Doctrine in 1987 reflected changing technological conditions but may have contributed to contemporary media polarization. These historical examples demonstrate that technological change repeatedly forces reconsideration of how abstract principles translate into concrete policy.
+}
+
 \begin{frame}
 \begin{center}
 {\Huge \textbf{Part IV}}\\[0.5cm]
@@ -768,6 +755,13 @@ Was ending the Fairness Doctrine a Millian triumph or a mistake?
 \end{frame}
 
 % ===== PART V HEADER =====
+
+\section{Part V: Social Media Regulation}
+
+\mode<article>{
+Social media platforms occupy an ambiguous position: they are private entities with First Amendment rights, yet they exercise public power over democratic discourse. Section 230 of the Communications Decency Act provides platforms immunity from liability for user content while allowing content moderation. This legal framework enabled platform growth but faces increasing criticism as platforms have become essential infrastructure for public communication. The debate over platform regulation reflects fundamental tensions between private property rights, corporate power, and the public interest in open discourse.
+}
+
 \begin{frame}
 \begin{center}
 {\Huge \textbf{Part V}}\\[0.5cm]
@@ -987,6 +981,13 @@ Is there a meaningful difference between allowing speech and actively promoting 
 \end{frame}
 
 % ===== PART VI HEADER =====
+
+\section{Part VI: AI and Chatbots}
+
+\mode<article>{
+Artificial intelligence introduces novel challenges to free speech frameworks. AI-generated speech blurs traditional categories: it is neither fully autonomous expression nor simple tool use. Questions arise about whether AI speech deserves protection, who bears responsibility for AI-generated harms, and how to handle AI impersonation and scaled misinformation. ML's arguments for protecting speech rest on assumptions about human autonomy and truth-seeking that may not apply straightforwardly to artificial systems. These issues require extending traditional frameworks in ways Mill could not have anticipated.
+}
+
 \begin{frame}
 \begin{center}
 {\Huge \textbf{Part VI}}\\[0.5cm]
@@ -1073,6 +1074,13 @@ Users attempt to bypass AI safety restrictions through clever prompting:
 \end{frame}
 
 % ===== PART VII HEADER =====
+
+\section{Part VII: Synthesis and Conclusion}
+
+\mode<article>{
+Mill's framework for free speech remains valuable but requires updating for digital contexts. The marketplace of ideas metaphor assumes conditions---including rough equality of access and audience rationality---that may not hold in algorithmic environments optimized for engagement over truth. Platform power represents a form of control Mill did not fully anticipate. Nevertheless, Mill's core insights about fallibility, the value of intellectual conflict, and the dangers of concentrated control over expression remain highly relevant. The challenge is adapting these principles to contexts where both excessive regulation and insufficient regulation can undermine meaningful discourse.
+}
+
 \begin{frame}
 \begin{center}
 {\Huge \textbf{Part VII}}\\[0.5cm]

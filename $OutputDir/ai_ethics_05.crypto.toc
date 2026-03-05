@@ -1,0 +1,6 @@
+\beamer@sectionintoc {1}{Part I: Understanding Money and Cryptocurrency}{3}{0}{1}
+\beamer@sectionintoc {2}{Part II: The Case FOR Cryptocurrency}{13}{0}{2}
+\beamer@sectionintoc {3}{Part III: Criticisms of Pro-Crypto Arguments}{21}{0}{3}
+\beamer@sectionintoc {4}{Part IV: The Case FOR Regulation}{27}{0}{4}
+\beamer@sectionintoc {5}{Part V: Criticisms of Regulation Arguments}{35}{0}{5}
+\beamer@sectionintoc {6}{Part VI: The Future and Conclusion}{39}{0}{6}

@@ -1,55 +1,24 @@
 \documentclass[aspectratio=169]{beamer}
 
-% Theme and colors
-\usetheme{Madrid}
-\usecolortheme{whale}
-\setbeamertemplate{navigation symbols}{}
-\setbeamertemplate{footline}[frame number]
+% Load common preamble (theme, packages, standard boxes)
+\input{lecture_preamble.tex}
 
-% Packages
-\usepackage{tikz}
-\usetikzlibrary{shapes,arrows,positioning,calc,decorations.pathreplacing}
-\usepackage{booktabs}
-\usepackage{graphicx}
-\usepackage{xcolor}
-\usepackage{tcolorbox}
-\usepackage{array}
+% ------------------------------------------------------------------------------
+% Lecture-Specific Customizations
+% ------------------------------------------------------------------------------
 
-% Custom colors
+% Lecture 2 color theme (virtue ethics)
 \definecolor{aristotleblue}{RGB}{0,51,102}
 \definecolor{techgray}{RGB}{64,64,64}
 \definecolor{warningred}{RGB}{180,0,0}
 \definecolor{virtuegreen}{RGB}{0,100,0}
 
-% Custom blocks
-\newtcolorbox{argumentbox}[1][]{
-  colback=aristotleblue!5,
-  colframe=aristotleblue,
-  fonttitle=\bfseries,
-  title={#1},
-  boxrule=1pt,
-  arc=2pt
-}
-
-\newtcolorbox{quotebox}[1][]{
-  colback=gray!10,
-  colframe=gray!50,
-  fonttitle=\itshape,
-  title={#1},
-  boxrule=0.5pt,
-  arc=2pt,
-  left=10pt,
-  right=10pt
-}
-
-\newtcolorbox{objectionbox}[1][]{
-  colback=warningred!5,
-  colframe=warningred,
-  fonttitle=\bfseries,
-  title={#1},
-  boxrule=1pt,
-  arc=2pt
-}
+% Apply lecture colors to beamer theme
+\setbeamercolor{structure}{fg=aristotleblue}
+\setbeamercolor{title}{fg=white,bg=aristotleblue}
+\setbeamercolor{frametitle}{fg=white,bg=aristotleblue}
+\setbeamercolor{block title}{fg=white,bg=aristotleblue}
+\setbeamercolor{block body}{bg=aristotleblue!10}
 
 % Title information
 \title[Virtue Ethics \& Technology]{Virtue Ethics and Modern Technology}
@@ -59,6 +28,12 @@
 \date{}
 
 \begin{document}
+
+\section{Introduction: Virtue Ethics and Technology}
+
+\mode<article>{
+This lecture examines how modern technology, particularly social media and artificial intelligence, affects human character and flourishing from the perspective of virtue ethics. Drawing on Aristotle's ethical framework and contemporary applications by Shannon Vallor and others, we explore whether digital technologies are systematically undermining our capacity to develop intellectual and moral virtues. The central question is not simply "What should we do?" but "What kind of people are we becoming?"
+}
 
 % ===== SLIDE 1: Title =====
 \begin{frame}
@@ -418,6 +393,13 @@ Which of these capabilities might technology enhance? Which might it diminish?
 \end{frame}
 
 % ===== PART II HEADER =====
+
+\section{Part II: Intellectual Virtues Under Threat}
+
+\mode<article>{
+Intellectual virtues---including curiosity, intellectual humility, love of truth, open-mindedness, and intellectual courage---are essential for human flourishing. These virtues are cultivated through practices like sustained attention, effortful memory work, and engagement with diverse viewpoints. However, contemporary digital technologies may systematically undermine these practices by rewarding distraction, outsourcing cognitive work, creating echo chambers, and fostering intellectual dependency through AI tools.
+}
+
 \begin{frame}
 \begin{center}
 {\Huge \textbf{Part II}}\\[0.5cm]
@@ -612,6 +594,13 @@ When is it appropriate to use AI for help vs. when does it become intellectual `
 \end{frame}
 
 % ===== PART III HEADER =====
+
+\section{Part III: Moral Virtues Under Threat}
+
+\mode<article>{
+Moral virtues such as empathy, compassion, patience, temperance, civility, and honesty are traditionally cultivated through embodied, face-to-face social interactions that involve vulnerability and reciprocity. Digital mediation of human relationships may degrade these practices. Online environments characterized by anonymity, asynchronicity, and algorithmic amplification of outrage may actively habituate users toward moral vices including cruelty, impatience, and dishonesty. Evidence from empathy research, studies of online disinhibition, and analysis of social media business models suggests cause for concern.
+}
+
 \begin{frame}
 \begin{center}
 {\Huge \textbf{Part III}}\\[0.5cm]
@@ -819,6 +808,13 @@ What emotions does your social media feed most often evoke in you?
 \end{frame}
 
 % ===== PART IV HEADER =====
+
+\section{Part IV: Eudaimonia Under Threat}
+
+\mode<article>{
+Beyond specific virtues, Aristotelian ethics focuses on eudaimonia---human flourishing across a complete life. Eudaimonia requires integrated exercise of virtue, meaningful relationships, purposeful activity, and genuine self-knowledge. Contemporary evidence suggests that social media and AI may fragment attention, commodify relationships, and distort self-understanding in ways that directly impede the conditions necessary for flourishing. Rising rates of depression and anxiety, particularly among adolescents, coinciding with smartphone adoption provide troubling empirical support for these concerns.
+}
+
 \begin{frame}
 \begin{center}
 {\Huge \textbf{Part IV}}\\[0.5cm]
@@ -943,6 +939,13 @@ Does your ``For You'' page reflect who you really are---or who the algorithm wan
 \end{frame}
 
 % ===== PART V HEADER =====
+
+\section{Part V: Policy Responses}
+
+\mode<article>{
+If the virtue ethics diagnosis is correct, what practical responses follow? Individual responses like digital detoxes and mindful technology use have value but may be insufficient given the structural forces at play. Virtue ethics can ground arguments for regulatory interventions aimed at creating environments more conducive to flourishing, such as age restrictions on social media, design mandates that remove features encouraging vice, algorithm transparency requirements, and comprehensive digital literacy education. The challenge is balancing protection of human flourishing with respect for individual autonomy and pluralism.
+}
+
 \begin{frame}
 \begin{center}
 {\Huge \textbf{Part V}}\\[0.5cm]
@@ -1036,6 +1039,13 @@ Which of these recommendations could you realistically implement this week?
 \end{frame}
 
 % ===== PART VI HEADER =====
+
+\section{Part VI: Objections and Responses}
+
+\mode<article>{
+The virtue ethics critique of contemporary technology faces important objections. Liberal critics like Isaiah Berlin warn that appealing to "positive liberty" or a particular conception of the good life risks paternalistic overreach that has historically justified tyranny. Nietzschean critics question whether we can reliably identify virtue versus vice, suggesting that historical "virtues" often merely reflected power structures or herd mentality. These objections are serious and demand careful responses concerning the distinction between protecting children and adults, the nature of autonomous choice under conditions of addiction and manipulation, the role of market failures in technology design, and the empirical basis for claims about human flourishing.
+}
+
 \begin{frame}
 \begin{center}
 {\Huge \textbf{Part VI}}\\[0.5cm]
