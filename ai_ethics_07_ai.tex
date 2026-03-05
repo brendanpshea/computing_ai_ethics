@@ -1,87 +1,25 @@
 \documentclass[aspectratio=169,11pt]{beamer}
-\usetheme{Madrid}
-\usecolortheme{default}
 
-% Fix navigation symbols overflow in 16:9
-\setbeamertemplate{navigation symbols}{}
-\setbeamertemplate{footline}{
-    \leavevmode%
-    \hbox{%
-        \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
-            \usebeamerfont{author in head/foot}\insertshortauthor
-        \end{beamercolorbox}%
-        \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
-            \usebeamerfont{title in head/foot}\insertshorttitle
-        \end{beamercolorbox}%
-        \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
-            \usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
-            \insertframenumber{} / \inserttotalframenumber\hspace*{2ex}
-        \end{beamercolorbox}}%
-    \vskip0pt%
-}
+% Load common preamble (theme, packages, standard boxes)
+\input{lecture_preamble.tex}
 
-% Custom colors - AI theme
+% ------------------------------------------------------------------------------
+% Lecture-Specific Customizations
+% ------------------------------------------------------------------------------
+
+% Lecture 7 color theme (AI)
 \definecolor{aiblue}{RGB}{0,102,204}
 \definecolor{aigreen}{RGB}{0,153,76}
 \definecolor{aiorange}{RGB}{230,115,0}
 \definecolor{aipurple}{RGB}{102,51,153}
 \definecolor{aired}{RGB}{178,34,34}
 
+% Apply lecture colors to beamer theme
 \setbeamercolor{structure}{fg=aiblue}
 \setbeamercolor{title}{fg=white,bg=aiblue}
 \setbeamercolor{frametitle}{fg=white,bg=aiblue}
 \setbeamercolor{block title}{fg=white,bg=aiblue}
 \setbeamercolor{block body}{bg=aiblue!10}
-
-% Packages
-\usepackage{tikz}
-\usetikzlibrary{shapes,arrows,positioning,decorations.pathreplacing,calc,fit}
-\usepackage{booktabs}
-\usepackage{tcolorbox}
-\tcbuselibrary{skins,breakable}
-
-% Custom boxes
-\newtcolorbox{conceptbox}[1][]{
-    colback=aiblue!5,
-    colframe=aiblue,
-    fonttitle=\bfseries,
-    title=#1
-}
-
-\newtcolorbox{probox}[1][]{
-    colback=aigreen!5,
-    colframe=aigreen!80!black,
-    fonttitle=\bfseries,
-    title=#1
-}
-
-\newtcolorbox{objectionbox}[1][]{
-    colback=aired!5,
-    colframe=aired!80!black,
-    fonttitle=\bfseries,
-    title=#1
-}
-
-\newtcolorbox{casestudybox}[1][]{
-    colback=aiorange!10,
-    colframe=aiorange!80!black,
-    fonttitle=\bfseries,
-    title=#1
-}
-
-\newtcolorbox{quotebox}[1][]{
-    colback=gray!5,
-    colframe=gray!50,
-    fonttitle=\bfseries,
-    title=#1
-}
-
-\newtcolorbox{figurebox}[1][]{
-    colback=aipurple!5,
-    colframe=aipurple!80!black,
-    fonttitle=\bfseries,
-    title=#1
-}
 
 % Title information
 \title[Intro to AI]{Introduction to Artificial Intelligence}
@@ -91,6 +29,10 @@
 \date{}
 
 \begin{document}
+
+\mode<article>{
+This lecture provides a comprehensive introduction to artificial intelligence from philosophical and historical perspectives. The very definition of "AI" proves contested and unstable, with technologies once considered intelligent being reclassified as "mere computation" once understood---a pattern known as Tesler's Theorem. We examine various distinctions used to categorize AI systems (narrow vs. general, weak vs. strong, symbolic vs. connectionist) and their implications for ethical evaluation and policy development. The lecture traces AI's development from early symbolic systems through expert systems to modern machine learning and neural networks. We consider classical philosophical debates about machine intelligence from Turing, Searle, and others, then examine how definitional choices shape contemporary discussions of AI capabilities, risks, and moral status.
+}
 
 % Slide 1: Title
 \begin{frame}
@@ -114,6 +56,10 @@
 
 %% PART I: THE DEFINITIONAL CHALLENGE %%
 \section{Part I: The Definitional Challenge}
+
+\mode<article>{
+Defining artificial intelligence matters profoundly for how we understand its capabilities, assess its risks, and determine its moral status. The "moving goalposts problem" suggests that "AI" functions more as placeholder for unsolved problems than stable category, with successful AI repeatedly reclassified as "just" search algorithms, statistics, or optimization. Contemporary AI discourse employs multiple overlapping distinctions: narrow systems excelling at specific tasks versus hypothetical artificial general intelligence; weak AI that simulates intelligence versus strong AI that genuinely possesses minds; and symbolic rule-based approaches versus connectionist neural networks. Each distinction carries philosophical commitments about cognition, consciousness, and intelligence that shape both technical development and ethical evaluation.
+}
 
 % Slide 3: Why Definition Matters
 \begin{frame}{Why Definition Matters}

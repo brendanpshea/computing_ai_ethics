@@ -1,0 +1,247 @@
+% ==============================================================================
+% Common Preamble for IT Ethics Lectures
+% ==============================================================================
+% This file contains shared configuration for all lecture files.
+% Include this after \documentclass using: \input{lecture_preamble.tex}
+%
+% Individual lecture files should:
+% 1. Declare \documentclass (beamer or beamerarticle)
+% 2. \input{lecture_preamble.tex}
+% 3. Define lecture-specific colors/customizations
+% 4. Set title information
+% ==============================================================================
+
+% ------------------------------------------------------------------------------
+% Theme and Basic Setup
+% ------------------------------------------------------------------------------
+\usetheme{Madrid}
+\usecolortheme{default}
+
+% Remove navigation symbols (clean presentation)
+\setbeamertemplate{navigation symbols}{}
+
+% Standard footline with frame numbers
+\setbeamertemplate{footline}{
+    \leavevmode%
+    \hbox{%
+        \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+            \usebeamerfont{author in head/foot}\insertshortauthor
+        \end{beamercolorbox}%
+        \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+            \usebeamerfont{title in head/foot}\insertshorttitle
+        \end{beamercolorbox}%
+        \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+            \usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
+            \insertframenumber{} / \inserttotalframenumber\hspace*{2ex}
+        \end{beamercolorbox}}%
+    \vskip0pt%
+}
+
+% ------------------------------------------------------------------------------
+% Core Packages
+% ------------------------------------------------------------------------------
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows,positioning,calc,decorations.pathreplacing,fit,backgrounds,chains}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{xcolor}
+
+% Conditional text boxes (more flexible than basic beamer blocks)
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+
+% ------------------------------------------------------------------------------
+% Article Mode Adjustments
+% ------------------------------------------------------------------------------
+% When compiling as article (using beamerarticle class), apply these settings
+\mode<article>{
+    % Use standard article sections instead of beamer frames
+    \usepackage{fullpage}
+    \usepackage{hyperref}
+    \hypersetup{
+        colorlinks=true,
+        linkcolor=blue,
+        citecolor=blue,
+        urlcolor=blue
+    }
+    % Add bibliography package for article mode
+    \usepackage[style=apa,backend=biber]{biblatex}
+    \addbibresource{refs.bib}
+    
+    % Redefine frame environment for article mode
+    % Frames become subsections in article mode
+    \renewenvironment{frame}[1][]{
+        \par\medskip
+        \noindent\textbf{#1}\par\medskip
+    }{}
+}
+
+% Presentation mode specific settings
+\mode<presentation>{
+    % Tighter spacing for slides
+    \setlength{\parskip}{0pt}
+}
+
+% ------------------------------------------------------------------------------
+% Standard Colors for Boxes
+% ------------------------------------------------------------------------------
+% Consistent color scheme across all lectures for semantic elements
+\definecolor{boxblue}{RGB}{0,73,135}      % Arguments, concepts
+\definecolor{boxgreen}{RGB}{34,139,34}    % Pro arguments, supporting points
+\definecolor{boxred}{RGB}{178,34,34}      % Objections, warnings
+\definecolor{boxgold}{RGB}{198,146,20}    % Case studies, examples
+\definecolor{boxgray}{RGB}{100,100,100}   % Quotes, citations
+
+% ------------------------------------------------------------------------------
+% Standard Custom Boxes
+% ------------------------------------------------------------------------------
+% Uniform boxes used across all lectures - do not redefine in individual files
+
+% Argument/Reasoning Box (logical arguments in standard form)
+\newtcolorbox{argumentbox}[1][Argument]{
+    colback=boxblue!5,
+    colframe=boxblue,
+    fonttitle=\bfseries,
+    title={#1},
+    boxrule=1pt,
+    arc=2pt
+}
+
+% Quotation Box (for philosophical quotes, sources)
+\newtcolorbox{quotebox}[1][Quote]{
+    colback=gray!10,
+    colframe=boxgray,
+    fonttitle=\itshape,
+    title={#1},
+    boxrule=0.5pt,
+    arc=2pt,
+    left=10pt,
+    right=10pt,
+    leftrule=3pt
+}
+
+% Case Study/Example Box
+\newtcolorbox{casestudybox}[1][Case Study]{
+    colback=boxgold!10,
+    colframe=boxgold,
+    fonttitle=\bfseries,
+    title={#1},
+    boxrule=1pt,
+    arc=2pt
+}
+
+% Objection/Counterargument Box
+\newtcolorbox{objectionbox}[1][Objection]{
+    colback=boxred!5,
+    colframe=boxred,
+    fonttitle=\bfseries,
+    title={#1},
+    boxrule=1pt,
+    arc=2pt
+}
+
+% Pro/Supporting Argument Box
+\newtcolorbox{probox}[1][Supporting Argument]{
+    colback=boxgreen!5,
+    colframe=boxgreen,
+    fonttitle=\bfseries,
+    title={#1},
+    boxrule=1pt,
+    arc=2pt
+}
+
+% Concept/Definition Box
+\newtcolorbox{conceptbox}[1][Key Concept]{
+    colback=boxblue!5,
+    colframe=boxblue,
+    fonttitle=\bfseries,
+    title={#1},
+    boxrule=1pt,
+    arc=2pt
+}
+
+% Discussion Box (for group activities, questions)
+\newtcolorbox{discussionbox}[1][Discussion]{
+    colback=boxgold!5,
+    colframe=boxgold,
+    fonttitle=\bfseries,
+    title={#1},
+    boxrule=1pt,
+    arc=2pt
+}
+
+% Figure Box (for diagrams with explanations)
+\newtcolorbox{figurebox}[1][Figure]{
+    colback=boxblue!3,
+    colframe=boxblue!70,
+    fonttitle=\bfseries,
+    title={#1},
+    boxrule=0.75pt,
+    arc=2pt
+}
+
+% ------------------------------------------------------------------------------
+% Utility Commands and Icons
+% ------------------------------------------------------------------------------
+
+% Text-based icon alternatives (since fontawesome is not available)
+\newcommand{\iconQuote}{\textbf{``}}
+\newcommand{\iconBalance}{$\triangleright$}
+\newcommand{\iconDiscussion}{\textbf{?}}
+\newcommand{\iconIdea}{$\star$}
+\newcommand{\iconPro}{\textbf{+}}
+\newcommand{\iconCon}{\textbf{--}}
+
+% Discussion question command (for interactive moments)
+\newcommand{\discussionquestion}[1]{%
+    \begin{alertblock}{Discussion Question}
+    #1
+    \end{alertblock}
+}
+
+% Simple divider for slide sections
+\newcommand{\sectiondivider}{%
+    \begin{center}
+    \rule{0.8\textwidth}{0.4pt}
+    \end{center}
+}
+
+% Argument environment (for standard form arguments)
+\newenvironment{argument}{%
+  \begin{argumentbox}[Argument in Standard Form]
+  \begin{enumerate}
+}{%
+  \end{enumerate}
+  \end{argumentbox}
+}
+
+% Quote slide environment (combines icon and quotebox)
+\newenvironment{quoteslide}[2]{%
+  \begin{quotebox}[#1]
+  \small
+  \textit{``#2''}
+}{%
+  \end{quotebox}
+}
+
+% ------------------------------------------------------------------------------
+% Color Placeholders
+% ------------------------------------------------------------------------------
+% Lectures should define their own theme colors after inputting this file
+% Example color names to override:
+% \definecolor{themeblue}{RGB}{0,82,155}
+% \definecolor{themegold}{RGB}{247,147,26}
+% \definecolor{themegreen}{RGB}{39,174,96}
+% \definecolor{themered}{RGB}{192,57,43}
+% 
+% Then set beamer colors:
+% \setbeamercolor{structure}{fg=themeblue}
+% \setbeamercolor{title}{fg=white,bg=themeblue}
+% \setbeamercolor{frametitle}{fg=white,bg=themeblue}
+% \setbeamercolor{block title}{fg=white,bg=themeblue}
+% \setbeamercolor{block body}{bg=themeblue!10}
+
+% ==============================================================================
+% End of Common Preamble
+% ==============================================================================

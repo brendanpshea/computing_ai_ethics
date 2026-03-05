@@ -4,34 +4,20 @@
 
 \documentclass[aspectratio=169]{beamer}
 
-% Theme and styling
-\usetheme{Madrid}
-\usecolortheme{default}
-\setbeamertemplate{navigation symbols}{}
-\setbeamertemplate{footline}[frame number]
+% Load common preamble (theme, packages, standard boxes)
+\input{lecture_preamble.tex}
 
-% Packages
-\usepackage{tikz}
-\usetikzlibrary{shapes,arrows,positioning,calc,fit,backgrounds}
-\usepackage{booktabs}
-\usepackage{array}
-\usepackage{graphicx}
-% Custom icons (text-based alternatives)
-\newcommand{\faQuoteLeft}{\textbf{``}}
-\newcommand{\faBalanceScale}{$\triangleright$}
-\newcommand{\faComments}{\textbf{?}}
-\newcommand{\faLightbulb}{$\star$}
-\newcommand{\faThumbsUp}{\textbf{+}}
-\newcommand{\faThumbsDown}{\textbf{--}}
+% ------------------------------------------------------------------------------
+% Lecture-Specific Customizations
+% ------------------------------------------------------------------------------
 
-% Custom colors
+% Lecture 1 color theme (historical/foundational)
 \definecolor{primaryblue}{RGB}{0,73,135}
 \definecolor{accentgold}{RGB}{198,146,20}
-\definecolor{darkgray}{RGB}{64,64,64}
 \definecolor{lightgray}{RGB}{240,240,240}
 \definecolor{quotegreen}{RGB}{34,139,34}
 
-% Set theme colors
+% Apply lecture colors to beamer theme
 \setbeamercolor{structure}{fg=primaryblue}
 \setbeamercolor{title}{fg=white,bg=primaryblue}
 \setbeamercolor{frametitle}{fg=white,bg=primaryblue}
@@ -42,32 +28,14 @@
 \setbeamercolor{block title example}{fg=white,bg=quotegreen}
 \setbeamercolor{block body example}{bg=green!5}
 
-% Custom environments for consistent formatting
-
-% Quote environment
-\newenvironment{quoteslide}[2]{%
-  \begin{exampleblock}{\faQuoteLeft\hspace{0.5em}#1}
-  \small
-  \textit{``#2''}
-}{%
-  \end{exampleblock}
-}
-
-% Argument environment
-\newenvironment{argument}{%
-  \begin{block}{\faBalanceScale\hspace{0.5em}Argument in Standard Form}
-  \begin{enumerate}
-}{%
-  \end{enumerate}
-  \end{block}
-}
-
-% Discussion question environment
-\newcommand{\discussion}[1]{%
-  \begin{alertblock}{\faComments\hspace{0.5em}Discussion Question}
-  #1
-  \end{alertblock}
-}
+% Backward compatibility aliases for lecture 1
+\newcommand{\faQuoteLeft}{\iconQuote}
+\newcommand{\faBalanceScale}{\iconBalance}
+\newcommand{\faComments}{\iconDiscussion}
+\newcommand{\faLightbulb}{\iconIdea}
+\newcommand{\faThumbsUp}{\iconPro}
+\newcommand{\faThumbsDown}{\iconCon}
+\newcommand{\discussion}[1]{\discussionquestion{#1}}
 
 % Title information
 \title[History of IT Ethics]{Lecture 1: The History of IT Ethics}
@@ -88,6 +56,12 @@
 % ====================
 % INTRODUCTION (Slides 2-4)
 % ====================
+
+\section{Introduction: Information Technology and Ethics}
+
+\mode<article>{
+This lecture examines the history of information technology ethics by tracing five major IT revolutions from ancient writing to the modern web. Each revolution promised liberation and democratization, yet also enabled new forms of control and manipulation. By understanding these historical patterns, we can better analyze contemporary ethical challenges in computing and artificial intelligence.
+}
 
 \begin{frame}{What is Information Technology?}
 \textbf{Definition:} Technologies for \textbf{creating}, \textbf{storing}, \textbf{transmitting}, and \textbf{processing} information.
@@ -164,6 +138,12 @@ Each revolution promised liberation---and each enabled new forms of control.
 % REVOLUTION 1: WRITING (Slides 5-11)
 % ====================
 
+\section{Revolution 1: Writing}
+
+\mode<article>{
+The invention of writing around 3200 BCE represented humanity's first major information technology revolution. By externalizing memory and enabling information storage beyond the human mind, writing fundamentally transformed human society. However, this transformation was not universally celebrated. The philosopher Socrates, as recorded by Plato, articulated profound concerns about writing's impact on human cognition and wisdom---concerns that echo through subsequent debates about new technologies.
+}
+
 \begin{frame}{Revolution 1: A Brief History of Writing}
 \begin{columns}
 \begin{column}{0.55\textwidth}
@@ -182,6 +162,7 @@ Writing \textbf{externalizes} information---storing it outside the human mind fo
 \end{column}
 
 \begin{column}{0.42\textwidth}
+\begin{figure}
 \begin{tikzpicture}[scale=0.7, transform shape]
   \node[draw, rounded corners, fill=primaryblue!20, minimum width=3cm, minimum height=1cm] (oral) at (0,3) {Oral Culture};
   \node[draw, rounded corners, fill=primaryblue!20, minimum width=3cm, minimum height=1cm] (written) at (0,0) {Written Culture};
@@ -189,6 +170,8 @@ Writing \textbf{externalizes} information---storing it outside the human mind fo
   \node[font=\scriptsize, text width=3cm, align=center] at (0,4.2) {Memory in minds};
   \node[font=\scriptsize, text width=3cm, align=center] at (0,-1.2) {Memory on tablets};
 \end{tikzpicture}
+\caption{Transition from oral to written culture}
+\end{figure}
 \end{column}
 \end{columns}
 
@@ -249,6 +232,7 @@ Socrates tells the \textbf{myth of Theuth and Thamus}:
 \end{column}
 
 \begin{column}{0.38\textwidth}
+\begin{figure}
 \begin{tikzpicture}[scale=0.9, transform shape]
   \node[draw, circle, fill=accentgold!30, minimum size=1.5cm, font=\scriptsize\bfseries] (theuth) at (0,2) {Theuth};
   \node[draw, circle, fill=primaryblue!30, minimum size=1.5cm, font=\scriptsize\bfseries] (thamus) at (0,-1) {Thamus};
@@ -258,6 +242,8 @@ Socrates tells the \textbf{myth of Theuth and Thamus}:
   \node[font=\tiny, text width=2cm, align=center] at (0,3.3) {Inventor (Optimist)};
   \node[font=\tiny, text width=2cm, align=center] at (0,-2.3) {Judge (Skeptic)};
 \end{tikzpicture}
+\caption{The myth of Theuth and Thamus}
+\end{figure}
 \end{column}
 \end{columns}
 \end{frame}
@@ -365,6 +351,12 @@ The same technology that enables law and literature also enables empire and cont
 % ====================
 % REVOLUTION 2: PRINTING PRESS (Slides 12-18)
 % ====================
+
+\section{Revolution 2: The Printing Press}
+
+\mode<article>{
+Johannes Gutenberg's invention of movable type printing around 1440 marked the second great information technology revolution. By dramatically reducing the cost of book production, printing democratized access to knowledge and enabled rapid dissemination of ideas across Europe. Yet this same technology also facilitated the spread of propaganda, religious conflict, and witch-hunting manuals. The debate between Martin Luther and Erasmus exemplifies the tension between revolutionary and reformist visions of how new communication technologies should be deployed.
+}
 
 \begin{frame}{Revolution 2: A Brief History of Printing}
 \begin{block}{Key Developments}
@@ -564,6 +556,12 @@ The technology \textbf{amplifies human intentions}---both good and bad. The ques
 % REVOLUTION 3: DISTANCE COMMUNICATION (Slides 19-24)
 % ====================
 
+\section{Revolution 3: Distance Communication}
+
+\mode<article>{
+The nineteenth century witnessed remarkable innovations in distance communication, particularly the telegraph and telephone. These technologies promised to unite humanity and even end war through better communication and understanding. However, they also enabled unprecedented imperial coordination and surveillance. The contrasting views of John Stuart Mill and Karl Marx on these technologies reflect fundamentally different understandings of technology's relationship to power: Mill saw technology as a neutral tool enabling individual liberty, while Marx argued that technology inevitably serves whoever controls it.
+}
+
 \begin{frame}{Revolution 3: The Technologies of the Long 19th Century}
 \begin{block}{Key Innovations}
 \begin{itemize}
@@ -762,6 +760,12 @@ The telegraph and telephone that connected families also coordinated empires.
 % REVOLUTION 4: MASS MEDIA (Slides 25-30)
 % ====================
 
+\section{Revolution 4: Mass Media}
+
+\mode<article>{
+The rise of radio and television in the twentieth century created a fundamentally new communication paradigm: passive, one-to-many broadcasting controlled by a limited number of gatekeepers. George Orwell and Hannah Arendt, both witnesses to totalitarianism's rise, recognized mass media's potential to shape reality itself. Orwell warned of state monopolies on information that could make truth malleable, while Arendt analyzed how mass media combined with social atomization creates conditions favorable to totalitarian movements. These insights remain profoundly relevant in the digital age.
+}
+
 \begin{frame}{Revolution 4: The Rise of Radio and Television}
 \begin{block}{Key Developments}
 \begin{itemize}
@@ -939,6 +943,12 @@ The same broadcast that showed the Civil Rights Movement to the nation also enab
 % REVOLUTION 5: THE WEB (Slides 31-35)
 % ====================
 
+\section{Revolution 5: The World Wide Web}
+
+\mode<article>{
+The development of the World Wide Web in the 1990s and its evolution through Web 2.0 social media platforms represents our current information revolution. Initial utopian visions of democratization and disintermediation have given way to concerns about platform power, surveillance capitalism, and algorithmic manipulation. As with previous revolutions, we face the recurring question: who controls the technology, and for what ends? The debates surrounding artificial intelligence, content moderation, and digital privacy echo historical patterns while presenting genuinely novel challenges.
+}
+
 \begin{frame}{Revolution 5: Web 1.0---The Read-Only Web (1990s)}
 \begin{block}{Key Developments}
 \begin{itemize}
@@ -1052,6 +1062,12 @@ Who decides? And on what basis?
 % ====================
 % CONCLUSION (Slides 35-36)
 % ====================
+
+\section{Conclusion: Patterns and Lessons}
+
+\mode<article>{
+Across all five information technology revolutions, we observe recurring patterns. Each revolution promised liberation, democratization, and human progress. Each also enabled new forms of control, manipulation, and conflict. The optimists and pessimists were typically both partially correct. Most importantly, the ethical question is never simply about the technology itself, but about who controls it and toward what ends it is deployed. Understanding this history equips us to think more critically about contemporary technological change and our responsibilities as participants in ongoing digital transformation.
+}
 
 \begin{frame}{Patterns Across the Revolutions}
 \begin{table}

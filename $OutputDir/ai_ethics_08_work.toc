@@ -1,0 +1,6 @@
+\beamer@sectionintoc {1}{Part I: What Is Work?}{3}{0}{1}
+\beamer@sectionintoc {2}{Part II: Why Is Meaningful Work Ethically Valuable?}{11}{0}{2}
+\beamer@sectionintoc {3}{Part III: How Might AI Transform Work?}{18}{0}{3}
+\beamer@sectionintoc {4}{Part IV: Meaningful Work Isn't the Only Value}{31}{0}{4}
+\beamer@sectionintoc {5}{Part V: Can AI Do ``Real'' Work?}{35}{0}{5}
+\beamer@sectionintoc {6}{Part VI: Conclusion}{40}{0}{6}

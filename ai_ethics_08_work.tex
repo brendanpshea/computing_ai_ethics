@@ -1,26 +1,13 @@
 \documentclass[aspectratio=169,11pt]{beamer}
-\usetheme{Madrid}
-\usecolortheme{default}
 
-% Fix navigation symbols overflow in 16:9
-\setbeamertemplate{navigation symbols}{}
-\setbeamertemplate{footline}{
-    \leavevmode%
-    \hbox{%
-        \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
-            \usebeamerfont{author in head/foot}\insertshortauthor
-        \end{beamercolorbox}%
-        \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
-            \usebeamerfont{title in head/foot}\insertshorttitle
-        \end{beamercolorbox}%
-        \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
-            \usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
-            \insertframenumber{} / \inserttotalframenumber\hspace*{2ex}
-        \end{beamercolorbox}}%
-    \vskip0pt%
-}
+% Load common preamble (theme, packages, standard boxes)
+\input{lecture_preamble.tex}
 
-% Custom colors - Labor/Work theme
+% ------------------------------------------------------------------------------
+% Lecture-Specific Customizations
+% ------------------------------------------------------------------------------
+
+% Lecture 8 color theme (work/labor)
 \definecolor{laborblue}{RGB}{0,90,156}
 \definecolor{laborgreen}{RGB}{46,139,87}
 \definecolor{labororange}{RGB}{210,105,30}
@@ -28,61 +15,12 @@
 \definecolor{labored}{RGB}{178,34,34}
 \definecolor{laborgold}{RGB}{184,134,11}
 
+% Apply lecture colors to beamer theme
 \setbeamercolor{structure}{fg=laborblue}
 \setbeamercolor{title}{fg=white,bg=laborblue}
 \setbeamercolor{frametitle}{fg=white,bg=laborblue}
 \setbeamercolor{block title}{fg=white,bg=laborblue}
 \setbeamercolor{block body}{bg=laborblue!10}
-
-% Packages
-\usepackage{tikz}
-\usetikzlibrary{shapes,arrows,positioning,decorations.pathreplacing,calc,fit}
-\usepackage{booktabs}
-\usepackage{tcolorbox}
-\tcbuselibrary{skins,breakable}
-
-% Custom boxes
-\newtcolorbox{conceptbox}[1][]{
-    colback=laborblue!5,
-    colframe=laborblue,
-    fonttitle=\bfseries,
-    title=#1
-}
-
-\newtcolorbox{probox}[1][]{
-    colback=laborgreen!5,
-    colframe=laborgreen!80!black,
-    fonttitle=\bfseries,
-    title=#1
-}
-
-\newtcolorbox{objectionbox}[1][]{
-    colback=labored!5,
-    colframe=labored!80!black,
-    fonttitle=\bfseries,
-    title=#1
-}
-
-\newtcolorbox{casestudybox}[1][]{
-    colback=labororange!10,
-    colframe=labororange!80!black,
-    fonttitle=\bfseries,
-    title=#1
-}
-
-\newtcolorbox{quotebox}[1][]{
-    colback=gray!5,
-    colframe=gray!50,
-    fonttitle=\bfseries,
-    title=#1
-}
-
-\newtcolorbox{discussionbox}[1][]{
-    colback=laborpurple!5,
-    colframe=laborpurple!80!black,
-    fonttitle=\bfseries,
-    title=#1
-}
 
 % Title information
 \title[AI and Human Labor]{AI and the Future of Human Labor}
@@ -92,6 +30,10 @@
 \date{}
 
 \begin{document}
+
+\mode<article>{
+This lecture examines artificial intelligence's impact on human work and creativity through Hannah Arendt's philosophical framework distinguishing labor, work, and action. We explore why meaningful work matters ethically, drawing on Marxist, capabilities, and virtue ethics perspectives. The lecture considers multiple ways AI might transform work: through automation displacing workers, deskilling creative crafts, or alternatively augmenting human capabilities. The question extends beyond economic impacts to concern work's role in human flourishing, identity formation, and social meaning. Recent debates over AI-generated art exemplify broader anxieties about whether activities central to human meaning can be authentically performed by machines. We conclude by considering whether meaningful work represents an absolute value or one good among many that might be traded off for other benefits.
+}
 
 % Slide 1: Title
 \begin{frame}
@@ -115,6 +57,10 @@ AI doesn't just threaten jobs---it threatens the human activities through which 
 
 %%% PART I: WHAT IS WORK? %%%
 \section{Part I: What Is Work?}
+
+\mode<article>{
+Hannah Arendt's \textit{The Human Condition} distinguishes three fundamental forms of human activity. Labor (\textit{animal laborans}) refers to cyclical activities necessary for biological survival but producing nothing lasting. Work (\textit{homo faber}) creates durable objects that outlast their maker, building a stable world of human artifice. Action involves self-disclosure through deeds in the public sphere. Arendt worried modernity reduces all activity to mere labor, eliminating durability and meaning. This framework proves especially useful for analyzing AI's impact on work, as AI threatens to eliminate precisely those activities Arendt categorizes as genuine "work"---skilled creation of lasting objects---while leaving only consumption and maintenance. Understanding this distinction helps clarify why AI's economic impacts raise deeper concerns about human flourishing beyond simple unemployment.
+}
 
 % Slide 3: Arendt's Distinction
 \begin{frame}{Arendt's Distinction: Labor vs.\ Work vs.\ Action}
