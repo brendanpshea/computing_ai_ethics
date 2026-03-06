@@ -52,6 +52,12 @@
 \tcbuselibrary{skins,breakable}
 
 % ------------------------------------------------------------------------------
+% Bibliography (loaded in all modes for citations)
+% ------------------------------------------------------------------------------
+\usepackage[style=authoryear,backend=biber,natbib=true,maxcitenames=2]{biblatex}
+\addbibresource{refs.bib}
+
+% ------------------------------------------------------------------------------
 % Article Mode Adjustments
 % ------------------------------------------------------------------------------
 % When compiling as article (using beamerarticle class), apply these settings
@@ -65,10 +71,7 @@
         citecolor=blue,
         urlcolor=blue
     }
-    % Add bibliography package for article mode
-    \usepackage[style=apa,backend=biber]{biblatex}
-    \addbibresource{refs.bib}
-    
+
     % Redefine frame environment for article mode
     % Frames become subsections in article mode
     \renewenvironment{frame}[1][]{
@@ -92,6 +95,23 @@
 \definecolor{boxred}{RGB}{178,34,34}      % Objections, warnings
 \definecolor{boxgold}{RGB}{198,146,20}    % Case studies, examples
 \definecolor{boxgray}{RGB}{100,100,100}   % Quotes, citations
+\definecolor{boxpurple}{RGB}{102,51,153}  % Secondary accent
+
+% ------------------------------------------------------------------------------
+% Beamer Theme Color Setup
+% ------------------------------------------------------------------------------
+% Applied once here; individual lectures should NOT override these.
+\mode<presentation>{
+    \setbeamercolor{structure}{fg=boxblue}
+    \setbeamercolor{title}{fg=white,bg=boxblue}
+    \setbeamercolor{frametitle}{fg=white,bg=boxblue}
+    \setbeamercolor{block title}{fg=white,bg=boxblue}
+    \setbeamercolor{block body}{bg=boxblue!10}
+    \setbeamercolor{block title alerted}{fg=white,bg=boxred}
+    \setbeamercolor{block body alerted}{bg=boxred!10}
+    \setbeamercolor{block title example}{fg=white,bg=boxgreen}
+    \setbeamercolor{block body example}{bg=boxgreen!5}
+}
 
 % ------------------------------------------------------------------------------
 % Standard Custom Boxes
@@ -200,6 +220,15 @@
     \end{alertblock}
 }
 
+% Backward compatibility aliases (originally defined in lecture 1)
+\newcommand{\faQuoteLeft}{\iconQuote}
+\newcommand{\faBalanceScale}{\iconBalance}
+\newcommand{\faComments}{\iconDiscussion}
+\newcommand{\faLightbulb}{\iconIdea}
+\newcommand{\faThumbsUp}{\iconPro}
+\newcommand{\faThumbsDown}{\iconCon}
+\newcommand{\discussion}[1]{\discussionquestion{#1}}
+
 % Simple divider for slide sections
 \newcommand{\sectiondivider}{%
     \begin{center}
@@ -224,23 +253,6 @@
 }{%
   \end{quotebox}
 }
-
-% ------------------------------------------------------------------------------
-% Color Placeholders
-% ------------------------------------------------------------------------------
-% Lectures should define their own theme colors after inputting this file
-% Example color names to override:
-% \definecolor{themeblue}{RGB}{0,82,155}
-% \definecolor{themegold}{RGB}{247,147,26}
-% \definecolor{themegreen}{RGB}{39,174,96}
-% \definecolor{themered}{RGB}{192,57,43}
-% 
-% Then set beamer colors:
-% \setbeamercolor{structure}{fg=themeblue}
-% \setbeamercolor{title}{fg=white,bg=themeblue}
-% \setbeamercolor{frametitle}{fg=white,bg=themeblue}
-% \setbeamercolor{block title}{fg=white,bg=themeblue}
-% \setbeamercolor{block body}{bg=themeblue!10}
 
 % ==============================================================================
 % End of Common Preamble

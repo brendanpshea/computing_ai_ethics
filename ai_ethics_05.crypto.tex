@@ -3,24 +3,6 @@
 % Load common preamble (theme, packages, standard boxes)
 \input{lecture_preamble.tex}
 
-% ------------------------------------------------------------------------------
-% Lecture-Specific Customizations
-% ------------------------------------------------------------------------------
-
-% Lecture 5 color theme (cryptocurrency)
-\definecolor{cryptoblue}{RGB}{0,82,155}
-\definecolor{cryptogold}{RGB}{247,147,26}
-\definecolor{cryptogreen}{RGB}{39,174,96}
-\definecolor{cryptored}{RGB}{192,57,43}
-\definecolor{cryptopurple}{RGB}{142,68,173}
-
-% Apply lecture colors to beamer theme
-\setbeamercolor{structure}{fg=cryptoblue}
-\setbeamercolor{title}{fg=white,bg=cryptoblue}
-\setbeamercolor{frametitle}{fg=white,bg=cryptoblue}
-\setbeamercolor{block title}{fg=white,bg=cryptoblue}
-\setbeamercolor{block body}{bg=cryptoblue!10}
-
 % Title information
 \title[Cryptocurrency Philosophy]{The Political Philosophy of Cryptocurrency}
 \subtitle{Digital Money, Decentralization, and the Future of Finance}
@@ -31,7 +13,7 @@
 \begin{document}
 
 \mode<article>{
-This lecture examines the political philosophy underlying cryptocurrency technologies. We begin by analyzing money as a social technology and exploring how different monetary systems embody different power relationships. Bitcoin and subsequent cryptocurrencies represent an attempt to create money independent of state control through cryptographic proof and decentralized consensus. We evaluate arguments both for and against cryptocurrency from perspectives including financial inclusion, individual liberty, environmental impact, and the appropriate role of state power in monetary systems. The debate over cryptocurrency regulation crystallizes fundamental questions about the relationship between technology, markets, and political authority.
+This lecture examines the political philosophy underlying cryptocurrency technologies. We begin by analyzing money as a social technology and exploring how different monetary systems embody different power relationships. Bitcoin \parencite{nakamoto_bitcoin} and subsequent cryptocurrencies represent an attempt to create money independent of state control through cryptographic proof and decentralized consensus, drawing on ideas from Friedrich Hayek's \textit{Denationalization of Money} \parencite{hayek_denationalization} and the cypherpunk movement \parencite{hughes_cypherpunk}. We evaluate arguments both for and against cryptocurrency from perspectives including financial inclusion, individual liberty, environmental impact, and the appropriate role of state power in monetary systems. The debate over cryptocurrency regulation crystallizes fundamental questions about the relationship between technology, markets, and political authority.
 }
 
 % Title slide
@@ -51,6 +33,20 @@ This lecture examines the political philosophy underlying cryptocurrency technol
 \vspace{0.5em}
 \begin{alertblock}{Discussion}
 Have you ever used or owned cryptocurrency? What's your impression of it?
+\end{alertblock}
+\end{frame}
+
+\begin{frame}{Connections to Previous Lectures}
+\textbf{Lecture 1 (History)}: Every IT revolution disrupts existing economic intermediaries before new ones emerge. Is crypto's promise of disintermediation likely to follow the same reintermediation pattern?
+
+\vspace{0.2cm}
+\textbf{Lecture 3 (Free Speech)}: The cypherpunk movement grounded crypto in free speech and privacy values---encryption and financial anonymity as essential to liberty. Are these the same right?
+
+\vspace{0.2cm}
+\textbf{Lectures 4 \& 6 (IP, Privacy)}: Crypto transactions are pseudonymous, not anonymous. Who should have access to financial records---and under what conditions is surveillance of money flows justified?
+
+\begin{alertblock}{?}
+Is cryptocurrency best understood as a financial technology, a political statement, or a speculative asset---or are these inseparable?
 \end{alertblock}
 \end{frame}
 
@@ -99,12 +95,12 @@ What gives money its value if it's not backed by gold?
     \coordinate (C) at (3.5,0);
     
     % Triangle
-    \draw[thick, cryptoblue, fill=cryptoblue!5] (A) -- (B) -- (C) -- cycle;
+    \draw[thick, boxblue, fill=boxblue!5] (A) -- (B) -- (C) -- cycle;
     
     % Labels at vertices (in boxes)
-    \node[above, font=\small\bfseries, text=cryptoblue] at (A) {Medium of Exchange};
-    \node[below, font=\small\bfseries, text=cryptoblue, yshift=-3pt] at (B) {Store of Value};
-    \node[below, font=\small\bfseries, text=cryptoblue, yshift=-3pt] at (C) {Unit of Account};
+    \node[above, font=\small\bfseries, text=boxblue] at (A) {Medium of Exchange};
+    \node[below, font=\small\bfseries, text=boxblue, yshift=-3pt] at (B) {Store of Value};
+    \node[below, font=\small\bfseries, text=boxblue, yshift=-3pt] at (C) {Unit of Account};
     
     % Edge tension labels - positioned outside with callout lines
     % Left edge (Exchange <-> Store)
@@ -177,7 +173,7 @@ First and most famous: \textbf{Bitcoin} (2009)
 \begin{frame}{How Blockchain Works (Simplified)}
 \begin{center}
 \begin{tikzpicture}[scale=0.75, transform shape,
-    block/.style={rectangle, draw=cryptoblue, thick, fill=cryptoblue!10, 
+    block/.style={rectangle, draw=boxblue, thick, fill=boxblue!10, 
                   minimum width=2cm, minimum height=1.8cm, rounded corners=2pt}]
     
     % Blocks
@@ -199,9 +195,9 @@ First and most famous: \textbf{Bitcoin} (2009)
     \node[font=\tiny, align=center] at (b4) {Transactions\\Hash: 2f8a...\\Prev: 9d4e};
     
     % Chain arrows
-    \draw[->, thick, cryptogold] (b1) -- (b2);
-    \draw[->, thick, cryptogold] (b2) -- (b3);
-    \draw[->, thick, cryptogold] (b3) -- (b4);
+    \draw[->, thick, boxgold] (b1) -- (b2);
+    \draw[->, thick, boxgold] (b2) -- (b3);
+    \draw[->, thick, boxgold] (b3) -- (b4);
 \end{tikzpicture}
 \end{center}
 
@@ -270,7 +266,7 @@ Pseudonymity $\neq$ anonymity. Blockchain analysis can often identify users.
 
 % Slide 10: Bitcoin - The Original
 \begin{frame}{Bitcoin---The Original Cryptocurrency}
-Created \textbf{January 3, 2009} by ``Satoshi Nakamoto'' (pseudonymous, identity unknown).
+Created \textbf{January 3, 2009} by ``Satoshi Nakamoto'' \parencite{nakamoto_bitcoin} (pseudonymous, identity unknown).
 
 \begin{quotebox}
 Genesis block message: ``The Times 03/Jan/2009 Chancellor on brink of second bailout for banks''
@@ -321,7 +317,7 @@ Is the diversity of the crypto ecosystem a strength or weakness?
 % Slide 12: Case Study - Satoshi Nakamoto
 \begin{frame}{Case Study: Satoshi Nakamoto and the Cypherpunk Vision}
 \begin{casestudybox}[The Cypherpunk Movement (1990s)]
-Privacy advocates, cryptographers, and libertarians who believed: ``Privacy is necessary for an open society in the electronic age.'' Key figures: Timothy May, Eric Hughes, Nick Szabo, Hal Finney.
+Privacy advocates, cryptographers, and libertarians who believed: ``Privacy is necessary for an open society in the electronic age'' \parencite{hughes_cypherpunk}. Key figures: Timothy May, Eric Hughes, Nick Szabo, Hal Finney.
 \end{casestudybox}
 
 \vspace{0.3em}
@@ -346,7 +342,7 @@ Cryptocurrency is \textbf{not politically neutral}---it embodies specific values
 \vspace{0.3em}
 \textbf{Primary influences}: Libertarianism, Austrian economics, cypherpunk ideology.
 
-\textbf{Key thinkers}: Friedrich Hayek (\emph{Denationalization of Money}, 1976), Murray Rothbard.
+\textbf{Key thinkers}: Friedrich Hayek (\emph{Denationalization of Money}, 1976) \parencite{hayek_denationalization}, Murray Rothbard.
 
 \begin{quotebox}
 ``I don't believe we shall ever have a good money again before we take the thing out of the hands of government... all we can do is by some sly roundabout way introduce something that they can't stop.''\\
@@ -400,12 +396,12 @@ Is inflation always bad? What are its purposes?
     \node[below, font=\tiny] at (10,0) {2140};
     
     % Supply curve (logarithmic approach to 21M)
-    \draw[thick, cryptogold, domain=0:9.5, samples=50] 
+    \draw[thick, boxgold, domain=0:9.5, samples=50] 
         plot (\x, {4.76*(1-exp(-0.5*\x))});
     
     % Asymptote
-    \draw[dashed, cryptored] (0,4.76) -- (10,4.76);
-    \node[right, font=\tiny, cryptored] at (10,4.76) {21M cap};
+    \draw[dashed, boxred] (0,4.76) -- (10,4.76);
+    \node[right, font=\tiny, boxred] at (10,4.76) {21M cap};
     
     % Halving annotations
     \draw[dotted] (2.5,0) -- (2.5,2.4);
@@ -501,9 +497,9 @@ Can a technology be both a tool for freedom fighters and criminals?
 \textbf{Centralized System}
 \begin{center}
 \begin{tikzpicture}[scale=0.6]
-    \node[circle, draw=cryptored, fill=cryptored!20, thick, minimum size=0.8cm] (center) at (0,0) {};
+    \node[circle, draw=boxred, fill=boxred!20, thick, minimum size=0.8cm] (center) at (0,0) {};
     \foreach \angle in {0,45,90,135,180,225,270,315} {
-        \node[circle, draw=cryptoblue, fill=cryptoblue!20, minimum size=0.4cm] (n\angle) at (\angle:1.5) {};
+        \node[circle, draw=boxblue, fill=boxblue!20, minimum size=0.4cm] (n\angle) at (\angle:1.5) {};
         \draw[thick] (center) -- (n\angle);
     }
     \node[below, font=\tiny] at (0,-2) {Single point of failure};
@@ -516,7 +512,7 @@ Can a technology be both a tool for freedom fighters and criminals?
 \begin{tikzpicture}[scale=0.6]
     \foreach \i in {1,...,8} {
         \pgfmathsetmacro{\angle}{(\i-1)*45}
-        \node[circle, draw=cryptogreen, fill=cryptogreen!20, minimum size=0.4cm] (n\i) at (\angle:1.5) {};
+        \node[circle, draw=boxgreen, fill=boxgreen!20, minimum size=0.4cm] (n\i) at (\angle:1.5) {};
     }
     \foreach \i in {1,...,8} {
         \foreach \j in {1,...,8} {
@@ -646,8 +642,8 @@ Does cryptocurrency help the unbanked, or mainly benefit speculators?
 \begin{center}
 \begin{tikzpicture}[scale=0.65]
     % Pie chart showing concentration
-    \fill[cryptored!70] (0,0) -- (0:1.5) arc (0:7.2:1.5) -- cycle;
-    \fill[cryptoblue!30] (0,0) -- (7.2:1.5) arc (7.2:360:1.5) -- cycle;
+    \fill[boxred!70] (0,0) -- (0:1.5) arc (0:7.2:1.5) -- cycle;
+    \fill[boxblue!30] (0,0) -- (7.2:1.5) arc (7.2:360:1.5) -- cycle;
     
     \node[font=\tiny, right] at (1.8,0.5) {2\% of addresses};
     \node[font=\tiny, right] at (1.8,0.1) {hold 95\% of BTC};
@@ -1012,35 +1008,20 @@ EU & Preparation & Digital Euro in development \\
 \end{frame}
 
 % Slide 40: Conclusion
-\begin{frame}{Conclusion: Evaluating Cryptocurrency Ethically}
-\textbf{Key tensions to weigh:}
-\begin{itemize}
-    \item \textbf{Privacy vs. Accountability}: Where should the line be?
-    \item \textbf{Innovation vs. Protection}: How to balance experimentation with preventing harm?
-    \item \textbf{Freedom vs. Stability}: Individual liberty vs. collective security?
-    \item \textbf{Decentralization vs. Governance}: Who makes rules in a decentralized system?
-\end{itemize}
+\begin{frame}{Key Thinkers and Concepts}
+{\footnotesize
+\begin{enumerate}
+    \item \textbf{Satoshi Nakamoto} (pseudonym) published the Bitcoin whitepaper in 2008, proposing a peer-to-peer electronic cash system that eliminates the need for trusted third parties through cryptographic proof.
+    \item \textbf{Friedrich Hayek} (\textit{Denationalization of Money}, 1976) argued that government monopolies on currency cause inflation and instability; competing private currencies would serve citizens better---a key intellectual ancestor of crypto ideology.
+    \item \textbf{The cypherpunk movement} (1980s--90s) argued that privacy is necessary for an open society and that cryptography is the tool to achieve it. Bitcoin emerged from this tradition.
+    \item \textbf{Fiat currency} is money backed by government authority alone (not gold or commodities). The 1971 Nixon Shock ended dollar-gold convertibility, inaugurating the current purely fiat era.
+    \item \textbf{Blockchain} is the distributed ledger technology underlying most cryptocurrencies: a chain of cryptographically linked blocks, replicated across nodes, making records tamper-evident without a central authority.
+    \item \textbf{Proof of Work} requires miners to solve computationally expensive puzzles to add blocks---creating the energy consumption critique. \textbf{Proof of Stake} (Ethereum's current system) uses economic deposits instead.
+    \item \textbf{CBDCs} (Central Bank Digital Currencies) adopt blockchain technology while keeping state control---offering efficiency but raising concerns about total financial surveillance.
+\end{enumerate}
+}
 
-\vspace{0.3em}
-\textbf{Framework for evaluation}: Who benefits? Who is harmed? What are the alternatives? What values are at stake? What does the evidence show?
-
-\vspace{0.3em}
-\begin{center}
-\begin{tikzpicture}[scale=0.8]
-    \draw[thick, ->] (0,0) -- (10,0);
-    \node[below, font=\tiny] at (0,0) {Ban};
-    \node[below, font=\tiny] at (2.5,0) {Heavy regulation};
-    \node[below, font=\tiny] at (5,0) {Light regulation};
-    \node[below, font=\tiny] at (7.5,0) {Self-regulation};
-    \node[below, font=\tiny] at (10,0) {Laissez-faire};
-    
-    \node[above, font=\tiny, cryptored] at (1,0.3) {China};
-    \node[above, font=\tiny, cryptoblue] at (4,0.3) {EU};
-    \node[above, font=\tiny, cryptogreen] at (8.5,0.3) {El Salvador};
-\end{tikzpicture}
-\end{center}
-
-\begin{alertblock}{Final Discussion}
+\begin{alertblock}{?}
 After considering all arguments, what's your view? Should crypto be banned, regulated, or left alone?
 \end{alertblock}
 \end{frame}

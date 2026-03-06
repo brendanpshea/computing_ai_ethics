@@ -3,23 +3,6 @@
 % Load common preamble (theme, packages, standard boxes)
 \input{lecture_preamble.tex}
 
-% ------------------------------------------------------------------------------
-% Lecture-Specific Customizations
-% ------------------------------------------------------------------------------
-
-% Lecture 2 color theme (virtue ethics)
-\definecolor{aristotleblue}{RGB}{0,51,102}
-\definecolor{techgray}{RGB}{64,64,64}
-\definecolor{warningred}{RGB}{180,0,0}
-\definecolor{virtuegreen}{RGB}{0,100,0}
-
-% Apply lecture colors to beamer theme
-\setbeamercolor{structure}{fg=aristotleblue}
-\setbeamercolor{title}{fg=white,bg=aristotleblue}
-\setbeamercolor{frametitle}{fg=white,bg=aristotleblue}
-\setbeamercolor{block title}{fg=white,bg=aristotleblue}
-\setbeamercolor{block body}{bg=aristotleblue!10}
-
 % Title information
 \title[Virtue Ethics \& Technology]{Virtue Ethics and Modern Technology}
 \subtitle{Are Social Media and AI Making Us Stupider, Meaner, and Less Happy?}
@@ -32,7 +15,7 @@
 \section{Introduction: Virtue Ethics and Technology}
 
 \mode<article>{
-This lecture examines how modern technology, particularly social media and artificial intelligence, affects human character and flourishing from the perspective of virtue ethics. Drawing on Aristotle's ethical framework and contemporary applications by Shannon Vallor and others, we explore whether digital technologies are systematically undermining our capacity to develop intellectual and moral virtues. The central question is not simply "What should we do?" but "What kind of people are we becoming?"
+This lecture examines how modern technology, particularly social media and artificial intelligence, affects human character and flourishing from the perspective of virtue ethics. Drawing on Aristotle's ethical framework \parencite{aristotle_nicomachean} and contemporary applications by \textcite{vallor_technology_virtues} and others, we explore whether digital technologies are systematically undermining our capacity to develop intellectual and moral virtues. The central question is not simply ``What should we do?'' but ``What kind of people are we becoming?''
 }
 
 % ===== SLIDE 1: Title =====
@@ -41,20 +24,38 @@ This lecture examines how modern technology, particularly social media and artif
 \end{frame}
 
 % ===== SLIDE 2: The Central Question =====
-\begin{frame}{The Central Question}
+\begin{frame}{Central Questions}
 \begin{itemize}
-    \item Not just ``What should we do?'' but ``\textbf{What kind of people are we becoming?}''
-    \item Technology isn't just a tool---it shapes our \textbf{character}
-    \item Every swipe, click, and scroll is a form of \textbf{practice}
+    \item What is virtue ethics, and how does Aristotle understand human character and flourishing?
+    \item What makes technology a moral concern---not just a tool but a shaper of who we are becoming?
+    \item How might social media and AI undermine intellectual virtues like curiosity and open-mindedness?
+    \item How might digital environments erode moral virtues like empathy, patience, and honesty?
+    \item Are virtue ethics arguments for technology regulation compatible with individual liberty?
 \end{itemize}
 
-\vspace{0.5cm}
-\begin{quotebox}[Aristotle, \textit{Nicomachean Ethics}]
+\vspace{0.2cm}
+\begin{quotebox}[Aristotle, \textit{Nicomachean Ethics} \parencite{aristotle_nicomachean}]
 ``We are what we repeatedly do. Excellence, then, is not an act, but a habit.''
 \end{quotebox}
 
 \begin{alertblock}{?}
 What technological habits have you developed in the last 5 years?
+\end{alertblock}
+\end{frame}
+
+\begin{frame}{Connections to Previous Lectures}
+\textbf{Lecture 1 (History)}: Every IT revolution changes not just what people do but how they think. Writing atrophied memory; mass media enabled propaganda. How might social media and AI reshape character at scale?
+
+\vspace{0.2cm}
+\textbf{Looking ahead}:
+\begin{itemize}
+    \item \textbf{Lecture 3 (Free Speech)}: If the self is shaped by online discourse, what follows for speech regulation?
+    \item \textbf{Lectures 4--6 (IP, Crypto, Privacy)}: Platform design choices affect users' character---who is responsible?
+    \item \textbf{Lectures 7--8 (AI, Work)}: AI systems that learn from human behavior may reinforce vices at scale.
+\end{itemize}
+
+\begin{alertblock}{?}
+Which virtues or vices do you think social media most reliably cultivates?
 \end{alertblock}
 \end{frame}
 
@@ -106,7 +107,7 @@ Our character is not fixed. We \textit{become} virtuous through practice.
 \vspace{0.3cm}
 \begin{center}
 \begin{tikzpicture}[node distance=3.5cm, auto,
-    block/.style={rectangle, draw, fill=aristotleblue!20, text width=3cm, text centered, rounded corners, minimum height=1cm}]
+    block/.style={rectangle, draw, fill=boxblue!20, text width=3cm, text centered, rounded corners, minimum height=1cm}]
     \node [block] (function) {Human Function\\(Reason)};
     \node [block, right of=function] (excellence) {Excellence\\(Virtue)};
     \node [block, right of=excellence] (flourishing) {Flourishing\\(\textit{Eudaimonia})};
@@ -156,13 +157,13 @@ Can be wrong? & No (constitutive) & Yes (can feel happy doing bad) & Yes (can be
     \draw[thick, -] (0,0) -- (10,0);
     
     % Vice (deficiency)
-    \node[fill=warningred!30, draw=warningred, rounded corners, minimum width=2cm, minimum height=0.8cm] at (1.5,0) {\small Cowardice};
+    \node[fill=boxred!30, draw=boxred, rounded corners, minimum width=2cm, minimum height=0.8cm] at (1.5,0) {\small Cowardice};
     
     % Virtue (mean)
-    \node[fill=virtuegreen!30, draw=virtuegreen, rounded corners, minimum width=2cm, minimum height=0.8cm] at (5,0) {\small \textbf{Courage}};
+    \node[fill=boxgreen!30, draw=boxgreen, rounded corners, minimum width=2cm, minimum height=0.8cm] at (5,0) {\small \textbf{Courage}};
     
     % Vice (excess)
-    \node[fill=warningred!30, draw=warningred, rounded corners, minimum width=2cm, minimum height=0.8cm] at (8.5,0) {\small Recklessness};
+    \node[fill=boxred!30, draw=boxred, rounded corners, minimum width=2cm, minimum height=0.8cm] at (8.5,0) {\small Recklessness};
     
     % Labels
     \node[below] at (1.5,-0.6) {\footnotesize Vice (Deficiency)};
@@ -224,7 +225,7 @@ Can you identify the mean between ``too much time spent online'' and ``too littl
 \vspace{0.3cm}
 \begin{center}
 \begin{tikzpicture}[node distance=1.8cm,
-    process/.style={rectangle, draw, fill=aristotleblue!15, text width=2.8cm, text centered, rounded corners, minimum height=0.9cm, font=\small}]
+    process/.style={rectangle, draw, fill=boxblue!15, text width=2.8cm, text centered, rounded corners, minimum height=0.9cm, font=\small}]
     \node [process] (perceive) {Perceive Situation};
     \node [process, right of=perceive, xshift=1.5cm] (deliberate) {Deliberate on Options};
     \node [process, right of=deliberate, xshift=1.5cm] (judge) {Exercise Judgment};
@@ -255,7 +256,7 @@ Phronesis \textit{cannot be reduced to rules or algorithms}---it requires human 
 
 \begin{center}
 \begin{tikzpicture}[node distance=1.8cm,
-    block/.style={rectangle, draw, fill=virtuegreen!20, text width=1.6cm, text centered, rounded corners, minimum height=0.7cm, font=\small}]
+    block/.style={rectangle, draw, fill=boxgreen!20, text width=1.6cm, text centered, rounded corners, minimum height=0.7cm, font=\small}]
     \node [block] (actions) {Actions};
     \node [block, right of=actions] (habits) {Habits};
     \node [block, right of=habits] (character) {Character};
@@ -274,7 +275,7 @@ What character traits might daily social media use be cultivating in you?
 
 % ===== SLIDE 10: Alasdair MacIntyre =====
 \begin{frame}{Modern Revival: Alasdair MacIntyre}
-\textbf{After Virtue} (1981): Diagnosis of moral fragmentation
+\textbf{After Virtue} \parencite{macintyre_after_virtue}: Diagnosis of moral fragmentation
 
 \begin{itemize}
     \item \textbf{Emotivism critique}: Modern ethics lacks a shared framework
@@ -284,7 +285,7 @@ What character traits might daily social media use be cultivating in you?
 \end{itemize}
 
 \vspace{0.3cm}
-\begin{quotebox}[MacIntyre]
+\begin{quotebox}[MacIntyre \parencite{macintyre_after_virtue}]
 ``I can only answer the question `What am I to do?' if I can answer the prior question `Of what story or stories do I find myself a part?'\,''
 \end{quotebox}
 
@@ -394,19 +395,11 @@ Which of these capabilities might technology enhance? Which might it diminish?
 
 % ===== PART II HEADER =====
 
-\section{Part II: Intellectual Virtues Under Threat}
+\section{Intellectual Virtues Under Threat}
 
 \mode<article>{
 Intellectual virtues---including curiosity, intellectual humility, love of truth, open-mindedness, and intellectual courage---are essential for human flourishing. These virtues are cultivated through practices like sustained attention, effortful memory work, and engagement with diverse viewpoints. However, contemporary digital technologies may systematically undermine these practices by rewarding distraction, outsourcing cognitive work, creating echo chambers, and fostering intellectual dependency through AI tools.
 }
-
-\begin{frame}
-\begin{center}
-{\Huge \textbf{Part II}}\\[0.5cm]
-{\Large Intellectual Virtues Under Threat}\\[0.3cm]
-{\large Is Technology Making Us Stupider?}
-\end{center}
-\end{frame}
 
 % ===== SLIDE 14: Intellectual Virtues Introduction =====
 \begin{frame}{Intellectual Virtues at Stake}
@@ -463,14 +456,14 @@ Intellectual virtue requires \textbf{effortful practice}:
 \end{itemize}
 
 \vspace{0.3cm}
-\begin{quotebox}[William James]
+\begin{quotebox}[William James \parencite{james_principles}]
 ``The faculty of voluntarily bringing back a wandering attention, over and over again, is the very root of judgment, character, and will.''
 \end{quotebox}
 \end{frame}
 
 % ===== SLIDE 17: Premise 2a - The Attention Crisis =====
 \begin{frame}{Premise 2a: The Attention Crisis}
-\textbf{Nicholas Carr}, \textit{The Shallows} (2010) and \textbf{Jonathan Haidt}:
+\textbf{Nicholas Carr}, \textit{The Shallows} \parencite{carr_shallows} and \textbf{Jonathan Haidt} \parencite{haidt_anxious_generation}:
 
 \begin{itemize}
     \item Internet use literally \textbf{rewires the brain} for distraction
@@ -559,7 +552,7 @@ How often do you seek out viewpoints that challenge your own beliefs?
 \end{itemize}
 
 \vspace{0.3cm}
-\begin{quotebox}[Vallor, \textit{Technology and the Virtues}]
+\begin{quotebox}[Vallor, \textit{Technology and the Virtues} \parencite{vallor_technology_virtues}]
 ``Technologies that remove the need for us to develop or exercise our own practical skills and judgment \ldots\ can weaken or even eliminate our opportunities to cultivate virtue.''
 \end{quotebox}
 
@@ -572,8 +565,8 @@ When is it appropriate to use AI for help vs. when does it become intellectual `
 \begin{frame}{Synthesis: Intellectual Virtue Undermined}
 \begin{center}
 \begin{tikzpicture}[node distance=1.5cm,
-    evidence/.style={rectangle, draw, fill=warningred!15, text width=3cm, text centered, rounded corners, minimum height=0.8cm, font=\small},
-    result/.style={rectangle, draw, fill=warningred!30, text width=4cm, text centered, rounded corners, minimum height=1cm, font=\small\bfseries}]
+    evidence/.style={rectangle, draw, fill=boxred!15, text width=3cm, text centered, rounded corners, minimum height=0.8cm, font=\small},
+    result/.style={rectangle, draw, fill=boxred!30, text width=4cm, text centered, rounded corners, minimum height=1cm, font=\small\bfseries}]
     
     \node [evidence] (attention) {Attention Crisis};
     \node [evidence, right of=attention, xshift=1.8cm] (memory) {Memory Outsourcing};
@@ -595,19 +588,11 @@ When is it appropriate to use AI for help vs. when does it become intellectual `
 
 % ===== PART III HEADER =====
 
-\section{Part III: Moral Virtues Under Threat}
+\section{Moral Virtues Under Threat}
 
 \mode<article>{
 Moral virtues such as empathy, compassion, patience, temperance, civility, and honesty are traditionally cultivated through embodied, face-to-face social interactions that involve vulnerability and reciprocity. Digital mediation of human relationships may degrade these practices. Online environments characterized by anonymity, asynchronicity, and algorithmic amplification of outrage may actively habituate users toward moral vices including cruelty, impatience, and dishonesty. Evidence from empathy research, studies of online disinhibition, and analysis of social media business models suggests cause for concern.
 }
-
-\begin{frame}
-\begin{center}
-{\Huge \textbf{Part III}}\\[0.5cm]
-{\Large Moral Virtues Under Threat}\\[0.3cm]
-{\large Is Technology Making Us Meaner?}
-\end{center}
-\end{frame}
 
 % ===== SLIDE 21: Moral Virtues Introduction =====
 \begin{frame}{Moral Virtues at Stake}
@@ -655,7 +640,7 @@ Are social media and AI systematically undermining our capacity to develop and e
 
 % ===== SLIDE 23: Premise 1 - Turkle on Conversation =====
 \begin{frame}{Premise 1: How Moral Virtues Are Cultivated}
-\textbf{Sherry Turkle}, \textit{Reclaiming Conversation} (2015):
+\textbf{Sherry Turkle}, \textit{Reclaiming Conversation} \parencite{turkle_reclaiming}:
 
 \begin{itemize}
     \item \textbf{Face-to-face conversation} is the crucible of empathy
@@ -665,7 +650,7 @@ Are social media and AI systematically undermining our capacity to develop and e
 \end{itemize}
 
 \vspace{0.3cm}
-\begin{quotebox}[Turkle]
+\begin{quotebox}[Turkle \parencite{turkle_reclaiming}]
 ``Face-to-face conversation is the most human---and humanizing---thing we do. Fully present to one another, we learn to listen. It's where we develop the capacity for empathy.''
 \end{quotebox}
 
@@ -676,7 +661,7 @@ Do you behave differently in text messages than in face-to-face conversation? Ho
 
 % ===== SLIDE 24: Premise 2a - Empathy Decline =====
 \begin{frame}{Premise 2a: The Empathy Decline}
-\textbf{University of Michigan meta-study} (Konrath et al., 2011):
+\textbf{University of Michigan meta-study} \parencite{konrath_empathy_decline}:
 
 \begin{itemize}
     \item \textbf{40\% decline} in empathy among college students (1979--2009)
@@ -690,7 +675,7 @@ Do you behave differently in text messages than in face-to-face conversation? Ho
 \begin{tikzpicture}
     \draw[->] (0,0) -- (8,0) node[right] {\small Year};
     \draw[->] (0,0) -- (0,3) node[above] {\small Empathy};
-    \draw[thick, warningred] (0.5,2.5) -- (3,2.3) -- (5,1.8) -- (7.5,1.5);
+    \draw[thick, boxred] (0.5,2.5) -- (3,2.3) -- (5,1.8) -- (7.5,1.5);
     \node[below] at (0.5,0) {\tiny 1979};
     \node[below] at (3,0) {\tiny 1990};
     \node[below] at (5,0) {\tiny 2000};
@@ -744,7 +729,7 @@ Have you ever posted something online you wouldn't say to someone's face?
 
 \begin{center}
 \begin{tikzpicture}[node distance=1.8cm,
-    block/.style={rectangle, draw, fill=warningred!15, text width=2.2cm, text centered, rounded corners, minimum height=0.7cm, font=\footnotesize}]
+    block/.style={rectangle, draw, fill=boxred!15, text width=2.2cm, text centered, rounded corners, minimum height=0.7cm, font=\footnotesize}]
     \node [block] (content) {Outrage};
     \node [block, right of=content, xshift=0.6cm] (engagement) {Engagement};
     \node [block, right of=engagement, xshift=0.6cm] (algorithm) {Algo Boost};
@@ -809,19 +794,11 @@ What emotions does your social media feed most often evoke in you?
 
 % ===== PART IV HEADER =====
 
-\section{Part IV: Eudaimonia Under Threat}
+\section{Eudaimonia Under Threat}
 
 \mode<article>{
 Beyond specific virtues, Aristotelian ethics focuses on eudaimonia---human flourishing across a complete life. Eudaimonia requires integrated exercise of virtue, meaningful relationships, purposeful activity, and genuine self-knowledge. Contemporary evidence suggests that social media and AI may fragment attention, commodify relationships, and distort self-understanding in ways that directly impede the conditions necessary for flourishing. Rising rates of depression and anxiety, particularly among adolescents, coinciding with smartphone adoption provide troubling empirical support for these concerns.
 }
-
-\begin{frame}
-\begin{center}
-{\Huge \textbf{Part IV}}\\[0.5cm]
-{\Large Eudaimonia Under Threat}\\[0.3cm]
-{\large Is Technology Making Us Less Happy?}
-\end{center}
-\end{frame}
 
 % ===== SLIDE 29: Eudaimonia Introduction =====
 \begin{frame}{Eudaimonia Under Threat}
@@ -857,7 +834,7 @@ Beyond individual virtues: the \textbf{whole flourishing life}
 
 % ===== SLIDE 31: Premise 2a - Mental Health Crisis =====
 \begin{frame}{Premise 2a: The Mental Health Crisis}
-\textbf{Jonathan Haidt}, \textit{The Anxious Generation} (2024):
+\textbf{Jonathan Haidt}, \textit{The Anxious Generation} \parencite{haidt_anxious_generation}:
 
 \begin{itemize}
     \item Teen depression and anxiety \textbf{spiked after 2012} (smartphone majority)
@@ -871,8 +848,8 @@ Beyond individual virtues: the \textbf{whole flourishing life}
 \begin{tikzpicture}[scale=0.9]
     \draw[->] (0,0) -- (8,0) node[right] {\small Year};
     \draw[->] (0,0) -- (0,2.5) node[above] {\small Depression};
-    \draw[thick, aristotleblue] (0.5,0.6) -- (3,0.7) -- (4,0.8);
-    \draw[thick, warningred] (4,0.8) -- (5,1.2) -- (6,1.6) -- (7.5,2.2);
+    \draw[thick, boxblue] (0.5,0.6) -- (3,0.7) -- (4,0.8);
+    \draw[thick, boxred] (4,0.8) -- (5,1.2) -- (6,1.6) -- (7.5,2.2);
     \node[below] at (0.5,0) {\tiny 2004};
     \node[below] at (4,0) {\tiny 2012};
     \node[below] at (7.5,0) {\tiny 2020};
@@ -899,7 +876,7 @@ Have you noticed changes in your own or peers' mental health related to tech use
 \end{itemize}
 
 \vspace{0.3cm}
-\begin{quotebox}[Turkle]
+\begin{quotebox}[Turkle \parencite{turkle_alone_together}]
 ``We expect more from technology and less from each other.''
 \end{quotebox}
 
@@ -920,7 +897,7 @@ How many of your online ``friends'' would you call in a genuine crisis?
 
 \begin{center}
 \begin{tikzpicture}[node distance=2.2cm,
-    block/.style={rectangle, draw, fill=techgray!15, text width=2.2cm, text centered, rounded corners, minimum height=0.7cm, font=\footnotesize}]
+    block/.style={rectangle, draw, fill=boxgray!15, text width=2.2cm, text centered, rounded corners, minimum height=0.7cm, font=\footnotesize}]
     \node [block] (behavior) {Your Behavior};
     \node [block, right of=behavior, xshift=0.5cm] (algorithm) {Algorithm};
     \node [block, right of=algorithm, xshift=0.5cm] (content) {Content};
@@ -940,19 +917,11 @@ Does your ``For You'' page reflect who you really are---or who the algorithm wan
 
 % ===== PART V HEADER =====
 
-\section{Part V: Policy Responses}
+\section{Policy Responses}
 
 \mode<article>{
 If the virtue ethics diagnosis is correct, what practical responses follow? Individual responses like digital detoxes and mindful technology use have value but may be insufficient given the structural forces at play. Virtue ethics can ground arguments for regulatory interventions aimed at creating environments more conducive to flourishing, such as age restrictions on social media, design mandates that remove features encouraging vice, algorithm transparency requirements, and comprehensive digital literacy education. The challenge is balancing protection of human flourishing with respect for individual autonomy and pluralism.
 }
-
-\begin{frame}
-\begin{center}
-{\Huge \textbf{Part V}}\\[0.5cm]
-{\Large Policy Responses}\\[0.3cm]
-{\large From Diagnosis to Action}
-\end{center}
-\end{frame}
 
 % ===== SLIDE 34: From Diagnosis to Policy =====
 \begin{frame}{From Diagnosis to Policy}
@@ -1040,19 +1009,11 @@ Which of these recommendations could you realistically implement this week?
 
 % ===== PART VI HEADER =====
 
-\section{Part VI: Objections and Responses}
+\section{Objections and Responses}
 
 \mode<article>{
 The virtue ethics critique of contemporary technology faces important objections. Liberal critics like Isaiah Berlin warn that appealing to "positive liberty" or a particular conception of the good life risks paternalistic overreach that has historically justified tyranny. Nietzschean critics question whether we can reliably identify virtue versus vice, suggesting that historical "virtues" often merely reflected power structures or herd mentality. These objections are serious and demand careful responses concerning the distinction between protecting children and adults, the nature of autonomous choice under conditions of addiction and manipulation, the role of market failures in technology design, and the empirical basis for claims about human flourishing.
 }
-
-\begin{frame}
-\begin{center}
-{\Huge \textbf{Part VI}}\\[0.5cm]
-{\Large Objections to Virtue Ethics}\\[0.3cm]
-{\large The Critics Respond}
-\end{center}
-\end{frame}
 
 % ===== SLIDE 37: Objection 1 - Positive Liberty =====
 \begin{frame}{Objection 1: The Positive Liberty Problem}
@@ -1117,27 +1078,21 @@ Could ``doom-scrolling'' ever be reframed as a virtue? What would that require?
 \end{frame}
 
 % ===== SLIDE 40: Responses and Conclusion =====
-\begin{frame}{Responses and Conclusion}
-\textbf{Responses to Nietzsche}:
-\begin{itemize}
-    \item \textbf{Empirical grounding}: Mental health data, not just ``values''
-    \item \textbf{Aristotelian $\neq$ Victorian}: Different conception of virtue
-    \item Virtue ethics can be \textbf{critical tool} (challenges existing norms too)
-    \item The question isn't ``Is change bad?'' but ``Does this change serve human flourishing?''
-\end{itemize}
+\begin{frame}{Key Thinkers and Concepts}
+{\footnotesize
+\begin{enumerate}
+    \item \textbf{Aristotle (384--322 BCE)} argued that character is formed through \textit{habituation}---repeated practice that makes a disposition stable. The ethical question is not just what we do once, but what we do repeatedly.
+    \item \textbf{Eudaimonia} is Aristotle's term for human flourishing---not pleasure, but the active exercise of one's highest capacities in a complete and characterful life.
+    \item \textbf{Virtue / \textit{arete}} is a stable disposition to act, feel, and perceive in the right way; \textbf{vice} is its opposite. Both are cultivated---or corrupted---by the environments we inhabit, including digital ones.
+    \item \textbf{Shannon Vallor} applies Aristotle to technology, arguing that social media and AI can habituate users into intellectual and moral vices that undermine flourishing.
+    \item \textbf{Negative liberty} (Isaiah Berlin) is freedom \textit{from} interference; \textbf{positive liberty} is freedom \textit{to} flourish. The key objection to virtue-ethics regulation is that positive liberty arguments have historically justified paternalism and tyranny.
+    \item \textbf{Nietzsche}'s challenge: who decides what counts as virtue? Historical ``virtues'' often reflected power structures; calling doom-scrolling a vice may simply reflect conservative bias.
+\end{enumerate}
+}
 
-\vspace{0.3cm}
-\begin{block}{Final Reflection}
-The question remains genuinely open. But virtue ethics gives us a powerful framework for asking it:
-
-\vspace{0.2cm}
-\centering
-\textbf{What kind of people are we becoming---and is that what we want?}
-\end{block}
-
-\vspace{0.2cm}
-\small
-\textbf{Discussion}: What practices in your own technological life cultivate virtue? Vice?
+\begin{alertblock}{?}
+What practices in your own technological life cultivate virtue? Which cultivate vice?
+\end{alertblock}
 \end{frame}
 
 \end{document}

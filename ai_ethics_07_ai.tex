@@ -3,24 +3,6 @@
 % Load common preamble (theme, packages, standard boxes)
 \input{lecture_preamble.tex}
 
-% ------------------------------------------------------------------------------
-% Lecture-Specific Customizations
-% ------------------------------------------------------------------------------
-
-% Lecture 7 color theme (AI)
-\definecolor{aiblue}{RGB}{0,102,204}
-\definecolor{aigreen}{RGB}{0,153,76}
-\definecolor{aiorange}{RGB}{230,115,0}
-\definecolor{aipurple}{RGB}{102,51,153}
-\definecolor{aired}{RGB}{178,34,34}
-
-% Apply lecture colors to beamer theme
-\setbeamercolor{structure}{fg=aiblue}
-\setbeamercolor{title}{fg=white,bg=aiblue}
-\setbeamercolor{frametitle}{fg=white,bg=aiblue}
-\setbeamercolor{block title}{fg=white,bg=aiblue}
-\setbeamercolor{block body}{bg=aiblue!10}
-
 % Title information
 \title[Intro to AI]{Introduction to Artificial Intelligence}
 \subtitle{Definitions, Debates, and Implications}
@@ -31,7 +13,7 @@
 \begin{document}
 
 \mode<article>{
-This lecture provides a comprehensive introduction to artificial intelligence from philosophical and historical perspectives. The very definition of "AI" proves contested and unstable, with technologies once considered intelligent being reclassified as "mere computation" once understood---a pattern known as Tesler's Theorem. We examine various distinctions used to categorize AI systems (narrow vs. general, weak vs. strong, symbolic vs. connectionist) and their implications for ethical evaluation and policy development. The lecture traces AI's development from early symbolic systems through expert systems to modern machine learning and neural networks. We consider classical philosophical debates about machine intelligence from Turing, Searle, and others, then examine how definitional choices shape contemporary discussions of AI capabilities, risks, and moral status.
+This lecture provides a comprehensive introduction to artificial intelligence from philosophical and historical perspectives. The very definition of "AI" proves contested and unstable, with technologies once considered intelligent being reclassified as "mere computation" once understood---a pattern known as Tesler's Theorem. We examine various distinctions used to categorize AI systems (narrow vs. general, weak vs. strong, symbolic vs. connectionist) and their implications for ethical evaluation and policy development. The lecture traces AI's development from the Dartmouth Conference \parencite{dartmouth_proposal} through expert systems to modern machine learning and neural networks. We consider classical philosophical debates about machine intelligence from \textcite{turing_computing_machinery}, \textcite{searle_minds_brains}, and others, then examine how definitional choices shape contemporary discussions of AI capabilities, risks, and moral status.
 }
 
 % Slide 1: Title
@@ -39,23 +21,42 @@ This lecture provides a comprehensive introduction to artificial intelligence fr
 \titlepage
 \end{frame}
 
-% Slide 2: Central Questions
+% Slide 2: Learning Outcomes and Central Questions
 \begin{frame}{Central Questions}
 \begin{itemize}
-    \item What \emph{is} artificial intelligence?
-    \item Is AI possible? (The answer depends on how we define it.)
-    \item How have AI technologies evolved over time?
-    \item Why do definitional debates matter for ethics, research, and self-understanding?
+    \item What \textit{is} artificial intelligence, and why is a stable definition so hard to pin down?
+    \item How has AI evolved from logic-based systems to neural networks---and what does that history reveal?
+    \item What do Lovelace, Turing, and Searle argue about machine intelligence, and who has the better case?
+    \item What is the difference between narrow and general AI, and between weak and strong AI?
+    \item How do definitional choices shape AI ethics, policy, and our understanding of our own intelligence?
 \end{itemize}
 
-\vspace{0.5em}
+\vspace{0.3cm}
 \begin{alertblock}{The Challenge}
 ``Artificial intelligence'' means different things to different people---and these differences have real consequences.
 \end{alertblock}
 \end{frame}
 
 %% PART I: THE DEFINITIONAL CHALLENGE %%
-\section{Part I: The Definitional Challenge}
+\section{Defining AI: Definitional Challenges}
+
+% Slide 3: Connections to Previous Lectures  
+\begin{frame}{Connections to Previous Lectures}
+\textbf{Lecture 1 (History)}: AI is the newest in our series of IT revolutions. It promises liberation (tool for productivity, creativity) and raises concerns about control (surveillance, job loss, autonomous weapons).
+
+\vspace{0.2cm}
+\textbf{Lecture 2 (Virtues)}: How do we develop intellectual virtues in interaction with AI systems that simulate understanding but may lack genuine comprehension?
+
+\vspace{0.2cm}
+\textbf{Lecture 3 (Free Speech)}: AI systems trained on vast data raise questions about whose speech is amplified, whose is silenced, and how definitions of ``intelligence'' affect content moderation.
+
+\vspace{0.2cm}
+\textbf{Lecture 4 (IP)}: Who owns AI-generated content? Can AI systems themselves be copyrighted? Training data and copyright battles.
+
+\begin{alertblock}{?}
+Which previous lecture's concerns appear most urgent in the context of AI?
+\end{alertblock}
+\end{frame}
 
 \mode<article>{
 Defining artificial intelligence matters profoundly for how we understand its capabilities, assess its risks, and determine its moral status. The "moving goalposts problem" suggests that "AI" functions more as placeholder for unsolved problems than stable category, with successful AI repeatedly reclassified as "just" search algorithms, statistics, or optimization. Contemporary AI discourse employs multiple overlapping distinctions: narrow systems excelling at specific tasks versus hypothetical artificial general intelligence; weak AI that simulates intelligence versus strong AI that genuinely possesses minds; and symbolic rule-based approaches versus connectionist neural networks. Each distinction carries philosophical commitments about cognition, consciousness, and intelligence that shape both technical development and ethical evaluation.
@@ -66,12 +67,12 @@ Defining artificial intelligence matters profoundly for how we understand its ca
 \begin{center}
 \begin{tikzpicture}[scale=0.75, every node/.style={font=\small}]
     % Central node
-    \node[draw, rounded corners, fill=aiblue!20, minimum width=2.5cm, minimum height=1cm] (def) at (0,0) {Definition of AI};
+    \node[draw, rounded corners, fill=boxblue!20, minimum width=2.5cm, minimum height=1cm] (def) at (0,0) {Definition of AI};
     
     % Branches
-    \node[draw, rounded corners, fill=aigreen!20, minimum width=2.2cm, minimum height=0.8cm] (cap) at (-4,-1.5) {Capabilities};
-    \node[draw, rounded corners, fill=aiorange!20, minimum width=2.2cm, minimum height=0.8cm] (risk) at (0,-1.5) {Risks};
-    \node[draw, rounded corners, fill=aipurple!20, minimum width=2.2cm, minimum height=0.8cm] (moral) at (4,-1.5) {Moral Status};
+    \node[draw, rounded corners, fill=boxgreen!20, minimum width=2.2cm, minimum height=0.8cm] (cap) at (-4,-1.5) {Capabilities};
+    \node[draw, rounded corners, fill=boxgold!20, minimum width=2.2cm, minimum height=0.8cm] (risk) at (0,-1.5) {Risks};
+    \node[draw, rounded corners, fill=boxpurple!20, minimum width=2.2cm, minimum height=0.8cm] (moral) at (4,-1.5) {Moral Status};
     
     % Arrows
     \draw[->, thick] (def) -- (cap);
@@ -152,7 +153,7 @@ First computer programmer. Wrote notes on Babbage's Analytical Engine. Argued ma
 \vspace{0.2em}
 \begin{figurebox}[Alan Turing (1912--1954)]
 \scriptsize
-Father of computer science. Cracked Enigma in WWII. Proposed the Turing Test (1950) as a way to sidestep the question ``Can machines think?''
+Father of computer science. Cracked Enigma in WWII. Proposed the Turing Test \parencite{turing_computing_machinery} as a way to sidestep the question ``Can machines think?''
 \end{figurebox}
 \end{column}
 \begin{column}{0.48\textwidth}
@@ -176,38 +177,38 @@ Co-founder of MIT AI Lab. Worked on neural networks, then symbolic AI. Developed
 \begin{column}{0.48\textwidth}
 \begin{figurebox}[John Searle]
 \scriptsize
-Chinese Room argument (1980). Syntax $\neq$ semantics; strong AI is false.
+Chinese Room argument \parencite{searle_minds_brains}. Syntax $\neq$ semantics; strong AI is false.
 \end{figurebox}
 
 \vspace{0.05em}
 \begin{figurebox}[Daniel Dennett]
 \scriptsize
-Functionalist: if it functions like a mind, it \emph{is} a mind. Defends AI possibility.
+Functionalist \parencite{dennett_consciousness}: if it functions like a mind, it \emph{is} a mind. Defends AI possibility.
 \end{figurebox}
 
 \vspace{0.05em}
 \begin{figurebox}[David Chalmers]
 \scriptsize
-The ``hard problem'': why does processing \emph{feel} like something?
+The ``hard problem'' \parencite{chalmers_conscious_mind}: why does processing \emph{feel} like something?
 \end{figurebox}
 \end{column}
 \begin{column}{0.48\textwidth}
 \begin{figurebox}[Stuart Russell]
 \scriptsize
-Standard AI textbook co-author. AI = rational agency. AI safety advocate.
+Standard AI textbook co-author \parencite{russell_norvig_ai}. AI = rational agency. AI safety advocate \parencite{russell_human_compatible}.
 \end{figurebox}
 
 \vspace{0.05em}
 \begin{figurebox}[Luciano Floridi]
 \scriptsize
-AI achieves ``agency without intelligence''---effective action without understanding.
+AI achieves ``agency without intelligence''---effective action without understanding \parencite{floridi_ethics_ai}.
 \end{figurebox}
 \end{column}
 \end{columns}
 \end{frame}
 
 %% PART II: A HISTORY OF AI TECHNOLOGIES %%
-\section{Part II: A History of AI Technologies}
+\section{AI Through History: From Logic to Learning}
 
 % Slide 8: Prehistory
 \begin{frame}{Prehistory---Dreams of Artificial Minds}
@@ -238,7 +239,7 @@ This objection---that machines merely follow instructions---remains central to d
 \textbf{1940s}: Turing's wartime work cracking Enigma demonstrates practical computing.
 
 \vspace{0.2em}
-\textbf{1950}: ``Computing Machinery and Intelligence''---Turing proposes the Imitation Game (Turing Test) and addresses objections to machine thought.
+\textbf{1950}: ``Computing Machinery and Intelligence'' \parencite{turing_computing_machinery}---Turing proposes the Imitation Game (Turing Test) and addresses objections to machine thought.
 \end{column}
 \begin{column}{0.42\textwidth}
 \begin{center}
@@ -254,7 +255,7 @@ This objection---that machines merely follow instructions---remains central to d
     \node[font=\tiny] at (1.4,0) {0};
     
     % Head
-    \draw[thick, fill=aiblue!30] (-0.2,-0.8) rectangle (0.6,-1.4);
+    \draw[thick, fill=boxblue!30] (-0.2,-0.8) rectangle (0.6,-1.4);
     \draw[->, thick] (0.2,-0.3) -- (0.2,-0.8);
     \node[font=\tiny] at (0.2,-1.1) {Head};
     
@@ -271,7 +272,7 @@ This objection---that machines merely follow instructions---remains central to d
 
 % Slide 10: Dartmouth and Early AI
 \begin{frame}{The Dartmouth Conference and Early AI (1956--1970s)}
-\begin{casestudybox}[The Dartmouth Proposal (1955)]
+\begin{casestudybox}[The Dartmouth Proposal \parencite{dartmouth_proposal}]
 \scriptsize
 ``We propose that a 2 month, 10 man study of artificial intelligence be carried out... The study is to proceed on the basis of the conjecture that every aspect of learning or any other feature of intelligence can in principle be so precisely described that a machine can be made to simulate it.''
 \end{casestudybox}
@@ -298,19 +299,19 @@ McCarthy, Minsky, Shannon, and Rochester coin ``artificial intelligence'' and pr
     \draw[thick, ->] (0,0) -- (12,0);
     
     % Periods
-    \draw[thick, aigreen, fill=aigreen!20] (0.5,0.2) rectangle (2.5,1.2);
+    \draw[thick, boxgreen, fill=boxgreen!20] (0.5,0.2) rectangle (2.5,1.2);
     \node[text width=1.8cm, align=center] at (1.5,0.7) {Early optimism};
     
-    \draw[thick, aired, fill=aired!20] (2.7,0.2) rectangle (4.7,-0.8);
+    \draw[thick, boxred, fill=boxred!20] (2.7,0.2) rectangle (4.7,-0.8);
     \node[text width=1.8cm, align=center] at (3.7,-0.3) {First Winter};
     
-    \draw[thick, aigreen, fill=aigreen!20] (4.9,0.2) rectangle (7.2,1.2);
+    \draw[thick, boxgreen, fill=boxgreen!20] (4.9,0.2) rectangle (7.2,1.2);
     \node[text width=2cm, align=center] at (6.05,0.7) {Expert Systems};
     
-    \draw[thick, aired, fill=aired!20] (7.4,0.2) rectangle (9.4,-0.8);
+    \draw[thick, boxred, fill=boxred!20] (7.4,0.2) rectangle (9.4,-0.8);
     \node[text width=1.8cm, align=center] at (8.4,-0.3) {Second Winter};
     
-    \draw[thick, aigreen, fill=aigreen!20] (9.6,0.2) rectangle (11.5,1.2);
+    \draw[thick, boxgreen, fill=boxgreen!20] (9.6,0.2) rectangle (11.5,1.2);
     \node[text width=1.8cm, align=center] at (10.55,0.7) {ML rise};
     
     % Years
@@ -368,24 +369,24 @@ Reinforcement learning & Learn from rewards and punishments & Game playing, robo
 \begin{tikzpicture}[scale=0.55]
     % Input layer
     \foreach \y in {1,2,3,4} {
-        \node[draw, circle, fill=aiblue!30, minimum size=0.5cm] (i\y) at (0,\y) {};
+        \node[draw, circle, fill=boxblue!30, minimum size=0.5cm] (i\y) at (0,\y) {};
     }
     \node[below, font=\tiny] at (0,0.5) {Input};
     
     % Hidden layer 1
     \foreach \y in {1,2,3,4,5} {
-        \node[draw, circle, fill=aipurple!30, minimum size=0.5cm] (h1\y) at (2,\y-0.5) {};
+        \node[draw, circle, fill=boxpurple!30, minimum size=0.5cm] (h1\y) at (2,\y-0.5) {};
     }
     
     % Hidden layer 2
     \foreach \y in {1,2,3,4,5} {
-        \node[draw, circle, fill=aipurple!30, minimum size=0.5cm] (h2\y) at (4,\y-0.5) {};
+        \node[draw, circle, fill=boxpurple!30, minimum size=0.5cm] (h2\y) at (4,\y-0.5) {};
     }
     \node[below, font=\tiny] at (3,0) {Hidden layers};
     
     % Output layer
     \foreach \y in {2,3} {
-        \node[draw, circle, fill=aigreen!30, minimum size=0.5cm] (o\y) at (6,\y) {};
+        \node[draw, circle, fill=boxgreen!30, minimum size=0.5cm] (o\y) at (6,\y) {};
     }
     \node[below, font=\tiny] at (6,1.5) {Output};
     
@@ -480,11 +481,11 @@ Object detection & Autonomous vehicles, security, retail & Safety-critical error
 \begin{center}
 \begin{tikzpicture}[scale=0.45, every node/.style={font=\tiny}]
     % Pipeline boxes
-    \node[draw, rounded corners, fill=aiblue!20, minimum width=1.4cm, minimum height=0.6cm] (sense) at (0,3.6) {Sense};
-    \node[draw, rounded corners, fill=aiblue!20, minimum width=1.4cm, minimum height=0.6cm] (perceive) at (0,2.5) {Perceive};
-    \node[draw, rounded corners, fill=aiblue!20, minimum width=1.4cm, minimum height=0.6cm] (predict) at (0,1.4) {Predict};
-    \node[draw, rounded corners, fill=aiblue!20, minimum width=1.4cm, minimum height=0.6cm] (plan) at (0,0.3) {Plan};
-    \node[draw, rounded corners, fill=aiblue!20, minimum width=1.4cm, minimum height=0.6cm] (act) at (0,-0.8) {Act};
+    \node[draw, rounded corners, fill=boxblue!20, minimum width=1.4cm, minimum height=0.6cm] (sense) at (0,3.6) {Sense};
+    \node[draw, rounded corners, fill=boxblue!20, minimum width=1.4cm, minimum height=0.6cm] (perceive) at (0,2.5) {Perceive};
+    \node[draw, rounded corners, fill=boxblue!20, minimum width=1.4cm, minimum height=0.6cm] (predict) at (0,1.4) {Predict};
+    \node[draw, rounded corners, fill=boxblue!20, minimum width=1.4cm, minimum height=0.6cm] (plan) at (0,0.3) {Plan};
+    \node[draw, rounded corners, fill=boxblue!20, minimum width=1.4cm, minimum height=0.6cm] (act) at (0,-0.8) {Act};
     
     % Arrows
     \draw[->, thick] (sense) -- (perceive);
@@ -585,7 +586,7 @@ This question returns us to the classical debates...
 \end{frame}
 
 %% PART III: CLASSICAL DEBATES %%
-\section{Part III: Classical Debates on Machine Intelligence}
+\section{Can Machines Think? Classical Philosophical Debates}
 
 % Slide 19: Transition
 \begin{frame}{Transition: From History to Philosophy}
@@ -627,15 +628,15 @@ Rather than ask ``Can machines think?'' (too vague), Turing proposes an \emph{op
 \begin{center}
 \begin{tikzpicture}[scale=0.6]
     % Interrogator
-    \node[draw, rounded corners, fill=aiorange!30, minimum width=2cm, minimum height=1cm] (int) at (0,3) {Interrogator};
+    \node[draw, rounded corners, fill=boxgold!30, minimum width=2cm, minimum height=1cm] (int) at (0,3) {Interrogator};
     
     % Barrier
     \draw[thick, dashed] (-2.5,1.5) -- (2.5,1.5);
     \node[font=\tiny, right] at (2.6,1.5) {(text only)};
     
     % Human and Machine
-    \node[draw, rounded corners, fill=aigreen!30, minimum width=1.5cm, minimum height=0.8cm] (human) at (-1.5,0) {Human};
-    \node[draw, rounded corners, fill=aiblue!30, minimum width=1.5cm, minimum height=0.8cm] (machine) at (1.5,0) {Machine};
+    \node[draw, rounded corners, fill=boxgreen!30, minimum width=1.5cm, minimum height=0.8cm] (human) at (-1.5,0) {Human};
+    \node[draw, rounded corners, fill=boxblue!30, minimum width=1.5cm, minimum height=0.8cm] (machine) at (1.5,0) {Machine};
     
     % Connections
     \draw[<->, thick] (int) -- (-0.3,1.5);
@@ -763,7 +764,7 @@ A thought experiment against ``Strong AI''---the claim that a computer running t
     \node[font=\tiny] at (0,0) {(no Chinese)};
     
     % Rule book
-    \draw[thick, fill=aiorange!20] (-1,-1.2) rectangle (1,-0.5);
+    \draw[thick, fill=boxgold!20] (-1,-1.2) rectangle (1,-0.5);
     \node[font=\tiny] at (0,-0.85) {Rule Book};
     
     % Input/Output
@@ -925,7 +926,7 @@ Does consciousness matter for AI ethics? If an AI acts as if it's suffering, doe
 \end{frame}
 
 %% PART IV: MODERN DEFINITIONS %%
-\section{Part IV: Modern Definitions and Approaches}
+\section{Contemporary Definitions and AI Approaches}
 
 % Slide 33: Transition to Practice
 \begin{frame}{Transition: From Philosophy to Practice}
@@ -947,7 +948,7 @@ Two influential modern approaches: Stuart Russell's agent-based view and Luciano
 \end{frame}
 
 % Slide 34: Russell's Rational Agency
-\begin{frame}{Russell \& Norvig---AI as Rational Agency}
+\begin{frame}{Russell \& Norvig---AI as Rational Agency \parencite{russell_norvig_ai}}
 \begin{columns}[T]
 \begin{column}{0.52\textwidth}
 \begin{conceptbox}[Four Possible Definitions]
@@ -970,13 +971,13 @@ This definition covers chess engines, self-driving cars, recommendation systems,
 \begin{center}
 \begin{tikzpicture}[scale=0.55]
     % Agent box
-    \node[draw, rounded corners, fill=aiblue!20, minimum width=2.5cm, minimum height=2cm] (agent) at (0,0) {};
+    \node[draw, rounded corners, fill=boxblue!20, minimum width=2.5cm, minimum height=2cm] (agent) at (0,0) {};
     \node[font=\small] at (0,0.3) {Agent};
     \node[font=\tiny] at (0,-0.2) {(sensors, reasoning,};
     \node[font=\tiny] at (0,-0.5) {actuators)};
     
     % Environment
-    \node[draw, rounded corners, fill=aigreen!10, minimum width=2.5cm, minimum height=1.5cm] (env) at (0,-3) {Environment};
+    \node[draw, rounded corners, fill=boxgreen!10, minimum width=2.5cm, minimum height=1.5cm] (env) at (0,-3) {Environment};
     
     % Arrows
     \draw[->, thick] (agent.south west) -- node[left, font=\tiny] {actions} (env.north west);
@@ -993,7 +994,7 @@ This definition covers chess engines, self-driving cars, recommendation systems,
 \begin{frame}{Russell's Critique: The Standard Model Problem}
 \begin{objectionbox}[The Problem with Optimization]
 \small
-The ``standard model'' builds machines that optimize fixed objectives. Russell argues this is fundamentally dangerous.
+The ``standard model'' builds machines that optimize fixed objectives. \textcite{russell_human_compatible} argues this is fundamentally dangerous.
 \end{objectionbox}
 
 \vspace{0.1em}
@@ -1012,7 +1013,7 @@ You get exactly what you ask for, not what you want. ``Maximize happiness'' $\ri
 \end{frame}
 
 % Slide 36: Russell's Solution - Human Compatible AI
-\begin{frame}{Russell's Solution: Human Compatible AI}
+\begin{frame}{Russell's Solution: Human Compatible AI \parencite{russell_human_compatible}}
 \begin{probox}[Three Principles for Beneficial Machines]
 \small
 \begin{enumerate}
@@ -1049,7 +1050,7 @@ How do we build AI systems whose goals remain aligned with human values as they 
     \item Values may need to change over time as circumstances change.
 \end{itemize}
 
-\textbf{Russell's framing}: This is \emph{the} central problem of AI. Capability without alignment is dangerous.
+\textcite{russell_human_compatible}: This is \emph{the} central problem of AI. Capability without alignment is dangerous.
 
 \begin{alertblock}{Discussion}
 Can we ever fully specify human values? If not, what follows for AI development?
@@ -1057,7 +1058,7 @@ Can we ever fully specify human values? If not, what follows for AI development?
 \end{frame}
 
 % Slide 38: Floridi's View
-\begin{frame}{Floridi---AI as ``Agency Without Intelligence''}
+\begin{frame}{Floridi---AI as ``Agency Without Intelligence'' \parencite{floridi_ethics_ai}}
 \begin{conceptbox}[A Provocative Reframing]
 \small
 AI systems aren't \emph{intelligent} in the human sense---they are \emph{successful agents} that achieve goals through different means than biological cognition.
@@ -1213,7 +1214,7 @@ By the Turing Test, most current systems aren't AI. By agent-based definitions, 
 \end{frame}
 
 %% PART V: WHY DEFINITIONS MATTER %%
-\section{Part V: Why Definitions Matter}
+\section{Why AI Definitions Matter: Implications and Ethics}
 
 % Slide 38: Implications for Research
 \begin{frame}{Implications for AI Research}
@@ -1269,21 +1270,22 @@ How we define AI shapes how we regulate it, deploy it, and hold people accountab
 \end{frame}
 
 % Slide 40: Conclusion
-\begin{frame}{Conclusion: Living with Definitional Uncertainty}
-We don't have consensus on what AI is---and this uncertainty isn't merely academic.
-
-\vspace{0.3em}
-\textbf{Framework for navigating uncertainty}:
+\begin{frame}{Key Thinkers and Concepts}
+{\footnotesize
 \begin{enumerate}
-    \item \textbf{Be explicit} about which definition you're using and why.
-    \item \textbf{Recognize} that different definitions serve different purposes.
-    \item \textbf{Don't let} definitional debates obscure practical questions about harm and benefit.
-    \item \textbf{Remain humble}: The systems we build may surprise us.
+    \item \textbf{Ada Lovelace (1815--1852)} argued machines can only do what they are programmed to do---they cannot \textit{originate} anything. The earliest formal objection to machine intelligence.
+    \item \textbf{Alan Turing (1912--1954)} proposed the \textit{Turing Test}: if a machine is indistinguishable from a human in conversation, call it intelligent---sidestepping whether machines ``really'' think.
+    \item \textbf{John Searle} proposed the \textit{Chinese Room}: a system can pass the Turing Test by following rules without genuine understanding. Syntax is not semantics.
+    \item \textbf{Narrow AI} excels at specific tasks; \textbf{general AI (AGI)} would match human flexibility across all domains. Most real systems are narrow.
+    \item \textbf{Weak AI} simulates intelligent behavior without possessing a mind; \textbf{strong AI} would have genuine mental states---a distinction with implications for moral status.
+    \item \textbf{Symbolic AI (GOFAI)} represents knowledge as explicit rules and logic; \textbf{connectionist AI} (neural networks) learns patterns from data---the dominant paradigm today.
+    \item \textbf{Tesler's Theorem / moving goalposts}: ``AI is whatever hasn't been done yet.'' Once a capability is achieved, it gets reclassified as mere computation.
+    \item \textbf{Dartmouth Conference (1956)} is where McCarthy, Minsky, and others named and launched ``artificial intelligence''---with optimistic timelines that proved wildly premature.
 \end{enumerate}
+}
 
-\vspace{0.3em}
-\begin{alertblock}{Final Discussion}
-Given what you've learned, how would \emph{you} define artificial intelligence? And why does your answer matter?
+\begin{alertblock}{?}
+How would \emph{you} define artificial intelligence---and does your definition commit you to any position on Lovelace, Turing, or Searle?
 \end{alertblock}
 \end{frame}
 

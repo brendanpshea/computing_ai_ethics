@@ -3,24 +3,6 @@
 % Load common preamble (theme, packages, standard boxes)
 \input{lecture_preamble.tex}
 
-% ------------------------------------------------------------------------------
-% Lecture-Specific Customizations
-% ------------------------------------------------------------------------------
-
-% Lecture 3 color theme (free speech)
-\definecolor{millblue}{RGB}{0,51,102}
-\definecolor{libertygreen}{RGB}{0,100,50}
-\definecolor{warningred}{RGB}{180,0,0}
-\definecolor{techgray}{RGB}{64,64,64}
-\definecolor{goldaccent}{RGB}{180,140,20}
-
-% Apply lecture colors to beamer theme
-\setbeamercolor{structure}{fg=millblue}
-\setbeamercolor{title}{fg=white,bg=millblue}
-\setbeamercolor{frametitle}{fg=white,bg=millblue}
-\setbeamercolor{block title}{fg=white,bg=millblue}
-\setbeamercolor{block body}{bg=millblue!10}
-
 % Title information
 \title[Freedom of Speech]{Freedom of Speech in the Digital Age}
 \subtitle{Mill, Social Media, and the Limits of Expression}
@@ -33,7 +15,7 @@
 \section{Introduction: Freedom of Speech in the Digital Age}
 
 \mode<article>{
-This lecture examines the philosophical foundations of free speech protections and their application to digital technologies. We begin with John Stuart Mill's classical liberal defense of free expression in \textit{On Liberty} (1859), exploring both utilitarian arguments from truth-seeking and deontological arguments from human autonomy. We then consider how Mill's framework applies to contemporary challenges posed by social media platforms, algorithmic amplification, and artificial intelligence. The central question is whether Mill's nineteenth-century principles remain adequate for twenty-first-century speech contexts characterized by unprecedented scale, speed, and private control over public discourse.
+This lecture examines the philosophical foundations of free speech protections and their application to digital technologies. We begin with John Stuart Mill's classical liberal defense of free expression in \textit{On Liberty} \parencite{mill1859liberty}, exploring both utilitarian arguments from truth-seeking and deontological arguments from human autonomy. We then consider how Mill's framework applies to contemporary challenges posed by social media platforms, algorithmic amplification, and artificial intelligence. The central question is whether Mill's nineteenth-century principles remain adequate for twenty-first-century speech contexts characterized by unprecedented scale, speed, and private control over public discourse.
 }
 
 % ===== SLIDE 1: Title =====
@@ -42,20 +24,36 @@ This lecture examines the philosophical foundations of free speech protections a
 \end{frame}
 
 % ===== SLIDE 2: The Central Question =====
-\begin{frame}{The Central Question}
+\begin{frame}{Central Questions}
 \begin{itemize}
-    \item Why does \textbf{speech} deserve special protection?
-    \item Is \textbf{online speech} different from offline speech?
-    \item Who should regulate speech---\textbf{governments}, \textbf{corporations}, or \textbf{no one}?
+    \item Why does speech deserve special protection---and what are the strongest arguments for and against?
+    \item Is Mill's \textit{harm principle} a satisfactory test for where free speech should end?
+    \item Does social media constitute a ``marketplace of ideas,'' or does it systematically distort truth-seeking?
+    \item When, if ever, should governments, corporations, or algorithms restrict speech?
+    \item How should AI-generated speech be treated within a free expression framework?
 \end{itemize}
 
-\vspace{0.4cm}
-\begin{quotebox}[John Stuart Mill, \textit{On Liberty}]
+\vspace{0.2cm}
+\begin{quotebox}[John Stuart Mill, \textit{On Liberty} \parencite{mill1859liberty}]
 ``If all mankind minus one, were of one opinion, and only one person were of the contrary opinion, mankind would be no more justified in silencing that one person, than he, if he had the power, would be justified in silencing mankind.''
 \end{quotebox}
 
 \begin{alertblock}{?}
 Have you ever been silenced online? By whom---a platform, other users, or yourself?
+\end{alertblock}
+\end{frame}
+
+\begin{frame}{Connections to Previous Lectures}
+\textbf{Lecture 1 (History)}: Every IT revolution triggers new speech controversies. Luther used the printing press for reform; authorities responded with censorship laws. The pattern repeats: liberation promised, then control.
+
+\vspace{0.2cm}
+\textbf{Lecture 2 (Virtues)}: If online speech practices shape character, does Mill's framework need a virtue dimension? Should we ask not just whether speech harms others but what it does to speakers and audiences?
+
+\vspace{0.2cm}
+\textbf{Looking ahead}: IP law (Lecture 4) restricts quotation and remix; privacy law (Lecture 6) restricts disclosure; AI (Lecture 7) raises the question of whether machines can be ``speakers'' at all.
+
+\begin{alertblock}{?}
+Does Mill's 19th-century case for free expression hold up in a world of algorithmic amplification and billion-user platforms?
 \end{alertblock}
 \end{frame}
 
@@ -149,14 +147,14 @@ What counts as ``harm''? Is being offended the same as being harmed?
 \begin{center}
 \begin{tikzpicture}[node distance=2cm]
     % Self-regarding circle
-    \draw[fill=libertygreen!20, draw=libertygreen, thick] (0,0) circle (1.8cm);
+    \draw[fill=boxgreen!20, draw=boxgreen, thick] (0,0) circle (1.8cm);
     \node[text width=2.5cm, align=center] at (0,0) {\small \textbf{Self-Regarding}\\ Actions affecting only yourself};
-    \node[below, libertygreen] at (0,-2.1) {\small \textbf{Protected}};
+    \node[below, boxgreen] at (0,-2.1) {\small \textbf{Protected}};
     
     % Other-regarding circle
-    \draw[fill=warningred!20, draw=warningred, thick] (5.5,0) circle (1.8cm);
+    \draw[fill=boxred!20, draw=boxred, thick] (5.5,0) circle (1.8cm);
     \node[text width=2.5cm, align=center] at (5.5,0) {\small \textbf{Other-Regarding}\\ Actions harming others};
-    \node[below, warningred] at (5.5,-2.1) {\small \textbf{May be restricted}};
+    \node[below, boxred] at (5.5,-2.1) {\small \textbf{May be restricted}};
     
     % Arrow
     \draw[->, thick, dashed] (2.2,0) -- (3.3,0) node[midway, above] {\tiny Gray zone};
@@ -282,15 +280,15 @@ Even if an opinion IS true, suppressing opposition \textbf{harms us}:
 \vspace{0.3cm}
 \begin{center}
 \begin{tikzpicture}[node distance=1.5cm,
-    idea/.style={rectangle, draw, fill=millblue!15, text width=2cm, text centered, rounded corners, minimum height=0.7cm, font=\small}]
+    idea/.style={rectangle, draw, fill=boxblue!15, text width=2cm, text centered, rounded corners, minimum height=0.7cm, font=\small}]
     
     \node[idea] (idea1) {Idea A};
     \node[idea, right of=idea1, xshift=1cm] (idea2) {Idea B};
     \node[idea, right of=idea2, xshift=1cm] (idea3) {Idea C};
     
-    \node[rectangle, draw, fill=libertygreen!30, text width=2.5cm, text centered, rounded corners, minimum height=0.8cm, below of=idea2, yshift=-0.8cm] (debate) {\textbf{Open Debate}};
+    \node[rectangle, draw, fill=boxgreen!30, text width=2.5cm, text centered, rounded corners, minimum height=0.8cm, below of=idea2, yshift=-0.8cm] (debate) {\textbf{Open Debate}};
     
-    \node[rectangle, draw, fill=goldaccent!30, text width=2cm, text centered, rounded corners, minimum height=0.7cm, below of=debate, yshift=-0.5cm] (truth) {Best Idea Wins};
+    \node[rectangle, draw, fill=boxgold!30, text width=2cm, text centered, rounded corners, minimum height=0.7cm, below of=debate, yshift=-0.5cm] (truth) {Best Idea Wins};
     
     \draw[->, thick] (idea1) -- (debate);
     \draw[->, thick] (idea2) -- (debate);
@@ -325,19 +323,11 @@ Does truth always win in the ``marketplace''? What might prevent it?
 
 % ===== PART II HEADER =====
 
-\section{Part II: Threats to Free Speech}
+\section{Threats to Free Speech}
 
 \mode<article>{
 While government censorship represents the traditional threat to free expression, Mill recognized that social pressure can constitute an equally powerful form of tyranny. Contemporary digital contexts introduce additional threats through corporate platform power and economic barriers to being heard. Private companies now control the primary forums for public discourse, creating tensions between First Amendment protections against government censorship and the practical reality of corporate control over speech. Understanding these multiple threats is essential for developing adequate protections for meaningful free expression.
 }
-
-\begin{frame}
-\begin{center}
-{\Huge \textbf{Part II}}\\[0.5cm]
-{\Large Threats to Free Speech}\\[0.3cm]
-{\large Who Can Silence You?}
-\end{center}
-\end{frame}
 
 % ===== SLIDE 13: Threats Introduction =====
 \begin{frame}{Threats to Free Speech: An Overview}
@@ -351,7 +341,7 @@ Mill recognized \textbf{multiple sources} of suppression:
 \vspace{0.3cm}
 \begin{center}
 \begin{tikzpicture}[node distance=2cm,
-    threat/.style={rectangle, draw, fill=warningred!20, text width=2.8cm, text centered, rounded corners, minimum height=1cm, font=\small}]
+    threat/.style={rectangle, draw, fill=boxred!20, text width=2.8cm, text centered, rounded corners, minimum height=1cm, font=\small}]
     
     \node[threat] (gov) {Government\\Censorship};
     \node[threat, right of=gov, xshift=1.5cm] (social) {Social\\Tyranny};
@@ -360,10 +350,10 @@ Mill recognized \textbf{multiple sources} of suppression:
     
     \node[below of=social, xshift=1.5cm, yshift=-0.3cm] (you) {\Large \textbf{Your Speech}};
     
-    \draw[->, thick, warningred] (gov) -- (you);
-    \draw[->, thick, warningred] (social) -- (you);
-    \draw[->, thick, warningred] (corp) -- (you);
-    \draw[->, thick, warningred] (econ) -- (you);
+    \draw[->, thick, boxred] (gov) -- (you);
+    \draw[->, thick, boxred] (social) -- (you);
+    \draw[->, thick, boxred] (corp) -- (you);
+    \draw[->, thick, boxred] (econ) -- (you);
 \end{tikzpicture}
 \end{center}
 \end{frame}
@@ -475,19 +465,11 @@ Does free speech mean anything if no one can hear you?
 
 % ===== PART III HEADER =====
 
-\section{Part III: The Limits of Free Speech}
+\section{The Limits of Free Speech}
 
 \mode<article>{
 Even strong defenders of free expression like Mill recognize that speech rights are not absolute. The challenge lies in determining where to draw the line between protected and unprotected speech. Mill's harm principle suggests that speech directly inciting imminent harm may be restricted, but contemporary debates over hate speech, silencing speech, and online harassment push this framework to its limits. We must consider whether categories of unprotected speech should be expanded to address harms Mill did not anticipate, while remaining mindful of the risks of government overreach and definitional manipulation.
 }
-
-\begin{frame}
-\begin{center}
-{\Huge \textbf{Part III}}\\[0.5cm]
-{\Large The Limits of Free Speech}\\[0.3cm]
-{\large Where Should We Draw the Line?}
-\end{center}
-\end{frame}
 
 % ===== SLIDE 18: Limits Introduction =====
 \begin{frame}{The Limits of Free Speech}
@@ -506,8 +488,8 @@ Even Mill recognized \textbf{limits} on permissible speech:
     \node[below] at (0,0) {\small No speech};
     \node[below] at (12,0) {\small All speech};
     
-    \node[fill=libertygreen!30, draw=libertygreen, rounded corners, minimum width=6cm, minimum height=0.7cm] at (8,0) {\small \textbf{Protected Speech}};
-    \node[fill=warningred!30, draw=warningred, rounded corners, minimum width=3cm, minimum height=0.7cm] at (2,0) {\small Restricted};
+    \node[fill=boxgreen!30, draw=boxgreen, rounded corners, minimum width=6cm, minimum height=0.7cm] at (8,0) {\small \textbf{Protected Speech}};
+    \node[fill=boxred!30, draw=boxred, rounded corners, minimum width=3cm, minimum height=0.7cm] at (2,0) {\small Restricted};
     
     \draw[dashed, thick] (4.8,-0.5) -- (4.8,0.5);
     \node[above] at (4.8,0.5) {\small \textbf{The Line?}};
@@ -612,7 +594,7 @@ Should the U.S. adopt hate speech laws like most other democracies?
 \end{argumentbox}
 
 \vspace{0.3cm}
-\textbf{Key theorists}: Catharine MacKinnon, Mari Matsuda, Jeremy Waldron
+\textbf{Key theorists}: Catharine MacKinnon \parencite{mackinnon1993only}, Mari Matsuda \parencite{matsuda_words_wound}, Jeremy Waldron \parencite{waldron2012harm}
 
 \vspace{0.2cm}
 \textbf{The irony}: Protecting free speech may require restricting some speech.
@@ -642,19 +624,11 @@ Can speech itself be a form of censorship? Or is that a contradiction in terms?
 
 % ===== PART IV HEADER =====
 
-\section{Part IV: Historical Applications}
+\section{Historical Applications}
 
 \mode<article>{
 Examining how free speech principles have been applied to previous communication technologies provides essential context for current debates. The broadcast era's scarcity rationale justified content regulations like the Fairness Doctrine that would be unconstitutional if applied to print media. The elimination of the Fairness Doctrine in 1987 reflected changing technological conditions but may have contributed to contemporary media polarization. These historical examples demonstrate that technological change repeatedly forces reconsideration of how abstract principles translate into concrete policy.
 }
-
-\begin{frame}
-\begin{center}
-{\Huge \textbf{Part IV}}\\[0.5cm]
-{\Large Historical Applications}\\[0.3cm]
-{\large Millian Principles Meet Broadcast Media}
-\end{center}
-\end{frame}
 
 % ===== SLIDE 24: Tech and Free Speech =====
 \begin{frame}{Millian Principles Meet Technology}
@@ -756,19 +730,11 @@ Was ending the Fairness Doctrine a Millian triumph or a mistake?
 
 % ===== PART V HEADER =====
 
-\section{Part V: Social Media Regulation}
+\section{Social Media Regulation}
 
 \mode<article>{
 Social media platforms occupy an ambiguous position: they are private entities with First Amendment rights, yet they exercise public power over democratic discourse. Section 230 of the Communications Decency Act provides platforms immunity from liability for user content while allowing content moderation. This legal framework enabled platform growth but faces increasing criticism as platforms have become essential infrastructure for public communication. The debate over platform regulation reflects fundamental tensions between private property rights, corporate power, and the public interest in open discourse.
 }
-
-\begin{frame}
-\begin{center}
-{\Huge \textbf{Part V}}\\[0.5cm]
-{\Large Social Media Regulation}\\[0.3cm]
-{\large Free Speech in the Platform Age}
-\end{center}
-\end{frame}
 
 % ===== SLIDE 28: Platform Age =====
 \begin{frame}{Free Speech in the Platform Age}
@@ -795,8 +761,8 @@ How do we reconcile private ownership with public importance?
 \begin{frame}{The Platform Dilemma}
 \begin{center}
 \begin{tikzpicture}[node distance=2.5cm,
-    option/.style={rectangle, draw, fill=millblue!15, text width=4cm, text centered, rounded corners, minimum height=1.5cm},
-    problem/.style={rectangle, draw, fill=warningred!15, text width=4cm, text centered, rounded corners, minimum height=1cm, font=\small}]
+    option/.style={rectangle, draw, fill=boxblue!15, text width=4cm, text centered, rounded corners, minimum height=1.5cm},
+    problem/.style={rectangle, draw, fill=boxred!15, text width=4cm, text centered, rounded corners, minimum height=1cm, font=\small}]
     
     \node[option] (regulate) {\textbf{Regulate Platforms}\\ Government sets speech rules};
     \node[option, right of=regulate, xshift=3cm] (dont) {\textbf{Don't Regulate}\\ Platforms set own rules};
@@ -962,7 +928,7 @@ It's not just about what's \textbf{allowed}---it's about what's \textbf{promoted
 \vspace{0.3cm}
 \begin{center}
 \begin{tikzpicture}[node distance=2cm,
-    box/.style={rectangle, draw, fill=techgray!15, text width=3.5cm, text centered, rounded corners, minimum height=1cm}]
+    box/.style={rectangle, draw, fill=boxgray!15, text width=3.5cm, text centered, rounded corners, minimum height=1cm}]
     
     \node[box] (moderation) {\textbf{Content Moderation}\\ What's allowed?};
     \node[box, right of=moderation, xshift=2.5cm] (amplification) {\textbf{Algorithmic Curation}\\ What's promoted?};
@@ -982,19 +948,11 @@ Is there a meaningful difference between allowing speech and actively promoting 
 
 % ===== PART VI HEADER =====
 
-\section{Part VI: AI and Chatbots}
+\section{AI and Chatbots}
 
 \mode<article>{
 Artificial intelligence introduces novel challenges to free speech frameworks. AI-generated speech blurs traditional categories: it is neither fully autonomous expression nor simple tool use. Questions arise about whether AI speech deserves protection, who bears responsibility for AI-generated harms, and how to handle AI impersonation and scaled misinformation. ML's arguments for protecting speech rest on assumptions about human autonomy and truth-seeking that may not apply straightforwardly to artificial systems. These issues require extending traditional frameworks in ways Mill could not have anticipated.
 }
-
-\begin{frame}
-\begin{center}
-{\Huge \textbf{Part VI}}\\[0.5cm]
-{\Large AI and Chatbots}\\[0.3cm]
-{\large New Frontiers in Free Speech}
-\end{center}
-\end{frame}
 
 % ===== SLIDE 36: AI-Generated Speech =====
 \begin{frame}{New Frontiers: AI-Generated Speech}
@@ -1075,19 +1033,11 @@ Users attempt to bypass AI safety restrictions through clever prompting:
 
 % ===== PART VII HEADER =====
 
-\section{Part VII: Synthesis and Conclusion}
+\section{Synthesis and Conclusion}
 
 \mode<article>{
 Mill's framework for free speech remains valuable but requires updating for digital contexts. The marketplace of ideas metaphor assumes conditions---including rough equality of access and audience rationality---that may not hold in algorithmic environments optimized for engagement over truth. Platform power represents a form of control Mill did not fully anticipate. Nevertheless, Mill's core insights about fallibility, the value of intellectual conflict, and the dangers of concentrated control over expression remain highly relevant. The challenge is adapting these principles to contexts where both excessive regulation and insufficient regulation can undermine meaningful discourse.
 }
-
-\begin{frame}
-\begin{center}
-{\Huge \textbf{Part VII}}\\[0.5cm]
-{\Large Synthesis and Conclusion}\\[0.3cm]
-{\large Mill in the Digital Age}
-\end{center}
-\end{frame}
 
 % ===== SLIDE 39: Objections =====
 \begin{frame}{Objections to the Millian Framework}
@@ -1111,25 +1061,19 @@ Mill's framework for free speech remains valuable but requires updating for digi
 \end{frame}
 
 % ===== SLIDE 40: Conclusion =====
-\begin{frame}{Toward a Millian Framework for the Digital Age}
-\textbf{Possible updates to Mill's principles}:
-\begin{itemize}
-    \item Recognize \textbf{platform power} as a threat to speech (like government)
-    \item Consider whether systematic \textbf{silencing} constitutes ``harm''
-    \item Distinguish \textbf{content moderation} from \textbf{algorithmic amplification}
-    \item Require \textbf{transparency and accountability} from powerful speakers
-\end{itemize}
+\begin{frame}{Key Thinkers and Concepts}
+{\footnotesize
+\begin{enumerate}
+    \item \textbf{John Stuart Mill} (\textit{On Liberty}, 1859) gives the classic liberal defense: suppressing even false speech is wrong because (a) the suppressed view might be true, (b) even false views sharpen our grasp of the truth by collision, and (c) unchallenged truths become dead dogma.
+    \item \textbf{The harm principle}: Mill holds that the only legitimate reason to restrict speech is preventing direct harm to others---not offense, immorality, or bad taste.
+    \item \textbf{The marketplace of ideas}: Mill's metaphor that free competition among ideas tends over time to produce truth. Critics argue this assumes rational audiences and equal access that social media does not provide.
+    \item \textbf{Silencing speech}: Paradoxically, some speech (harassment, flooding the zone) can suppress other speech---a challenge Mill's framework did not fully address.
+    \item \textbf{Section 230} (US, 1996) gives platforms immunity from liability for user content, enabling growth but insulating platforms from accountability for harms they amplify.
+    \item \textbf{Algorithmic amplification}: Platforms don't just host speech---they rank, promote, and recommend it. This is a form of editorial power that Mill's government-focused framework did not anticipate.
+    \item \textbf{Hate speech}: Speech that targets groups on protected characteristics. Whether it causes cognizable harm---and whether prohibiting it is compatible with Mill---is a live debate.
+\end{enumerate}
+}
 
-\vspace{0.3cm}
-\begin{block}{The Enduring Millian Insight}
-\begin{itemize}
-    \item The goal is \textbf{meaningful discourse}, not just absence of censorship
-    \item Both too much AND too little regulation can undermine free speech
-    \item \textbf{Humility}: We may be wrong about which ideas are dangerous
-\end{itemize}
-\end{block}
-
-\vspace{0.2cm}
 \begin{alertblock}{?}
 Where would Mill come down on social media regulation if he were alive today?
 \end{alertblock}

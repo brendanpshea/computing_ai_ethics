@@ -1,7 +1,0 @@
-\beamer@sectionintoc {1}{Introduction: Information Technology and Ethics}{2}{0}{1}
-\beamer@sectionintoc {2}{Revolution 1: Writing}{5}{0}{2}
-\beamer@sectionintoc {3}{Revolution 2: The Printing Press}{12}{0}{3}
-\beamer@sectionintoc {4}{Revolution 3: Distance Communication}{20}{0}{4}
-\beamer@sectionintoc {5}{Revolution 4: Mass Media}{27}{0}{5}
-\beamer@sectionintoc {6}{Revolution 5: The World Wide Web}{34}{0}{6}
-\beamer@sectionintoc {7}{Conclusion: Patterns and Lessons}{38}{0}{7}

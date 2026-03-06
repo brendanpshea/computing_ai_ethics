@@ -1,6 +1,0 @@
-\beamer@sectionintoc {1}{Introduction: Intellectual Property in the Digital Age}{1}{0}{1}
-\beamer@sectionintoc {2}{Part II: The Digital Transformation}{13}{0}{2}
-\beamer@sectionintoc {3}{Part III: Critiques and Abuses of IP}{19}{0}{3}
-\beamer@sectionintoc {4}{Part IV: Big Tech and Platform IP}{27}{0}{4}
-\beamer@sectionintoc {5}{Part V: AI and Intellectual Property}{32}{0}{5}
-\beamer@sectionintoc {6}{Part VI: Open Source and Alternative Models}{37}{0}{6}

@@ -1,5 +1,0 @@
-\beamer@sectionintoc {1}{Part I: The Definitional Challenge}{3}{0}{1}
-\beamer@sectionintoc {2}{Part II: A History of AI Technologies}{8}{0}{2}
-\beamer@sectionintoc {3}{Part III: Classical Debates on Machine Intelligence}{19}{0}{3}
-\beamer@sectionintoc {4}{Part IV: Modern Definitions and Approaches}{33}{0}{4}
-\beamer@sectionintoc {5}{Part V: Why Definitions Matter}{44}{0}{5}
