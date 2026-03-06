@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<!--
+  CHAPTER TEMPLATE — Computing and AI Ethics
+  ============================================
+  Copy this file, rename it (e.g. ch01_history.html), and replace all
+  placeholder text. See CHAPTER_GUIDELINES.md for full authoring instructions.
+
+  Checklist before publishing:
+    [ ] Update <title> and <meta name="description">
+    [ ] Set correct data-chapter="N" on <body>
+    [ ] Update .chapter-eyebrow, h1, and .chapter-subtitle in <header>
+    [ ] Fill in the table of contents <ol> with your actual section IDs
+    [ ] Update prev/next navigation links (top and footer)
+    [ ] Replace all [PLACEHOLDER] text with real content
+    [ ] Remove any unused special-element blocks
+    [ ] Test Mermaid diagrams render correctly
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- UPDATE: chapter number and full title -->
+  <title>Chapter N: [Title] | Computing &amp; AI Ethics</title>
+  <meta name="description" content="[One-sentence description of this chapter.]">
+  <meta name="author" content="Brendan Shea, PhD">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Mermaid — for flowcharts / diagrams written in code -->
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+
+  <!-- cite.js — loads ../refs.bib and renders APA citations.
+       Requires a web server (not file://). See CHAPTER_GUIDELINES.md §6. -->
+  <script src="cite.js" defer></script>
+</head>
+
+<!-- UPDATE: set data-chapter to 1–8 to get the right accent color -->
+<body data-chapter="1">
+
+<div class="page-wrapper">
+
+  <!-- ===================================================
+       TOP NAVIGATION
+       Update href values for previous/next chapters.
+       If this is chapter 1, remove the "← Previous" link.
+       If this is chapter 8, remove the "Next →" link.
+  =================================================== -->
+  <nav class="top-nav" aria-label="Chapter navigation">
+    <a href="index.html" class="nav-home">Computing &amp; AI Ethics</a>
+    <div class="chapter-nav">
+      <a href="chNN_prev.html" class="nav-prev">&#8592; Previous</a>
+      <span class="nav-chapter">Chapter N</span>
+      <a href="chNN_next.html" class="nav-next">Next &#8594;</a>
+    </div>
+  </nav>
+
+  <!-- ===================================================
+       CHAPTER HEADER
+  =================================================== -->
+  <header class="chapter-header">
+    <p class="chapter-eyebrow">Chapter N</p>
+    <h1>[Full Chapter Title]</h1>
+    <p class="chapter-subtitle">[Optional subtitle or one-line framing question]</p>
+  </header>
+
+  <!-- ===================================================
+       MAIN CONTENT
+  =================================================== -->
+  <main class="content-area chapter-content" id="main-content">
+
+    <!-- ── TABLE OF CONTENTS ──────────────────────────── -->
+    <nav class="toc-box" aria-label="Table of contents">
+      <h2>In this chapter</h2>
+      <ol>
+        <li><a href="#central-questions">Central Questions</a></li>
+        <li><a href="#section-1">[Section 1 Title]</a></li>
+        <li><a href="#section-2">[Section 2 Title]</a></li>
+        <li><a href="#section-3">[Section 3 Title]</a></li>
+        <!-- Add more as needed -->
+        <li><a href="#key-points">Key Points</a></li>
+      </ol>
+    </nav>
+
+
+    <!-- ── CENTRAL QUESTIONS (Learning Outcomes) ─────── -->
+    <!--
+      List 4–6 questions that frame the chapter's goals.
+      These mirror the "Central Questions" slide from the lecture.
+      Phrase them as genuine questions the reader will be able to
+      answer by the end of the chapter.
+    -->
+    <section class="central-questions" id="central-questions" aria-labelledby="cq-heading">
+      <h2 id="cq-heading">Central Questions</h2>
+      <ol>
+        <li>What is [concept], and why does it matter for computing ethics?</li>
+        <li>How did [historical development] shape the way we think about [topic]?</li>
+        <li>What arguments do philosophers give for and against [position]?</li>
+        <li>How does [theory or framework] apply to a contemporary case?</li>
+        <li>What are the strongest objections to [common view], and how can they be answered?</li>
+      </ol>
+    </section>
+
+
+    <!-- ══════════════════════════════════════════════════
+         SECTION 1
+    ══════════════════════════════════════════════════════ -->
+    <section id="section-1" aria-labelledby="s1-heading">
+      <h2 id="s1-heading">[Section 1 Title]</h2>
+
+      <!--
+        Open each section with 2–4 paragraphs of prose that introduce
+        the main idea and give the reader a reason to care. Avoid bullet
+        lists until you have established the idea in words first.
+      -->
+      <p>
+        [Opening paragraph. Introduce the central concept of this section, connect it
+        to the real world, and preview what the reader will learn. Aim for 4–6 sentences.]
+      </p>
+      <p>
+        [Second paragraph. Develop the idea further, giving a concrete example or
+        historical context. Remember: write for an intelligent high-school or first-year
+        college student who has not studied philosophy or CS before.]
+      </p>
+
+
+      <!-- ── DEFINITION BOX ──────────────────────────── -->
+      <!--
+        Use .definition-box for key terms introduced for the first time.
+        Only one term per box. Definitions should be accessible but precise.
+      -->
+      <div class="definition-box">
+        <p class="term">[Key Term]</p>
+        <p class="definition">
+          [Clear, accessible definition in one or two sentences. Avoid jargon.
+          If a technical term is unavoidable, explain it immediately.]
+        </p>
+      </div>
+
+      <p>
+        [Continue the prose. Relate the definition back to the broader argument
+        of the section. Why does this term matter?]
+      </p>
+
+
+      <!-- ── KEY THINKER CARD ────────────────────────── -->
+      <!--
+        Use .key-thinker for biographical sidebars about philosophers,
+        technologists, historians, or activists relevant to this section.
+        Include: name, dates, affiliation or context, 2–3 paragraphs of bio,
+        and a note on why their work is relevant here.
+
+        For a portrait image, replace the .thinker-portrait-placeholder div
+        with: <img class="thinker-portrait" src="images/surname.jpg" alt="Photo of Name">
+        Use public-domain or openly licensed images only.
+
+        If no image is available, keep the placeholder emoji (pick something fitting).
+      -->
+      <div class="key-thinker">
+        <div class="thinker-portrait-placeholder" aria-hidden="true">🧠</div>
+
+        <div class="thinker-header">
+          <p class="thinker-label">Key Thinker</p>
+          <h3 class="thinker-name">
+            [Thinker's Name]
+            <span class="thinker-dates">([birth]–[death or "present"])</span>
+          </h3>
+        </div>
+
+        <div class="thinker-body">
+          <p>
+            [First paragraph: who they were — nationality, education, major works,
+            institutional home. Keep it lively; avoid pure Wikipedia biography style.]
+          </p>
+          <p>
+            [Second paragraph: their core contribution to this chapter's topic.
+            What did they argue? Why was it important? How did others respond?]
+          </p>
+          <p>
+            [Optional third paragraph: legacy, influence, or a note on how their
+            ideas apply to contemporary technology.]
+          </p>
+        </div>
+      </div><!-- /.key-thinker -->
+
+
+      <!-- ── QUOTE BLOCK ─────────────────────────────── -->
+      <!--
+        Use <blockquote class="quote-block"> for significant direct quotations.
+        Keep quotes short enough to be readable (1–4 sentences).
+        Always cite the source in the <cite> at the bottom using a data-key.
+        Follow with a paragraph unpacking what the quote means.
+      -->
+      <blockquote class="quote-block">
+        <p>
+          [Direct quotation from a primary or notable secondary source, reproduced
+          accurately. Keep it under 60 words.]
+        </p>
+        <!-- The <cite data-key="..."> element is replaced by cite.js with
+             a formatted APA inline citation linking to the reference list. -->
+        <cite data-key="plato_phaedrus"></cite>
+      </blockquote>
+
+      <p>
+        [Paragraph explaining what this quotation means and why it matters for the
+        chapter's argument. Don't let quotes stand alone — always unpack them.]
+      </p>
+
+    </section><!-- /section-1 -->
+
+
+    <!-- ══════════════════════════════════════════════════
+         SECTION 2 — with an Argument Box and Case Study
+    ══════════════════════════════════════════════════════ -->
+    <section id="section-2" aria-labelledby="s2-heading">
+      <h2 id="s2-heading">[Section 2 Title]</h2>
+
+      <p>[Opening paragraph for this section.]</p>
+
+      <h3>[Subsection heading, if needed]</h3>
+
+      <p>[Prose developing the subsection idea.]</p>
+
+
+      <!-- ── ARGUMENT BOX ────────────────────────────── -->
+      <!--
+        Use .argument-box for presenting a formal philosophical argument.
+        - .box-label: always "What's the Argument?"
+        - .box-title: give the argument a short descriptive name
+        - ol.premises: numbered list of premises (and sub-premises if needed)
+        - .conclusion: the conclusion, preceded by the ∴ symbol
+
+        After the box, always write a paragraph explaining the argument in
+        plain language and evaluating its strengths and weaknesses.
+      -->
+      <div class="argument-box">
+        <p class="box-label">What's the Argument?</p>
+        <p class="box-title">[Name of the Argument, e.g. "The Harm Principle Argument"]</p>
+        <ol class="premises">
+          <li>[Premise 1: a claim that is widely accepted or can be defended]</li>
+          <li>[Premise 2: another claim]</li>
+          <li>[Premise 3 if needed: can include a sub-argument here]</li>
+        </ol>
+        <div class="conclusion">
+          <span class="therefore">&#8756;</span>
+          [Conclusion: what follows logically from the premises above]
+        </div>
+      </div>
+
+      <p>
+        [Explain the argument in plain English. What does each premise mean?
+        Is the argument valid (does the conclusion follow)? Is it sound
+        (are the premises true)?]
+      </p>
+
+
+      <!-- ── PRO / OBJECTION PAIR ────────────────────── -->
+      <!--
+        Use .pro-argument and .objection to show both sides of a debate.
+        These often appear together after an Argument Box.
+      -->
+      <div class="pro-argument">
+        <p class="box-label">Supporting argument</p>
+        <p>
+          [A reason to accept the argument above. Could be an additional premise,
+          empirical evidence, or an appeal to widely shared intuitions.]
+        </p>
+      </div>
+
+      <div class="objection">
+        <p class="box-label">Objection</p>
+        <p>
+          [A reason to doubt or reject the argument. Present the strongest
+          version of the opposing view — don't strawman it.]
+        </p>
+      </div>
+
+      <p>[Prose that weighs the pro and the objection, and offers a balanced take.]</p>
+
+
+      <!-- ── CASE STUDY ───────────────────────────────── -->
+      <!--
+        Use .case-study for real-world examples that illustrate the section's
+        concepts. Case studies should:
+          • Be real (not made-up scenarios, unless clearly labeled hypothetical)
+          • Be detailed enough to be genuinely instructive
+          • Connect back explicitly to the philosophical/conceptual point
+          • Include dates and key parties involved
+        Aim for 150–300 words per case study.
+      -->
+      <div class="case-study">
+        <p class="box-label">Case Study</p>
+        <p class="box-title">[Descriptive Title of the Case, e.g. "The Napster Shutdown (1999–2001)"]</p>
+        <p>
+          [Opening paragraph: background. When did this happen? Who were the
+          main actors? What was the technology or system involved?]
+        </p>
+        <p>
+          [Second paragraph: what happened and why it was ethically significant.
+          What competing interests were at stake?]
+        </p>
+        <p>
+          [Third paragraph: outcome and lessons. What did courts, regulators, or
+          the public decide? What does this case teach us about the chapter's topic?]
+        </p>
+      </div>
+
+    </section><!-- /section-2 -->
+
+
+    <!-- ══════════════════════════════════════════════════
+         SECTION 3 — with a Diagram and a Table
+    ══════════════════════════════════════════════════════ -->
+    <section id="section-3" aria-labelledby="s3-heading">
+      <h2 id="s3-heading">[Section 3 Title]</h2>
+
+      <p>[Opening paragraph.]</p>
+
+
+      <!-- ── MERMAID DIAGRAM ─────────────────────────── -->
+      <!--
+        Use Mermaid for flowcharts, timelines, sequence diagrams, and
+        concept maps. Mermaid code is written inside a <div class="mermaid">
+        block; the library renders it as SVG automatically.
+
+        Common diagram types for this textbook:
+          • flowchart LR / TD  — arguments, decision trees, processes
+          • timeline            — historical sequences
+          • graph LR            — concept relationships
+
+        Wrap in a <figure> with a <figcaption>.
+
+        Example flowchart:
+          flowchart TD
+            A[Technology invented] --> B{Who controls it?}
+            B -->|State| C[Censorship risk]
+            B -->|Markets| D[Inequality risk]
+            B -->|Community| E[Coordination problems]
+
+        Example timeline:
+          timeline
+            title Five Information Revolutions
+            3200 BCE : Writing (cuneiform)
+            1440    : Printing press (Gutenberg)
+            1837    : Telegraph (Morse)
+            1969    : Internet (ARPANET)
+            2000s   : Social media
+      -->
+      <figure>
+        <div class="mermaid">
+flowchart LR
+    A["[Concept A]"] -->|"leads to"| B["[Concept B]"]
+    B --> C{"[Decision point]"}
+    C -->|"Yes"| D["[Outcome 1]"]
+    C -->|"No"| E["[Outcome 2]"]
+        </div>
+        <figcaption>
+          Figure N.N — [Caption describing what the diagram shows and
+          what the reader should notice.]
+        </figcaption>
+      </figure>
+
+
+      <!-- ── TABLE ───────────────────────────────────── -->
+      <!--
+        Use tables to compare options, summarize thinkers' positions,
+        or present structured data. Always wrap in .table-wrapper for
+        horizontal scroll on mobile. Use <caption> for an accessible title.
+
+        The first column is automatically styled as a header column (bold, dark).
+        Add scope="col" to <th> elements for screen-reader accessibility.
+      -->
+      <div class="table-wrapper">
+        <table>
+          <caption>[Table N.N — Descriptive title for this table]</caption>
+          <thead>
+            <tr>
+              <th scope="col">[Row label column]</th>
+              <th scope="col">[Column 2]</th>
+              <th scope="col">[Column 3]</th>
+              <th scope="col">[Column 4]</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>[Row 1 label]</td>
+              <td>[Cell]</td>
+              <td>[Cell]</td>
+              <td>[Cell]</td>
+            </tr>
+            <tr>
+              <td>[Row 2 label]</td>
+              <td>[Cell]</td>
+              <td>[Cell]</td>
+              <td>[Cell]</td>
+            </tr>
+            <tr>
+              <td>[Row 3 label]</td>
+              <td>[Cell]</td>
+              <td>[Cell]</td>
+              <td>[Cell]</td>
+            </tr>
+          </tbody>
+        </table>
+      </div><!-- /.table-wrapper -->
+
+      <p>[Paragraph discussing the table — what patterns does it reveal?]</p>
+
+
+      <!-- ── THOUGHT QUESTIONS ───────────────────────── -->
+      <!--
+        Use .thought-questions at the end of each major section, or
+        wherever you want the reader to pause and reflect. These are
+        not quiz questions with right answers — they are genuine open
+        questions for discussion or journaling.
+        Aim for 3–5 questions per box.
+      -->
+      <div class="thought-questions">
+        <p class="box-label">Thought Questions</p>
+        <ol>
+          <li>
+            [Question 1 — open-ended, genuinely debatable, grounded in the section]
+          </li>
+          <li>
+            [Question 2 — perhaps asks students to apply a concept to their own experience]
+          </li>
+          <li>
+            [Question 3 — asks students to steelman a view they might initially reject]
+          </li>
+          <li>
+            [Question 4 — connects the section's ideas to a contemporary issue]
+          </li>
+        </ol>
+      </div>
+
+    </section><!-- /section-3 -->
+
+
+    <!-- ══════════════════════════════════════════════════
+         FINAL SECTION — Key Points Summary
+         Always the last section before the chapter footer.
+    ══════════════════════════════════════════════════════ -->
+    <section id="key-points" aria-labelledby="kp-heading">
+      <h2 id="kp-heading">Summary</h2>
+
+      <p>
+        [One paragraph summarizing the chapter's main arc: what question was posed
+        at the start, what arguments were examined, and what conclusions — tentative
+        or firm — were reached.]
+      </p>
+
+      <!-- ── KEY POINTS BOX ──────────────────────────── -->
+      <!--
+        Bullet-point summary of the chapter's most important takeaways.
+        Aim for 6–10 points. Each should be a complete, informative sentence.
+        Bold the key term or concept at the start of each bullet.
+      -->
+      <div class="key-points">
+        <p class="box-label">Key Points</p>
+        <ul>
+          <li>
+            <strong>[Key term or concept]:</strong> [one-sentence summary of
+            what was established about this concept in the chapter.]
+          </li>
+          <li>
+            <strong>[Key thinker's name]</strong> argued that [core claim],
+            which implies [consequence for technology ethics].
+          </li>
+          <li>
+            <strong>[Central argument]:</strong> [premise 1] and [premise 2],
+            therefore [conclusion]. This argument [is compelling / faces the
+            objection that …].
+          </li>
+          <li>
+            <strong>[Case study name]</strong> illustrates how [abstract
+            concept] plays out in a real-world context, showing that [lesson].
+          </li>
+          <li>
+            <strong>[Unresolved question]:</strong> [state what remains genuinely
+            contested and why it is hard to resolve].
+          </li>
+        </ul>
+      </div>
+
+    </section><!-- /key-points -->
+
+    <!-- ══════════════════════════════════════════════════
+         REFERENCES
+         cite.js populates <div id="bibliography"> automatically
+         with every key cited in this chapter, sorted alphabetically.
+         Do NOT edit this section — just add <cite data-key="…"> tags
+         throughout the chapter prose.
+    ══════════════════════════════════════════════════════ -->
+    <section id="references-section" aria-labelledby="refs-heading">
+      <h2 id="refs-heading">References</h2>
+      <div id="bibliography"></div>
+      <!--
+        If cite.js cannot load (e.g. opening file:// directly), the
+        bibliography will be empty and inline citations will show [key].
+        Run a local server to see citations: python -m http.server 8000
+      -->
+    </section>
+
+  </main><!-- /.chapter-content -->
+
+
+  <!-- ===================================================
+       CHAPTER FOOTER NAVIGATION
+  =================================================== -->
+  <footer class="chapter-footer">
+    <nav class="chapter-footer-nav" aria-label="Chapter navigation">
+      <a href="chNN_prev.html" class="footer-nav-btn">&#8592; Previous chapter</a>
+      <a href="index.html" class="footer-nav-btn">&#8962; Table of Contents</a>
+      <a href="chNN_next.html" class="footer-nav-btn">Next chapter &#8594;</a>
+    </nav>
+    <p class="chapter-footer-meta">
+      <em>Computing and AI Ethics</em> by Brendan Shea, PhD &nbsp;·&nbsp;
+      <a href="https://creativecommons.org/licenses/by-nc/4.0/"
+         target="_blank" rel="noopener">CC BY-NC 4.0</a> &nbsp;·&nbsp;
+      Rochester Community and Technical College
+    </p>
+  </footer>
+
+</div><!-- /.page-wrapper -->
+
+<!-- Mermaid initialization — keep at end of body -->
+<script>
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: 'neutral',
+    themeVariables: {
+      primaryColor:      '#1a4a8a',
+      primaryTextColor:  '#fff',
+      primaryBorderColor:'#003366',
+      lineColor:         '#546e7a',
+      secondaryColor:    '#f0f6ff',
+      tertiaryColor:     '#fdf3d6'
+    }
+  });
+</script>
+
+</body>
+</html>
