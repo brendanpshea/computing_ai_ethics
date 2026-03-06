@@ -14,28 +14,7 @@
 % ------------------------------------------------------------------------------
 % Theme and Basic Setup
 % ------------------------------------------------------------------------------
-\usetheme{Madrid}
-\usecolortheme{default}
-
-% Remove navigation symbols (clean presentation)
-\setbeamertemplate{navigation symbols}{}
-
-% Standard footline with frame numbers
-\setbeamertemplate{footline}{
-    \leavevmode%
-    \hbox{%
-        \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
-            \usebeamerfont{author in head/foot}\insertshortauthor
-        \end{beamercolorbox}%
-        \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
-            \usebeamerfont{title in head/foot}\insertshorttitle
-        \end{beamercolorbox}%
-        \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
-            \usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
-            \insertframenumber{} / \inserttotalframenumber\hspace*{2ex}
-        \end{beamercolorbox}}%
-    \vskip0pt%
-}
+\usetheme[progressbar=foot, block=fill, sectionpage=progressbar]{metropolis}
 
 % ------------------------------------------------------------------------------
 % Core Packages
@@ -46,6 +25,9 @@
 \usepackage{array}
 \usepackage{graphicx}
 \usepackage{xcolor}
+\usepackage[sfdefault]{plex-sans}   % IBM Plex Sans — compact, modern, tech-themed
+\usepackage[T1]{fontenc}
+\usepackage{fontawesome5}          % real vector icons
 
 % Conditional text boxes (more flexible than basic beamer blocks)
 \usepackage{tcolorbox}
@@ -82,34 +64,63 @@
 
 % Presentation mode specific settings
 \mode<presentation>{
-    % Tighter spacing for slides
     \setlength{\parskip}{0pt}
+
+    % Show a TOC slide at the start of each section, current section highlighted
+    \AtBeginSection[]{
+        \begin{frame}{Lecture Outline}
+            \tableofcontents[currentsection, hideallsubsections]
+        \end{frame}
+    }
+
+    % FiraSans has ~15% taller metrics than Computer Modern; pull line spacing back
+    % to avoid the massive overflows Metropolis + FiraSans produce by default.
+    \renewcommand{\baselinestretch}{0.88}
+
+    % Tighter list spacing
+    \setbeamertemplate{itemize/enumerate body begin}{\setlength{\itemsep}{2pt}\setlength{\parsep}{0pt}}
+    \setbeamertemplate{itemize/enumerate subbody begin}{\setlength{\itemsep}{1pt}\setlength{\parsep}{0pt}}
 }
 
 % ------------------------------------------------------------------------------
 % Standard Colors for Boxes
 % ------------------------------------------------------------------------------
 % Consistent color scheme across all lectures for semantic elements
-\definecolor{boxblue}{RGB}{0,73,135}      % Arguments, concepts
-\definecolor{boxgreen}{RGB}{34,139,34}    % Pro arguments, supporting points
-\definecolor{boxred}{RGB}{178,34,34}      % Objections, warnings
-\definecolor{boxgold}{RGB}{198,146,20}    % Case studies, examples
-\definecolor{boxgray}{RGB}{100,100,100}   % Quotes, citations
-\definecolor{boxpurple}{RGB}{102,51,153}  % Secondary accent
+\definecolor{boxblue}{HTML}{1A4A7A}       % Arguments, concepts
+\definecolor{boxgreen}{HTML}{2E7D32}      % Pro arguments, supporting points
+\definecolor{boxred}{HTML}{C0392B}        % Objections, warnings
+\definecolor{boxgold}{HTML}{B7770D}       % Case studies, examples
+\definecolor{boxgray}{HTML}{555F6D}       % Quotes, citations
+\definecolor{boxpurple}{HTML}{6A3093}     % Secondary accent
+% Metropolis structural colors
+\definecolor{mPrimary}{HTML}{1E3A5F}      % Deep navy — frametitle / title bg
+\definecolor{mAccent}{HTML}{D4880A}       % Warm amber — progress bar / separators
 
 % ------------------------------------------------------------------------------
 % Beamer Theme Color Setup
 % ------------------------------------------------------------------------------
 % Applied once here; individual lectures should NOT override these.
 \mode<presentation>{
-    \setbeamercolor{structure}{fg=boxblue}
-    \setbeamercolor{title}{fg=white,bg=boxblue}
-    \setbeamercolor{frametitle}{fg=white,bg=boxblue}
-    \setbeamercolor{block title}{fg=white,bg=boxblue}
-    \setbeamercolor{block body}{bg=boxblue!10}
-    \setbeamercolor{block title alerted}{fg=white,bg=boxred}
-    \setbeamercolor{block body alerted}{bg=boxred!10}
-    \setbeamercolor{block title example}{fg=white,bg=boxgreen}
+    % Metropolis palette primary drives frametitle + title frame background
+    \setbeamercolor{palette primary}{bg=mPrimary, fg=white}
+    \setbeamercolor{frametitle}{bg=mPrimary, fg=white}
+    % Title page element colors — must be explicit so they stay white
+    % when a \usebackgroundtemplate image replaces the default navy fill
+    \setbeamercolor{title}{fg=white}
+    \setbeamercolor{subtitle}{fg=mAccent}
+    \setbeamercolor{author}{fg=white}
+    \setbeamercolor{institute}{fg=white!85!black}
+    \setbeamercolor{date}{fg=white!75!black}
+    % Progress bar and title separator use accent color
+    \setbeamercolor{progress bar}{fg=mAccent, bg=mAccent!25}
+    \setbeamercolor{title separator}{fg=mAccent}
+    \setbeamercolor{alerted text}{fg=boxred}
+    % Standard beamer blocks
+    \setbeamercolor{block title}{fg=white, bg=boxblue}
+    \setbeamercolor{block body}{bg=boxblue!8}
+    \setbeamercolor{block title alerted}{fg=white, bg=boxred}
+    \setbeamercolor{block body alerted}{bg=boxred!8}
+    \setbeamercolor{block title example}{fg=white, bg=boxgreen}
     \setbeamercolor{block body example}{bg=boxgreen!5}
 }
 
@@ -205,13 +216,13 @@
 % Utility Commands and Icons
 % ------------------------------------------------------------------------------
 
-% Text-based icon alternatives (since fontawesome is not available)
-\newcommand{\iconQuote}{\textbf{``}}
-\newcommand{\iconBalance}{$\triangleright$}
-\newcommand{\iconDiscussion}{\textbf{?}}
-\newcommand{\iconIdea}{$\star$}
-\newcommand{\iconPro}{\textbf{+}}
-\newcommand{\iconCon}{\textbf{--}}
+% fontawesome5 icon shorthands (\faXxx commands come from the fontawesome5 package)
+\newcommand{\iconQuote}{\faQuoteLeft}
+\newcommand{\iconBalance}{\faBalanceScale}
+\newcommand{\iconDiscussion}{\faComments}
+\newcommand{\iconIdea}{\faLightbulb}
+\newcommand{\iconPro}{\faThumbsUp}
+\newcommand{\iconCon}{\faThumbsDown}
 
 % Discussion question command (for interactive moments)
 \newcommand{\discussionquestion}[1]{%
@@ -220,13 +231,7 @@
     \end{alertblock}
 }
 
-% Backward compatibility aliases (originally defined in lecture 1)
-\newcommand{\faQuoteLeft}{\iconQuote}
-\newcommand{\faBalanceScale}{\iconBalance}
-\newcommand{\faComments}{\iconDiscussion}
-\newcommand{\faLightbulb}{\iconIdea}
-\newcommand{\faThumbsUp}{\iconPro}
-\newcommand{\faThumbsDown}{\iconCon}
+% fontawesome5 defines \faQuoteLeft, \faBalanceScale, etc. natively --- no aliases needed.
 \newcommand{\discussion}[1]{\discussionquestion{#1}}
 
 % Simple divider for slide sections

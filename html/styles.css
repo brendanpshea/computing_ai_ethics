@@ -686,6 +686,61 @@ code, kbd {
   grid-column: 1;
 }
 
+/* ---- Rectangular portrait variant (.thinker-img-wrap + .thinker-bio) ----
+   Used when a full image with caption is preferable to a small circle.       */
+.thinker-img-wrap {
+  width: 160px;
+  flex-shrink: 0;
+  grid-row: 1 / -1;          /* span all rows so bio can scroll beside it   */
+  align-self: start;
+}
+.thinker-img-wrap img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius-md);
+  border: 2px solid var(--purple-mid);
+}
+.thinker-img-wrap .img-caption {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+  margin-top: 0.4rem;
+  text-align: center;
+}
+
+/* Bio column used alongside .thinker-img-wrap */
+.thinker-bio::before {
+  content: "Key Thinker";
+  display: block;
+  font-family: var(--font-ui);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  color: var(--purple-mid);
+  margin-bottom: 0.25rem;
+}
+.thinker-bio h3 {
+  font-family: var(--font-ui);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--purple-dark);
+  margin: 0 0 0.5em 0;
+}
+.thinker-bio p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 0.6em;
+  text-indent: 0;
+}
+.thinker-bio p:last-child { margin-bottom: 0; }
+
+/* no-portrait variant with only .thinker-bio (no image) */
+.key-thinker.no-portrait .thinker-bio {
+  grid-column: 1;
+}
+
 
 /* ---- 10d. CASE STUDIES ------------------------------------- */
 .case-study {
@@ -1047,6 +1102,14 @@ figcaption {
     margin-bottom: var(--gap-sm);
   }
   .thinker-body { grid-column: 1; }
+  /* rectangular portrait: stack vertically on mobile */
+  .thinker-img-wrap {
+    width: 100%;
+    max-width: 240px;
+    grid-row: auto;
+    margin: 0 auto var(--gap-sm);
+  }
+  .thinker-bio { grid-column: 1; }
 
   .chapter-footer-nav { flex-direction: column; gap: var(--gap-sm); }
   .footer-nav-btn { width: 100%; justify-content: center; }

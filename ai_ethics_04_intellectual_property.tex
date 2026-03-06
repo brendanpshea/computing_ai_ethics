@@ -1,4 +1,4 @@
-\documentclass[aspectratio=169]{beamer}
+﻿\documentclass[aspectratio=169]{beamer}
 
 % Load common preamble (theme, packages, standard boxes)
 \input{lecture_preamble.tex}
@@ -12,16 +12,17 @@
 
 \begin{document}
 
-\section{Introduction: Intellectual Property in the Digital Age}
-
 \mode<article>{
 This lecture examines the philosophical foundations and practical challenges of intellectual property law in contexts of digital reproduction and distribution. Intellectual property differs fundamentally from physical property: ideas are non-rivalrous (my use need not prevent yours) and naturally non-excludable without legal intervention. We explore three competing justifications for IP rights---Locke's labor theory, utilitarian incentive arguments, and Hegelian personality theory---before considering how digital technology's capacity for perfect, costless copying has disrupted traditional IP business models and intensified debates about the appropriate balance between creator rights and public access to knowledge.
 }
 
 % ===== SLIDE 1: Title =====
+{%
+\usebackgroundtemplate{\includegraphics[width=\paperwidth,height=\paperheight]{images/fractal_04.png}}%
 \begin{frame}
 \titlepage
 \end{frame}
+}
 
 % ===== SLIDE 2: Learning Outcomes and Central Questions =====
 \begin{frame}{Central Questions}
@@ -39,6 +40,8 @@ This lecture examines the philosophical foundations and practical challenges of 
 ``He who receives an idea from me, receives instruction himself without lessening mine; as he who lights his taper at mine, receives light without darkening me.''
 \end{quotebox}
 \end{frame}
+
+\section{Introduction: Intellectual Property in the Digital Age}
 
 % ===== SLIDE 3: Connections to Previous Lectures =====
 \begin{frame}{Connections to Previous Lectures}
@@ -968,8 +971,8 @@ CC BY-NC-ND & Non-commercial, no derivatives, attribution \\
 
 % ===== SLIDE 40: Conclusion - Key Terms and Ideas =====
 \section{Conclusion: Intellectual Property in the Digital Age}
-\begin{frame}{Key Thinkers and Concepts}
-{\footnotesize
+\begin{frame}[allowframebreaks]{Key Thinkers and Concepts}
+\footnotesize
 \begin{enumerate}
     \item \textbf{Locke's labor theory} holds that creators deserve property rights over work that mixes their mental labor with the world---the most intuitive foundation for copyright and patent.
     \item \textbf{Utilitarian / incentive theory} justifies IP not by desert but by social benefit: exclusive rights incentivize creation that benefits everyone.
@@ -980,7 +983,6 @@ CC BY-NC-ND & Non-commercial, no derivatives, attribution \\
     \item \textbf{Copyleft} (GPL) uses copyright's own mechanics to keep software open: any derivative must also remain open---IP turned into a tool for the commons.
     \item \textbf{Enshittification} (Doctorow \& Giblin) describes how IP and platform lock-in allow companies to progressively extract value from users and creators once competition is foreclosed.
 \end{enumerate}
-}
 
 \begin{alertblock}{?}
 If you could redesign IP law from scratch, what would you prioritize: creator incentives, public access, or a healthy innovation ecosystem?

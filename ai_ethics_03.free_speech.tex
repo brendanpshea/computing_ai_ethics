@@ -1,4 +1,4 @@
-\documentclass[aspectratio=169]{beamer}
+﻿\documentclass[aspectratio=169]{beamer}
 
 % Load common preamble (theme, packages, standard boxes)
 \input{lecture_preamble.tex}
@@ -12,16 +12,17 @@
 
 \begin{document}
 
-\section{Introduction: Freedom of Speech in the Digital Age}
-
 \mode<article>{
 This lecture examines the philosophical foundations of free speech protections and their application to digital technologies. We begin with John Stuart Mill's classical liberal defense of free expression in \textit{On Liberty} \parencite{mill1859liberty}, exploring both utilitarian arguments from truth-seeking and deontological arguments from human autonomy. We then consider how Mill's framework applies to contemporary challenges posed by social media platforms, algorithmic amplification, and artificial intelligence. The central question is whether Mill's nineteenth-century principles remain adequate for twenty-first-century speech contexts characterized by unprecedented scale, speed, and private control over public discourse.
 }
 
 % ===== SLIDE 1: Title =====
+{%
+\usebackgroundtemplate{\includegraphics[width=\paperwidth,height=\paperheight]{images/fractal_03.png}}%
 \begin{frame}
 \titlepage
 \end{frame}
+}
 
 % ===== SLIDE 2: The Central Question =====
 \begin{frame}{Central Questions}
@@ -42,6 +43,8 @@ This lecture examines the philosophical foundations of free speech protections a
 Have you ever been silenced online? By whom---a platform, other users, or yourself?
 \end{alertblock}
 \end{frame}
+
+\section{Introduction: Freedom of Speech in the Digital Age}
 
 \begin{frame}{Connections to Previous Lectures}
 \textbf{Lecture 1 (History)}: Every IT revolution triggers new speech controversies. Luther used the printing press for reform; authorities responded with censorship laws. The pattern repeats: liberation promised, then control.
@@ -1084,8 +1087,8 @@ Mill's framework for free speech remains valuable but requires updating for digi
 \end{frame}
 
 % ===== SLIDE 40: Conclusion =====
-\begin{frame}{Key Thinkers and Concepts}
-{\footnotesize
+\begin{frame}[allowframebreaks]{Key Thinkers and Concepts}
+\footnotesize
 \begin{enumerate}
     \item \textbf{John Stuart Mill} (\textit{On Liberty}, 1859) gives the classic liberal defense: suppressing even false speech is wrong because (a) the suppressed view might be true, (b) even false views sharpen our grasp of the truth by collision, and (c) unchallenged truths become dead dogma.
     \item \textbf{The harm principle}: Mill holds that the only legitimate reason to restrict speech is preventing direct harm to others---not offense, immorality, or bad taste.
@@ -1095,7 +1098,6 @@ Mill's framework for free speech remains valuable but requires updating for digi
     \item \textbf{Algorithmic amplification}: Platforms don't just host speech---they rank, promote, and recommend it. This is a form of editorial power that Mill's government-focused framework did not anticipate.
     \item \textbf{Hate speech}: Speech that targets groups on protected characteristics. Whether it causes cognizable harm---and whether prohibiting it is compatible with Mill---is a live debate.
 \end{enumerate}
-}
 
 \begin{alertblock}{?}
 Where would Mill come down on social media regulation if he were alive today?
