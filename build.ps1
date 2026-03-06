@@ -1,7 +1,8 @@
 param([string]$Lecture="all", [switch]$NoCleanup)
 
 $OutputDir = "PDFs"
-$Artifacts = @('.aux','.log','.out','.nav','.snm','.toc','.vrb','.fls','.fdb_latexmk')
+# Artifacts to clean AFTER build completes (not during biber processing)
+$Artifacts = @('.aux','.log','.out','.nav','.snm','.toc','.vrb','.fls','.fdb_latexmk','.bcf','.run.xml','.bbl','.blg')
 $Files = @{
     "1"="ai_ethics_01_history.tex"
     "2"="ai_ethics_02_virtues.tex"
@@ -11,6 +12,7 @@ $Files = @{
     "6"="ai_ethics_06_privacy.tex"
     "7"="ai_ethics_07_ai.tex"
     "8"="ai_ethics_08_work.tex"
+    "bib"="bibliography.tex"
 }
 
 function CleanArtifacts([string]$BaseName) {
@@ -22,10 +24,16 @@ function CleanArtifacts([string]$BaseName) {
 
 function BuildLecture([string]$Source, [string]$Num, [string]$Base) {
     Write-Host "Lecture $Num..." -NoNewline
-    pdflatex -interaction=nonstopmode -output-directory=$OutputDir $Source > $null 2>&1
+    # Run pdflatex to generate .bcf file for biber
+    pdflatex -interaction=nonstopmode -output-directory $OutputDir $Source > $null 2>&1
+    # Process bibliography with biber
+    biber "$OutputDir/$Base" > $null 2>&1
+    # Run pdflatex twice more to fully resolve all references
+    pdflatex -interaction=nonstopmode -output-directory $OutputDir $Source > $null 2>&1
+    pdflatex -interaction=nonstopmode -output-directory $OutputDir $Source > $null 2>&1
     if ($LASTEXITCODE -eq 0) {
         Write-Host " OK" -ForegroundColor Green
-        if (-not $NoCleanup) { CleanArtifacts $Base }
+        # Don't clean during build - clean after all lectures finish
         return 1
     } else {
         Write-Host " FAIL" -ForegroundColor Red
@@ -36,7 +44,7 @@ function BuildLecture([string]$Source, [string]$Num, [string]$Base) {
 Write-Host ""
 if (-not (Test-Path $OutputDir)) { New-Item -Type Directory $OutputDir | Out-Null }
 
-$list = if ($Lecture -eq "all") { @("1","2","3","4","5","6","7","8") } else { @($Lecture) }
+$list = if ($Lecture -eq "all") { @("1","2","3","4","5","6","7","8","bib") } else { @($Lecture) }
 $ok = 0; $bad = 0
 
 foreach ($n in $list) {
@@ -45,6 +53,19 @@ foreach ($n in $list) {
         $base = [IO.Path]::GetFileNameWithoutExtension($src)
         if ((BuildLecture $src $n $base) -eq 1) { $ok++ } else { $bad++ }
     }
+}
+
+# Clean artifacts AFTER all builds complete (unless -NoCleanup is set)
+if (-not $NoCleanup) {
+    foreach ($n in $list) {
+        $src = $Files[$n]
+        if (Test-Path $src) {
+            $base = [IO.Path]::GetFileNameWithoutExtension($src)
+            CleanArtifacts $base
+        }
+    }
+    # Clean up any biber SAVE-ERROR files
+    Get-ChildItem -Path $OutputDir -Filter "*-SAVE-ERROR" | Remove-Item -Force -EA SilentlyContinue
 }
 
 Write-Host "Done: $ok OK, $bad FAIL" -ForegroundColor Cyan

@@ -1,7 +1,0 @@
-\beamer@sectionintoc {1}{Introduction: Freedom of Speech in the Digital Age}{1}{0}{1}
-\beamer@sectionintoc {2}{Part II: Threats to Free Speech}{13}{0}{2}
-\beamer@sectionintoc {3}{Part III: The Limits of Free Speech}{19}{0}{3}
-\beamer@sectionintoc {4}{Part IV: Historical Applications}{26}{0}{4}
-\beamer@sectionintoc {5}{Part V: Social Media Regulation}{31}{0}{5}
-\beamer@sectionintoc {6}{Part VI: AI and Chatbots}{40}{0}{6}
-\beamer@sectionintoc {7}{Part VII: Synthesis and Conclusion}{44}{0}{7}

@@ -3,25 +3,6 @@
 % Load common preamble (theme, packages, standard boxes)
 \input{lecture_preamble.tex}
 
-% ------------------------------------------------------------------------------
-% Lecture-Specific Customizations
-% ------------------------------------------------------------------------------
-
-% Lecture 4 color theme (intellectual property)
-\definecolor{ipblue}{RGB}{0,51,102}
-\definecolor{innovgreen}{RGB}{0,100,50}
-\definecolor{warningred}{RGB}{180,0,0}
-\definecolor{techgray}{RGB}{64,64,64}
-\definecolor{goldaccent}{RGB}{180,140,20}
-\definecolor{publicdomain}{RGB}{70,130,180}
-
-% Apply lecture colors to beamer theme
-\setbeamercolor{structure}{fg=ipblue}
-\setbeamercolor{title}{fg=white,bg=ipblue}
-\setbeamercolor{frametitle}{fg=white,bg=ipblue}
-\setbeamercolor{block title}{fg=white,bg=ipblue}
-\setbeamercolor{block body}{bg=ipblue!10}
-
 % Title information
 \title[Intellectual Property]{Intellectual Property in the Digital Age}
 \subtitle{Creation, Control, and the Battle for Ideas}
@@ -42,25 +23,42 @@ This lecture examines the philosophical foundations and practical challenges of 
 \titlepage
 \end{frame}
 
-% ===== SLIDE 2: The Central Question =====
-\begin{frame}{The Central Question}
+% ===== SLIDE 2: Learning Outcomes and Central Questions =====
+\begin{frame}{Central Questions}
 \begin{itemize}
-    \item Why should anyone ``\textbf{own}'' an idea?
-    \item How do we balance \textbf{creators' rights} with \textbf{public access} to knowledge?
-    \item Has intellectual property law kept up with digital technology---or been \textbf{captured} by powerful interests?
+    \item Why should anyone ``own'' an idea, and what philosophical traditions justify intellectual property?
+    \item What are the four primary types of IP, and why do they differ in duration and purpose?
+    \item How did digital technology disrupt traditional IP business models and enforcement?
+    \item What ethical frameworks help us evaluate disputes---from Napster to AI-generated content?
+    \item Do IP mechanisms primarily promote innovation, or primarily enable control by powerful interests?
+    \item How do we balance creators' rights with the public's access to knowledge?
 \end{itemize}
 
-\vspace{0.4cm}
-\begin{quotebox}[Thomas Jefferson, Letter to Isaac McPherson (1813)]
+\vspace{0.2cm}
+\begin{quotebox}[Thomas Jefferson, Letter to Isaac McPherson \parencite{jefferson_mcpherson}]
 ``He who receives an idea from me, receives instruction himself without lessening mine; as he who lights his taper at mine, receives light without darkening me.''
 \end{quotebox}
+\end{frame}
+
+% ===== SLIDE 3: Connections to Previous Lectures =====
+\begin{frame}{Connections to Previous Lectures}
+\textbf{Lecture 1 (History)}: Each IT revolution promised liberation but enabled control. IP law is the legal mechanism attempting to thread this needle---protecting creators while managing public interest.
+
+\vspace{0.2cm}
+\textbf{Lecture 2 (Virtues)}: IP systems shape what kind of innovators and citizens we become. Does Copyright/Patent law encourage intellectual virtue (curiosity, intellectual humility) or vice (secrecy, rent-seeking)?
+
+\vspace{0.2cm}
+\textbf{Lecture 3 (Free Speech)}: IP and free speech tensions. Patents can restrict speech about inventions; copyright restricts quotation and remix; DMCA criminalizes circumvention speech. Balance?
+
+\vspace{0.2cm}
+\textbf{Looking ahead}: Lectures 5-8 will apply IP ethics to crypto, privacy, AI, and labor contexts.
 
 \begin{alertblock}{?}
-Have you ever pirated something? Felt guilty about it? Why or why not?
+Which earlier lecture's themes---history, character, or free speech---resonates most with IP debates?
 \end{alertblock}
 \end{frame}
 
-% ===== SLIDE 3: What is Intellectual Property? =====
+% ===== SLIDE 4: What is Intellectual Property? =====
 \begin{frame}{What is Intellectual Property?}
 \textbf{Definition}: Legal rights that protect creations of the mind
 
@@ -75,8 +73,8 @@ Have you ever pirated something? Felt guilty about it? Why or why not?
 \vspace{0.3cm}
 \begin{center}
 \begin{tikzpicture}
-    \node[rectangle, draw, fill=ipblue!20, rounded corners, minimum width=4cm, minimum height=1cm] (physical) at (0,0) {\textbf{Physical Property}};
-    \node[rectangle, draw, fill=innovgreen!20, rounded corners, minimum width=4cm, minimum height=1cm] (ip) at (7,0) {\textbf{Intellectual Property}};
+    \node[rectangle, draw, fill=boxblue!20, rounded corners, minimum width=4cm, minimum height=1cm] (physical) at (0,0) {\textbf{Physical Property}};
+    \node[rectangle, draw, fill=boxgreen!20, rounded corners, minimum width=4cm, minimum height=1cm] (ip) at (7,0) {\textbf{Intellectual Property}};
     
     \node[below of=physical, yshift=-0.3cm, font=\small] {Rivalrous, Excludable};
     \node[below of=ip, yshift=-0.3cm, font=\small] {Non-rivalrous, Hard to exclude};
@@ -87,7 +85,7 @@ Have you ever pirated something? Felt guilty about it? Why or why not?
 \textbf{The fundamental tension}: Creators want compensation; society wants access to knowledge.
 \end{frame}
 
-% ===== SLIDE 4: The Four Types of IP =====
+% ===== SLIDE 5: The Four Types of IP =====
 \begin{frame}{The Four Types of Intellectual Property}
 \begin{table}[h]
 \centering
@@ -112,7 +110,8 @@ Which type of IP is most important for the tech industry? Why?
 \end{alertblock}
 \end{frame}
 
-% ===== SLIDE 5: Copyright in Depth =====
+% ===== SLIDE 6: Copyright in Depth =====
+\subsection{Deep Dives: Copyright, Patents, and Trade Secrets}
 \begin{frame}{Copyright in Depth}
 \textbf{What it protects}: Original works of authorship fixed in tangible form
 
@@ -145,7 +144,7 @@ If you write a song that sounds exactly like another song but you never heard th
 \end{alertblock}
 \end{frame}
 
-% ===== SLIDE 6: Patents in Depth =====
+% ===== SLIDE 7: Patents in Depth =====
 \begin{frame}{Patents in Depth}
 \textbf{What it protects}: Novel, useful, non-obvious inventions
 
@@ -301,9 +300,9 @@ Does an AI have ``personality'' that could be expressed in creative works?
 \vspace{0.2cm}
 \begin{center}
 \begin{tikzpicture}[node distance=2cm]
-    \node[rectangle, draw, fill=ipblue!20, rounded corners, minimum width=2.5cm, minimum height=0.7cm] (creator) {Creator};
-    \node[rectangle, draw, fill=goldaccent!30, rounded corners, minimum width=3cm, minimum height=0.7cm, right of=creator, xshift=2cm] (monopoly) {Limited Monopoly};
-    \node[rectangle, draw, fill=publicdomain!30, rounded corners, minimum width=2.5cm, minimum height=0.7cm, right of=monopoly, xshift=2cm] (public) {Public Domain};
+    \node[rectangle, draw, fill=boxblue!20, rounded corners, minimum width=2.5cm, minimum height=0.7cm] (creator) {Creator};
+    \node[rectangle, draw, fill=boxgold!30, rounded corners, minimum width=3cm, minimum height=0.7cm, right of=creator, xshift=2cm] (monopoly) {Limited Monopoly};
+    \node[rectangle, draw, fill=teal!30, rounded corners, minimum width=2.5cm, minimum height=0.7cm, right of=monopoly, xshift=2cm] (public) {Public Domain};
     \draw[->, thick] (creator) -- (monopoly);
     \draw[->, thick] (monopoly) -- node[above] {\small Time} (public);
 \end{tikzpicture}
@@ -313,26 +312,28 @@ Does an AI have ``personality'' that could be expressed in creative works?
 \textbf{Is this bargain still working?} Terms keep \textbf{extending}; enforcement \textbf{expanding}; IP concentrating in \textbf{fewer hands}.
 
 \vspace{0.1cm}
-\begin{quotebox}[James Boyle, \textit{The Public Domain} (2008)]
+\begin{quotebox}[James Boyle, \textit{The Public Domain} \parencite{boyle_public_domain}]
 ``We are in the middle of a second enclosure movement... `the enclosure of the intangible commons of the mind.'\,''
 \end{quotebox}
 \end{frame}
 
 % ===== PART II HEADER =====
 
-\section{Part II: The Digital Transformation}
+\section{Part I: Philosophical Foundations}
+
+\mode<article>{
+Intellectual property can be justified through three competing philosophical frameworks: the labor-desert theory (Locke) argues creators deserve to control their work; utilitarian theory argues IP incentivizes socially beneficial creation; personality theory (Hegel) argues ownership expresses the creator's personality. These justifications conflict in practice and lead to different policy conclusions. Understanding these frameworks helps evaluate whether current IP systems achieve their purported goals or instead serve incumbent interests.
+}
+
+\subsection{Philosophical Justifications for IP Rights}
+
+\section{Part II: Digital Disruption and Adaptation}
 
 \mode<article>{
 Digital technology fundamentally challenges intellectual property law's assumptions. Perfect, costless copying eliminates the natural scarcity that historically protected information goods. Global, instantaneous distribution makes enforcement difficult at individual level. The Napster case exemplifies the music industry's struggle to adapt, ultimately leading to new business models based on streaming rather than ownership. The DMCA's anti-circumvention provisions attempted to restore artificial scarcity through "digital locks" but created tensions with fair use, security research, and right to repair. The shift from ownership to access models represents a broader transformation in how IP functions in practice.
 }
 
-\begin{frame}
-\begin{center}
-{\Huge \textbf{Part II}}\\[0.5cm]
-{\Large The Digital Transformation}\\[0.3cm]
-{\large How Technology Broke (and Remade) Intellectual Property}
-\end{center}
-\end{frame}
+\subsection{How Technology Disrupted IP}
 
 % ===== SLIDE 14: How Digital Changed Everything =====
 \begin{frame}{How Digital Technology Changed Everything}
@@ -470,7 +471,7 @@ Is ``access to everything'' better than ``owning some things''?
 \section{Part III: Critiques and Abuses of IP}
 
 \mode<article>{
-Critical IP scholars like Peter Drahos, Cory Doctorow, and Tim Wu argue that contemporary IP law often serves concentrated corporate power rather than its stated goals of promoting innovation and creativity. Draho's "information feudalism" describes how IP has been globalized through trade agreements to benefit wealthy countries and large corporations at developing nations' expense. Doctorow's "chokepoint capitalism" shows how platforms use IP to maintain bottleneck control over markets. Case studies including Disney's copyright extensions, pharmaceutical patent abuses, and patent trolls demonstrate how IP can become a tool for rent-seeking rather than innovation.
+Critical IP scholars like Peter Drahos, Cory Doctorow, and Tim Wu argue that contemporary IP law often serves concentrated corporate power rather than its stated goals of promoting innovation and creativity. Drahos's ``information feudalism'' describes how IP has been globalized through trade agreements to benefit wealthy countries and large corporations at developing nations' expense \parencite{drahos_information_feudalism}. Doctorow's ``chokepoint capitalism'' shows how platforms use IP to maintain bottleneck control over markets \parencite{doctorow_chokepoint}. Case studies including Disney's copyright extensions, pharmaceutical patent abuses, and patent trolls demonstrate how IP can become a tool for rent-seeking rather than innovation.
 }
 
 \begin{frame}
@@ -483,7 +484,7 @@ Critical IP scholars like Peter Drahos, Cory Doctorow, and Tim Wu argue that con
 
 % ===== SLIDE 20: Peter Drahos =====
 \begin{frame}{Peter Drahos: Information Feudalism}
-\textbf{Key work}: \textit{Information Feudalism: Who Owns the Knowledge Economy?} (2002, with John Braithwaite)
+\textbf{Key work}: \textit{Information Feudalism} \parencite{drahos_information_feudalism}
 
 \vspace{0.2cm}
 \textbf{Core argument}:
@@ -508,7 +509,7 @@ Critical IP scholars like Peter Drahos, Cory Doctorow, and Tim Wu argue that con
 
 % ===== SLIDE 21: Cory Doctorow =====
 \begin{frame}{Cory Doctorow: Chokepoint Capitalism}
-\textbf{Key work}: \textit{Chokepoint Capitalism} (2022, with Rebecca Giblin)
+\textbf{Key work}: \textit{Chokepoint Capitalism} \parencite{doctorow_chokepoint}
 
 \vspace{0.2cm}
 \textbf{Core argument}:
@@ -534,7 +535,7 @@ Critical IP scholars like Peter Drahos, Cory Doctorow, and Tim Wu argue that con
 
 % ===== SLIDE 22: Tim Wu =====
 \begin{frame}{Tim Wu: IP and the Attention Economy}
-\textbf{Key works}: \textit{The Master Switch}, \textit{The Attention Merchants}
+\textbf{Key works}: \textit{The Master Switch} \parencite{wu_master_switch}, \textit{The Attention Merchants} \parencite{wu_attention_merchants}
 
 \vspace{0.2cm}
 \textbf{Core insights}:
@@ -644,21 +645,15 @@ Have you experienced enshittification? Which platforms?
 \end{alertblock}
 \end{frame}
 
-% ===== PART IV HEADER =====
+% ===== SECTION III: BIG TECH AND IP =====
 
-\section{Part IV: Big Tech and Platform IP}
+\section{Part III: Market Power and Control}
 
 \mode<article>{
 Large technology companies deploy intellectual property strategically as competitive weapons and defensive shields. Patents accumulate in vast portfolios enabling cross-licensing among giants while creating barriers for smaller competitors. Terms of service agreements function as IP-like control mechanisms without traditional IP law's limitations. The Oracle v. Google case over API copyrightability illustrates how fundamental questions about interoperability and competition depend on IP boundaries. The right to repair movement challenges how manufacturers use IP to restrict product modifications and repairs, raising questions about the meaning of ownership in digital contexts.
 }
 
-\begin{frame}
-\begin{center}
-{\Huge \textbf{Part IV}}\\[0.5cm]
-{\Large Big Tech and Platform IP}\\[0.3cm]
-{\large How Tech Giants Weaponize Intellectual Property}
-\end{center}
-\end{frame}
+\subsection{IP as a Competitive and Defensive Weapon}
 
 % ===== SLIDE 28: How Big Tech Uses IP =====
 \begin{frame}{How Big Tech Uses IP}
@@ -863,21 +858,15 @@ Market & Doesn't replace originals? & Competes with creators \\
 \textbf{Precedent}: \textit{Google Books} (scanning for search = fair use); but that preserved originals and limited display.
 \end{frame}
 
-% ===== PART VI HEADER =====
+% ===== SECTION IV: OPEN SOURCE AND ALTERNATIVES =====
 
-\section{Part VI: Open Source and Alternative Models}
+\section{Part IV: Beyond Traditional IP}
 
 \mode<article>{
 The open source movement demonstrates that significant innovation and value creation can occur outside traditional IP incentive structures. Open source software licenses use copyright law itself to ensure works remain open rather than enclosed. Creative Commons provides similar frameworks for non-software content. These alternative models challenge utilitarian IP justifications by showing that other motivations---including reputation, community participation, and ideological commitment---can drive creation. The success of projects like Linux, Wikipedia, and countless open source libraries suggests that the optimal IP system may look quite different from current arrangements, particularly in contexts where collaborative and cumulative innovation predominate.
 }
 
-\begin{frame}
-\begin{center}
-{\Huge \textbf{Part VI}}\\[0.5cm]
-{\Large Open Source and Alternative Models}\\[0.3cm]
-{\large Working With (and Around) Intellectual Property}
-\end{center}
-\end{frame}
+\subsection{Beyond Traditional IP: Alternatives and Innovations}
 
 % ===== SLIDE 38: Open Source Movement =====
 \begin{frame}{The Open Source Movement}
@@ -929,23 +918,24 @@ CC BY-NC-ND & Non-commercial, no derivatives, attribution \\
 \textbf{The AI complication}: CC-licensed works have been used in AI training---was this the intent?
 \end{frame}
 
-% ===== SLIDE 40: Conclusion =====
-\begin{frame}{Conclusion: Toward a Balanced IP Framework}
-\textbf{What we've learned}: IP is a \textbf{policy choice}, not a natural right. Digital technology has \textbf{disrupted} IP's foundations. Current system often serves \textbf{incumbents} over creators or public. AI creates new challenges with \textbf{no clear answers}.
-
-\vspace{0.2cm}
-\textbf{Principles for reform} (various scholars):
-\begin{itemize}
-    \item \textbf{Interoperability}: Break lock-in through mandated compatibility
-    \item \textbf{Shorter terms}: Return to original bargain (limited time)
-    \item \textbf{Robust fair use}: Protect transformative uses, including by AI
-    \item \textbf{Competition focus}: Address market power, not just copying
-\end{itemize}
-
-\textbf{The enduring question}: How do we encourage creation while preserving access?
+% ===== SLIDE 40: Conclusion - Key Terms and Ideas =====
+\section{Conclusion: Intellectual Property in the Digital Age}
+\begin{frame}{Key Thinkers and Concepts}
+{\footnotesize
+\begin{enumerate}
+    \item \textbf{Locke's labor theory} holds that creators deserve property rights over work that mixes their mental labor with the world---the most intuitive foundation for copyright and patent.
+    \item \textbf{Utilitarian / incentive theory} justifies IP not by desert but by social benefit: exclusive rights incentivize creation that benefits everyone.
+    \item \textbf{Hegel's personality theory} holds that creative works express the author's identity, justifying moral rights even after commercial transfer.
+    \item \textbf{Non-rivalrous goods} are resources whose use by one party does not prevent use by another---ideas are naturally non-rivalrous, making IP's ``artificial scarcity'' a deliberate policy choice.
+    \item \textbf{Fair use} permits unauthorized use for criticism, commentary, education, and parody; the key test courts apply is \textit{transformativeness}.
+    \item \textbf{DMCA (1998)} criminalized circumvention of digital locks, prioritizing enforcement over fair use and blocking repair, security research, and accessibility.
+    \item \textbf{Copyleft} (GPL) uses copyright's own mechanics to keep software open: any derivative must also remain open---IP turned into a tool for the commons.
+    \item \textbf{Enshittification} (Doctorow \& Giblin) describes how IP and platform lock-in allow companies to progressively extract value from users and creators once competition is foreclosed.
+\end{enumerate}
+}
 
 \begin{alertblock}{?}
-If you could redesign IP law from scratch for the digital age, what would you change?
+If you could redesign IP law from scratch, what would you prioritize: creator incentives, public access, or a healthy innovation ecosystem?
 \end{alertblock}
 \end{frame}
 

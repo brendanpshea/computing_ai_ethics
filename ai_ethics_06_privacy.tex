@@ -3,24 +3,6 @@
 % Load common preamble (theme, packages, standard boxes)
 \input{lecture_preamble.tex}
 
-% ------------------------------------------------------------------------------
-% Lecture-Specific Customizations
-% ------------------------------------------------------------------------------
-
-% Lecture 6 color theme (privacy)
-\definecolor{privacyblue}{RGB}{0,82,147}
-\definecolor{privacygold}{RGB}{218,165,32}
-\definecolor{privacygreen}{RGB}{34,139,34}
-\definecolor{privacyred}{RGB}{178,34,34}
-\definecolor{privacypurple}{RGB}{102,51,153}
-
-% Apply lecture colors to beamer theme
-\setbeamercolor{structure}{fg=privacyblue}
-\setbeamercolor{title}{fg=white,bg=privacyblue}
-\setbeamercolor{frametitle}{fg=white,bg=privacyblue}
-\setbeamercolor{block title}{fg=white,bg=privacyblue}
-\setbeamercolor{block body}{bg=privacyblue!10}
-
 % Title information
 \title[Privacy]{Privacy in the Information Age}
 \subtitle{Surveillance, Data, and the Boundaries of the Self}
@@ -55,11 +37,28 @@ What's the last thing you did to protect your privacy online?
 \end{alertblock}
 \end{frame}
 
+\begin{frame}{Connections to Previous Lectures}
+\textbf{Lecture 1 (History)}: The telegraph, telephone, and early internet each prompted new surveillance debates. Privacy conflicts trace the same liberation-then-control pattern as every other IT revolution.
+
+\vspace{0.2cm}
+\textbf{Lecture 2 (Virtues)}: Surveillance changes behavior even when unobserved---the \textit{chilling effect}. Does constant monitoring undermine the intellectual and moral virtues Aristotle valued?
+
+\vspace{0.2cm}
+\textbf{Lecture 4 (IP)}: Data as a resource: platforms collect personal data to personalize ads and content. How does data collection relate to IP, ownership, and the enshittification dynamic?
+
+\vspace{0.2cm}
+\textbf{Lecture 5 (Crypto)}: Cryptocurrency was partly designed to protect financial privacy. Is financial surveillance relevantly different from communications surveillance?
+
+\begin{alertblock}{?}
+Is privacy a universal human value, or is it culturally contingent? Could you make the case either way?
+\end{alertblock}
+\end{frame}
+
 %% PART I: UNDERSTANDING PRIVACY %%
 \section{Part I: Understanding Privacy}
 
 \mode<article>{
-Privacy proves surprisingly difficult to define precisely despite its intuitive importance. Early formulations like Warren and Brandeis's "right to be let alone" and information-control theories face challenges around boundary cases. Helen Nissenbaum's contextual integrity framework provides a more nuanced approach: privacy violations occur when information flows in ways inappropriate to social contexts. Privacy encompasses multiple dimensions---informational, physical, decisional, communicational, associational, and intellectual---each potentially requiring different protections. Instrumental arguments for privacy emphasize its functional importance for autonomy, intimacy, democracy, security, and power balance. Intrinsic arguments contend privacy has value beyond consequences as a requirement of human dignity and respect for persons as ends in themselves.
+Privacy proves surprisingly difficult to define precisely despite its intuitive importance. Early formulations like Warren and Brandeis's ``right to be let alone'' \parencite{warren_brandeis_privacy} and information-control theories face challenges around boundary cases. Helen Nissenbaum's contextual integrity framework provides a more nuanced approach: privacy violations occur when information flows in ways inappropriate to social contexts \parencite{nissenbaum_privacy_context}. Privacy encompasses multiple dimensions---informational, physical, decisional, communicational, associational, and intellectual---each potentially requiring different protections. Instrumental arguments for privacy emphasize its functional importance for autonomy, intimacy, democracy, security, and power balance. Intrinsic arguments contend privacy has value beyond consequences as a requirement of human dignity and respect for persons as ends in themselves.
 }
 
 % Slide 3: What Is Privacy?
@@ -68,9 +67,9 @@ Privacy proves surprisingly difficult to define precisely despite its intuitive 
 \small
 Privacy is surprisingly difficult to define precisely:
 \begin{itemize}
-    \item ``The right to be let alone'' (Warren \& Brandeis, 1890)
+    \item ``The right to be let alone'' \parencite{warren_brandeis_privacy}
     \item Control over information about oneself
-    \item \textbf{Contextual integrity} (Helen Nissenbaum): Information flows appropriate to context
+    \item \textbf{Contextual integrity} (Helen Nissenbaum) \parencite{nissenbaum_privacy_context}: Information flows appropriate to context
 \end{itemize}
 \end{conceptbox}
 
@@ -139,14 +138,14 @@ Privacy may have value \emph{beyond} its consequences:
 \end{itemize}
 
 \vspace{0.3em}
-\textbf{James Rachels}: Privacy enables us to maintain different relationships with different people.
+\textbf{James Rachels} \parencite{rachels_privacy}: Privacy enables us to maintain different relationships with different people.
 \end{column}
 \begin{column}{0.4\textwidth}
 \begin{center}
 \begin{tikzpicture}[scale=0.55]
-    \fill[privacypurple!60] (0,0) circle (2.5);
-    \fill[privacypurple!40] (0,0) circle (1.8);
-    \fill[privacypurple!20] (0,0) circle (1.1);
+    \fill[boxpurple!60] (0,0) circle (2.5);
+    \fill[boxpurple!40] (0,0) circle (1.8);
+    \fill[boxpurple!20] (0,0) circle (1.1);
     \fill[white] (0,0) circle (0.5);
     \node[font=\tiny] at (0,0) {Self};
     \node[font=\tiny] at (0,0.8) {Intimate};
@@ -213,7 +212,7 @@ Should the US adopt GDPR-style comprehensive protections?
     \item \textbf{Utilitarian}: Privacy maximizes overall welfare
     \item \textbf{Social contract}: Privacy necessary for civil society
     \item \textbf{Property rights}: Personal data as property (Lockean)
-    \item \textbf{Relational}: Privacy constitutes relationships (Rachels, Nissenbaum)
+    \item \textbf{Relational}: Privacy constitutes relationships \parencite{rachels_privacy,nissenbaum_privacy_context}
     \item \textbf{Feminist critique}: ``Personal is political''---privacy can hide abuse
 \end{enumerate}
 \end{conceptbox}
@@ -224,7 +223,7 @@ Should the US adopt GDPR-style comprehensive protections?
 
 % Slide 10: Skeptical Views of Privacy - Thomson
 \begin{frame}{Skeptical Views: Is Privacy a Distinct Right?}
-\begin{conceptbox}[Judith Jarvis Thomson's Reductionist Challenge (1975)]
+\begin{conceptbox}[Judith Jarvis Thomson's Reductionist Challenge \parencite{thomson_privacy}]
 \small
 Thomson argued that ``privacy'' is not a distinct right at all---it can be fully explained by other rights we already recognize.
 \end{conceptbox}
@@ -243,7 +242,7 @@ Thomson argued that ``privacy'' is not a distinct right at all---it can be fully
 
 % Slide 11: Skeptical Views - Posner
 \begin{frame}{Skeptical Views: The Economic Critique}
-\begin{objectionbox}[Richard Posner's Economic Argument (1978)]
+\begin{objectionbox}[Richard Posner's Economic Argument \parencite{posner_privacy}]
 \small
 Posner argued that privacy is often economically inefficient because it enables people to conceal information others have legitimate interests in knowing.
 \end{objectionbox}
@@ -278,7 +277,7 @@ Posner argued that privacy is often economically inefficient because it enables 
 \end{objectionbox}
 
 \vspace{0.2em}
-\textbf{Daniel Solove}: The problem isn't isolated data, but the ``aggregation problem.''
+\textbf{Daniel Solove} \parencite{solove_understanding_privacy}: The problem isn't isolated data, but the ``aggregation problem.''
 \end{frame}
 
 % Slide 13: Privacy Paradox
@@ -331,7 +330,7 @@ Should people be able to erase their digital past?
 Privacy concerns predate computers:
 
 \begin{itemize}
-    \item \textbf{1890}: Warren \& Brandeis ``The Right to Privacy''---response to photography and tabloid journalism
+    \item \textbf{1890}: Warren \& Brandeis ``The Right to Privacy'' \parencite{warren_brandeis_privacy}---response to photography and tabloid journalism
     \item \textbf{1928}: \emph{Olmstead v. United States}---wiretapping (Brandeis dissent)
     \item \textbf{1949}: Orwell's \emph{1984}---totalitarian surveillance state
     \item \textbf{1960s}: Government databases spark concern (Social Security numbers)
@@ -347,7 +346,7 @@ Privacy concerns predate computers:
 \begin{frame}{The Computer Revolution (1970s--1980s)}
 \begin{center}
 \begin{tikzpicture}[scale=0.7, every node/.style={font=\tiny}]
-    \draw[thick, ->, privacyblue] (0,0) -- (12,0);
+    \draw[thick, ->, boxblue] (0,0) -- (12,0);
     \foreach \x/\year/\event in {
         0.5/1970/FCRA,
         2.5/1973/FIPPs,
@@ -502,7 +501,7 @@ Data points/profile & 1,500+ \\
 
 % Slide 20: Surveillance Capitalism
 \begin{frame}{The Attention Economy and Surveillance Capitalism}
-\begin{conceptbox}[Shoshana Zuboff's Framework (2019)]
+\begin{conceptbox}[Shoshana Zuboff's Framework \parencite{zuboff_surveillance_capitalism}]
 \small
 \begin{enumerate}
     \item \textbf{Human experience} as raw material for data extraction
@@ -527,21 +526,21 @@ Data points/profile & 1,500+ \\
 \begin{frame}{Surveillance and Regime Type}
 \begin{center}
 \begin{tikzpicture}[scale=0.75, every node/.style={font=\scriptsize}]
-    \draw[thick, ->, privacyblue] (0,0) -- (11,0);
+    \draw[thick, ->, boxblue] (0,0) -- (11,0);
     \node[below] at (0,-0.3) {Totalitarian};
     \node[below] at (5.5,-0.3) {Authoritarian};
     \node[below] at (11,-0.3) {Liberal Democracy};
     
-    \fill[privacyred] (1,0) circle (0.15);
+    \fill[boxred] (1,0) circle (0.15);
     \node[above] at (1,0.3) {Total control};
     
-    \fill[privacyred!60] (4,0) circle (0.15);
+    \fill[boxred!60] (4,0) circle (0.15);
     \node[above] at (4,0.3) {Targeted};
     
-    \fill[privacygold] (7,0) circle (0.15);
+    \fill[boxgold] (7,0) circle (0.15);
     \node[above] at (7,0.3) {Hybrid};
     
-    \fill[privacygreen!70] (10,0) circle (0.15);
+    \fill[boxgreen!70] (10,0) circle (0.15);
     \node[above] at (10,0.3) {Constrained};
 \end{tikzpicture}
 \end{center}
@@ -775,16 +774,16 @@ The question is not whether democracies \emph{would} build authoritarian surveil
 \begin{center}
 \begin{tikzpicture}[scale=0.8]
     % Balance beam
-    \draw[thick, privacyblue] (-3,0) -- (3,0);
-    \draw[thick, privacyblue] (0,-0.5) -- (0,0);
-    \fill[privacyblue] (0,0) circle (0.1);
+    \draw[thick, boxblue] (-3,0) -- (3,0);
+    \draw[thick, boxblue] (0,-0.5) -- (0,0);
+    \fill[boxblue] (0,0) circle (0.1);
     
     % Left side - Security
-    \draw[thick, fill=privacygreen!30] (-2.5,-0.5) rectangle (-1,-2);
+    \draw[thick, fill=boxgreen!30] (-2.5,-0.5) rectangle (-1,-2);
     \node[font=\small\bfseries] at (-1.75,-1.25) {Security};
     
     % Right side - Liberty
-    \draw[thick, fill=privacypurple!30] (1,-0.5) rectangle (2.5,-2);
+    \draw[thick, fill=boxpurple!30] (1,-0.5) rectangle (2.5,-2);
     \node[font=\small\bfseries] at (1.75,-1.25) {Liberty};
     
     \node[below, font=\scriptsize] at (0,-2.3) {The ``balance'' framing is itself contested};
@@ -1020,7 +1019,7 @@ Should police be able to identify anyone, anywhere, anytime?
 \end{objectionbox}
 
 \vspace{0.1em}
-\textbf{Bruce Schneier}: ``Too many wrongly characterize the debate as `security versus privacy.' The real choice is liberty versus control.''
+\textbf{Bruce Schneier} \parencite{schneier_data_goliath}: ``Too many wrongly characterize the debate as `security versus privacy.' The real choice is liberty versus control.''
 \end{frame}
 
 % Slide 43: Frameworks for Democratic Surveillance
@@ -1045,20 +1044,20 @@ Should police be able to identify anyone, anywhere, anytime?
 \begin{center}
 \begin{tikzpicture}[scale=0.7, every node/.style={font=\small}]
     % Four tension pairs
-    \node[draw, rounded corners, fill=privacyblue!20, minimum width=3cm, minimum height=0.8cm] (ind) at (-3,2) {Individual};
-    \node[draw, rounded corners, fill=privacygreen!20, minimum width=3cm, minimum height=0.8cm] (col) at (3,2) {Collective};
+    \node[draw, rounded corners, fill=boxblue!20, minimum width=3cm, minimum height=0.8cm] (ind) at (-3,2) {Individual};
+    \node[draw, rounded corners, fill=boxgreen!20, minimum width=3cm, minimum height=0.8cm] (col) at (3,2) {Collective};
     \draw[<->, thick] (ind) -- (col);
     
-    \node[draw, rounded corners, fill=privacyblue!20, minimum width=3cm, minimum height=0.8cm] (pre) at (-3,0.5) {Present};
-    \node[draw, rounded corners, fill=privacygreen!20, minimum width=3cm, minimum height=0.8cm] (fut) at (3,0.5) {Future};
+    \node[draw, rounded corners, fill=boxblue!20, minimum width=3cm, minimum height=0.8cm] (pre) at (-3,0.5) {Present};
+    \node[draw, rounded corners, fill=boxgreen!20, minimum width=3cm, minimum height=0.8cm] (fut) at (3,0.5) {Future};
     \draw[<->, thick] (pre) -- (fut);
     
-    \node[draw, rounded corners, fill=privacyblue!20, minimum width=3cm, minimum height=0.8cm] (trans) at (-3,-1) {Transparency};
-    \node[draw, rounded corners, fill=privacygreen!20, minimum width=3cm, minimum height=0.8cm] (priv) at (3,-1) {Privacy};
+    \node[draw, rounded corners, fill=boxblue!20, minimum width=3cm, minimum height=0.8cm] (trans) at (-3,-1) {Transparency};
+    \node[draw, rounded corners, fill=boxgreen!20, minimum width=3cm, minimum height=0.8cm] (priv) at (3,-1) {Privacy};
     \draw[<->, thick] (trans) -- (priv);
     
-    \node[draw, rounded corners, fill=privacyblue!20, minimum width=3cm, minimum height=0.8cm] (inn) at (-3,-2.5) {Innovation};
-    \node[draw, rounded corners, fill=privacygreen!20, minimum width=3cm, minimum height=0.8cm] (prot) at (3,-2.5) {Protection};
+    \node[draw, rounded corners, fill=boxblue!20, minimum width=3cm, minimum height=0.8cm] (inn) at (-3,-2.5) {Innovation};
+    \node[draw, rounded corners, fill=boxgreen!20, minimum width=3cm, minimum height=0.8cm] (prot) at (3,-2.5) {Protection};
     \draw[<->, thick] (inn) -- (prot);
 \end{tikzpicture}
 \end{center}
@@ -1068,25 +1067,21 @@ These tensions cannot be fully ``resolved''---they must be navigated case by cas
 \end{frame}
 
 % Slide 46: Conclusion
-\begin{frame}{Conclusion: Framework for Evaluation}
-\begin{conceptbox}[Questions to Ask About Any Surveillance System]
-\small
+\begin{frame}{Key Thinkers and Concepts}
+{\footnotesize
 \begin{enumerate}
-    \item \textbf{Who benefits} from this surveillance?
-    \item \textbf{Who bears} the risks and costs?
-    \item What \textbf{oversight and accountability} exists?
-    \item Is this the \textbf{least invasive means} to the goal?
-    \item What happens \textbf{when (not if)} it's abused?
+    \item \textbf{Warren \& Brandeis} (``The Right to Privacy,'' 1890) coined the phrase ``the right to be let alone''---the first systematic legal argument for privacy as an individual right, prompted by invasive newspaper photography.
+    \item \textbf{Helen Nissenbaum}'s \textbf{contextual integrity} framework: privacy is not about secrecy but about appropriate information flows. A violation occurs when information moves to a context where it doesn't belong (e.g., medical data shared with employers).
+    \item \textbf{The chilling effect}: surveillance changes behavior even when no one is being watched. The mere possibility of observation inhibits speech, association, and political dissent.
+    \item \textbf{The third-party doctrine} (US law): information voluntarily shared with a third party (bank, phone company) loses Fourth Amendment protection. Digital life makes this doctrine cover almost everything.
+    \item \textbf{GDPR} (EU General Data Protection Regulation, 2018): the most comprehensive privacy law to date. Key principles: data minimization, purpose limitation, right of access, right to erasure (``right to be forgotten'').
+    \item \textbf{Surveillance capitalism} (Shoshana Zuboff): the business model of harvesting behavioral data to predict and modify human behavior for profit---going beyond mere data collection to behavioral modification.
 \end{enumerate}
-\end{conceptbox}
+}
 
-\vspace{0.3em}
-\begin{alertblock}{Final Discussion}
+\begin{alertblock}{?}
 Where do you draw the line? What surveillance, if any, is acceptable in a free society?
 \end{alertblock}
-
-\vspace{0.2em}
-\textbf{Remember}: Privacy is not about having something to hide---it's about maintaining the boundaries that make us human.
 \end{frame}
 
 \end{document}

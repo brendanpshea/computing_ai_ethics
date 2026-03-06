@@ -7,36 +7,6 @@
 % Load common preamble (theme, packages, standard boxes)
 \input{lecture_preamble.tex}
 
-% ------------------------------------------------------------------------------
-% Lecture-Specific Customizations
-% ------------------------------------------------------------------------------
-
-% Lecture 1 color theme (historical/foundational)
-\definecolor{primaryblue}{RGB}{0,73,135}
-\definecolor{accentgold}{RGB}{198,146,20}
-\definecolor{lightgray}{RGB}{240,240,240}
-\definecolor{quotegreen}{RGB}{34,139,34}
-
-% Apply lecture colors to beamer theme
-\setbeamercolor{structure}{fg=primaryblue}
-\setbeamercolor{title}{fg=white,bg=primaryblue}
-\setbeamercolor{frametitle}{fg=white,bg=primaryblue}
-\setbeamercolor{block title}{fg=white,bg=primaryblue}
-\setbeamercolor{block body}{bg=lightgray}
-\setbeamercolor{block title alerted}{fg=white,bg=red!70!black}
-\setbeamercolor{block body alerted}{bg=red!10}
-\setbeamercolor{block title example}{fg=white,bg=quotegreen}
-\setbeamercolor{block body example}{bg=green!5}
-
-% Backward compatibility aliases for lecture 1
-\newcommand{\faQuoteLeft}{\iconQuote}
-\newcommand{\faBalanceScale}{\iconBalance}
-\newcommand{\faComments}{\iconDiscussion}
-\newcommand{\faLightbulb}{\iconIdea}
-\newcommand{\faThumbsUp}{\iconPro}
-\newcommand{\faThumbsDown}{\iconCon}
-\newcommand{\discussion}[1]{\discussionquestion{#1}}
-
 % Title information
 \title[History of IT Ethics]{Lecture 1: The History of IT Ethics}
 \subtitle{IT Ethics}
@@ -63,6 +33,43 @@
 This lecture examines the history of information technology ethics by tracing five major IT revolutions from ancient writing to the modern web. Each revolution promised liberation and democratization, yet also enabled new forms of control and manipulation. By understanding these historical patterns, we can better analyze contemporary ethical challenges in computing and artificial intelligence.
 }
 
+\begin{frame}{Central Questions}
+\begin{itemize}
+    \item What are the five major IT revolutions, and what ethical patterns do they share?
+    \item Why does every revolutionary technology promise liberation yet enable new forms of control?
+    \item How have optimists and pessimists responded to each revolution---and who was right?
+    \item How do economic and political interests shape the impact of technology?
+    \item What historical lessons should we carry into our analysis of AI, IP, and surveillance?
+\end{itemize}
+
+\vspace{0.3cm}
+\begin{alertblock}{?}
+Can you think of a recent technology that promised freedom but has been used for control?
+\end{alertblock}
+\end{frame}
+
+% New slide: Connections to previous lectures  
+\begin{frame}{Why Start with History?}
+This course moves from \textbf{history} $\rightarrow$ \textbf{ethical frameworks} $\rightarrow$ \textbf{contemporary issues}.
+
+Understanding IT history matters because:
+\begin{itemize}
+    \item \textbf{Patterns repeat}: The "concerns" about social media echo Orwell's and Arendt's warnings about TV
+    \item \textbf{Power matters}: Technology serves whoever controls it---this lesson runs through every revolution
+    \item \textbf{Speed of change}: Digital tech disrupted IP law, surveillance systems, and labor---understanding this helps us think critically about AI
+\end{itemize}
+
+\vspace{0.2cm}
+\begin{exampleblock}{Key Insight}
+When debates about technology seem new, they're often ancient questions in modern dress.
+\end{exampleblock}
+
+\vspace{0.2cm}
+\begin{alertblock}{?}
+Looking ahead to our study of virtues, free speech, IP, and AI---what historical lessons might apply?
+\end{alertblock}
+\end{frame}
+
 \begin{frame}{What is Information Technology?}
 \textbf{Definition:} Technologies for \textbf{creating}, \textbf{storing}, \textbf{transmitting}, and \textbf{processing} information.
 
@@ -73,9 +80,9 @@ Information technology is \textbf{ancient}---not just computers!
 
 \vspace{0.3em}
 \begin{tikzpicture}[scale=0.85, transform shape]
-  \draw[thick, ->, primaryblue] (0,0) -- (14,0);
+  \draw[thick, ->, boxblue] (0,0) -- (14,0);
   \foreach \x/\label/\year in {1/Writing/3200 BCE, 4/Printing/1440 CE, 7/Telegraph/1840s, 10/Radio-TV/1920s, 13/Web/1990s} {
-    \draw[thick, primaryblue] (\x,0.15) -- (\x,-0.15);
+    \draw[thick, boxblue] (\x,0.15) -- (\x,-0.15);
     \node[above, font=\scriptsize\bfseries] at (\x,0.2) {\label};
     \node[below, font=\tiny] at (\x,-0.2) {\year};
   }
@@ -141,7 +148,7 @@ Each revolution promised liberation---and each enabled new forms of control.
 \section{Revolution 1: Writing}
 
 \mode<article>{
-The invention of writing around 3200 BCE represented humanity's first major information technology revolution. By externalizing memory and enabling information storage beyond the human mind, writing fundamentally transformed human society. However, this transformation was not universally celebrated. The philosopher Socrates, as recorded by Plato, articulated profound concerns about writing's impact on human cognition and wisdom---concerns that echo through subsequent debates about new technologies.
+The invention of writing around 3200 BCE represented humanity's first major information technology revolution. By externalizing memory and enabling information storage beyond the human mind, writing fundamentally transformed human society. However, this transformation was not universally celebrated. The philosopher Socrates, as recorded by \textcite{plato_phaedrus}, articulated profound concerns about writing's impact on human cognition and wisdom---concerns that echo through subsequent debates about new technologies.
 }
 
 \begin{frame}{Revolution 1: A Brief History of Writing}
@@ -164,9 +171,9 @@ Writing \textbf{externalizes} information---storing it outside the human mind fo
 \begin{column}{0.42\textwidth}
 \begin{figure}
 \begin{tikzpicture}[scale=0.7, transform shape]
-  \node[draw, rounded corners, fill=primaryblue!20, minimum width=3cm, minimum height=1cm] (oral) at (0,3) {Oral Culture};
-  \node[draw, rounded corners, fill=primaryblue!20, minimum width=3cm, minimum height=1cm] (written) at (0,0) {Written Culture};
-  \draw[->, thick, primaryblue] (oral) -- (written) node[midway, right, font=\scriptsize] {Writing invented};
+  \node[draw, rounded corners, fill=boxblue!20, minimum width=3cm, minimum height=1cm] (oral) at (0,3) {Oral Culture};
+  \node[draw, rounded corners, fill=boxblue!20, minimum width=3cm, minimum height=1cm] (written) at (0,0) {Written Culture};
+  \draw[->, thick, boxblue] (oral) -- (written) node[midway, right, font=\scriptsize] {Writing invented};
   \node[font=\scriptsize, text width=3cm, align=center] at (0,4.2) {Memory in minds};
   \node[font=\scriptsize, text width=3cm, align=center] at (0,-1.2) {Memory on tablets};
 \end{tikzpicture}
@@ -234,8 +241,8 @@ Socrates tells the \textbf{myth of Theuth and Thamus}:
 \begin{column}{0.38\textwidth}
 \begin{figure}
 \begin{tikzpicture}[scale=0.9, transform shape]
-  \node[draw, circle, fill=accentgold!30, minimum size=1.5cm, font=\scriptsize\bfseries] (theuth) at (0,2) {Theuth};
-  \node[draw, circle, fill=primaryblue!30, minimum size=1.5cm, font=\scriptsize\bfseries] (thamus) at (0,-1) {Thamus};
+  \node[draw, circle, fill=boxgold!30, minimum size=1.5cm, font=\scriptsize\bfseries] (theuth) at (0,2) {Theuth};
+  \node[draw, circle, fill=boxblue!30, minimum size=1.5cm, font=\scriptsize\bfseries] (thamus) at (0,-1) {Thamus};
   \node[draw, rectangle, rounded corners, fill=gray!20, font=\scriptsize] (writing) at (2.5,0.5) {Writing};
   \draw[->, thick] (theuth) -- (writing) node[midway, above, font=\tiny] {presents};
   \draw[->, thick, dashed, red!70!black] (thamus) -- (writing) node[midway, below, font=\tiny] {judges};
@@ -321,18 +328,18 @@ The same technology that enables law and literature also enables empire and cont
 \begin{center}
 \begin{tikzpicture}[scale=0.9, transform shape, 
     node distance=1.8cm,
-    box/.style={draw, rounded corners, fill=primaryblue!15, minimum width=3cm, minimum height=0.9cm, align=center, font=\small}]
+    box/.style={draw, rounded corners, fill=boxblue!15, minimum width=3cm, minimum height=0.9cm, align=center, font=\small}]
   
-  \node[box, fill=accentgold!30] (promise) {Promise of\\Liberation};
+  \node[box, fill=boxgold!30] (promise) {Promise of\\Liberation};
   \node[box, right=of promise] (adoption) {Widespread\\Adoption};
   \node[box, right=of adoption] (consequences) {Unforeseen\\Consequences};
   \node[box, below=1.2cm of consequences] (reflection) {Critical\\Reflection};
   \node[box, below=1.2cm of promise] (control) {New Forms\\of Control};
   
-  \draw[->, thick, primaryblue] (promise) -- (adoption);
-  \draw[->, thick, primaryblue] (adoption) -- (consequences);
-  \draw[->, thick, primaryblue] (consequences) -- (reflection);
-  \draw[->, thick, primaryblue] (reflection) -- (control);
+  \draw[->, thick, boxblue] (promise) -- (adoption);
+  \draw[->, thick, boxblue] (adoption) -- (consequences);
+  \draw[->, thick, boxblue] (consequences) -- (reflection);
+  \draw[->, thick, boxblue] (reflection) -- (control);
   \draw[->, thick, dashed, red!70!black] (control) -- (promise) node[midway, left, font=\scriptsize] {Cycle repeats};
 \end{tikzpicture}
 \end{center}
@@ -436,17 +443,17 @@ By 1500: $\sim$20 million books printed in Europe (vs. a few thousand manuscript
 
 \begin{column}{0.42\textwidth}
 \begin{tikzpicture}[scale=0.75, transform shape]
-  \draw[thick, primaryblue] (0,0) -- (5,0);
-  \draw[thick, primaryblue] (0,0.1) -- (0,-0.1);
-  \draw[thick, primaryblue] (5,0.1) -- (5,-0.1);
-  \draw[thick, primaryblue] (2.5,0.1) -- (2.5,-0.1);
+  \draw[thick, boxblue] (0,0) -- (5,0);
+  \draw[thick, boxblue] (0,0.1) -- (0,-0.1);
+  \draw[thick, boxblue] (5,0.1) -- (5,-0.1);
+  \draw[thick, boxblue] (2.5,0.1) -- (2.5,-0.1);
   \node[above, font=\scriptsize\bfseries] at (0,0.2) {Radical};
   \node[above, font=\scriptsize\bfseries] at (5,0.2) {Gradual};
   \node[above, font=\scriptsize] at (2.5,0.2) {Reform};
   \node[below, font=\scriptsize\bfseries, text=red!70!black] at (0.8,-0.3) {Luther};
-  \node[below, font=\scriptsize\bfseries, text=primaryblue] at (4.2,-0.3) {Erasmus};
+  \node[below, font=\scriptsize\bfseries, text=boxblue] at (4.2,-0.3) {Erasmus};
   \fill[red!70!black] (0.8,0) circle (0.15);
-  \fill[primaryblue] (4.2,0) circle (0.15);
+  \fill[boxblue] (4.2,0) circle (0.15);
 \end{tikzpicture}
 
 \vspace{1em}
@@ -559,7 +566,7 @@ The technology \textbf{amplifies human intentions}---both good and bad. The ques
 \section{Revolution 3: Distance Communication}
 
 \mode<article>{
-The nineteenth century witnessed remarkable innovations in distance communication, particularly the telegraph and telephone. These technologies promised to unite humanity and even end war through better communication and understanding. However, they also enabled unprecedented imperial coordination and surveillance. The contrasting views of John Stuart Mill and Karl Marx on these technologies reflect fundamentally different understandings of technology's relationship to power: Mill saw technology as a neutral tool enabling individual liberty, while Marx argued that technology inevitably serves whoever controls it.
+The nineteenth century witnessed remarkable innovations in distance communication, particularly the telegraph and telephone. These technologies promised to unite humanity and even end war through better communication and understanding. However, they also enabled unprecedented imperial coordination and surveillance. The contrasting views of \textcite{mill1859liberty} and Karl Marx on these technologies reflect fundamentally different understandings of technology's relationship to power: Mill saw technology as a neutral tool enabling individual liberty, while Marx argued that technology inevitably serves whoever controls it \parencite{marx_capital}.
 }
 
 \begin{frame}{Revolution 3: The Technologies of the Long 19th Century}
@@ -682,14 +689,14 @@ Mill and Marx offer fundamentally different analyses of \textbf{technology and p
 
 \vspace{0.5em}
 \begin{tikzpicture}[scale=0.85, transform shape]
-  \node[draw, rounded corners, fill=primaryblue!20, minimum width=4cm] (mill) at (0,0) {\textbf{Mill}: Technology is neutral};
+  \node[draw, rounded corners, fill=boxblue!20, minimum width=4cm] (mill) at (0,0) {\textbf{Mill}: Technology is neutral};
   \node[draw, rounded corners, fill=red!20, minimum width=4cm] (marx) at (9,0) {\textbf{Marx}: Technology reflects power};
   \draw[<->, thick] (mill) -- (marx) node[midway, above, font=\small] {Same technology, different analyses};
 \end{tikzpicture}
 \end{frame}
 
 \begin{frame}{Quote: John Stuart Mill, \textit{On Liberty} (1859)}
-\begin{exampleblock}{\faQuoteLeft\hspace{0.5em}John Stuart Mill, \textit{On Liberty}, Chapter 2}
+\begin{exampleblock}{\faQuoteLeft\hspace{0.5em}John Stuart Mill, \textit{On Liberty}, Chapter 2 \parencite{mill1859liberty}}
 \small
 \textbf{Context:} Mill argues for absolute freedom of expression, claiming that silencing any opinion---even a false one---harms everyone.
 
@@ -763,7 +770,7 @@ The telegraph and telephone that connected families also coordinated empires.
 \section{Revolution 4: Mass Media}
 
 \mode<article>{
-The rise of radio and television in the twentieth century created a fundamentally new communication paradigm: passive, one-to-many broadcasting controlled by a limited number of gatekeepers. George Orwell and Hannah Arendt, both witnesses to totalitarianism's rise, recognized mass media's potential to shape reality itself. Orwell warned of state monopolies on information that could make truth malleable, while Arendt analyzed how mass media combined with social atomization creates conditions favorable to totalitarian movements. These insights remain profoundly relevant in the digital age.
+The rise of radio and television in the twentieth century created a fundamentally new communication paradigm: passive, one-to-many broadcasting controlled by a limited number of gatekeepers. George Orwell and Hannah Arendt, both witnesses to totalitarianism's rise, recognized mass media's potential to shape reality itself. \textcite{orwell_1984} warned of state monopolies on information that could make truth malleable, while Arendt analyzed how mass media combined with social atomization creates conditions favorable to totalitarian movements \parencite{arendt_origins}. These insights remain profoundly relevant in the digital age.
 }
 
 \begin{frame}{Revolution 4: The Rise of Radio and Television}
@@ -780,7 +787,7 @@ The rise of radio and television in the twentieth century created a fundamentall
 \begin{tikzpicture}[scale=0.8, transform shape]
   \node[draw, circle, fill=red!30, minimum size=1.2cm, font=\scriptsize\bfseries] (broadcast) at (0,0) {Broadcaster};
   \foreach \angle in {30,60,90,120,150,210,240,270,300,330} {
-    \node[draw, circle, fill=primaryblue!20, minimum size=0.5cm, font=\tiny] (a\angle) at (\angle:2.5cm) {};
+    \node[draw, circle, fill=boxblue!20, minimum size=0.5cm, font=\tiny] (a\angle) at (\angle:2.5cm) {};
     \draw[->, thick, gray] (broadcast) -- (a\angle);
   }
   \node[below=0.3cm, font=\scriptsize] at (0,-2.8) {One speaks, millions listen passively};
@@ -847,7 +854,7 @@ Orwell wrote \textit{1984} in 1948, having witnessed the rise of Nazi Germany an
 \end{frame}
 
 \begin{frame}{Quote: George Orwell, \textit{1984}}
-\begin{exampleblock}{\faQuoteLeft\hspace{0.5em}George Orwell, \textit{Nineteen Eighty-Four}, Book 1, Chapter 7}
+\begin{exampleblock}{\faQuoteLeft\hspace{0.5em}George Orwell, \textit{Nineteen Eighty-Four}, Book 1, Chapter 7 \parencite{orwell_1984}}
 \small
 \textbf{Context:} Winston Smith works at the Ministry of Truth, rewriting historical records. Here he reflects on the Party's ultimate demand---not just obedience, but the surrender of one's own perceptions.
 
@@ -875,7 +882,7 @@ Not just to make you believe lies, but to \textbf{destroy your capacity to disti
 \end{block}
 
 \vspace{0.3em}
-\begin{exampleblock}{\faQuoteLeft\hspace{0.5em}Hannah Arendt, \textit{The Origins of Totalitarianism}, Chapter 13}
+\begin{exampleblock}{\faQuoteLeft\hspace{0.5em}Hannah Arendt, \textit{The Origins of Totalitarianism}, Chapter 13 \parencite{arendt_origins}}
 \small
 \textit{``What prepares men for totalitarian domination in the non-totalitarian world is the fact that \textbf{loneliness}, once a borderline experience usually suffered in certain marginal social conditions like old age, has become an \textbf{everyday experience} of the ever-growing masses of our century.''}
 \end{exampleblock}
@@ -980,8 +987,8 @@ The early web was hailed as the \textbf{great equalizer}---anyone could publish,
 
 \vspace{0.3em}
 \begin{tikzpicture}[scale=0.75, transform shape]
-  \node[draw, rounded corners, fill=primaryblue!20, minimum width=2.5cm, font=\scriptsize\bfseries] (web1) at (0,0) {Web 1.0};
-  \node[draw, rounded corners, fill=accentgold!30, minimum width=2.5cm, font=\scriptsize\bfseries] (web2) at (5,0) {Web 2.0};
+  \node[draw, rounded corners, fill=boxblue!20, minimum width=2.5cm, font=\scriptsize\bfseries] (web1) at (0,0) {Web 1.0};
+  \node[draw, rounded corners, fill=boxgold!30, minimum width=2.5cm, font=\scriptsize\bfseries] (web2) at (5,0) {Web 2.0};
   \node[draw, rounded corners, fill=red!20, minimum width=2.5cm, font=\scriptsize\bfseries] (platform) at (10,0) {Platform Era};
   \draw[->, thick] (web1) -- (web2) node[midway, above, font=\tiny] {User content};
   \draw[->, thick] (web2) -- (platform) node[midway, above, font=\tiny] {Centralization};
@@ -1097,28 +1104,22 @@ The Web & Internet, platforms & Early utopians & (Us?) & Liberation vs. Surveill
 \end{block}
 \end{frame}
 
-\begin{frame}{Looking Ahead}
-\begin{block}{Why History Matters for IT Ethics}
-\begin{itemize}
-  \item We are \textbf{not the first} to face these questions
-  \item The ``debates'' we're having are \textbf{ancient}
-  \item Understanding patterns helps us \textbf{think more clearly} about the present
-\end{itemize}
-\end{block}
+\begin{frame}{Key Thinkers and Concepts}
+{\footnotesize
+\begin{enumerate}
+    \item \textbf{Information technology} is any technology for creating, storing, transmitting, or processing information---it is ancient, not uniquely modern.
+    \item \textbf{Theuth} (Plato's \textit{Phaedrus}) is the Egyptian god who invented writing and promised it would aid memory; \textbf{Socrates} argued it would weaken genuine understanding---the first recorded technology debate.
+    \item \textbf{Luther} embraced the printing press as a tool for mass reform; \textbf{Erasmus} feared an unfiltered flood of bad ideas. Both turned out to be right.
+    \item \textbf{Mill} saw telegraph-era communication as aligned with free markets and progress; \textbf{Marx} analyzed how communication infrastructure reflects and reinforces ownership and class power.
+    \item \textbf{Orwell} (\textit{Nineteen Eighty-Four}) and \textbf{Arendt} (\textit{Origins of Totalitarianism}) warned that mass media could become instruments of propaganda and totalitarian control.
+    \item \textbf{Disintermediation} is the removal of gatekeepers promised by every IT revolution; \textbf{reintermediation} is the new gatekeepers---platforms, telecoms, states---that reliably replace them.
+    \item \textbf{Artificial scarcity} is scarcity created by legal or technical means (copyright, DRM) where the underlying resource is naturally non-rivalrous.
+\end{enumerate}
+}
 
-\vspace{0.3em}
-\begin{exampleblock}{Course Roadmap}
-From \textbf{History} $\rightarrow$ \textbf{Ethical Frameworks} $\rightarrow$ \textbf{Contemporary Issues}
-\end{exampleblock}
-
-\vspace{0.3em}
-\begin{alertblock}{\faQuoteLeft\hspace{0.5em}Final Thought}
-\textit{``Those who cannot remember the past are condemned to repeat it.''}\\
-\hfill---George Santayana, \textit{The Life of Reason} (1905)
+\begin{alertblock}{?}
+Which of these thinkers or concepts will matter most as we move into AI, privacy, and labor?
 \end{alertblock}
-
-\vspace{0.3em}
-\discussion{What responsibilities do we have as participants in the current IT revolution?}
 \end{frame}
 
 \end{document}

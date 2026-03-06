@@ -3,25 +3,6 @@
 % Load common preamble (theme, packages, standard boxes)
 \input{lecture_preamble.tex}
 
-% ------------------------------------------------------------------------------
-% Lecture-Specific Customizations
-% ------------------------------------------------------------------------------
-
-% Lecture 8 color theme (work/labor)
-\definecolor{laborblue}{RGB}{0,90,156}
-\definecolor{laborgreen}{RGB}{46,139,87}
-\definecolor{labororange}{RGB}{210,105,30}
-\definecolor{laborpurple}{RGB}{102,51,153}
-\definecolor{labored}{RGB}{178,34,34}
-\definecolor{laborgold}{RGB}{184,134,11}
-
-% Apply lecture colors to beamer theme
-\setbeamercolor{structure}{fg=laborblue}
-\setbeamercolor{title}{fg=white,bg=laborblue}
-\setbeamercolor{frametitle}{fg=white,bg=laborblue}
-\setbeamercolor{block title}{fg=white,bg=laborblue}
-\setbeamercolor{block body}{bg=laborblue!10}
-
 % Title information
 \title[AI and Human Labor]{AI and the Future of Human Labor}
 \subtitle{Work, Art, and Human Flourishing in the Age of Automation}
@@ -32,7 +13,7 @@
 \begin{document}
 
 \mode<article>{
-This lecture examines artificial intelligence's impact on human work and creativity through Hannah Arendt's philosophical framework distinguishing labor, work, and action. We explore why meaningful work matters ethically, drawing on Marxist, capabilities, and virtue ethics perspectives. The lecture considers multiple ways AI might transform work: through automation displacing workers, deskilling creative crafts, or alternatively augmenting human capabilities. The question extends beyond economic impacts to concern work's role in human flourishing, identity formation, and social meaning. Recent debates over AI-generated art exemplify broader anxieties about whether activities central to human meaning can be authentically performed by machines. We conclude by considering whether meaningful work represents an absolute value or one good among many that might be traded off for other benefits.
+This lecture examines artificial intelligence's impact on human work and creativity through Hannah Arendt's philosophical framework distinguishing labor, work, and action \parencite{arendt_human_condition}. We explore why meaningful work matters ethically, drawing on Marxist, capabilities, and virtue ethics perspectives. The lecture considers multiple ways AI might transform work: through automation displacing workers, deskilling creative crafts, or alternatively augmenting human capabilities. The question extends beyond economic impacts to concern work's role in human flourishing, identity formation, and social meaning. Recent debates over AI-generated art exemplify broader anxieties about whether activities central to human meaning can be authentically performed by machines. We conclude by considering whether meaningful work represents an absolute value or one good among many that might be traded off for other benefits.
 }
 
 % Slide 1: Title
@@ -55,18 +36,32 @@ AI doesn't just threaten jobs---it threatens the human activities through which 
 \end{alertblock}
 \end{frame}
 
+\begin{frame}{Connections to Previous Lectures}
+\textbf{Lecture 1 (History)}: Previous IT revolutions---the printing press, the telegraph, automation---each transformed labor markets and produced moral panics about technological unemployment. What was different then? What might be different now?
+
+\vspace{0.2cm}
+\textbf{Lecture 2 (Virtues)}: Aristotle valued work as a site of \textit{habituation} and skill. If AI removes skilled practice from human life, what happens to the virtues cultivated through that practice?
+
+\vspace{0.2cm}
+\textbf{Lecture 7 (AI)}: If AI cannot ``originate'' anything (Lovelace) or lacks genuine understanding (Searle), does that settle whether AI-generated art counts as real creative work?
+
+\begin{alertblock}{?}
+Is the threat AI poses to work fundamentally different from previous automation, or is this a familiar story?
+\end{alertblock}
+\end{frame}
+
 %%% PART I: WHAT IS WORK? %%%
 \section{Part I: What Is Work?}
 
 \mode<article>{
-Hannah Arendt's \textit{The Human Condition} distinguishes three fundamental forms of human activity. Labor (\textit{animal laborans}) refers to cyclical activities necessary for biological survival but producing nothing lasting. Work (\textit{homo faber}) creates durable objects that outlast their maker, building a stable world of human artifice. Action involves self-disclosure through deeds in the public sphere. Arendt worried modernity reduces all activity to mere labor, eliminating durability and meaning. This framework proves especially useful for analyzing AI's impact on work, as AI threatens to eliminate precisely those activities Arendt categorizes as genuine "work"---skilled creation of lasting objects---while leaving only consumption and maintenance. Understanding this distinction helps clarify why AI's economic impacts raise deeper concerns about human flourishing beyond simple unemployment.
+Hannah Arendt's \textit{The Human Condition} \parencite{arendt_human_condition} distinguishes three fundamental forms of human activity. Labor (\textit{animal laborans}) refers to cyclical activities necessary for biological survival but producing nothing lasting. Work (\textit{homo faber}) creates durable objects that outlast their maker, building a stable world of human artifice. Action involves self-disclosure through deeds in the public sphere. Arendt worried modernity reduces all activity to mere labor, eliminating durability and meaning. This framework proves especially useful for analyzing AI's impact on work, as AI threatens to eliminate precisely those activities Arendt categorizes as genuine "work"---skilled creation of lasting objects---while leaving only consumption and maintenance. Understanding this distinction helps clarify why AI's economic impacts raise deeper concerns about human flourishing beyond simple unemployment.
 }
 
 % Slide 3: Arendt's Distinction
 \begin{frame}{Arendt's Distinction: Labor vs.\ Work vs.\ Action}
 \begin{columns}[T]
 \begin{column}{0.55\textwidth}
-Hannah Arendt, \emph{The Human Condition} (1958):
+Hannah Arendt, \emph{The Human Condition} \parencite{arendt_human_condition}:
 
 \vspace{0.2em}
 \textbf{Labor} (\emph{animal laborans}): Cyclical activities for survival; leaves nothing behind; consumed as quickly as produced.
@@ -81,15 +76,15 @@ Hannah Arendt, \emph{The Human Condition} (1958):
 \begin{center}
 \begin{tikzpicture}[scale=0.5]
     % Three nested rounded rectangles
-    \draw[thick, fill=laborpurple!15] (0,0) ellipse (3.5cm and 2.5cm);
+    \draw[thick, fill=boxpurple!15] (0,0) ellipse (3.5cm and 2.5cm);
     \node[font=\scriptsize] at (0,2) {\textbf{Action}};
     \node[font=\tiny] at (0,1.5) {(meaning, identity)};
     
-    \draw[thick, fill=laborgreen!15] (0,-0.3) ellipse (2.5cm and 1.7cm);
+    \draw[thick, fill=boxgreen!15] (0,-0.3) ellipse (2.5cm and 1.7cm);
     \node[font=\scriptsize] at (0,0.9) {\textbf{Work}};
     \node[font=\tiny] at (0,0.5) {(durability)};
     
-    \draw[thick, fill=labororange!15] (0,-0.5) ellipse (1.4cm and 0.9cm);
+    \draw[thick, fill=boxgold!15] (0,-0.5) ellipse (1.4cm and 0.9cm);
     \node[font=\scriptsize] at (0,-0.3) {\textbf{Labor}};
     \node[font=\tiny] at (0,-0.7) {(survival)};
 \end{tikzpicture}
@@ -156,7 +151,7 @@ For Arendt, \textbf{artworks are the most durable products of work}---they persi
 \begin{frame}{The Psychology of Meaningful Work}
 \begin{columns}[T]
 \begin{column}{0.48\textwidth}
-\textbf{Self-Determination Theory} (Ryan \& Deci):
+\textbf{Self-Determination Theory} \parencite{ryan_deci_sdt}:
 
 Three basic psychological needs satisfied by meaningful work:
 
@@ -215,14 +210,14 @@ If you won the lottery tomorrow, would you still work? Why or why not?
 \begin{frame}{Meaningful Work and Beneficence}
 \begin{conceptbox}[Four Pathways to Meaningful Work]
 \small
-(Martela \& Ryan, 2018): Autonomy + Competence + Relatedness + \textbf{Beneficence} (helping others)
+\parencite{martela_ryan_2016}: Autonomy + Competence + Relatedness + \textbf{Beneficence} (helping others)
 \end{conceptbox}
 
 \vspace{0.2em}
 Work feels meaningful when it \textbf{contributes to something beyond ourselves}.
 
 \vspace{0.2em}
-This explains why ``bullshit jobs'' (Graeber) feel soul-crushing even when well-paid---they lack purpose and contribution.
+This explains why ``bullshit jobs'' \parencite{graeber_bullshit_jobs} feel soul-crushing even when well-paid---they lack purpose and contribution.
 
 \vspace{0.2em}
 \begin{objectionbox}[Objection]
@@ -257,9 +252,9 @@ Before examining AI's impact, we need to understand \emph{why} meaningful work i
 \begin{center}
 \begin{tikzpicture}[scale=0.7, every node/.style={font=\small}]
     % Three columns
-    \node[draw, rounded corners, fill=laborblue!20, minimum width=3.2cm, minimum height=1cm] (util) at (-4.5,0) {Utilitarianism};
-    \node[draw, rounded corners, fill=laborgreen!20, minimum width=3.2cm, minimum height=1cm] (deont) at (0,0) {Deontology};
-    \node[draw, rounded corners, fill=laborpurple!20, minimum width=3.2cm, minimum height=1cm] (virtue) at (4.5,0) {Virtue Ethics};
+    \node[draw, rounded corners, fill=boxblue!20, minimum width=3.2cm, minimum height=1cm] (util) at (-4.5,0) {Utilitarianism};
+    \node[draw, rounded corners, fill=boxgreen!20, minimum width=3.2cm, minimum height=1cm] (deont) at (0,0) {Deontology};
+    \node[draw, rounded corners, fill=boxpurple!20, minimum width=3.2cm, minimum height=1cm] (virtue) at (4.5,0) {Virtue Ethics};
     
     % Key concepts
     \node[font=\scriptsize, text width=3cm, align=center] at (-4.5,-1.2) {Preference satisfaction};
@@ -318,7 +313,7 @@ What if AI-produced goods satisfy more preferences overall? Shouldn't we accept 
 \begin{probox}[Deontological Argument for Meaningful Work]
 \small
 \begin{enumerate}
-    \item Persons must be treated as ends in themselves, never merely as means (Kant).
+    \item Persons must be treated as ends in themselves, never merely as means \parencite{kant_groundwork}.
     \item Meaningful work treats persons as ends: it develops their capacities, respects their autonomy, recognizes them as rational agents.
     \item Reducing work to mere labor treats persons as means: cogs in a machine, instruments of production.
     \item Therefore, we have duties to preserve meaningful work.
@@ -352,7 +347,7 @@ Kantian autonomy is about rational self-legislation, not job satisfaction. You c
 \begin{probox}[Virtue Ethics Argument for Meaningful Work]
 \small
 \begin{enumerate}
-    \item Human flourishing (\emph{eudaimonia}) requires exercising virtues through practices (Aristotle, MacIntyre).
+    \item Human flourishing (\emph{eudaimonia}) requires exercising virtues through practices \parencite{aristotle_nicomachean,macintyre_after_virtue}.
     \item Meaningful work is a practice with ``internal goods''---excellences specific to the activity itself.
     \item AI that eliminates such practices removes opportunities for developing virtue.
     \item Therefore, we have virtue-ethical reasons to preserve meaningful work.
@@ -396,12 +391,12 @@ Virtue Ethics & Flourishing & Work develops virtues & Automation eliminates virt
 \begin{center}
 \begin{tikzpicture}[scale=0.65, every node/.style={font=\small}]
     % Root
-    \node[draw, rounded corners, fill=laborblue!20, minimum width=2.5cm] (ai) at (0,2) {AI Deployment};
+    \node[draw, rounded corners, fill=boxblue!20, minimum width=2.5cm] (ai) at (0,2) {AI Deployment};
     
     % Three branches
-    \node[draw, rounded corners, fill=labored!20, minimum width=2.2cm] (replace) at (-4,0) {Replacement};
-    \node[draw, rounded corners, fill=labororange!20, minimum width=2.2cm] (deskill) at (0,0) {Deskilling};
-    \node[draw, rounded corners, fill=laborgreen!20, minimum width=2.2cm] (augment) at (4,0) {Augmentation};
+    \node[draw, rounded corners, fill=boxred!20, minimum width=2.2cm] (replace) at (-4,0) {Replacement};
+    \node[draw, rounded corners, fill=boxgold!20, minimum width=2.2cm] (deskill) at (0,0) {Deskilling};
+    \node[draw, rounded corners, fill=boxgreen!20, minimum width=2.2cm] (augment) at (4,0) {Augmentation};
     
     % Arrows
     \draw[->, thick] (ai) -- (replace);
@@ -431,7 +426,7 @@ Some jobs will simply disappear:
 \end{itemize}
 
 \vspace{0.2em}
-\textbf{Scale}: McKinsey estimates 400--800 million workers could be displaced globally by 2030.
+\textbf{Scale}: McKinsey estimates 400--800 million workers could be displaced globally by 2030 \parencite{mckinsey_automation}.
 
 \vspace{0.2em}
 This is the most \emph{visible} AI threat---but perhaps not the most insidious.
@@ -457,7 +452,7 @@ This is the most \emph{visible} AI threat---but perhaps not the most insidious.
 More insidious than replacement: AI doesn't eliminate jobs but \textbf{strips them of meaning}.
 
 \vspace{0.2em}
-\textbf{Floridi's ``enveloping''}: We adapt work environments to AI's limitations.
+\textbf{Floridi's ``enveloping''} \parencite{floridi_ethics_ai}: We adapt work environments to AI's limitations.
 
 \vspace{0.2em}
 Workers become:
@@ -675,7 +670,7 @@ Even Arendt valued \emph{action} (politics, civic engagement) over work. Work is
 
 % Slide 32: Bullshit Jobs
 \begin{frame}{The Problem of ``Bullshit Jobs''}
-\begin{conceptbox}[David Graeber's Thesis]
+\begin{conceptbox}[David Graeber's Thesis \parencite{graeber_bullshit_jobs}]
 \small
 Many jobs are pointless---even workers know it. These ``bullshit jobs'' provide income but no meaning.
 \end{conceptbox}
@@ -838,20 +833,19 @@ Should AI-generated art be labeled? Should artists be compensated when their wor
 \section{Part VI: Conclusion}
 
 % Slide 40: Conclusion
-\begin{frame}{Living with AI: A Framework}
-\textbf{Questions to ask about any AI deployment}:
+\begin{frame}{Key Thinkers and Concepts}
+{\footnotesize
 \begin{enumerate}
-    \item Does it \textbf{replace} meaningful work, or \textbf{augment} human capabilities?
-    \item Does it respect workers as \textbf{ends} or treat them as \textbf{means}?
-    \item Does it enable \textbf{flourishing} or merely optimize efficiency?
-    \item How are \textbf{benefits and burdens distributed}?
+    \item \textbf{Hannah Arendt} (\textit{The Human Condition}, 1958) distinguishes \textbf{labor} (cyclical survival activity, leaves nothing behind), \textbf{work} (creates durable objects---\textit{homo faber}), and \textbf{action} (self-disclosure through deeds). AI threatens to eliminate genuine ``work'' while leaving only labor and consumption.
+    \item \textbf{Marx's alienation}: under capitalism, workers are alienated from their product, their activity, their species-being, and each other. AI-driven automation may intensify all four dimensions.
+    \item \textbf{Meaningful work} is typically characterized by: skill and challenge, autonomy, clear contribution to a product, and recognition. These are the dimensions most at risk from AI replacement and deskilling.
+    \item \textbf{Deskilling} (Braverman): technological change often degrades skilled trades into low-skill monitoring tasks, reducing worker autonomy and meaning even when jobs survive.
+    \item \textbf{Automation vs.\ augmentation}: AI can replace human tasks wholesale, or it can extend human capabilities. The ethical question is which future we are building---and who decides.
+    \item \textbf{Universal Basic Income (UBI)}: the proposal that everyone receives unconditional income regardless of employment. Addresses income loss but not necessarily the loss of meaning, identity, and structure that work provides.
 \end{enumerate}
+}
 
-\vspace{0.2em}
-The future isn't determined by technology alone---it's shaped by our choices.
-
-\vspace{0.2em}
-\begin{alertblock}{Final Discussion}
+\begin{alertblock}{?}
 What kind of future of work do we want? And what would it take to get there?
 \end{alertblock}
 \end{frame}
