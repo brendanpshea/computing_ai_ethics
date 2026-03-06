@@ -1,4 +1,4 @@
-\documentclass[aspectratio=169,11pt]{beamer}
+﻿\documentclass[aspectratio=169,11pt]{beamer}
 
 % Load common preamble (theme, packages, standard boxes)
 \input{lecture_preamble.tex}
@@ -17,9 +17,12 @@ This lecture provides a comprehensive introduction to artificial intelligence fr
 }
 
 % Slide 1: Title
+{%
+\usebackgroundtemplate{\includegraphics[width=\paperwidth,height=\paperheight]{images/fractal_07.png}}%
 \begin{frame}
 \titlepage
 \end{frame}
+}
 
 % Slide 2: Learning Outcomes and Central Questions
 \begin{frame}{Central Questions}
@@ -1316,8 +1319,8 @@ How we define AI shapes how we regulate it, deploy it, and hold people accountab
 \end{frame}
 
 % Slide 40: Conclusion
-\begin{frame}{Key Thinkers and Concepts}
-{\footnotesize
+\begin{frame}[allowframebreaks]{Key Thinkers and Concepts}
+\footnotesize
 \begin{enumerate}
     \item \textbf{Ada Lovelace (1815--1852)} argued machines can only do what they are programmed to do---they cannot \textit{originate} anything. The earliest formal objection to machine intelligence.
     \item \textbf{Alan Turing (1912--1954)} proposed the \textit{Turing Test}: if a machine is indistinguishable from a human in conversation, call it intelligent---sidestepping whether machines ``really'' think.
@@ -1328,7 +1331,6 @@ How we define AI shapes how we regulate it, deploy it, and hold people accountab
     \item \textbf{Tesler's Theorem / moving goalposts}: ``AI is whatever hasn't been done yet.'' Once a capability is achieved, it gets reclassified as mere computation.
     \item \textbf{Dartmouth Conference (1956)} is where McCarthy, Minsky, and others named and launched ``artificial intelligence''---with optimistic timelines that proved wildly premature.
 \end{enumerate}
-}
 
 \begin{alertblock}{?}
 How would \emph{you} define artificial intelligence---and does your definition commit you to any position on Lovelace, Turing, or Searle?

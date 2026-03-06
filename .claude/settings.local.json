@@ -8,7 +8,8 @@
       "Bash(ls -la \"C:\\\\Users\\\\brend\\\\OneDrive\\\\Documents\\\\Github\\\\computing_ai_ethics\\\\PDFs\"/bibliography*)",
       "Bash(pdflatex -interaction=nonstopmode -output-directory=PDFs bibliography.tex)",
       "Bash(biber PDFs/bibliography)",
-      "Bash(pdflatex -interaction=nonstopmode -output-directory=PDFs ai_ethics_01_history.tex)"
+      "Bash(pdflatex -interaction=nonstopmode -output-directory=PDFs ai_ethics_01_history.tex)",
+      "Bash(ls /c/Users/brend/OneDrive/Documents/Github/computing_ai_ethics/*.tex)"
     ]
   }
 }

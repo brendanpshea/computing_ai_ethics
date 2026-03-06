@@ -1,4 +1,4 @@
-\documentclass[aspectratio=169,11pt]{beamer}
+﻿\documentclass[aspectratio=169,11pt]{beamer}
 
 % Load common preamble (theme, packages, standard boxes)
 \input{lecture_preamble.tex}
@@ -17,9 +17,12 @@ This lecture examines privacy's philosophical foundations and practical challeng
 }
 
 % Slide 1: Title
+{%
+\usebackgroundtemplate{\includegraphics[width=\paperwidth,height=\paperheight]{images/fractal_06.png}}%
 \begin{frame}
 \titlepage
 \end{frame}
+}
 
 % Slide 2: Central Questions
 \begin{frame}{Central Questions}
@@ -1115,8 +1118,8 @@ These tensions cannot be fully ``resolved''---they must be navigated case by cas
 \end{frame}
 
 % Slide 46: Conclusion
-\begin{frame}{Key Thinkers and Concepts}
-{\footnotesize
+\begin{frame}[allowframebreaks]{Key Thinkers and Concepts}
+\footnotesize
 \begin{enumerate}
     \item \textbf{Warren \& Brandeis} (``The Right to Privacy,'' 1890) coined the phrase ``the right to be let alone''---the first systematic legal argument for privacy as an individual right, prompted by invasive newspaper photography.
     \item \textbf{Helen Nissenbaum}'s \textbf{contextual integrity} framework: privacy is not about secrecy but about appropriate information flows. A violation occurs when information moves to a context where it doesn't belong (e.g., medical data shared with employers).
@@ -1125,7 +1128,6 @@ These tensions cannot be fully ``resolved''---they must be navigated case by cas
     \item \textbf{GDPR} (EU General Data Protection Regulation, 2018): the most comprehensive privacy law to date. Key principles: data minimization, purpose limitation, right of access, right to erasure (``right to be forgotten'').
     \item \textbf{Surveillance capitalism} (Shoshana Zuboff): the business model of harvesting behavioral data to predict and modify human behavior for profit---going beyond mere data collection to behavioral modification.
 \end{enumerate}
-}
 
 \begin{alertblock}{?}
 Where do you draw the line? What surveillance, if any, is acceptable in a free society?

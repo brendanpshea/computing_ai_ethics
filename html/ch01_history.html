@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter 1: The History of IT Ethics | Computing &amp; AI Ethics</title>
+  <meta name="description"
+        content="A history of information technology ethics across five major revolutions — from ancient writing to the modern web — tracing the recurring tension between liberation and control.">
+  <meta name="author" content="Brendan Shea, PhD">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+  <script src="cite.js" defer></script>
+</head>
+
+<body data-chapter="1">
+<div class="page-wrapper">
+
+  <nav class="top-nav" aria-label="Chapter navigation">
+    <a href="index.html" class="nav-home">Computing &amp; AI Ethics</a>
+    <div class="chapter-nav">
+      <span class="nav-chapter">Chapter 1</span>
+      <a href="ch02_virtue_ethics.html" class="nav-next">Next &#8594;</a>
+    </div>
+  </nav>
+
+  <header class="chapter-header">
+    <p class="chapter-eyebrow">Chapter 1</p>
+    <h1>The History of IT Ethics</h1>
+    <p class="chapter-subtitle">Every information revolution promised liberation. Every one enabled new forms of control. Both promises were kept.</p>
+  </header>
+
+  <main class="content-area chapter-content" id="main-content">
+
+    <nav class="toc-box" aria-label="Table of contents">
+      <h2>In this chapter</h2>
+      <ol>
+        <li><a href="#central-questions">Central Questions</a></li>
+        <li><a href="#what-is-it">What Is Information Technology?</a></li>
+        <li><a href="#writing">Revolution 1: Writing</a></li>
+        <li><a href="#printing">Revolution 2: The Printing Press</a></li>
+        <li><a href="#distance">Revolution 3: Distance Communication</a></li>
+        <li><a href="#mass-media">Revolution 4: Mass Media</a></li>
+        <li><a href="#the-web">Revolution 5: The World Wide Web</a></li>
+        <li><a href="#patterns">The Pattern Across the Revolutions</a></li>
+        <li><a href="#key-points">Key Points</a></li>
+      </ol>
+    </nav>
+
+    <!-- ── CENTRAL QUESTIONS ─────────────────────────────── -->
+    <section class="central-questions" id="central-questions" aria-labelledby="cq-heading">
+      <h2 id="cq-heading">Central Questions</h2>
+      <ol>
+        <li>What are the five major information technology revolutions, and what ethical patterns do they share?</li>
+        <li>Why does every revolutionary technology promise liberation yet enable new forms of control?</li>
+        <li>How have optimists and pessimists responded to each revolution — and who was right?</li>
+        <li>How do economic and political interests shape the impact of new technology?</li>
+        <li>What historical lessons should we carry into our thinking about AI, privacy, and surveillance today?</li>
+      </ol>
+    </section>
+
+
+    <!-- ══════════════════════════════════════════════════
+         SECTION 1: WHAT IS INFORMATION TECHNOLOGY?
+    ══════════════════════════════════════════════════════ -->
+    <section id="what-is-it" aria-labelledby="s1-heading">
+      <h2 id="s1-heading">What Is Information Technology?</h2>
+
+      <p>
+        In the summer of 399 BCE, the philosopher Socrates stood before a jury of five hundred Athenian citizens
+        and was condemned to death. His alleged crime was corrupting the youth of Athens. His real offense,
+        many historians believe, was something more specific: he questioned everything, including the authority
+        of those who claimed to know best. He died having written nothing — not a single word. Everything we
+        know about Socrates comes through other people's accounts, above all through the dialogues written by
+        his most famous student, Plato. There is a deep irony here that Socrates himself would have appreciated.
+        He distrusted writing. He thought it was a poor substitute for real conversation. And yet he lives in
+        history <em>only because someone wrote about him</em>.
+      </p>
+      <p>
+        This chapter begins with Socrates because his skepticism toward writing captures something important
+        about every major information technology revolution: they always look different from the inside than
+        they do from the outside. The people inventing and adopting a new technology tend to see its
+        possibilities. The critics tend to see the risks. History usually proves both groups partially right —
+        and the surprises tend to be larger than anyone predicted.
+      </p>
+      <p>
+        Before diving into specific revolutions, we need two definitions. The first is the subject of this
+        entire course.
+      </p>
+
+      <div class="definition-box">
+        <p class="term">Information Technology (IT)</p>
+        <p class="definition">
+          Any technology used to create, store, transmit, or process information. By this definition,
+          information technology is ancient — writing, the printing press, the telegraph, and the smartphone
+          are all IT, differing in speed and scale but not in kind.
+        </p>
+      </div>
+
+      <p>
+        This broad definition matters because it prevents us from treating the digital revolution as
+        something completely unprecedented. Every generation has faced the question of what new communication
+        technologies mean for society, for truth, and for power. The second definition frames how we will
+        evaluate the answers different thinkers have proposed.
+      </p>
+
+      <div class="definition-box">
+        <p class="term">Normative Ethics</p>
+        <p class="definition">
+          The branch of philosophy concerned with how people <em>ought</em> to act — with identifying
+          the principles that distinguish right from wrong. Unlike descriptive ethics (what people
+          actually believe) or metaethics (whether moral facts exist at all), normative ethics aims
+          to guide conduct.
+        </p>
+      </div>
+
+      <p>
+        This course is primarily concerned with normative ethics applied to technology: not just
+        describing what societies have done with their information tools, but evaluating whether they
+        did it well. The five revolutions we examine are ordered chronologically, and each one will
+        give us new concepts and case studies to bring to that evaluative project.
+      </p>
+
+      <figure>
+        <div class="mermaid">
+timeline
+    title Five Information Technology Revolutions
+    3200 BCE : Writing — cuneiform, hieroglyphics, the alphabet
+    1440 CE  : The Printing Press — Gutenberg's movable type
+    1840s    : Distance Communication — telegraph and telephone
+    1920s    : Mass Media — radio and television
+    1990s    : The World Wide Web — internet and social platforms
+        </div>
+        <figcaption>Figure 1.1 — The five major information technology revolutions examined in this chapter, in chronological order. Each raised ethical questions that echo into the present.</figcaption>
+      </figure>
+
+      <div class="table-wrapper">
+        <table>
+          <caption>Table 1.1 — The Five IT Revolutions: Key Thinkers and Core Tensions</caption>
+          <thead>
+            <tr>
+              <th scope="col">Revolution</th>
+              <th scope="col">Approximate Date</th>
+              <th scope="col">Key Thinkers</th>
+              <th scope="col">Core Tension</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Writing</td>
+              <td>~3200 BCE</td>
+              <td>Socrates, Plato</td>
+              <td>Memory vs. external record</td>
+            </tr>
+            <tr>
+              <td>Printing Press</td>
+              <td>~1440 CE</td>
+              <td>Gutenberg, Luther, Erasmus</td>
+              <td>Free dissemination vs. responsible gatekeeping</td>
+            </tr>
+            <tr>
+              <td>Distance Communication</td>
+              <td>~1840s</td>
+              <td>Morse, Mill, Marx</td>
+              <td>Individual liberty vs. ownership and power</td>
+            </tr>
+            <tr>
+              <td>Mass Media</td>
+              <td>~1920s</td>
+              <td>Orwell, Arendt</td>
+              <td>Shared culture vs. propaganda and control</td>
+            </tr>
+            <tr>
+              <td>The World Wide Web</td>
+              <td>~1990s</td>
+              <td>Berners-Lee, and us</td>
+              <td>Democratization vs. surveillance capitalism</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </section><!-- /what-is-it -->
+
+
+    <!-- ══════════════════════════════════════════════════
+         SECTION 2: REVOLUTION 1 — WRITING
+    ══════════════════════════════════════════════════════ -->
+    <section id="writing" aria-labelledby="s2-heading">
+      <h2 id="s2-heading">Revolution 1: Writing</h2>
+
+      <p>
+        Around 3200 BCE, in the city-states of ancient Mesopotamia — the region we now call Iraq —
+        scribes began pressing reed styluses into wet clay tablets to produce what we recognize as
+        the world's first writing system: cuneiform. Its early uses were mundane. Archaeologists
+        have found ancient records of grain allocations, cattle inventories, and commercial debts.
+        Writing began as a technology for keeping score. Yet within a few centuries it had transformed
+        into something far more consequential: a tool for preserving law, transmitting religion,
+        accumulating science, and producing literature. The <em>Epic of Gilgamesh</em>, composed around
+        2100 BCE and surviving on clay tablets, is one of the earliest pieces of literature in human
+        history — a meditation on mortality, friendship, and the search for meaning that would not
+        feel out of place in a contemporary bookstore.
+      </p>
+      <p>
+        The invention of writing externalizes memory. Before writing, knowledge lived inside people:
+        in the minds of elders, in the performances of bards, in the accumulated skills of craftspeople.
+        When those people died, their knowledge died with them unless it had been passed on through
+        direct instruction. Writing broke this cycle. Suddenly, a legal code could outlast its author
+        by millennia. A mathematical proof could be checked and built upon by people who never met
+        its originator. A religious text could reach believers scattered across continents.
+      </p>
+
+      <figure>
+        <img src="../images/cuneiform_tablet.jpg"
+             alt="A small clay tablet covered in wedge-shaped cuneiform script, photographed against a plain background">
+        <figcaption>
+          A cuneiform tablet from ancient Mesopotamia (c. 2400–2200 BCE). The wedge-shaped marks
+          were made by pressing a reed stylus into wet clay. Many early tablets recorded economic
+          transactions — writing began as an accounting tool.
+          Public domain.
+        </figcaption>
+      </figure>
+
+      <p>
+        Not everyone celebrated this transformation. In ancient Athens, a philosopher named Socrates
+        looked at writing and saw something troubling: a technology that would give people the
+        <em>appearance</em> of wisdom without the reality.
+      </p>
+
+      <div class="key-thinker">
+        <img class="thinker-portrait" src="../images/plato_bust.jpg"
+             alt="Marble bust of Plato, showing a bearded man with a thoughtful expression">
+        <div class="thinker-header">
+          <p class="thinker-label">Key Thinker</p>
+          <h3 class="thinker-name">Plato <span class="thinker-dates">(c. 428–348 BCE)</span></h3>
+        </div>
+        <div class="thinker-body">
+          <p>
+            Plato was born into an aristocratic Athenian family and became the most influential student
+            of Socrates. After Socrates' execution in 399 BCE, Plato traveled widely before returning to
+            Athens to found the Academy — one of the first institutions of higher learning in Western
+            history, which operated for nearly nine hundred years. His works, all written as dialogues,
+            explore ethics, politics, metaphysics, and epistemology.
+          </p>
+          <p>
+            Here lies the great irony: Plato preserved Socrates' oral philosophy <em>in writing</em>.
+            In the <em>Phaedrus</em>, Plato records Socrates making an argument against writing itself.
+            We only know this argument because someone wrote it down. Socrates famously wrote nothing.
+            He taught through conversation, believing that genuine understanding could only be reached
+            through live dialogue, not by reading fixed texts. Plato spent his life honoring his teacher's
+            ideas by doing exactly what his teacher distrusted.
+          </p>
+          <p>
+            Plato's other major works include the <em>Republic</em> — a vision of an ideal state ruled
+            by philosopher-kings — and the <em>Apology</em>, his account of Socrates' trial and death.
+            His theory of Forms, which holds that abstract concepts like Justice and Beauty are more real
+            than physical objects, shaped Western philosophy for two thousand years.
+          </p>
+        </div>
+      </div><!-- /.key-thinker -->
+
+      <h3>The Myth of Theuth and Thamus</h3>
+
+      <p>
+        In the <em>Phaedrus</em>, Plato has Socrates tell a story — a myth — about the invention of
+        writing. The Egyptian god Theuth has invented writing and presents it to Thamus, the king of
+        Egypt, for his royal approval. Theuth is enthusiastic: writing, he claims, will make the
+        Egyptians wiser and improve their memory. Thamus disagrees, sharply. He argues that Theuth
+        has invented not a memory aid but a reminder system — and a dangerous one at that.
+      </p>
+
+      <blockquote class="quote-block">
+        <p>
+          For this invention will produce forgetfulness in the minds of those who learn to use it,
+          because they will not practice their memory. Their trust in writing, produced by external
+          characters which are no part of themselves, will discourage the use of their own memory
+          within them. You have invented an elixir not of memory, but of reminding; and you offer
+          your pupils the appearance of wisdom, not true wisdom, for they will read many things
+          without instruction and will therefore seem to know many things, when they are for the most
+          part ignorant and hard to get along with, since they are not wise, but only appear wise.
+        </p>
+        <cite data-key="plato_phaedrus"></cite>
+      </blockquote>
+
+      <p>
+        This passage repays careful attention. Thamus draws a precise distinction between
+        <em>memory</em> — actively held, internalized knowledge — and <em>reminding</em> — the
+        passive retrieval of externally stored information. His worry is not that the information
+        in a written text is false. His worry is that readers will mistake the ability to look
+        something up for the ability to actually understand it. They will "seem to know many things"
+        while actually knowing very little. Does this concern sound familiar? It should. The same
+        objection has been raised about Google, about Wikipedia, about calculators, and about AI
+        chatbots. Every generation has faced a version of Thamus's worry: does this new tool help
+        us think, or does it think for us?
+      </p>
+
+      <div class="argument-box">
+        <p class="box-label">What's the Argument?</p>
+        <p class="box-title">Socrates's Argument Against Writing</p>
+        <ol class="premises">
+          <li>Genuine knowledge requires active engagement: the ability to respond to questions, to adapt an explanation to a particular audience, and to examine one's own reasoning.</li>
+          <li>A written text cannot respond to questions or adapt to its reader — it always says the same thing to everyone.</li>
+          <li>Relying on written texts therefore produces a false sense of understanding: readers feel informed without having genuinely grasped the subject.</li>
+        </ol>
+        <div class="conclusion">
+          <span class="therefore">&#8756;</span>
+          Writing produces the <em>appearance</em> of wisdom, not genuine wisdom, and is therefore inferior to living dialogue for developing real understanding.
+        </div>
+      </div>
+
+      <p>
+        Is this argument convincing? There is something undeniably right about it. Students who can
+        recite a definition from their notes without being able to apply or explain it have experienced
+        exactly what Socrates describes. And yet the argument seems too strong. The accumulated knowledge
+        of human civilization — mathematics, science, literature, history, law — would be impossible
+        without writing. Socrates himself benefited from reading: he was deeply familiar with Homer,
+        with earlier philosophers, with Athenian drama. The argument identifies a real risk — confusing
+        external records with internal understanding — without proving that the risk outweighs the gains.
+      </p>
+
+      <div class="case-study">
+        <p class="box-label">Case Study</p>
+        <p class="box-title">Hammurabi's Code (c. 1754 BCE)</p>
+        <p>
+          Among the most striking early uses of writing is the Code of Hammurabi, a Babylonian legal
+          code inscribed on an eight-foot basalt stele around 1754 BCE. Commissioned by King Hammurabi
+          of Babylon, the code contains 282 laws governing everything from wages and property disputes
+          to marriage, adoption, and criminal punishment. Its famous principle — "an eye for an eye,
+          a tooth for a tooth" — is often quoted out of context; in fact, the code represented a
+          significant constraint on arbitrary royal power, since the king's judges were now bound by
+          written rules rather than personal whim.
+        </p>
+        <p>
+          Yet the same technology served opposite ends. The stele was publicly displayed — anyone
+          (who could read) could check whether a judge's ruling conformed to written law. But the
+          administrative apparatus that writing enabled also empowered an imperial bureaucracy. Tax
+          records, tribute lists, and grain accounting allowed Hammurabi to manage an empire of
+          hundreds of thousands of people with a precision impossible in purely oral societies.
+          Writing was simultaneously a check on arbitrary power and a tool for consolidating it.
+        </p>
+        <p>
+          This paradox is characteristic of every IT revolution: the same technology that enables
+          legal accountability also enables administrative surveillance and control.
+        </p>
+      </div>
+
+      <div class="thought-questions">
+        <p class="box-label">Thought Questions</p>
+        <ol>
+          <li>Socrates worried that writing would make people <em>seem</em> wise without being wise. Do you think the internet has made this problem better or worse? What evidence would you cite?</li>
+          <li>What would be lost if humanity lost all written records tomorrow? What, if anything, would be gained?</li>
+          <li>Is Socrates's argument against writing a good argument? Try to identify its strongest and weakest premise.</li>
+          <li>Hammurabi's Code was both a protection against arbitrary power and a tool of imperial control. Can you think of a modern technology with the same double-edged quality?</li>
+        </ol>
+      </div>
+
+    </section><!-- /writing -->
+
+
+    <!-- ══════════════════════════════════════════════════
+         SECTION 3: REVOLUTION 2 — THE PRINTING PRESS
+    ══════════════════════════════════════════════════════ -->
+    <section id="printing" aria-labelledby="s3-heading">
+      <h2 id="s3-heading">Revolution 2: The Printing Press</h2>
+
+      <p>
+        On October 31, 1517, a thirty-three-year-old monk and theology professor named Martin Luther
+        nailed a list of ninety-five theses — arguments he wanted to debate — to the door of a church
+        in Wittenberg, Germany. This was a standard academic gesture, common in universities of the
+        time. What was not standard was what happened next. Within two weeks, printed copies of Luther's
+        theses had spread across Germany. Within two months, they had reached most of Europe. Within
+        a few years, his German translation of the Bible had become the best-selling book on the
+        continent. None of this would have been possible without the technology that a German goldsmith
+        named Johannes Gutenberg had developed about seventy years earlier: movable type printing.
+      </p>
+      <p>
+        Before Gutenberg, books were handwritten, one at a time, by scribes — usually monks in
+        monasteries. A single copy of the Bible might take a skilled scribe years to produce and cost
+        as much as a house. In 1450, there were approximately thirty thousand books in all of Europe.
+        By 1500, fifty years after Gutenberg's press began operating, there were approximately ten
+        million. The cost of a book had fallen by ninety percent. Literacy began to spread beyond
+        the clergy and aristocracy. The monopoly that the Catholic Church had long maintained over
+        the production and interpretation of written texts was shattered.
+      </p>
+
+      <figure>
+        <img src="../images/gutenberg_bible.jpg"
+             alt="Two open pages of the Gutenberg Bible showing densely printed Latin text in two columns with ornate red and blue initial letters">
+        <figcaption>
+          A page from the Gutenberg Bible (c. 1455), the first major book printed in Europe using
+          movable type. The quality of the printing rivaled the finest hand-copied manuscripts.
+          About 180 copies were printed; approximately 49 survive.
+          Public domain.
+        </figcaption>
+      </figure>
+
+      <div class="key-thinker">
+        <div class="thinker-portrait-placeholder" aria-hidden="true">✝</div>
+        <div class="thinker-header">
+          <p class="thinker-label">Key Thinker</p>
+          <h3 class="thinker-name">Martin Luther <span class="thinker-dates">(1483–1546)</span></h3>
+        </div>
+        <div class="thinker-body">
+          <p>
+            Martin Luther was a German Augustinian friar, theologian, and professor whose protests
+            against the Catholic Church's practice of selling "indulgences" — payments that supposedly
+            reduced time in purgatory — launched the Protestant Reformation. His 95 Theses questioned
+            papal authority over salvation, and his subsequent writings developed a theology centered
+            on faith alone (<em>sola fide</em>) and Scripture alone (<em>sola scriptura</em>).
+          </p>
+          <p>
+            Luther was the first major thinker to recognize the printing press as a world-historical
+            tool. He wrote and published with extraordinary speed and productivity; his complete works
+            fill over a hundred volumes. He saw the press as providential: a divine instrument for
+            spreading the Gospel in its pure form, without institutional mediation. His German
+            translation of the Bible standardized the German language and made Scripture accessible
+            to ordinary people who could not read Latin.
+          </p>
+          <p>
+            Luther's legacy is complicated. The same convictions that led him to challenge tyrannical
+            authority also led him to support the brutal suppression of the Peasants' Revolt (1525)
+            and to write virulently anti-Semitic texts late in his life — texts that were later cited
+            by Nazi propagandists. He is a powerful example of how the same technology can serve both
+            liberation and oppression, depending on who is using it and why.
+          </p>
+        </div>
+      </div><!-- /.key-thinker -->
+
+      <h3>Luther and Erasmus: Two Visions of the Press</h3>
+
+      <p>
+        Luther's great contemporary, the Dutch humanist scholar Desiderius Erasmus, was also a
+        prolific author who benefited enormously from the printing press. Erasmus's satirical work
+        <em>The Praise of Folly</em> was a bestseller. He corresponded with scholars across Europe,
+        and his critical edition of the Greek New Testament — produced using printed books from
+        multiple libraries — was a monument of Renaissance scholarship. Yet Erasmus viewed Luther's
+        use of the press with deep unease.
+      </p>
+      <p>
+        For Erasmus, the problem was not the press itself but the use to which Luther put it:
+        flooding the reading public with inflammatory, doctrinally complex arguments that, in
+        Erasmus's view, most readers were not equipped to evaluate. Where Luther saw a marketplace
+        of ideas in which truth would triumph, Erasmus saw a crowded and dangerous bazaar where
+        the loudest voice, not the wisest, would win. Reform, he believed, should come from
+        careful scholars working within the Church, not from mass popular movements whipped up
+        by pamphlets. History suggests both men were partially right.
+      </p>
+
+      <div class="argument-box">
+        <p class="box-label">What's the Argument?</p>
+        <p class="box-title">The Erasmian Argument for Gatekeeping</p>
+        <ol class="premises">
+          <li>Rapid, uncontrolled dissemination of complex ideas leads to widespread misunderstanding and social conflict.</li>
+          <li>Most readers lack the training to evaluate complex theological, scientific, or philosophical arguments without expert guidance.</li>
+          <li>Printing enables such ideas to reach mass audiences without any expert mediation.</li>
+        </ol>
+        <div class="conclusion">
+          <span class="therefore">&#8756;</span>
+          Some degree of gatekeeping — scholarly, editorial, or institutional — is necessary to prevent the printing press from doing more harm than good.
+        </div>
+      </div>
+
+      <div class="pro-argument">
+        <p class="box-label">Supporting argument</p>
+        <p>
+          The evidence supports Erasmus's concern. The fifty years following Luther's 95 Theses
+          saw not only the spread of literacy and biblical knowledge but also the witch-hunting
+          manual <em>Malleus Maleficarum</em> becoming a bestseller, the religious wars that
+          devastated central Europe, and inflammatory anti-Semitic pamphlets spreading with
+          unprecedented speed. The press did not just spread truth — it amplified every dangerous
+          idea with equal indifference.
+        </p>
+      </div>
+
+      <div class="objection">
+        <p class="box-label">Objection</p>
+        <p>
+          But who gets to be the gatekeeper? In Luther's day, the gatekeepers were the Catholic
+          Church and secular princes who banned and burned books on the basis of their own
+          interests. Erasmus himself was censured by Church authorities. A gatekeeping system
+          tends to protect the powerful, not the truth. Erasmus's argument, however reasonable
+          it sounds in the abstract, risks being a defense of the status quo against any
+          challenge from below.
+        </p>
+      </div>
+
+      <p>
+        The Luther-Erasmus debate is the prototype for an argument that recurs across every
+        subsequent information revolution: between those who want to maximize the free flow of
+        information and those who argue that some filtering is necessary to prevent harm. We
+        will encounter it again when we discuss internet content moderation in Chapter 3 and
+        AI-generated misinformation in Chapter 7.
+      </p>
+
+      <div class="case-study">
+        <p class="box-label">Case Study</p>
+        <p class="box-title">The 95 Theses and the Speed of Print (1517)</p>
+        <p>
+          Luther posted his 95 Theses on October 31, 1517. Within two weeks, friends had them
+          printed in Leipzig, Nuremberg, and Basel. Within two months, they had circulated to
+          virtually every corner of the German-speaking world and into France, England, and Italy.
+          This was staggeringly fast by the standards of the time. A manuscript letter might take
+          weeks to travel the same distance. The Pope, receiving reports from Rome about an
+          obscure German monk's complaint, initially dismissed the matter as a "monks' quarrel."
+          By the time the Church recognized the seriousness of the situation, Luther's ideas had
+          already taken root across an entire continent. The press had changed the speed of
+          intellectual history.
+        </p>
+        <p>
+          What this case illustrates is a property of information technology that recurs throughout
+          history: new technologies change not just the <em>reach</em> of ideas but their
+          <em>velocity</em>. An idea that spreads slowly gives institutions time to respond,
+          refute, and adapt. An idea that spreads in days does not. This acceleration creates
+          both opportunity (marginalized voices can reach audiences quickly) and danger
+          (misinformation can spread faster than correction). In the sixteenth century, this
+          dynamic helped shatter the thousand-year institutional unity of Western Christianity.
+          In the twenty-first, it shapes the spread of everything from political disinformation
+          to scientific discoveries.
+        </p>
+      </div>
+
+      <div class="thought-questions">
+        <p class="box-label">Thought Questions</p>
+        <ol>
+          <li>Erasmus worried that the press would spread ideas too quickly for ordinary readers to evaluate them. Does social media have the same problem? Is the problem worse or better now?</li>
+          <li>Luther said the printing press was "the last and greatest gift" for spreading true religion. Can a technology be a gift for spreading truth if it is equally useful for spreading falsehood?</li>
+          <li>Who are the "gatekeepers" of information in 2024? What legitimacy do they have — and who watches the watchmen?</li>
+        </ol>
+      </div>
+
+    </section><!-- /printing -->
+
+
+    <!-- ══════════════════════════════════════════════════
+         SECTION 4: REVOLUTION 3 — DISTANCE COMMUNICATION
+    ══════════════════════════════════════════════════════ -->
+    <section id="distance" aria-labelledby="s4-heading">
+      <h2 id="s4-heading">Revolution 3: Distance Communication</h2>
+
+      <p>
+        On May 24, 1844, Samuel Morse sat in the chambers of the U.S. Supreme Court in Washington, D.C.,
+        and tapped out the first long-distance telegraph message in history, transmitting it forty miles
+        to Baltimore. The message, chosen by a young woman named Annie Ellsworth from the Book of Numbers,
+        read: "What hath God wrought!" It is hard to know whether the exclamation point reflects astonishment
+        or gratitude, but either would be appropriate. The telegraph was, by the standards of its time,
+        magic. Information that previously took days to travel by horseback arrived in seconds. Before the
+        telegraph, the fastest communication in the world moved at the speed of a horse. After it, messages
+        could circle the globe at the speed of electricity.
+      </p>
+      <p>
+        Nineteenth-century commentators responded to the telegraph with extravagant enthusiasm.
+        Newspapers declared that it would unite all nations, abolish war, and usher in an era of
+        universal peace and understanding. When the first transatlantic telegraph cable was completed
+        in 1866, connecting North America and Europe permanently, it was celebrated as one of the
+        greatest achievements in human history. The historian Tom Standage has called the telegraph
+        "the Victorian Internet," and the comparison is apt in more ways than one: the same utopian
+        claims made about the telegraph in the 1860s were made almost word for word about the internet
+        in the 1990s.
+      </p>
+
+      <figure>
+        <img src="../images/samuel_morse.jpg"
+             alt="A formal portrait photograph of Samuel Morse, an elderly man with a long white beard wearing a dark suit">
+        <figcaption>
+          Samuel F. B. Morse (1791–1872), inventor of the Morse Code telegraph system.
+          Morse began his career as a portrait painter before turning to electrical engineering.
+          His first long-distance telegraph message was sent on May 24, 1844.
+          Public domain.
+        </figcaption>
+      </figure>
+
+      <p>
+        Two of the most important thinkers of the nineteenth century, the British philosopher John
+        Stuart Mill and the German philosopher Karl Marx, offered sharply contrasting analyses of
+        what communications technology meant for society. Their disagreement goes to the heart of a
+        debate that still divides us: Is technology a neutral tool that enables individual freedom,
+        or is it always shaped by — and in service of — whoever holds economic and political power?
+      </p>
+
+      <div class="key-thinker">
+        <img class="thinker-portrait" src="../images/john_stuart_mill.jpg"
+             alt="A black-and-white portrait photograph of John Stuart Mill, a middle-aged man in Victorian dress">
+        <div class="thinker-header">
+          <p class="thinker-label">Key Thinker</p>
+          <h3 class="thinker-name">John Stuart Mill <span class="thinker-dates">(1806–1873)</span></h3>
+        </div>
+        <div class="thinker-body">
+          <p>
+            John Stuart Mill was a British philosopher, economist, and Member of Parliament who
+            became the most influential liberal thinker of the nineteenth century. He was educated
+            with extraordinary intensity by his father, James Mill — learning Greek at age three
+            and Latin at eight — in an experiment in radical rationalist education that he later
+            described as both a blessing and a cause of serious psychological collapse in his twenties.
+          </p>
+          <p>
+            Mill's most enduring contribution to political philosophy is his 1859 book <em>On Liberty</em>,
+            which argues for the maximum possible sphere of individual freedom constrained only by the
+            "harm principle": you may do as you like until your actions harm others. In the domain of
+            ideas, Mill was an absolute advocate for free speech, arguing that even false opinions must
+            be allowed expression because the collision of ideas is how truth advances. He called this
+            the "marketplace of ideas."
+          </p>
+          <p>
+            Mill also championed women's suffrage and worked throughout his career to extend the
+            benefits of liberal society to those excluded from it. He saw communications technology
+            as, on balance, a force for individual liberation and the spread of beneficial ideas.
+          </p>
+        </div>
+      </div><!-- /.key-thinker -->
+
+      <div class="key-thinker">
+        <img class="thinker-portrait" src="../images/karl_marx.jpg"
+             alt="A formal portrait photograph of Karl Marx with his distinctive large beard and dark coat">
+        <div class="thinker-header">
+          <p class="thinker-label">Key Thinker</p>
+          <h3 class="thinker-name">Karl Marx <span class="thinker-dates">(1818–1883)</span></h3>
+        </div>
+        <div class="thinker-body">
+          <p>
+            Karl Marx was a German philosopher, economist, and revolutionary who, with his collaborator
+            Friedrich Engels, developed the theory of historical materialism and founded modern
+            communist thought. Born into a middle-class Jewish family in Prussia, Marx was radicalized
+            by his studies of Hegel and his observations of industrial capitalism's human costs.
+            He was expelled from Germany, France, and Belgium before settling permanently in London,
+            where he spent years researching in the British Museum while living in poverty.
+          </p>
+          <p>
+            Marx's central insight for our purposes is that technology is never politically neutral.
+            It is always developed, owned, and deployed within a specific economic system, and it
+            tends to serve the interests of those who control it. "The ruling ideas of each age,"
+            he wrote, "have ever been the ideas of its ruling class." Applied to communications
+            technology: whoever owns the newspapers, the telegraph wires, or the social media
+            platforms controls what ideas reach the public — and on what terms.
+          </p>
+          <p>
+            This does not mean Marx was always right. His predictions about the inevitable collapse
+            of capitalism proved incorrect, and regimes claiming to act in his name produced some
+            of the worst tyrannies in history. But his framework for thinking about technology and
+            power remains essential and is applied by thinkers across the political spectrum today.
+          </p>
+        </div>
+      </div><!-- /.key-thinker -->
+
+      <blockquote class="quote-block">
+        <p>
+          If all mankind minus one were of one opinion, and only one person were of the contrary
+          opinion, mankind would be no more justified in silencing that one person than he, if he
+          had the power, would be justified in silencing mankind.
+        </p>
+        <cite data-key="mill1859liberty"></cite>
+      </blockquote>
+
+      <p>
+        Mill's argument rests on the claim that truth tends to emerge from open debate. If an
+        opinion is right and is suppressed, we lose the truth. If it is wrong and is suppressed,
+        we lose the opportunity to understand why it is wrong — and an unexamined belief is a
+        fragile one. This is a powerful argument for freedom of expression. But it assumes that
+        the "marketplace of ideas" operates fairly: that all voices have equal access and that
+        the best arguments tend to win. Marx's analysis challenges precisely this assumption.
+      </p>
+
+      <div class="argument-box">
+        <p class="box-label">What's the Argument?</p>
+        <p class="box-title">Marx's Argument: Technology Serves Its Owners</p>
+        <ol class="premises">
+          <li>In any society, those who control the means of production — including the means of communication — have decisive influence over public opinion.</li>
+          <li>Under capitalism, the means of communication (printing houses, telegraph companies, later broadcast networks and social media platforms) are owned by the wealthy.</li>
+          <li>Owners use their control to promote ideas that serve their interests and to suppress or marginalize ideas that threaten them.</li>
+        </ol>
+        <div class="conclusion">
+          <span class="therefore">&#8756;</span>
+          Mill's "free marketplace of ideas" is a fiction: the market is rigged in favor of those who own the infrastructure, and "free" communication in a capitalist society primarily amplifies the ideas of the ruling class.
+        </div>
+      </div>
+
+      <p>
+        You do not need to be a Marxist to find this argument troubling. Consider: in the United
+        States today, most major media outlets are owned by a small number of large corporations.
+        The handful of social media platforms through which most people receive their news are
+        operated by some of the wealthiest companies in history. The algorithmic decisions these
+        platforms make — which stories are shown, which voices are amplified, which content is
+        suppressed — have enormous consequences for public discourse. Mill's dream of an open
+        marketplace and Marx's warning about concentrated ownership are both relevant to this
+        situation, and neither analysis alone is sufficient.
+      </p>
+
+      <div class="thought-questions">
+        <p class="box-label">Thought Questions</p>
+        <ol>
+          <li>Mill argues that even false opinions should be allowed because debate is how we find truth. Does this argument work on social media, where algorithms determine which voices are amplified?</li>
+          <li>Marx argues that whoever owns the means of communication controls the dominant ideas. Can you think of examples that support this claim? Counterexamples?</li>
+          <li>Is there a way to have both Mill's open debate and a check on the power that Marx warns about? What would it look like in practice?</li>
+        </ol>
+      </div>
+
+    </section><!-- /distance -->
+
+
+    <!-- ══════════════════════════════════════════════════
+         SECTION 5: REVOLUTION 4 — MASS MEDIA
+    ══════════════════════════════════════════════════════ -->
+    <section id="mass-media" aria-labelledby="s5-heading">
+      <h2 id="s5-heading">Revolution 4: Mass Media</h2>
+
+      <p>
+        The first three information revolutions — writing, printing, distance communication — shared
+        a structural feature: they primarily enabled information to move between individuals or small
+        groups. A letter goes from one person to another. A printed pamphlet reaches thousands, but
+        each reader reads alone. The fourth revolution, the rise of radio and then television in the
+        twentieth century, introduced something qualitatively new: <em>broadcast</em> — the simultaneous
+        transmission of identical content to millions of passive recipients. A single radio broadcast
+        could, for the first time in history, address an entire nation at once.
+      </p>
+      <p>
+        The implications of this shift were enormous. Radio and television created genuinely shared
+        cultural experiences at national scale. They enabled rapid dissemination of public health
+        information, political news, and educational content. But they also created a new kind of
+        vulnerability: a small number of people controlling the broadcast infrastructure could shape
+        the beliefs and emotions of a mass audience in ways that earlier media could not match.
+        Two thinkers who witnessed the most catastrophic demonstration of this vulnerability —
+        the rise of totalitarianism in Europe — provide our framework for this revolution.
+      </p>
+
+      <div class="key-thinker">
+        <div class="thinker-portrait-placeholder" aria-hidden="true">✍</div>
+        <div class="thinker-header">
+          <p class="thinker-label">Key Thinker</p>
+          <h3 class="thinker-name">George Orwell <span class="thinker-dates">(1903–1950)</span></h3>
+        </div>
+        <div class="thinker-body">
+          <p>
+            George Orwell — born Eric Arthur Blair in British India — was a novelist, essayist, and
+            journalist who spent his career bearing witness to the political catastrophes of the twentieth
+            century. He served as a colonial police officer in Burma, fought in the Spanish Civil War
+            on the Republican side (where he was shot through the throat and narrowly survived),
+            and observed at first hand the way both fascist and Stalinist propaganda worked to
+            distort reality and silence dissent.
+          </p>
+          <p>
+            His two most famous works, <em>Animal Farm</em> (1945) and <em>Nineteen Eighty-Four</em>
+            (1949), are written as fiction but function as extended philosophical arguments about
+            the relationship between language, truth, and power. <em>Nineteen Eighty-Four</em> in
+            particular contains some of the most trenchant analysis of propaganda ever written.
+            Orwell's central concern was the deliberate corruption of language — the use of
+            official terminology that means the opposite of what it seems to say
+            ("War is Peace, Freedom is Slavery") — as a tool for eliminating political thought
+            altogether.
+          </p>
+          <p>
+            Orwell died of tuberculosis in 1950 at the age of forty-six, shortly after finishing
+            <em>Nineteen Eighty-Four</em>. His coinages — "doublethink," "memory hole," "Big Brother,"
+            "Newspeak," "thoughtcrime" — have entered the English language as permanent contributions
+            to our vocabulary for describing political manipulation.
+          </p>
+        </div>
+      </div><!-- /.key-thinker -->
+
+      <blockquote class="quote-block">
+        <p>
+          The Party told you to reject the evidence of your eyes and ears. It was their final,
+          most essential command. His heart sank as he thought of the enormous power arrayed against
+          him… And yet he was in the right! They were wrong and he was right. The obvious, the silly,
+          and the true had got to be defended. Truisms are true, hold on to that!
+        </p>
+        <cite data-key="orwell_1984"></cite>
+      </blockquote>
+
+      <p>
+        The passage describes what Orwell saw as the ultimate goal of totalitarian propaganda: not
+        merely to make people believe false things, but to destroy their capacity to distinguish true
+        from false at all. Once that capacity is gone, the regime no longer needs to win arguments —
+        it just needs to repeat assertions loudly enough and often enough. Mass broadcast media, in
+        Orwell's analysis, was particularly dangerous because it could reach everyone simultaneously
+        with the same message, eliminating the diversity of information sources that might otherwise
+        give people the resources to resist.
+      </p>
+
+      <div class="key-thinker">
+        <img class="thinker-portrait" src="../images/hannah_arendt.jpg"
+             alt="A black-and-white photograph of Hannah Arendt, a middle-aged woman with an intelligent, direct gaze">
+        <div class="thinker-header">
+          <p class="thinker-label">Key Thinker</p>
+          <h3 class="thinker-name">Hannah Arendt <span class="thinker-dates">(1906–1975)</span></h3>
+        </div>
+        <div class="thinker-body">
+          <p>
+            Hannah Arendt was a German-Jewish philosopher who fled Nazi Germany in 1933, spent
+            eighteen years as a stateless refugee, and eventually became one of the most important
+            political philosophers of the twentieth century. Her experience of persecution, statelessness,
+            and exile gave her an outsider's perspective on the political institutions most Western
+            thinkers took for granted.
+          </p>
+          <p>
+            In <em>The Origins of Totalitarianism</em> (1951), Arendt offered an analysis of how
+            Nazi Germany and Stalinist Russia had been possible — not as aberrations, but as
+            outcomes of specific historical and social conditions. Her analysis is distinctive in
+            focusing not primarily on ideology but on <em>loneliness</em>: the breakdown of the
+            social bonds and shared public world that give individuals a stable sense of reality.
+            People who feel genuinely isolated, she argued, become susceptible to movements that
+            offer belonging and a totalizing explanation of the world.
+          </p>
+          <p>
+            Arendt is also famous for her coverage of the 1961 trial of Adolf Eichmann, a Nazi war
+            criminal responsible for organizing the transportation of Jews to death camps. Her concept
+            of the "banality of evil" — her observation that Eichmann was not a monster but a
+            bureaucrat who had stopped thinking — remains one of the most disturbing and important
+            ideas in modern ethics.
+          </p>
+        </div>
+      </div><!-- /.key-thinker -->
+
+      <div class="argument-box">
+        <p class="box-label">What's the Argument?</p>
+        <p class="box-title">Arendt's Argument: Mass Media and Social Atomization</p>
+        <ol class="premises">
+          <li>Industrial modernity uproots people from stable communities, traditional roles, and inherited social bonds, producing widespread social isolation — what Arendt calls "atomization."</li>
+          <li>Atomized individuals, lacking a shared social world, become desperate for coherence, belonging, and a sense that their lives matter.</li>
+          <li>Mass broadcast media can deliver, simultaneously to millions of isolated individuals, a totalizing ideology that appears to explain everything and offers membership in a powerful movement.</li>
+        </ol>
+        <div class="conclusion">
+          <span class="therefore">&#8756;</span>
+          Mass media combined with social atomization creates conditions uniquely favorable to totalitarian movements: isolated individuals, hungry for belonging, are offered an all-encompassing worldview that promises to make them part of something greater than themselves.
+        </div>
+      </div>
+
+      <p>
+        Arendt's argument adds an important dimension to Orwell's analysis. Orwell focuses on the
+        content of propaganda — the lies, the slogans, the manipulation. Arendt focuses on the
+        audience: why are people susceptible to propaganda in the first place? Her answer — that
+        social isolation makes people hungry for the kind of belonging that ideological movements
+        provide — has obvious implications for our present situation. If social media simultaneously
+        increases social connection and deepens loneliness, as some researchers argue, it might
+        be amplifying exactly the vulnerability that Arendt identified.
+      </p>
+
+      <div class="case-study">
+        <p class="box-label">Case Study</p>
+        <p class="box-title">Nazi Radio and the Volksempfänger (1933–1945)</p>
+        <p>
+          When the National Socialist (Nazi) Party came to power in Germany in 1933, radio was still
+          a relatively expensive medium. Nazi Propaganda Minister Joseph Goebbels immediately
+          recognized its potential and launched production of the <em>Volksempfänger</em> — the
+          "People's Receiver" — a cheap, standardized radio set designed to bring Nazi broadcasts
+          into every German home. By 1939, Germany had the highest per-capita radio ownership in
+          the world: over sixteen million sets, reaching approximately seventy percent of the population.
+        </p>
+        <p>
+          The Nazis used radio to broadcast Hitler's speeches live to the entire nation, to saturate
+          daily life with Party music, news, and ideology, and to create the impression of a unified,
+          enthusiastic national community. Crucially, the radios were designed to receive but not
+          transmit — the audience could only listen, not respond. This was, as Orwell and Arendt would
+          have predicted, a technology of one-way communication deployed in service of a regime that
+          required passive acceptance, not active citizenship.
+        </p>
+        <p>
+          The Nazi radio program illustrates a structural feature of broadcast media that internet
+          advocates often cite as a weakness: it is inherently one-to-many, not many-to-many. The
+          question of whether social media's many-to-many structure is better or worse in practice
+          is one we will examine in later chapters.
+        </p>
+      </div>
+
+      <div class="thought-questions">
+        <p class="box-label">Thought Questions</p>
+        <ol>
+          <li>Arendt argues that loneliness makes people susceptible to totalitarian movements. If social media increases loneliness, does it increase this risk? What evidence bears on this question?</li>
+          <li>Orwell thought the ultimate goal of propaganda was to destroy people's capacity to distinguish truth from falsehood. Does the term "post-truth" suggest this has happened, or is it an exaggeration?</li>
+          <li>The Nazis used radio to create a sense of national unity and belonging. Is the sense of community created by online groups healthy, dangerous, or something in between?</li>
+        </ol>
+      </div>
+
+    </section><!-- /mass-media -->
+
+
+    <!-- ══════════════════════════════════════════════════
+         SECTION 6: REVOLUTION 5 — THE WORLD WIDE WEB
+    ══════════════════════════════════════════════════════ -->
+    <section id="the-web" aria-labelledby="s6-heading">
+      <h2 id="s6-heading">Revolution 5: The World Wide Web</h2>
+
+      <p>
+        In 1989, a British physicist named Tim Berners-Lee, working at the European particle physics
+        laboratory CERN in Switzerland, wrote a memo proposing a system for managing information
+        across the lab's network of computers. His supervisor wrote "Vague but exciting" on the
+        cover and returned it. Two years later, Berners-Lee had built the World Wide Web: a system
+        of hyperlinked documents accessible through a common protocol and address system.
+        He deliberately refused to patent his invention, releasing it as an open standard for the
+        benefit of all humanity. By the mid-1990s, the Web was transforming global communication.
+        By the 2000s, it had become the dominant medium of human expression.
+      </p>
+      <p>
+        The early web carried utopian overtones familiar from every previous information revolution.
+        "Information wants to be free," declared the technologist Stewart Brand. The web would
+        disintermediate — cut out the middlemen — between producers and consumers of information,
+        empowering individuals and undermining institutional gatekeepers. The comparison with the
+        printing press was everywhere. But if the first phase of the web resembled a printing press
+        in the hands of everyone, the second phase — Web 2.0 and the rise of social media platforms —
+        more closely resembled the consolidation of broadcast media into a few powerful hands.
+      </p>
+
+      <div class="definition-box">
+        <p class="term">Disintermediation</p>
+        <p class="definition">
+          The removal of intermediaries (gatekeepers, middlemen) between producers and consumers.
+          Each information revolution has promised disintermediation; each has been followed by
+          <em>reintermediation</em> — the emergence of new intermediaries, often more powerful
+          than those they replaced.
+        </p>
+      </div>
+
+      <p>
+        By 2010, a handful of American technology companies — Google, Facebook, Amazon, Apple —
+        had become the new gatekeepers of global information. Their algorithms determined what
+        news billions of people saw, what products they were shown, and what ideas were amplified
+        or suppressed. The companies were driven primarily by advertising revenue, which depends
+        on maximizing user engagement — and research has shown that engagement is maximized by
+        content that produces strong emotional reactions, including outrage and fear.
+      </p>
+      <p>
+        The result is a communications environment whose basic structure none of the early web
+        utopians predicted: an open network carrying traffic that is filtered and shaped by
+        private, for-profit intermediaries whose business interests are not necessarily aligned
+        with the public good. This is not unique to the web. The telegram was carried by companies
+        with commercial interests. Radio and television were dominated by networks serving advertisers.
+        The pattern of disintermediation followed by reintermediation is, at this point, one of
+        the most reliable features of IT history.
+      </p>
+
+      <div class="table-wrapper">
+        <table>
+          <caption>Table 1.2 — Key Debates in the Digital Present</caption>
+          <thead>
+            <tr>
+              <th scope="col">Debate</th>
+              <th scope="col">Position A</th>
+              <th scope="col">Position B</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Content moderation</td>
+              <td>Maximize free expression; platforms should not censor</td>
+              <td>Platforms must limit harmful content to protect users and democracy</td>
+            </tr>
+            <tr>
+              <td>Data privacy</td>
+              <td>Users accept terms of service; data sharing enables services</td>
+              <td>Users cannot meaningfully consent to surveillance at this scale</td>
+            </tr>
+            <tr>
+              <td>Platform responsibility</td>
+              <td>Platforms are neutral conduits and should not be held liable for content</td>
+              <td>Platforms actively curate and amplify content; they bear editorial responsibility</td>
+            </tr>
+            <tr>
+              <td>Algorithmic amplification</td>
+              <td>Personalization improves relevance and user experience</td>
+              <td>Engagement-optimized algorithms amplify outrage and misinformation</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="case-study">
+        <p class="box-label">Case Study</p>
+        <p class="box-title">The Arab Spring and Social Media (2010–2012)</p>
+        <p>
+          Beginning in Tunisia in December 2010 and spreading across North Africa and the Middle East,
+          the Arab Spring was a wave of popular uprisings against authoritarian governments that became
+          closely associated with social media — particularly Facebook, Twitter, and YouTube. Activists
+          used these platforms to organize protests, share video evidence of government abuses, and
+          coordinate across geographic boundaries with a speed and scale that had not been possible before.
+          The Tunisian and Egyptian governments fell within months.
+        </p>
+        <p>
+          The early coverage portrayed the Arab Spring as a vindication of the web's democratic promise:
+          a "Facebook Revolution" or "Twitter Revolution" in which social media had put the tools of
+          political organization in the hands of ordinary people, bypassing state control of broadcast
+          media. By 2013, however, this optimism had faded. Several of the uprisings devolved into
+          civil wars with enormous humanitarian costs. The regimes that survived adapted quickly,
+          using the same social media platforms for surveillance, propaganda, and the identification
+          of dissidents. In Syria, Egypt, and Bahrain, social media posts were used to track and
+          arrest activists.
+        </p>
+        <p>
+          The Arab Spring illustrates both halves of the IT revolution pattern: the same platform
+          that enabled unprecedented popular organization also became a tool of state repression.
+          The technology was not neutral — but neither was it simply in service of power.
+          It served whoever used it most effectively, which sometimes meant the people, and
+          sometimes meant the state.
+        </p>
+      </div>
+
+      <div class="thought-questions">
+        <p class="box-label">Thought Questions</p>
+        <ol>
+          <li>Tim Berners-Lee gave the Web to humanity as an open standard, refusing to patent it. Was this the right decision? What might have been different if the Web had been proprietary?</li>
+          <li>The Arab Spring showed social media enabling both popular revolution and government repression. What does this suggest about claims that technology is inherently liberating?</li>
+          <li>Each IT revolution has produced new gatekeepers to replace old ones. Is there any way to prevent this, or is it an iron law of information technology history?</li>
+        </ol>
+      </div>
+
+    </section><!-- /the-web -->
+
+
+    <!-- ══════════════════════════════════════════════════
+         SECTION 7: THE PATTERN ACROSS THE REVOLUTIONS
+    ══════════════════════════════════════════════════════ -->
+    <section id="patterns" aria-labelledby="s7-heading">
+      <h2 id="s7-heading">The Pattern Across the Revolutions</h2>
+
+      <p>
+        Looking across five information technology revolutions, a pattern emerges that is
+        striking in its consistency. Every revolution has promised liberation: writing would
+        preserve wisdom, the printing press would spread it, the telegraph would unite humanity,
+        broadcast media would educate the masses, and the internet would empower everyone equally.
+        Every revolution has also enabled new forms of control: imperial bureaucracy, religious
+        war, colonial coordination, totalitarian propaganda, and surveillance capitalism. In every
+        case, both the optimists and the pessimists turned out to be right — about different things,
+        or about the same things at different times.
+      </p>
+      <p>
+        The most important lesson of this history may be about the relationship between technology
+        and power. Technology is not a neutral tool that societies simply pick up and use. It is
+        developed within existing social structures, deployed by people with interests and agendas,
+        and has effects that are shaped by who controls it, who has access to it, and what economic
+        and political system it operates within. This is not a counsel of despair — it does not
+        mean that technology always serves the powerful or that resistance is futile. The printing
+        press really did spread literacy and challenge the Church's monopoly on knowledge. Social
+        media really did enable ordinary people to organize and communicate in ways that authoritarian
+        governments found difficult to stop, at least initially. But it does mean that asking
+        "Is this technology good or bad?" is usually the wrong question. The right questions are:
+        Who controls this technology? Who benefits? Who bears the costs? And what governance
+        structures could make the distribution of benefits more just?
+      </p>
+
+      <figure>
+        <div class="mermaid">
+flowchart LR
+    A["New technology\ninvented"] --> B["Promise:\nliberation &amp;\ndemocratization"]
+    B --> C["Rapid adoption\n&amp; enthusiasm"]
+    C --> D["Unforeseen\nconsequences"]
+    D --> E["Power consolidates\naround the technology"]
+    E --> F["Criticism, reform\n&amp; regulation"]
+    F --> A
+        </div>
+        <figcaption>
+          Figure 1.2 — The recurring cycle of information technology revolutions. Each revolution begins with promises of liberation, encounters unforeseen consequences, and leads to new concentrations of power — which eventually prompt criticism and the search for reform.
+        </figcaption>
+      </figure>
+
+      <div class="table-wrapper">
+        <table>
+          <caption>Table 1.3 — The Five Revolutions: Promises, Pessimists, and Outcomes</caption>
+          <thead>
+            <tr>
+              <th scope="col">Revolution</th>
+              <th scope="col">Optimist's Promise</th>
+              <th scope="col">Pessimist's Warning</th>
+              <th scope="col">What Actually Happened</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Writing</td>
+              <td>Preserve and spread knowledge (Theuth)</td>
+              <td>Weaken memory and produce false wisdom (Socrates)</td>
+              <td>Both: civilization <em>and</em> bureaucratic empire</td>
+            </tr>
+            <tr>
+              <td>Printing Press</td>
+              <td>Democratize access to ideas (Luther)</td>
+              <td>Spread dangerous ideas without expert mediation (Erasmus)</td>
+              <td>Both: Scientific Revolution <em>and</em> religious wars</td>
+            </tr>
+            <tr>
+              <td>Distance Communication</td>
+              <td>Unite humanity through free exchange (Mill)</td>
+              <td>Serve whoever owns the infrastructure (Marx)</td>
+              <td>Both: global connection <em>and</em> imperial coordination</td>
+            </tr>
+            <tr>
+              <td>Mass Media</td>
+              <td>Educate and inform the masses</td>
+              <td>Enable propaganda and destroy political thought (Orwell, Arendt)</td>
+              <td>Both: public education <em>and</em> totalitarian propaganda</td>
+            </tr>
+            <tr>
+              <td>The Web</td>
+              <td>Empower everyone, disintermediate gatekeepers</td>
+              <td>Create new monopolies and surveillance systems</td>
+              <td>Both: and the story is still being written</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>
+        This table reveals something important about how to think about the upcoming topics in this
+        course. Free speech, intellectual property, privacy, AI, and labor automation are not
+        entirely new problems. They are new chapters in a long story. When we ask whether AI
+        companies should be liable for harmful content generated by their systems, we are asking
+        a version of the question that was asked about printing houses in the seventeenth century.
+        When we debate whether to regulate social media algorithms, we are echoing debates about
+        the regulation of telegraph monopolies in the nineteenth century. The specific technologies
+        change. The fundamental questions about power, access, truth, and harm recur.
+      </p>
+
+    </section><!-- /patterns -->
+
+
+    <!-- ── KEY POINTS ──────────────────────────────────── -->
+    <section id="key-points" aria-labelledby="kp-heading">
+      <h2 id="kp-heading">Summary</h2>
+
+      <p>
+        This chapter has introduced the history of IT ethics through the lens of five major information
+        technology revolutions. In each case, we found both the optimists and the pessimists partially
+        right — and the decisive factor was not the technology itself but who controlled it and toward
+        what ends. The thinkers we have met — Socrates, Plato, Erasmus, Luther, Mill, Marx, Orwell,
+        and Arendt — offer frameworks that remain powerful for analyzing contemporary technology, from
+        content moderation and surveillance capitalism to artificial intelligence and algorithmic
+        amplification. We will draw on all of them in the chapters ahead.
+      </p>
+
+      <div class="key-points">
+        <p class="box-label">Key Points</p>
+        <ul>
+          <li>
+            <strong>Information technology is ancient:</strong> Writing, the printing press, the
+            telegraph, and the internet are all IT, sharing structural features and raising
+            structurally similar ethical questions.
+          </li>
+          <li>
+            <strong>Socrates's argument</strong> (in Plato's <em>Phaedrus</em>) is the first recorded
+            technology ethics debate: writing produces the appearance of wisdom, not wisdom itself,
+            because it cannot respond to questions or adapt to its audience.
+          </li>
+          <li>
+            <strong>The Luther-Erasmus debate</strong> established the enduring tension between free
+            dissemination of ideas and responsible gatekeeping — a tension directly relevant to content
+            moderation on social media today.
+          </li>
+          <li>
+            <strong>Mill</strong> saw communications technology as aligned with individual liberty
+            and the free marketplace of ideas. <strong>Marx</strong> countered that technology
+            serves whoever owns it — and that in capitalist societies, ownership is concentrated.
+          </li>
+          <li>
+            <strong>Orwell</strong> warned that state control of mass media could destroy the
+            capacity to distinguish truth from falsehood. <strong>Arendt</strong> identified
+            social atomization as the precondition that makes populations susceptible to
+            totalitarian propaganda.
+          </li>
+          <li>
+            <strong>Disintermediation and reintermediation:</strong> Every IT revolution promises
+            to cut out gatekeepers; every revolution produces new ones. The Web's promised
+            disintermediation has been followed by the rise of a handful of platform monopolies.
+          </li>
+          <li>
+            <strong>The recurring pattern:</strong> Every information revolution promises liberation
+            and enables new forms of control. Both optimists and pessimists are typically right —
+            about different things, or the same things at different times.
+          </li>
+          <li>
+            <strong>The right questions</strong> about a technology are not "is it good or bad?"
+            but: Who controls it? Who benefits? Who bears the costs? What governance could make
+            it more just?
+          </li>
+        </ul>
+      </div>
+
+    </section><!-- /key-points -->
+
+
+    <!-- ── REFERENCES ──────────────────────────────────── -->
+    <section id="references-section" aria-labelledby="refs-heading">
+      <h2 id="refs-heading">References</h2>
+      <div id="bibliography"></div>
+    </section>
+
+  </main><!-- /.chapter-content -->
+
+  <footer class="chapter-footer">
+    <nav class="chapter-footer-nav" aria-label="Chapter navigation">
+      <a href="index.html" class="footer-nav-btn disabled">&#8592; Previous chapter</a>
+      <a href="index.html" class="footer-nav-btn">&#8962; Table of Contents</a>
+      <a href="ch02_virtue_ethics.html" class="footer-nav-btn">Next chapter &#8594;</a>
+    </nav>
+    <p class="chapter-footer-meta">
+      <em>Computing and AI Ethics</em> by Brendan Shea, PhD &nbsp;·&nbsp;
+      <a href="https://creativecommons.org/licenses/by-nc/4.0/"
+         target="_blank" rel="noopener">CC BY-NC 4.0</a> &nbsp;·&nbsp;
+      Rochester Community and Technical College
+    </p>
+  </footer>
+
+</div><!-- /.page-wrapper -->
+
+<script>
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: 'neutral',
+    themeVariables: {
+      primaryColor:       '#1a4a8a',
+      primaryTextColor:   '#fff',
+      primaryBorderColor: '#003366',
+      lineColor:          '#546e7a',
+      secondaryColor:     '#f0f6ff',
+      tertiaryColor:      '#fdf3d6'
+    }
+  });
+</script>
+
+</body>
+</html>
