@@ -1,0 +1,6 @@
+\beamer@sectionintoc {1}{Part I: AI Is Not "Virtual"}{4}{0}{1}
+\beamer@sectionintoc {2}{Part II: Environment and Climate Change}{9}{0}{2}
+\beamer@sectionintoc {3}{Part III: Medicine and Research}{19}{0}{3}
+\beamer@sectionintoc {4}{Part IV: Good Governance}{28}{0}{4}
+\beamer@sectionintoc {5}{Part V: Poverty and Global Inequality}{36}{0}{5}
+\beamer@sectionintoc {6}{Part VI: Conclusion}{46}{0}{6}
