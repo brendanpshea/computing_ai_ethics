@@ -1,0 +1,934 @@
+\documentclass[aspectratio=169,11pt]{beamer}
+
+% Load common preamble (theme, packages, standard boxes)
+\input{lecture_preamble.tex}
+
+% Title information
+\title[AI's Environmental \& Social Impact]{AI and Its Environmental and Social Impact}
+\subtitle{Climate, Health, Governance, and Global Justice}
+\author{Computing and AI Ethics}
+\institute{Rochester Community and Technical College}
+\date{}
+
+\begin{document}
+
+\mode<article>{
+This lecture examines artificial intelligence not merely as software but as a material and social system embedded in supply chains, energy infrastructures, medical institutions, bureaucracies, and global labor markets. Building on Lecture 7's definitional work and Lecture 8's analysis of labor, we ask how AI can help or hinder the management of collective problems such as climate change, public health, democratic governance, and global poverty. The lecture emphasizes that AI's benefits and harms are not distributed evenly: systems that improve efficiency or prediction in one place can shift environmental burdens, surveillance risks, or economic dependency onto others. Drawing on works by \textcite{crawford_atlas_ai}, \textcite{eubanks_automating_inequality}, \textcite{benjamin_race_technology}, \textcite{noble_algorithms_oppression}, \textcite{sen_development_freedom}, and recent institutional reports from the WHO, OECD, IEA, Stanford HAI, and the World Bank, we develop a framework for evaluating AI in terms of sustainability, justice, and public accountability.
+}
+
+% Slide 1: Title
+{%
+\usebackgroundtemplate{\includegraphics[width=\paperwidth,height=\paperheight]{images/ai_env_servers.jpg}}%
+\begin{frame}
+\titlepage
+\end{frame}
+}
+
+% Slide 2: Central Questions
+\begin{frame}{Central Questions}
+\begin{itemize}
+    \item How can AI worsen environmental harms even while being advertised as a "smart" or "clean" technology?
+    \item When does AI improve medicine and research, and when does it amplify bias, opacity, or unequal access?
+    \item Can AI strengthen democratic governance, or does it primarily expand surveillance and bureaucratic control?
+    \item Will AI reduce poverty and inequality, or deepen existing asymmetries of wealth, language, energy, and compute?
+    \item What ethical principles should guide AI when the stakes are collective rather than merely individual?
+\end{itemize}
+
+\vspace{0.2cm}
+\begin{alertblock}{The Big Idea}
+AI should be judged not only by whether it works, but by how it redistributes benefits, risks, resources, and decision-making power.
+\end{alertblock}
+\end{frame}
+
+% Slide 3: Connections to Previous Lectures
+\begin{frame}{Connections to Previous Lectures}
+\textbf{Lecture 1 (History)}: Every information revolution promised liberation while concentrating new forms of power. AI extends that pattern into energy systems, logistics, medicine, and administration.
+
+\vspace{0.2cm}
+\textbf{Lecture 6 (Privacy)}: Medical and civic AI rely on large-scale data collection. Benefits often depend on surveillance capacities that are unevenly regulated and unequally distributed.
+
+\vspace{0.2cm}
+\textbf{Lecture 7 (AI)}: After defining AI, the next question is not just what it \emph{is} but what sort of world it helps build.
+
+\vspace{0.2cm}
+\textbf{Lecture 8 (Work)}: AI affects labor directly, but also reshapes poverty, dependency, and global bargaining power.
+
+\begin{alertblock}{?}
+Is AI best understood as a set of tools, or as a new social infrastructure?
+\end{alertblock}
+\end{frame}
+
+%%% PART I: AI AS A MATERIAL AND SOCIAL SYSTEM %%%
+\section{Part I: AI Is Not "Virtual"}
+
+\begin{frame}{Against the Myth of Immaterial Intelligence}
+Many discussions of AI treat it as if it were pure information: weightless, placeless, and detached from material constraints.
+
+\vspace{0.2cm}
+\textbf{But AI depends on:}
+\begin{itemize}
+    \item Energy-intensive computation and cooling
+    \item Water, land, and grid capacity for data centers
+    \item Mineral extraction, chip fabrication, and global logistics
+    \item Human labor for labeling, moderation, maintenance, and repair
+    \item Public institutions that regulate, subsidize, and deploy it
+\end{itemize}
+
+\vspace{0.2cm}
+\textcite{crawford_atlas_ai} argues that AI is best understood as a planetary-scale system of extraction, classification, and control.
+
+\vspace{0.2cm}
+\begin{discussionbox}[Discussion Question]
+\scriptsize
+Why do you think people so often talk about "the cloud" as if digital systems had no physical location or environmental cost?
+\end{discussionbox}
+\end{frame}
+
+\begin{frame}{A Systems View of AI}
+\begin{center}
+\begin{tikzpicture}[scale=0.82, every node/.style={font=\scriptsize}]
+    \node[draw, rounded corners, fill=boxgold!20, minimum width=2.2cm, minimum height=0.9cm] (mines) at (0,0) {Mining \& Materials};
+    \node[draw, rounded corners, fill=boxblue!20, minimum width=2.2cm, minimum height=0.9cm] (chips) at (3.2,0) {Chips \& Hardware};
+    \node[draw, rounded corners, fill=boxpurple!20, minimum width=2.2cm, minimum height=0.9cm] (dc) at (6.4,0) {Data Centers};
+    \node[draw, rounded corners, fill=boxgreen!20, minimum width=2.2cm, minimum height=0.9cm] (models) at (9.6,0) {Models \& Apps};
+    \node[draw, rounded corners, fill=boxred!20, minimum width=2.2cm, minimum height=0.9cm] (waste) at (12.8,0) {E-Waste \& Burdens};
+
+    \draw[->, thick] (mines) -- (chips);
+    \draw[->, thick] (chips) -- (dc);
+    \draw[->, thick] (dc) -- (models);
+    \draw[->, thick] (models) -- (waste);
+
+    \node[text width=2.2cm, align=center] at (0,-1.2) {Cobalt, lithium, copper, rare earths};
+    \node[text width=2.2cm, align=center] at (3.2,-1.2) {Fabrication, assembly, shipping};
+    \node[text width=2.2cm, align=center] at (6.4,-1.2) {Electricity, water, land, grid access};
+    \node[text width=2.2cm, align=center] at (9.6,-1.2) {Prediction, ranking, generation, control};
+    \node[text width=2.2cm, align=center] at (12.8,-1.2) {Pollution, disposal, unequal local impacts};
+\end{tikzpicture}
+\end{center}
+
+\vspace{0.2cm}
+The ethical question is never just "What does the model do?" It is also: \textbf{What infrastructure makes it possible, and who pays the hidden costs?}
+\end{frame}
+
+% ===== IMAGE SLIDE: Servers =====
+\begin{frame}{AI Infrastructure Begins with Physical Machines}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\begin{block}{Why This Matters}
+\begin{itemize}
+  \item AI runs in \textbf{server racks}, not in the cloud
+  \item Physical infrastructure creates \textbf{energy}, \textbf{water}, and \textbf{land-use} burdens
+  \item Costs are local even when the benefits are global
+  \item This makes AI an environmental ethics issue, not just a software ethics issue
+\end{itemize}
+\end{block}
+\end{column}
+\begin{column}{0.47\textwidth}
+\begin{figure}
+\includegraphics[width=\textwidth,height=0.65\textheight,keepaspectratio]{images/ai_env_servers.jpg}
+\caption*{\scriptsize Servers in a rack. CC BY-SA 3.0, via Wikimedia Commons.}
+\end{figure}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Why Collective Harms Are Hard to See}
+Many AI harms are \textbf{distributed}, \textbf{delayed}, and \textbf{offloaded}.
+
+\vspace{0.2cm}
+\begin{itemize}
+    \item A chatbot query feels trivial to the user, but scales across millions of users and large infrastructures.
+    \item Benefits are often immediate and visible: speed, convenience, novelty.
+    \item Costs are often indirect: emissions, water consumption, labor exploitation, grid congestion.
+    \item The people who benefit are often not the same people who bear the costs.
+\end{itemize}
+
+\vspace{0.2cm}
+\begin{conceptbox}[Moral lesson]
+Individual convenience can mask collective harm. That is why environmental and social impact require institutional, not merely personal, ethics.
+\end{conceptbox}
+\end{frame}
+
+%%% PART II: ENVIRONMENT AND CLIMATE %%%
+\section{Part II: Environment and Climate Change}
+
+\begin{frame}{AI's Environmental Footprint}
+\begin{table}[h]
+\centering
+\scriptsize
+\begin{tabular}{@{}p{3.2cm}p{8.8cm}@{}}
+\toprule
+\textbf{Dimension} & \textbf{Why it matters} \\
+\midrule
+Electricity & Training and inference require large and growing power loads \\
+\addlinespace
+Water & Cooling systems can place pressure on local water supplies \\
+\addlinespace
+Materials & Chips depend on extraction, fabrication, and transport chains \\
+\addlinespace
+Land \& grids & Hyperscale facilities compete for physical space and grid capacity \\
+\addlinespace
+Waste & Hardware turnover creates disposal and recycling burdens \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\vspace{0.2cm}
+The key mistake is to think of AI as only a question of software efficiency. It is also a question of \textbf{infrastructure politics}.
+\end{frame}
+
+\begin{frame}{Current Environmental Statistics}
+\begin{itemize}
+    \item The IEA estimates global data-center electricity use at \textbf{240--340 TWh in 2022}, about \textbf{1--1.3\%} of global final electricity demand \parencite{iea_data_centres_2023}.
+    \item Data centers and data transmission networks accounted for about \textbf{330 Mt CO$_2$e} in 2020, roughly \textbf{0.9\%} of energy-related greenhouse-gas emissions \parencite{iea_data_centres_2023}.
+    \item The IEA's \textit{Electricity 2026} report identifies \textbf{AI and data centers} as part of the demand growth driving global electricity demand up by more than \textbf{3.5\% per year on average through 2030} \parencite{iea_electricity_2026}.
+    \item More than \textbf{2,500 GW} of projects are stalled in grid connection queues worldwide, including projects with large loads such as data centers \parencite{iea_electricity_2026}.
+\end{itemize}
+
+\begin{alertblock}{Interpretive Point}
+AI's footprint is not apocalyptic by itself, but it is politically significant because it compounds other pressures on already-stressed energy and water systems.
+\end{alertblock}
+\end{frame}
+
+\begin{frame}{The Rebound Problem}
+\begin{conceptbox}[Efficiency is not the same as reduction]
+Technologies can become more efficient while total resource use still rises if demand expands faster than efficiency improves.
+\end{conceptbox}
+
+\vspace{0.2cm}
+\textbf{Applied to AI:}
+\begin{itemize}
+    \item Models become cheaper per query
+    \item Firms deploy them in more products and at larger scales
+    \item Total inference volume rises dramatically
+    \item Aggregate electricity and hardware demand still grows
+\end{itemize}
+
+\vspace{0.2cm}
+This is why "smaller and cheaper models" can be environmentally ambiguous: lower unit cost may increase total use.
+\end{frame}
+
+\begin{frame}{Training vs. Inference}
+Early public discussion focused on the cost of \textbf{training} frontier models. But recent evidence suggests that \textbf{inference} can be the larger long-run burden.
+
+\vspace{0.2cm}
+\begin{table}[h]
+\centering
+\scriptsize
+\begin{tabular}{@{}p{3cm}p{4.3cm}p{4.3cm}@{}}
+\toprule
+\textbf{Stage} & \textbf{Main cost pattern} & \textbf{Ethical relevance} \\
+\midrule
+Training & Large one-time or periodic compute spikes & Concentrated in frontier firms and labs \\
+\addlinespace
+Inference & Ongoing cost per query or use & Scales with mass adoption and everyday use \\
+\addlinespace
+Deployment & Integration into search, office tools, medicine, government & Converts technical possibility into social impact \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\vspace{0.2cm}
+The environmental story is therefore not just about spectacular training runs. It is about what happens when AI becomes ordinary infrastructure.
+\end{frame}
+
+\begin{frame}{Who Gets the Benefits and Who Bears the Burdens?}
+\begin{center}
+\begin{tikzpicture}[scale=0.9, every node/.style={font=\scriptsize, align=center}]
+    \node[draw, rounded corners, fill=boxgreen!18, minimum width=3cm, minimum height=1cm] (users) at (0,1.5) {Users and Firms\\speed, convenience, profit};
+    \node[draw, rounded corners, fill=boxblue!18, minimum width=3cm, minimum height=1cm] (infra) at (0,0) {AI Infrastructure\\data centers, chips, models};
+    \node[draw, rounded corners, fill=boxred!18, minimum width=3cm, minimum height=1cm] (local) at (-4,-1.8) {Local Communities\\water, land, grid strain};
+    \node[draw, rounded corners, fill=boxgold!18, minimum width=3cm, minimum height=1cm] (global) at (4,-1.8) {Global Supply Chains\\mining, labor, e-waste};
+
+    \draw[->, thick] (infra) -- (users);
+    \draw[->, thick] (infra) -- (local);
+    \draw[->, thick] (infra) -- (global);
+    \draw[->, dashed, thick] (users) to[bend left=20] node[midway, right] {demand} (infra);
+\end{tikzpicture}
+\end{center}
+
+\vspace{0.2cm}
+One reason AI ethics is politically difficult: the people receiving the \textbf{benefits} are often not the people absorbing the \textbf{costs}.
+\end{frame}
+
+\begin{frame}{A Climate Case for Skepticism}
+\begin{objectionbox}[The skeptical view]
+Much "AI for climate" rhetoric is marketing. The same firms that promise optimization and sustainability are driving demand for energy, chips, and cloud infrastructure at extraordinary scale.
+\end{objectionbox}
+
+\vspace{0.2cm}
+\textbf{Skeptical questions:}
+\begin{itemize}
+    \item Are the climate benefits real, or merely pilot projects and demos?
+    \item Are firms comparing AI's footprint to realistic alternatives?
+    \item Are they disclosing full environmental costs, including hardware and water?
+\end{itemize}
+
+\vspace{0.2cm}
+This objection does not prove AI cannot help with climate. It shows why environmental claims need evidence rather than branding.
+\end{frame}
+
+\begin{frame}{AI Can Also Help with Climate}
+\begin{columns}[T]
+\begin{column}{0.48\textwidth}
+\textbf{Mitigation uses}
+\begin{itemize}
+    \item Grid balancing and demand forecasting
+    \item Building-efficiency optimization
+    \item Materials discovery
+    \item Precision agriculture and logistics
+\end{itemize}
+\end{column}
+\begin{column}{0.48\textwidth}
+\textbf{Adaptation uses}
+\begin{itemize}
+    \item Wildfire and flood prediction
+    \item Disaster response coordination
+    \item Crop-risk forecasting
+    \item Early-warning systems for extreme events
+\end{itemize}
+\end{column}
+\end{columns}
+
+\vspace{0.2cm}
+The environmental question is therefore \emph{comparative}: do specific uses of AI reduce enough harm to justify their material costs?
+
+\vspace{0.2cm}
+\begin{casestudybox}[Example]
+\scriptsize
+If AI helps an electric grid shift demand away from peak hours, that may reduce blackouts, lower costs, and make it easier to integrate renewables. This is a stronger climate case than merely using AI to generate more content more efficiently.
+\end{casestudybox}
+\end{frame}
+
+% ===== IMAGE SLIDE: Wildfire satellite =====
+\begin{frame}{AI and Climate Adaptation: Disaster Detection from Space}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\begin{block}{Potential Benefit}
+\begin{itemize}
+  \item Satellite imagery and machine learning can help detect \textbf{wildfires}, smoke plumes, and changing risk conditions
+  \item Faster detection can improve evacuation, containment, and resource allocation
+  \item This is one of the clearest examples of AI serving a genuine public good
+\end{itemize}
+\end{block}
+
+\begin{alertblock}{But}
+Public value depends on who has access to the tools, the data, and the response capacity.
+\end{alertblock}
+\end{column}
+\begin{column}{0.47\textwidth}
+\begin{figure}
+\includegraphics[width=\textwidth,height=0.65\textheight,keepaspectratio]{images/ai_env_wildfire_satellite.jpg}
+\caption*{\scriptsize NASA wildfire satellite image. CC BY 2.0, via Wikimedia Commons.}
+\end{figure}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Thought Question: When Is "AI for Climate" Ethically Justified?}
+\begin{discussionbox}[Discussion Question]
+\scriptsize
+Suppose an AI system consumes substantial energy but improves wildfire detection, flood planning, or grid balancing. What standard should we use to judge whether it is justified?
+\end{discussionbox}
+
+\vspace{0.2cm}
+Possible answers:
+\begin{itemize}
+    \item Net emissions reduced over time
+    \item Lives saved or harms averted
+    \item Benefits distributed fairly
+    \item Full environmental costs publicly disclosed
+\end{itemize}
+
+\vspace{0.2cm}
+Which of these is necessary? Which are sufficient?
+\end{frame}
+
+%%% PART III: MEDICINE AND RESEARCH %%%
+\section{Part III: Medicine and Research}
+
+\begin{frame}{Why Medicine Looks Like AI's Best Case}
+AI appears especially attractive in medicine because the stakes are tangible:
+\begin{itemize}
+    \item Better diagnosis and triage
+    \item Faster image analysis
+    \item More efficient paperwork and workflow
+    \item Drug discovery and protein-structure prediction
+    \item Potentially improved access in under-resourced settings
+\end{itemize}
+
+\vspace{0.2cm}
+Unlike many AI use cases, medical gains can be stated in terms of \textbf{reduced suffering}, \textbf{fewer missed diagnoses}, and \textbf{accelerated research}.
+\end{frame}
+
+\begin{frame}{Current Medical AI Statistics}
+\begin{itemize}
+    \item Stanford HAI reports that the FDA approved \textbf{223 AI-enabled medical devices in 2023}, up from just \textbf{6 in 2015} \parencite{stanford_ai_index_2025}.
+    \item The FDA's current public list contains \textbf{1,451 AI-enabled devices} as of 2026-03-04 \parencite{fda_ai_medical_devices_2026}.
+    \item Of those, \textbf{radiology dominates} the field: 1,104 devices, followed by cardiovascular and neurology applications.
+\end{itemize}
+
+\begin{table}[h]
+\centering
+\scriptsize
+\begin{tabular}{@{}lr@{}}
+\toprule
+\textbf{FDA panel (lead)} & \textbf{Count} \\
+\midrule
+Radiology & 1104 \\
+Cardiovascular & 141 \\
+Neurology & 67 \\
+Anesthesiology & 27 \\
+Gastroenterology--Urology & 26 \\
+\bottomrule
+\end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}{AI in Research: The AlphaFold Example}
+\begin{quotebox}[A scientific success story]
+Protein-structure prediction was a longstanding problem in biology. \textcite{jumper_alphafold_2021} showed that deep learning could produce a major breakthrough.
+\end{quotebox}
+
+\vspace{0.2cm}
+\textbf{Why this matters ethically:}
+\begin{itemize}
+    \item It shows AI can genuinely accelerate science
+    \item Benefits may spill over into drug discovery and biomedical research
+    \item It strengthens the case that some AI applications create broad social value
+\end{itemize}
+
+\vspace{0.2cm}
+But scientific promise does not erase concerns about access, patenting, data control, and who can benefit from these advances.
+\end{frame}
+
+% ===== IMAGE SLIDE: CT scan =====
+\begin{frame}{Medical Imaging: A Domain Where AI Already Matters}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\begin{block}{Why Radiology Leads}
+\begin{itemize}
+  \item Images are abundant, standardized, and machine-readable
+  \item Many tasks involve classification, segmentation, and anomaly detection
+  \item Human oversight remains essential, especially in high-stakes cases
+\end{itemize}
+\end{block}
+
+\begin{alertblock}{Main Ethical Risk}
+If clinicians over-trust AI systems, error can become harder to detect rather than easier to prevent.
+\end{alertblock}
+\end{column}
+\begin{column}{0.47\textwidth}
+\begin{figure}
+\includegraphics[width=\textwidth,height=0.65\textheight,keepaspectratio]{images/ai_env_ct_scan.jpg}
+\caption*{\scriptsize First CT scan brain image. CC BY 4.0, via Wikimedia Commons.}
+\end{figure}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Risks of Medical AI}
+\begin{table}[h]
+\centering
+\scriptsize
+\begin{tabular}{@{}p{3cm}p{9cm}@{}}
+\toprule
+\textbf{Risk} & \textbf{Why it matters} \\
+\midrule
+Bias in training data & Underrepresented groups may receive worse predictions or care \\
+\addlinespace
+Opacity & Clinicians and patients may not understand why a recommendation was made \\
+\addlinespace
+Overreliance & Automation bias can reduce professional vigilance \\
+\addlinespace
+Privacy \& consent & Medical datasets are intimate and difficult to fully anonymize \\
+\addlinespace
+Access inequality & Advanced systems may benefit wealthy institutions first \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\vspace{0.2cm}
+WHO's central lesson: AI in health should be governed by human rights, public accountability, and the needs of health workers and patients, not just technical performance \parencite{who_ai_health_2021}.
+\end{frame}
+
+\begin{frame}{Diagnosis, Research, and Care Are Not the Same Problem}
+Medical AI is often discussed as if it were one thing. In practice, its ethical profile differs by domain.
+
+\vspace{0.2cm}
+\begin{table}[h]
+\centering
+\scriptsize
+\begin{tabular}{@{}p{3cm}p{3.5cm}p{4.8cm}@{}}
+\toprule
+\textbf{Domain} & \textbf{Promise} & \textbf{Main risk} \\
+\midrule
+Diagnostics & Faster or more accurate classification & Overtrust, false confidence, bias \\
+\addlinespace
+Research & Discovery, pattern-finding, protein structures & Unequal access, IP concentration \\
+\addlinespace
+Administration & Lower paperwork burden, scheduling, triage & Dehumanization, hidden errors, access barriers \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\vspace{0.2cm}
+The strongest arguments for medical AI usually concern \textbf{augmentation}. The strongest objections concern replacing professional judgment or hiding institutional scarcity behind algorithms.
+\end{frame}
+
+\begin{frame}{Case Study: Scarcity and Triage}
+Suppose a hospital uses AI to prioritize appointments, flag likely no-shows, and rank patients by risk.
+
+\vspace{0.2cm}
+\textbf{Possible benefit:}
+\begin{itemize}
+    \item Limited staff and equipment are used more efficiently
+    \item Some patients receive earlier intervention
+\end{itemize}
+
+\vspace{0.2cm}
+\textbf{Possible danger:}
+\begin{itemize}
+    \item The model may treat past under-treatment as evidence of lower need
+    \item Social disadvantage can become encoded as "lower compliance" or "higher cost"
+    \item Scarcity itself may be depoliticized: the algorithm seems objective, so no one asks why resources are insufficient
+\end{itemize}
+
+\begin{alertblock}{Key distinction}
+AI may allocate scarce care more efficiently. That is not the same thing as making the system more just.
+\end{alertblock}
+\end{frame}
+
+\begin{frame}{Thought Question: What Should Count as Success in Medical AI?}
+\begin{discussionbox}[Discussion Question]
+\scriptsize
+If a medical AI system improves average accuracy but performs noticeably worse for one vulnerable group, should it still be deployed?
+\end{discussionbox}
+
+\vspace{0.2cm}
+This question forces a choice between competing standards:
+\begin{itemize}
+    \item overall utility,
+    \item equal treatment,
+    \item protection of the worst-off,
+    \item or informed patient choice.
+\end{itemize}
+
+\vspace{0.2cm}
+Different ethical frameworks give different answers.
+\end{frame}
+
+%%% PART IV: GOVERNANCE %%%
+\section{Part IV: Good Governance}
+
+\begin{frame}{What Would Good AI Governance Mean?}
+\textbf{Good governance} means more than efficiency. Public institutions must also protect:
+\begin{itemize}
+    \item Fairness and non-discrimination
+    \item Transparency and explainability
+    \item Contestability and due process
+    \item Democratic legitimacy
+    \item Privacy and civil liberties
+\end{itemize}
+
+\vspace{0.2cm}
+The OECD AI Principles explicitly include \textbf{inclusive growth}, \textbf{human rights and democratic values}, \textbf{transparency}, \textbf{robustness}, and \textbf{accountability} \parencite{oecd_ai_principles_2024}.
+
+\vspace{0.2cm}
+\begin{discussionbox}[Discussion Question]
+\scriptsize
+Which matters more in public administration: making decisions quickly, or making them explainably and appealably? Can a government really do both well at scale?
+\end{discussionbox}
+\end{frame}
+
+\begin{frame}{AI in Government: Promise and Danger}
+\begin{columns}[T]
+\begin{column}{0.48\textwidth}
+\textbf{Potential benefits}
+\begin{itemize}
+    \item Faster public-service delivery
+    \item Fraud detection and auditing
+    \item Translation and accessibility
+    \item Better emergency planning
+\end{itemize}
+\end{column}
+\begin{column}{0.48\textwidth}
+\textbf{Risks}
+\begin{itemize}
+    \item Opaque administrative decisions
+    \item Automated exclusion from benefits
+    \item Surveillance and social sorting
+    \item Reduced human accountability
+\end{itemize}
+\end{column}
+\end{columns}
+
+\vspace{0.2cm}
+OECD notes that governments are cautious adopters precisely because public decisions affect rights, not merely convenience \parencite{oecd_ai_government_2026}.
+
+\vspace{0.2cm}
+\begin{casestudybox}[Example]
+\scriptsize
+An AI translation tool in a public-benefits office might help non-English speakers access services more effectively. But an automated risk-scoring system for benefits fraud could make exclusion faster and harder to contest.
+\end{casestudybox}
+\end{frame}
+
+% ===== IMAGE SLIDE: Parliament =====
+\begin{frame}{Governance Is a Political, Not Merely Technical, Problem}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\begin{block}{Why institutions matter}
+\begin{itemize}
+  \item AI systems used by governments should be \textbf{auditable} and \textbf{contestable}
+  \item Public-sector automation should not replace democratic responsibility
+  \item "Efficient" decisions can still be unjust, unappealable, or illegitimate
+\end{itemize}
+\end{block}
+
+\begin{alertblock}{Lesson from Eubanks}
+Automation in welfare and child-protection systems often disciplines the poor rather than solving poverty \parencite{eubanks_automating_inequality}.
+\end{alertblock}
+\end{column}
+\begin{column}{0.47\textwidth}
+\begin{figure}
+\includegraphics[width=\textwidth,height=0.65\textheight,keepaspectratio]{images/ai_env_parliament.jpg}
+\caption*{\scriptsize Scottish Parliament chamber. CC BY-SA 4.0, via Wikimedia Commons.}
+\end{figure}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{A Public-Sector Checklist}
+\begin{table}[h]
+\centering
+\scriptsize
+\begin{tabular}{@{}p{4cm}p{8cm}@{}}
+\toprule
+\textbf{Question} & \textbf{Why ask it?} \\
+\midrule
+Can citizens appeal the decision? & If not, errors become harder to correct \\
+\addlinespace
+Can the system be explained? & Public power should not hide behind black boxes \\
+\addlinespace
+Is the model audited for bias? & Unequal burdens often fall on already-vulnerable groups \\
+\addlinespace
+Is data collection proportionate? & Administrative convenience does not override rights \\
+\addlinespace
+Does human review remain meaningful? & "Human in the loop" should not be a fiction \\
+\bottomrule
+\end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}{Efficiency vs. Legitimacy}
+\begin{columns}[T]
+\begin{column}{0.48\textwidth}
+\textbf{Efficiency logic}
+\begin{itemize}
+    \item Faster decisions
+    \item Lower administrative cost
+    \item More cases processed
+    \item Uniform rule application
+\end{itemize}
+\end{column}
+\begin{column}{0.48\textwidth}
+\textbf{Legitimacy logic}
+\begin{itemize}
+    \item Citizens must be heard
+    \item Reasons must be intelligible
+    \item Errors must be reversible
+    \item Public power must remain accountable
+\end{itemize}
+\end{column}
+\end{columns}
+
+\vspace{0.2cm}
+Democratic governance cannot be reduced to throughput. A state that decides more quickly is not necessarily a state that decides more justly.
+\end{frame}
+
+\begin{frame}{A Governance Triangle}
+\begin{center}
+\begin{tikzpicture}[scale=1.0, every node/.style={font=\scriptsize, align=center}]
+    \node[draw, rounded corners, fill=boxgreen!18, minimum width=2.8cm, minimum height=1cm] (eff) at (0,2.2) {Efficiency\\speed, scale, cost};
+    \node[draw, rounded corners, fill=boxblue!18, minimum width=2.8cm, minimum height=1cm] (fair) at (-2.8,-0.4) {Fairness\\equal treatment, non-discrimination};
+    \node[draw, rounded corners, fill=boxred!18, minimum width=2.8cm, minimum height=1cm] (acc) at (2.8,-0.4) {Accountability\\explanation, appeal, responsibility};
+
+    \draw[thick] (eff) -- (fair);
+    \draw[thick] (fair) -- (acc);
+    \draw[thick] (acc) -- (eff);
+
+    \node[draw, circle, fill=boxgold!20, minimum size=1cm] at (0,0.45) {AI};
+\end{tikzpicture}
+\end{center}
+
+\vspace{0.2cm}
+Public-sector AI almost always claims to improve one corner of the triangle. The political question is what gets sacrificed when efficiency is pursued without equal attention to fairness and accountability.
+\end{frame}
+
+\begin{frame}{Why Bureaucratic AI Often Targets the Vulnerable}
+\textcite{eubanks_automating_inequality} identifies a recurring pattern:
+
+\vspace{0.2cm}
+\begin{enumerate}
+    \item Governments face scarcity, political pressure, or distrust.
+    \item They introduce automated screening, ranking, or fraud detection.
+    \item The burdens fall most heavily on those already dependent on public systems.
+    \item Automation then appears to solve a technical problem, while the underlying political problem remains intact.
+\end{enumerate}
+
+\vspace{0.2cm}
+In this sense, AI can become a technology for making exclusion look neutral.
+\end{frame}
+
+%%% PART V: POVERTY AND INEQUALITY %%%
+\section{Part V: Poverty and Global Inequality}
+
+\begin{frame}{The Optimistic Case: AI for Development}
+Advocates often argue that AI can help reduce poverty by improving:
+\begin{itemize}
+    \item Translation across language barriers
+    \item Crop and weather advice for farmers
+    \item Low-cost diagnostics
+    \item Educational tutoring and administrative access
+    \item Infrastructure planning and service delivery
+\end{itemize}
+
+\vspace{0.2cm}
+This is not empty hype. In some contexts, AI really can extend scarce expertise or improve coordination.
+
+\vspace{0.2cm}
+\begin{casestudybox}[Example]
+\scriptsize
+A mobile agricultural assistant that gives farmers localized weather alerts and crop advice may provide real value where agricultural extension services are thin. The ethical question is whether the tool strengthens local capacity or creates new dependence on outside platforms.
+\end{casestudybox}
+\end{frame}
+
+\begin{frame}{The Structural Critique}
+\textbf{But development gains depend on underlying power relations.}
+
+\vspace{0.2cm}
+\begin{itemize}
+    \item Who owns the models, cloud infrastructure, and chips?
+    \item Whose languages and contexts are represented in training data?
+    \item Which countries bear the environmental costs of extraction, energy use, and disposal?
+    \item Who captures the profits when AI systems are deployed at scale?
+\end{itemize}
+
+\vspace{0.2cm}
+\textcite{sen_development_freedom} reminds us that development is not merely GDP growth. It concerns real capabilities, agency, and freedom.
+
+\vspace{0.2cm}
+\begin{discussionbox}[Discussion Question]
+\scriptsize
+If a country gains better AI services but loses control over its data, public institutions, and technical infrastructure, has it really become more developed?
+\end{discussionbox}
+\end{frame}
+
+\begin{frame}{Current Poverty and Inequality Statistics}
+\begin{itemize}
+    \item The World Bank estimates that about \textbf{700 million people} (\textbf{8.5\%} of the global population) live in extreme poverty on less than \$2.15 per day \parencite{worldbank_poverty_planet_2024}.
+    \item About \textbf{3.5 billion people} (\textbf{44\%} of the world) live on less than \$6.85 per day \parencite{worldbank_poverty_planet_2024}.
+    \item In 2024, \textbf{Sub-Saharan Africa contained 67\%} of the world's extreme poor despite having only 16\% of the global population \parencite{worldbank_poverty_planet_2024}.
+\end{itemize}
+
+\begin{alertblock}{Implication}
+If AI development reproduces existing hierarchies of infrastructure, capital, and expertise, it is unlikely by itself to reduce global inequality.
+\end{alertblock}
+\end{frame}
+
+\begin{frame}{What "AI for Development" Often Leaves Out}
+The optimistic story usually emphasizes applications. The critical story asks about preconditions.
+
+\vspace{0.2cm}
+\begin{itemize}
+    \item Reliable electricity is still absent or unstable in many places.
+    \item Low-resource languages are underrepresented in major models.
+    \item Cloud infrastructure and frontier compute remain concentrated in a handful of firms and countries.
+    \item Local institutions may be asked to depend on proprietary systems they cannot inspect or govern.
+\end{itemize}
+
+\vspace{0.2cm}
+This means that AI can widen dependency even when it improves some services at the margin.
+\end{frame}
+
+\begin{frame}{From Poverty Reduction to Capability Expansion}
+\begin{quotebox}[Amartya Sen]
+Development is not just higher output. It is an expansion of what people are actually able to do and be.
+\end{quotebox}
+
+\vspace{0.2cm}
+Applied to AI, this shifts the question from:
+\begin{itemize}
+    \item "Does this system raise productivity?"
+\end{itemize}
+
+to:
+\begin{itemize}
+    \item Does it expand human capabilities?
+    \item Does it strengthen local agency and institutional capacity?
+    \item Does it reduce dependency, or deepen it?
+\end{itemize}
+
+\vspace{0.2cm}
+That is a better ethical test for global-development claims than raw adoption numbers.
+\end{frame}
+
+\begin{frame}{A Global Value-Flow Diagram}
+\begin{center}
+\begin{tikzpicture}[scale=0.86, every node/.style={font=\scriptsize, align=center}]
+    \node[draw, rounded corners, fill=boxgold!18, minimum width=2.8cm, minimum height=1cm] (extract) at (0,0) {Extraction \& Labor\\minerals, labeling, moderation};
+    \node[draw, rounded corners, fill=boxblue!18, minimum width=2.8cm, minimum height=1cm] (compute) at (4,0) {Compute \& Models\\cloud, chips, training};
+    \node[draw, rounded corners, fill=boxgreen!18, minimum width=2.8cm, minimum height=1cm] (capture) at (8,0) {Value Capture\\profits, patents, platform power};
+
+    \draw[->, thick] (extract) -- (compute);
+    \draw[->, thick] (compute) -- (capture);
+
+    \node[text width=2.7cm] at (0,-1.5) {Costs often concentrated in poorer regions};
+    \node[text width=2.7cm] at (4,-1.5) {Control concentrated in a few firms and states};
+    \node[text width=2.7cm] at (8,-1.5) {Benefits often captured upstream};
+\end{tikzpicture}
+\end{center}
+
+\vspace{0.2cm}
+This is the core concern behind talk of \textbf{extractive AI} or \textbf{AI colonialism}: unequal inputs, unequal control, unequal rewards.
+\end{frame}
+
+\begin{frame}{Thought Question: Development for Whom?}
+\begin{discussionbox}[Discussion Question]
+\scriptsize
+If an AI system genuinely improves service delivery in a poor country but creates long-term dependence on foreign platforms, cloud providers, and proprietary models, is that development or a new form of dependency?
+\end{discussionbox}
+
+\vspace{0.2cm}
+The answer depends on what we think matters most:
+\begin{itemize}
+    \item immediate welfare gains,
+    \item long-term institutional autonomy,
+    \item democratic control,
+    \item or distributive justice.
+\end{itemize}
+\end{frame}
+
+% ===== IMAGE SLIDE: Cobalt miners =====
+\begin{frame}{Hidden Labor and Extraction}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\begin{block}{The material underside of AI}
+\begin{itemize}
+  \item Advanced computation depends on global extractive supply chains
+  \item Mineral extraction and industrial processing are often far from where AI systems are used
+  \item The benefits of AI tend to be concentrated, while environmental and labor costs are dispersed
+\end{itemize}
+\end{block}
+
+\begin{alertblock}{Justice Question}
+Can an "AI for good" project still be unjust if it is built on exploitative labor or extractive infrastructures?
+\end{alertblock}
+\end{column}
+\begin{column}{0.47\textwidth}
+\begin{figure}
+\includegraphics[width=\textwidth,height=0.65\textheight,keepaspectratio]{images/ai_env_cobalt_miners.jpg}
+\caption*{\scriptsize Artisanal cobalt miners in the DRC. CC BY 2.5, via Wikimedia Commons.}
+\end{figure}
+\end{column}
+\end{columns}
+\end{frame}
+
+% ===== IMAGE SLIDE: E-waste =====
+\begin{frame}{The End of the Lifecycle: E-Waste and Disposal}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\begin{block}{Why disposal matters}
+\begin{itemize}
+  \item Hardware has a lifecycle; replacement creates downstream waste burdens
+  \item Recycling systems are uneven and often labor-intensive
+  \item Disposal is another point where wealthy users can offload harms onto poorer communities
+\end{itemize}
+\end{block}
+
+\textcite{crawford_atlas_ai} is useful here: AI's planetary costs do not end when the query is answered.
+\end{column}
+\begin{column}{0.47\textwidth}
+\begin{figure}
+\includegraphics[width=\textwidth,height=0.65\textheight,keepaspectratio]{images/ai_env_ewaste.jpg}
+\caption*{\scriptsize Electronic waste sorting. CC0, via Wikimedia Commons.}
+\end{figure}
+\end{column}
+\end{columns}
+\end{frame}
+
+%%% PART VI: CONCLUSION %%%
+\section{Part VI: Conclusion}
+
+\begin{frame}{A Framework for Evaluating AI's Social Impact}
+\begin{table}[h]
+\centering
+\scriptsize
+\begin{tabular}{@{}p{3.5cm}p{8.5cm}@{}}
+\toprule
+\textbf{Test} & \textbf{Question} \\
+\midrule
+Sustainability & What are the energy, water, material, and waste costs? \\
+\addlinespace
+Human benefit & Who actually gains in health, safety, knowledge, or opportunity? \\
+\addlinespace
+Legitimacy & Is the system transparent, contestable, and democratically accountable? \\
+\addlinespace
+Justice & Are benefits and burdens distributed fairly across groups and countries? \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\vspace{0.2cm}
+This framework will let us distinguish between genuinely beneficial AI applications and applications that merely shift costs onto others.
+\end{frame}
+
+\begin{frame}{The Strongest Arguments on Each Side}
+\begin{columns}[T]
+\begin{column}{0.48\textwidth}
+\begin{probox}[Why AI may be socially valuable]
+\scriptsize
+\begin{itemize}
+    \item Can improve forecasting, diagnosis, and coordination
+    \item May extend scarce expertise to underserved populations
+    \item Can accelerate scientific discovery
+    \item Sometimes helps address real collective-action problems
+\end{itemize}
+\end{probox}
+\end{column}
+\begin{column}{0.48\textwidth}
+\begin{objectionbox}[Why AI may deepen injustice]
+\scriptsize
+\begin{itemize}
+    \item Externalizes environmental and labor costs
+    \item Centralizes control over data, compute, and infrastructure
+    \item Makes exclusion and surveillance appear objective
+    \item Risks substituting technical management for political judgment
+\end{itemize}
+\end{objectionbox}
+\end{column}
+\end{columns}
+
+\vspace{0.2cm}
+The real task is not to choose simple optimism or pessimism. It is to identify which uses of AI are genuinely worth building, under what constraints, and for whose benefit.
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Key Thinkers and Concepts}
+\footnotesize
+\begin{enumerate}
+    \item \textbf{Kate Crawford} argues that AI is not immaterial intelligence but a material system built from extraction, labor, logistics, and planetary infrastructure \parencite{crawford_atlas_ai}.
+    \item \textbf{Rebound effect}: efficiency gains can coexist with higher total resource use when cheaper systems are deployed more widely.
+    \item \textbf{WHO's AI-for-health framework} emphasizes human rights, public benefit, accountability, and the needs of patients and health workers \parencite{who_ai_health_2021}.
+    \item \textbf{OECD AI Principles} identify inclusive growth, democratic values, transparency, robustness, and accountability as core norms for trustworthy AI \parencite{oecd_ai_principles_2024}.
+    \item \textbf{Virginia Eubanks} shows that automated decision systems often manage and punish the poor rather than solving poverty \parencite{eubanks_automating_inequality}.
+    \item \textbf{Safiya Umoja Noble} and \textbf{Ruha Benjamin} show that algorithmic systems can reproduce racial hierarchy while presenting themselves as neutral or objective \parencite{noble_algorithms_oppression,benjamin_race_technology}.
+    \item \textbf{Amartya Sen} argues that development should be understood in terms of capabilities and freedom, not just aggregate output \parencite{sen_development_freedom}.
+    \item \textbf{AI colonialism / extractive AI}: the pattern in which data, labor, energy, and materials are drawn from vulnerable populations while benefits and control are centralized elsewhere.
+\end{enumerate}
+
+\begin{alertblock}{?}
+If AI can simultaneously improve medicine, intensify resource use, and deepen inequality, what standards should determine when it ought to be built or deployed?
+\end{alertblock}
+\end{frame}
+
+\end{document}

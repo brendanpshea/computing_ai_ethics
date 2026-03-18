@@ -12,6 +12,7 @@ $Files = @{
     "6"="ai_ethics_06_privacy.tex"
     "7"="ai_ethics_07_ai.tex"
     "8"="ai_ethics_08_work.tex"
+    "9"="ai_ethics_09_impact.tex"
     "bib"="bibliography.tex"
 }
 
@@ -44,7 +45,7 @@ function BuildLecture([string]$Source, [string]$Num, [string]$Base) {
 Write-Host ""
 if (-not (Test-Path $OutputDir)) { New-Item -Type Directory $OutputDir | Out-Null }
 
-$list = if ($Lecture -eq "all") { @("1","2","3","4","5","6","7","8","bib") } else { @($Lecture) }
+$list = if ($Lecture -eq "all") { @("1","2","3","4","5","6","7","8","9","bib") } else { @($Lecture) }
 $ok = 0; $bad = 0
 
 foreach ($n in $list) {
