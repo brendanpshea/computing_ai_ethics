@@ -83,21 +83,18 @@ Only public domain, CC0, CC-BY, or CC-BY-SA licensed images are included.
 8. NICK BOSTROM PORTRAIT
    File: nick_bostrom.jpg
    Source: https://commons.wikimedia.org/wiki/File:Nick_Bostrom,_Stanford_2006_(square_crop).jpg
-   License: CC BY-SA 4.0 (VERIFY on Wikimedia Commons file page before use)
+   License: CC BY-SA 2.0 (verified on Wikimedia Commons file page)
    Description: Portrait of philosopher Nick Bostrom at Stanford University, 2006.
    Author of "Superintelligence: Paths, Dangers, Strategies" (2014).
-   NOTE: Verify the exact license and author on the Wikimedia Commons file page.
-   LaTeX caption: \scriptsize Nick Bostrom at Stanford, 2006. CC BY-SA 4.0, via Wikimedia Commons.
+   LaTeX caption: \scriptsize Nick Bostrom at Stanford, 2006. CC BY-SA 2.0, via Wikimedia Commons.
 
 
 9. CAMPAIGN TO STOP KILLER ROBOTS
    File: killer_robots_campaign.jpg
    Source: https://commons.wikimedia.org/wiki/File:Campaign_to_Stop_Killer_Robots.jpg
-   License: VERIFY on Wikimedia Commons file page before use.
+   License: CC BY 2.0 (verified on Wikimedia Commons file page)
    Description: Photo related to the Campaign to Stop Killer Robots advocacy effort.
-   NOTE: Must verify license is CC-BY, CC-BY-SA, CC0, or public domain before use.
-   Do NOT use if the license is CC-NC (NonCommercial) or otherwise restricted.
-   LaTeX caption: [Set after verifying license]
+   LaTeX caption: \scriptsize Campaign to Stop Killer Robots meeting, 2013. CC BY 2.0, via Wikimedia Commons.
 
 
 NOTES ON EXISTING FRACTAL IMAGES FOR TITLE SLIDE:
