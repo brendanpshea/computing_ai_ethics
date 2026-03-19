@@ -1,0 +1,107 @@
+IMAGE CREDITS - "AI and the End of the World" Chapter
+=====================================================
+All images sourced from Wikimedia Commons.
+Only public domain, CC0, CC-BY, or CC-BY-SA licensed images are included.
+
+
+1. TITLE SLIDE BACKGROUND
+   File: fractal_05.png (existing) or fractal_01.png (existing)
+   Notes: fractal_05.png has a dark, dramatic spiral pattern with a void-like
+   center that evokes apocalyptic/AI themes. fractal_01.png has dual dark
+   vortices that could also work well. Both are already in the project.
+
+
+2. MILITARY DRONE (MQ-9 Reaper)
+   File: military_drone.jpg
+   Source: https://commons.wikimedia.org/wiki/File:MQ-9_Reaper_-_090609-F-0000M-777.JPG
+   License: PUBLIC DOMAIN (U.S. Air Force photo, work of U.S. federal government)
+   Description: A U.S. Air Force MQ-9 Reaper unmanned aerial vehicle during a
+   training mission. 2,100 x 1,485 pixels.
+   Attribution: U.S. Air Force photo. Public domain via Wikimedia Commons.
+   LaTeX caption: \scriptsize MQ-9 Reaper UAV. Public domain (U.S. Air Force), via Wikimedia Commons.
+
+
+3. MUSHROOM CLOUD (Ivy King nuclear test, 1952)
+   File: mushroom_cloud.jpg
+   Source: https://commons.wikimedia.org/wiki/File:Ivy_King_-_mushroom_cloud.jpg
+   License: PUBLIC DOMAIN (U.S. Department of Energy, NNSA/NSO Photo Library)
+   Description: Mushroom cloud from the Ivy King nuclear test at Enewetak Atoll,
+   November 16, 1952. The largest pure-fission nuclear weapon ever detonated (~500 kt).
+   Attribution: NNSA/NSO Photo Library, U.S. Department of Energy. Public domain.
+   LaTeX caption: \scriptsize Ivy King nuclear test, 1952. Public domain (U.S. DOE), via Wikimedia Commons.
+
+
+4a. DOOMSDAY CLOCK (90 seconds to midnight)
+   File: doomsday_clock.png
+   Source: https://commons.wikimedia.org/wiki/File:Doomsday_clock_(1.5_minutes).svg
+   License: CC BY-SA 4.0
+   Author: Ryanicus Girraficus (Wikimedia Commons user)
+   Description: SVG illustration of the Doomsday Clock set to 90 seconds (1.5 min)
+   to midnight, the closest setting ever as of January 2023.
+   Attribution: By Ryanicus Girraficus, CC BY-SA 4.0, via Wikimedia Commons.
+   LaTeX caption: \scriptsize Doomsday Clock at 90 seconds to midnight. CC BY-SA 4.0, by Ryanicus Girraficus, via Wikimedia Commons.
+
+4b. DOOMSDAY CLOCK (100 seconds, CC0 alternative)
+   File: doomsday_clock_100sec.png
+   Source: https://commons.wikimedia.org/wiki/File:Doomsday_clock_(1.67_minutes).svg
+   License: CC0 (Public Domain Dedication)
+   Author: Ryanicus Girraficus
+   Description: Doomsday Clock at 100 seconds to midnight. CC0 = no attribution required.
+   LaTeX caption: \scriptsize Doomsday Clock at 100 seconds to midnight. CC0, via Wikimedia Commons.
+
+
+5. DOOMSDAY CLOCK HISTORICAL GRAPH
+   File: doomsday_clock_graph.png
+   Source: https://commons.wikimedia.org/wiki/File:Doomsday_Clock_graph.svg
+   License: PUBLIC DOMAIN (author grants unrestricted use)
+   Author: Fastfission (Wikimedia Commons user)
+   Description: Graph showing the Doomsday Clock's minutes-to-midnight setting
+   over the years since 1947.
+   LaTeX caption: \scriptsize Doomsday Clock historical settings. Public domain, by Fastfission, via Wikimedia Commons.
+
+
+6. BIOSAFETY SUIT (BSL-4 Laboratory)
+   File: biosafety_suit.jpg
+   Source: https://commons.wikimedia.org/wiki/File:Positive-pressure_biosafety_suit.jpg
+   License: PUBLIC DOMAIN (U.S. Government work, USAMRIID)
+   Description: Researcher wearing a positive-pressure protective suit used in
+   Biosafety Level 4 (BSL-4) laboratories for handling dangerous pathogens.
+   Attribution: USAMRIID, U.S. Army. Public domain via Wikimedia Commons.
+   LaTeX caption: \scriptsize BSL-4 positive-pressure biosafety suit. Public domain (USAMRIID), via Wikimedia Commons.
+
+
+7. BSL-4 RESEARCHER (NIAID)
+   File: bsl4_researcher.jpg
+   Source: https://commons.wikimedia.org/wiki/File:NIAID_Integrated_Research_Facility_-_Positive_Pressure_Personnel_Suit.jpg
+   License: PUBLIC DOMAIN (U.S. Government work, NIAID/NIH)
+   Description: Researcher in a positive-pressure personnel suit at the NIAID
+   Integrated Research Facility.
+   Attribution: NIAID, National Institutes of Health. Public domain via Wikimedia Commons.
+   LaTeX caption: \scriptsize NIAID researcher in BSL-4 suit. Public domain (NIAID/NIH), via Wikimedia Commons.
+
+
+8. NICK BOSTROM PORTRAIT
+   File: nick_bostrom.jpg
+   Source: https://commons.wikimedia.org/wiki/File:Nick_Bostrom,_Stanford_2006_(square_crop).jpg
+   License: CC BY-SA 4.0 (VERIFY on Wikimedia Commons file page before use)
+   Description: Portrait of philosopher Nick Bostrom at Stanford University, 2006.
+   Author of "Superintelligence: Paths, Dangers, Strategies" (2014).
+   NOTE: Verify the exact license and author on the Wikimedia Commons file page.
+   LaTeX caption: \scriptsize Nick Bostrom at Stanford, 2006. CC BY-SA 4.0, via Wikimedia Commons.
+
+
+9. CAMPAIGN TO STOP KILLER ROBOTS
+   File: killer_robots_campaign.jpg
+   Source: https://commons.wikimedia.org/wiki/File:Campaign_to_Stop_Killer_Robots.jpg
+   License: VERIFY on Wikimedia Commons file page before use.
+   Description: Photo related to the Campaign to Stop Killer Robots advocacy effort.
+   NOTE: Must verify license is CC-BY, CC-BY-SA, CC0, or public domain before use.
+   Do NOT use if the license is CC-NC (NonCommercial) or otherwise restricted.
+   LaTeX caption: [Set after verifying license]
+
+
+NOTES ON EXISTING FRACTAL IMAGES FOR TITLE SLIDE:
+- fractal_05.png: Dark spiral with void center - most dramatic/apocalyptic feel
+- fractal_01.png: Dual dark vortices - evocative of chaos/complexity
+- fractal_08.png: Dark geometric pattern with isolated shapes - could suggest fragmentation
+- Any of these could work as a title slide background for "AI and the End of the World"
