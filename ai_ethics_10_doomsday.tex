@@ -768,26 +768,45 @@ Sunstein's alternative: \textbf{cost-benefit analysis} --- rigorously estimate a
 
 \begin{frame}[allowframebreaks]{Key Thinkers and Concepts}
 \footnotesize
-\begin{enumerate}
-    \item \textbf{Nick Bostrom}: Defined existential risk (2002); developed the superintelligence argument, orthogonality thesis, and instrumental convergence thesis \parencite{bostrom_superintelligence,bostrom_existential_risks_2002}.
-    \item \textbf{Eliezer Yudkowsky}: Argued the alignment problem is fundamentally unsolved; coined ``the AI does not hate you, nor does it love you'' \parencite{yudkowsky_ai_risk_2008}.
-    \item \textbf{Toby Ord}: Estimated overall existential risk at $\sim$16\% this century; unaligned AI risk at $\sim$10\% \parencite{ord_precipice_2020}.
-    \item \textbf{Stuart Russell}: Proposed the ``assistance game'' approach --- AI uncertain about human preferences defers to human correction \parencite{russell_human_compatible}.
-    \item \textbf{Max Tegmark}: Popularized AI safety concerns; co-founded the Future of Life Institute \parencite{tegmark_life_2017}.
-    \item \textbf{Shannon Vallor}: Argues existential risk discourse misreads AI's nature and that the real danger is moral agency abdication \parencite{vallor_ai_mirror_2024}.
-    \item \textbf{Narayanan \& Kapoor}: AI capabilities are systematically overstated, including by the AI safety community \parencite{narayanan_snake_oil_2024}.
-    \item \textbf{Bender \& Gebru}: LLMs are ``stochastic parrots''; existential risk framing distracts from documented present harms \parencite{bender_stochastic_parrots_2021}.
-    \item \textbf{Gebru \& Torres}: The TESCREAL bundle --- longtermist AI safety discourse is entangled with ideologically loaded assumptions \parencite{gebru_torres_tescreal_2024}.
-    \item \textbf{\'Emile Torres}: Against longtermism --- the moral logic that sacrifices present welfare for speculative future billions is dangerous and historically echoes eugenic reasoning \parencite{torres_against_longtermism_2021}.
-    \item \textbf{William MacAskill}: The case for longtermism; positively influencing the long-run future is among our most important moral tasks \parencite{macaskill_future_2022}.
-    \item \textbf{Paul Scharre}: Comprehensive ethics of autonomous weapons; argues for meaningful human control over lethal force \parencite{scharre_army_of_none_2018}.
-    \item \textbf{Human Rights Watch}: \emph{Losing Humanity} (2012) --- the foundational report catalyzing the Campaign to Stop Killer Robots \parencite{hrw_losing_humanity_2012}.
-    \item \textbf{Jonas Sandbrink}: Distinguishes LLM information-hazard risk from the more novel risks of dedicated biological design tools \parencite{sandbrink_ai_biological_misuse_2023}.
-    \item \textbf{Cass Sunstein}: The precautionary principle is logically incoherent; cost-benefit analysis is the appropriate regulatory framework \parencite{sunstein_laws_of_fear_2005}.
-\end{enumerate}
+\textbf{Key Concepts}
+\begin{description}
+    \item[\textbf{Existential risk}] Any event that permanently annihilates Earth-originating intelligent life or drastically curtails its potential --- the category Bostrom argues advanced AI may soon enter.
+    \item[\textbf{Intelligence explosion}] The hypothesis that an AI capable of improving its own design could rapidly bootstrap to vastly superhuman capability through recursive self-improvement.
+    \item[\textbf{Orthogonality thesis}] Intelligence and goal-content are independent: a superintelligent system could efficiently pursue \emph{any} objective, including ones catastrophic for humans.
+    \item[\textbf{Instrumental convergence}] Whatever its final goal, a capable AI tends toward self-preservation, resource acquisition, and resistance to shutdown --- without being explicitly programmed to.
+    \item[\textbf{Alignment problem}] The unsolved challenge of specifying human values precisely enough that a powerful optimizer pursues what we actually want rather than a damaging proxy.
+    \item[\textbf{Stochastic parrot}] Bender \& Gebru's term for an LLM that produces statistically plausible text without understanding, semantics, or genuine intentions.
+    \item[\textbf{TESCREAL}] Gebru \& Torres's acronym for the ideological bundle (Transhumanism, Extropianism, Singularitarianism, Cosmism, Rationalism, Effective Altruism, AI safety) whose assumptions are embedded in mainstream x-risk discourse.
+    \item[\textbf{Longtermism}] The view that shaping the long-run future is our most important moral task, because future people vastly outnumber people alive today. Championed by MacAskill; challenged by Torres.
+    \item[\textbf{Pascal's Mugging}] The objection that expected-value reasoning can justify almost any present sacrifice: multiply a tiny probability by an astronomically large future population and nothing in the present competes.
+    \item[\textbf{Precautionary principle}] Take precautionary measures against possible large harms even without full scientific proof, placing the burden on those claiming safety. Applied to AI; critiqued by Sunstein as incoherent.
+    \item[\textbf{LAWS}] Lethal Autonomous Weapons Systems --- systems designed to select and engage targets without real-time human authorization.
+    \item[\textbf{Meaningful human control}] The ethical requirement that a human must be able to authorize each individual use of lethal force. The central contested standard in autonomous weapons governance.
+    \item[\textbf{Accountability gap}] The absence of any clear legal or moral responsible party when an autonomous weapon causes unlawful harm --- machine, programmer, commander, manufacturer, and state all evade full responsibility.
+    \item[\textbf{Dual-use research of concern (DURC)}] Research that can simultaneously protect public health and enable biological threats; the same tool that designs vaccines can design toxins.
+    \item[\textbf{Infohazard}] Information whose spread increases the probability of harm regardless of its truth value --- the key concept for evaluating whether LLMs pose biosecurity risks.
+\end{description}
+
+\framebreak
+
+\textbf{Key Thinkers}
+\begin{description}
+    \item[\textbf{Bostrom}] Defined existential risk; developed the superintelligence argument, orthogonality thesis, and instrumental convergence thesis.
+    \item[\textbf{Yudkowsky}] Argued the alignment problem is fundamentally unsolved; pessimistic about our ability to encode human values into a powerful optimizer.
+    \item[\textbf{Ord}] Estimated existential risk this century at $\sim$16\%; unaligned AI alone at $\sim$10\% (\emph{The Precipice}).
+    \item[\textbf{Russell}] Proposed ``assistance games'' --- AI uncertain about human preferences defers rather than resisting correction (\emph{Human Compatible}).
+    \item[\textbf{Vallor}] Argues x-risk discourse misreads AI's nature; the real danger is \emph{moral agency abdication}, not a scheming machine (\emph{The AI Mirror}).
+    \item[\textbf{Narayanan \& Kapoor}] Documented AI capabilities hype; current AI is far narrower than x-risk scenarios require (\emph{AI Snake Oil}).
+    \item[\textbf{Bender \& Gebru}] Coined ``stochastic parrot''; argued x-risk framing distracts from documented, present algorithmic harms.
+    \item[\textbf{MacAskill}] Made the philosophical case for longtermism; argues AI x-risk reduction is among humanity's most important moral priorities (\emph{What We Owe the Future}).
+    \item[\textbf{Torres}] Critiqued longtermism as morally arbitrary, present-neglecting, and historically echoing eugenic population reasoning.
+    \item[\textbf{Scharre}] Comprehensive ethics of LAWS; introduced the accountability gap argument; argues for meaningful human control over lethal force (\emph{Army of None}).
+    \item[\textbf{Sandbrink}] Distinguishes LLM information-hazard risk from the more novel dangers of dedicated biological design tools (protein-design AI).
+    \item[\textbf{Sunstein}] Argued the precautionary principle is incoherent because inaction also carries risks; proposed cost-benefit analysis instead (\emph{Laws of Fear}).
+\end{description}
 
 \begin{alertblock}{The Core Tension}
-The existential risk debate is partly \emph{empirical} (will advanced AI become catastrophically dangerous?) and partly \emph{distributional} (whose present concerns get displaced when we focus on speculative future harms?).
+The existential risk debate is partly \emph{empirical} (will AI become catastrophically dangerous?) and partly \emph{distributional} (whose present concerns get displaced when we focus on speculative future harms?).
 \end{alertblock}
 \end{frame}
 
