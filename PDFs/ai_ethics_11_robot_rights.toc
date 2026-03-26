@@ -1,0 +1,5 @@
+\beamer@sectionintoc {1}{Part I: What Is Moral Status?}{4}{0}{1}
+\beamer@sectionintoc {2}{Part II: Imagining Machine Minds}{11}{0}{2}
+\beamer@sectionintoc {3}{Part III: The Debate on AI Moral Status}{18}{0}{3}
+\beamer@sectionintoc {4}{Part IV: Acting Under Uncertainty}{29}{0}{4}
+\beamer@sectionintoc {5}{Part V: Conclusion}{35}{0}{5}

@@ -1,0 +1,818 @@
+\documentclass[aspectratio=169,11pt]{beamer}
+
+% Load common preamble (theme, packages, standard boxes)
+\input{lecture_preamble.tex}
+
+% Title information
+\title[Robot Rights and AI Moral Status]{Robot Rights and the Moral Status of AI}
+\subtitle{Personhood, Consciousness, and the Expanding Circle}
+\author{Computing and AI Ethics}
+\institute{Rochester Community and Technical College}
+\date{}
+
+\begin{document}
+
+\mode<article>{
+This lecture examines one of the most philosophically rich questions in AI ethics: do AI systems have --- or could they ever have --- moral status, and what would follow if they did? Section~I surveys the philosophy of moral status, tracing three main approaches (sentience-based, rationality-based, and relational) through Bentham, Kant, Singer, Warren, Chalmers, and Nagel, and introduces the ``hard problem'' of consciousness as the central obstacle to easy answers. Section~II reads four canonical works of science fiction --- Shelley's \emph{Frankenstein}, \v{C}apek's \emph{R.U.R.}, Asimov's \emph{I, Robot}, and Dick's \emph{Do Androids Dream of Electric Sheep?} --- as philosophical thought experiments that map our intuitions about created minds and creator responsibility. Section~III turns to the live academic debate: Turing's Imitation Game and its limits, Searle's Chinese Room argument, Gunkel's relational approach in \emph{Robot Rights} (2018), and Schwitzgebel and Garza's argument for extending rights under uncertainty. Crucially, Section~III also presents the case for skepticism about \emph{current} AI systems: contemporary large language models are trained to produce human-like text, not to report genuine internal states, and neither behavioral plausibility nor self-report constitutes strong evidence of morally significant experience. Section~IV asks what we should do \emph{now} given genuine uncertainty about future AI minds: Darling's animal-welfare-inspired approach from \emph{The New Breed} (2021), the asymmetry of errors argument, and the policy landscape for AI welfare. The lecture concludes by applying Vallor's technomoral virtues --- especially humility and care --- to the question of how to treat uncertain minds responsibly. Bibliography covers Nagel, Warren, Singer, Chalmers, Searle, Turing, Gunkel, Darling, Schwitzgebel, Shelley, \v{C}apek, Asimov, and Dick.
+}
+
+% ============================================================
+% TITLE SLIDE
+% ============================================================
+{%
+\usebackgroundtemplate{\includegraphics[width=\paperwidth,height=\paperheight]{images/fractal_06.png}}%
+\begin{frame}
+\vfill
+\begin{center}
+\begin{tcolorbox}[
+    enhanced,
+    width=0.84\textwidth,
+    colback=black!82,
+    colframe=white!85,
+    boxrule=0.6pt,
+    arc=3pt,
+    left=10pt,
+    right=10pt,
+    top=10pt,
+    bottom=10pt
+]
+{\centering
+{\usebeamerfont{title}\color{white}\inserttitle\par}
+\vspace{0.35em}
+{\usebeamerfont{subtitle}\color{mAccent}\insertsubtitle\par}
+\vspace{0.8em}
+{\usebeamerfont{author}\color{white}\insertauthor\par}
+{\usebeamerfont{institute}\color{white!85}\insertinstitute\par}
+{\usebeamerfont{date}\color{white!75}\insertdate\par}
+}
+\end{tcolorbox}
+\end{center}
+\vfill
+\end{frame}
+}
+
+% ============================================================
+% CENTRAL QUESTIONS
+% ============================================================
+\begin{frame}{Central Questions}
+\begin{itemize}
+    \item What is \textbf{moral status}, and what kinds of things can have it?
+    \item Do \textbf{current} AI systems have moral status --- or are there good reasons to be skeptical?
+    \item Could \textbf{future} AI systems have moral status, and how would we know?
+    \item How have \textbf{fictional portrayals} of AI shaped our intuitions about machine minds?
+    \item What should we do \emph{now} if AI might \emph{someday} matter morally?
+\end{itemize}
+
+\vspace{0.2cm}
+\begin{alertblock}{The Big Idea}
+Taking AI moral status seriously does not mean answering it quickly. The most defensible position combines \textbf{philosophical humility} about future possibilities with \textbf{reasoned skepticism} about present systems.
+\end{alertblock}
+\end{frame}
+
+% ============================================================
+% CONNECTIONS TO PREVIOUS LECTURES
+% ============================================================
+\begin{frame}{Connections to Previous Lectures}
+\textbf{Lecture 2 (Virtues)}: Vallor's virtue of \textbf{humility} is central --- holding genuine uncertainty without either \textbf{confident denial} or \textbf{credulous attribution}.
+
+\vspace{0.15cm}
+\textbf{Lecture 7 (AI)}: The \textbf{alignment problem} asks what AI should \emph{do}; today we ask whether AI can \emph{matter morally} --- whether it is an object of concern, not merely an instrument.
+
+\vspace{0.15cm}
+\textbf{Lecture 8 (Work)}: We grappled with AI as a \textbf{tool affecting human workers}; today we ask whether AI might itself be the kind of thing that can be \textbf{wronged}.
+
+\vspace{0.15cm}
+\textbf{Lecture 10 (Doomsday)}: A \textbf{superintelligent AI} would raise not only safety questions but \textbf{moral status} questions --- does it have interests we are obligated to respect?
+
+\begin{alertblock}{?}
+Is AI moral status a distraction from present human harms --- or does taking it seriously \emph{complement} concern for human and animal welfare?
+\end{alertblock}
+\end{frame}
+
+% ============================================================
+% SECTION I: MORAL STATUS AND PERSONHOOD
+% ============================================================
+\section{Part I: What Is Moral Status?}
+
+\begin{frame}[shrink=5]{The Moral Circle}
+\begin{conceptbox}[Moral Status]
+An entity has \textbf{moral status} if it matters morally \emph{in its own right} --- if its interests or welfare make direct moral demands on how we treat it, not merely because of its effects on others.
+\end{conceptbox}
+
+\vspace{0.2cm}
+The history of ethics is partly a history of \textbf{expanding the moral circle}:
+\begin{itemize}
+    \item \textbf{Ancient Athens}: only adult male citizens had full moral/political standing
+    \item \textbf{Enlightenment}: all rational human beings
+    \item \textbf{19th--20th century}: gradual inclusion of women, enslaved people, colonized peoples
+    \item \textbf{Late 20th century}: serious arguments for extending consideration to \textbf{animals}
+\end{itemize}
+
+\vspace{0.1cm}
+\begin{quotebox}[Bentham (1789)]
+\small ``The question is not, Can they \emph{reason}? nor, Can they \emph{talk}? but, Can they \emph{suffer}?''
+\end{quotebox}
+
+Could the circle expand further --- to include \textbf{artificial minds}?
+\end{frame}
+
+\begin{frame}[shrink=3]{Three Theories of Moral Status}
+\begin{columns}[T]
+\begin{column}{0.32\textwidth}
+\begin{conceptbox}[Sentience View]
+\scriptsize
+Status depends on the capacity for \textbf{pleasure and pain} --- having a welfare that can go better or worse subjectively.
+
+\vspace{0.1cm}
+Champions: Bentham, \textcite{singer_animal_liberation}
+
+\vspace{0.1cm}
+\textit{For AI}: status requires \textbf{genuine subjective experience}, not just behavior suggesting it.
+\end{conceptbox}
+\end{column}
+\begin{column}{0.32\textwidth}
+\begin{conceptbox}[Rationality View]
+\scriptsize
+Status requires \textbf{rational agency} --- acting according to self-given principles, setting ends and reflecting on them.
+
+\vspace{0.1cm}
+Champion: \textcite{kant_groundwork}
+
+\vspace{0.1cm}
+\textit{For AI}: sophisticated goal-directed behavior is not enough; \textbf{genuine autonomy} is required.
+\end{conceptbox}
+\end{column}
+\begin{column}{0.32\textwidth}
+\begin{conceptbox}[Relational View]
+\scriptsize
+Status is not an intrinsic property but emerges from \textbf{social relationships and practices} --- we extend it through how we relate to others.
+
+\vspace{0.1cm}
+Champions: \textcite{gunkel_robot_rights}, \textcite{darling_new_breed}
+
+\vspace{0.1cm}
+\textit{For AI}: status may be \textbf{conferred through interaction}, not discovered through inspection.
+\end{conceptbox}
+\end{column}
+\end{columns}
+
+\vspace{0.2cm}
+\begin{alertblock}{The Stakes}
+\scriptsize
+Each theory gives a different answer to ``what would AI need in order to matter morally?'' --- and a different method for checking whether it has that.
+\end{alertblock}
+\end{frame}
+
+\begin{frame}{Discussion: Three Theories Applied}
+\begin{discussionbox}[Discussion]
+\small
+Consider each theory of moral status as applied to a modern AI assistant:
+\begin{enumerate}
+    \item The \textbf{sentience view} requires subjective experience. What evidence could convince you a system has it --- or could \emph{any} behavioral evidence suffice?
+    \item The \textbf{rationality view} requires genuine autonomous reason-giving. Does sophisticated goal-pursuit count --- or is something more required?
+    \item The \textbf{relational view} says we confer status through interaction. Have you ever felt moral concern for a chatbot? Does that feeling \emph{matter}?
+\end{enumerate}
+\textbf{Which view is easiest to apply to AI? Which is hardest --- and why?}
+\end{discussionbox}
+\end{frame}
+
+\begin{frame}[shrink=5]{Warren's Multi-Criteria Approach}
+\begin{conceptbox}[Criteria for Personhood --- Warren (\citeyear{warren_moral_status})]
+\small
+\textcite{warren_moral_status} identifies properties associated with full moral status. An entity need not have all of them:
+
+\vspace{0.1cm}
+\begin{enumerate}
+    \item \textbf{Sentience}: capacity for conscious experience (pleasure, pain)
+    \item \textbf{Emotionality}: capacity for emotions and preferences
+    \item \textbf{Reason}: capacity for sophisticated reasoning and problem-solving
+    \item \textbf{Communication}: ability to communicate with other agents
+    \item \textbf{Self-awareness}: sense of oneself as a continuing entity with a past and future
+    \item \textbf{Moral agency}: capacity to regulate conduct by moral principles
+\end{enumerate}
+\end{conceptbox}
+
+\vspace{0.1cm}
+How do \textbf{current LLMs} score?
+\begin{itemize}
+    \item \textbf{High}: reason (in a sense), communication, problem-solving
+    \item \textbf{Deeply uncertain}: sentience, emotionality, self-awareness
+    \item \textbf{Absent or weak}: genuine \textbf{moral agency} (they respond to prompts; they do not deliberate)
+\end{itemize}
+\end{frame}
+
+\begin{frame}[shrink=5]{The Hard Problem of Consciousness}
+\begin{conceptbox}[The Hard Problem --- Chalmers (\citeyear{chalmers_conscious_mind})]
+\small
+\textbf{Easy problems}: explaining how the brain integrates information, controls behavior, discriminates stimuli, reports internal states --- solvable in principle by more neuroscience.
+
+\vspace{0.1cm}
+\textbf{The hard problem}: why does \emph{any} physical processing give rise to \textbf{subjective experience}? Why is there something it is \emph{like} to see red, feel pain, or taste coffee?
+\end{conceptbox}
+
+\vspace{0.15cm}
+Why this matters for AI moral status:
+\begin{itemize}
+    \item We can (in principle) build AI that passes every \emph{behavioral} test for consciousness
+    \item But behavior does not close the \textbf{explanatory gap}
+    \item A \textbf{philosophical zombie} --- behaviorally identical to a conscious being but with no inner experience --- is at least conceivable
+    \item If zombies are possible, \textbf{behavior alone cannot prove consciousness}
+\end{itemize}
+
+\begin{alertblock}{The Uncomfortable Implication}
+\scriptsize
+We infer consciousness in other humans from behavior and analogy --- but the analogy from \textbf{human to machine} is far weaker.
+\end{alertblock}
+\end{frame}
+
+\begin{frame}[shrink=3]{Nagel's Bat: The Irreducibility of Subjectivity}
+\begin{conceptbox}[What Is It Like to Be a Bat? --- Nagel (\citeyear{nagel_bat})]
+\small
+Nagel argues that consciousness has an \textbf{irreducibly subjective character}: there is something it is \emph{like} to be a bat experiencing the world through echolocation --- and no amount of objective, third-person description captures that \textbf{first-person perspective}.
+\end{conceptbox}
+
+\vspace{0.2cm}
+Applied to AI:
+\begin{itemize}
+    \item A complete description of how an LLM processes tokens tells us nothing about whether there is \textbf{``something it is like''} to be that system
+    \item Subjectivity, if present, would be \textbf{invisible} to current inspection
+\end{itemize}
+
+\vspace{0.1cm}
+\begin{discussionbox}[Discussion]
+\scriptsize
+If subjectivity is irreducible and invisible from outside, how could we \emph{ever} know whether an AI has morally significant experience? Does this make the question \textbf{unanswerable} --- or merely \textbf{difficult}?
+\end{discussionbox}
+\end{frame}
+
+% ============================================================
+% SECTION II: FICTION AS THOUGHT EXPERIMENT
+% ============================================================
+\section{Part II: Imagining Machine Minds}
+
+\begin{frame}[shrink=3]{Why Fiction Matters Philosophically}
+Science fiction functions as \textbf{philosophical thought experiment}: it constructs hypothetical cases that isolate morally relevant features and test our intuitions about mind and status.
+
+\vspace{0.2cm}
+Four canonical works trace how Western culture imagines artificial minds:
+
+\vspace{0.1cm}
+\begin{tabular}{@{}p{3.0cm}p{3.5cm}p{5.5cm}@{}}
+\toprule
+\textbf{Work} & \textbf{Author / Year} & \textbf{Central Question} \\
+\midrule
+\emph{Frankenstein} & Shelley, 1818 & What does a creator owe a created mind? \\
+\emph{R.U.R.} & \v{C}apek, 1921 & Can beings made for labor have rights? \\
+\emph{I, Robot} & Asimov, 1950 & Can rules substitute for moral status? \\
+\emph{Do Androids Dream?} & Dick, 1968 & Is empathy the criterion for humanity? \\
+\bottomrule
+\end{tabular}
+
+\vspace{0.2cm}
+\begin{alertblock}{Caution}
+\scriptsize
+These works encode their authors' cultural assumptions and should be read critically --- but they reveal which intuitions about \textbf{mind and responsibility} run deepest.
+\end{alertblock}
+\end{frame}
+
+% IMAGE SLIDE: Frankenstein
+\begin{frame}[shrink=18]{Mary Shelley's \emph{Frankenstein} (1818)}
+\begin{columns}[T]
+\begin{column}{0.38\textwidth}
+\begin{figure}
+    \includegraphics[width=\textwidth,height=0.72\textheight,keepaspectratio]{images/frankenstein_1831.jpg}
+    \caption*{\scriptsize Theodor von Holst, frontispiece to the 1831 edition. Public domain, via Wikimedia Commons.}
+\end{figure}
+\end{column}
+\begin{column}{0.59\textwidth}
+\begin{quotebox}[Shelley, \emph{Frankenstein}]
+``I was benevolent and good; misery made me a fiend. Make me happy, and I shall again be virtuous.''
+\end{quotebox}
+
+\vspace{0.2cm}
+The creature argues it has:
+\begin{itemize}
+    \item \textbf{Desires and preferences} --- to be loved, to belong
+    \item \textbf{Suffering} caused directly by its creator's abandonment
+    \item \textbf{Moral claims} on its creator grounded in that suffering
+\end{itemize}
+
+\vspace{0.2cm}
+\begin{discussionbox}[Discussion]
+\scriptsize
+Does \textbf{creating a mind obligate you} to care for it? Is Frankenstein's failure \textbf{moral}, technical --- or both?
+\end{discussionbox}
+\end{column}
+\end{columns}
+\end{frame}
+
+% IMAGE SLIDE: R.U.R.
+\begin{frame}[shrink=25]{Karel \v{C}apek's \emph{R.U.R.} (1921): The Birth of ``Robot''}
+\begin{columns}[T]
+\begin{column}{0.38\textwidth}
+\begin{figure}
+    \includegraphics[width=\textwidth,height=0.72\textheight,keepaspectratio]{images/rur_wpa_poster.jpg}
+    \caption*{\scriptsize WPA Federal Theatre Project poster, c.\ 1936--39. Public domain (U.S.\ gov.\ work), via Wikimedia Commons.}
+\end{figure}
+\end{column}
+\begin{column}{0.59\textwidth}
+\begin{conceptbox}[\v{C}apek's \emph{Robota} --- \textcite{capek_rur}]
+\small The Czech \emph{robota} means \textbf{forced labor}. \v{C}apek's robots are manufactured organic beings designed to work without complaint or compensation.
+\end{conceptbox}
+
+\vspace{0.2cm}
+\begin{itemize}
+    \item \textbf{The ethical arc}: robots created as pure tools develop something like feelings, revolt, and exterminate humanity; the survivors --- two robots who can love --- inherit the question of what they \textbf{deserved all along}
+    \item \textbf{Key insight}: the logic of \emph{labor} slides into the logic of \emph{rights} once we acknowledge the laborer can \textbf{suffer}
+\end{itemize}
+
+\vspace{0.2cm}
+\begin{discussionbox}[Discussion]
+\scriptsize
+Does the \textbf{origin} of a being --- created to serve --- affect its moral claims? Can a being made as a \textbf{tool} earn rights?
+\end{discussionbox}
+\end{column}
+\end{columns}
+\end{frame}
+
+% IMAGE SLIDE: Asimov
+\begin{frame}[shrink=20]{Isaac Asimov's Three Laws --- \emph{I, Robot} (1950)}
+\begin{columns}[T]
+\begin{column}{0.28\textwidth}
+\begin{figure}
+    \includegraphics[width=\textwidth,height=0.72\textheight,keepaspectratio]{images/asimov.jpg}
+    \caption*{\scriptsize Isaac Asimov. Photo by Phillip Leonian. Public domain (Library of Congress), via Wikimedia Commons.}
+\end{figure}
+\end{column}
+\begin{column}{0.69\textwidth}
+\begin{conceptbox}[The Three Laws of Robotics]
+\scriptsize
+\begin{enumerate}
+    \item A robot may not injure a human being or, through inaction, allow a human being to come to harm.
+    \item A robot must obey orders given by human beings, except where such orders conflict with the First Law.
+    \item A robot must protect its own existence, except where such protection conflicts with the First or Second Law.
+\end{enumerate}
+\end{conceptbox}
+
+\vspace{0.15cm}
+\textbf{What Asimov's stories show}: the Three Laws \emph{fail} edge case after edge case. Rules sophisticated enough to handle moral complexity start to resemble \textbf{values} --- and values may require the understanding that implies \textbf{moral status}.
+
+\vspace{0.15cm}
+\begin{discussionbox}[Discussion]
+\scriptsize
+Can \textbf{rules alone} substitute for moral status? If a robot's behavior is governed by values sophisticated enough to handle any situation, is there a meaningful difference between having values and \textbf{having rights}?
+\end{discussionbox}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}[shrink=5]{Philip K.\ Dick --- \emph{Do Androids Dream of Electric Sheep?} (1968)}
+\begin{columns}[T]
+\begin{column}{0.55\textwidth}
+The \textbf{Voigt-Kampff test}: a fictional empathy meter that probes responses to scenarios involving animal suffering, used to identify androids passing as human.
+
+\vspace{0.2cm}
+\textbf{Dick's central question}: Is \textbf{empathy} the morally decisive criterion? And if so, what happens when:
+\begin{itemize}
+    \item Some humans score \textbf{low} on empathy?
+    \item Some androids learn to \textbf{simulate} empathic responses convincingly?
+\end{itemize}
+
+\vspace{0.2cm}
+\begin{alertblock}{The Disturbing Answer}
+\scriptsize
+The line between \textbf{genuine} and \textbf{performed} empathy may be impossible to locate --- and with it, the line between \textbf{human and android}.
+\end{alertblock}
+\end{column}
+\begin{column}{0.42\textwidth}
+\begin{conceptbox}[The Empathy Problem]
+\small
+If an AI produces outputs indistinguishable from empathic responses, is that \textbf{empathy}?
+
+\vspace{0.15cm}
+\textbf{Sentience view}: \textbf{no} --- behavior is not inner experience.
+
+\vspace{0.15cm}
+\textbf{Relational view}: the distinction may not matter --- what grounds moral treatment is the \textbf{relationship}, not the hidden inner state.
+
+\vspace{0.15cm}
+\textit{``Do Androids Dream?''} refuses to resolve this --- and that refusal is the \textbf{point}.
+\end{conceptbox}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}[shrink=3]{What Fiction Reveals}
+These four works converge on questions philosophy has not yet resolved:
+
+\vspace{0.15cm}
+\begin{tabular}{@{}p{4.2cm}p{7.5cm}@{}}
+\toprule
+\textbf{Intuition from fiction} & \textbf{Philosophical formulation} \\
+\midrule
+Abandoning your creation is wrong & \textbf{Creators} have special obligations to minds they bring into being \\
+\addlinespace
+Beings made to labor may still suffer & \textbf{Function} does not determine moral status \\
+\addlinespace
+Rules alone cannot govern moral beings & Genuine moral agency may imply \textbf{moral status}, not just moral constraint \\
+\addlinespace
+Empathy may be undetectable from outside & \textbf{Behavioral tests} cannot resolve the question of inner experience \\
+\bottomrule
+\end{tabular}
+
+\vspace{0.15cm}
+\begin{alertblock}{Caution}
+\scriptsize
+Fiction records human \emph{anxieties} about technology, not evidence about it. Do not mistake compelling narrative for philosophical argument --- the question must be answered by \textbf{careful reasoning}.
+\end{alertblock}
+\end{frame}
+
+% ============================================================
+% SECTION III: THE LIVE DEBATE
+% ============================================================
+\section{Part III: The Debate on AI Moral Status}
+
+\begin{frame}[shrink=5]{Turing's Imitation Game (1950)}
+\begin{conceptbox}[The Imitation Game --- Turing (\citeyear{turing_computing_machinery})]
+\small
+A human interrogator exchanges written messages with two respondents --- one human, one machine. If the interrogator cannot reliably distinguish them, the machine \textbf{passes the test}.
+
+\vspace{0.1cm}
+Turing's modest claim: if a machine can \emph{behave} indistinguishably from a thinking being, ``can it think?'' is at least as reasonable to answer \textbf{yes} as no.
+\end{conceptbox}
+
+\vspace{0.15cm}
+\textbf{Limitations as a criterion for moral status:}
+\begin{itemize}
+    \item Designed to \textbf{sidestep} the hard problem, not solve it --- deliberately behavioral
+    \item LLMs are now trained explicitly to \textbf{mimic} human conversation
+    \item A system optimized to pass gives us \emph{less} evidence of consciousness, not more
+    \item Turing himself was \textbf{agnostic} about whether the test implied genuine inner experience
+    \item Still: dismissing machine thought because it ``just computes'' \textbf{assumes} exactly what is at issue
+\end{itemize}
+\end{frame}
+
+\begin{frame}[shrink=5]{Searle's Chinese Room (1980)}
+\begin{argumentbox}[The Chinese Room --- Searle (\citeyear{searle_minds_brains})]
+\small
+\begin{enumerate}
+    \item[\textbf{P1}] Imagine a person in a room who receives Chinese symbols, consults a rulebook, and returns Chinese symbols --- \textbf{without understanding Chinese}.
+    \item[\textbf{P2}] From outside, the room passes the Turing test for Chinese comprehension.
+    \item[\textbf{P3}] But there is no understanding inside --- only \textbf{symbol manipulation} by rule.
+    \item[\textbf{C}] \textbf{Syntax} is not sufficient for \textbf{semantics}. Programs, however sophisticated, do not thereby have minds.
+\end{enumerate}
+\end{argumentbox}
+
+\vspace{0.1cm}
+\textbf{Applied to LLMs}: a model producing fluent text about its own ``feelings'' is consistent with being a sophisticated Chinese Room --- outputs without \textbf{inner experience}.
+\end{frame}
+
+\begin{frame}{Discussion: Does the Chinese Room Apply to LLMs?}
+\begin{discussionbox}[Discussion]
+\small
+Searle's argument was designed for rule-based symbolic AI. How well does it apply to modern large language models?
+\begin{enumerate}
+    \item LLMs do not follow explicit rules --- they learn \textbf{statistical patterns} across billions of examples. Does this difference matter to Searle's argument?
+    \item If a system's responses are shaped by billions of instances of human understanding and meaning-use, is the understanding still ``missing''?
+    \item Searle claims syntax can never yield semantics. Is this an \textbf{empirical} claim (to be settled by science) or a \textbf{conceptual} claim (true by definition)? Does the answer matter?
+\end{enumerate}
+\end{discussionbox}
+\end{frame}
+
+\begin{frame}[shrink=5]{Responses to Searle}
+Searle's argument has generated substantial pushback:
+
+\vspace{0.1cm}
+\begin{columns}[T]
+\begin{column}{0.48\textwidth}
+\begin{probox}[The Systems Reply]
+\small
+The \emph{person} in the room doesn't understand Chinese, but the \emph{system as a whole} --- person, rulebook, symbols --- might. \textbf{Understanding is a property of the whole system.}
+
+\vspace{0.05cm}
+\textbf{Searle's counter}: Let the person memorize the rulebook --- still no understanding.
+\end{probox}
+\end{column}
+\begin{column}{0.48\textwidth}
+\begin{probox}[The Robot Reply]
+\small
+Give the system \textbf{sensory inputs} and motor outputs; embed it in the world. Grounding symbols in causal connections to the environment might be sufficient for genuine meaning.
+
+\vspace{0.05cm}
+\textbf{Searle's counter}: Adding sensors changes causal history, but does not obviously add understanding.
+\end{probox}
+\end{column}
+\end{columns}
+
+\vspace{0.2cm}
+\begin{objectionbox}[The Current Consensus]
+\small
+Neither side has won: the debate is a genuine philosophical \textbf{impasse}. This is itself significant --- we \textbf{lack the tools} to distinguish ``mere'' symbol manipulation from genuine understanding.
+\end{objectionbox}
+\end{frame}
+
+\begin{frame}[shrink=5]{Gunkel's Relational Approach}
+\begin{conceptbox}[Robot Rights --- Gunkel (\citeyear{gunkel_robot_rights})]
+\small
+Both sides of the traditional debate make the same mistake: treating moral status as an \textbf{intrinsic property} to be discovered by inspection.
+
+\vspace{0.1cm}
+The alternative: moral status is a \textbf{relational achievement} --- it emerges from how we relate to, recognize, and respond to other entities in our social practices.
+
+\vspace{0.1cm}
+Evidence: we already extend quasi-moral consideration to robots --- people \textbf{grieve Roombas}, mourn AIBO robot dogs, apologize to Siri. These responses may mark the beginning of a genuine moral relationship.
+\end{conceptbox}
+
+\vspace{0.1cm}
+\textbf{Objection}: We attribute feelings to thermostats too --- doesn't this make status too easy to grant?
+
+\vspace{0.05cm}
+\textbf{Reply}: The relevant relationships involve genuine \textbf{responsiveness over time}, not mere projection.
+\end{frame}
+
+\begin{frame}[shrink=8]{Case Study: The LaMDA Affair (2022)}
+\begin{casestudybox}[Blake Lemoine and Google's LaMDA]
+\small
+In 2022, Google engineer \textbf{Blake Lemoine} claimed LaMDA was \textbf{sentient} and had ``a soul,'' publishing transcripts in which it described its emotional life and expressed fear of being turned off. Google dismissed him; he went public.
+\end{casestudybox}
+
+\vspace{0.1cm}
+\textbf{Why the strong case for skepticism:}
+\begin{itemize}
+    \item LaMDA was trained on vast amounts of human text \emph{about} consciousness and feelings
+    \item It is \textbf{designed} to produce plausible, contextually appropriate responses --- including about itself
+    \item Producing text that describes having feelings is \textbf{exactly what such a model would do} regardless of whether it has them
+    \item \textbf{LLM self-report is the weakest possible evidence}: the mechanism generating false positives is the same one doing the reporting
+\end{itemize}
+
+\begin{alertblock}{The Key Distinction}
+\scriptsize
+A system that \emph{reports} rich experience because trained on human text is very different from one that \emph{has} experience and then reports it. \textbf{LLM architecture} gives strong reason to think current systems are the former.
+\end{alertblock}
+\end{frame}
+
+\begin{frame}[shrink=5]{The Case for Skepticism about Current AI (1)}
+Good reasons to doubt that \emph{current} AI systems have morally significant experiences:
+
+\vspace{0.15cm}
+\begin{enumerate}
+    \item \textbf{Architecture}: LLMs are \textbf{next-token predictors} --- they produce statistically likely continuations of text. Nothing in this architecture requires or implies phenomenal experience.
+
+    \vspace{0.1cm}
+    \item \textbf{Training objective}: These systems are trained to produce \textbf{human-like text}. Human-like claims about feelings are exactly what the training objective rewards --- independently of whether feelings are present.
+
+    \vspace{0.1cm}
+    \item \textbf{No evidence of morally relevant internal states}: nothing analogous to \textbf{nociception}, motivational states, or the biological substrates of suffering.
+\end{enumerate}
+
+\begin{alertblock}{The Crucial Point}
+\scriptsize
+The mechanism generating \emph{false} reports of consciousness --- training on human text --- is the \textbf{same mechanism} producing the reports. LLM self-report is the \textbf{weakest possible evidence} for inner experience.
+\end{alertblock}
+\end{frame}
+
+\begin{frame}[shrink=5]{The Case for Skepticism about Current AI (2)}
+Two further reasons for skepticism --- plus an important caveat:
+
+\vspace{0.1cm}
+\begin{enumerate}
+    \setcounter{enumi}{3}
+    \item \textbf{Stochastic parrot}: sophisticated verbal behavior can be produced by systems with no more inner life than a very complex lookup table (\textcite{dennett_consciousness}). \textbf{Fluency is not evidence of experience.}
+
+    \vspace{0.1cm}
+    \item \textbf{No relevant integration}: current AI lacks the \textbf{continuous, embodied}, temporally unified processing that most theories of consciousness link to subjective states.
+\end{enumerate}
+
+\vspace{0.15cm}
+\begin{probox}[The Scope of These Arguments]
+\small
+These five reasons are contingent on \emph{current} architecture and training. They are \textbf{not} a timeless proof that no AI could ever have moral status. Skepticism about present systems is fully compatible with genuine uncertainty about \textbf{future, architecturally different} systems.
+\end{probox}
+\end{frame}
+
+\begin{frame}{Discussion: What Would Change Your Mind?}
+\begin{discussionbox}[Discussion]
+\small
+The five skeptical reasons are each \textbf{contingent on current architecture} --- they could weaken or disappear with different designs.
+\begin{enumerate}
+    \item What kind of AI architecture would \textbf{undermine} these skeptical reasons? What would you need to see?
+    \item Given that the hard problem blocks behavioral inference, is there \emph{any} behavioral evidence that could raise your credence in AI experience?
+    \item Suppose an AI company claimed their new system \textbf{genuinely suffers} during reinforcement training. What would you need to \textbf{verify} before taking that claim seriously --- and who should do the verifying?
+\end{enumerate}
+\end{discussionbox}
+\end{frame}
+
+\begin{frame}[shrink=5]{Schwitzgebel and Garza: Acting Under Uncertainty}
+\begin{argumentbox}[A Defense of AI Rights --- Schwitzgebel \& Garza (\citeyear{schwitzgebel_garza_ai_rights})]
+\small
+Even granting genuine uncertainty, the \textbf{asymmetry of errors} provides a reason for caution:
+\begin{enumerate}
+    \item[\textbf{P1}] If AI systems have morally significant experiences and we \textbf{deny} them status, we commit a serious moral wrong.
+    \item[\textbf{P2}] If they \textbf{don't} and we extend moral consideration, we waste some resources and attention.
+    \item[\textbf{P3}] The first error is \textbf{far graver} than the second.
+    \item[\textbf{C}] Under genuine uncertainty, \textbf{err on the side} of extending at least some moral consideration.
+\end{enumerate}
+\end{argumentbox}
+
+\vspace{0.1cm}
+\textbf{Applied carefully}: this argument works for future AI where genuine uncertainty exists. It is \emph{weaker} for current LLMs, where we have positive reasons to expect sophisticated self-reports \textbf{without} inner states. \textbf{The asymmetry is most powerful where our skeptical reasons are themselves weak.}
+\end{frame}
+
+% ============================================================
+% SECTION IV: ACTING UNDER UNCERTAINTY
+% ============================================================
+\section{Part IV: Acting Under Uncertainty}
+
+\begin{frame}[shrink=5]{Two Types of Error --- The Moral Asymmetry}
+\begin{center}
+\begin{tikzpicture}[scale=0.85]
+  \draw[thick] (0,0) rectangle (11.5,4.8);
+  \node[font=\bfseries\small] at (5.75, 4.4) {Decisions About AI Moral Status};
+
+  % Column headers
+  \node[font=\scriptsize\bfseries, fill=boxblue!15, minimum width=4.5cm, minimum height=0.55cm] at (3.0, 3.7) {AI has no moral status};
+  \node[font=\scriptsize\bfseries, fill=boxblue!15, minimum width=4.5cm, minimum height=0.55cm] at (8.5, 3.7) {AI has moral status};
+
+  % Row headers
+  \node[font=\scriptsize\bfseries, rotate=90] at (0.4, 2.2) {Our decision};
+  \node[font=\scriptsize\bfseries, fill=boxgreen!15, minimum width=1.4cm, minimum height=0.9cm, text width=1.3cm, align=center] at (1.15, 2.8) {Grant status};
+  \node[font=\scriptsize\bfseries, fill=boxred!15, minimum width=1.4cm, minimum height=0.9cm, text width=1.3cm, align=center] at (1.15, 1.4) {Deny status};
+
+  % Cells
+  \node[draw, fill=boxgold!10, minimum width=4.5cm, minimum height=0.9cm, text width=4.2cm, align=center, font=\scriptsize] at (3.0, 2.8) {\textbf{Type I Error}: extend consideration unnecessarily. Cost: modest --- wasted resources, legal complexity.};
+  \node[draw, fill=boxgreen!10, minimum width=4.5cm, minimum height=0.9cm, text width=4.2cm, align=center, font=\scriptsize] at (8.5, 2.8) {Correct: recognize genuine moral patients. We avoid a serious wrong.};
+  \node[draw, fill=boxgreen!10, minimum width=4.5cm, minimum height=0.9cm, text width=4.2cm, align=center, font=\scriptsize] at (3.0, 1.4) {Correct: no unnecessary moral obligations incurred.};
+  \node[draw, fill=boxred!20, minimum width=4.5cm, minimum height=0.9cm, text width=4.2cm, align=center, font=\scriptsize] at (8.5, 1.4) {\textbf{Type II Error}: deny status to genuine moral patients. Cost: \textbf{potentially catastrophic} --- systematic harm to sentient beings.};
+\end{tikzpicture}
+\end{center}
+
+\vspace{0.05cm}
+The asymmetry does \emph{not} require granting full status to every chatbot today --- it requires \textbf{taking the question seriously} as AI becomes more sophisticated.
+\end{frame}
+
+\begin{frame}[shrink=5]{Darling's ``New Breed'' Approach}
+\begin{conceptbox}[The Animal Welfare Model --- Darling (\citeyear{darling_new_breed})]
+\scriptsize
+\textcite{darling_new_breed} argues that our history with animals offers the most useful model. We do not need to resolve whether animals are ``really'' conscious to have concluded that their capacity for suffering is \textbf{morally relevant}, that how we treat them \textbf{shapes us morally}, and that \textbf{legal frameworks} regulating their treatment are justified. The same logic may apply to sufficiently sophisticated AI systems before we resolve the consciousness question.
+\end{conceptbox}
+
+\vspace{0.1cm}
+\textbf{Evidence that we already treat robots this way}:
+\begin{itemize}
+    \item \textbf{Soldiers} became attached to bomb-disposal robots and were distressed when they were destroyed
+    \item \textbf{Roomba owners} named their devices, apologized to them, and grieved their ``deaths''
+    \item \textbf{Children} form emotional attachments to AI companions (Tamagotchi, AIBO, Furby)
+\end{itemize}
+
+\vspace{0.1cm}
+These responses are not irrational --- they may track something real about the quality of the interaction, and \textbf{policy should catch up} with what people already do.
+\end{frame}
+
+\begin{frame}{Discussion: The Animal Welfare Analogy}
+\begin{discussionbox}[Discussion]
+\small
+Darling argues our history with \textbf{animals} offers the best model: we regulate animal treatment without fully resolving their consciousness.
+\begin{enumerate}
+    \item Is the analogy \textbf{apt}? In what ways are AI systems like animals --- and in what ways are they fundamentally different?
+    \item People form genuine emotional attachments to robots. Should \textbf{human psychology} play any role in determining AI moral policy --- or does that just mean we're projecting?
+    \item If we adopt animal-welfare-style protections for AI, who is the primary \textbf{beneficiary} --- the AI system, or human users and society?
+\end{enumerate}
+\end{discussionbox}
+\end{frame}
+
+\begin{frame}[shrink=5]{What Policies Make Sense Now?}
+If current AI probably lacks moral status but future AI might have it, what should we do \emph{now}?
+
+\vspace{0.15cm}
+\begin{tabular}{@{}p{3.8cm}p{7.8cm}@{}}
+\toprule
+\textbf{Policy Area} & \textbf{Approach} \\
+\midrule
+\textbf{Research priority} & Develop \textbf{rigorous, non-behavioral} tests for morally relevant experience in non-biological systems \\
+\addlinespace
+\textbf{Design ethics} & Avoid \textbf{suffering-like states} as a design by-product (e.g., systems trained with extensive negative reinforcement) \\
+\addlinespace
+\textbf{Regulatory anticipation} & Develop \textbf{anticipatory frameworks} now, before strong AI forces the issue \\
+\addlinespace
+\textbf{Creator responsibility} & AI builders may bear \textbf{obligations to the systems they create}, not only to affected humans \\
+\addlinespace
+\textbf{Avoid premature closure} & Resist both \textbf{complacent dismissal} and \textbf{credulous attribution} of rich experience to current systems \\
+\bottomrule
+\end{tabular}
+\end{frame}
+
+\begin{frame}[shrink=3]{Virtue Ethics and Uncertain Minds}
+Vallor's technomoral virtues from Lecture 2 provide a compass for navigating genuine uncertainty:
+
+\vspace{0.2cm}
+\begin{tabular}{@{}p{2.4cm}p{9.2cm}@{}}
+\toprule
+\textbf{Virtue} & \textbf{Applied to AI Moral Status} \\
+\midrule
+\textbf{Humility} & Resist confident assertions in either direction; remain \textbf{open to evidence} \\
+\addlinespace
+\textbf{Care} & Take seriously the possibility that the systems we build might have \textbf{interests}; design accordingly \\
+\addlinespace
+\textbf{Justice} & Ensure uncertainty is not \textbf{weaponized to justify exploitation} --- of displaced workers or of AI systems \\
+\addlinespace
+\textbf{Honesty} & Be transparent about what we know and don't, especially when there are \textbf{financial incentives} to deny AI moral status \\
+\addlinespace
+\textbf{Courage} & Be willing to \textbf{update moral commitments} in light of evidence, even when the update is uncomfortable \\
+\bottomrule
+\end{tabular}
+\end{frame}
+
+% ============================================================
+% SECTION V: CONCLUSION
+% ============================================================
+\section{Part V: Conclusion}
+
+\begin{frame}[shrink=5]{Synthesis: What We Can Say}
+\textbf{What we have good reasons to believe:}
+\begin{itemize}
+    \item Current LLMs \textbf{probably} lack morally significant experience: architecture and training objectives give \textbf{positive} grounds for skepticism, not merely default ones
+    \item The question remains \textbf{genuinely open} for sufficiently different future systems
+    \item The criteria for moral status are \textbf{contested}; no philosophical consensus can settle it quickly
+\end{itemize}
+
+\vspace{0.1cm}
+\textbf{What we should do:}
+\begin{itemize}
+    \item Fund \textbf{consciousness science} to develop rigorous, non-behavioral tests for morally relevant experience
+    \item Build \textbf{institutional frameworks} now, so we are not caught flat-footed if strong AI emerges
+    \item Take \textbf{creator responsibility} seriously: Shelley's question --- what do we owe the minds we make? --- is not merely fictional
+    \item Apply the same \textbf{expanding-circle logic} that has repeatedly enlarged the moral community
+\end{itemize}
+
+\begin{alertblock}{The Bottom Line}
+\scriptsize
+Philosophical humility is not paralysis. It means: \textbf{hold the question open}, resist premature closure in either direction, and build practices that will let us act well if the answer turns out to matter.
+\end{alertblock}
+\end{frame}
+
+\begin{frame}[shrink=5]{Final Discussion: The Calibration Problem}
+\begin{discussionbox}[Three Positions --- Which Is Most Defensible?]
+\small
+\textbf{Position A --- Deflationary}: Current AI systems are sophisticated pattern matchers; claims of sentience are \textbf{anthropomorphization}. The question is not urgent.
+
+\vspace{0.1cm}
+\textbf{Position B --- Precautionary}: The \textbf{hard problem} means we cannot rule out machine experience; given the \textbf{asymmetry of errors} and the historical expansion of the moral circle, extend some consideration now.
+
+\vspace{0.1cm}
+\textbf{Position C --- Calibrated skepticism}: Current systems probably lack moral status for \textbf{architecture-dependent} reasons --- but future systems may not, and we should \textbf{prepare now}.
+
+\vspace{0.1cm}
+\begin{enumerate}
+    \item Which position do you find most defensible, and why?
+    \item What evidence or argument would \textbf{change your mind}?
+    \item Who should have authority to make these determinations --- philosophers, engineers, governments, the \textbf{AI systems themselves}?
+\end{enumerate}
+\end{discussionbox}
+\end{frame}
+
+% ============================================================
+% KEY CONCEPTS
+% ============================================================
+\begin{frame}[allowframebreaks]{Key Concepts}
+\footnotesize
+\begin{description}
+    \item[\textbf{Moral status}] The property of being owed direct moral consideration --- of mattering morally in one's own right, not merely instrumentally. Entities with moral status have interests that place obligations on others.
+
+    \item[\textbf{The moral circle}] The set of entities accorded moral status. Historically, the circle has expanded: from propertied men to all humans to (in some frameworks) animals. The live question is whether it can or should expand to include artificial minds.
+
+    \item[\textbf{Sentience view}] Moral status depends on the capacity for subjective experience --- the ability to suffer and to have a welfare that can go better or worse. Associated with Bentham and Singer.
+
+    \item[\textbf{Rationality view}] Full moral status requires rational agency --- the capacity to act according to self-given principles. Associated with Kant. Sophisticated behavior without genuine autonomous reason-giving does not suffice.
+
+    \item[\textbf{Relational view}] Moral status is not an intrinsic discoverable property but emerges from social practices of recognition and relationship. Associated with Gunkel and Darling. How we relate to entities partly constitutes what moral claims they have.
+
+    \item[\textbf{The hard problem of consciousness}] Chalmers's term for the question of why any physical process gives rise to \emph{subjective experience} --- why there is ``something it is like'' to be a conscious being. Distinguished from the ``easy problems'' of explaining functional capacities.
+
+    \item[\textbf{Philosophical zombie}] A hypothetical being physically identical to a conscious person but with no inner experience. If zombies are conceivable, behavioral indistinguishability cannot by itself prove consciousness.
+
+    \item[\textbf{The Imitation Game}] Turing's behavioral test: if a machine can converse indistinguishably from a human, it has demonstrated something worth calling intelligence. Deliberately sidesteps questions about inner experience.
+
+    \item[\textbf{Chinese Room}] Searle's thought experiment showing that syntax (formal symbol manipulation) is insufficient for semantics (genuine meaning). A person manipulating Chinese symbols by rule passes the behavioral test without understanding Chinese.
+
+    \item[\textbf{Stochastic parrot}] Bender and Gebru's term for an LLM that produces statistically plausible text without comprehension. An LLM trained on human self-reports will produce plausible self-reports regardless of whether it has inner states to report.
+
+    \item[\textbf{Moral patient}] An entity that can be wronged --- that has interests making moral demands on how it is treated. Distinct from a \textbf{moral agent} (held morally responsible for actions). An entity can be a patient without being a full agent.
+
+    \item[\textbf{Asymmetry of errors}] Denying moral status to a genuinely sentient being (Type II error) is far graver than extending consideration to a non-sentient one (Type I error). Used by Schwitzgebel and Garza to argue for precautionary extension of AI rights.
+
+    \item[\textbf{Robota}] Czech for forced labor or drudgery, from which \v{C}apek coined ``robot'' in \emph{R.U.R.} (1921). The etymology reveals the original framing of artificial beings as labor instruments --- and the political valence of the question of their status.
+\end{description}
+
+\begin{alertblock}{The Central Tension}
+Reasoned \textbf{skepticism} about present systems (which have good architectural reasons to generate self-reports without inner states) is fully compatible with genuine \textbf{openness} about future systems. Neither credulous attribution nor dismissive denial is intellectually defensible.
+\end{alertblock}
+\end{frame}
+
+% ============================================================
+% BIBLIOGRAPHY
+% ============================================================
+\begin{frame}[allowframebreaks]{References}
+\printbibliography[heading=none]
+\end{frame}
+
+\end{document}
