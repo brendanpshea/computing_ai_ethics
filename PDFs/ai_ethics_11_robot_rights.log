@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.22.0 (MiKTeX 25.4) (format=lualatex 2026.1.9)  26 MAR 2026 07:55
+This is LuaHBTeX, Version 1.22.0 (MiKTeX 25.4) (format=lualatex 2026.1.9)  26 MAR 2026 08:00
  restricted system commands enabled.
 **ai_ethics_11_robot_rights.tex
 (./ai_ethics_11_robot_rights.tex
@@ -2364,10 +2364,10 @@ Here is how much of LuaTeX's memory you used:
 69 penalty, 771 glyph, 285 attribute, 81 glue_spec, 285 attribute_list, 10 write
 , 4 pdf_start_link, 4 pdf_end_link, 6 pdf_dest, 4 pdf_action, 78 pdf_colorstack 
 nodes
-   avail lists: 1:2,2:957,3:811,4:328,5:367,6:79,7:5780,8:25,9:563,10:21,11:529
+   avail lists: 1:2,2:961,3:811,4:328,5:367,6:79,7:5780,8:25,9:563,10:21,11:529
  67299 multiletter control sequences out of 65536+600000
  103 fonts using 14352863 bytes
- 128i,14n,142p,1975b,1643s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 128i,14n,142p,2046b,1643s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/brend/AppData/Local/Programs/MiKTeX/fonts/opentype/public/fira/firamon
 o-regular.otf>{C:/Users/brend/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/l
 m-ec.enc}<<C:\Users\brend\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
@@ -2376,7 +2376,7 @@ lm/lmr10.pfb><C:/Users/brend/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm
 /lmr12.pfb><C:/Users/brend/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/l
 mr8.pfb><C:/Users/brend/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9
 .pfb>
-Output written on ai_ethics_11_robot_rights.pdf (42 pages, 14486000 bytes).
+Output written on ai_ethics_11_robot_rights.pdf (42 pages, 14485996 bytes).
 
 PDF statistics: 356 PDF objects out of 1000 (max. 8388607)
  102 named destinations out of 1000 (max. 131072)
