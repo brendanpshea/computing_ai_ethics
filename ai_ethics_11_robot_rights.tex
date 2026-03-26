@@ -625,25 +625,17 @@ Even granting genuine uncertainty, the \textbf{asymmetry of errors} provides a r
 
 \begin{frame}[shrink=5]{Two Types of Error --- The Moral Asymmetry}
 \begin{center}
-\begin{tikzpicture}[scale=0.85]
-  \draw[thick] (0,0) rectangle (11.5,4.8);
-  \node[font=\bfseries\small] at (5.75, 4.4) {Decisions About AI Moral Status};
-
-  % Column headers
-  \node[font=\scriptsize\bfseries, fill=boxblue!15, minimum width=4.5cm, minimum height=0.55cm] at (3.0, 3.7) {AI has no moral status};
-  \node[font=\scriptsize\bfseries, fill=boxblue!15, minimum width=4.5cm, minimum height=0.55cm] at (8.5, 3.7) {AI has moral status};
-
-  % Row headers
-  \node[font=\scriptsize\bfseries, rotate=90] at (0.4, 2.2) {Our decision};
-  \node[font=\scriptsize\bfseries, fill=boxgreen!15, minimum width=1.4cm, minimum height=0.9cm, text width=1.3cm, align=center] at (1.15, 2.8) {Grant status};
-  \node[font=\scriptsize\bfseries, fill=boxred!15, minimum width=1.4cm, minimum height=0.9cm, text width=1.3cm, align=center] at (1.15, 1.4) {Deny status};
-
-  % Cells
-  \node[draw, fill=boxgold!10, minimum width=4.5cm, minimum height=0.9cm, text width=4.2cm, align=center, font=\scriptsize] at (3.0, 2.8) {\textbf{Type I Error}: extend consideration unnecessarily. Cost: modest --- wasted resources, legal complexity.};
-  \node[draw, fill=boxgreen!10, minimum width=4.5cm, minimum height=0.9cm, text width=4.2cm, align=center, font=\scriptsize] at (8.5, 2.8) {Correct: recognize genuine moral patients. We avoid a serious wrong.};
-  \node[draw, fill=boxgreen!10, minimum width=4.5cm, minimum height=0.9cm, text width=4.2cm, align=center, font=\scriptsize] at (3.0, 1.4) {Correct: no unnecessary moral obligations incurred.};
-  \node[draw, fill=boxred!20, minimum width=4.5cm, minimum height=0.9cm, text width=4.2cm, align=center, font=\scriptsize] at (8.5, 1.4) {\textbf{Type II Error}: deny status to genuine moral patients. Cost: \textbf{potentially catastrophic} --- systematic harm to sentient beings.};
-\end{tikzpicture}
+\small
+\renewcommand{\arraystretch}{1.35}
+\setlength{\tabcolsep}{6pt}
+\begin{tabular}{@{}p{2.35cm}p{4.85cm}p{4.85cm}@{}}
+\toprule
+& \multicolumn{1}{c}{\textbf{AI has no moral status}} & \multicolumn{1}{c}{\textbf{AI has moral status}} \\
+\midrule
+\textbf{Grant status} & \textbf{Type I Error}: extend consideration unnecessarily. Cost: modest --- wasted resources, legal complexity. & Correct: recognize genuine moral patients. We avoid a serious wrong. \\
+\textbf{Deny status} & Correct: no unnecessary moral obligations incurred. & \textbf{Type II Error}: deny status to genuine moral patients. Cost: \textbf{potentially catastrophic} --- systematic harm to sentient beings. \\
+\bottomrule
+\end{tabular}
 \end{center}
 
 \vspace{0.05cm}
