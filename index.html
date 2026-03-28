@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Computing and AI Ethics — Brendan Shea, PhD</title>
+  <meta name="description"
+        content="Open-access course materials for Computing and AI Ethics. Includes lecture slides (PDF) and HTML chapter readings. CC BY-NC 4.0.">
+  <meta name="author" content="Brendan Shea, PhD">
+  <style>
+    /* ── Reset & base ────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --blue-dark:   #1a3a6b;
+      --blue-mid:    #2a5298;
+      --blue-light:  #e8f0fb;
+      --gold:        #c8960c;
+      --gold-light:  #fdf6e3;
+      --gray-dark:   #333;
+      --gray-mid:    #555;
+      --gray-light:  #f5f5f5;
+      --white:       #fff;
+      --radius:      6px;
+      --shadow:      0 2px 8px rgba(0,0,0,.10);
+      --font-body:   'Georgia', serif;
+      --font-ui:     'Segoe UI', system-ui, sans-serif;
+      --max-w:       900px;
+      --gap:         1.5rem;
+    }
+
+    body {
+      font-family: var(--font-body);
+      color: var(--gray-dark);
+      background: var(--white);
+      line-height: 1.65;
+    }
+
+    a { color: var(--blue-mid); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ── Hero ────────────────────────────────────── */
+    .hero {
+      background: var(--blue-dark);
+      color: var(--white);
+      padding: 3.5rem 2rem 3rem;
+      text-align: center;
+    }
+    .hero .kicker {
+      font-family: var(--font-ui);
+      font-size: .85rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      opacity: .75;
+      margin-bottom: .6rem;
+    }
+    .hero h1 {
+      font-size: clamp(1.7rem, 4vw, 2.6rem);
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: .5rem;
+    }
+    .hero .subtitle {
+      font-size: 1.05rem;
+      opacity: .85;
+      margin-bottom: 1.4rem;
+    }
+    .hero .author {
+      font-family: var(--font-ui);
+      font-size: .9rem;
+      opacity: .8;
+    }
+    .badge {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: .3rem .9rem;
+      border: 1px solid rgba(255,255,255,.4);
+      border-radius: 20px;
+      font-family: var(--font-ui);
+      font-size: .78rem;
+      letter-spacing: .04em;
+      color: rgba(255,255,255,.9);
+    }
+
+    /* ── Layout ──────────────────────────────────── */
+    .container {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* ── About strip ─────────────────────────────── */
+    .about {
+      background: var(--blue-light);
+      border-bottom: 1px solid #c9d9f5;
+      padding: 1.6rem 2rem;
+    }
+    .about .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+    @media (max-width: 600px) { .about .container { grid-template-columns: 1fr; } }
+    .about p { font-size: .92rem; color: var(--gray-mid); }
+    .about p + p { margin-top: .6rem; }
+    .about strong { color: var(--blue-dark); }
+
+    /* ── LLM notice ──────────────────────────────── */
+    .llm-notice {
+      background: var(--gold-light);
+      border-left: 4px solid var(--gold);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: .9rem 1.1rem;
+      font-family: var(--font-ui);
+      font-size: .85rem;
+      color: #5a4200;
+    }
+    .llm-notice strong { color: #3d2d00; }
+
+    /* ── Section headings ────────────────────────── */
+    .section-block {
+      padding: 2.5rem 0 1rem;
+    }
+    .section-block h2 {
+      font-family: var(--font-ui);
+      font-size: 1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      color: var(--blue-dark);
+      border-bottom: 2px solid var(--blue-dark);
+      padding-bottom: .4rem;
+      margin-bottom: 1.2rem;
+    }
+    .section-intro {
+      font-size: .92rem;
+      color: var(--gray-mid);
+      margin-bottom: 1.4rem;
+    }
+
+    /* ── Lecture table ───────────────────────────── */
+    .lecture-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: var(--font-ui);
+      font-size: .9rem;
+    }
+    .lecture-table thead th {
+      background: var(--blue-dark);
+      color: var(--white);
+      font-weight: 600;
+      padding: .55rem .8rem;
+      text-align: left;
+    }
+    .lecture-table tbody tr:nth-child(even) { background: var(--gray-light); }
+    .lecture-table tbody tr:hover { background: var(--blue-light); }
+    .lecture-table td {
+      padding: .55rem .8rem;
+      vertical-align: middle;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    .lecture-table td:first-child {
+      white-space: nowrap;
+      color: var(--gray-mid);
+      font-size: .82rem;
+    }
+    .lecture-table td.title-cell {
+      font-weight: 500;
+      color: var(--gray-dark);
+    }
+    .lecture-table td.links-cell {
+      white-space: nowrap;
+    }
+
+    /* ── Link pills ──────────────────────────────── */
+    .pill {
+      display: inline-block;
+      padding: .22rem .7rem;
+      border-radius: 20px;
+      font-size: .78rem;
+      font-weight: 600;
+      letter-spacing: .02em;
+      margin-right: .3rem;
+      transition: opacity .15s;
+    }
+    .pill:hover { opacity: .85; text-decoration: none; }
+    .pill-pdf {
+      background: #e8f0fb;
+      color: var(--blue-dark);
+      border: 1px solid #b3ccf0;
+    }
+    .pill-html {
+      background: var(--blue-dark);
+      color: var(--white);
+      border: 1px solid var(--blue-dark);
+    }
+    .pill-soon {
+      background: #f0f0f0;
+      color: #999;
+      border: 1px solid #ddd;
+      cursor: default;
+    }
+
+    /* ── Source section ──────────────────────────── */
+    .source-section {
+      padding: 2rem 0 2.5rem;
+    }
+    .source-section h2 {
+      font-family: var(--font-ui);
+      font-size: 1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      color: var(--blue-dark);
+      border-bottom: 2px solid var(--blue-dark);
+      padding-bottom: .4rem;
+      margin-bottom: 1rem;
+    }
+    .source-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1rem;
+      font-family: var(--font-ui);
+      font-size: .87rem;
+      color: var(--gray-mid);
+    }
+    .source-grid div strong {
+      display: block;
+      color: var(--blue-dark);
+      margin-bottom: .25rem;
+      font-size: .9rem;
+    }
+
+    /* ── Footer ──────────────────────────────────── */
+    footer {
+      background: var(--blue-dark);
+      color: rgba(255,255,255,.8);
+      text-align: center;
+      padding: 1.6rem 1rem;
+      font-family: var(--font-ui);
+      font-size: .82rem;
+    }
+    footer a { color: rgba(255,255,255,.85); text-decoration: underline; }
+    footer p + p { margin-top: .4rem; opacity: .65; }
+  </style>
+</head>
+<body>
+
+<!-- ── Hero ──────────────────────────────────────── -->
+<header class="hero">
+  <p class="kicker">Open-Access Course Materials</p>
+  <h1>Computing and AI Ethics</h1>
+  <p class="subtitle">Philosophical foundations for a world shaped by technology</p>
+  <p class="author">
+    Brendan Shea, PhD &nbsp;&middot;&nbsp; Rochester Community and Technical College
+  </p>
+  <span class="badge">CC BY-NC 4.0 &mdash; Free to use &amp; adapt</span>
+</header>
+
+<!-- ── About ─────────────────────────────────────── -->
+<div class="about">
+  <div class="container">
+    <div>
+      <p>
+        <strong>About this course.</strong> These are materials for <em>Computing and AI Ethics</em>,
+        first taught at Rochester Community and Technical College in Spring 2026. The course introduces
+        ethical, social, and philosophical questions raised by information technology and artificial
+        intelligence &mdash; no prior philosophy or CS background required.
+      </p>
+      <p>
+        Questions and feedback: <a href="mailto:brendanpshea@gmail.com">brendanpshea@gmail.com</a>
+        &nbsp;&middot;&nbsp;
+        <a href="https://github.com/brendanpshea/computing_ai_ethics" target="_blank" rel="noopener">
+          View source on GitHub
+        </a>
+      </p>
+    </div>
+    <div>
+      <div class="llm-notice">
+        <strong>A note on these materials.</strong> Lecture slides were written by Brendan Shea in
+        LaTeX. The HTML chapter readings were <em>derived from those slides</em> with assistance from
+        large language models &mdash; primarily
+        <a href="https://claude.ai" target="_blank" rel="noopener" style="color:#5a3500;">Claude (Anthropic)</a>.
+        All content has been reviewed and edited by the author. Both the slides and the HTML readings
+        are released under <strong>CC BY-NC 4.0</strong>: free to use and adapt for non-commercial
+        purposes with attribution.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── Main content ──────────────────────────────── -->
+<div class="container">
+
+  <!-- Lectures & Chapters table -->
+  <div class="section-block">
+    <h2>Lectures &amp; Chapter Readings</h2>
+    <p class="section-intro">
+      Each lecture is available as a PDF slide deck. Lectures 1&ndash;6 also have
+      expanded HTML chapter readings that develop the ideas in more depth.
+      Readings for lectures 7&ndash;11 are in progress.
+    </p>
+
+    <table class="lecture-table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Topic</th>
+          <th scope="col">Materials</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Lecture 1</td>
+          <td class="title-cell">The History of IT Ethics</td>
+          <td class="links-cell">
+            <a class="pill pill-pdf" href="PDFs/ai_ethics_01_history.pdf">Slides (PDF)</a>
+            <a class="pill pill-html" href="html/ch01_history.html">Chapter</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Lecture 2</td>
+          <td class="title-cell">Virtue Ethics and Modern Technology</td>
+          <td class="links-cell">
+            <a class="pill pill-pdf" href="PDFs/ai_ethics_02_virtues.pdf">Slides (PDF)</a>
+            <a class="pill pill-html" href="html/ch02_virtue_ethics.html">Chapter</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Lecture 3</td>
+          <td class="title-cell">Free Speech in the Digital Age</td>
+          <td class="links-cell">
+            <a class="pill pill-pdf" href="PDFs/ai_ethics_03.free_speech.pdf">Slides (PDF)</a>
+            <a class="pill pill-html" href="html/ch03_free_speech.html">Chapter</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Lecture 4</td>
+          <td class="title-cell">Intellectual Property</td>
+          <td class="links-cell">
+            <a class="pill pill-pdf" href="PDFs/ai_ethics_04_intellectual_property.pdf">Slides (PDF)</a>
+            <a class="pill pill-html" href="html/ch04_intellectual_property.html">Chapter</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Lecture 5</td>
+          <td class="title-cell">Cryptography, Security, and Digital Money</td>
+          <td class="links-cell">
+            <a class="pill pill-pdf" href="PDFs/ai_ethics_05.crypto.pdf">Slides (PDF)</a>
+            <a class="pill pill-html" href="html/ch05_crypto.html">Chapter</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Lecture 6</td>
+          <td class="title-cell">Privacy in the Information Age</td>
+          <td class="links-cell">
+            <a class="pill pill-pdf" href="PDFs/ai_ethics_06_privacy.pdf">Slides (PDF)</a>
+            <a class="pill pill-html" href="html/ch06_privacy.html">Chapter</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Lecture 7</td>
+          <td class="title-cell">AI Ethics</td>
+          <td class="links-cell">
+            <a class="pill pill-pdf" href="PDFs/ai_ethics_07_ai.pdf">Slides (PDF)</a>
+            <span class="pill pill-soon">Chapter coming soon</span>
+          </td>
+        </tr>
+        <tr>
+          <td>Lecture 8</td>
+          <td class="title-cell">Work and Automation</td>
+          <td class="links-cell">
+            <a class="pill pill-pdf" href="PDFs/ai_ethics_08_work.pdf">Slides (PDF)</a>
+            <span class="pill pill-soon">Chapter coming soon</span>
+          </td>
+        </tr>
+        <tr>
+          <td>Lecture 9</td>
+          <td class="title-cell">Technology and Social Impact</td>
+          <td class="links-cell">
+            <a class="pill pill-pdf" href="PDFs/ai_ethics_09_impact.pdf">Slides (PDF)</a>
+            <span class="pill pill-soon">Chapter coming soon</span>
+          </td>
+        </tr>
+        <tr>
+          <td>Lecture 10</td>
+          <td class="title-cell">Existential Risk and AI Doomsday Scenarios</td>
+          <td class="links-cell">
+            <a class="pill pill-pdf" href="PDFs/ai_ethics_10_doomsday.pdf">Slides (PDF)</a>
+            <span class="pill pill-soon">Chapter coming soon</span>
+          </td>
+        </tr>
+        <tr>
+          <td>Lecture 11</td>
+          <td class="title-cell">Robot Rights and Moral Status</td>
+          <td class="links-cell">
+            <a class="pill pill-pdf" href="PDFs/ai_ethics_11_robot_rights.pdf">Slides (PDF)</a>
+            <span class="pill pill-soon">Chapter coming soon</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Source & About section -->
+  <div class="source-section">
+    <h2>About These Materials</h2>
+    <div class="source-grid">
+      <div>
+        <strong>HTML Chapter Readings</strong>
+        Expanded readings with key thinker profiles, argument boxes, case studies, and thought
+        questions. Derived from lecture slides with LLM assistance; reviewed and edited by the author.
+        <a href="html/index.html">Browse all chapters &rarr;</a>
+      </div>
+      <div>
+        <strong>Lecture Slides (PDF)</strong>
+        Beamer slides in PDF format, compiled from LaTeX source. These are the primary authored
+        materials. LaTeX source is available in the
+        <a href="https://github.com/brendanpshea/computing_ai_ethics" target="_blank" rel="noopener">GitHub repository</a>.
+      </div>
+      <div>
+        <strong>License</strong>
+        All materials are released under
+        <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">
+          CC BY-NC 4.0</a>. You may freely use, share, and adapt them for non-commercial purposes
+        with attribution to Brendan Shea, PhD.
+      </div>
+      <div>
+        <strong>Contact &amp; Feedback</strong>
+        Corrections, suggestions, and course adoption inquiries welcome.
+        <a href="mailto:brendanpshea@gmail.com">brendanpshea@gmail.com</a>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /.container -->
+
+<footer>
+  <p>
+    <strong>Computing and AI Ethics</strong> &nbsp;&middot;&nbsp;
+    Brendan Shea, PhD &nbsp;&middot;&nbsp;
+    Rochester Community and Technical College, Spring 2026
+  </p>
+  <p>
+    Released under
+    <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>
+    &nbsp;&middot;&nbsp;
+    <a href="https://github.com/brendanpshea/computing_ai_ethics" target="_blank" rel="noopener">
+      github.com/brendanpshea/computing_ai_ethics
+    </a>
+  </p>
+</footer>
+
+</body>
+</html>
