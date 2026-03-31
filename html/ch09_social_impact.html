@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter 9: AI and Its Environmental and Social Impact | Computing &amp; AI Ethics</title>
+  <meta name="description"
+        content="AI is not weightless software — it is a material system built from extraction, energy, and labor. This chapter examines how AI affects climate, medicine, democratic governance, and global inequality, asking who benefits, who bears the costs, and what ethical standards should govern both.">
+  <meta name="author" content="Brendan Shea, PhD">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+  <script src="cite.js" defer></script>
+</head>
+
+<body data-chapter="9">
+<div class="page-wrapper">
+
+  <nav class="top-nav" aria-label="Chapter navigation">
+    <a href="index.html" class="nav-home">Computing &amp; AI Ethics</a>
+    <div class="chapter-nav">
+      <a href="ch08_work_automation.html" class="nav-prev">&#8592; Previous</a>
+      <span class="nav-chapter">Chapter 9</span>
+      <a href="ch10_doomsday.html" class="nav-next">Next &#8594;</a>
+    </div>
+  </nav>
+
+  <header class="chapter-header">
+    <p class="chapter-eyebrow">Chapter 9</p>
+    <h1>AI and Its Environmental and Social Impact</h1>
+    <p class="chapter-subtitle">Climate, Health, Governance, and Global Justice</p>
+  </header>
+
+  <main class="content-area chapter-content" id="main-content">
+
+    <nav class="toc-box" aria-label="Table of contents">
+      <h2>In this chapter</h2>
+      <ol>
+        <li><a href="#central-questions">Central Questions</a></li>
+        <li><a href="#material-system">Part I: AI Is Not "Virtual"</a></li>
+        <li><a href="#environment">Part II: Environment and Climate Change</a></li>
+        <li><a href="#medicine">Part III: Medicine and Research</a></li>
+        <li><a href="#governance">Part IV: Good Governance</a></li>
+        <li><a href="#inequality">Part V: Poverty and Global Inequality</a></li>
+        <li><a href="#key-points">Key Points</a></li>
+      </ol>
+    </nav>
+
+
+    <!-- ── CENTRAL QUESTIONS ─────────────────────────────── -->
+    <section class="central-questions" id="central-questions" aria-labelledby="cq-heading">
+      <h2 id="cq-heading">Central Questions</h2>
+      <ol>
+        <li>How can AI worsen environmental harms even while being advertised as a "smart" or "clean" technology?</li>
+        <li>When does AI improve medicine and research, and when does it amplify bias, opacity, or unequal access?</li>
+        <li>Can AI strengthen democratic governance, or does it primarily expand surveillance and bureaucratic control?</li>
+        <li>Will AI reduce poverty and inequality, or deepen existing asymmetries of wealth, language, energy, and compute?</li>
+        <li>What ethical principles should guide AI when the stakes are collective rather than merely individual?</li>
+      </ol>
+    </section>
+
+
+    <!-- ══════════════════════════════════════════════════
+         PART I: AI IS NOT "VIRTUAL"
+    ══════════════════════════════════════════════════════ -->
+    <section id="material-system" aria-labelledby="s1-heading">
+      <h2 id="s1-heading">Part I: AI Is Not "Virtual"</h2>
+
+      <p>
+        Most discussions of AI treat it as if it were pure information — weightless, placeless,
+        and detached from the physical world. We speak of "the cloud" as if computing happened
+        somewhere clean and frictionless, beyond geography and consequence. This framing is
+        not just imprecise; it is ethically dangerous. It encourages us to evaluate AI purely
+        on the basis of what it produces — what a model outputs — while ignoring everything
+        required to make that output possible.
+      </p>
+      <p>
+        In reality, artificial intelligence is a material and social system. It requires
+        energy-intensive computation and cooling in massive data centers. It depends on water
+        to keep those data centers from overheating, and on land and electrical grid capacity
+        that must be competed for with other uses. It is built from minerals — cobalt, lithium,
+        copper, rare earths — extracted through global supply chains whose costs fall unevenly
+        on workers and communities far from where the AI is eventually used. It relies on human
+        labor at every stage: the workers who mine materials, the contractors who label training
+        data, the moderators who filter harmful content, the technicians who maintain physical
+        infrastructure. And when hardware is replaced — as it must be, on short upgrade cycles —
+        electronic waste creates new burdens that also fall unevenly.
+      </p>
+
+      <div class="definition-box">
+        <p class="term">AI as a Material System</p>
+        <p class="definition">
+          The view, developed most fully by Kate Crawford in <em>The Atlas of AI</em>, that
+          artificial intelligence is best understood not as software or information but as a
+          planetary-scale system of extraction, classification, and control — with physical
+          infrastructure, supply chains, labor relations, and environmental costs at every stage.
+          <cite data-key="crawford_atlas_ai"></cite>
+        </p>
+      </div>
+
+      <figure>
+        <img src="../images/ai_env_servers.jpg" alt="Server racks in a data center">
+        <figcaption>
+          Servers in a data center rack. AI runs in physical machines like these — not in an
+          abstract "cloud." Each rack requires continuous power and cooling, produces heat
+          that must be managed, and will eventually become electronic waste. The infrastructure
+          that makes AI possible creates energy, water, and land-use burdens that are local
+          even when the benefits are global. CC BY-SA 3.0, via Wikimedia Commons.
+        </figcaption>
+      </figure>
+
+      <h3>Why Collective Harms Are Hard to See</h3>
+
+      <p>
+        A key feature of AI's social and environmental impacts is that they are
+        <strong>distributed, delayed, and offloaded</strong>. A single chatbot query feels
+        trivial to the person who types it. Multiplied across millions of users and billions
+        of daily interactions, it becomes a significant infrastructure load. The benefits of
+        that query are immediate and visible — a faster answer, a completed task, a convenience.
+        The costs are indirect and dispersed: a marginal increase in electricity demand, a
+        fractional draw on water used for cooling, a small contribution to hardware wear that
+        will eventually require replacement.
+      </p>
+      <p>
+        This structure — immediate, visible benefits; delayed, dispersed, often invisible
+        costs — is a recurring feature of environmental and social harms. It makes them
+        genuinely difficult to evaluate through ordinary individual decision-making, because
+        no individual's choice looks significant in isolation. This is precisely why
+        <strong>institutional ethics</strong> — collective standards enforced through regulation,
+        procurement policy, reporting requirements, and democratic oversight — is necessary.
+        Individual consumers choosing "greener" AI products is not a substitute for systemic
+        accountability.
+      </p>
+
+      <figure>
+        <div class="mermaid">
+flowchart LR
+    A["Mining &amp; Materials\nCobalt, lithium,\ncopper, rare earths"] --> B["Chips &amp; Hardware\nFabrication, assembly,\nglobal shipping"]
+    B --> C["Data Centers\nElectricity, water,\nland, grid access"]
+    C --> D["Models &amp; Apps\nPrediction, ranking,\ngeneration, control"]
+    D --> E["E-Waste &amp; Burdens\nPollution, disposal,\nunequal local impacts"]
+        </div>
+        <figcaption>
+          Figure 9.1 — The full supply chain of AI. The ethical question is never only
+          "What does the model do?" It is also: what infrastructure makes it possible, and
+          who pays the costs at each stage? Benefits tend to flow to users and firms; costs
+          tend to be externalized onto communities near mines, data centers, and waste sites.
+        </figcaption>
+      </figure>
+
+      <div class="key-thinker">
+        <div class="thinker-portrait-placeholder" aria-hidden="true">🌍</div>
+        <div class="thinker-header">
+          <p class="thinker-label">Key Thinker</p>
+          <h3 class="thinker-name">
+            Kate Crawford
+            <span class="thinker-dates">(1976–present)</span>
+          </h3>
+        </div>
+        <div class="thinker-body">
+          <p>
+            Kate Crawford is a senior principal researcher at Microsoft Research and a Research
+            Professor at USC Annenberg. Her 2021 book <em>The Atlas of AI: Power, Politics, and
+            the Planetary Costs of Artificial Intelligence</em> is the most comprehensive critical
+            account of AI as a material system. <cite data-key="crawford_atlas_ai"></cite> Crawford
+            physically visited the sites that make AI possible — lithium mines in Nevada, data
+            centers in the American West, Amazon warehouses, and computer recycling facilities in
+            Asia — to document what the smooth marketing language of "the cloud" obscures.
+          </p>
+          <p>
+            Crawford argues that AI is not a neutral technology but a system that extends and
+            amplifies existing structures of power and extraction. The same firms that promise
+            AI will solve problems of efficiency and climate are driving extraordinary demand for
+            energy, minerals, and labor. The same systems that promise objectivity and fairness
+            encode the classifications and hierarchies of the datasets on which they were trained.
+            Crawford does not argue that AI is simply bad — she argues that it cannot be understood
+            or governed without understanding what it is materially and politically.
+          </p>
+          <p>
+            Crawford's work is part of a broader turn in AI criticism away from speculative futures
+            (superintelligence, robot uprisings) and toward the present and mundane: the supply
+            chains, labor conditions, energy politics, and institutional structures that AI systems
+            depend on today.
+          </p>
+        </div>
+      </div><!-- /.key-thinker -->
+
+    </section><!-- /material-system -->
+
+
+    <!-- ══════════════════════════════════════════════════
+         PART II: ENVIRONMENT AND CLIMATE CHANGE
+    ══════════════════════════════════════════════════════ -->
+    <section id="environment" aria-labelledby="s2-heading">
+      <h2 id="s2-heading">Part II: Environment and Climate Change</h2>
+
+      <p>
+        AI's relationship to the environment is genuinely two-sided — and the complexity of
+        that relationship is itself ethically important. AI systems contribute to environmental
+        problems through their energy and material demands. They may also help address
+        environmental problems through better prediction, monitoring, and resource management.
+        Understanding both sides, and the conditions under which each claim holds, is more
+        useful than either dismissing AI's environmental costs or accepting uncritically the
+        claims of "AI for climate."
+      </p>
+
+      <h3>AI's Environmental Footprint</h3>
+
+      <p>
+        AI's environmental impact has multiple dimensions that cannot be reduced to a single
+        metric like carbon emissions. Each dimension raises distinct ethical and policy questions.
+      </p>
+
+      <div class="table-wrapper">
+        <table>
+          <caption>Table 9.1 — Dimensions of AI's Environmental Footprint</caption>
+          <thead>
+            <tr>
+              <th scope="col">Dimension</th>
+              <th scope="col">Why it matters</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Electricity</strong></td>
+              <td>Training and inference require large and growing power loads; the energy source matters as much as the quantity</td>
+            </tr>
+            <tr>
+              <td><strong>Water</strong></td>
+              <td>Cooling systems can place serious pressure on local water supplies, especially in drought-prone regions</td>
+            </tr>
+            <tr>
+              <td><strong>Materials</strong></td>
+              <td>Chips depend on complex extraction, fabrication, and global transport chains with their own carbon and labor costs</td>
+            </tr>
+            <tr>
+              <td><strong>Land &amp; grids</strong></td>
+              <td>Hyperscale data centers compete for physical space and electrical grid capacity with homes, hospitals, and other uses</td>
+            </tr>
+            <tr>
+              <td><strong>E-waste</strong></td>
+              <td>Short hardware upgrade cycles create disposal and recycling burdens that fall unevenly on poorer communities</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>
+        The International Energy Agency estimates that global data-center electricity use
+        reached 240–340 TWh in 2022, roughly 1–1.3% of global final electricity demand.
+        <cite data-key="iea_data_centres_2023"></cite> Data centers and transmission networks
+        together accounted for around 330 Mt CO₂e in 2020 — about 0.9% of energy-related
+        greenhouse-gas emissions. The IEA's <em>Electricity 2026</em> report identifies AI
+        and data centers as central drivers of a projected increase in global electricity
+        demand of more than 3.5% per year through 2030. <cite data-key="iea_electricity_2026"></cite>
+        More than 2,500 GW of new energy projects are currently stalled in grid connection
+        queues worldwide — partly because large-load customers including data centers are
+        competing for the same connections as renewable energy projects.
+      </p>
+      <p>
+        These numbers are neither trivial nor catastrophic in isolation. What makes them
+        politically significant is their context: they compound existing pressures on
+        already-stressed energy and water systems, and they are growing at a time when
+        the same systems are being asked to support a transition to renewable energy.
+      </p>
+
+      <h3>The Rebound Problem</h3>
+
+      <p>
+        A common response to concerns about AI's energy footprint is that models are
+        becoming more efficient — each query costs less energy than it did a year ago.
+        This is true, but it does not follow that total energy use is declining. The
+        <strong>rebound effect</strong> — also called the Jevons paradox — describes
+        a well-documented pattern in which efficiency improvements lead to higher total
+        resource use because cheaper systems are deployed more widely.
+      </p>
+
+      <div class="definition-box">
+        <p class="term">The Rebound Effect (Jevons Paradox)</p>
+        <p class="definition">
+          The tendency for efficiency improvements to increase rather than decrease total
+          resource use, because lower unit costs make a technology more accessible and
+          encourage more widespread deployment. Applied to AI: cheaper inference means
+          more queries, more applications, and more total energy demand — even as cost
+          per query falls.
+        </p>
+      </div>
+
+      <p>
+        Applied to AI: as models become cheaper per query, firms integrate them into more
+        products at larger scales. The total volume of inference requests rises dramatically.
+        Aggregate electricity and hardware demand therefore still grows, even as unit costs
+        fall. This is why "smaller and cheaper models" cannot be straightforwardly celebrated
+        as an environmental solution: lower unit cost may simply mean more total use.
+      </p>
+
+      <p>
+        There is also an important distinction between the costs of <strong>training</strong>
+        and <strong>inference</strong>. Early public discussion focused on the spectacular
+        energy cost of training large frontier models — a one-time or periodic event visible
+        to the public when labs publish training runs. But evidence suggests that inference
+        — running the model to answer actual queries — represents the larger long-run burden,
+        because it scales with mass adoption. The environmental story of AI is therefore not
+        primarily about a few dramatic training events; it is about what happens when AI
+        becomes ordinary infrastructure embedded in search, office software, medicine, and
+        government services.
+      </p>
+
+      <h3>AI for Climate: A Comparative Judgment</h3>
+
+      <p>
+        AI is also being actively developed and deployed for climate applications — and this
+        is not merely marketing. There are genuine use cases where AI can help reduce emissions
+        or adapt to a changing climate.
+      </p>
+
+      <div class="pro-argument">
+        <p class="box-label">The case for AI as a climate tool</p>
+        <p>
+          AI can improve <strong>grid balancing and demand forecasting</strong>, making it
+          easier to integrate intermittent renewable energy sources. It can optimize
+          <strong>building efficiency</strong>, reducing heating and cooling waste at scale.
+          It can accelerate <strong>materials discovery</strong> for clean technologies.
+          For adaptation, AI-powered satellite monitoring can detect wildfires and floods
+          faster, enabling earlier evacuation and response. Crop-risk forecasting can help
+          farmers adapt to changing weather patterns. These are real uses that create
+          genuine public value — in some cases, more value than the energy they consume.
+        </p>
+      </div>
+
+      <div class="objection">
+        <p class="box-label">Objection: Much "AI for climate" is marketing</p>
+        <p>
+          The same firms promising AI-powered sustainability solutions are among the largest
+          drivers of data-center energy demand. Are the climate benefits real, or primarily
+          pilot projects and demo deployments? Are firms comparing AI's footprint to realistic
+          alternatives, or against an implausibly inefficient baseline? Are they disclosing
+          full environmental costs, including hardware, water, and grid externalities? This
+          objection does not prove AI cannot help with climate. It shows why environmental
+          claims require evidence and independent auditing rather than corporate branding.
+        </p>
+      </div>
+
+      <figure>
+        <img src="../images/ai_env_wildfire_satellite.jpg" alt="NASA satellite image of a wildfire and smoke plume">
+        <figcaption>
+          NASA satellite image of a wildfire. Satellite imagery analyzed by machine learning
+          can help detect wildfires, smoke plumes, and changing risk conditions faster than
+          ground-based monitoring — potentially improving evacuation timing and resource
+          allocation. This is one of the more defensible cases for AI as a genuine public
+          benefit. But public value depends on who has access to the data, the tools, and the
+          emergency-response capacity to act on early warnings. CC BY 2.0, via Wikimedia Commons.
+        </figcaption>
+      </figure>
+
+      <p>
+        The environmental question is therefore <em>comparative</em> rather than binary: does
+        a specific use of AI reduce enough harm to justify its material costs? The answer will
+        be different for wildfire detection, for optimizing a recommendation algorithm, and for
+        generating marketing copy. Applying a uniform judgment — "AI is bad for the environment"
+        or "AI will save the climate" — obscures the distinctions that actually matter.
+      </p>
+
+      <div class="thought-questions">
+        <p class="box-label">Thought Questions</p>
+        <ol>
+          <li>
+            What standard should we use to judge whether an AI application with a significant
+            energy cost is environmentally justified? Is net emissions reduction sufficient?
+            Does it matter how the benefits are distributed?
+          </li>
+          <li>
+            The rebound effect suggests that making AI more efficient may increase rather than
+            decrease total energy use. What implications does this have for how we evaluate
+            companies' environmental claims? Can efficiency improvements alone solve AI's
+            environmental problem?
+          </li>
+          <li>
+            "The cloud" encourages people to think of digital systems as weightless and
+            placeless. Who benefits from that framing? Who is harmed by it?
+          </li>
+        </ol>
+      </div>
+
+    </section><!-- /environment -->
+
+
+    <!-- ══════════════════════════════════════════════════
+         PART III: MEDICINE AND RESEARCH
+    ══════════════════════════════════════════════════════ -->
+    <section id="medicine" aria-labelledby="s3-heading">
+      <h2 id="s3-heading">Part III: Medicine and Research</h2>
+
+      <p>
+        Medicine is often presented as AI's strongest case — the domain where the technology's
+        benefits are most tangible, most clearly in the public interest, and most difficult to
+        dismiss as mere convenience or commercial gain. A model that helps a radiologist catch
+        a tumor she would have missed, or a drug-discovery system that identifies a promising
+        compound years faster than traditional methods, saves lives in a direct and comprehensible
+        way. This makes medical AI worth taking seriously on its merits — and worth subjecting
+        to rigorous critical examination, because the stakes of getting it wrong are correspondingly high.
+      </p>
+
+      <h3>Scale and Concentration of Medical AI</h3>
+
+      <p>
+        The scale of AI deployment in medicine has grown dramatically. The FDA approved 223
+        AI-enabled medical devices in 2023 alone, up from just 6 in 2015.
+        <cite data-key="stanford_ai_index_2025"></cite> Its public list of approved AI-enabled
+        devices contained 1,451 entries as of early 2026. <cite data-key="fda_ai_medical_devices_2026"></cite>
+        Radiology dominates: over 1,100 approved devices are for imaging applications, reflecting
+        the fact that medical images are abundant, standardized, and amenable to the classification
+        and anomaly-detection tasks at which current AI excels. Cardiovascular and neurology
+        applications follow.
+      </p>
+
+      <figure>
+        <img src="../images/ai_env_ct_scan.jpg" alt="First CT scan brain image">
+        <figcaption>
+          The first CT scan brain image (1972). Medical imaging has been transformed by AI: systems
+          can now flag anomalies, segment structures, and triage studies faster than human review
+          alone. Radiology leads all medical specialties in FDA-approved AI devices. But the main
+          ethical risk is not that the technology fails — it is that clinicians over-trust it, making
+          errors harder to detect rather than easier to prevent. CC BY 4.0, via Wikimedia Commons.
+        </figcaption>
+      </figure>
+
+      <h3>A Scientific Success: AlphaFold</h3>
+
+      <p>
+        The clearest single example of AI delivering transformative scientific value is AlphaFold,
+        the protein-structure prediction system developed by DeepMind. <cite data-key="jumper_alphafold_2021"></cite>
+        Predicting how a protein folds from its amino-acid sequence was one of the most difficult
+        unsolved problems in structural biology — known as the "protein folding problem" — because
+        the three-dimensional structure of a protein determines its function, and the search space
+        of possible configurations is astronomically large.
+      </p>
+      <p>
+        AlphaFold achieved a dramatic breakthrough in 2020, producing highly accurate structure
+        predictions for hundreds of millions of proteins and making the results freely available.
+        The knock-on effects for drug discovery, vaccine development, and fundamental biology
+        research are still unfolding. This case is important not only as a scientific achievement
+        but as a proof of concept: AI can genuinely accelerate research in ways that create broad
+        social value, not merely commercial convenience. It also illustrates what "AI for good"
+        can look like when a capable system is paired with open access and genuinely public goals.
+      </p>
+      <p>
+        Scientific promise, however, does not erase concerns about access, intellectual property,
+        and data control. When AI systems accelerate drug discovery, the question of who can
+        afford the resulting drugs — and who owns the patents — remains as urgent as it ever was.
+        Improvements in the speed of discovery do not automatically translate into improvements in
+        the distribution of benefits.
+      </p>
+
+      <h3>Risks of Medical AI</h3>
+
+      <p>
+        Medical AI's risks are not limited to the obvious concern about inaccuracy. Some of the
+        most serious risks arise precisely when AI systems perform well on average but unevenly
+        across populations, or when their integration into clinical workflows changes how clinicians
+        think and decide.
+      </p>
+
+      <div class="table-wrapper">
+        <table>
+          <caption>Table 9.2 — Key Risks of Medical AI</caption>
+          <thead>
+            <tr>
+              <th scope="col">Risk</th>
+              <th scope="col">Why it matters</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Bias in training data</strong></td>
+              <td>Underrepresented groups — women, people of color, patients from lower-income settings — may receive worse predictions because they appear less often in training data</td>
+            </tr>
+            <tr>
+              <td><strong>Opacity</strong></td>
+              <td>Clinicians and patients may not understand why a recommendation was made, complicating informed consent and professional judgment</td>
+            </tr>
+            <tr>
+              <td><strong>Automation bias and overreliance</strong></td>
+              <td>When clinicians defer to AI recommendations without independent scrutiny, errors become harder to catch — the human check disappears</td>
+            </tr>
+            <tr>
+              <td><strong>Privacy and consent</strong></td>
+              <td>Medical datasets are intimate and difficult to fully anonymize; large-scale training raises questions about patients' rights over their data</td>
+            </tr>
+            <tr>
+              <td><strong>Access inequality</strong></td>
+              <td>Advanced diagnostic systems may benefit wealthy, well-resourced institutions first, widening rather than closing gaps in health outcomes</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>
+        The World Health Organization has argued that AI in health should be governed by human
+        rights, public accountability, and the needs of health workers and patients — not only
+        by technical performance metrics. <cite data-key="who_ai_health_2021"></cite> This framing
+        matters because it refuses to let "accuracy on a benchmark" serve as a sufficient standard
+        for deployment. A system that achieves 95% accuracy overall but 82% accuracy for dark-skinned
+        patients is not equally useful to all patients, and its deployment without acknowledgment
+        of that disparity is an ethical failure, not merely a technical limitation.
+      </p>
+
+      <div class="case-study">
+        <p class="box-label">Case Study</p>
+        <p class="box-title">Triage, Scarcity, and Algorithmic Allocation</p>
+        <p>
+          Suppose a hospital facing resource constraints implements an AI system to prioritize
+          appointments, flag likely no-shows, and rank patients by clinical risk. The case for
+          such a system seems straightforward: limited staff and equipment are deployed more
+          efficiently, and some patients receive earlier intervention than they would have
+          otherwise.
+        </p>
+        <p>
+          But the critical questions concern how the model was trained and what it encodes.
+          If training data reflects a history of under-treating certain populations — because
+          those patients historically avoided medical care due to cost, distrust, or lack of
+          access — the model may treat low utilization as evidence of lower need, and patients
+          from disadvantaged groups may be ranked lower than their actual risk warrants.
+          Social disadvantage can become encoded as "lower compliance" or "lower cost," and
+          the algorithm's apparent objectivity makes this harder to challenge, not easier.
+        </p>
+        <p>
+          Perhaps most importantly, the efficiency gains may depoliticize scarcity itself.
+          If the algorithm is seen as allocating limited resources optimally, the underlying
+          question — why are resources insufficient? — recedes from view. AI may allocate
+          scarce care more efficiently. That is not the same thing as making the health
+          system more just. Efficiency within an unjust system is not justice.
+        </p>
+      </div>
+
+    </section><!-- /medicine -->
+
+
+    <!-- ══════════════════════════════════════════════════
+         PART IV: GOOD GOVERNANCE
+    ══════════════════════════════════════════════════════ -->
+    <section id="governance" aria-labelledby="s4-heading">
+      <h2 id="s4-heading">Part IV: Good Governance</h2>
+
+      <p>
+        Democratic governance has always faced a tension between efficiency and legitimacy.
+        Efficient government makes decisions quickly, at low cost, with uniform rule application.
+        Legitimate government makes decisions that citizens can understand, contest, and hold
+        accountable — decisions that respect rights, acknowledge particular circumstances, and
+        remain correctable when they go wrong. AI intensifies this tension by offering the
+        promise of efficiency improvements at precisely the level — large-scale, consequential,
+        population-affecting decisions — where legitimacy requirements are most demanding.
+      </p>
+
+      <figure>
+        <img src="../images/ai_env_parliament.jpg" alt="Interior of the Scottish Parliament chamber">
+        <figcaption>
+          The Scottish Parliament chamber. Democratic governance requires more than efficient
+          processing of decisions — it requires transparency, accountability, and the ability
+          of citizens to contest decisions that affect them. AI systems used in public
+          administration should meet these standards, not replace them with algorithmic
+          speed. Scottish Parliament photo, CC BY-SA 4.0, via Wikimedia Commons.
+        </figcaption>
+      </figure>
+
+      <h3>What Good AI Governance Requires</h3>
+
+      <p>
+        The OECD's AI Principles — adopted by more than fifty countries — explicitly identify
+        inclusive growth, human rights and democratic values, transparency, robustness, and
+        accountability as core requirements for trustworthy AI.
+        <cite data-key="oecd_ai_principles_2024"></cite> These are not merely technical standards;
+        they are normative commitments about what kind of relationship public institutions should
+        have with the citizens they govern.
+      </p>
+
+      <div class="table-wrapper">
+        <table>
+          <caption>Table 9.3 — A Public-Sector AI Checklist</caption>
+          <thead>
+            <tr>
+              <th scope="col">Question</th>
+              <th scope="col">Why it matters</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Can citizens appeal the decision?</td>
+              <td>Without appeal mechanisms, errors become entrenched rather than corrected</td>
+            </tr>
+            <tr>
+              <td>Can the system be explained?</td>
+              <td>Public power should not hide behind black boxes; citizens are owed reasons</td>
+            </tr>
+            <tr>
+              <td>Is the model audited for bias?</td>
+              <td>Unequal burdens typically fall on already-vulnerable groups; this requires detection</td>
+            </tr>
+            <tr>
+              <td>Is data collection proportionate?</td>
+              <td>Administrative convenience does not override privacy rights</td>
+            </tr>
+            <tr>
+              <td>Does meaningful human review remain?</td>
+              <td>"Human in the loop" should not be a fiction covering fully automated decisions</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>
+        The OECD notes that governments are, in practice, cautious adopters of AI relative to
+        the private sector — precisely because public decisions affect rights, not merely
+        convenience, and because accountability requirements in government are much stricter.
+        <cite data-key="oecd_ai_government_2026"></cite> This caution is appropriate. It reflects
+        an implicit understanding that the legitimacy logic of democratic governance places
+        constraints that the efficiency logic of markets does not.
+      </p>
+
+      <h3>The Governance Triangle</h3>
+
+      <p>
+        Public-sector AI almost always claims to improve one of three goods: efficiency (faster,
+        cheaper decisions at scale), fairness (equal treatment, non-discrimination), or
+        accountability (explanation, appeal, assignment of responsibility). The political
+        question is what gets sacrificed when one corner of this triangle is maximized without
+        equal attention to the others.
+      </p>
+
+      <div class="argument-box">
+        <p class="box-label">What's the Argument?</p>
+        <p class="box-title">The Efficiency–Legitimacy Tension in Democratic Governance</p>
+        <ol class="premises">
+          <li>Democratic governance requires that citizens be able to understand, contest, and hold accountable the decisions that affect them — this is the legitimacy requirement.</li>
+          <li>AI systems in public administration are often opaque, non-contestable, and assign responsibility diffusely — satisfying the efficiency requirement while undermining legitimacy.</li>
+          <li>A government that decides more quickly and cheaply, but less explainably and appealably, has not necessarily become a better government.</li>
+        </ol>
+        <div class="conclusion">
+          <span class="therefore">&#8756;</span>
+          Efficiency gains from AI in government cannot substitute for the transparency,
+          contestability, and accountability that democratic legitimacy requires.
+        </div>
+      </div>
+
+      <div class="key-thinker">
+        <div class="thinker-portrait-placeholder" aria-hidden="true">⚡</div>
+        <div class="thinker-header">
+          <p class="thinker-label">Key Thinker</p>
+          <h3 class="thinker-name">
+            Virginia Eubanks
+            <span class="thinker-dates">(1972–present)</span>
+          </h3>
+        </div>
+        <div class="thinker-body">
+          <p>
+            Virginia Eubanks is a political scientist at the University at Albany, SUNY, and the
+            author of <em>Automating Inequality: How High-Tech Tools Profile, Police, and Punish
+            the Poor</em> (2018). <cite data-key="eubanks_automating_inequality"></cite> Through
+            detailed case studies of automated systems in welfare, child protective services, and
+            healthcare allocation in the United States, she documents a recurring pattern: digital
+            tools introduced to manage scarce public resources tend to reproduce and intensify
+            existing inequalities.
+          </p>
+          <p>
+            Eubanks identifies what she calls a "digital poorhouse" — a set of automated systems
+            that discipline and surveil poor people rather than helping them. When Indiana automated
+            its welfare system, thousands of people were incorrectly denied benefits due to
+            technical errors. When Los Angeles used a predictive model to prioritize housing
+            for homeless people, the system produced rankings that were opaque and difficult to
+            challenge. When Allegheny County used a predictive risk model for child welfare,
+            the system drew disproportionately on data from social services — data that poor
+            families generate simply by being poor — to rank families for investigation.
+          </p>
+          <p>
+            Her central argument: automated systems in government often make exclusion look
+            neutral and technical, when in fact they reflect political choices about who matters
+            and how public resources should be distributed. The algorithm does not solve the
+            underlying scarcity or inequality; it manages it while obscuring the political
+            decisions involved.
+          </p>
+        </div>
+      </div><!-- /.key-thinker -->
+
+      <p>
+        Eubanks's analysis points to a general pattern. Governments introduce automated screening,
+        ranking, or fraud detection when they face scarcity, political pressure, or public distrust.
+        The burdens of these systems fall most heavily on people already dependent on public
+        institutions — welfare recipients, people in public housing, families involved with child
+        protective services. Automation then appears to solve a technical problem (efficient
+        allocation of scarce resources) while the underlying political problem (inadequate
+        resources, structural disadvantage) remains intact. In this sense, AI can become a
+        technology for making exclusion look objective.
+      </p>
+
+    </section><!-- /governance -->
+
+
+    <!-- ══════════════════════════════════════════════════
+         PART V: POVERTY AND GLOBAL INEQUALITY
+    ══════════════════════════════════════════════════════ -->
+    <section id="inequality" aria-labelledby="s5-heading">
+      <h2 id="s5-heading">Part V: Poverty and Global Inequality</h2>
+
+      <p>
+        The most consequential questions about AI's social impact may be global rather than
+        national. About 700 million people — 8.5% of the world's population — live in extreme
+        poverty on less than $2.15 per day. <cite data-key="worldbank_poverty_planet_2024"></cite>
+        About 3.5 billion people, 44% of the world, live on less than $6.85 per day. Sub-Saharan
+        Africa contained 67% of the world's extreme poor in 2024, despite having only 16% of
+        the global population. Against this background, claims that AI will transform human welfare
+        need to be evaluated carefully: not just for whether specific applications provide genuine
+        value, but for whether AI development as a whole reproduces or disrupts the structural
+        inequalities that generate poverty in the first place.
+      </p>
+
+      <h3>The Case for AI in Development</h3>
+
+      <p>
+        Advocates for "AI for development" argue that the technology can genuinely help reduce
+        poverty by extending scarce expertise to underserved populations. An AI translation
+        tool can help a non-English speaker navigate a public-benefits office. A mobile
+        agricultural assistant providing localized weather alerts and crop advice may give
+        small farmers access to information that was previously available only through
+        agricultural extension services many rural areas lack. Low-cost diagnostics could
+        help identify disease earlier in settings without sufficient physicians. These claims
+        are not empty.
+      </p>
+
+      <figure>
+        <img src="../images/ai_env_cobalt_miners.jpg" alt="Artisanal cobalt miners in the Democratic Republic of Congo">
+        <figcaption>
+          Artisanal cobalt miners in the Democratic Republic of Congo. Cobalt is a critical
+          component of the lithium-ion batteries and electronics that underpin AI hardware.
+          The DRC produces roughly 70% of the world's cobalt, often under dangerous working
+          conditions with severe environmental impacts. The benefits of AI accrue to users
+          in wealthy countries; the costs of its material foundation fall on some of the
+          world's poorest communities. CC BY 2.5, via Wikimedia Commons.
+        </figcaption>
+      </figure>
+
+      <h3>The Structural Critique</h3>
+
+      <p>
+        But the optimistic story about development gains depends on underlying power relations
+        that AI, in its current form, tends to reproduce rather than disrupt. The structural
+        questions are stark: Who owns the models, the cloud infrastructure, and the chips?
+        Whose languages and contexts are represented in training data — and whose are absent
+        or systematically distorted? Which countries bear the environmental costs of extraction,
+        energy use, and disposal? Who captures the profits when AI systems are deployed at scale
+        in lower-income countries?
+      </p>
+
+      <div class="key-thinker">
+        <div class="thinker-portrait-placeholder" aria-hidden="true">📊</div>
+        <div class="thinker-header">
+          <p class="thinker-label">Key Thinker</p>
+          <h3 class="thinker-name">
+            Amartya Sen
+            <span class="thinker-dates">(1933–present)</span>
+          </h3>
+        </div>
+        <div class="thinker-body">
+          <p>
+            Amartya Sen is an Indian economist and philosopher at Harvard University, awarded
+            the Nobel Prize in Economics in 1998. His book <em>Development as Freedom</em> (1999)
+            challenged the dominant view that development is primarily about increasing GDP or
+            aggregate output. <cite data-key="sen_development_freedom"></cite> Sen argued instead
+            that development should be understood as the expansion of substantive human freedoms —
+            people's real capabilities to live lives they have reason to value. Poor health,
+            illiteracy, lack of political voice, and social exclusion are not just consequences of
+            poverty; they are forms of poverty in themselves.
+          </p>
+          <p>
+            Applied to AI, Sen's framework shifts the evaluative question from "Does this system
+            raise productivity?" to richer questions: Does it expand human capabilities and agency?
+            Does it strengthen local institutional capacity, or create new dependency on foreign
+            platforms and proprietary systems? Does it give people meaningful control over decisions
+            that affect their lives, or does it make decisions for them in ways they cannot
+            understand or contest?
+          </p>
+          <p>
+            These are not abstract philosophical questions. A mobile AI health assistant that
+            provides useful information while collecting health data for a foreign company, routing
+            it through cloud infrastructure the user cannot control, and generating profits that
+            accrue entirely outside the user's country may improve one measurable outcome while
+            diminishing others that Sen's framework requires us to count.
+          </p>
+        </div>
+      </div><!-- /.key-thinker -->
+
+      <blockquote class="quote-block">
+        <p>
+          "Development is not just higher output. It is an expansion of what people are
+          actually able to do and be."
+        </p>
+        <cite>— Amartya Sen, <cite data-key="sen_development_freedom"></cite></cite>
+      </blockquote>
+
+      <h3>Algorithmic Bias and Racial Justice</h3>
+
+      <p>
+        Within wealthy countries, AI's impact on inequality has a racial dimension that requires
+        its own analysis. Two scholars have been particularly important in developing this critique.
+      </p>
+
+      <div class="key-thinker">
+        <div class="thinker-portrait-placeholder" aria-hidden="true">🔬</div>
+        <div class="thinker-header">
+          <p class="thinker-label">Key Thinkers</p>
+          <h3 class="thinker-name">
+            Safiya Umoja Noble &amp; Ruha Benjamin
+          </h3>
+        </div>
+        <div class="thinker-body">
+          <p>
+            Safiya Umoja Noble's <em>Algorithms of Oppression</em> (2018) documented how search
+            engines systematically return demeaning results for searches related to Black women
+            and other marginalized groups, reflecting and amplifying the biases in the data on
+            which they were trained. <cite data-key="noble_algorithms_oppression"></cite> Noble
+            argued that the claim that search algorithms are "neutral" or "objective" is false
+            in a specific and important sense: they encode the prejudices embedded in the
+            documents they index and the commercial incentives of the companies that build them.
+          </p>
+          <p>
+            Ruha Benjamin's <em>Race After Technology</em> (2019) extended this analysis to a
+            broader range of AI systems — facial recognition, criminal justice prediction,
+            healthcare allocation, hiring tools — under the concept of the "New Jim Code":
+            the way that ostensibly neutral technical systems can encode racial hierarchy and
+            exclusion while presenting themselves as objective, fair, or even liberatory.
+            <cite data-key="benjamin_race_technology"></cite> Benjamin's insight is that the
+            problem is not simply that biased people build biased systems; it is that systems
+            trained on data generated by unjust social arrangements will reproduce those
+            arrangements, and the appearance of technical objectivity makes this harder to see
+            and harder to challenge.
+          </p>
+        </div>
+      </div><!-- /.key-thinker -->
+
+      <h3>Extractive AI and the Question of Dependency</h3>
+
+      <p>
+        The pattern that emerges across environmental, labor, and development concerns is
+        sometimes called <strong>extractive AI</strong> or <strong>AI colonialism</strong>:
+        a configuration in which data, labor, energy, and materials are drawn from communities
+        with less power, while benefits and control are centralized in a small number of
+        firms and wealthy countries.
+      </p>
+
+      <figure>
+        <img src="../images/ai_env_ewaste.jpg" alt="Electronic waste sorting facility">
+        <figcaption>
+          Electronic waste sorting. AI hardware has short upgrade cycles — chips and servers
+          are replaced frequently to maintain competitive performance. The resulting e-waste
+          creates disposal and recycling burdens that often fall on lower-income communities,
+          both within wealthy countries and in the Global South. AI's environmental costs do
+          not end when the query is answered. CC0, via Wikimedia Commons.
+        </figcaption>
+      </figure>
+
+      <div class="case-study">
+        <p class="box-label">Case Study</p>
+        <p class="box-title">AI for Development — or a New Dependency?</p>
+        <p>
+          Consider an AI-powered agricultural advisory service deployed in a low-income country.
+          The service provides localized crop advice and weather alerts via mobile phone, drawing
+          on satellite data, historical climate records, and agronomic models. Farmers who use it
+          report making better decisions about planting dates and irrigation. This is a real benefit.
+        </p>
+        <p>
+          But the infrastructure the service depends on is owned by a foreign cloud provider.
+          The data farmers input — about their crops, their yields, their land — is collected and
+          stored on foreign servers under terms most users do not read or understand. The model
+          was trained primarily on data from wealthier agricultural regions where better data
+          exists, potentially making its recommendations less accurate for local conditions and
+          crops. The company is a for-profit enterprise whose business model depends on growing
+          user data and subscription revenue.
+        </p>
+        <p>
+          Has development occurred? Some outcomes have improved. But local agricultural
+          institutions are weaker relative to the foreign platform. Farmers are dependent on
+          infrastructure they cannot inspect or govern. The data representing their land and
+          labor generates value that accrues elsewhere. Sen's capabilities framework asks us
+          to count all of these dimensions — not just the improvement in planting-date decisions.
+          Whether the service represents genuine development or a new form of dependency cannot
+          be answered by measuring only the immediate agricultural outcome.
+        </p>
+      </div>
+
+      <div class="thought-questions">
+        <p class="box-label">Thought Questions</p>
+        <ol>
+          <li>
+            Virginia Eubanks argues that automated government systems tend to discipline
+            and punish the poor rather than helping them. Do you think this is an inherent
+            feature of such systems, or a contingent failure that could be corrected with
+            better design and oversight?
+          </li>
+          <li>
+            Sen argues that development means expanding capabilities, not just raising output.
+            Can you think of an AI application that increases a measurable output while reducing
+            relevant human capabilities? Is the net effect positive or negative by Sen's standard?
+          </li>
+          <li>
+            Noble and Benjamin argue that "neutral" algorithms can reproduce racial hierarchy.
+            What would a genuinely non-biased algorithmic system look like? Is it possible to
+            build one, or does the data itself always carry historical injustice?
+          </li>
+          <li>
+            The concept of "extractive AI" or "AI colonialism" draws an analogy between digital
+            extraction and historical colonialism. Is the analogy apt? What does it illuminate
+            about current AI development, and what does it obscure?
+          </li>
+        </ol>
+      </div>
+
+    </section><!-- /inequality -->
+
+
+    <!-- ══════════════════════════════════════════════════
+         KEY POINTS
+    ══════════════════════════════════════════════════════ -->
+    <section id="key-points" aria-labelledby="kp-heading">
+      <h2 id="kp-heading">Key Points</h2>
+
+      <p>
+        This chapter has argued that AI must be evaluated not only by what it does — the outputs
+        it produces, the tasks it enables — but by how it redistributes benefits, risks, resources,
+        and decision-making power. AI's impacts on the environment, medicine, governance, and global
+        inequality are not a secondary concern to be addressed after the technology is built; they are
+        constitutive of what the technology is and what it is for. The framework below applies to any
+        domain where AI is deployed at scale: sustainability, human benefit, legitimacy, and justice
+        are four tests that must be applied together, because satisfying only one or two of them is
+        insufficient.
+      </p>
+
+      <div class="key-points">
+        <p class="box-label">Key Points</p>
+        <ul>
+          <li>
+            <strong>AI as a material system</strong> (Kate Crawford): AI is not weightless software
+            but a planetary-scale infrastructure of extraction, energy, labor, and logistics.
+            Understanding its ethical impacts requires looking beyond model outputs to the full
+            supply chain.
+          </li>
+          <li>
+            <strong>The rebound effect:</strong> efficiency improvements in AI do not automatically
+            reduce total resource use. Cheaper inference encourages wider deployment, potentially
+            increasing aggregate energy demand even as unit costs fall.
+          </li>
+          <li>
+            <strong>AI for climate</strong> requires comparative, evidence-based evaluation: do
+            specific applications (grid balancing, wildfire detection, materials discovery) reduce
+            enough harm to justify their material costs? The answer differs case by case.
+          </li>
+          <li>
+            <strong>Medical AI</strong> shows genuine promise (FDA-approved devices, AlphaFold)
+            but carries serious risks: bias in training data, automation-induced overreliance,
+            access inequality, and the danger that efficiency in allocating scarce care is
+            mistaken for justice in the health system.
+          </li>
+          <li>
+            <strong>Virginia Eubanks</strong> showed that automated government systems often
+            discipline and punish poor people rather than helping them — making exclusion look
+            objective and technical while the underlying political problem of scarcity remains unaddressed.
+          </li>
+          <li>
+            <strong>The efficiency–legitimacy tension:</strong> democratic governance requires
+            that decisions be transparent, contestable, and accountable. AI can improve efficiency
+            while simultaneously undermining legitimacy — and a faster government is not
+            necessarily a better one.
+          </li>
+          <li>
+            <strong>Noble and Benjamin</strong> documented how "neutral" algorithmic systems
+            (search engines, hiring tools, criminal justice prediction) can reproduce racial
+            hierarchy while presenting themselves as objective — what Benjamin calls the
+            "New Jim Code."
+          </li>
+          <li>
+            <strong>Sen's capabilities framework:</strong> development should be measured by
+            the expansion of what people can actually do and be — not just by aggregate output.
+            Applied to AI, this asks whether a system expands human agency and institutional
+            capacity or deepens dependency on foreign platforms.
+          </li>
+          <li>
+            <strong>Extractive AI / AI colonialism:</strong> data, labor, energy, and materials
+            are often drawn from communities with less power, while benefits and control are
+            centralized in a small number of firms and wealthy countries. This pattern is visible
+            in cobalt mining, data labeling, and platform dependency.
+          </li>
+          <li>
+            <strong>A four-test framework:</strong> any consequential AI deployment should be
+            evaluated against sustainability (what are the environmental costs?), human benefit
+            (who actually gains?), legitimacy (is the system transparent and contestable?), and
+            justice (are benefits and burdens distributed fairly?).
+          </li>
+        </ul>
+      </div>
+
+    </section><!-- /key-points -->
+
+    <!-- ══════════════════════════════════════════════════
+         REFERENCES
+    ══════════════════════════════════════════════════════ -->
+    <section id="references-section" aria-labelledby="refs-heading">
+      <h2 id="refs-heading">References</h2>
+      <div id="bibliography"></div>
+    </section>
+
+  </main><!-- /.chapter-content -->
+
+
+  <footer class="chapter-footer">
+    <nav class="chapter-footer-nav" aria-label="Chapter navigation">
+      <a href="ch08_work_automation.html" class="footer-nav-btn">&#8592; Previous chapter</a>
+      <a href="index.html" class="footer-nav-btn">&#8962; Table of Contents</a>
+      <a href="ch10_doomsday.html" class="footer-nav-btn">Next chapter &#8594;</a>
+    </nav>
+    <p class="chapter-footer-meta">
+      <em>Computing and AI Ethics</em> by Brendan Shea, PhD &nbsp;·&nbsp;
+      <a href="https://creativecommons.org/licenses/by-nc/4.0/"
+         target="_blank" rel="noopener">CC BY-NC 4.0</a> &nbsp;·&nbsp;
+      Rochester Community and Technical College
+    </p>
+  </footer>
+
+</div><!-- /.page-wrapper -->
+
+<script>
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: 'neutral',
+    themeVariables: {
+      primaryColor:      '#1a4a8a',
+      primaryTextColor:  '#fff',
+      primaryBorderColor:'#003366',
+      lineColor:         '#546e7a',
+      secondaryColor:    '#f0f6ff',
+      tertiaryColor:     '#fdf6e3'
+    }
+  });
+</script>
+
+</body>
+</html>
