@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(latexmk -c ai_ethics_08_work.tex ai_ethics_11_robot_rights.tex)",
+      "Bash(ls c:/Users/brend/OneDrive/Documents/Github/computing_ai_ethics/*.aux c:/Users/brend/OneDrive/Documents/Github/computing_ai_ethics/*.log c:/Users/brend/OneDrive/Documents/Github/computing_ai_ethics/*.bcf c:/Users/brend/OneDrive/Documents/Github/computing_ai_ethics/*.run.xml)",
+      "Bash(ls c:/Users/brend/OneDrive/Documents/Github/computing_ai_ethics/*.pdf)",
+      "Bash(cp ai_ethics_08_work.pdf PDFs/ai_ethics_08_work.pdf)",
+      "Bash(cp ai_ethics_11_robot_rights.pdf PDFs/ai_ethics_11_robot_rights.pdf)",
+      "Bash(rm ai_ethics_08_work.pdf ai_ethics_11_robot_rights.pdf ai_ethics_08_work.bbl ai_ethics_08_work.nav ai_ethics_08_work.snm ai_ethics_11_robot_rights.bbl ai_ethics_11_robot_rights.nav ai_ethics_11_robot_rights.snm)",
+      "Bash(ls \"c:/Users/brend/OneDrive/Documents/Github/computing_ai_ethics/\"*.tex)",
+      "Bash(curl -L -o \"C:/Users/brend/OneDrive/Documents/Github/computing_ai_ethics/images/pong_game.jpg\" \"https://upload.wikimedia.org/wikipedia/commons/2/20/Pong_game_on_TV.jpg\")",
+      "Bash(curl -L -o \"C:/Users/brend/OneDrive/Documents/Github/computing_ai_ethics/images/games_chess.jpg\" \"https://upload.wikimedia.org/wikipedia/commons/c/cd/Ludwig_Deutsch_-_The_Chess_Players%2C_1904.jpg\")",
+      "Bash(python -c \":*)",
+      "Bash(latexmk -pdf -interaction=nonstopmode ai_ethics_12_games.tex)",
+      "Bash(grep -n \"\\\\\\\\begin{frame}\\\\[shrink\" \"c:/Users/brend/OneDrive/Documents/Github/computing_ai_ethics/ai_ethics_12_games.tex\")",
+      "Bash(sort -t'%' -k1 -rn)"
+    ]
+  }
+}
