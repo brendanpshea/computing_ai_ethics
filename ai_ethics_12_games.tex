@@ -1,0 +1,887 @@
+\documentclass[aspectratio=169,11pt]{beamer}
+
+% Load common preamble (theme, packages, standard boxes)
+\input{lecture_preamble.tex}
+
+% Title information
+\title[Games and the Meaning of Life]{Games and the Meaning of Life}
+\subtitle{Play, Virtue, and Human Flourishing in the Age of AI}
+\author{Computing and AI Ethics}
+\institute{Rochester Community and Technical College}
+\date{}
+
+\begin{document}
+
+\mode<article>{
+This lecture explores games --- from ancient philosophy to modern video games --- as a lens for thinking about virtue, meaning, and human flourishing. Section~I introduces the philosophy of play through Johan Huizinga's \emph{Homo Ludens} and the concept of the ``magic circle.'' Section~II develops Bernard Suits' precise definition of a game in terms of \textbf{prelusory goals}, \textbf{constitutive rules}, and the \textbf{lusory attitude} (the voluntary acceptance of unnecessary obstacles), alongside Roger Caillois' four-part taxonomy and C.~Thi Nguyen's argument that games are an art form for sculpting agency. Section~III surveys the recurring \textbf{moral panic} pattern around new entertainment media --- from Plato's suspicion of poetry through the 1950s comic-book hearings to the video game violence debates --- and introduces Max Weber's Protestant work ethic as one source of cultural anxiety about play. Section~IV examines the modern debate about video games: Craig Anderson's meta-analyses on aggression, Christopher Ferguson's methodological critique, the WHO's Gaming Disorder classification (ICD-11), Ryan and Deci's self-determination theory applied to problematic gaming, predatory loot-box design, Jane McGonigal's \emph{Reality Is Broken}, and Ian Bogost's procedural rhetoric. Section~V applies Aristotle's habituation account and Shannon Vallor's technomoral virtue framework. Section~VI turns to Suits' deeper argument: in a world where all needs are automatically met, the only rational activity is \emph{playing games}. Section~VII connects Suits' utopia to AI, automation, and post-work society. Bibliography covers Suits, Huizinga, Caillois, Nguyen, McGonigal, Bogost, Keynes, Weber, Anderson, Ferguson, Przybylski, and the WHO.
+}
+
+% ============================================================
+% TITLE SLIDE
+% ============================================================
+{%
+\usebackgroundtemplate{\includegraphics[width=\paperwidth,height=\paperheight]{images/fractal_05.png}}%
+\begin{frame}
+\vfill
+\begin{center}
+\begin{tcolorbox}[
+    enhanced,
+    width=0.84\textwidth,
+    colback=black!82,
+    colframe=white!85,
+    boxrule=0.6pt,
+    arc=3pt,
+    left=10pt,
+    right=10pt,
+    top=10pt,
+    bottom=10pt
+]
+{\centering
+{\usebeamerfont{title}\color{white}\inserttitle\par}
+\vspace{0.35em}
+{\usebeamerfont{subtitle}\color{mAccent}\insertsubtitle\par}
+\vspace{0.8em}
+{\usebeamerfont{author}\color{white}\insertauthor\par}
+{\usebeamerfont{institute}\color{white!85}\insertinstitute\par}
+{\usebeamerfont{date}\color{white!75}\insertdate\par}
+}
+\end{tcolorbox}
+\end{center}
+\vfill
+\end{frame}
+}
+
+% ============================================================
+% CENTRAL QUESTIONS
+% ============================================================
+\begin{frame}{Central Questions}
+\begin{itemize}
+    \item What \emph{is} a game --- and what separates play from work?
+    \item Do video games \textbf{build} or \textbf{erode} our moral character?
+    \item Why does every generation fear the \textbf{latest entertainment medium}?
+    \item Suits argues that in a perfect world, \textbf{life would consist of games} --- is he right?
+    \item If AI takes over most human labor, what gives our lives \textbf{meaning}?
+\end{itemize}
+
+\vspace{0.2cm}
+\begin{alertblock}{The Big Idea}
+Games are not a retreat from the serious business of life --- they may be its deepest expression.
+\end{alertblock}
+\end{frame}
+
+% ============================================================
+% CONNECTIONS
+% ============================================================
+\begin{frame}{Connections to Previous Lectures}
+\footnotesize
+\textbf{Lecture 2 (Virtue Ethics)}: Aristotle: character is formed by \textbf{habituation} --- we become what we repeatedly do. Games are what millions repeatedly do.
+
+\vspace{0.12cm}
+\textbf{Lecture 7 (AI)}: Complex goal-directed behavior in games raises the same questions as AI: does it constitute genuine \textbf{agency}?
+
+\vspace{0.12cm}
+\textbf{Lecture 8 (Work and Automation)}: If AI eliminates human labor, Suits' philosophy of games is one of the most serious answers to ``what then?''
+
+\vspace{0.12cm}
+\textbf{Lecture 11 (Robot Rights)}: Suits argues life is already a game we are playing. Could AI systems someday participate in that game?
+
+\begin{alertblock}{?}
+Is play the \emph{opposite} of work, or its \textbf{complement} --- or could it someday be its \textbf{replacement}?
+\end{alertblock}
+\end{frame}
+
+% ============================================================
+% SECTION I: WHAT IS PLAY?
+% ============================================================
+\section{Part I: What Is Play?}
+
+\begin{frame}{Play as a Human Universal}
+\footnotesize
+Games and play appear in \textbf{every human culture}:
+\begin{itemize}
+    \item Dice in ancient Mesopotamia (c.~3000 BCE); board games in Egypt and China
+    \item The Greek \textbf{Olympics} (776 BCE) --- athletic competition as civic ritual
+    \item Children's play in every society --- a near-universal feature of mammalian development
+\end{itemize}
+
+\vspace{0.15cm}
+Yet philosophers have long been \textbf{ambivalent}:
+\begin{itemize}
+    \item Play is \textbf{voluntary} and \textbf{autotelic} (done for its own sake)
+    \item This makes it look \textbf{trivial} --- or dangerously attractive
+    \item Aristotle distinguished \textbf{leisure} (\emph{schole}) from mere amusement
+\end{itemize}
+
+\begin{alertblock}{?}
+Can something be both \emph{unserious} and \emph{deeply important}?
+\end{alertblock}
+\end{frame}
+
+% IMAGE SLIDE: Huizinga
+\begin{frame}[t]{Johan Huizinga and \emph{Homo Ludens} (1938)}
+\vspace{-0.3cm}
+\begin{columns}[T]
+\begin{column}{0.35\textwidth}
+\begin{figure}
+    \includegraphics[width=\textwidth,height=0.55\textheight,keepaspectratio]{images/huizinga_portrait.jpg}
+    \caption*{\scriptsize Johan Huizinga (1872--1945). Portrait, public domain, via Wikimedia Commons.}
+\end{figure}
+\end{column}
+\begin{column}{0.62\textwidth}
+\begin{conceptbox}[Homo Ludens and the Magic Circle --- \textcite{huizinga_homo_ludens}]
+\scriptsize
+Huizinga argued that \textbf{play is culture's foundation}. \emph{Homo sapiens} and \emph{homo faber} both miss something: we are \emph{homo ludens} --- the \textbf{playing human}.
+
+\vspace{0.05cm}
+Play occurs in a \textbf{magic circle}: a special, bounded space entered voluntarily, where ordinary rules are suspended and the game's own rules reign.
+\end{conceptbox}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}[t]{Features of Play}
+\footnotesize
+Huizinga identifies defining features of \textbf{genuine play} \parencite{huizinga_homo_ludens}:
+
+\vspace{0.1cm}
+\begin{columns}[T]
+\begin{column}{0.48\textwidth}
+\begin{probox}[What Makes Something Play]
+\scriptsize
+\begin{itemize}
+    \item \textbf{Free}: entered voluntarily
+    \item \textbf{Separate}: enclosed in its own time and space
+    \item \textbf{Uncertain}: outcome not predetermined
+    \item \textbf{Unproductive}: creates no goods outside itself
+    \item \textbf{Make-believe}: a ``second reality''
+\end{itemize}
+\end{probox}
+\end{column}
+\begin{column}{0.48\textwidth}
+\begin{objectionbox}[The Puzzle]
+\scriptsize
+If play is \textbf{unproductive} and \textbf{separate} from real life, why does it matter so much?
+
+\vspace{0.1cm}
+And if the magic circle can be shattered by stepping outside it, how can play bear the weight of \textbf{life's meaning}?
+
+\vspace{0.1cm}
+This is the tension Suits will try to resolve.
+\end{objectionbox}
+\end{column}
+\end{columns}
+\end{frame}
+
+% ============================================================
+% SECTION II: DEFINING GAMES
+% ============================================================
+\section{Part II: Defining Games}
+
+\begin{frame}[t]{The Problem of Defining ``Game''}
+\footnotesize
+What do these have in common?
+
+\vspace{0.1cm}
+\begin{center}
+\footnotesize
+\begin{tabular}{llll}
+\toprule
+Chess & Poker & Tennis & \emph{Minecraft} \\
+Solitaire & Hopscotch & \emph{Candy Crush} & Hide-and-seek \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\vspace{0.15cm}
+Wittgenstein: there is \textbf{no single essence} --- only ``family resemblances.'' Suits disagreed:
+
+\vspace{0.1cm}
+\begin{quotebox}[Suits (\citeyear{suits_grasshopper})]
+\footnotesize
+``I propose to demonstrate that games can be defined, and that Wittgenstein is wrong.''
+\end{quotebox}
+
+\begin{alertblock}{Why It Matters}
+\scriptsize
+If we can say precisely \emph{what} a game is, we can ask what games \emph{do} --- to our character, our sense of meaning, and our understanding of life.
+\end{alertblock}
+\end{frame}
+
+\begin{frame}[t]{Suits' Definition: The Three Elements}
+\vspace{-0.2cm}
+\begin{conceptbox}[Playing a Game --- \textcite{suits_grasshopper}]
+\footnotesize
+To play a game is to attempt to bring about a specific state of affairs (\textbf{prelusory goal}), using only means permitted by rules (\textbf{constitutive rules}), where the rules prohibit more efficient means, and where such rules are accepted because they make the activity possible (\textbf{lusory attitude}).
+\end{conceptbox}
+
+\vspace{0.05cm}
+\begin{columns}[T]
+\begin{column}{0.31\textwidth}
+\begin{conceptbox}[1. Prelusory Goal]
+\scriptsize
+The goal \textbf{describable without the game}: get the ball in the hole; reach the other side of the board.
+\end{conceptbox}
+\end{column}
+\begin{column}{0.31\textwidth}
+\begin{conceptbox}[2. Constitutive Rules]
+\scriptsize
+Rules that \textbf{define} the game by \textbf{prohibiting efficient means}: you must use a club; a bishop moves diagonally.
+\end{conceptbox}
+\end{column}
+\begin{column}{0.31\textwidth}
+\begin{conceptbox}[3. Lusory Attitude]
+\scriptsize
+\textbf{Voluntary acceptance} of the rules --- not despite but \emph{because} they make the game possible.
+\end{conceptbox}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}[t]{The Golf Example}
+\begin{casestudybox}[The Simplest Example: Golf]
+\footnotesize
+The \textbf{prelusory goal} of golf is to get a small ball into a series of holes in the ground.
+
+\vspace{0.1cm}
+This is \emph{easy} --- you could just walk up and drop the ball in. Done in two minutes.
+
+\vspace{0.1cm}
+Instead, golfers use \textbf{clubs}, start far away, and count every stroke. These rules make the goal \textbf{much harder} --- and that is the point.
+
+\vspace{0.1cm}
+The player who carries the ball to the hole \textbf{achieved the prelusory goal} but \textbf{abandoned the game}. Cheating means you haven't really won anything.
+\end{casestudybox}
+
+\vspace{0.15cm}
+Suits' famous summary: a game is ``the \textbf{voluntary acceptance of unnecessary obstacles}.''
+\end{frame}
+
+\begin{frame}[t]{Caillois: Four Types of Games}
+\footnotesize
+Roger Caillois classified games into four types \parencite{caillois_man_play}:
+
+\vspace{0.1cm}
+\begin{columns}[T]
+\begin{column}{0.23\textwidth}
+\begin{conceptbox}[\emph{Agôn}]
+\scriptsize
+\textbf{Competition}: skill determines the winner. Chess, tennis, esports.
+\end{conceptbox}
+\end{column}
+\begin{column}{0.23\textwidth}
+\begin{conceptbox}[\emph{Alea}]
+\scriptsize
+\textbf{Chance}: fate determines the outcome. Dice, roulette, loot boxes.
+\end{conceptbox}
+\end{column}
+\begin{column}{0.23\textwidth}
+\begin{conceptbox}[\emph{Mimicry}]
+\scriptsize
+\textbf{Role-play}: pretending to be someone else. Theatre, RPGs, \emph{The Sims}.
+\end{conceptbox}
+\end{column}
+\begin{column}{0.23\textwidth}
+\begin{conceptbox}[\emph{Ilinx}]
+\scriptsize
+\textbf{Vertigo}: altered sensation. Roller coasters, VR, extreme sports.
+\end{conceptbox}
+\end{column}
+\end{columns}
+
+\vspace{0.15cm}
+\begin{alertblock}{Video Games as Hybrid}
+\footnotesize
+\emph{Fortnite} combines all four: competition (\emph{agôn}), random loot (\emph{alea}), character skins (\emph{mimicry}), and kinesthetic excitement (\emph{ilinx}).
+\end{alertblock}
+\end{frame}
+
+\begin{frame}[t]{Nguyen: Games as an Art Form for Agency}
+\begin{conceptbox}[Games as Agency as Art --- \textcite{nguyen_games_agency}]
+\footnotesize
+C.~Thi Nguyen argues that what makes games \textbf{unique as an art form} is not what they represent, but what they \emph{do to the player's agency}. A game designer crafts a \textbf{form of striving} --- a temporary set of motivations and values.
+
+\vspace{0.05cm}
+When you play, you \textbf{adopt temporary goals}: to capture the king, to survive the next wave. This \emph{borrowed agency} is the art.
+\end{conceptbox}
+
+\vspace{0.05cm}
+\begin{columns}[T]
+\begin{column}{0.48\textwidth}
+\begin{probox}[What This Explains]
+\scriptsize
+\begin{itemize}
+    \item Why games feel \textbf{meaningful} even if outcomes ``don't matter''
+    \item Why \textbf{bad game design} feels like an imposition
+\end{itemize}
+\end{probox}
+\end{column}
+\begin{column}{0.48\textwidth}
+\begin{objectionbox}[Nguyen's Warning]
+\scriptsize
+Games can \textbf{hijack values}. Leaderboards replace genuine goals with \textbf{gamified metrics} we then import into the rest of our lives.
+\end{objectionbox}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Discussion: Is This a Game?}
+\begin{discussionbox}[Testing Suits' Definition]
+\footnotesize
+Apply the three-part test to each. Does it have a prelusory goal, constitutive rules, and a lusory attitude?
+\begin{enumerate}
+    \item \textbf{A mobile ``idle game''} that plays itself while you sleep
+    \item \textbf{A loot box}: pay money for a randomized in-game reward
+    \item \textbf{A job simulation} (\emph{Stardew Valley}): you ``work'' in the game voluntarily
+\end{enumerate}
+\textbf{Which pass Suits' test? Which fail --- and does it matter?}
+\end{discussionbox}
+\end{frame}
+
+% ============================================================
+% SECTION III: HISTORY OF MORAL PANIC
+% ============================================================
+\section{Part III: Games, Moral Panic, and the Work Ethic}
+
+\begin{frame}[t]{Plato and Aristotle on Play}
+\begin{columns}[T]
+\begin{column}{0.48\textwidth}
+\begin{objectionbox}[Plato's Suspicion]
+\footnotesize
+In the \emph{Republic}, Plato argued that \textbf{poetry and performance} corrupted the soul by appealing to the lower, emotional parts of the psyche \parencite{plato_republic}.
+
+\vspace{0.1cm}
+The state must \textbf{control what stories are told}. The wrong spectacles form the wrong character.
+\end{objectionbox}
+\end{column}
+\begin{column}{0.48\textwidth}
+\begin{probox}[Aristotle's Defense]
+\footnotesize
+Aristotle distinguished \textbf{amusement} (mere relaxation) from \textbf{leisure} (\emph{schole}): freely chosen activity pursued for its own sake --- the highest human good \parencite{aristotle_nicomachean}.
+
+\vspace{0.1cm}
+\textbf{Work exists for the sake of leisure}, not the reverse.
+\end{probox}
+\end{column}
+\end{columns}
+
+\vspace{0.15cm}
+\begin{alertblock}{?}
+\footnotesize
+Is today's video game debate closer to Plato (wrong content corrupts) or Aristotle (is this the right use of leisure)?
+\end{alertblock}
+\end{frame}
+
+\begin{frame}[t]{The Protestant Work Ethic}
+\begin{conceptbox}[Work as a Calling --- \textcite{weber_protestant_ethic}]
+\footnotesize
+Weber argued that the Reformation produced a new attitude: for Calvinist Protestants, \textbf{diligence in one's earthly calling was a sign of divine election}. Idleness became \emph{sinful}.
+
+\vspace{0.1cm}
+This ethic shaped industrial capitalism even after its religious roots faded.
+\end{conceptbox}
+
+\vspace{0.15cm}
+\footnotesize
+Consequences for attitudes toward games:
+\begin{itemize}
+    \item Play became \textbf{morally suspect} for adults
+    \item Work became \textbf{intrinsically virtuous}, independent of what it produced
+    \item The Suits/Keynes vision of a leisure society felt \textbf{threatening}, not liberating
+\end{itemize}
+
+\begin{alertblock}{?}
+\scriptsize
+Do you feel guilty spending an afternoon playing a video game? Where does that feeling come from?
+\end{alertblock}
+\end{frame}
+
+\begin{frame}[t]{The Moral Panic Pattern}
+\begin{conceptbox}[Moral Panic]
+\footnotesize
+A \textbf{moral panic} is a widespread social reaction to a perceived threat, usually focused on a \textbf{new cultural product associated with young people}.
+\end{conceptbox}
+
+\vspace{0.05cm}
+\begin{center}
+\scriptsize
+\begin{tabular}{lll}
+\toprule
+\textbf{Era} & \textbf{Target} & \textbf{Alleged Harm} \\
+\midrule
+1800s & ``Penny dreadful'' fiction & Crime, immorality \\
+1950s & Comic books & Juvenile delinquency \\
+1970s--80s & Dungeons \& Dragons & Satanism, suicide \\
+1990s--2000s & Video game violence & Mass shootings \\
+2010s & Social media & Depression, radicalization \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{alertblock}{The Pattern}
+\scriptsize
+New medium $\to$ young people adopt it $\to$ moral authorities warn $\to$ calls for restriction $\to$ research finds effects smaller than feared.
+\end{alertblock}
+\end{frame}
+
+% IMAGE SLIDE: Vintage Arcade
+\begin{frame}[t]{Video Games Enter the Scene}
+\begin{columns}[T]
+\begin{column}{0.40\textwidth}
+\begin{figure}
+    \includegraphics[width=\textwidth,height=0.70\textheight,keepaspectratio]{images/vintage_arcade.jpg}
+    \caption*{\scriptsize The Atari 2600 (1977). Photo by Evan-Amos. Public domain, via Wikimedia Commons.}
+\end{figure}
+\end{column}
+\begin{column}{0.57\textwidth}
+\footnotesize
+A brief history:
+
+\vspace{0.05cm}
+\begin{itemize}
+    \item \textbf{1972}: \emph{Pong} --- first hit arcade game
+    \item \textbf{1977}: Atari 2600 brings games into homes
+    \item \textbf{1985}: NES; \emph{Super Mario Bros.}
+    \item \textbf{1993--94}: Mortal Kombat triggers Senate hearings; ESRB ratings created
+    \item \textbf{2004}: \emph{World of Warcraft}; MMO era
+    \item \textbf{2008}: iPhone App Store; mobile explosion
+    \item \textbf{2020s}: 3 billion players; \$200B/year revenue
+\end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+
+% ============================================================
+% SECTION IV: THE MORAL DEBATE ABOUT VIDEO GAMES
+% ============================================================
+\section{Part IV: Video Games --- Harm or Benefit?}
+
+\begin{frame}[t]{The Violence Debate: The Concern}
+\begin{conceptbox}[Anderson's Meta-Analyses]
+\footnotesize
+Anderson et al.\ found that exposure to \textbf{violent video games} correlates with increased \textbf{aggressive thoughts, feelings, and behavior} and decreased empathy, across Eastern and Western cultures \parencite{anderson_violent_video_games}.
+\end{conceptbox}
+
+\vspace{0.15cm}
+\begin{argumentbox}[Habituation and Virtual Violence]
+\footnotesize
+\begin{enumerate}
+    \item Aristotle: \textbf{character is formed by habituation} --- we become what we repeatedly do.
+    \item Violent games involve \textbf{repeatedly simulating and being rewarded for violence}.
+    \item Therefore, they tend to form more \textbf{aggressive, less empathetic} dispositions.
+\end{enumerate}
+\end{argumentbox}
+\end{frame}
+
+\begin{frame}[t]{The Violence Debate: The Critique}
+\begin{objectionbox}[Ferguson's Methodological Critique --- \textcite{ferguson_video_game_debate}]
+\footnotesize
+\begin{itemize}
+    \item \textbf{Publication bias}: studies with effects are more likely published
+    \item \textbf{Inconsistent measures}: ``aggression'' measured by noise blasts, not real violence
+    \item \textbf{Small effect sizes}: tiny and of questionable practical significance
+    \item \textbf{Confounds}: gamers differ from non-gamers in many ways
+\end{itemize}
+\end{objectionbox}
+
+\vspace{0.15cm}
+\begin{probox}[The Empirical Picture]
+\footnotesize
+Youth violence \textbf{declined} while gaming \textbf{rose sharply}. High-gaming nations (Japan, South Korea) have very low rates of violent crime. Effects are real but likely overstated.
+\end{probox}
+\end{frame}
+
+\begin{frame}[t]{Gaming Disorder: When Gaming Becomes a Problem}
+\begin{conceptbox}[WHO Gaming Disorder --- \textcite{who_gaming_disorder_2019}]
+\footnotesize
+WHO added \textbf{Gaming Disorder} to ICD-11 (2019). Criteria: impaired control over gaming, increasing priority over other activities, continuation despite negative consequences, and symptoms present for \textbf{12+ months}. Estimated prevalence: $\sim$3--4\% of gamers.
+\end{conceptbox}
+
+\vspace{0.15cm}
+\begin{conceptbox}[Self-Determination Theory --- \textcite{ryan_deci_sdt}]
+\footnotesize
+\textbf{Problematic gaming is often a symptom, not a cause.} People whose needs for \textbf{autonomy, competence, and relatedness} are unmet in real life may use games as a substitute --- but the game cannot solve the underlying deficit.
+\end{conceptbox}
+\end{frame}
+
+\begin{frame}[t]{Predatory Design: Loot Boxes}
+\begin{casestudybox}[Loot Boxes and Gambling Mechanics]
+\footnotesize
+A \textbf{loot box} is a purchasable randomized in-game reward. Key features:
+\begin{itemize}
+    \item \textbf{Variable-ratio reinforcement}: the most powerful compulsive schedule (same as slot machines)
+    \item \textbf{Disguised cost}: ``coins'' or ``gems'' obscure real money spent
+    \item \textbf{Child targeting}: prevalent in games with large young audiences
+\end{itemize}
+Belgium and the Netherlands banned loot boxes as gambling (2018).
+\end{casestudybox}
+
+\vspace{0.1cm}
+\begin{alertblock}{Nguyen's Warning Revisited}
+\footnotesize
+Predatory design uses game mechanics not to scaffold genuine agency, but to \textbf{exploit psychological vulnerabilities} for profit.
+\end{alertblock}
+\end{frame}
+
+\begin{frame}[t]{McGonigal: Reality Is Broken}
+\begin{columns}[T]
+\begin{column}{0.28\textwidth}
+\begin{conceptbox}[Key Thinker]
+\scriptsize
+\textbf{Jane McGonigal} (b.~1977), game designer and researcher. \emph{Reality Is Broken} (2011): games deliver meaning more reliably than ordinary life \parencite{mcgonigal_reality_broken}.
+\end{conceptbox}
+\end{column}
+\begin{column}{0.69\textwidth}
+\begin{conceptbox}[What Games Do Better Than Reality]
+\footnotesize
+McGonigal's four features of game-based meaning:
+\begin{enumerate}
+    \item \textbf{Urgent optimism}: a clear problem you believe you can solve
+    \item \textbf{Social fabric}: cooperation and connection
+    \item \textbf{Blissful productivity}: satisfying hard work
+    \item \textbf{Epic meaning}: participating in something larger
+\end{enumerate}
+
+\vspace{0.05cm}
+Games are ``\textbf{unnecessary obstacles we volunteer to tackle}'' --- in tackling them we become more resilient and connected.
+\end{conceptbox}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}[t]{Games as Persuasion: Ian Bogost}
+\begin{conceptbox}[Procedural Rhetoric --- \textcite{bogost_persuasive_games}]
+\footnotesize
+Bogost argues games make arguments through \textbf{procedural rhetoric}: through the rules and mechanics the player \emph{enacts}, not just words or images. You \emph{experience} the argument from inside.
+\end{conceptbox}
+
+\vspace{0.05cm}
+\begin{casestudybox}[Games as Arguments]
+\scriptsize
+\textbf{\emph{Spent}} (2011): make impossible choices (rent or medicine) and \textbf{experience the structure of poverty}.
+
+\textbf{\emph{Papers, Please}} (2013): bureaucratic rules implicate you in \textbf{injustice} --- the mechanics \emph{are} the argument.
+\end{casestudybox}
+
+\begin{alertblock}{?}
+\scriptsize
+Can a game change your mind about an ethical issue in ways an essay cannot?
+\end{alertblock}
+\end{frame}
+
+% ============================================================
+% SECTION V: VIRTUE ETHICS AND VIDEO GAMES
+% ============================================================
+\section{Part V: Virtue Ethics and Video Games}
+
+\begin{frame}[t]{Aristotle's Habituation and the Magic Circle}
+\footnotesize
+Does practice \textbf{inside} the magic circle shape character \textbf{outside} it?
+
+\vspace{0.12cm}
+\begin{columns}[T]
+\begin{column}{0.48\textwidth}
+\begin{argumentbox}[The Transfer Argument]
+\footnotesize
+\begin{enumerate}
+    \item Character is formed by \textbf{repeated action and emotion} \parencite{aristotle_nicomachean}.
+    \item Games involve thousands of hours of \textbf{repeated action and emotion}.
+    \item Therefore, gaming habits \textbf{shape real character}.
+\end{enumerate}
+\end{argumentbox}
+\end{column}
+\begin{column}{0.48\textwidth}
+\begin{objectionbox}[The Magic Circle Reply]
+\footnotesize
+The game frame is \textbf{known to be artificial}. In-game violence is not real violence. The lusory attitude \textbf{brackets} in-game actions from ordinary moral evaluation \parencite{ferguson_video_game_debate}.
+\end{objectionbox}
+\end{column}
+\end{columns}
+
+\vspace{0.1cm}
+\begin{alertblock}{The Balance}
+\scriptsize
+Games likely shape \textbf{emotional dispositions and attention}, but the transfer depends heavily on the type of game, hours played, and social context.
+\end{alertblock}
+\end{frame}
+
+\begin{frame}[t]{Vallor's Technomoral Virtues Applied to Gaming}
+\footnotesize
+Does gaming \textbf{cultivate or erode} the virtues we need to flourish? \parencite{vallor_technology_virtues}
+
+\vspace{0.1cm}
+\begin{center}
+\scriptsize
+\begin{tabular}{p{2.5cm}p{3.8cm}p{4cm}}
+\toprule
+\textbf{Virtue} & \textbf{Games Can Cultivate} & \textbf{Games Can Erode} \\
+\midrule
+\textbf{Courage} & Persistence through difficulty & Risk-free ``death'' undermines stakes \\
+\textbf{Empathy} & Perspective-taking in narrative games & Dehumanization in competitive play \\
+\textbf{Justice} & Shared goals in cooperative games & Toxic competition; harassment \\
+\textbf{Self-regulation} & Managing resources, deferred rewards & Addictive loops undermine control \\
+\textbf{Humility} & Accepting loss, learning from failure & Rage-quitting; ``gamer'' toxicity \\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{frame}
+
+\begin{frame}[t]{Cooperative Games as Virtue Laboratories}
+\begin{probox}[The Positive Case]
+\footnotesize
+\textbf{Cooperative multiplayer games} may cultivate virtue:
+\begin{itemize}
+    \item \emph{Overcooked}: real-time coordination, communication, patience under pressure
+    \item \emph{Portal 2} (co-op): requires trust, joint problem-solving, perspective-taking
+    \item \emph{Among Us}: social deduction, reading others, managing trust
+\end{itemize}
+These games \textbf{require others to succeed} --- they are not practice for solipsism.
+\end{probox}
+
+\vspace{0.05cm}
+\begin{casestudybox}[Esports: Achievement or Exploitation?]
+\footnotesize
+Professional gaming is a \$1.8B industry. Esports athletes train 10--14 hours/day but face \textbf{burnout, injury, and short careers}. Genuine sport, or exploitation?
+\end{casestudybox}
+\end{frame}
+
+\begin{frame}{Discussion: Character and the Screen}
+\begin{discussionbox}[Discussion]
+\footnotesize
+\begin{enumerate}
+    \item Think about a game you've played for many hours. Did it \textbf{change anything} about how you think, feel, or behave outside the game?
+    \item A parent bans \emph{Grand Theft Auto} but allows \emph{Fortnite}. What ethical framework is she using? Is she right?
+    \item Could a game be \textbf{morally obligatory} --- one we \emph{should} play because of what it teaches?
+\end{enumerate}
+\textbf{What role, if any, should ethics play in our gaming choices?}
+\end{discussionbox}
+\end{frame}
+
+% ============================================================
+% SECTION VI: SUITS' DEEPER ARGUMENT
+% ============================================================
+\section{Part VI: Life as a Game --- Suits' Grasshopper}
+
+\begin{frame}[t]{The Grasshopper's Story}
+\begin{casestudybox}[The Grasshopper and the Ants --- \textcite{suits_grasshopper}]
+\footnotesize
+Suits reimagines Aesop's fable. The Grasshopper, dying in winter while the industrious Ants are warm and fed, is \textbf{unrepentant}. He spent the summer \emph{playing} --- and this was not failure.
+
+\vspace{0.1cm}
+His challenge to the Ants: \textbf{``What are you working \emph{for}?''} The Ants work to survive --- but what is the point of surviving? To be comfortable enough to do \ldots\ what?
+
+\vspace{0.1cm}
+His answer: the end of work is \textbf{leisure}, and the highest form of leisure is \textbf{play} --- voluntary, rule-governed striving for its own sake.
+\end{casestudybox}
+
+\vspace{0.15cm}
+\begin{quotebox}[Suits]
+\footnotesize
+\emph{``The Grasshopper lives as if the Utopia were already here.''}
+\end{quotebox}
+\end{frame}
+
+\begin{frame}[t]{The Utopian Paradox}
+\begin{conceptbox}[Suits' Utopia]
+\footnotesize
+Imagine a world where every material need is automatically satisfied --- by perfect technology, or by AI. No one \emph{needs} to work. What do people do?
+
+\vspace{0.05cm}
+Suits: they \textbf{play games}, because games are the \textbf{only rational activity remaining}.
+\end{conceptbox}
+
+\vspace{0.12cm}
+\begin{argumentbox}[The Utopian Paradox Argument]
+\footnotesize
+\begin{enumerate}
+    \item In utopia, \textbf{all instrumental activities} are handled automatically.
+    \item The only remaining activities are those \textbf{pursued for their own sake}.
+    \item Games are activities pursued via \textbf{voluntarily accepted obstacles}.
+    \item Therefore, in utopia, \textbf{all rational activity takes the form of games}.
+\end{enumerate}
+\end{argumentbox}
+\end{frame}
+
+\begin{frame}[t]{Life \emph{Is} a Game}
+\vspace{-0.2cm}
+\begin{quotebox}[Suits (\citeyear{suits_grasshopper})]
+\footnotesize
+``Utopia is a world where games are played \ldots the very problems of life become the game of life.''
+\end{quotebox}
+
+\vspace{0.07cm}
+\begin{columns}[T]
+\begin{column}{0.48\textwidth}
+\begin{probox}[What This Implies]
+\footnotesize
+\begin{itemize}
+    \item Obstacles in life are \textbf{conditions for meaning}, not problems to eliminate
+    \item A life with all difficulty removed would be \textbf{meaningless}
+    \item \textbf{Striving} is not a means to an end; it \emph{is} the end
+\end{itemize}
+\end{probox}
+\end{column}
+\begin{column}{0.48\textwidth}
+\begin{objectionbox}[The Hollow Obstacle Problem]
+\footnotesize
+Can you sustain the \textbf{lusory attitude} --- genuinely caring about the outcome --- when you know the obstacle was invented purely so you could overcome it?
+\end{objectionbox}
+\end{column}
+\end{columns}
+\end{frame}
+
+% IMAGE SLIDE: Chess
+\begin{frame}[t]{Games as the Human Constant}
+\vspace{-0.3cm}
+\begin{columns}[T]
+\begin{column}{0.40\textwidth}
+\begin{figure}
+    \includegraphics[width=\textwidth,height=0.55\textheight,keepaspectratio]{images/games_chess.jpg}
+    \caption*{\scriptsize Ludwig Deutsch, \emph{The Chess Players} (1904). Public domain, via Wikimedia Commons.}
+\end{figure}
+\end{column}
+\begin{column}{0.57\textwidth}
+\footnotesize
+Chess has been played for 1,500 years. It produces no food, builds no shelter --- its obstacles are \textbf{entirely artificial}. Yet it has been called a form of art, a meditation, and a battle.
+
+\vspace{0.08cm}
+The persistence of games across history suggests they do not distract from life's meaning --- they \textbf{express} it. This is Suits' central point.
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}[t]{Keynes' Prediction: The Leisure Problem}
+\begin{conceptbox}[Economic Possibilities for Our Grandchildren --- \textcite{keynes_economic_possibilities}]
+\footnotesize
+In 1930, Keynes predicted that by $\sim$2030, productivity would allow \textbf{15-hour work weeks}. The real challenge, he thought, would be the \textbf{problem of leisure}: how to ``live wisely and agreeably and well.''
+\end{conceptbox}
+
+\vspace{0.15cm}
+\footnotesize We are more productive than Keynes imagined --- yet most people \textbf{work more, not less}. Why?
+\begin{itemize}
+    \item Inequality: gains went to capital, not distributed as leisure
+    \item Work ethic: identity remains tied to productive labor
+    \item The \textbf{Suits problem}: we are not sure what we would do with leisure
+\end{itemize}
+\end{frame}
+
+% ============================================================
+% SECTION VII: THE AI FUTURE
+% ============================================================
+\section{Part VII: AI, Post-Work, and the Meaning of Life}
+
+\begin{frame}[t]{The AI Leisure Question}
+\footnotesize
+Chapter~8 examined how AI transforms labor. The question here is philosophical:
+
+\begin{conceptbox}[The Central Question]
+\footnotesize
+If AI handles most productive work, \textbf{what gives human life meaning}? This is not just about income (addressed by UBI proposals) --- it is about \textbf{purpose, identity, and flourishing}.
+\end{conceptbox}
+
+\vspace{0.12cm}
+Three responses:
+\begin{enumerate}
+    \item \textbf{The Suits/McGonigal view}: We will play games --- and this is genuinely wonderful.
+    \item \textbf{The skeptical view}: Manufactured obstacles feel hollow without genuine stakes.
+    \item \textbf{The augmentation view}: Human-AI collaboration is itself a new kind of meaningful game.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}[t]{Position 1: The Grasshopper Was Right}
+\begin{probox}[McGonigal's Optimism]
+\footnotesize
+If games already \textbf{deliver meaning more reliably than work}, a post-work world need not be a crisis:
+\begin{itemize}
+    \item Lives spent in \textbf{creative games}: art, athletics, philosophy, music
+    \item Games as \textbf{real problem-solving}: McGonigal's \emph{Foldit} used gamers to solve protein-folding problems that stumped automated algorithms
+\end{itemize}
+
+\vspace{0.05cm}
+The equation \textbf{work = virtue} is a historical accident (Weber), not a metaphysical necessity.
+\end{probox}
+
+\vspace{0.12cm}
+\begin{alertblock}{Historical Note}
+\scriptsize
+The Athenian ideal: a free citizen liberated from labor to engage in politics, philosophy, and art. Aristotle endorsed this --- the question is whether it can be generalized democratically.
+\end{alertblock}
+\end{frame}
+
+\begin{frame}[t]{Position 2: The Skeptical View}
+\begin{objectionbox}[Can Manufactured Obstacles Satisfy?]
+\footnotesize
+Suits' utopia may require \textbf{sustained self-deception}: caring about winning while knowing winning is ultimately unimportant.
+
+\vspace{0.08cm}
+Two concerns:
+\begin{enumerate}
+    \item \textbf{Stakes}: Meaningful striving may need \textbf{genuine consequences} --- the farmer's crop actually feeds people; the surgeon's skill actually saves lives.
+    \item \textbf{Inequality}: Post-work utopia may be for some only; for many, the end of work means \textbf{poverty and precarity}.
+\end{enumerate}
+\end{objectionbox}
+
+\vspace{0.12cm}
+\begin{alertblock}{Graeber's Counterpoint}
+\scriptsize
+Graeber argued many existing jobs are already ``bullshit'' --- socially useless by workers' own admission \parencite{graeber_bullshit_jobs}. The transition to a games-based life may be less radical than it sounds.
+\end{alertblock}
+\end{frame}
+
+\begin{frame}[t]{Position 3: Human-AI Collaboration as a New Game}
+\vspace{-0.2cm}
+\begin{probox}[The Augmentation View]
+\footnotesize
+The work/play dichotomy may dissolve in a world of human-AI collaboration:
+\begin{itemize}
+    \item A scientist uses AI for hypotheses, then \textbf{designs and interprets experiments}
+    \item A teacher whose AI handles assessment, freeing time for \textbf{mentorship and relationship}
+\end{itemize}
+The human contribution \textbf{resembles play}: voluntary, creative, rule-governed engagement pursued partly for its own sake.
+\end{probox}
+
+\vspace{0.05cm}
+\begin{conceptbox}[Vallor's Framing \parencite{vallor_technology_virtues}]
+\footnotesize
+Not just \textbf{``what will we do?''} but \textbf{``what kind of people will we become?''} Virtues cultivated in games --- persistence, creativity, humility, care --- are exactly the virtues needed in an AI-transformed world.
+\end{conceptbox}
+\end{frame}
+
+\begin{frame}{Final Discussion: A Life of Games?}
+\begin{discussionbox}[Discussion]
+\footnotesize
+\begin{enumerate}
+    \item Suits says the Grasshopper is right: \textbf{playing games is the ideal human life}. Do you agree? What counts as a ``game'' in this sense?
+    \item Is there a difference between \textbf{playing \emph{Stardew Valley}} (farming simulation) and \textbf{actually farming}? Does it matter morally?
+    \item If AI makes most work unnecessary, should we \textbf{welcome} the Grasshopper's world, \textbf{resist} it, or try to \textbf{redesign} work so it retains meaning even when unnecessary?
+\end{enumerate}
+\textbf{What would a genuinely \emph{good} post-work society look like?}
+\end{discussionbox}
+\end{frame}
+
+% ============================================================
+% KEY POINTS
+% ============================================================
+\begin{frame}[t]{Key Points}
+\begin{conceptbox}[What We Covered]
+\scriptsize
+\begin{itemize}
+    \item \textbf{Huizinga}: play is culture's foundation; the \textbf{magic circle} is a voluntary, rule-bound space separate from ordinary life.
+    \item \textbf{Suits}: a game = prelusory goal + constitutive rules + \textbf{lusory attitude} (voluntary acceptance of unnecessary obstacles).
+    \item \textbf{Caillois}: four types --- \emph{agôn}, \emph{alea}, \emph{mimicry}, \emph{ilinx}; video games combine all four.
+    \item \textbf{Nguyen}: games sculpt \textbf{agency itself} --- but can hijack values via gamification.
+    \item The \textbf{moral panic pattern}: each new medium triggers the same fears; effects are usually overstated.
+    \item \textbf{Video game effects}: violence research contested; gaming disorder real but rare; cooperative games may cultivate virtue.
+    \item \textbf{Suits' Grasshopper}: in utopia (or a post-AI world), only \textbf{games} remain rational --- they exist purely for their own sake.
+    \item \textbf{Vallor}: virtues cultivated through games shape \textbf{who we become} in an AI-transformed world.
+\end{itemize}
+\end{conceptbox}
+\end{frame}
+
+% ============================================================
+% BIBLIOGRAPHY
+% ============================================================
+\begin{frame}[allowframebreaks]{References}
+\printbibliography[heading=none]
+\end{frame}
+
+\end{document}
