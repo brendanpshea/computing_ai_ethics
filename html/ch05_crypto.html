@@ -157,8 +157,8 @@
 
       <p>Think of the blockchain as a shared Google Document that thousands of people can read, but that no individual can alter without everyone noticing. Transactions are grouped into "blocks." Each block contains a cryptographic <strong>hash</strong> — a mathematical fingerprint — of the previous block. Changing any past transaction would change its hash, which would break the chain at that point, making tampering immediately detectable. And because thousands of independent computers maintain copies of this ledger simultaneously, there is no single point of control or failure. The analogy often used is email versus postal mail: email doesn't need a physical post office to route every message through a central location. Similarly, Bitcoin doesn't need a central bank to record and verify transactions.</p>
 
-      <div class="mermaid-wrapper">
-        <pre class="mermaid">
+      <figure>
+        <div class="mermaid">
 %%{init: {"theme": "base", "themeVariables": {"primaryColor": "#d2e4f0", "primaryTextColor": "#10304a", "primaryBorderColor": "#10304a", "lineColor": "#10304a", "secondaryColor": "#f0f7fd", "tertiaryColor": "#f0f7fd"}}}%%
 flowchart LR
   B1["Block 1<br/>Transactions<br/>Hash: 0a3f...<br/>Prev: 0000"]
@@ -166,9 +166,9 @@ flowchart LR
   B3["Block 3<br/>Transactions<br/>Hash: 9d4e...<br/>Prev: 7b2c"]
   B4["Block 4<br/>Transactions<br/>Hash: 2f8a...<br/>Prev: 9d4e"]
   B1 --> B2 --> B3 --> B4
-        </pre>
-        <p class="diagram-caption">Each block in a blockchain contains a cryptographic hash of the previous block. Altering any past block changes its hash, breaking every subsequent link in the chain. Because thousands of computers maintain identical copies, no single actor can rewrite history undetected.</p>
-      </div>
+        </div>
+        <figcaption>Figure 5.1 — Each block in a blockchain contains a cryptographic hash of the previous block. Altering any past transaction changes its hash, breaking every subsequent link in the chain. Because thousands of computers maintain identical copies, no single actor can rewrite history undetected.</figcaption>
+      </figure>
 
       <p>But who gets to add new blocks to the chain? This is the <strong>consensus problem</strong>, and different cryptocurrencies solve it differently. Bitcoin uses <strong>Proof of Work (PoW)</strong>: computers on the network compete to solve computationally difficult mathematical puzzles. The winner gets to add the next block and receives newly created Bitcoin as a reward (the "mining" metaphor). This competition is intentionally expensive — it means that attacking the network requires owning more computational power than all legitimate participants combined, which is economically prohibitive at scale. The downside is energy consumption: Bitcoin's global mining operation consumes roughly 150–175 terawatt-hours of electricity per year, comparable to a mid-sized country.</p>
 
@@ -579,8 +579,8 @@ flowchart LR
 
       <p>This does not mean regulation is futile — some crypto activity, particularly institutional investment and exchange operations, is anchored in specific jurisdictions and can be effectively regulated. But it does mean that overly aggressive national regulation may simply shift crypto activity to jurisdictions with weaker oversight, potentially making the global situation worse rather than better.</p>
 
-      <div class="mermaid-wrapper">
-        <pre class="mermaid">
+      <figure>
+        <div class="mermaid">
 %%{init: {"theme": "base", "themeVariables": {"primaryColor": "#d2e4f0", "primaryTextColor": "#10304a", "primaryBorderColor": "#10304a", "lineColor": "#10304a", "secondaryColor": "#f0f7fd", "tertiaryColor": "#f0f7fd"}}}%%
 flowchart TD
   Q["Central Debate:<br/>Who should<br/>control money?"]
@@ -592,9 +592,9 @@ flowchart TD
   Con --> C1["Consumer Protection:<br/>Rampant fraud harms<br/>ordinary investors"]
   Con --> C2["Systemic Risk:<br/>Interconnected<br/>collapse potential"]
   Con --> C3["Crime Enablement:<br/>Ransomware, sanctions<br/>evasion, theft"]
-        </pre>
-        <p class="diagram-caption">The cryptocurrency debate crystallizes fundamental disagreements about the proper role of state authority in monetary systems, the balance between individual freedom and collective accountability, and whether technology can substitute for institutional trust.</p>
-      </div>
+        </div>
+        <figcaption>Figure 5.2 — The cryptocurrency debate crystallizes fundamental disagreements about the proper role of state authority in monetary systems, the balance between individual freedom and collective accountability, and whether technology can substitute for institutional trust.</figcaption>
+      </figure>
 
       <div class="thought-questions">
         <p class="box-label">Thought Questions</p>

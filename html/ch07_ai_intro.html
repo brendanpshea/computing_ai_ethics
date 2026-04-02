@@ -389,7 +389,15 @@ timeline
         catastrophically just outside it. A medical system trained on adult diagnoses would
         apply the same rules to pediatric patients with no adjustment. The fundamental problem
         was that human expertise is largely <em>tacit</em> — experts cannot fully articulate
-        what they know, making it impossible to extract and encode.
+        what they know, making it impossible to extract and encode. IBM's Watson for Oncology
+        illustrated this failure on a grand scale a generation later. Launched in 2013 with
+        enormous fanfare — IBM claimed it could ingest all cancer literature and give
+        treatment recommendations — it was quietly abandoned by hospital after hospital
+        between 2017 and 2020. Internal documents leaked to STAT News revealed that the
+        system recommended "unsafe and incorrect" treatments because its human trainers
+        had encoded their own biases and hypotheticals rather than actual clinical practice.
+        The knowledge bottleneck had not been overcome; it had been obscured by more
+        sophisticated marketing.
       </p>
 
       <h3>Machine Learning and Deep Learning</h3>
@@ -532,7 +540,17 @@ timeline
         (predict more crime in an area → police more there → find more crime → predict more crime).
         <strong>Due process</strong>: how do you appeal a decision made by an algorithm? These
         concerns apply whether or not we call these systems "intelligent" — which is exactly
-        Floridi's point, as we will see.
+        Floridi's point, as we will see. These are not hypothetical risks. The COMPAS recidivism
+        tool — used in sentencing decisions in courts across the country — was found by ProPublica
+        in 2016 to falsely flag Black defendants as future criminals at nearly twice the rate of
+        white defendants, even after controlling for criminal history. Amazon's résumé screening
+        tool, trained on a decade of hiring decisions in a male-dominated engineering workforce,
+        learned to penalize applicants who listed "women's" on their résumé — as in "captain of
+        the women's chess team" — and systematically downgraded graduates of all-women's colleges.
+        Amazon shut it down in 2018. A healthcare algorithm used by hospitals across the United
+        States was found to systematically underestimate the care needs of Black patients compared
+        to equally sick white patients, because it used historical spending as a proxy for health
+        need — and historical spending on Black patients had been lower.
       </p>
 
     </section><!-- /history-ai -->
@@ -642,9 +660,17 @@ timeline
           language models. When critics argue that LLMs are "just predicting the next token" or
           "stochastic parrots" that recombine training data without genuine understanding, they
           are invoking her logic. The question "What counts as originating something genuinely
-          new?" remains genuinely open. Is discovering an unexpected chess move origination?
-          Is writing a poem in the style of Keats origination? The answer depends on contested
-          views about creativity, intentionality, and understanding.
+          new?" remains genuinely open. Consider some telling examples of how the goalposts move.
+          When AlphaGo defeated world champion Lee Sedol in 2016, making moves that human
+          commentators described as "beautiful," "creative," and "surprising even to its
+          creators," critics replied: it's just a very deep game-tree search, not genuine
+          creativity. When GPT-4 passed the bar exam in the 91st percentile, the dismissal was:
+          it's just pattern-matching from legal texts, not real legal reasoning. When AI systems
+          produced winning images in art competitions, the response was: it's just recombining
+          existing artworks without understanding. In each case, the machine achieved the
+          behavioral criterion — and Lovelace's objection was immediately applied to deny that
+          this counted as originating anything. Whether this is accurate or merely defensive is
+          precisely the question her argument makes visible.
         </p>
       </div>
 
