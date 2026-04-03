@@ -1,0 +1,611 @@
+/* ============================================================
+   quiz.css — Interactive Quiz Styles
+   Computing and AI Ethics, Brendan Shea PhD
+
+   Depends on: styles.css (provides CSS custom properties)
+   Used by:    quiz_NN.html pages
+
+   Table of contents
+   -----------------
+   1.  Quiz shell & layout
+   2.  Start screen
+   3.  Progress bar
+   4.  Question card
+   5.  Option buttons
+   6.  Feedback area
+   7.  Results screen
+   8.  Score circle
+   9.  Breakdown table
+  10.  Shared buttons
+  11.  Utility & states
+  12.  Responsive
+  13.  Print
+   ============================================================ */
+
+
+/* ============================================================
+   1. QUIZ SHELL & LAYOUT
+   ============================================================ */
+#quiz-app {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: var(--gap-lg) var(--gap-md);
+  font-family: var(--font-body);
+}
+
+/* Give every quiz section room to breathe */
+.qz-start,
+.qz-results {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-md);
+}
+
+
+/* ============================================================
+   2. START SCREEN
+   ============================================================ */
+.qz-meta {
+  font-family: var(--font-ui);
+  font-size: .82rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--chapter-color, var(--blue-mid));
+  margin-bottom: 0;
+}
+
+.qz-title {
+  /* Override the h1 border-bottom from styles.css */
+  border-bottom: none !important;
+  margin-top: 0 !important;
+  font-size: clamp(1.4rem, 4vw, 1.9rem);
+  color: var(--blue-dark);
+}
+
+.qz-description {
+  font-size: 1rem;
+  color: var(--color-text-muted);
+  margin-bottom: 0;
+}
+.qz-description + p { text-indent: 0; }
+
+/* Previous-attempt badge */
+.qz-prev-result {
+  display: inline-flex;
+  align-items: baseline;
+  gap: .5rem;
+  background: var(--blue-xlight);
+  border: 1px solid var(--blue-light);
+  border-radius: var(--radius);
+  padding: .55rem 1rem;
+  font-family: var(--font-ui);
+  font-size: .88rem;
+  width: fit-content;
+}
+.qz-prev-score {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--chapter-color, var(--blue-mid));
+}
+.qz-prev-label {
+  color: var(--color-text-muted);
+}
+
+.qz-start-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+  align-items: center;
+}
+
+.qz-tip {
+  font-family: var(--font-ui);
+  font-size: .8rem;
+  color: var(--gray-mid);
+  margin-bottom: 0;
+}
+.qz-tip + p { text-indent: 0; }
+
+kbd {
+  display: inline-block;
+  padding: .1em .35em;
+  font-family: var(--font-mono);
+  font-size: .82em;
+  background: var(--gray-light);
+  border: 1px solid var(--color-border);
+  border-radius: 3px;
+  line-height: 1.4;
+}
+
+
+/* ============================================================
+   3. PROGRESS BAR
+   ============================================================ */
+.qz-progress {
+  position: relative;
+  height: 8px;
+  background: var(--gray-light);
+  border-radius: 99px;
+  margin-bottom: var(--gap-sm);
+  overflow: visible;
+}
+
+.qz-progress-fill {
+  height: 100%;
+  background: var(--chapter-color, var(--blue-mid));
+  border-radius: 99px;
+  transition: width .35s ease;
+  min-width: 4px;
+}
+
+.qz-progress-label {
+  font-family: var(--font-ui);
+  font-size: .78rem;
+  color: var(--gray-mid);
+  text-align: right;
+  margin-top: .3rem;
+  margin-bottom: var(--gap-sm);
+}
+.qz-progress-label + p { text-indent: 0; }
+
+
+/* ============================================================
+   4. QUESTION CARD
+   ============================================================ */
+.qz-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--gap-lg) var(--gap-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.qz-question {
+  font-size: 1.08rem;
+  font-weight: 600;
+  color: var(--blue-dark);
+  line-height: 1.5;
+  margin-bottom: var(--gap-md);
+  font-family: var(--font-ui);
+}
+.qz-question + p { text-indent: 0; }
+
+.qz-options {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: .55rem;
+}
+
+.qz-options li {
+  margin: 0;
+}
+
+
+/* ============================================================
+   5. OPTION BUTTONS
+   ============================================================ */
+.qz-option {
+  display: flex;
+  align-items: flex-start;
+  gap: .75rem;
+  width: 100%;
+  padding: .65rem .9rem;
+  background: var(--color-surface);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-size: .97rem;
+  color: var(--color-text);
+  line-height: 1.5;
+  text-align: left;
+  transition: border-color .15s, background .15s, box-shadow .15s;
+}
+
+.qz-option:hover:not(:disabled) {
+  border-color: var(--chapter-color, var(--blue-mid));
+  background: var(--chapter-light, var(--blue-xlight));
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--chapter-color, var(--blue-mid)) 15%, transparent);
+}
+
+.qz-option:focus-visible {
+  outline: 3px solid var(--chapter-color, var(--blue-mid));
+  outline-offset: 2px;
+}
+
+.qz-option:disabled {
+  cursor: default;
+}
+
+/* Letter badge (A, B, C, D) */
+.qz-letter {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  background: var(--gray-light);
+  color: var(--gray-dark);
+  font-family: var(--font-ui);
+  font-size: .78rem;
+  font-weight: 700;
+  transition: background .15s, color .15s;
+}
+
+.qz-option:hover:not(:disabled) .qz-letter {
+  background: var(--chapter-color, var(--blue-mid));
+  color: #fff;
+}
+
+/* Correct answer state */
+.qz-option.qz-correct {
+  border-color: var(--green-mid);
+  background: var(--green-light);
+}
+.qz-option.qz-correct .qz-letter {
+  background: var(--green-mid);
+  color: #fff;
+}
+
+/* Incorrect (chosen) state */
+.qz-option.qz-incorrect {
+  border-color: var(--red-mid);
+  background: var(--red-light);
+}
+.qz-option.qz-incorrect .qz-letter {
+  background: var(--red-mid);
+  color: #fff;
+}
+
+.qz-opt-text {
+  flex: 1;
+}
+
+
+/* ============================================================
+   6. FEEDBACK AREA
+   ============================================================ */
+.qz-feedback {
+  margin-top: var(--gap-md);
+}
+
+.qz-feedback-header {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  font-family: var(--font-ui);
+  font-weight: 700;
+  font-size: 1rem;
+  padding: .55rem .9rem;
+  border-radius: var(--radius);
+  margin-bottom: .6rem;
+}
+
+.qz-fb-correct {
+  background: var(--green-light);
+  color: var(--green-dark);
+  border: 1px solid var(--green-mid);
+}
+
+.qz-fb-incorrect {
+  background: var(--red-light);
+  color: var(--red-dark);
+  border: 1px solid var(--red-mid);
+}
+
+.qz-fb-icon {
+  font-size: 1.15rem;
+  line-height: 1;
+}
+
+.qz-explanation {
+  font-size: .93rem;
+  color: var(--color-text);
+  line-height: 1.65;
+  margin-bottom: 0;
+}
+.qz-explanation + p { text-indent: 0; }
+
+.qz-review-link {
+  display: inline-block;
+  margin-left: .25rem;
+  font-family: var(--font-ui);
+  font-size: .82rem;
+  font-weight: 600;
+  color: var(--chapter-color, var(--blue-mid));
+  white-space: nowrap;
+}
+
+.qz-advance {
+  margin-top: var(--gap-md);
+}
+
+
+/* ============================================================
+   7. RESULTS SCREEN
+   ============================================================ */
+.qz-score-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--gap-sm);
+  padding: var(--gap-lg) 0;
+}
+
+.qz-score-msg {
+  font-family: var(--font-ui);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--blue-dark);
+  margin-bottom: 0;
+}
+.qz-score-msg + p { text-indent: 0; }
+
+.qz-overall {
+  font-family: var(--font-ui);
+  font-size: .88rem;
+  color: var(--color-text-muted);
+  margin-bottom: 0;
+}
+.qz-overall + p { text-indent: 0; }
+
+.qz-result-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+  align-items: center;
+  padding-top: var(--gap-sm);
+}
+
+
+/* ============================================================
+   8. SCORE CIRCLE
+   ============================================================ */
+.qz-score-circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 5px solid currentColor;
+  line-height: 1;
+}
+
+.qz-sc-great { color: var(--green-mid); }
+.qz-sc-ok    { color: var(--gold-mid);  }
+.qz-sc-low   { color: var(--red-mid);   }
+
+.qz-sc-num {
+  font-family: var(--font-ui);
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: inherit;
+  display: block;
+}
+
+.qz-sc-denom {
+  font-family: var(--font-ui);
+  font-size: .85rem;
+  color: var(--color-text-muted);
+  display: block;
+}
+
+
+/* ============================================================
+   9. BREAKDOWN TABLE
+   ============================================================ */
+.qz-breakdown-wrap {
+  width: 100%;
+}
+
+.qz-breakdown-heading {
+  font-size: 1rem;
+  margin-top: 0 !important;
+  margin-bottom: var(--gap-sm) !important;
+  padding-bottom: .3rem;
+  border-bottom: 2px solid var(--chapter-color, var(--blue-mid)) !important;
+}
+
+.qz-breakdown {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--font-ui);
+  font-size: .88rem;
+}
+
+.qz-breakdown thead th {
+  background: var(--blue-dark);
+  color: #fff;
+  padding: .45rem .7rem;
+  text-align: left;
+  font-weight: 600;
+}
+
+.qz-breakdown tbody tr {
+  border-bottom: 1px solid var(--gray-light);
+}
+
+.qz-breakdown tbody tr:last-child {
+  border-bottom: none;
+}
+
+.qz-row-ok   { background: var(--green-xlight); }
+.qz-row-miss { background: var(--red-xlight);   }
+
+.qz-breakdown td {
+  padding: .55rem .7rem;
+  vertical-align: top;
+}
+
+.qz-bd-status {
+  text-align: center;
+  font-size: 1rem;
+  width: 2rem;
+}
+
+.qz-row-ok   .qz-bd-status { color: var(--green-mid); }
+.qz-row-miss .qz-bd-status { color: var(--red-mid);   }
+
+.qz-bd-q {
+  color: var(--color-text);
+  line-height: 1.45;
+}
+
+.qz-bd-ans {
+  color: var(--color-text);
+  min-width: 120px;
+}
+
+.qz-bd-wrong {
+  color: var(--red-mid);
+  text-decoration: line-through;
+  display: block;
+}
+
+.qz-bd-right {
+  color: var(--green-dark);
+  font-weight: 600;
+  display: block;
+}
+
+
+/* ============================================================
+  10. SHARED BUTTONS
+   ============================================================ */
+.qz-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  padding: .55rem 1.2rem;
+  border: 2px solid transparent;
+  border-radius: var(--radius);
+  font-family: var(--font-ui);
+  font-size: .9rem;
+  font-weight: 600;
+  line-height: 1.3;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background .15s, border-color .15s, box-shadow .15s, opacity .15s;
+  white-space: nowrap;
+}
+
+.qz-btn:hover { text-decoration: none; opacity: .88; }
+
+.qz-btn:focus-visible {
+  outline: 3px solid var(--chapter-color, var(--blue-mid));
+  outline-offset: 2px;
+}
+
+.qz-btn-primary {
+  background: var(--chapter-color, var(--blue-mid));
+  color: #fff;
+  border-color: var(--chapter-color, var(--blue-mid));
+}
+
+.qz-btn-secondary {
+  background: transparent;
+  color: var(--chapter-color, var(--blue-mid));
+  border-color: var(--chapter-color, var(--blue-mid));
+}
+
+.qz-btn-ghost {
+  background: transparent;
+  color: var(--color-text-muted);
+  border-color: var(--color-border);
+}
+
+.qz-badge {
+  display: inline-block;
+  background: rgba(255,255,255,.25);
+  border-radius: 99px;
+  padding: .05em .5em;
+  font-size: .8em;
+  font-weight: 600;
+  letter-spacing: .02em;
+}
+
+.qz-btn-secondary .qz-badge {
+  background: color-mix(in srgb, var(--chapter-color, var(--blue-mid)) 12%, transparent);
+}
+
+.qz-btn-ghost .qz-badge {
+  background: var(--gray-light);
+  color: var(--gray-mid);
+}
+
+
+/* ============================================================
+  11. UTILITY & STATES
+   ============================================================ */
+.qz-error {
+  background: var(--red-light);
+  border: 1px solid var(--red-mid);
+  border-radius: var(--radius);
+  color: var(--red-dark);
+  padding: var(--gap-md);
+  font-family: var(--font-ui);
+  font-size: .9rem;
+}
+
+
+/* ============================================================
+  12. RESPONSIVE
+   ============================================================ */
+@media (max-width: 600px) {
+  #quiz-app {
+    padding: var(--gap-md) var(--gap-sm);
+  }
+
+  .qz-card {
+    padding: var(--gap-md);
+  }
+
+  .qz-score-circle {
+    width: 100px;
+    height: 100px;
+  }
+
+  .qz-sc-num { font-size: 2.1rem; }
+
+  .qz-breakdown thead { display: none; }
+
+  .qz-breakdown,
+  .qz-breakdown tbody,
+  .qz-breakdown tr,
+  .qz-breakdown td {
+    display: block;
+    width: 100%;
+  }
+
+  .qz-breakdown tr {
+    padding: .5rem;
+    margin-bottom: .4rem;
+    border-radius: var(--radius);
+  }
+
+  .qz-bd-status { text-align: left; font-weight: 700; }
+  .qz-bd-q      { font-weight: 500; }
+}
+
+
+/* ============================================================
+  13. PRINT
+   ============================================================ */
+@media print {
+  #quiz-app { max-width: 100%; padding: 0; }
+  .qz-btn,
+  .qz-start-actions,
+  .qz-result-actions,
+  .qz-progress { display: none; }
+  .qz-option   { border: 1px solid #ccc; }
+  .qz-card     { box-shadow: none; border: 1px solid #ccc; }
+}
