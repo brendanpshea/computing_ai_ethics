@@ -544,6 +544,280 @@ kbd {
 
 
 /* ============================================================
+  10b. TYPE TAG (Matching / Select-all label)
+   ============================================================ */
+.qz-type-tag {
+  display: inline-block;
+  margin-bottom: var(--gap-sm);
+  padding: .2em .65em;
+  background: var(--blue-xlight);
+  border: 1px solid var(--blue-light);
+  border-radius: 99px;
+  font-family: var(--font-ui);
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--blue-mid);
+}
+
+
+/* ============================================================
+  10c. MULTIPLE RESPONSE (checkboxes)
+   ============================================================ */
+.qz-checkboxes {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.qz-checkboxes li { margin: 0; }
+
+.qz-cb-label {
+  display: flex;
+  align-items: flex-start;
+  gap: .65rem;
+  padding: .6rem .85rem;
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-size: .97rem;
+  color: var(--color-text);
+  line-height: 1.5;
+  transition: border-color .15s, background .15s;
+}
+
+.qz-cb-label:hover {
+  border-color: var(--chapter-color, var(--blue-mid));
+  background: var(--chapter-light, var(--blue-xlight));
+}
+
+/* Hide the native checkbox visually while keeping it accessible */
+.qz-cb-input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Custom square checkbox */
+.qz-cb-box {
+  flex-shrink: 0;
+  width: 1.1rem;
+  height: 1.1rem;
+  margin-top: .15rem;
+  border: 2px solid var(--color-border);
+  border-radius: 3px;
+  background: var(--color-surface);
+  transition: border-color .15s, background .15s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.qz-cb-input:checked + .qz-cb-box {
+  background: var(--chapter-color, var(--blue-mid));
+  border-color: var(--chapter-color, var(--blue-mid));
+}
+
+/* Checkmark inside box */
+.qz-cb-input:checked + .qz-cb-box::after {
+  content: '';
+  display: block;
+  width: .35rem;
+  height: .6rem;
+  border: 2px solid #fff;
+  border-top: none;
+  border-left: none;
+  transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.qz-cb-input:focus-visible + .qz-cb-box {
+  outline: 3px solid var(--chapter-color, var(--blue-mid));
+  outline-offset: 2px;
+}
+
+.qz-cb-letter {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background: var(--gray-light);
+  font-family: var(--font-ui);
+  font-size: .75rem;
+  font-weight: 700;
+  color: var(--gray-dark);
+  margin-top: .05rem;
+}
+
+.qz-cb-text { flex: 1; }
+
+/* Post-submit states */
+.qz-cb-hit {                          /* correct + selected */
+  border-color: var(--green-mid);
+  background: var(--green-light);
+}
+.qz-cb-hit .qz-cb-box {
+  background: var(--green-mid);
+  border-color: var(--green-mid);
+}
+.qz-cb-hit .qz-cb-letter {
+  background: var(--green-mid);
+  color: #fff;
+}
+
+.qz-cb-missed {                       /* correct but NOT selected */
+  border-color: var(--gold-mid);
+  background: var(--gold-light);
+}
+.qz-cb-missed .qz-cb-box {
+  border-color: var(--gold-mid);
+}
+.qz-cb-missed .qz-cb-letter {
+  background: var(--gold-mid);
+  color: #fff;
+}
+.qz-cb-missed::after {
+  content: ' ← should have selected this';
+  font-family: var(--font-ui);
+  font-size: .75rem;
+  font-style: italic;
+  color: var(--gold-dark);
+  margin-left: .25rem;
+}
+
+.qz-cb-wrong {                        /* incorrect + selected */
+  border-color: var(--red-mid);
+  background: var(--red-light);
+}
+.qz-cb-wrong .qz-cb-box {
+  background: var(--red-mid);
+  border-color: var(--red-mid);
+}
+.qz-cb-wrong .qz-cb-letter {
+  background: var(--red-mid);
+  color: #fff;
+}
+
+.qz-cb-label:has(.qz-cb-input:disabled) { cursor: default; }
+.qz-cb-label:has(.qz-cb-input:disabled):hover {
+  border-color: inherit;
+  background: inherit;
+}
+/* Override hover-inherit for the state classes */
+.qz-cb-hit:hover    { background: var(--green-light); border-color: var(--green-mid); }
+.qz-cb-missed:hover { background: var(--gold-light);  border-color: var(--gold-mid); }
+.qz-cb-wrong:hover  { background: var(--red-light);   border-color: var(--red-mid); }
+
+
+/* ============================================================
+  10d. MATCHING (dropdowns)
+   ============================================================ */
+.qz-match-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--font-ui);
+  font-size: .92rem;
+  margin-bottom: var(--gap-md);
+}
+
+.qz-match-table thead th {
+  background: var(--blue-dark);
+  color: #fff;
+  font-weight: 600;
+  padding: .4rem .75rem;
+  text-align: left;
+}
+
+.qz-match-table tbody tr {
+  border-bottom: 1px solid var(--gray-light);
+  transition: background .15s;
+}
+
+.qz-match-table tbody tr:last-child { border-bottom: none; }
+
+.qz-match-left {
+  padding: .6rem .75rem;
+  font-weight: 500;
+  color: var(--blue-dark);
+  width: 40%;
+  vertical-align: middle;
+}
+
+.qz-match-right {
+  padding: .5rem .75rem;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.qz-match-select {
+  flex: 1;
+  min-width: 0;
+  padding: .4rem .6rem;
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius);
+  font-family: var(--font-ui);
+  font-size: .88rem;
+  color: var(--color-text);
+  background: var(--color-surface);
+  cursor: pointer;
+  transition: border-color .15s;
+}
+
+.qz-match-select:focus {
+  outline: 3px solid var(--chapter-color, var(--blue-mid));
+  outline-offset: 1px;
+  border-color: var(--chapter-color, var(--blue-mid));
+}
+
+.qz-match-select:disabled { cursor: default; background: var(--gray-xlight); }
+
+/* Row state after submit */
+.qz-match-table tr.qz-row-ok   { background: var(--green-xlight); }
+.qz-match-table tr.qz-row-miss { background: var(--red-xlight); }
+
+.qz-match-verdict {
+  font-family: var(--font-ui);
+  font-size: .88rem;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: .3rem;
+}
+
+.qz-verdict-ok   { color: var(--green-dark); font-weight: 700; }
+.qz-verdict-miss { color: var(--red-dark);   font-weight: 700; }
+
+.qz-correct-ans {
+  font-weight: 600;
+  font-size: .82rem;
+  color: var(--green-dark);
+  background: var(--green-light);
+  border: 1px solid var(--green-mid);
+  border-radius: 3px;
+  padding: .05em .35em;
+}
+
+.qz-match-hint {
+  font-family: var(--font-ui);
+  font-size: .85rem;
+  color: var(--red-mid);
+  margin: .3rem 0 0;
+}
+.qz-match-hint + button { margin-top: var(--gap-sm); }
+
+/* Submit button for matching/multiple — sits below the input area */
+.qz-submit-btn { margin-top: var(--gap-md); }
+
+
+/* ============================================================
   11. UTILITY & STATES
    ============================================================ */
 .qz-error {

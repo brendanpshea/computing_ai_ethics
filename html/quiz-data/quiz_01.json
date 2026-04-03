@@ -2,138 +2,168 @@
   "id": "ch01",
   "chapter": 1,
   "title": "Chapter 1 Quiz: The History of IT Ethics",
-  "description": "Ten questions covering the five information technology revolutions and the recurring ethical patterns they reveal.",
+  "description": "Ten questions on the specific people, dates, inventions, and ideas covered in Chapter 1.",
   "chapter_url": "ch01_history.html",
   "questions": [
     {
       "id": "ch01-q01",
-      "question": "The chapter opens with the claim that every information technology revolution made two promises. Which pair best captures them?",
+      "question": "Around 3200 BCE, the world's first writing system — cuneiform — was developed in the city-states of which region?",
       "options": [
-        "Speed and accuracy",
-        "Liberation and control",
-        "Access and affordability",
-        "Innovation and stability"
+        "Egypt (the Nile Delta)",
+        "Mesopotamia (modern Iraq)",
+        "China (the Yellow River Valley)",
+        "Greece (the Aegean coast)"
       ],
       "correct": 1,
-      "explanation": "The subtitle of the chapter states it directly: 'Every information revolution promised liberation. Every one enabled new forms of control. Both promises were kept.' This tension — that the same technology expands freedom and enables oppression — is the chapter's central thesis.",
-      "section": "what-is-it"
+      "explanation": "Cuneiform originated in ancient Mesopotamia — the region we now call Iraq — where scribes pressed reed styluses into wet clay tablets. Its earliest uses were mundane: grain allocations, cattle inventories, and commercial debts. Writing began as an accounting tool before evolving into law, literature, and religion.",
+      "section": "writing"
     },
     {
       "id": "ch01-q02",
-      "question": "Which of the following correctly lists all five IT revolutions covered in the chapter, in order?",
+      "question": "In Plato's Phaedrus, the Egyptian god who invents writing and presents it to the king for royal approval is named:",
       "options": [
-        "Writing → Printing press → Telegraph → Mass media → World Wide Web",
-        "Writing → Alphabet → Printing press → Telephone → Internet",
-        "Cuneiform → Moveable type → Radio → Television → Social media",
-        "Writing → Printing press → Telephone → Cinema → Computers"
+        "Osiris",
+        "Hermes",
+        "Theuth",
+        "Anubis"
       ],
-      "correct": 0,
-      "explanation": "The chapter traces five revolutions: (1) Writing (c. 3200 BCE), (2) the Printing Press (c. 1440), (3) Distance Communication — telegraph and telephone (1830s onward), (4) Mass Media — radio and television (early 20th century), and (5) the World Wide Web (1990s). Each follows the liberation-and-control pattern.",
-      "section": "what-is-it"
+      "correct": 2,
+      "explanation": "In the myth Socrates tells in the Phaedrus, the Egyptian god Theuth invents writing and presents it to Thamus, the king of Egypt. Theuth claims writing will improve memory and make Egyptians wiser. Thamus rejects the gift, arguing that writing will produce forgetfulness and the mere appearance of wisdom — 'an elixir not of memory, but of reminding.'",
+      "section": "writing"
     },
     {
       "id": "ch01-q03",
-      "question": "In Plato's dialogue Phaedrus, the Egyptian king Thamus rejects the god Theuth's gift of writing. What is Thamus's main objection?",
+      "question": "The Code of Hammurabi (c. 1754 BCE) contained 282 laws and was inscribed on:",
       "options": [
-        "Writing will allow rulers to forge laws and deceive the public",
-        "Written texts are too expensive for ordinary citizens to own",
-        "Writing will weaken memory and give people the illusion of knowledge without genuine understanding",
-        "Writing will destroy oral poetry and the cultural traditions it preserves"
+        "A bronze tablet hung in the palace throne room",
+        "Papyrus scrolls copied and distributed to provincial courts",
+        "An eight-foot basalt stele displayed publicly in Babylon",
+        "Clay tablets sealed in temple vaults for priestly use"
       ],
       "correct": 2,
-      "explanation": "Thamus argues that writing is a false remedy: it will produce forgetfulness in students' minds because they will rely on written marks rather than their own memory. They will 'seem to know' much but actually understand little — the illusion of wisdom without its substance. This is one of the earliest recorded arguments about the cognitive costs of new information technology.",
+      "explanation": "Hammurabi's Code was inscribed on an eight-foot basalt stele and publicly displayed so that anyone who could read could check whether a judge's ruling conformed to written law. The chapter uses this as an example of writing's double-edged nature: the same technology that constrained arbitrary royal power also enabled the bureaucratic record-keeping that sustained a vast empire.",
       "section": "writing"
     },
     {
       "id": "ch01-q04",
-      "question": "What made the printing press (c. 1440) ethically revolutionary, rather than merely technically useful?",
+      "question": "Martin Luther posted his 95 Theses on the door of a church in Wittenberg, Germany, on October 31, 1517. How quickly did printed copies reach most of Europe?",
       "options": [
-        "It made books cheaper but introduced widespread typographical errors",
-        "It gave individuals and groups the ability to produce and distribute ideas without requiring approval from institutional gatekeepers",
-        "It created the first legal disputes over intellectual property and plagiarism",
-        "It allowed governments to standardize laws and enforce them uniformly across territories"
+        "Within two days — Luther had arranged printing in advance",
+        "Within two months — about the speed of horseback courier routes",
+        "Within a year — the Church initially suppressed distribution",
+        "Within a decade — literacy was still too limited for faster spread"
       ],
       "correct": 1,
-      "explanation": "Before print, the Church and royal courts controlled manuscript copying and thus controlled which ideas circulated. The press broke that monopoly. Martin Luther's 95 Theses (1517) spread across Germany within weeks — something impossible in the manuscript era. This democratization of publishing is the liberation side; censorship edicts and the Index of Forbidden Books are the control side.",
+      "explanation": "Within two weeks of October 31, 1517, friends had the Theses printed in Leipzig, Nuremberg, and Basel. Within two months they had circulated to virtually every corner of the German-speaking world and into France, England, and Italy. The Pope, receiving reports about an obscure German monk's complaint, initially dismissed it as a 'monks' quarrel' — by the time the Church acted, the ideas had already taken root across a continent.",
       "section": "printing"
     },
     {
       "id": "ch01-q05",
-      "question": "Which of the following best illustrates the 'control' side of the printing press revolution?",
+      "question": "In 1450, there were approximately 30,000 books in all of Europe. By 1500 — fifty years after Gutenberg's press began operating — how many were there?",
       "options": [
-        "The rapid spread of Protestant pamphlets during the Reformation",
-        "The invention of the title page, allowing authors to be identified",
-        "Governments establishing licensing regimes requiring official approval before texts could be printed",
-        "The Catholic Church's decision to publish vernacular Bibles to counter Protestant influence"
+        "Approximately 300,000",
+        "Approximately 1 million",
+        "Approximately 10 million",
+        "Approximately 50 million"
       ],
       "correct": 2,
-      "explanation": "Across Europe, governments and churches responded to the press by requiring printers to obtain licenses. England's Stationer's Company (1557) held a royal monopoly on printing, and works had to be approved before publication. France, the Holy Roman Empire, and others maintained similar systems. The same technology that spread the Reformation also handed authorities a new lever of censorship.",
+      "explanation": "By 1500, there were approximately ten million books in Europe — a 330-fold increase in fifty years. The cost of a book had fallen by ninety percent. This is one of the starkest statistics in the chapter: it illustrates how the printing press did not just make books cheaper but fundamentally transformed who could access, produce, and challenge written knowledge.",
       "section": "printing"
     },
     {
       "id": "ch01-q06",
-      "question": "What was the most ethically significant feature of the telegraph (and later the telephone) as an IT revolution?",
+      "question": "On May 24, 1844, Samuel Morse sent the first long-distance telegraph message forty miles from Washington, D.C., to Baltimore. What were the words of that message?",
       "options": [
-        "It was the first technology to allow private, encrypted communication",
-        "It separated the speed of communication from the speed of physical transportation for the first time",
-        "It created a global infrastructure owned and operated by democratically accountable governments",
-        "It was the first electrical technology, transforming the energy economy alongside the information economy"
+        "\"Mr. Watson, come here — I want to see you.\"",
+        "\"What hath God wrought!\"",
+        "\"One small step for man, one giant leap for mankind.\"",
+        "\"Come quickly — I am ready.\""
       ],
       "correct": 1,
-      "explanation": "Before the telegraph (1837 onward), a message could travel no faster than a messenger. The telegraph sent information at the speed of electricity — transcontinental messages that would have taken weeks by horse now arrived in seconds. This was a qualitative break: for the first time, information and matter were decoupled. The ethical consequences (surveillance, market manipulation via early information asymmetry, military intelligence) followed from that basic fact.",
+      "explanation": "The message 'What hath God wrought!' — a line from the Book of Numbers chosen by a young woman named Annie Ellsworth — was the first long-distance telegraph transmission. The phrase captured the era's astonishment at a technology that moved information at the speed of electricity. Before the telegraph, the fastest communication moved at the speed of a horse.",
       "section": "distance"
     },
     {
       "id": "ch01-q07",
-      "question": "Radio and television introduced an ethical challenge that writing and print had not raised in the same form. What was it?",
+      "question": "John Stuart Mill's 1859 book On Liberty introduced the 'harm principle' and coined the phrase 'marketplace of ideas.' Mill argued that even false opinions must be allowed expression because:",
       "options": [
-        "They were the first technologies capable of crossing national borders without physical interception",
-        "A tiny number of broadcasters could simultaneously reach millions of passive listeners, creating unprecedented potential for mass propaganda",
-        "They required expensive equipment, making them accessible only to wealthy individuals and governments",
-        "They were the first technologies to require real-time collaboration between producers and audiences"
+        "Suppressing any opinion violates a natural right to self-expression",
+        "Governments are incapable of reliably identifying which opinions are false",
+        "The collision of ideas — including false ones — is how truth advances",
+        "False opinions tend to collapse on their own when exposed to public scrutiny"
       ],
-      "correct": 1,
-      "explanation": "Print is many-to-many: anyone with a press can publish. Broadcasting is one-to-many: a radio or TV transmitter reaches millions who cannot easily talk back. This asymmetry — a small elite controlling what millions hear and see — is what made mass media a tool of modern propaganda. Nazi Germany's use of radio, and later television's role in shaping political opinion, are the paradigm cases.",
-      "section": "mass-media"
+      "correct": 2,
+      "explanation": "Mill argued that if a false opinion is suppressed, we lose the opportunity to understand why it is wrong — and an unexamined belief is a fragile one. If a true opinion is suppressed, we lose the truth. In both cases, open debate produces better epistemic outcomes than censorship. Marx countered that this 'marketplace' is rigged: whoever owns the means of communication controls which voices are amplified.",
+      "section": "distance"
     },
     {
       "id": "ch01-q08",
-      "question": "ARPANET, the direct precursor to the modern internet, was originally developed under the sponsorship of:",
+      "question": "George Orwell — author of Animal Farm (1945) and Nineteen Eighty-Four (1949) — was born with what name?",
       "options": [
-        "IBM, as a commercial network for corporate data exchange",
-        "A consortium of American universities to share library resources",
-        "The U.S. Department of Defense, seeking a decentralized communication network resilient to attack",
-        "Tim Berners-Lee and colleagues at CERN, to share physics research"
+        "George Arthur Orwell",
+        "Eric Arthur Blair",
+        "Arthur George Prescott",
+        "Eric George Huxley"
       ],
-      "correct": 2,
-      "explanation": "ARPANET was funded by DARPA (the Defense Advanced Research Projects Agency) and went live in 1969. The military motivation was to build a network with no single point of failure — if a node was destroyed, traffic would reroute. Tim Berners-Lee invented the World Wide Web (HTTP and HTML) in 1989–1991 at CERN, building on top of the internet infrastructure ARPANET had established.",
-      "section": "the-web"
+      "correct": 1,
+      "explanation": "George Orwell was born Eric Arthur Blair in British India in 1903. He took the pen name 'George Orwell' as an adult. His novels, written under that name, introduced coinages — 'doublethink,' 'memory hole,' 'Big Brother,' 'Newspeak,' 'thoughtcrime' — that have entered the English language as permanent vocabulary for describing political manipulation and propaganda.",
+      "section": "mass-media"
     },
     {
       "id": "ch01-q09",
-      "question": "When the chapter examines how optimists and pessimists have responded to each IT revolution, which conclusion does it reach?",
+      "question": "The Nazi Volksempfänger ('People's Receiver') was a cheap, standardized radio set rolled out after 1933. By 1939, Germany had the highest per-capita radio ownership in the world. Approximately what share of the German population could be reached by Nazi broadcasts?",
       "options": [
-        "Optimists were ultimately right — each revolution expanded freedom more than it enabled oppression",
-        "Pessimists were ultimately right — established powers always successfully captured and controlled new technologies",
-        "Both were partly right: each revolution genuinely expanded freedom and genuinely enabled new forms of control",
-        "Neither was right — the effects of IT revolutions are too complex and contingent to generalize"
+        "Around 20 percent",
+        "Around 40 percent",
+        "Around 70 percent",
+        "Nearly 100 percent"
       ],
       "correct": 2,
-      "explanation": "The chapter does not side with either the utopian or the dystopian view. The printing press really did spread the Reformation and democratize knowledge (optimists were right). It also really did give rise to systematic state censorship (pessimists were right). The same pattern repeats: the internet really did enable unprecedented free expression AND unprecedented surveillance. Both promises were kept.",
-      "section": "patterns"
+      "explanation": "By 1939, Germany had over sixteen million radio sets reaching approximately seventy percent of the population. Nazi Propaganda Minister Joseph Goebbels recognized radio's potential immediately and used it to broadcast Hitler's speeches live to the entire nation. The chapter notes that the Volksempfänger were designed to receive but not transmit — the audience could only listen, not respond — making it structurally suited to one-way propaganda.",
+      "section": "mass-media"
     },
     {
       "id": "ch01-q10",
-      "question": "Which of the following best explains why studying IT history is valuable for IT ethics?",
+      "question": "Tim Berners-Lee invented the World Wide Web in 1989–1991 while working at which institution?",
       "options": [
-        "History lets us predict precisely which technologies will be beneficial and which will be harmful",
-        "IT is unique among human activities because its ethical problems have no historical precedents",
-        "Recurring historical patterns reveal that how we design, govern, and contest technology profoundly shapes freedom, power, and justice",
-        "IT history shows that ethical problems are always solved eventually by market competition and technical progress"
+        "MIT's Computer Science and Artificial Intelligence Laboratory in Cambridge",
+        "Bell Labs in Murray Hill, New Jersey",
+        "ARPA (the Advanced Research Projects Agency) in Washington, D.C.",
+        "CERN, the European particle physics laboratory in Switzerland"
       ],
-      "correct": 2,
-      "explanation": "The point is not that history repeats mechanically, but that it reveals patterns. Every generation has faced questions about who controls information, who is surveilled, whose voices are amplified and whose are silenced. Recognizing these patterns helps us ask sharper questions about AI, surveillance capitalism, and platform power today — rather than treating each new technology as entirely unprecedented.",
+      "correct": 3,
+      "explanation": "Berners-Lee was a British physicist at CERN in Switzerland when he wrote a 1989 memo proposing a system for managing information across the lab's network. His supervisor returned it with the note 'Vague but exciting.' Two years later he had built the Web. Crucially, he deliberately refused to patent his invention, releasing it as an open standard — a choice the chapter treats as one of the most consequential acts of technological generosity in history.",
+      "section": "the-web"
+    },
+    {
+      "id": "ch01-q11",
+      "type": "matching",
+      "question": "Match each key thinker to the work, invention, or concept most closely associated with them in this chapter.",
+      "pairs": [
+        { "left": "Plato",             "right": "Phaedrus — critique of writing as mere 'reminding'" },
+        { "left": "Johannes Gutenberg", "right": "Movable type printing press (~1440 CE)" },
+        { "left": "John Stuart Mill",  "right": "On Liberty (1859) — the 'marketplace of ideas'" },
+        { "left": "Hannah Arendt",     "right": "The 'banality of evil' and Origins of Totalitarianism" },
+        { "left": "Tim Berners-Lee",   "right": "The World Wide Web — released as an open standard" }
+      ],
+      "explanation": "Each revolution in the chapter has a key thinker: Plato (writing), Gutenberg (printing press), Mill (distance communication and free speech), Arendt (mass media and totalitarianism), and Berners-Lee (the Web). Knowing who argued what — and when — is essential for applying their ideas to new contexts.",
       "section": "patterns"
+    },
+    {
+      "id": "ch01-q12",
+      "type": "multiple",
+      "question": "Which of the following terms were coined by George Orwell in Nineteen Eighty-Four (1949)? Select all that apply.",
+      "options": [
+        "Doublethink",
+        "The marketplace of ideas",
+        "Newspeak",
+        "The banality of evil",
+        "Memory hole",
+        "Big Brother"
+      ],
+      "correct": [0, 2, 4, 5],
+      "explanation": "Doublethink, Newspeak, memory hole, and Big Brother all appear in Nineteen Eighty-Four and have since entered general English usage. 'The marketplace of ideas' was John Stuart Mill's phrase from On Liberty (1859). 'The banality of evil' was Hannah Arendt's concept, coined in her coverage of Adolf Eichmann's 1961 trial in Jerusalem.",
+      "section": "mass-media"
     }
   ]
 }
