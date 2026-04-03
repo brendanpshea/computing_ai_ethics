@@ -136,6 +136,113 @@
       "section": "the-web"
     },
     {
+      "id": "ch01-q13",
+      "question": "The Epic of Gilgamesh — one of the earliest pieces of literature in human history — was composed around 2100 BCE. It survives because it was written on:",
+      "options": [
+        "Papyrus scrolls preserved in the dry climate of the Nile Delta",
+        "Clay tablets that hardened and survived for millennia",
+        "Parchment codices copied by Babylonian scribes",
+        "Stone inscriptions on the walls of temple complexes"
+      ],
+      "correct": 1,
+      "explanation": "The Epic of Gilgamesh survives on clay tablets — the same medium as cuneiform accounting records. The durability of baked clay is one reason Mesopotamian records have outlasted many later civilizations' parchment or papyrus archives. The chapter describes Gilgamesh as 'a meditation on mortality, friendship, and the search for meaning that would not feel out of place in a contemporary bookstore.'",
+      "section": "writing"
+    },
+    {
+      "id": "ch01-q14",
+      "question": "Erasmus, Luther's great contemporary, produced a critical edition of the Greek New Testament using the printing press. Yet he viewed Luther's use of the press with deep unease. What was Erasmus's main concern?",
+      "options": [
+        "Luther's German Bible contained numerous translation errors that would mislead ordinary readers",
+        "Luther was flooding the reading public with arguments that most readers were not equipped to evaluate",
+        "The press was producing too many copies of Scripture, cheapening its sacred character",
+        "Luther's pamphlets were being read by Catholic clergy and corrupting the Church from within"
+      ],
+      "correct": 1,
+      "explanation": "Erasmus worried not about the press itself but about Luther's use of it: rapidly distributing complex theological arguments to a mass audience that, in Erasmus's view, lacked the training to evaluate them critically. Where Luther saw a marketplace of ideas in which truth would triumph, Erasmus saw a dangerous bazaar where the loudest voice — not the wisest — would win. The chapter describes this as the prototype of every subsequent debate between free-flow and gatekeeping advocates.",
+      "section": "printing"
+    },
+    {
+      "id": "ch01-q15",
+      "question": "The first transatlantic telegraph cable, permanently connecting North America and Europe, was completed in:",
+      "options": [
+        "1844",
+        "1858",
+        "1866",
+        "1876"
+      ],
+      "correct": 2,
+      "explanation": "The first transatlantic telegraph cable was completed in 1866, connecting North America and Europe for the first time. The chapter describes it as 'celebrated as one of the greatest achievements in human history.' Historian Tom Standage later called the telegraph 'the Victorian Internet,' noting that the same utopian claims made about the telegraph in the 1860s were made almost word for word about the internet in the 1990s.",
+      "section": "distance"
+    },
+    {
+      "id": "ch01-q16",
+      "question": "Historian Tom Standage called the telegraph 'the Victorian Internet' because:",
+      "options": [
+        "Both technologies were invented by government researchers before being handed to private companies",
+        "The same utopian claims made about the telegraph in the 1860s were made almost word for word about the internet in the 1990s",
+        "Both technologies were initially developed for military communication and surveillance",
+        "The telegraph and the internet were each invented within the same country and spread globally from there"
+      ],
+      "correct": 1,
+      "explanation": "Standage's comparison rests on the rhetorical parallel: commentators in the 1860s declared the telegraph would unite all nations, abolish war, and usher in universal peace — the same promises that were made about the internet in the 1990s. The chapter uses this parallel to argue that utopian claims about new communication technologies follow a predictable script across every revolution.",
+      "section": "distance"
+    },
+    {
+      "id": "ch01-q17",
+      "question": "Karl Marx argued that in any society, the dominant ideas reflect the interests of those who control the means of production and communication. Which quotation from the chapter captures this view?",
+      "options": [
+        "'The philosophers have only interpreted the world; the point is to change it.'",
+        "'The ruling ideas of each age have ever been the ideas of its ruling class.'",
+        "'Workers of the world, unite — you have nothing to lose but your chains.'",
+        "'History repeats itself, first as tragedy, then as farce.'"
+      ],
+      "correct": 1,
+      "explanation": "Marx's claim that 'the ruling ideas of each age have ever been the ideas of its ruling class' is the core of his analysis of communication technology: whoever owns the newspapers, telegraph wires, or social media platforms controls which ideas reach the public, and on what terms. The chapter presents this as a direct challenge to Mill's belief in an open, fair marketplace of ideas.",
+      "section": "distance"
+    },
+    {
+      "id": "ch01-q18",
+      "question": "Plato founded one of the first institutions of higher learning in Western history in Athens, which operated for nearly nine hundred years. It was called:",
+      "options": [
+        "The Lyceum",
+        "The Stoa",
+        "The Academy",
+        "The Agora"
+      ],
+      "correct": 2,
+      "explanation": "After Socrates' execution in 399 BCE, Plato traveled widely before returning to Athens to found the Academy — one of the first institutions of higher learning in Western history. It should not be confused with the Lyceum, which was founded later by Plato's most famous student, Aristotle. The Stoa was the porch where Stoic philosophers taught; the Agora was the Athenian public marketplace.",
+      "section": "writing"
+    },
+    {
+      "id": "ch01-q19",
+      "type": "multiple",
+      "question": "Which of the following facts about the Gutenberg Bible (c. 1455) are stated in the chapter? Select all that apply.",
+      "options": [
+        "Approximately 180 copies were printed",
+        "It was printed in German rather than Latin",
+        "Approximately 49 copies survive today",
+        "It was the very first document ever produced with movable type",
+        "The quality of its printing rivaled the finest hand-copied manuscripts"
+      ],
+      "correct": [0, 2, 4],
+      "explanation": "The chapter states that approximately 180 copies of the Gutenberg Bible were printed, that about 49 survive today, and that 'the quality of the printing rivaled the finest hand-copied manuscripts.' It was printed in Latin, not German — Luther's German Bible translation came about sixty years later. And while the Gutenberg Bible is the first major book printed in Europe using movable type, it was not the very first document ever printed that way.",
+      "section": "printing"
+    },
+    {
+      "id": "ch01-q20",
+      "type": "matching",
+      "question": "Using the chapter's Table 1.1, match each IT revolution to the 'core tension' that defines it.",
+      "pairs": [
+        { "left": "Writing (~3200 BCE)",         "right": "Memory vs. external record" },
+        { "left": "Printing Press (~1440 CE)",   "right": "Free dissemination vs. responsible gatekeeping" },
+        { "left": "Distance Communication (~1840s)", "right": "Individual liberty vs. ownership and power" },
+        { "left": "Mass Media (~1920s)",          "right": "Shared culture vs. propaganda and control" },
+        { "left": "The World Wide Web (~1990s)",  "right": "Democratization vs. surveillance capitalism" }
+      ],
+      "explanation": "Table 1.1 in the chapter maps each revolution to its defining ethical tension. Writing raises the question of memory and externalized knowledge (Plato's Thamus). The press raises the question of gatekeeping (Luther vs. Erasmus). Distance communication raises questions of ownership and power (Mill vs. Marx). Mass media raises the question of propaganda (Orwell and Arendt). The Web raises the question of democratization versus surveillance capitalism.",
+      "section": "patterns"
+    },
+    {
       "id": "ch01-q11",
       "type": "matching",
       "question": "Match each key thinker to the work, invention, or concept most closely associated with them in this chapter.",

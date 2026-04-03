@@ -1,0 +1,275 @@
+{
+  "id": "ch02",
+  "chapter": 2,
+  "title": "Virtue Ethics and Modern Technology",
+  "description": "Test your understanding of virtue ethics, its key thinkers, and how digital technology shapes moral character.",
+  "chapter_url": "ch02_virtue_ethics.html",
+  "questions": [
+    {
+      "id": "ch02-q01",
+      "question": "Aristotle defined eudaimonia as which of the following?",
+      "options": [
+        "A state of pleasure and positive life satisfaction",
+        "Activity of the soul in accordance with virtue over a complete life",
+        "Obedience to divine moral law",
+        "The rational calculation of the greatest good for the greatest number"
+      ],
+      "correct": 1,
+      "explanation": "Aristotle explicitly distinguished eudaimonia from mere pleasure or life satisfaction. In the Nicomachean Ethics he defines it as the active exercise of the soul's highest capacities in accordance with virtue over a complete life — not a feeling, but an ongoing activity.",
+      "section": "eudaimonia"
+    },
+    {
+      "id": "ch02-q02",
+      "question": "According to Aristotle, what is phronesis?",
+      "options": [
+        "Theoretical knowledge of eternal truths",
+        "The virtue of courage applied in battle",
+        "Practical wisdom — the master virtue required to apply all other virtues correctly",
+        "Craft knowledge used in the production of fine objects"
+      ],
+      "correct": 2,
+      "explanation": "Phronesis is Aristotle's term for practical wisdom and is considered the master virtue because it is the capacity that allows a person to perceive what a situation requires and apply the appropriate virtue correctly. Without phronesis, possessing other virtues is insufficient.",
+      "section": "framework"
+    },
+    {
+      "id": "ch02-q03",
+      "question": "Aristotle's doctrine of the mean holds that virtue is:",
+      "options": [
+        "The midpoint between self-interest and altruism",
+        "A balance between two extremes, such as courage between cowardice and recklessness",
+        "The average behavior observed in a given community",
+        "An innate quality that cannot be cultivated through practice"
+      ],
+      "correct": 1,
+      "explanation": "The doctrine of the mean states that each virtue occupies a middle position between a deficiency and an excess. Courage, for example, is the mean between the deficiency of cowardice and the excess of recklessness. The mean is not a mathematical midpoint but the right response for the right person in the right circumstances.",
+      "section": "framework"
+    },
+    {
+      "id": "ch02-q04",
+      "question": "Which of the following is the source of the quote: \"We are what we repeatedly do. Excellence, then, is not an act, but a habit\"?",
+      "options": [
+        "Alasdair MacIntyre",
+        "Martha Nussbaum",
+        "Aristotle",
+        "Shannon Vallor"
+      ],
+      "correct": 2,
+      "explanation": "This quote is attributed to Aristotle and captures the core insight of virtue ethics: that moral character is not formed by single decisions but by the repeated patterns of action, feeling, and perception that constitute a person's habits over time.",
+      "section": "framework"
+    },
+    {
+      "id": "ch02-q05",
+      "question": "In After Virtue (1981), Alasdair MacIntyre argued that modern ethical debates are characterized by:",
+      "options": [
+        "A renewed consensus around Kantian deontology",
+        "Emotivism — the view that moral judgments are simply expressions of emotion with no rational basis",
+        "Utilitarian calculation replacing older virtue-based reasoning",
+        "A return to Aristotelian teleology in academic philosophy"
+      ],
+      "correct": 1,
+      "explanation": "MacIntyre's central diagnosis in After Virtue is that contemporary moral discourse has collapsed into emotivism — people argue as if making objective moral claims, but their statements are actually just expressions of personal or cultural preference. He attributed this to the loss of the Aristotelian tradition that gave moral vocabulary its coherent context.",
+      "section": "revival"
+    },
+    {
+      "id": "ch02-q06",
+      "question": "Rosalind Hursthouse is associated with which concept in virtue ethics?",
+      "options": [
+        "The capabilities approach",
+        "Technomoral virtues",
+        "V-rules, such as 'Do what an honest person would do'",
+        "The doctrine of the mean"
+      ],
+      "correct": 2,
+      "explanation": "Rosalind Hursthouse developed V-rules as a way of translating virtue ethics into action-guiding principles. Rather than asking 'what rule applies here?', V-rules direct agents to ask what a person of a specific virtue — honesty, courage, compassion — would do in the situation.",
+      "section": "revival"
+    },
+    {
+      "id": "ch02-q07",
+      "question": "Martha Nussbaum's capabilities approach, developed in Creating Capabilities, focuses on:",
+      "options": [
+        "Measuring national GDP as a proxy for human flourishing",
+        "Identifying core human capacities necessary for flourishing",
+        "Cataloguing the intellectual virtues described by Aristotle",
+        "Measuring the frequency of virtuous acts in a population"
+      ],
+      "correct": 1,
+      "explanation": "Martha Nussbaum's capabilities approach shifts attention from wealth and utility to the actual capacities people are able to exercise. In Creating Capabilities she argues that a just society must ensure all citizens have access to a threshold of core human capabilities — including bodily health, emotional development, practical reason, and affiliation — that are necessary for a fully human life.",
+      "section": "revival"
+    },
+    {
+      "id": "ch02-q08",
+      "question": "Shannon Vallor coined the term 'pharmakon' to describe technology. What does this Greek term mean in her usage?",
+      "options": [
+        "A tool that is morally neutral and takes on the character of its user",
+        "A substance or thing that is simultaneously poison and cure",
+        "A craft or technical skill that can be taught",
+        "An artificial extension of natural human capacities"
+      ],
+      "correct": 1,
+      "explanation": "Vallor borrows the ancient Greek term pharmakon, which denotes something that is simultaneously a poison and a cure. Applied to technology, the concept captures the double-edged nature of digital tools: the same smartphone that enables connection and learning can also undermine attention, empathy, and moral character.",
+      "section": "moral"
+    },
+    {
+      "id": "ch02-q09",
+      "question": "Shannon Vallor's concept of 'moral deskilling' refers to:",
+      "options": [
+        "Children failing to learn civic values in school",
+        "The gradual erosion of human ethical capacities when machines take over moral tasks",
+        "The decline of vocational training in modern universities",
+        "Loss of empathy caused by excessive video game use"
+      ],
+      "correct": 1,
+      "explanation": "Moral deskilling is Vallor's term for the process by which outsourcing ethical tasks to automated systems gradually atrophies the human capacities needed to perform those tasks. Just as GPS use can erode navigational skill, delegating moral judgment to algorithms risks eroding the very virtues — attentiveness, care, practical wisdom — that make good judgment possible.",
+      "section": "moral"
+    },
+    {
+      "id": "ch02-q10",
+      "question": "According to the chapter, in what year did smartphones become the majority technology for American teenagers, coinciding with a sharp rise in depression, anxiety, and self-harm?",
+      "options": [
+        "2009",
+        "2010",
+        "2012",
+        "2015"
+      ],
+      "correct": 2,
+      "explanation": "Jonathan Haidt's research, presented in The Anxious Generation, identifies 2012 as the pivotal year when smartphones crossed the majority threshold among American teenagers. The data show that rates of depression, anxiety, and self-harm among adolescents began rising sharply at precisely this point.",
+      "section": "moral"
+    },
+    {
+      "id": "ch02-q11",
+      "question": "C. Thi Nguyen distinguishes between epistemic bubbles and echo chambers. Which statement correctly describes the difference?",
+      "options": [
+        "Epistemic bubbles involve active discrediting of contrary voices; echo chambers simply lack them",
+        "Echo chambers involve active discrediting of contrary voices; epistemic bubbles simply lack them",
+        "Epistemic bubbles are online phenomena; echo chambers occur in face-to-face communities",
+        "Echo chambers are created by algorithms; epistemic bubbles are created by individual choice"
+      ],
+      "correct": 1,
+      "explanation": "Nguyen draws a sharp distinction: in an epistemic bubble, contrary views are simply absent — it is an information gap that could in principle be corrected by exposure. In an echo chamber, contrary voices are actively discredited, so outside correction becomes impossible because any challenge is dismissed as coming from an untrustworthy source.",
+      "section": "intellectual"
+    },
+    {
+      "id": "ch02-q12",
+      "question": "William James described the voluntary return of wandering attention as:",
+      "options": [
+        "The foundation of scientific method",
+        "The very root of judgment, character, and will",
+        "The primary mechanism of memory consolidation",
+        "An involuntary reflex that cannot be trained"
+      ],
+      "correct": 1,
+      "explanation": "William James, the founder of modern psychology, argued that the ability to voluntarily bring attention back when it wanders is not a minor cognitive skill but the very root of judgment, character, and will. This framing makes attention a moral capacity — its erosion by digital distraction is therefore a virtue-ethics concern, not merely a productivity concern.",
+      "section": "intellectual"
+    },
+    {
+      "id": "ch02-q13",
+      "question": "The 'Google Effect', identified by Sparrow and colleagues, refers to:",
+      "options": [
+        "The tendency to trust search results more than personal knowledge",
+        "Cognitive offloading that reduces memory encoding because people rely on external digital storage",
+        "The distraction caused by switching between browser tabs",
+        "Increased access to information improving average intelligence scores"
+      ],
+      "correct": 1,
+      "explanation": "Sparrow and colleagues documented the Google Effect: when people know information can be easily retrieved from an external source, they are less likely to encode it into long-term memory. This is a form of cognitive offloading — the mind redistributes effort to the digital tool, but at the cost of internalized understanding.",
+      "section": "intellectual"
+    },
+    {
+      "id": "ch02-q14",
+      "question": "Sherry Turkle, an MIT sociologist, argues in Reclaiming Conversation that:",
+      "options": [
+        "Online communication is an adequate substitute for in-person interaction",
+        "Face-to-face conversation is the irreplaceable context for developing empathy",
+        "Parasocial relationships with influencers can fulfil social needs effectively",
+        "Smartphone use improves the quality of family communication"
+      ],
+      "correct": 1,
+      "explanation": "Turkle's research, presented in Reclaiming Conversation and Alone Together, argues that face-to-face conversation provides cues — tone, expression, pause, physical presence — that are essential for developing empathy. Digital communication strips these cues away, and the decline in sustained conversation correlates with measurable drops in empathy scores among college students.",
+      "section": "moral"
+    },
+    {
+      "id": "ch02-q15",
+      "question": "Australia passed its Social Media Age Law in November 2024. What did the law do?",
+      "options": [
+        "Required platforms to verify the identity of all users over 18",
+        "Banned children under 16 from using social media platforms",
+        "Imposed a tax on social media advertising revenue",
+        "Required parental consent for children under 13 to create accounts"
+      ],
+      "correct": 1,
+      "explanation": "In November 2024, the Australian government passed a law banning children under 16 from social media platforms, with the law taking effect in 2025. Virtue ethicists supporting the law argued that the state has a legitimate role in protecting the developing character of children from environments that tend to undermine virtue.",
+      "section": "policy"
+    },
+    {
+      "id": "ch02-q16",
+      "type": "multiple",
+      "question": "Which of the following are listed in the chapter as intellectual virtues in Aristotle's classification? Select all that apply.",
+      "options": [
+        "Theoretical wisdom",
+        "Courage",
+        "Practical wisdom (phronesis)",
+        "Temperance",
+        "Scientific understanding"
+      ],
+      "correct": [0, 2, 4],
+      "explanation": "Aristotle distinguished intellectual virtues from moral virtues. Intellectual virtues include theoretical wisdom, practical wisdom (phronesis), scientific understanding, intuitive reason, and craft knowledge. Courage and temperance are moral virtues, not intellectual ones — they concern desires and actions rather than the exercise of reason toward truth.",
+      "section": "framework"
+    },
+    {
+      "id": "ch02-q17",
+      "type": "multiple",
+      "question": "Which of the following are technomoral virtues listed in Shannon Vallor's Technology and the Virtues? Select all that apply.",
+      "options": [
+        "Humility",
+        "Phronesis",
+        "Magnanimity",
+        "Eudaimonia",
+        "Civility"
+      ],
+      "correct": [0, 2, 4],
+      "explanation": "Shannon Vallor's list of technomoral virtues in Technology and the Virtues includes honesty, self-control, humility, justice, courage, empathy, care, civility, flexibility, perspective, magnanimity, and technomoral wisdom. Phronesis is Aristotle's term for practical wisdom (a source for Vallor's thinking, but not her coinage in this list) and eudaimonia is the goal of virtue, not itself a virtue.",
+      "section": "moral"
+    },
+    {
+      "id": "ch02-q18",
+      "type": "multiple",
+      "question": "According to John Suler, which of the following factors contribute to the online disinhibition effect? Select all that apply.",
+      "options": [
+        "Anonymity",
+        "Cognitive offloading",
+        "Asynchronicity",
+        "Continuous partial attention",
+        "Minimization of authority"
+      ],
+      "correct": [0, 2, 4],
+      "explanation": "Suler identified several factors that combine to produce online disinhibition: anonymity (no one knows who you are), invisibility (you cannot be seen), asynchronicity (no real-time accountability), dissociative imagination (treating online interaction as not fully real), and minimization of authority (the absence of visible status cues). Cognitive offloading and continuous partial attention are separate concepts not part of Suler's framework.",
+      "section": "moral"
+    },
+    {
+      "id": "ch02-q19",
+      "type": "matching",
+      "question": "Match each thinker to their key work or concept.",
+      "pairs": [
+        { "left": "Alasdair MacIntyre", "right": "After Virtue (1981)" },
+        { "left": "Martha Nussbaum", "right": "Creating Capabilities" },
+        { "left": "Shannon Vallor", "right": "Technology and the Virtues" },
+        { "left": "Nicholas Carr", "right": "The Shallows" }
+      ],
+      "explanation": "MacIntyre's After Virtue (1981) diagnosed modern moral discourse as emotivist. Nussbaum's Creating Capabilities developed the capabilities approach to human flourishing. Vallor's Technology and the Virtues introduced the concept of technomoral virtues. Carr's The Shallows argued that internet use rewires the brain for distraction, replacing deep reading with shallow scanning.",
+      "section": "revival"
+    },
+    {
+      "id": "ch02-q20",
+      "type": "matching",
+      "question": "Match each defined term to its correct definition.",
+      "pairs": [
+        { "left": "Continuous partial attention", "right": "Chronic state in which attention is always partially allocated to monitoring notifications" },
+        { "left": "Epistemic bubble", "right": "Social environment in which certain viewpoints simply are not present" },
+        { "left": "Parasocial relationship", "right": "A one-sided bond with an influencer, podcaster, or AI companion without reciprocal demands" },
+        { "left": "Moral deskilling", "right": "Gradual erosion of human ethical capacities when machines take over moral tasks" }
+      ],
+      "explanation": "These four terms map onto distinct phenomena documented in the chapter. Continuous partial attention describes a chronic attentional state linked to notification culture. An epistemic bubble is an information gap (unlike an echo chamber, which actively discredits contrary voices). Parasocial relationships are one-directional bonds studied by Sherry Turkle. Moral deskilling is Shannon Vallor's term for the atrophy of ethical capacity through automation.",
+      "section": "intellectual"
+    }
+  ]
+}
