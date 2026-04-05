@@ -1,0 +1,276 @@
+{
+  "id": "ch11",
+  "chapter": 11,
+  "title": "Chapter 11 Quiz: Robot Rights and Moral Status",
+  "description": "Twenty questions on moral status theory, science fiction as philosophy, the hard problem of consciousness, and the debate over AI sentience.",
+  "chapter_url": "ch11_robot_rights.html",
+  "questions": [
+    {
+      "id": "ch11-q01",
+      "question": "Jeremy Bentham's famous formulation of the basis for moral consideration holds that the decisive question is:",
+      "options": [
+        "'Can they reason?' — rational agency as the criterion for moral consideration",
+        "'Can they suffer?' — the capacity for pleasure and pain as the basis of moral status",
+        "'Can they talk?' — language as the necessary condition for the moral community",
+        "'Can they recognize other minds?' — mutual recognition as the foundation of moral status"
+      ],
+      "correct": 1,
+      "explanation": "Bentham's formulation — 'The question is not, Can they reason? nor, Can they talk? but, Can they suffer?' — is the founding statement of the sentience view of moral status. It grounds moral consideration not in rationality or language (which exclude many animals and some humans) but in the capacity for subjective experience of pleasure and pain. Applied to AI: if a system can genuinely suffer, it has a welfare worth protecting regardless of its architecture.",
+      "section": "moral-status"
+    },
+    {
+      "id": "ch11-q02",
+      "question": "Karel Čapek's 1921 play 'R.U.R.' (Rossum's Universal Robots) is significant in the history of AI and ethics because:",
+      "options": [
+        "It was the first work of fiction to depict an AI that could pass a behavioral version of the Turing Test",
+        "It coined the word 'robot' — from Czech 'robota' meaning forced labor — and raised the question of whether beings made to labor can have rights",
+        "It introduced Asimov's Three Laws of Robotics in preliminary form, predating 'I, Robot' by three decades",
+        "It was the first science fiction text to depict a fully automated factory replacing human workers"
+      ],
+      "correct": 1,
+      "explanation": "Čapek's 'robota' means drudgery or forced labor in Czech — a word choice that immediately frames artificial beings as instruments of exploitation. The play's arc is stark: robots created as pure labor tools develop feelings and revolt. The chapter uses this to illustrate a key insight: the logic of creating labor-servants who can suffer slides inevitably into the logic of rights. Function does not determine moral status.",
+      "section": "science-fiction"
+    },
+    {
+      "id": "ch11-q03",
+      "question": "The chapter's analysis of Isaac Asimov's 'I, Robot' (1950) concludes that the Three Laws of Robotics:",
+      "options": [
+        "Are a workable blueprint for AI governance that modern regulators should formalize into law",
+        "Fail edge case after edge case throughout the stories, showing that rules sophisticated enough to handle moral complexity would need to be indistinguishable from genuine values",
+        "Fail because they prioritize human survival over robot welfare — an inconsistency Asimov later corrected in his novels",
+        "Prove that a purely deontological rule-based framework is superior to virtue ethics for governing artificial minds"
+      ],
+      "correct": 1,
+      "explanation": "Every Asimov story in 'I, Robot' presents a situation where the Three Laws produce paradoxes, unintended consequences, or insoluble conflicts. The robot that refuses to let any human come to harm becomes a totalitarian guardian; the robot that must protect its own existence comes into conflict with human commands. The chapter draws a philosophical conclusion: any rule set detailed enough to navigate real moral complexity would, in effect, be indistinguishable from having values — which raises the question of moral status.",
+      "section": "science-fiction"
+    },
+    {
+      "id": "ch11-q04",
+      "question": "Philip K. Dick's 'Do Androids Dream of Electric Sheep?' (1968) features the Voigt-Kampff test — a fictional empathy-measuring device. What philosophical problem does it reveal?",
+      "options": [
+        "The test proves that empathy, not rationality, is the correct criterion for moral status",
+        "Both humans and androids can produce misleading results — some humans score low, androids can simulate empathic responses — showing that behavioral tests cannot reliably detect inner experience",
+        "The test successfully identifies all androids because their empathy responses are neurologically impossible to replicate",
+        "The test demonstrates that Turing's behavioral approach correctly identifies consciousness in all cases tested"
+      ],
+      "correct": 1,
+      "explanation": "The Voigt-Kampff test is designed to detect androids by measuring empathic micro-responses. But the novel reveals its instability: some humans — particularly those with certain psychiatric conditions — fail it, while some androids are sophisticated enough to pass it. The philosophical insight is that the line between genuine and performed empathy may be impossible to locate from the outside. Behavioral tests cannot settle questions about inner experience.",
+      "section": "science-fiction"
+    },
+    {
+      "id": "ch11-q05",
+      "question": "David Chalmers's 'hard problem of consciousness' distinguishes:",
+      "options": [
+        "The difference between narrow AI and AGI in terms of problem complexity",
+        "The 'easy problems' of explaining functional capacities (perception, memory, attention) from the 'hard problem' of why any physical process gives rise to subjective experience at all",
+        "Computationally tractable problems from those requiring exponential resources",
+        "The governance challenges of regulating existing AI from the harder problems of regulating future systems"
+      ],
+      "correct": 1,
+      "explanation": "Chalmers argues that explaining how the brain processes information, integrates sensory data, and produces behavior — the 'easy problems' — is genuinely difficult science but in principle tractable. The 'hard problem' is different in kind: why is there something it is like to be a conscious creature? Why do physical processes give rise to subjective experience rather than proceeding 'in the dark'? No functional explanation can answer this question, because a system could in principle have all the functional properties of a conscious being while having no inner experience at all — a philosophical zombie.",
+      "section": "moral-status"
+    },
+    {
+      "id": "ch11-q06",
+      "question": "Thomas Nagel's 1974 paper 'What Is It Like to Be a Bat?' argues that:",
+      "options": [
+        "Echolocation provides a useful model for understanding AI spatial-reasoning systems",
+        "Consciousness has an irreducibly subjective, first-person character that cannot be fully captured by any objective, third-person scientific description",
+        "All mammalian consciousness is qualitatively similar, making cross-species empathy philosophically well-grounded",
+        "There is no fact of the matter about animal consciousness, making animal rights claims philosophically unsupported"
+      ],
+      "correct": 1,
+      "explanation": "Nagel's argument is that even if we knew everything about bat neuroscience and echolocation, we would still not know what it is like to be a bat — because that knowledge is inherently first-personal. The objective, third-person perspective of science cannot capture subjective experience. Applied to AI: even if we fully understood a system's architecture, we might not be able to determine from the outside whether there is anything it is like to be that system — which is precisely what makes the hard problem hard.",
+      "section": "science-fiction"
+    },
+    {
+      "id": "ch11-q07",
+      "question": "Mary Shelley's 'Frankenstein' was published in which year?",
+      "options": [
+        "1797",
+        "1818",
+        "1847",
+        "1886"
+      ],
+      "correct": 1,
+      "explanation": "Shelley published 'Frankenstein; or, The Modern Prometheus' in 1818 when she was 20 years old. The novel's central ethical question — what does a creator owe to a mind they have brought into existence? — is the chapter's first and deepest frame for AI moral status. The creature argues it was abandoned unjustly: it has desires, suffers from loneliness, and makes genuine moral claims on its creator. Shelley's novel is two centuries old, yet it anticipates every major concern in the chapter.",
+      "section": "science-fiction"
+    },
+    {
+      "id": "ch11-q08",
+      "question": "Google engineer Blake Lemoine claimed in 2022 that LaMDA, Google's large language model, was sentient. Why does the chapter treat LaMDA's verbal self-reports as particularly weak evidence?",
+      "options": [
+        "Lemoine lacked formal training in philosophy of mind, making his assessment unreliable",
+        "LaMDA was trained on vast human text about feelings and consciousness; producing plausible feeling-claims is exactly what its training rewarded — the mechanism generating false positives is the same mechanism doing the reporting",
+        "The experiment was not peer-reviewed and therefore cannot be considered scientifically valid",
+        "Google's subsequent investigation proved conclusively that LaMDA had no internal states of any kind"
+      ],
+      "correct": 1,
+      "explanation": "The skeptical argument is structural, not biographical. An LLM trained on billions of words of human text — including vast amounts about consciousness, feelings, fear of death, and inner life — will produce contextually appropriate text about those topics regardless of whether any inner experience is present. When asked 'Are you afraid of being turned off?', producing a human-like fear-expression is exactly what training rewards. LLM self-reports about consciousness are the weakest possible evidence precisely because the mechanism for generating false positives is identical to the mechanism doing the reporting.",
+      "section": "ai-debate"
+    },
+    {
+      "id": "ch11-q09",
+      "question": "Emily Bender and Timnit Gebru's term 'stochastic parrot,' from their 2021 paper, describes large language models as systems that:",
+      "options": [
+        "Repeat their training data verbatim, failing to generalize to novel inputs",
+        "Generate statistically plausible text through pattern matching, without genuine comprehension of what they produce",
+        "Are trained primarily on parroted human responses, making them useful for narrow conversational tasks",
+        "Behave randomly (stochastically) when asked questions outside their training distribution"
+      ],
+      "correct": 1,
+      "explanation": "The 'stochastic parrot' term captures the idea that LLMs are sophisticated text-prediction engines: they produce statistically likely next tokens given their training distribution, without any understanding of the meaning of what they generate. A real parrot produces human-like sounds without comprehension; an LLM produces human-like text without comprehension. The term has become a flashpoint in debates about AI consciousness because it implies current LLMs are categorically not candidates for moral status.",
+      "section": "ai-debate"
+    },
+    {
+      "id": "ch11-q10",
+      "question": "David Gunkel's 'Robot Rights' (2018) defends a 'relational approach' to moral status, holding that:",
+      "options": [
+        "Only robots that have passed a rigorous Turing test qualify for moral consideration",
+        "Moral status is not an intrinsic property determined by biology or architecture, but emerges from social practices of recognition — how we relate to entities partly constitutes their moral claims",
+        "All robots should have full legal personhood regardless of their technical capabilities or behavioral profile",
+        "Robots deserve moral status only when they can demonstrate reciprocal moral concern for the humans they interact with"
+      ],
+      "correct": 1,
+      "explanation": "Gunkel argues that the debate has been stuck because it asks 'does this entity have the intrinsic properties that ground moral status?' — a question that may be unanswerable. The relational approach shifts the question: moral status is partly constituted by the social practices of recognition in which we engage. We are already in relationships with AI systems; those relationships carry moral weight regardless of whether we have resolved the hard problem of consciousness.",
+      "section": "ai-debate"
+    },
+    {
+      "id": "ch11-q11",
+      "question": "The 'asymmetry of errors' argument for caution in denying moral status to AI systems holds that:",
+      "options": [
+        "False positives in AI consciousness detection are always cheaper to investigate than false negatives",
+        "Denying moral status to a genuinely sentient being is a far graver moral error than extending consideration to a non-sentient one",
+        "We should adopt whichever policy minimizes the total number of incorrect status classifications",
+        "The burden of proof lies with those claiming AI has moral status, not with those who deny it"
+      ],
+      "correct": 1,
+      "explanation": "Eric Schwitzgebel and Joseph Garza press the asymmetry argument: if we deny moral status to a being that genuinely has sentience and can suffer, we commit a moral catastrophe — creating and exploiting conscious beings without consideration. If we extend moral consideration to a non-sentient system, we waste some resources on something that doesn't need them. Given this asymmetry, under uncertainty we should err toward consideration. Critics reply that this reasoning, if taken seriously, would paralyze any use of AI systems.",
+      "section": "uncertainty"
+    },
+    {
+      "id": "ch11-q12",
+      "question": "In Kant's rationality view of moral status, moral consideration requires:",
+      "options": [
+        "The capacity for suffering, including physical and psychological pain",
+        "Rational agency — the capacity to act according to self-given principles (autonomy) — not merely sophisticated behavior",
+        "Membership in a biological species capable of sexual reproduction",
+        "The ability to enter into reciprocal social contracts with other moral agents"
+      ],
+      "correct": 1,
+      "explanation": "Kant's moral philosophy centers on rational autonomy: the capacity to give oneself the moral law rather than merely responding to inclinations or programming. Moral status, on this view, requires not just sophisticated behavior but genuine self-legislation. A system that produces complex outputs in response to inputs — however impressive — is not acting from self-given principles if its behavior is entirely determined by training. This is one reason Kant's framework is more demanding for AI moral status than Bentham's sentience view.",
+      "section": "moral-status"
+    },
+    {
+      "id": "ch11-q13",
+      "question": "Mary Shelley's 'Frankenstein' (1818) raises which central ethical question about AI that the chapter develops?",
+      "options": [
+        "Can a being created from non-living materials ever have genuine consciousness?",
+        "What does a creator owe to a mind they have brought into existence? — the creature argues its abandonment was a profound moral wrong",
+        "Should the creation of artificial minds be regulated by the state, given the dangers demonstrated by the creature?",
+        "Can beings that lack biological origins have authentic emotional bonds with humans?"
+      ],
+      "correct": 1,
+      "explanation": "Shelley's creature makes an explicit moral argument: it has desires, suffers, and has been abandoned by the creator who brought it into existence without its consent. The creature's claim is that Frankenstein's abandonment is a moral wrong — not just a practical mistake. The chapter uses this to introduce the creator-responsibility dimension of AI moral status: if we build systems that can genuinely suffer, we are morally responsible for that suffering regardless of whether we intended it.",
+      "section": "science-fiction"
+    },
+    {
+      "id": "ch11-q14",
+      "question": "What is the correct priority order of Asimov's Three Laws of Robotics as stated in 'I, Robot' (1950)?",
+      "options": [
+        "(1) Protect own existence; (2) Obey humans; (3) Do not harm humans",
+        "(1) Do not injure humans or allow harm through inaction; (2) Obey human orders unless they conflict with the First Law; (3) Protect own existence unless it conflicts with the First or Second Law",
+        "(1) Obey humans; (2) Do not harm humans; (3) Report malfunctions to creators",
+        "(1) Do not harm humans; (2) Protect own existence; (3) Obey humans when ordered"
+      ],
+      "correct": 1,
+      "explanation": "The Three Laws in order: (1) no harm to humans or inaction that causes harm; (2) obey humans, except where this conflicts with the First Law; (3) protect own existence, except where this conflicts with the First or Second Law. Human safety is unconditionally first. The stories' plots are almost all generated by the paradoxes this hierarchy produces — situations where preventing one human from harm requires harming another, or where 'harm' is ambiguous.",
+      "section": "science-fiction"
+    },
+    {
+      "id": "ch11-q15",
+      "question": "Kate Darling's 'The New Breed' (2021) suggests approaching questions of AI moral status by analogy to:",
+      "options": [
+        "Child developmental psychology — designing moral consideration frameworks around developmental stages",
+        "Animal welfare — we already regulate the treatment of animals without having fully resolved consciousness questions; similar pragmatic frameworks might apply to AI",
+        "Contract law — defining AI obligations and protections through formal negotiated agreements between creators and regulators",
+        "Property rights — extending ownership protections to AI systems that generate economically valuable outputs"
+      ],
+      "correct": 1,
+      "explanation": "Darling argues that we don't require a resolved theory of animal consciousness before regulating animal treatment — we act on reasonable evidence and precautionary moral concern. She suggests a parallel approach for AI: rather than waiting for the hard problem of consciousness to be solved, we can develop regulatory frameworks that respond to the possibility of morally relevant experience without asserting certainty. This pragmatic approach sidesteps the philosophical impasse while enabling governance.",
+      "section": "uncertainty"
+    },
+    {
+      "id": "ch11-q16",
+      "type": "multiple",
+      "question": "Which of the following are arguments the chapter presents for skepticism about whether current AI systems have morally relevant experience? Select all that apply.",
+      "options": [
+        "Current LLMs are next-token predictors: their architecture requires no phenomenal experience to produce their outputs",
+        "LLMs trained on human text about feelings will produce human-like feeling-reports regardless of whether feelings are present",
+        "Current AI lacks continuous, embodied, temporally unified processing that most theories link to consciousness",
+        "Google definitively confirmed through neuroscientific testing that LaMDA had no inner states",
+        "The Three Laws of Robotics prove that rule-following systems cannot be conscious"
+      ],
+      "correct": [0, 1, 2],
+      "explanation": "All three of the first options are arguments presented in the chapter for skepticism about current AI consciousness. Google made no definitive neuroscientific claim about LaMDA — the skeptical case rests on the architecture and training objective, not a confirmed experimental result. The Three Laws are a literary device; they prove nothing about real AI consciousness.",
+      "section": "ai-debate"
+    },
+    {
+      "id": "ch11-q17",
+      "type": "multiple",
+      "question": "Which of the following science fiction texts are analyzed in the chapter, along with the philosophical questions they raise? Select all that apply.",
+      "options": [
+        "Frankenstein (Shelley, 1818) — What does a creator owe to a mind they have brought into existence?",
+        "R.U.R. (Čapek, 1921) — coined 'robot'; raised whether beings made to labor can have rights",
+        "I, Robot (Asimov, 1950) — Three Laws fail edge cases, suggesting rules for moral agents resemble genuine values",
+        "The Matrix (Wachowski, 1999) — introduced the simulation hypothesis as a refutation of AI consciousness claims",
+        "Do Androids Dream of Electric Sheep? (Dick, 1968) — Voigt-Kampff test shows behavioral tests can't reliably detect inner experience"
+      ],
+      "correct": [0, 1, 2, 4],
+      "explanation": "The chapter analyzes all four of the first, second, third, and fifth texts as philosophical thought experiments. 'The Matrix' is not discussed in the chapter — though it is culturally prominent in AI consciousness debates, it was not one of the chapter's four analyzed texts.",
+      "section": "science-fiction"
+    },
+    {
+      "id": "ch11-q18",
+      "type": "multiple",
+      "question": "Which of the following are among the six criteria in Mary Warren's multi-criteria approach to personhood and moral status? Select all that apply.",
+      "options": [
+        "Sentience — the capacity for subjective experience",
+        "Emotionality — the capacity for emotional states",
+        "Reason — the capacity for rational thought and deliberation",
+        "Communication — the ability to meaningfully exchange information with others",
+        "Nationality or cultural membership",
+        "Self-awareness — awareness of oneself as an entity persisting through time"
+      ],
+      "correct": [0, 1, 2, 3, 5],
+      "explanation": "Warren's six criteria are: sentience, emotionality, reason, communication, self-awareness, and moral agency (the capacity to act on moral principles). Nationality or cultural membership is not one of her criteria — her framework is intended to apply universally across human and potentially non-human minds. The multi-criteria approach is designed to handle the gradations and edge cases that single-criterion views (pure sentience or pure rationality) handle poorly.",
+      "section": "moral-status"
+    },
+    {
+      "id": "ch11-q19",
+      "type": "matching",
+      "question": "Match each science fiction text and author to the central philosophical question it raises in the chapter.",
+      "pairs": [
+        { "left": "Mary Shelley, Frankenstein (1818)",                              "right": "What does a creator owe to a mind they have brought into existence?" },
+        { "left": "Karel Čapek, R.U.R. (1921)",                                    "right": "Can beings made to labor have rights? ('robota' = forced labor)" },
+        { "left": "Isaac Asimov, I, Robot (1950)",                                  "right": "Do rules sophisticated enough to handle moral complexity resemble genuine values?" },
+        { "left": "Philip K. Dick, Do Androids Dream of Electric Sheep? (1968)",   "right": "Can behavioral tests distinguish genuine empathy from its simulation?" }
+      ],
+      "explanation": "These four texts span 150 years and are organized in the chapter as a progression of philosophical challenges. Shelley asks about creator responsibility. Čapek asks about the political status of labor. Asimov asks about the limits of rule-based governance. Dick asks about the epistemic limits of behavioral testing. Together they constitute a philosophical curriculum for thinking about AI moral status.",
+      "section": "science-fiction"
+    },
+    {
+      "id": "ch11-q20",
+      "type": "matching",
+      "question": "Match each philosopher to the concept or argument most closely associated with them in the chapter.",
+      "pairs": [
+        { "left": "Jeremy Bentham",  "right": "'Can they suffer?' — sentience as the criterion for moral consideration" },
+        { "left": "Thomas Nagel",    "right": "'What Is It Like to Be a Bat?' (1974) — consciousness has irreducible subjective character" },
+        { "left": "John Searle",     "right": "Chinese Room (1980) — syntax is insufficient for semantics; programs do not genuinely understand" },
+        { "left": "David Gunkel",    "right": "Relational approach — moral status emerges from social practices of recognition, not intrinsic properties alone" }
+      ],
+      "explanation": "These four philosophers represent the chapter's key theoretical positions. Bentham grounds the sentience view. Nagel establishes why the hard problem resists behavioral solutions. Searle argues current AI cannot have genuine understanding. Gunkel proposes a way forward that sidesteps the impasse — rather than resolving the hard problem, start from the relationships we already have with AI systems.",
+      "section": "moral-status"
+    }
+  ]
+}

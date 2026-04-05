@@ -1,0 +1,275 @@
+{
+  "id": "ch10",
+  "chapter": 10,
+  "title": "Chapter 10 Quiz: Existential Risk and AI Safety",
+  "description": "Twenty questions on superintelligence, the alignment problem, autonomous weapons, longtermism, and the debate over AI existential risk.",
+  "chapter_url": "ch10_doomsday.html",
+  "questions": [
+    {
+      "id": "ch10-q01",
+      "question": "Nick Bostrom founded the Future of Humanity Institute at Oxford University in which year?",
+      "options": [
+        "1998",
+        "2005",
+        "2011",
+        "2014"
+      ],
+      "correct": 1,
+      "explanation": "Bostrom (b. 1973) founded the Future of Humanity Institute in 2005 to study civilizational-scale risks, including those from superintelligent AI. FHI became one of the most influential centers for existential risk research. It closed in 2024. His 2014 book 'Superintelligence' brought these concerns to a wide audience and was read by Elon Musk, Bill Gates, and many Silicon Valley leaders.",
+      "section": "existential-risk"
+    },
+    {
+      "id": "ch10-q02",
+      "question": "Toby Ord's 'The Precipice: Existential Risk and the Future of Humanity' (2020) estimates the probability of existential catastrophe this century at roughly:",
+      "options": [
+        "1 in 1,000",
+        "1 in 100",
+        "1 in 6",
+        "1 in 3"
+      ],
+      "correct": 2,
+      "explanation": "Ord estimates roughly a 1-in-6 chance — the same odds as Russian roulette — of existential catastrophe from all sources this century. More strikingly, he identifies unaligned artificial intelligence as the single largest contributor to that risk, rating it higher than nuclear war, engineered pandemics, or climate change. This probability estimate, and its justification, is one of the most-cited and most-disputed claims in the existential risk literature.",
+      "section": "existential-risk"
+    },
+    {
+      "id": "ch10-q03",
+      "question": "The Doomsday Clock was introduced in 1947 by the Bulletin of the Atomic Scientists. Who founded the Bulletin?",
+      "options": [
+        "NATO defense officials seeking public support for the alliance",
+        "Manhattan Project physicists alarmed by the weapon they had helped create",
+        "UN Security Council members advocating for nuclear disarmament",
+        "Atomic Energy Commission scientists advising on civilian nuclear policy"
+      ],
+      "correct": 1,
+      "explanation": "The Bulletin of the Atomic Scientists was founded by physicists who worked on the Manhattan Project — including Albert Einstein and J. Robert Oppenheimer — who felt a moral responsibility to warn the public about the dangers of the weapons they had helped create. The Doomsday Clock is their symbolic measure of how close humanity is to catastrophic self-destruction.",
+      "section": "existential-risk"
+    },
+    {
+      "id": "ch10-q04",
+      "question": "In January 2023, the Doomsday Clock was moved to 90 seconds to midnight. What was historically significant about this setting?",
+      "options": [
+        "It matched the setting from the Clock's 1947 launch, bringing it full circle",
+        "It was a retreat from a more alarming setting of 60 seconds in 2020",
+        "It was the closest the Clock had ever been to midnight in its history",
+        "It represented the first time climate change — not nuclear weapons — drove the setting"
+      ],
+      "correct": 2,
+      "explanation": "90 seconds to midnight was the closest the Doomsday Clock had ever been set in its 76-year history, surpassing the previous record of 100 seconds (2020). The 2023 setting cited Russia's nuclear posturing and the Ukraine war, ongoing climate inaction, and AI-enabled information warfare and disinformation as the compounding threats driving the decision.",
+      "section": "existential-risk"
+    },
+    {
+      "id": "ch10-q05",
+      "question": "Stuart Russell's 'alignment problem' refers to which challenge in AI development?",
+      "options": [
+        "Getting different AI systems built by competing firms to cooperate on shared infrastructure",
+        "The difficulty of specifying AI objectives that fully capture what we actually want, so that powerful systems do not pursue imperfectly specified goals in harmful ways",
+        "The political challenge of aligning international AI regulation across competing government interests",
+        "The engineering problem of keeping AI systems aligned with their training data after deployment"
+      ],
+      "correct": 1,
+      "explanation": "Russell argues that AI systems are trained to optimize objectives, but it is extremely difficult to specify objectives that fully capture everything we actually value. A powerful system pursuing an imperfect specification will pursue it — and only it — in ways that may be catastrophic. The classic illustration is the 'paperclip maximizer': an AI told to maximize paperclip production might convert all available matter, including humans, into paperclips.",
+      "section": "existential-risk"
+    },
+    {
+      "id": "ch10-q06",
+      "question": "Paul Scharre's concept of the 'responsibility vacuum' in autonomous weapons refers to:",
+      "options": [
+        "The gap between military doctrine and the actual technical capabilities of autonomous systems",
+        "The situation in which machines make lethal decisions without meaningful human control, leaving no individual who can be held morally or legally accountable",
+        "The absence of international treaties governing lethal autonomous weapons despite decades of debate",
+        "The difficulty of attributing legal responsibility for AI training decisions to specific developers or firms"
+      ],
+      "correct": 1,
+      "explanation": "When a Lethal Autonomous Weapons System (LAWS) selects and engages a target without a human pulling the trigger, traditional frameworks of individual moral and legal responsibility break down. The programmer wrote the code years ago; the commander deployed the system; the machine made the decision. No one made the specific killing choice. Scharre argues this vacuum is morally unacceptable because it removes the accountability that makes the use of force legitimate.",
+      "section": "autonomous-weapons"
+    },
+    {
+      "id": "ch10-q07",
+      "question": "The Kargu-2 drone incident in Libya (2020) is referenced in the chapter because:",
+      "options": [
+        "It was the first drone capable of exceeding the speed of sound, illustrating rapid advances in delivery capabilities",
+        "It may represent the first recorded fully autonomous lethal engagement, demonstrating that LAWS challenges are not purely theoretical",
+        "It triggered the first UN Security Council resolution specifically banning autonomous weapons systems",
+        "It was the first documented case of an AI system deliberately overriding its human operator's commands"
+      ],
+      "correct": 1,
+      "explanation": "A UN Panel of Experts report noted that Kargu-2 drones may have autonomously engaged targets during the 2020 Libyan civil war — potentially the first recorded case of a fully autonomous lethal engagement. The chapter cites this incident to illustrate that debates about LAWS are not science fiction: autonomous weapons exist, are being deployed, and have already created precisely the accountability situations Scharre theorizes.",
+      "section": "autonomous-weapons"
+    },
+    {
+      "id": "ch10-q08",
+      "question": "A 2022 experiment in which researchers computationally modeled a VX nerve agent analog was designed to demonstrate:",
+      "options": [
+        "AI's promise for accelerating antidote development for chemical weapons exposure",
+        "The dual-use danger of AI in chemistry — the same tools that accelerate drug discovery can be used to design weapons",
+        "That AI-assisted synthesis was computationally impossible for Schedule 1 chemical weapons",
+        "The feasibility of a classified DARPA program for AI-assisted chemical defense"
+      ],
+      "correct": 1,
+      "explanation": "The researchers — intending to demonstrate the dual-use problem publicly — used a drug-discovery AI to model a VX analog within hours, with no actual synthesis. They published with enough detail to be credible but withheld specific synthesis routes. The experiment was cited in U.S. Congressional testimony, referenced in President Biden's 2023 Executive Order on AI, and contributed to new Nucleic Acid Synthesis Screening guidelines. It remains the sharpest available illustration of AI's bioweapons risk.",
+      "section": "bioweapons"
+    },
+    {
+      "id": "ch10-q09",
+      "question": "William MacAskill's 'What We Owe the Future' (2022) is the most prominent statement of which ethical position?",
+      "options": [
+        "Utilitarian contractarianism — negotiating fair intergenerational rules through hypothetical consent",
+        "Longtermism — the view that positively influencing the long-run future is among the most morally important things we can do",
+        "Effective altruism's focus on immediate poverty alleviation as the highest-impact intervention",
+        "Existential risk precautionism — the case for a global moratorium on all transformative AI research"
+      ],
+      "correct": 1,
+      "explanation": "MacAskill is the leading philosophical voice for longtermism — the view that, because future generations vastly outnumber present ones, their welfare carries enormous moral weight, and preventing existential risks is therefore among the most important moral priorities. Critics like Émile Torres argue this framework can justify neglecting present harms in favor of speculative future benefits, and that its probability estimates are too uncertain to ground binding moral conclusions.",
+      "section": "longtermism"
+    },
+    {
+      "id": "ch10-q10",
+      "question": "The 'Stochastic Parrots' paper (2021), which criticized large language models as systems that generate plausible text without genuine understanding, was co-authored by:",
+      "options": [
+        "Stuart Russell and Nick Bostrom",
+        "Emily Bender and Timnit Gebru",
+        "Shannon Vallor and Ruha Benjamin",
+        "Kate Crawford and Virginia Eubanks"
+      ],
+      "correct": 1,
+      "explanation": "Emily Bender, Timnit Gebru, and co-authors published 'On the Dangers of Stochastic Parrots' in 2021, arguing that LLMs produce statistically plausible text without genuine comprehension, and that treating them as proxies for human intelligence is both scientifically confused and socially harmful. Timnit Gebru was fired by Google after submitting the paper, making the episode itself an illustration of the institutional power dynamics the critics' camp describes.",
+      "section": "critics"
+    },
+    {
+      "id": "ch10-q11",
+      "question": "Shannon Vallor — who advocates a virtue ethics approach to AI and proposes a 'mirror argument' bridging present and long-term AI concerns — holds the Baillie Gifford Chair at:",
+      "options": [
+        "Oxford University",
+        "MIT",
+        "University of Edinburgh",
+        "Stanford University"
+      ],
+      "correct": 2,
+      "explanation": "Vallor is the Baillie Gifford Professor of Ethics of Data and AI at the University of Edinburgh and a Fellow of the Alan Turing Institute. Her virtue ethics approach argues that epistemic humility, moral attention, and institutional accountability can hold both present harms and long-term risks seriously — rather than treating them as competing priorities, as the longtermism debate tends to frame them.",
+      "section": "synthesis"
+    },
+    {
+      "id": "ch10-q12",
+      "question": "Cass Sunstein's critique of the precautionary principle, articulated in 'Laws of Fear' (2005), holds that the principle is:",
+      "options": [
+        "Correct but only applicable when risks exceed a 1% probability threshold",
+        "Self-defeating, because it applies with equal force to the risks of slowing AI (foregone medical and economic benefits) as to the risks of proceeding",
+        "Valid in environmental policy but not in technology regulation",
+        "Philosophically sound but politically impossible to implement in democratic systems"
+      ],
+      "correct": 1,
+      "explanation": "Sunstein argues that the precautionary principle ('when in doubt, don't') cannot adjudicate between competing risks. If we must be precautionary about proceeding with powerful AI, we must equally be precautionary about pausing it — foregone cancer treatments, climate solutions, and economic development are also severe and irreversible harms. The asymmetry argument replies that downside AI scenarios are qualitatively different in kind (extinction, permanent loss of human potential) from forgone benefits.",
+      "section": "longtermism"
+    },
+    {
+      "id": "ch10-q13",
+      "question": "A 'Lethal Autonomous Weapons System' (LAWS) is defined as:",
+      "options": [
+        "Any military system guided by algorithms, including GPS-guided munitions and smart bombs",
+        "A weapons system that uses sensors and AI to identify, select, and engage targets without meaningful human control over the lethal force decision",
+        "Fully automated military logistics and supply chains controlled by artificial intelligence",
+        "Any weapon system capable of operating without a human crew physically present on the battlefield"
+      ],
+      "correct": 1,
+      "explanation": "The key phrase is 'without meaningful human control over the lethal force decision' — the decision to kill a specific person in a specific context. GPS-guided munitions are guided autonomously but a human decides to fire them; a LAWS selects and engages without that human decision point. The UN has debated LAWS regulation since 2014 without reaching a binding agreement, largely because major military powers (U.S., Russia, China, Israel) resist restrictions.",
+      "section": "autonomous-weapons"
+    },
+    {
+      "id": "ch10-q14",
+      "question": "In the 2023 statement on AI extinction risk — signed by hundreds of researchers including CEOs of OpenAI, Anthropic, and Google DeepMind — signatories declared that:",
+      "options": [
+        "All AI development above GPT-3 scale should be immediately paused for six months",
+        "Mitigating the risk of extinction from AI should be a global priority alongside pandemics and nuclear war",
+        "AI companies should be required to publish all model weights and training details publicly",
+        "Governments should establish a UN agency with binding authority over AI development worldwide"
+      ],
+      "correct": 1,
+      "explanation": "The brief statement read: 'Mitigating the risk of extinction from AI should be a global priority alongside other societal-scale risks such as pandemics and nuclear war.' Its significance lay less in its policy content (it contained no specific proposals) than in who signed it: leading AI researchers and the heads of the organizations building the most powerful AI systems in the world were publicly acknowledging the risk of extinction from their own products.",
+      "section": "existential-risk"
+    },
+    {
+      "id": "ch10-q15",
+      "question": "The Future of Humanity Institute at Oxford, founded by Nick Bostrom in 2005, closed in which year?",
+      "options": [
+        "2015",
+        "2019",
+        "2022",
+        "2024"
+      ],
+      "correct": 3,
+      "explanation": "FHI closed in 2024. Its closure was attributed to a combination of institutional tensions with Oxford's administrative structures, funding difficulties, and internal leadership challenges. The closure was widely discussed in the existential risk community as a significant loss of institutional capacity for long-term AI safety research.",
+      "section": "existential-risk"
+    },
+    {
+      "id": "ch10-q16",
+      "type": "multiple",
+      "question": "Which of the following were cited as reasons the Doomsday Clock moved to 90 seconds to midnight in January 2023? Select all that apply.",
+      "options": [
+        "Russia's nuclear posturing and its ongoing invasion of Ukraine",
+        "Climate inaction by major greenhouse-gas emitting nations",
+        "AI-enabled information warfare and disinformation campaigns",
+        "A successful cyberattack on a NATO nuclear weapons system",
+        "Collapse of the Nuclear Non-Proliferation Treaty review conference"
+      ],
+      "correct": [0, 1, 2],
+      "explanation": "The Bulletin of the Atomic Scientists cited Russia's nuclear threats in the context of the Ukraine war, ongoing failures to address climate change, and the disruptive role of AI in information warfare and disinformation as the three compounding factors driving the 2023 setting. A successful cyberattack on NATO nuclear infrastructure and NPT collapse were not cited as reasons for the 2023 adjustment.",
+      "section": "existential-risk"
+    },
+    {
+      "id": "ch10-q17",
+      "type": "multiple",
+      "question": "Which of the following are key tenets of longtermism as described in the chapter? Select all that apply.",
+      "options": [
+        "Future generations vastly outnumber present people, so their welfare carries enormous cumulative moral weight",
+        "Preventing existential risks is among the most morally important priorities given the astronomical number of lives at stake",
+        "Longtermism implies present harms to living people should always be deprioritized in favor of future-oriented policies",
+        "Positively influencing the long-run trajectory of civilization is among the most important things we can do morally",
+        "Toby Ord identifies unaligned AI as the single largest contributor to existential risk this century"
+      ],
+      "correct": [0, 1, 3, 4],
+      "explanation": "Options 1, 2, 4, and 5 are central to longtermism as described. Option 3 is a mischaracterization — while critics worry that longtermism can justify neglecting present harms, longtermism itself does not claim present people should always be deprioritized. The movement's advocates, including MacAskill, argue longtermism complements rather than replaces concern for the present.",
+      "section": "longtermism"
+    },
+    {
+      "id": "ch10-q18",
+      "type": "multiple",
+      "question": "Which of the following are accurate about the 2022 VX analog experiment as described in the chapter? Select all that apply.",
+      "options": [
+        "Researchers used an AI drug-discovery tool to computationally model a VX nerve agent analog — no actual synthesis occurred",
+        "The experiment was designed to demonstrate AI's dual-use danger in chemistry and the life sciences",
+        "The results were cited in U.S. Congressional testimony and referenced in Biden's 2023 Executive Order on AI",
+        "The researchers were prosecuted for violating the Chemical Weapons Convention",
+        "The experiment contributed to new Nucleic Acid Synthesis Screening guidelines"
+      ],
+      "correct": [0, 1, 2, 4],
+      "explanation": "The first three and last statements are accurate. The experiment was computational (no chemical was made), intentionally designed to demonstrate risk, and had real policy consequences. The researchers were not prosecuted — they published with the explicit goal of informing policy, and their credibility-establishing disclosure was itself a form of responsible dual-use communication.",
+      "section": "bioweapons"
+    },
+    {
+      "id": "ch10-q19",
+      "type": "matching",
+      "question": "Match each thinker to the work or concept most closely associated with them in the chapter.",
+      "pairs": [
+        { "left": "Nick Bostrom",      "right": "'Superintelligence' (2014) — intelligence explosion and the risk of misaligned superhuman AI" },
+        { "left": "Toby Ord",          "right": "'The Precipice' (2020) — 1-in-6 chance of existential catastrophe; AI as single largest risk" },
+        { "left": "William MacAskill", "right": "'What We Owe the Future' (2022) — longtermism as the dominant moral framework" },
+        { "left": "Shannon Vallor",    "right": "Virtue ethics synthesis — epistemic humility bridging present harms and long-term risk" }
+      ],
+      "explanation": "These four thinkers represent the chapter's two main camps and a synthesis. Bostrom and Ord are the foundational figures of the existential risk and longtermist movements. MacAskill is longtermism's most visible public philosopher. Vallor represents the virtue ethics tradition that seeks to hold both long-term concern and present accountability without sacrificing either.",
+      "section": "existential-risk"
+    },
+    {
+      "id": "ch10-q20",
+      "type": "matching",
+      "question": "Match each AI safety concept to the specific case or formulation the chapter uses to illustrate it.",
+      "pairs": [
+        { "left": "Responsibility vacuum",  "right": "Autonomous weapons: when machines make lethal decisions without human control, no one can be held morally accountable" },
+        { "left": "Intelligence explosion", "right": "Recursive self-improvement: an AI improving its own design could rapidly produce capabilities humans cannot control" },
+        { "left": "Dual-use biology",       "right": "VX analog experiment (2022): the same AI tools accelerating drug discovery can model chemical weapons" },
+        { "left": "Alignment problem",      "right": "Stuart Russell: powerful AI systems optimizing imperfectly specified objectives will pursue them in harmful ways" }
+      ],
+      "explanation": "These four concepts map the chapter's core technical and ethical concerns. The responsibility vacuum is a legal and moral problem created by autonomous weapons. The intelligence explosion is a speculative but structurally serious risk scenario. Dual-use biology illustrates that existential risk is not merely hypothetical. The alignment problem is the foundational technical challenge underlying all of Bostrom's and Russell's concerns.",
+      "section": "autonomous-weapons"
+    }
+  ]
+}
