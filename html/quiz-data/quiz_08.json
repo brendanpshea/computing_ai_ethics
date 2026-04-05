@@ -1,0 +1,275 @@
+{
+  "id": "ch08",
+  "chapter": 8,
+  "title": "Chapter 8 Quiz: AI and the Future of Human Labor",
+  "description": "Twenty questions on Hannah Arendt, Marx, the Luddites, Self-Determination Theory, and AI's impact on work.",
+  "chapter_url": "ch08_work_automation.html",
+  "questions": [
+    {
+      "id": "ch08-q01",
+      "question": "Hannah Arendt's 'The Human Condition' (1958) distinguishes three fundamental human activities. Which of the following correctly describes 'labor' (animal laborans) in her framework?",
+      "options": [
+        "The fabrication of durable objects — tools, buildings, artworks — that enter the world and persist beyond their maker",
+        "Cyclical, biological maintenance activity (eating, cleaning, cooking) that consumes its products as fast as they are made and leaves nothing permanent behind",
+        "Self-disclosure through speech and public participation — the realm of politics and human relationships",
+        "Strategic planning and management of large-scale productive enterprises within market economies"
+      ],
+      "correct": 1,
+      "explanation": "In Arendt's framework, labor (animal laborans) is the activity that sustains biological life — it is cyclical and repetitive, its products consumed as fast as they are made, leaving no trace in the world. By contrast, work (homo faber) fabricates durable objects, and action (bios politikos) is public life. The concern about AI is that it could reduce what is now work or action down to the level of labor — or eliminate even that.",
+      "section": "what-is-work"
+    },
+    {
+      "id": "ch08-q02",
+      "question": "In Arendt's framework from 'The Human Condition,' 'action' (bios politikos) refers to:",
+      "options": [
+        "Using tools to fabricate lasting objects and institutions",
+        "Cyclical maintenance of biological life through bodily activity",
+        "Self-disclosure through speech and public participation — the realm of politics and human relationships",
+        "Strategic planning and entrepreneurship within competitive market economies"
+      ],
+      "correct": 2,
+      "explanation": "Action (bios politikos) is Arendt's most distinctively human category: it is through speech and public action that we reveal who we are, not merely what we can do. The ancient Greek polis was built around this kind of life. Arendt feared that modern society — and potentially AI — could colonize the space of action, reducing humans to mere biological reproducers (labor) or tool-users (work) rather than agents in a shared political world.",
+      "section": "what-is-work"
+    },
+    {
+      "id": "ch08-q03",
+      "question": "Karl Marx identified four forms of alienation in capitalist labor. Which of the following is NOT one of them?",
+      "options": [
+        "Alienation from the product of labor (the object belongs to the capitalist, not the maker)",
+        "Alienation from one's body (forced sedentary or physically unnatural work conditions)",
+        "Alienation from the activity of labor itself (work is compelled, not freely chosen)",
+        "Alienation from one's species-being (distinctively human capacities reduced to mere survival)"
+      ],
+      "correct": 1,
+      "explanation": "Marx's four forms of alienation are: alienation from the product of labor, from the activity of labor, from one's species-being (Gattungswesen — the distinctively human capacity for free, conscious activity), and from other workers (competition replacing solidarity). Alienation from the body is not one of his four categories, though his analysis does connect to bodily degradation under industrial conditions.",
+      "section": "meaningful-work-ethics"
+    },
+    {
+      "id": "ch08-q04",
+      "question": "Self-Determination Theory (SDT), developed by Edward Deci and Richard Ryan, identifies three core psychological needs that work can fulfill or frustrate. Which of the following is NOT one of the three?",
+      "options": [
+        "Autonomy — acting from one's own values rather than external compulsion",
+        "Competence — developing genuine skills through meaningful challenges",
+        "Security — stable employment and protection from financial risk",
+        "Relatedness — meaningful connection to others through shared purpose"
+      ],
+      "correct": 2,
+      "explanation": "SDT's three core needs are autonomy, competence, and relatedness. Financial security is important but is not one of SDT's three intrinsic needs — it is an external good, in MacIntyre's terms. SDT research shows that even well-paid work can be deeply unsatisfying when it frustrates autonomy (micromanagement), competence (deskilling), or relatedness (isolation). Amazon's fulfillment centers illustrate this: workers are paid above minimum wage but their autonomy, competence, and relatedness are all systematically frustrated.",
+      "section": "meaningful-work-ethics"
+    },
+    {
+      "id": "ch08-q05",
+      "question": "The Luddites — English textile workers who destroyed mechanical looms in 1811–1812 — are often mischaracterized. What was their actual grievance?",
+      "options": [
+        "They opposed all technology on religious grounds and sought a return to subsistence farming",
+        "They were skilled craftsmen whose accumulated craft knowledge was being made worthless — they protested deskilling and economic displacement, not technology in principle",
+        "They were factory owners who feared mechanized competition from abroad",
+        "They were labor organizers who used machine-breaking as a bargaining tactic for higher wages"
+      ],
+      "correct": 1,
+      "explanation": "The Luddites were skilled framework knitters and weavers whose life's knowledge — technique, judgment, material feel — was made worthless by mechanical looms. They were not anti-technology in principle; they were protesting the specific way technology was being deployed to de-skill and dispossess them. The chapter uses them as a historical mirror: today's knowledge workers face an analogous threat from AI that can replicate cognitive skills rather than physical ones.",
+      "section": "what-is-work"
+    },
+    {
+      "id": "ch08-q06",
+      "question": "Alasdair MacIntyre's distinction between 'internal goods' and 'external goods' holds that:",
+      "options": [
+        "Intrinsic motivators are more powerful than social rewards like recognition or prestige",
+        "Internal goods — like the surgeon's satisfaction in performing a perfect procedure — can only be obtained by genuinely practicing the craft; money cannot buy them",
+        "External goods are more valuable because they can be accumulated and exchanged",
+        "Internal goods are private psychological states; external goods are objective measures of performance"
+      ],
+      "correct": 1,
+      "explanation": "For MacIntyre, a practice has internal goods that are only accessible from inside the practice itself: the chess player's appreciation of an elegant move, the craftsman's pride in work well done, the clinician's judgment developed over years of cases. These cannot be obtained by any other route. External goods — money, status, fame — can be obtained without engaging in the practice at all. The worry about AI-enabled deskilling is that workers may retain access to external goods (wages) while losing access to internal ones.",
+      "section": "meaningful-work-ethics"
+    },
+    {
+      "id": "ch08-q07",
+      "question": "A 2017 McKinsey Global Institute report estimated that automation could globally displace how many jobs by 2030?",
+      "options": [
+        "50–100 million",
+        "200–300 million",
+        "400–800 million",
+        "1.5–2 billion"
+      ],
+      "correct": 2,
+      "explanation": "The 2017 McKinsey report estimated that 400–800 million jobs globally could be displaced by automation by 2030, with the most affected categories being predictable physical work (warehouse picking, truck driving) and routine data processing. However, the report also noted that new jobs would be created — the harder question is whether displaced workers can transition to them, and whether the new jobs will be as meaningful as the old ones.",
+      "section": "ai-transform-work"
+    },
+    {
+      "id": "ch08-q08",
+      "question": "Amazon's résumé-screening AI, shut down in 2018, learned to penalize female applicants because:",
+      "options": [
+        "Female applicants were statistically less likely to have required certifications in Amazon's data",
+        "It was trained on a decade of male-dominated engineering hiring data and learned to replicate those patterns, penalizing résumés mentioning 'women's' and downgrading all-women's college graduates",
+        "It misclassified résumé formatting common among recent graduates",
+        "Amazon engineers deliberately programmed it to favor certain demographic profiles"
+      ],
+      "correct": 1,
+      "explanation": "Amazon's system was trained on a decade of the company's own hiring decisions — which reflected a male-dominated industry. It learned that men were hired more often and reverse-engineered that pattern: it penalized résumés containing the word 'women's' (as in 'women's chess club') and downgraded graduates of all-women's colleges. This is a textbook example of how historical bias in training data becomes algorithmic discrimination.",
+      "section": "ai-transform-work"
+    },
+    {
+      "id": "ch08-q09",
+      "question": "In Amazon fulfillment centers, according to the chapter, the algorithmic management system can do what without any human review?",
+      "options": [
+        "Promote workers to supervisory roles based on sustained performance",
+        "Generate automatic termination notices for workers who deviate from expected package-scan rates",
+        "Set workers' hourly wages dynamically based on daily output metrics",
+        "Reassign workers to different warehouse zones to optimize overall throughput"
+      ],
+      "correct": 1,
+      "explanation": "Amazon's fulfillment center systems track workers' every move via wristbands, monitor packages scanned per hour, and — critically — can generate automatic termination notices when workers fall below expected rates, without any human supervisor reviewing the decision. The chapter uses this as an example of work stripped of all three SDT needs: minimal autonomy (algorithm sets the pace), minimal competence development (repetitive tasks), and minimal relatedness (interchangeable roles).",
+      "section": "ai-transform-work"
+    },
+    {
+      "id": "ch08-q10",
+      "question": "The Jacquard loom — a 19th-century mechanized loom controlled by punched cards — is historically significant in this chapter because:",
+      "options": [
+        "It was the first machine to use electricity in industrial production",
+        "It directly inspired Charles Babbage's Analytical Engine, making the technology that displaced skilled weavers the ancestor of the computers now threatening knowledge workers",
+        "It was invented by the Luddites as a compromise technology preserving some artisanal skill",
+        "It demonstrated that automation was harmless because displaced weavers quickly found equivalent new employment"
+      ],
+      "correct": 1,
+      "explanation": "The Jacquard loom's punched-card control mechanism inspired Babbage's Analytical Engine, which in turn inspired Ada Lovelace's notes on computation. The chapter notes the irony: the technology that destroyed skilled weaving became the conceptual ancestor of the computers now threatening knowledge work. The Luddites who smashed Jacquard looms could not have imagined their grandchildren's descendants would face the same displacement from the cognitive descendants of those same machines.",
+      "section": "what-is-work"
+    },
+    {
+      "id": "ch08-q11",
+      "question": "When AI handles routine diagnostic tasks and a radiologist's new role is primarily to 'confirm or override AI recommendations,' the chapter frames this as an example of:",
+      "options": [
+        "Replacement — AI eliminating a profession entirely",
+        "Augmentation — AI enhancing the radiologist's capabilities beyond what either could achieve alone",
+        "Deskilling — transforming skilled, judgment-intensive work into lower-skill monitoring of automated systems",
+        "The Luddite fallacy — an unfounded fear that technology reduces meaningful employment"
+      ],
+      "correct": 2,
+      "explanation": "Deskilling is the chapter's second scenario, between outright replacement and genuine augmentation. The radiologist remains employed but has lost the core of what made the work meaningful: the development of diagnostic perceptual skill, clinical autonomy, and the internal goods of expert practice. By MacIntyre's framework, the external goods (wages) remain, but the internal goods (craft) are gone. The same pattern appears across writing, graphic design, and software development.",
+      "section": "ai-transform-work"
+    },
+    {
+      "id": "ch08-q12",
+      "question": "Hannah Arendt (1906–1975) was stateless for 18 years before receiving U.S. citizenship in 1951 — a consequence of fleeing which regime?",
+      "options": [
+        "Stalinist Soviet Union",
+        "Nazi Germany",
+        "Fascist Italy",
+        "Maoist China"
+      ],
+      "correct": 1,
+      "explanation": "Arendt fled Nazi Germany in 1933, was briefly interned in France, and spent years as a stateless person — an experience that shaped her later theoretical work on totalitarianism, the public realm, and the 'right to have rights.' Her condition as a stateless person put her in the same category as millions of Jewish refugees, giving her concrete experience of what it means to be excluded from the political community that defines human dignity.",
+      "section": "meaningful-work-ethics"
+    },
+    {
+      "id": "ch08-q13",
+      "question": "Approximately how many truck drivers are there in the United States — a workforce whose livelihoods could be threatened by autonomous vehicle technology?",
+      "options": [
+        "500,000",
+        "1.5 million",
+        "3.5 million",
+        "8 million"
+      ],
+      "correct": 2,
+      "explanation": "The U.S. has approximately 3.5 million truck drivers, with median wages around $48,000/year. The chapter emphasizes that trucking is not just a job: it offers autonomy (being alone on the road), competence development (navigation, logistics, vehicle management), and a path to middle-class income without a four-year degree. Autonomous vehicles could eliminate most of these positions within a decade or two, representing a large-scale deskilling and displacement scenario.",
+      "section": "ai-transform-work"
+    },
+    {
+      "id": "ch08-q14",
+      "question": "The concept of 'enveloping,' associated with Luciano Floridi, describes what phenomenon in human-AI interaction?",
+      "options": [
+        "AI systems gradually enclosing humans within machine-mediated social environments",
+        "Humans adapting their own behavior, expectations, and cognitive habits to suit the limitations of AI systems",
+        "The process by which AI training data absorbs and reproduces the characteristics of human examples",
+        "AI systems that surround human decision-making with algorithmic recommendations and prompts"
+      ],
+      "correct": 1,
+      "explanation": "Floridi's concept of 'enveloping' describes how humans reshape themselves to fit AI systems rather than the other way around. A customer service worker adopts the scripted responses the AI system expects; a doctor adjusts her diagnostic language to match what the clinical AI can process; a writer structures her prose for AI readability. The concern is that this adaptation erodes the very human judgment and creativity that were supposed to be complemented by AI.",
+      "section": "can-ai-work"
+    },
+    {
+      "id": "ch08-q15",
+      "question": "According to Self-Determination Theory, which of the three core needs is most directly frustrated by algorithmic workplace management systems that micromanage workers through wristband tracking and automatic termination notices?",
+      "options": [
+        "Competence — because constant monitoring prevents skill development",
+        "Autonomy — because micromanagement and algorithmic surveillance remove the worker's genuine agency and self-direction",
+        "Relatedness — because monitoring creates distrust between workers and managers",
+        "Security — because workers fear being flagged and terminated by automated systems"
+      ],
+      "correct": 1,
+      "explanation": "Autonomy — the need to act from one's own values rather than external compulsion — is most directly frustrated by algorithmic micromanagement. When an algorithm sets the pace, monitors every movement, and can terminate without human review, the worker has essentially no agency. Competence and relatedness are also frustrated in Amazon-style environments, but the defining violation is the complete removal of self-direction.",
+      "section": "meaningful-work-ethics"
+    },
+    {
+      "id": "ch08-q16",
+      "type": "multiple",
+      "question": "Which of the following are Hannah Arendt's three fundamental human activities from 'The Human Condition' (1958)? Select all that apply.",
+      "options": [
+        "Labor (animal laborans) — cyclical biological maintenance that leaves nothing permanent",
+        "Work (homo faber) — fabrication of durable objects and institutions that persist in the world",
+        "Craft (techne) — the development of skill and excellence through sustained practice",
+        "Action (bios politikos) — political life, speech, and self-disclosure in the public realm",
+        "Production — the transformation of raw materials into commodities for economic exchange"
+      ],
+      "correct": [0, 1, 3],
+      "explanation": "Arendt's three activities are labor, work, and action. 'Craft' and 'production' are not her categories. Craft is related to what Arendt calls work (homo faber makes durable things), but the three-part distinction is philosophically precise: labor (biological cycles), work (durable fabrication), action (public/political life). Collapsing work and craft misses Arendt's point about the political realm as irreducibly distinct from making things.",
+      "section": "what-is-work"
+    },
+    {
+      "id": "ch08-q17",
+      "type": "multiple",
+      "question": "Which of the following are among the three core psychological needs identified by Self-Determination Theory (SDT)? Select all that apply.",
+      "options": [
+        "Autonomy — acting from one's own values, not external compulsion or algorithmic surveillance",
+        "Financial security — earning enough to meet basic needs and plan for the future",
+        "Competence — developing genuine skills through mastery experiences and real challenges",
+        "Relatedness — meaningful connection to others through shared purpose and collaboration",
+        "Status — recognition and social prestige derived from one's professional role"
+      ],
+      "correct": [0, 2, 3],
+      "explanation": "SDT's three core needs are autonomy, competence, and relatedness. Financial security and status are important human concerns but are not part of SDT's framework — they correspond to what MacIntyre calls 'external goods.' SDT research consistently shows that intrinsic need satisfaction (autonomy, competence, relatedness) predicts well-being and engagement more reliably than salary alone.",
+      "section": "meaningful-work-ethics"
+    },
+    {
+      "id": "ch08-q18",
+      "type": "multiple",
+      "question": "The chapter describes three broad scenarios for how AI might transform work. Which of the following accurately describe those three scenarios? Select all that apply.",
+      "options": [
+        "Replacement — AI eliminates jobs entirely, displacing workers into unemployment or retraining",
+        "Deskilling — AI reduces skilled, judgment-intensive work to lower-skill monitoring and override of automated outputs",
+        "Augmentation — AI handles the routine labor so humans can focus on higher-level judgment, creativity, and relationships",
+        "Compensation — AI displaces some jobs but automatically creates enough new jobs to maintain overall employment levels",
+        "Automation — AI processes work so efficiently that paid employment becomes optional for most people"
+      ],
+      "correct": [0, 1, 2],
+      "explanation": "The chapter's three scenarios are replacement (job elimination), deskilling (skilled work → labor), and augmentation (humans + AI flourishing together). 'Compensation' refers to the economic debate about whether automation creates as many jobs as it destroys — a real debate, but not one of the chapter's three named scenarios. 'Automation making work optional' is speculative and not one of the three.",
+      "section": "ai-transform-work"
+    },
+    {
+      "id": "ch08-q19",
+      "type": "matching",
+      "question": "Match each thinker to the concept or work most closely associated with them in the chapter.",
+      "pairs": [
+        { "left": "Hannah Arendt",         "right": "The Human Condition (1958) — labor, work, and action as three distinct human activities" },
+        { "left": "Karl Marx",              "right": "Alienation — four ways capitalist production separates workers from their humanity" },
+        { "left": "Alasdair MacIntyre",     "right": "Internal goods vs. external goods — only genuine practice can yield the goods internal to a craft" },
+        { "left": "Edward Deci & Richard Ryan", "right": "Self-Determination Theory — autonomy, competence, and relatedness as core human needs in work" }
+      ],
+      "explanation": "These four thinkers provide the chapter's ethical frameworks for evaluating work and its transformation by AI. Arendt gives a phenomenology of what work is. Marx gives an analysis of how capitalism distorts work. MacIntyre gives a virtue-ethics account of what makes craft valuable. Deci and Ryan give empirical psychological grounding for why the internal goods of work matter for human flourishing.",
+      "section": "meaningful-work-ethics"
+    },
+    {
+      "id": "ch08-q20",
+      "type": "matching",
+      "question": "Match each worker category or workplace to the AI-related scenario the chapter associates with it.",
+      "pairs": [
+        { "left": "U.S. truck drivers (3.5 million)",     "right": "Replacement — autonomous vehicles could eliminate most trucking jobs within a decade or two" },
+        { "left": "Radiologists",                         "right": "Deskilling — diagnostic craft reduced to confirming or overriding AI recommendations" },
+        { "left": "Amazon fulfillment center workers",    "right": "Algorithmic labor management — every movement monitored; automatic termination possible without human review" },
+        { "left": "Writers and journalists",              "right": "Deskilling — creative authority potentially replaced by prompting, editing, and fact-checking AI content" }
+      ],
+      "explanation": "The chapter uses these four examples to illustrate different facets of AI's impact on work. Trucking illustrates outright replacement. Radiology illustrates high-skill deskilling. Amazon warehouses illustrate the human cost of algorithmic management even without full automation. Writing and journalism illustrate how knowledge work — not just physical labor — can be deskilled by generative AI.",
+      "section": "ai-transform-work"
+    }
+  ]
+}
