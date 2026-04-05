@@ -1,0 +1,275 @@
+{
+  "id": "ch09",
+  "chapter": 9,
+  "title": "Chapter 9 Quiz: AI and Its Environmental and Social Impact",
+  "description": "Twenty questions on AI's material costs, environmental impact, medical applications, governance failures, and global inequality.",
+  "chapter_url": "ch09_social_impact.html",
+  "questions": [
+    {
+      "id": "ch09-q01",
+      "question": "Kate Crawford's 'The Atlas of AI' (2021) argues that AI should be understood as:",
+      "options": [
+        "A neutral tool whose ethical implications depend entirely on how humans choose to deploy it",
+        "A planetary-scale system of extraction, classification, and control — not weightless software but physical infrastructure with real environmental and social costs",
+        "A fundamentally transformative force that will ultimately reduce global inequality through democratized access to knowledge",
+        "A set of mathematical techniques that can be evaluated independently of the economic systems that produce them"
+      ],
+      "correct": 1,
+      "explanation": "Crawford physically visited lithium mines in Nevada, data centers, Amazon warehouses, and computer recycling facilities to document AI's material reality. Her core argument is that AI is not virtual or weightless — it is a planetary system of extraction (mining), processing (data centers), classification (labor), and disposal (e-waste), with costs externalized onto communities that receive few of the benefits.",
+      "section": "material-system"
+    },
+    {
+      "id": "ch09-q02",
+      "question": "Training GPT-3 consumed approximately 1,287 megawatt-hours of electricity, which is roughly equivalent to:",
+      "options": [
+        "One day's electricity use for a large city like New York",
+        "The annual electricity consumption of approximately 120 American households, emitting around 550 tonnes of CO₂",
+        "The total energy consumed by all of Google's data centers in one week",
+        "The electricity used by a single mid-sized hospital for one year"
+      ],
+      "correct": 1,
+      "explanation": "GPT-3's training consumed ~1,287 MWh and emitted ~550 tonnes of CO₂. That is roughly the annual electricity use of 120 American households. The chapter emphasizes that this is a one-time training cost — inference (running the model) adds further ongoing energy, and larger models like GPT-4 are estimated to be far more energy-intensive. Individual queries feel trivial; multiplied across billions of uses, the aggregate is substantial.",
+      "section": "environment"
+    },
+    {
+      "id": "ch09-q03",
+      "question": "The Democratic Republic of Congo supplies approximately what percentage of the world's cobalt — a material essential for the batteries and circuit boards powering AI hardware?",
+      "options": [
+        "20%",
+        "40%",
+        "70%",
+        "90%"
+      ],
+      "correct": 2,
+      "explanation": "The DRC supplies roughly 70% of global cobalt, making it indispensable to AI hardware supply chains. The DRC is simultaneously one of the world's poorest countries, with severe safety and environmental problems in cobalt mining — including child labor and toxic runoff. This geographic and economic concentration exemplifies what Crawford calls the extractive logic of AI: essential materials drawn from impoverished communities to power technology whose benefits accrue elsewhere.",
+      "section": "material-system"
+    },
+    {
+      "id": "ch09-q04",
+      "question": "The 'Jevons Paradox' (or 'rebound effect'), applied to AI, predicts that:",
+      "options": [
+        "More efficient AI models will gradually replace less efficient ones, reducing total energy consumption over time",
+        "Efficiency improvements in AI computing will lead to higher total energy use, because cheaper processing enables more widespread deployment",
+        "The Jevons effect applies to 19th-century coal economies but not to digital industries",
+        "AI will eventually reach an efficiency plateau beyond which further optimization yields no additional energy savings"
+      ],
+      "correct": 1,
+      "explanation": "Jevons observed in 1865 that more efficient steam engines led to more coal use, not less, because efficiency made steam power economically viable in more applications. Applied to AI: cheaper inference leads to more queries, more applications, and more total energy consumption. The chapter's examples include LED lighting (efficiency gain → more lights installed for longer), fuel-efficient cars (1970s oil crisis → more total miles driven), and jet engines (efficiency gain → dramatic increase in flights).",
+      "section": "environment"
+    },
+    {
+      "id": "ch09-q05",
+      "question": "DeepMind's AlphaFold system achieved a major scientific breakthrough in 2020 by:",
+      "options": [
+        "Defeating human physicians at diagnosing rare cancers from MRI scans with 98% accuracy",
+        "Solving the protein folding problem — accurately predicting three-dimensional protein structures for hundreds of millions of proteins — and making results freely available",
+        "Developing a novel antibiotic effective against antibiotic-resistant bacteria",
+        "Becoming the first AI system granted autonomous medical decision-making authority by the FDA"
+      ],
+      "correct": 1,
+      "explanation": "The protein folding problem — predicting a protein's three-dimensional structure from its amino acid sequence — had been one of the most difficult unsolved problems in structural biology for 50 years. AlphaFold solved it with dramatic accuracy in 2020, then made predictions for hundreds of millions of proteins freely available. This accelerates drug discovery, vaccine development, and basic biology research — the chapter uses it as a proof of concept for AI delivering broad social value.",
+      "section": "medicine"
+    },
+    {
+      "id": "ch09-q06",
+      "question": "By early 2026, the FDA's public list contained how many approved AI-enabled medical devices?",
+      "options": [
+        "223",
+        "650",
+        "1,451",
+        "4,200"
+      ],
+      "correct": 2,
+      "explanation": "The FDA approved 6 AI-enabled medical devices in 2015; by 2023 that number reached 223 in a single year; and the cumulative total reached 1,451 by early 2026. Radiology dominates, with over 1,100 approved imaging applications. The rapid growth reflects genuine advances in pattern recognition, but also raises concerns about validation standards: are these devices being tested rigorously enough across diverse patient populations before deployment?",
+      "section": "medicine"
+    },
+    {
+      "id": "ch09-q07",
+      "question": "Virginia Eubanks' 'Automating Inequality' (2018) documented a recurring pattern in digital public-sector systems. What was that pattern?",
+      "options": [
+        "Government AI systems were consistently more accurate and fairer than human bureaucrats at allocating scarce resources",
+        "Digital tools managing scarce public resources reproduced and intensified existing inequalities — creating what she called a 'digital poorhouse'",
+        "Automation of welfare systems reduced administrative costs by 60% while improving benefit delivery accuracy",
+        "Public AI systems were more transparent than private-sector AI because they were subject to FOIA requests"
+      ],
+      "correct": 1,
+      "explanation": "Eubanks documented systems in Indiana (welfare), Los Angeles (homeless housing), and Allegheny County (child welfare) and found the same pattern in each: digital tools designed to manage scarce resources reproduced and intensified existing inequalities. Poor families generate more data simply by being poor (interactions with social services, healthcare, housing assistance), making them more visible to algorithmic surveillance and more vulnerable to algorithmic error.",
+      "section": "governance"
+    },
+    {
+      "id": "ch09-q08",
+      "question": "In 2021, a government scandal in the Netherlands brought down the Dutch cabinet after a fraud-detection algorithm:",
+      "options": [
+        "Was found to have been secretly designed to favor politically connected applicants for childcare benefits",
+        "Incorrectly flagged thousands of families for childcare benefit fraud — disproportionately those with non-Dutch surnames — pushing many into bankruptcy",
+        "Calculated benefit amounts incorrectly due to a programming error, overpaying roughly 40,000 recipients",
+        "Exposed a corruption scheme in which civil servants had accepted bribes to exempt certain families from review"
+      ],
+      "correct": 1,
+      "explanation": "The Dutch childcare benefits scandal ('toeslagenaffaire') began when an automated fraud-detection system falsely flagged tens of thousands of families. The algorithm disproportionately targeted families with dual nationality or non-Dutch surnames. Many were required to repay years of benefits they had legitimately received, pushing them into bankruptcy. The Prime Minister and full cabinet resigned in January 2021. The case is now a canonical example of algorithmic governance failure.",
+      "section": "governance"
+    },
+    {
+      "id": "ch09-q09",
+      "question": "Ruha Benjamin's concept of the 'New Jim Code' — from 'Race After Technology' (2019) — refers to:",
+      "options": [
+        "A set of proposed regulations updating civil rights law for the algorithmic era",
+        "Ostensibly neutral technical systems that encode racial hierarchy, making discrimination harder to see and challenge because it presents itself as objective computation",
+        "A grassroots movement of Black software engineers reforming hiring practices in the technology industry",
+        "The pattern of facial recognition systems producing higher false-positive rates for Black faces"
+      ],
+      "correct": 1,
+      "explanation": "Benjamin's 'New Jim Code' (a play on 'Jim Crow') argues that the problem is not simply biased people building biased systems. Systems trained on data generated by unjust social arrangements will reproduce those arrangements — and the technical framing ('objective algorithm') makes the injustice harder to see and challenge than overt discrimination. The 'code' has a double meaning: computer code and the social codes that structure racial hierarchy.",
+      "section": "inequality"
+    },
+    {
+      "id": "ch09-q10",
+      "question": "Amartya Sen's capabilities framework, articulated in 'Development as Freedom' (1999), holds that genuine development means:",
+      "options": [
+        "Ensuring that all countries eventually achieve the same per-capita income as the wealthiest nations",
+        "Expanding people's real freedoms and capabilities to live lives they have reason to value — not merely increasing GDP",
+        "Maximizing global economic growth so that its benefits eventually trickle down to the world's poorest people",
+        "Providing universal access to digital technology as the precondition for all other development goals"
+      ],
+      "correct": 1,
+      "explanation": "Sen's capabilities approach was developed partly in response to purely income-based measures of development. He argued that GDP growth can coexist with malnutrition, illiteracy, disease, and political oppression — and that real development requires expanding substantive freedoms: the ability to be healthy, educated, politically engaged, and to exercise genuine choice. The chapter uses this framework to ask whether AI deployments expand or contract the real capabilities of the communities they affect.",
+      "section": "inequality"
+    },
+    {
+      "id": "ch09-q11",
+      "question": "In 2022, Microsoft's data centers consumed approximately 6 million cubic meters of water. This is particularly concerning because:",
+      "options": [
+        "Water cooling is far less efficient than air cooling, representing a preventable design choice",
+        "Much of this consumption occurs in drought-prone areas of the American West, where water is a scarce shared resource",
+        "The water is chemically contaminated after use and cannot be returned to local water systems",
+        "Microsoft agreed to disclose this figure only after a major environmental regulatory investigation"
+      ],
+      "correct": 1,
+      "explanation": "Water is used in data centers to cool servers, and many large facilities are sited in the American West — where prolonged droughts have made water an intensely contested public resource. When a tech company consumes millions of cubic meters of water, it is drawing down the same aquifer that local communities, farms, and ecosystems depend on. The chapter frames this as a case where individual transactions (server cooling) impose collective costs (water scarcity) on communities with little voice in the decision.",
+      "section": "environment"
+    },
+    {
+      "id": "ch09-q12",
+      "question": "The OECD AI Principles, adopted by more than 50 countries, identify which of the following as a core requirement for responsible AI governance?",
+      "options": [
+        "AI systems should be developed exclusively by democratically elected public bodies",
+        "Transparency — AI systems should be explainable and understandable to those they affect",
+        "All AI training data should be open-source and freely accessible to the public",
+        "Nations should restrict AI development to a small number of government-certified firms"
+      ],
+      "correct": 1,
+      "explanation": "The OECD AI Principles (2019) include: inclusive growth and well-being, respect for human rights and democratic values, transparency and explainability, robustness and security, and accountability. Transparency — the requirement that AI systems be explainable — is central because it enables the other principles: you cannot hold a system accountable, contest its decisions, or assess its fairness if you cannot understand how it works.",
+      "section": "governance"
+    },
+    {
+      "id": "ch09-q13",
+      "question": "Approximately how many people worldwide live in extreme poverty, defined as less than $2.15 per day?",
+      "options": [
+        "200 million (about 2.5% of world population)",
+        "700 million (about 8.5% of world population)",
+        "1.5 billion (about 19% of world population)",
+        "3.5 billion (about 44% of world population)"
+      ],
+      "correct": 1,
+      "explanation": "Approximately 700 million people — about 8.5% of the global population — live on less than $2.15/day, the World Bank's extreme poverty line. Sub-Saharan Africa contains about 67% of the world's extreme poor despite representing only 16% of world population. A further 3.5 billion people (44%) live on less than $6.85/day. The chapter uses these figures to contextualize debates about whether AI investments prioritize the needs of those most likely to benefit from genuine development.",
+      "section": "inequality"
+    },
+    {
+      "id": "ch09-q14",
+      "question": "In the chapter's case study of a hospital using AI for triage and appointment prioritization, what structural flaw can emerge if the training data reflects historical inequities?",
+      "options": [
+        "The AI will recommend the most expensive treatments to maximize hospital revenue",
+        "Low historical utilization by disadvantaged groups gets encoded as lower need, causing the algorithm to underestimate their risk and perpetuate historical under-treatment",
+        "The AI will refuse to recommend treatments not covered by standard insurance plans",
+        "Patients with chronic conditions will be systematically over-triaged, creating bottlenecks in the system"
+      ],
+      "correct": 1,
+      "explanation": "The structural flaw is that historical under-treatment looks, in the data, like lower need. If Black patients historically received less care — due to discrimination, poverty, or distrust of the medical system — their lower utilization gets encoded as a signal that they need less care. The algorithm then ranks them lower than their actual clinical risk warrants. This is not a bug in the code; it is a faithful reflection of historical injustice, automated and laundered through the appearance of technical objectivity.",
+      "section": "medicine"
+    },
+    {
+      "id": "ch09-q15",
+      "question": "Global data-center electricity use in 2022 was approximately 240–340 TWh, representing roughly what share of global final electricity demand?",
+      "options": [
+        "Less than 0.1% of global electricity demand",
+        "Approximately 1–1.3% of global electricity demand",
+        "Approximately 5–6% of global electricity demand",
+        "Approximately 10–12% of global electricity demand"
+      ],
+      "correct": 1,
+      "explanation": "Data centers and transmission networks together accounted for roughly 240–340 TWh of electricity in 2022 (about 1–1.3% of global demand) and approximately 330 Mt CO₂e of emissions. The IEA projected 3.5% per year growth in global electricity demand through 2030, with AI and data centers identified as central drivers — meaning this share is expected to grow substantially. More than 2,500 GW of new energy projects are currently stalled in grid queues, with large-load customers (data centers) competing with renewable projects for connection.",
+      "section": "environment"
+    },
+    {
+      "id": "ch09-q16",
+      "type": "multiple",
+      "question": "Which of the following are components of what Kate Crawford calls AI's full 'supply chain' or material system? Select all that apply.",
+      "options": [
+        "Mining and extraction of rare earth minerals and cobalt for chips and batteries",
+        "Data centers consuming electricity and fresh water",
+        "Low-wage data labeling, content moderation, and warehouse work",
+        "E-waste and the burden of obsolete hardware on communities",
+        "The carbon offsets purchased by AI companies to neutralize their emissions"
+      ],
+      "correct": [0, 1, 2, 3],
+      "explanation": "Crawford's supply-chain analysis covers the physical extraction layer (mines), the infrastructure layer (data centers), the hidden labor layer (data labelers, content moderators, warehouse workers), and the waste layer (e-waste from obsolete ASICs and devices). Carbon offsets are not part of her supply chain analysis — she is skeptical of claims that purchasing offsets meaningfully neutralizes AI's environmental footprint.",
+      "section": "material-system"
+    },
+    {
+      "id": "ch09-q17",
+      "type": "multiple",
+      "question": "Which of the following describe harms documented in Virginia Eubanks' 'Automating Inequality' or in related case studies in the chapter? Select all that apply.",
+      "options": [
+        "Indiana's automated welfare system incorrectly denied benefits to thousands due to technical errors",
+        "A UK Home Office immigration algorithm contributed to the wrongful classification of the 'Windrush generation' as illegal immigrants",
+        "The Netherlands childcare fraud algorithm disproportionately flagged families with non-Dutch surnames, pushing many into bankruptcy",
+        "A U.S. federal AI system successfully overturned racial bias in criminal sentencing by 2020",
+        "Allegheny County's child welfare predictive model drew disproportionately on data generated by poverty itself"
+      ],
+      "correct": [0, 1, 2, 4],
+      "explanation": "All four of the first, second, third, and fifth items are documented cases from the chapter. The fourth is false — no federal AI system has been documented as correcting racial bias in criminal sentencing; COMPAS was found to encode such bias, not correct it.",
+      "section": "governance"
+    },
+    {
+      "id": "ch09-q18",
+      "type": "multiple",
+      "question": "Which of the following accurately describe environmental or resource impacts of AI infrastructure as discussed in the chapter? Select all that apply.",
+      "options": [
+        "Global data-center electricity use in 2022 was approximately 240–340 TWh, roughly 1–1.3% of global electricity demand",
+        "The IEA projected 3.5% annual growth in global electricity demand through 2030, with AI and data centers as central drivers",
+        "The Jevons Paradox predicts that AI efficiency gains will reduce total energy consumption by at least 30% by 2030",
+        "Microsoft's data centers consumed approximately 6 million cubic meters of water in 2022",
+        "Training GPT-3 consumed roughly as much electricity as 120 American households use in a year"
+      ],
+      "correct": [0, 1, 3, 4],
+      "explanation": "The data-center electricity share, IEA growth projections, Microsoft's water use, and GPT-3 training energy are all accurate statistics from the chapter. The Jevons Paradox predicts the opposite of reduced total consumption: efficiency gains lead to more use, not less, because lower unit costs drive broader deployment.",
+      "section": "environment"
+    },
+    {
+      "id": "ch09-q19",
+      "type": "matching",
+      "question": "Match each scholar to the book and central concept they are known for in the chapter.",
+      "pairs": [
+        { "left": "Kate Crawford",    "right": "The Atlas of AI (2021) — AI as a planetary system of extraction, not neutral software" },
+        { "left": "Virginia Eubanks", "right": "Automating Inequality (2018) — digital tools creating a 'digital poorhouse' for marginalized communities" },
+        { "left": "Ruha Benjamin",    "right": "Race After Technology (2019) — the 'New Jim Code' encoding racial hierarchy in technical systems" },
+        { "left": "Amartya Sen",      "right": "Development as Freedom (1999) — development as expanding real human capabilities, not just GDP" }
+      ],
+      "explanation": "These four scholars provide the chapter's critical framework for evaluating AI's social impact. Crawford supplies the material critique. Eubanks supplies the public-sector case studies. Benjamin supplies the racial justice analysis. Sen supplies the normative standard for what genuine development looks like — against which AI deployments can be evaluated.",
+      "section": "inequality"
+    },
+    {
+      "id": "ch09-q20",
+      "type": "matching",
+      "question": "Match each AI environmental concern to the specific statistic or example the chapter uses to illustrate it.",
+      "pairs": [
+        { "left": "Training energy cost",        "right": "GPT-3 training consumed ~1,287 MWh, emitting ~550 tonnes of CO₂ — equivalent to 120 U.S. households' annual use" },
+        { "left": "Data-center water consumption", "right": "Microsoft's 2022 data centers used ~6 million cubic meters of water, much in drought-prone American West" },
+        { "left": "Raw material extraction",     "right": "DRC supplies ~70% of global cobalt for chips and batteries, as one of the world's poorest countries" },
+        { "left": "Rebound effect (Jevons)",     "right": "Cheaper AI inference leads to more queries and applications, increasing total energy use rather than reducing it" }
+      ],
+      "explanation": "These four cases span the full lifecycle of AI's environmental impact: the upfront carbon cost of training large models, the ongoing water cost of inference infrastructure, the upstream extractive cost of raw materials, and the dynamic that prevents efficiency improvements from reducing total consumption. Together they make the chapter's argument that AI's environmental footprint is a systemic issue requiring institutional responses, not just individual energy choices.",
+      "section": "environment"
+    }
+  ]
+}
