@@ -1,0 +1,499 @@
+% =============================================================================
+% Computing and AI Ethics — OER Conference 2026
+% Participant Handout: Key Questions for Cross-Curricular Teaching
+% =============================================================================
+\documentclass[10pt,letterpaper]{article}
+
+%%% Page geometry
+\usepackage[top=0.52in,bottom=0.52in,left=0.48in,right=0.48in,columnsep=0.21in]{geometry}
+
+%%% Core packages
+\usepackage{multicol}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+\usepackage{xcolor}
+\usepackage[sfdefault]{plex-sans}
+\usepackage[T1]{fontenc}
+\usepackage{fontawesome5}
+\usepackage{qrcode}
+\usepackage{microtype}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{booktabs}
+\usepackage{array}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+% ---------------------------------------------------------------------------
+% Color palette — matches the course materials
+% ---------------------------------------------------------------------------
+\definecolor{mPrimary}{HTML}{1E3A5F}   % deep navy
+\definecolor{mAccent}{HTML}{D4880A}    % warm amber
+\definecolor{tagIT}{HTML}{1A4A7A}
+\definecolor{tagSCI}{HTML}{1F6B3A}
+\definecolor{tagHLTH}{HTML}{A02020}
+\definecolor{tagBUS}{HTML}{1B5E70}
+\definecolor{tagLA}{HTML}{5E3085}
+\definecolor{tagEDU}{HTML}{8A5900}
+
+% ---------------------------------------------------------------------------
+% Inline discipline tag  \dtag{color}{LABEL}
+% ---------------------------------------------------------------------------
+\newcommand{\dtag}[2]{%
+  \raisebox{0.7pt}{%
+    \colorbox{#1}{\fontsize{5.4}{6.2}\selectfont
+      \textcolor{white}{\textsf{\textbf{\,#2\,}}}}%
+  }%
+}
+
+% ---------------------------------------------------------------------------
+% Chapter card box style
+% ---------------------------------------------------------------------------
+\tcbset{
+  chap/.style={
+    enhanced,
+    colback=white,
+    colframe=mPrimary,
+    colbacktitle=mPrimary,
+    coltitle=white,
+    fonttitle=\footnotesize\sffamily\bfseries,
+    boxrule=0.5pt,
+    arc=2.5pt,
+    left=4pt, right=4pt,
+    top=2pt, bottom=2pt,
+    toptitle=1.5pt, bottomtitle=1.5pt,
+    before skip=2.5pt,
+    after skip=2.5pt,
+    breakable=false,
+  }
+}
+
+% ---------------------------------------------------------------------------
+% Page footer
+% ---------------------------------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0.3pt}
+\fancyfoot[L]{\sffamily\scriptsize\textcolor{mPrimary}{%
+  \textbf{Computing and AI Ethics} \textnormal{---}
+  OER Conference 2026 \textnormal{---} Brendan Shea, PhD,
+  Rochester Community \& Technical College}}
+\fancyfoot[R]{\sffamily\scriptsize\textcolor{mPrimary}{%
+  brendanpshea.github.io/computing\_ai\_ethics/ \quad CC BY-NC-SA 4.0}}
+
+% ===========================================================================
+\begin{document}
+% ===========================================================================
+
+% ---------------------------------------------------------------------------
+%  HEADER BANNER
+% ---------------------------------------------------------------------------
+\begin{tcolorbox}[
+  enhanced,
+  colback=mPrimary,
+  colframe=mPrimary,
+  boxrule=0pt,
+  arc=3pt,
+  left=10pt, right=10pt,
+  top=9pt, bottom=9pt,
+  before skip=0pt,
+  after skip=6pt,
+]
+\begin{minipage}[c]{0.62\linewidth}
+  {\sffamily\bfseries\Large\textcolor{white}{Computing and AI Ethics}}\\[4pt]
+  {\sffamily\large\textcolor{mAccent}{%
+    Key Questions: Teaching AI Ethics Across the Curriculum}}\\[3pt]
+  {\sffamily\small\textcolor{white!70!mPrimary}{%
+    Conversation starters and lesson ideas for courses in any discipline}}
+\end{minipage}%
+\hfill
+\begin{minipage}[c]{0.34\linewidth}
+  \raggedleft
+  {\sffamily\footnotesize\textcolor{white!80!mPrimary}{%
+    \textbf{Brendan Shea, PhD}\\
+    Rochester Community \& Technical College\\
+    Philosophy \& Computer Science\\[4pt]
+    \faGlobe\enspace\texttt{brendanpshea.github.io}\\
+    \faGithub\enspace\texttt{github.com/brendanpshea}\\
+    \faEnvelope\enspace brendan.shea@rctc.edu%
+  }}
+\end{minipage}
+\end{tcolorbox}
+
+% ---------------------------------------------------------------------------
+%  PROJECT OVERVIEW  |  DISCIPLINE KEY  |  QR CODE  (three-panel row)
+% ---------------------------------------------------------------------------
+\begin{minipage}[t]{0.415\linewidth}
+\begin{tcolorbox}[
+  enhanced,
+  colback=mAccent!8,
+  colframe=mAccent,
+  fonttitle=\small\sffamily\bfseries,
+  coltitle=white,
+  colbacktitle=mAccent!85!black,
+  title={About This OER},
+  boxrule=0.5pt,
+  arc=2pt,
+  left=6pt, right=6pt,
+  top=4pt, bottom=4pt,
+  toptitle=2pt, bottomtitle=2pt,
+  before skip=0pt,
+  after skip=4pt,
+]
+{\sffamily\footnotesize\textbf{Computing and AI Ethics} is a free,
+openly-licensed textbook for any major. Twelve self-contained chapters
+span philosophy through AI existential risk, each with editable lecture
+slides, a full HTML chapter, and an auto-graded quiz. Every component
+is on GitHub under \textbf{CC BY-NC-SA 4.0}. Adopt one chapter or
+the whole course --- no permission needed.}
+\end{tcolorbox}
+
+\begin{tcolorbox}[
+  enhanced,
+  colback=mPrimary!5,
+  colframe=mPrimary,
+  fonttitle=\small\sffamily\bfseries,
+  coltitle=white,
+  colbacktitle=mPrimary,
+  title={Discipline Tags},
+  boxrule=0.5pt,
+  arc=2pt,
+  left=6pt, right=6pt,
+  top=4pt, bottom=4pt,
+  toptitle=2pt, bottomtitle=2pt,
+  before skip=0pt,
+  after skip=0pt,
+]
+{\sffamily\footnotesize
+  \dtag{tagLA}{LA}\enspace Liberal Arts, Humanities, Social Sciences\\[2.5pt]
+  \dtag{tagSCI}{SCI}\enspace Natural Sciences, Math, Environment\\[2.5pt]
+  \dtag{tagHLTH}{HLTH}\enspace Health Sciences, Nursing, Allied Health\\[2.5pt]
+  \dtag{tagBUS}{BUS}\enspace Business, Accounting, Economics\\[2.5pt]
+  \dtag{tagIT}{IT}\enspace Information Technology, Computer Science\\[2.5pt]
+  \dtag{tagEDU}{EDU}\enspace Education, Workforce Development
+}
+\end{tcolorbox}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.555\linewidth}
+\begin{tcolorbox}[
+  enhanced,
+  colback=mPrimary!5,
+  colframe=mPrimary,
+  fonttitle=\small\sffamily\bfseries,
+  coltitle=white,
+  colbacktitle=mPrimary,
+  title={What Is Available for Each Chapter},
+  boxrule=0.5pt,
+  arc=2pt,
+  left=6pt, right=6pt,
+  top=4pt, bottom=4pt,
+  toptitle=2pt, bottomtitle=2pt,
+  before skip=0pt,
+  after skip=4pt,
+]
+{\sffamily\footnotesize
+\begin{tabular}{@{}lp{0.72\linewidth}@{}}
+  \textbf{Lecture Slides} &
+    Full Beamer/Metropolis deck in \LaTeX{} --- editable and remixable \\[2pt]
+  \textbf{HTML Reading} &
+    Complete chapter in accessible HTML; no login, no cost \\[2pt]
+  \textbf{Quiz App} &
+    Plain JavaScript, auto-graded, 10--20 Qs; host on GitHub Pages \\[2pt]
+  \textbf{Source Code} &
+    All \LaTeX{} and HTML source on GitHub --- fork freely\\
+\end{tabular}
+}
+\end{tcolorbox}
+
+\begin{tcolorbox}[
+  enhanced,
+  colback=white,
+  colframe=mAccent,
+  fonttitle=\small\sffamily\bfseries,
+  coltitle=white,
+  colbacktitle=mAccent!85!black,
+  title={How to Use These Questions},
+  boxrule=0.5pt,
+  arc=2pt,
+  left=6pt, right=6pt,
+  top=4pt, bottom=4pt,
+  toptitle=2pt, bottomtitle=2pt,
+  before skip=0pt,
+  after skip=0pt,
+]
+{\sffamily\footnotesize
+\begin{tabular}{@{}lp{0.80\linewidth}@{}}
+  \faEdit      & Assign as a short reflection connecting course content
+                 to a current event or professional scenario.\\[2pt]
+  \faComments  & Open class with a 2-min silent write, then discuss.\\[2pt]
+  \faUsers     & Partner with a philosophy or CS instructor to
+                 co-teach 1--2 chapters relevant to your field.\\[2pt]
+  \faBookOpen  & Use as supplementary reading in any Gen Ed course ---
+                 one chapter stands alone as a guest lecture or module.\\
+\end{tabular}
+}
+\end{tcolorbox}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.12\linewidth}
+  \centering\vspace{2pt}
+  \qrcode[height=2.85cm]{https://brendanpshea.github.io/computing_ai_ethics/}\\[4pt]
+  {\sffamily\fontsize{5.5}{7}\selectfont\textcolor{mPrimary}%
+    {brendanpshea.github.io/\linebreak computing\_ai\_ethics/}}
+\end{minipage}
+
+\vspace{5pt}
+\noindent{\sffamily\bfseries\normalsize\textcolor{mPrimary}{%
+  \faComments\enspace Questions for Cross-Curricular Teaching and Discussion}}\\[-1pt]
+\noindent\textcolor{mAccent}{\rule{\linewidth}{1.3pt}}
+\vspace{3pt}
+
+% ---------------------------------------------------------------------------
+%  TWELVE CHAPTER CARDS — 2-column layout
+% ---------------------------------------------------------------------------
+\setlist[itemize]{leftmargin=1em, itemsep=1.5pt, topsep=1pt, parsep=0pt}
+
+\begin{multicols}{2}
+
+% -- Ch 1 -------------------------------------------------------------------
+\begin{tcolorbox}[chap,
+  title={Ch.~1 \textnormal{---} History of IT Ethics: Plato to Web~1.0}]
+\sffamily\footnotesize
+\textit{Five revolutions---writing, print, telegraph, broadcast, internet---each
+promised liberation while enabling new forms of control.}
+\begin{itemize}
+  \item Which groups historically controlled access to each new information
+    technology --- and who was excluded? What parallels exist with AI adoption
+    today? \dtag{tagLA}{LA} \dtag{tagSCI}{SCI}
+  \item Plato feared that writing produces the \emph{appearance} of knowledge
+    without genuine understanding. Does the same critique apply to search
+    engines or large language models? \dtag{tagEDU}{EDU} \dtag{tagLA}{LA}
+    \dtag{tagIT}{IT}
+\end{itemize}
+\end{tcolorbox}
+
+% -- Ch 2 -------------------------------------------------------------------
+\begin{tcolorbox}[chap,
+  title={Ch.~2 \textnormal{---} Virtue Ethics and IT}]
+\sffamily\footnotesize
+\textit{Aristotle: virtues are habits formed by practice. Technology shapes what
+we repeatedly do --- and thus who we become.}
+\begin{itemize}
+  \item Which habits of mind --- curiosity, empathy, patience, honesty ---
+    does regular technology use in your field risk strengthening or eroding?
+    \dtag{tagHLTH}{HLTH} \dtag{tagEDU}{EDU} \dtag{tagLA}{LA}
+  \item If a practitioner delegates diagnosis, writing, or analysis to AI,
+    are they still building the expertise their role requires --- or
+    outsourcing it? \dtag{tagHLTH}{HLTH} \dtag{tagBUS}{BUS} \dtag{tagIT}{IT}
+\end{itemize}
+\end{tcolorbox}
+
+% -- Ch 3 -------------------------------------------------------------------
+\begin{tcolorbox}[chap,
+  title={Ch.~3 \textnormal{---} Free Speech and Social Media}]
+\sffamily\footnotesize
+\textit{Platforms occupy new legal and ethical ground: neither public squares
+nor private clubs, yet algorithmically shaping who is heard and why.}
+\begin{itemize}
+  \item If outrage drives engagement, who bears moral responsibility for
+    political polarization --- users, platform designers, or the algorithms?
+    \dtag{tagLA}{LA} \dtag{tagBUS}{BUS} \dtag{tagIT}{IT}
+  \item Should healthcare workers, educators, or attorneys face special
+    obligations about discussing clients or students on social media?
+    \dtag{tagHLTH}{HLTH} \dtag{tagEDU}{EDU} \dtag{tagBUS}{BUS}
+\end{itemize}
+\end{tcolorbox}
+
+% -- Ch 4 -------------------------------------------------------------------
+\begin{tcolorbox}[chap,
+  title={Ch.~4 \textnormal{---} Intellectual Property}]
+\sffamily\footnotesize
+\textit{AI trained on creative work can now produce outputs in the style of
+living artists and writers --- without consent or compensation.}
+\begin{itemize}
+  \item Does Locke's principle --- that creators deserve the fruits of their
+    labor --- support or undermine AI companies that train on existing work?
+    \dtag{tagBUS}{BUS} \dtag{tagLA}{LA} \dtag{tagIT}{IT}
+  \item When AI contributes to a scientific discovery or clinical innovation,
+    who holds the patent --- and on what ethical or legal basis?
+    \dtag{tagSCI}{SCI} \dtag{tagHLTH}{HLTH} \dtag{tagBUS}{BUS}
+\end{itemize}
+\end{tcolorbox}
+
+% -- Ch 5 -------------------------------------------------------------------
+\begin{tcolorbox}[chap,
+  title={Ch.~5 \textnormal{---} Cryptocurrency}]
+\sffamily\footnotesize
+\textit{Cryptocurrency challenges state control of money and forces a basic
+question: what makes a currency legitimate?}
+\begin{itemize}
+  \item Can a technology that simultaneously serves the unbanked poor and
+    enables unprecedented-scale fraud be evaluated in simple ethical terms?
+    \dtag{tagBUS}{BUS} \dtag{tagLA}{LA} \dtag{tagSCI}{SCI}
+  \item Bitcoin uses as much energy annually as some medium-sized nations.
+    How should environmental and social costs factor into financial and
+    technology decisions? \dtag{tagSCI}{SCI} \dtag{tagBUS}{BUS}
+    \dtag{tagEDU}{EDU}
+\end{itemize}
+\end{tcolorbox}
+
+% -- Ch 6 -------------------------------------------------------------------
+\begin{tcolorbox}[chap,
+  title={Ch.~6 \textnormal{---} Privacy and Surveillance}]
+\sffamily\footnotesize
+\textit{Surveillance capitalism treats behavioral data as a raw material
+to be harvested, predicted, and sold without users' meaningful awareness.}
+\begin{itemize}
+  \item ``If you have nothing to hide, you have nothing to fear.'' What are
+    this claim's strongest weaknesses --- and which communities suffer most
+    when it wins?
+    \dtag{tagLA}{LA} \dtag{tagHLTH}{HLTH} \dtag{tagSCI}{SCI}
+  \item Health records, fitness trackers, and insurance algorithms create rich
+    behavioral profiles. Where should patient or consumer consent limits lie?
+    \dtag{tagHLTH}{HLTH} \dtag{tagIT}{IT} \dtag{tagBUS}{BUS}
+\end{itemize}
+\end{tcolorbox}
+
+% -- Ch 7 -------------------------------------------------------------------
+\begin{tcolorbox}[chap,
+  title={Ch.~7 \textnormal{---} Introduction to AI}]
+\sffamily\footnotesize
+\textit{AI has moved from explicit rules to neural networks trained on data ---
+systems that sometimes outperform experts without being able to explain why.}
+\begin{itemize}
+  \item Searle's Chinese Room argues that symbol manipulation produces no real
+    understanding. Does this matter for how much we should trust AI advice in
+    high-stakes contexts? \dtag{tagLA}{LA} \dtag{tagSCI}{SCI} \dtag{tagIT}{IT}
+  \item AI now exceeds human performance at several diagnostic tasks. What
+    standards should govern AI adoption in clinical, legal, or financial
+    settings --- and who is liable when it fails?
+    \dtag{tagHLTH}{HLTH} \dtag{tagBUS}{BUS} \dtag{tagIT}{IT}
+\end{itemize}
+\end{tcolorbox}
+
+% -- Ch 8 -------------------------------------------------------------------
+\begin{tcolorbox}[chap,
+  title={Ch.~8 \textnormal{---} AI and the Future of Work}]
+\sffamily\footnotesize
+\textit{Hannah Arendt distinguished \emph{labor} (biological necessity),
+\emph{work} (skilled craft), and \emph{action} (civic life) --- AI encroaches
+on all three, but unevenly.}
+\begin{itemize}
+  \item Which tasks in your field are most exposed to AI automation --- and
+    which seem to require irreducibly human judgment, relationship, or
+    creativity?
+    \dtag{tagBUS}{BUS} \dtag{tagHLTH}{HLTH} \dtag{tagEDU}{EDU}
+  \item If AI handles most routine cognitive work, what should higher education
+    in your discipline \emph{become} --- and which skills should students be
+    building right now? \dtag{tagEDU}{EDU} \dtag{tagBUS}{BUS} \dtag{tagIT}{IT}
+\end{itemize}
+\end{tcolorbox}
+
+% -- Ch 9 -------------------------------------------------------------------
+\begin{tcolorbox}[chap,
+  title={Ch.~9 \textnormal{---} Social \& Environmental Impact of AI}]
+\sffamily\footnotesize
+\textit{AI's costs --- energy, water, e-waste, algorithmic bias --- are largely
+invisible to users who benefit from its outputs.}
+\begin{itemize}
+  \item Training one large AI model can emit as much CO\textsubscript{2} as
+    five cars over their lifetimes. How should we weigh environmental costs
+    against AI's research, clinical, or business benefits?
+    \dtag{tagSCI}{SCI} \dtag{tagBUS}{BUS} \dtag{tagHLTH}{HLTH}
+  \item AI trained on historical data tends to amplify existing biases in
+    hiring, lending, and medical diagnosis. What would genuinely fair AI
+    look like in your profession --- and who gets to decide?
+    \dtag{tagHLTH}{HLTH} \dtag{tagBUS}{BUS} \dtag{tagLA}{LA}
+\end{itemize}
+\end{tcolorbox}
+
+% -- Ch 10 ------------------------------------------------------------------
+\begin{tcolorbox}[chap,
+  title={Ch.~10 \textnormal{---} AI and Existential Risk}]
+\sffamily\footnotesize
+\textit{Some researchers argue misaligned AI poses civilizational risk; critics
+say this framing displaces focus from near-term harms happening right now.}
+\begin{itemize}
+  \item Should catastrophic-but-uncertain AI risks be governed like nuclear
+    weapons --- with international treaties --- or does this framing distract
+    from present injustices?
+    \dtag{tagLA}{LA} \dtag{tagSCI}{SCI} \dtag{tagBUS}{BUS}
+  \item How should scientists, journalists, and policymakers communicate about
+    risks that are deeply uncertain but potentially severe? What makes
+    risk communication responsible?
+    \dtag{tagSCI}{SCI} \dtag{tagLA}{LA} \dtag{tagHLTH}{HLTH}
+\end{itemize}
+\end{tcolorbox}
+
+% -- Ch 11 ------------------------------------------------------------------
+\begin{tcolorbox}[chap,
+  title={Ch.~11 \textnormal{---} Robot Rights}]
+\sffamily\footnotesize
+\textit{We infer consciousness in others by analogy to ourselves. AI challenges
+this inference in ways philosophy and science have not yet resolved.}
+\begin{itemize}
+  \item When patients form genuine therapeutic bonds with care robots, do those
+    systems acquire any moral weight --- or only the patients' interests
+    matter? \dtag{tagHLTH}{HLTH} \dtag{tagLA}{LA} \dtag{tagSCI}{SCI}
+  \item By what criteria --- sentience, rationality, relational bonds --- do we
+    extend moral consideration to any being? Do current AI systems meet any of
+    these? \dtag{tagSCI}{SCI} \dtag{tagLA}{LA} \dtag{tagIT}{IT}
+\end{itemize}
+\end{tcolorbox}
+
+% -- Ch 12 ------------------------------------------------------------------
+\begin{tcolorbox}[chap,
+  title={Ch.~12 \textnormal{---} Games, Play, and Moral Philosophy}]
+\sffamily\footnotesize
+\textit{Bernard Suits argues that voluntary, rule-governed challenge-seeking is
+the ideal human life --- a claim with radical implications if AI replaces most
+necessary work.}
+\begin{itemize}
+  \item If AI handles most productive labor, is a life of games, art, and
+    leisure genuinely fulfilling --- or does it hollow out human purpose and
+    dignity? \dtag{tagLA}{LA} \dtag{tagEDU}{EDU} \dtag{tagBUS}{BUS}
+  \item Loot boxes and engagement-maximizing design exploit psychological
+    tendencies for profit. Are they ethically comparable to gambling --- and
+    should they be regulated as such?
+    \dtag{tagBUS}{BUS} \dtag{tagSCI}{SCI} \dtag{tagLA}{LA}
+\end{itemize}
+\end{tcolorbox}
+
+\end{multicols}
+
+% ---------------------------------------------------------------------------
+%  CHAPTER ARC  (single-line summary at bottom)
+% ---------------------------------------------------------------------------
+\vspace{1pt}
+\noindent\textcolor{mAccent}{\rule{\linewidth}{0.8pt}}
+\vspace{2pt}
+
+\begin{tcolorbox}[
+  enhanced,
+  colback=mPrimary!5,
+  colframe=mPrimary,
+  boxrule=0.5pt,
+  arc=2pt,
+  left=7pt, right=7pt,
+  top=4pt, bottom=4pt,
+  before skip=0pt,
+  after skip=0pt,
+]
+{\sffamily\footnotesize\textcolor{mPrimary}{%
+\textbf{Course arc:}
+Chapters 1--2 build \textbf{philosophical foundations} (virtue ethics, the history of IT ethics).
+Chapters 3--6 engage \textbf{pressing policy debates} (speech, IP, crypto, privacy).
+Chapters 7--12 focus on \textbf{AI specifically} --- from what AI is through existential risk,
+robot rights, and the ethics of play. Any chapter stands alone as a one-week module,
+discussion unit, or guest lecture. All materials at
+\href{https://brendanpshea.github.io/computing_ai_ethics/}%
+     {\textbf{brendanpshea.github.io/computing\_ai\_ethics/}} ---
+fork, adapt, and use freely.
+}}
+\end{tcolorbox}
+
+\end{document}
