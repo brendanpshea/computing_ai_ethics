@@ -1,0 +1,866 @@
+\documentclass[aspectratio=169,10pt]{beamer}
+\input{lecture_preamble.tex}
+\usepackage{qrcode}
+\graphicspath{{images/}}
+
+\metroset{sectionpage=none}
+\setbeamerfont{title}{size=\large,series=\bfseries}
+\setbeamerfont{subtitle}{size=\small}
+\setbeamerfont{frametitle}{size=\normalsize,series=\bfseries}
+\setbeamerfont{block title}{size=\small,series=\bfseries}
+\setbeamerfont{block body}{size=\small}
+\setbeamerfont{itemize/enumerate body}{size=\small}
+\setbeamerfont{itemize/enumerate subbody}{size=\footnotesize}
+
+\setbeamertemplate{title page}{%
+  \begin{minipage}[t][0.75\paperheight]{\textwidth}
+    \vspace*{2.5em}
+    {\usebeamerfont{title}\usebeamercolor[fg]{title}\inserttitle\par}
+    \vspace*{0.4em}
+    {\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle\par}
+    \vspace*{0.7em}
+    \rule{\textwidth}{0.4pt}\par
+    \vspace*{0.5em}
+    {\usebeamerfont{author}\usebeamercolor[fg]{author}\insertauthor\par}
+    \vspace*{0.15em}
+    {\usebeamerfont{date}\usebeamercolor[fg]{date}\insertdate\par}
+    \vspace*{0.15em}
+    {\usebeamerfont{institute}\usebeamercolor[fg]{institute}\insertinstitute\par}
+    \vfill
+  \end{minipage}%
+}
+\setbeamertemplate{frame footer}{\textcolor{black!40}{\tiny Computing \& AI Ethics --- OER Conference 2026}}
+\hfuzz=130pt  % suppress Metropolis progress bar hbox overflows
+\setbeamertemplate{itemize/enumerate body begin}{\setlength{\itemsep}{1pt}\setlength{\parsep}{0pt}\setlength{\topsep}{2pt}}
+\newcommand{\chimg}[2][0.60\textheight]{\includegraphics[width=\textwidth,height=#1,keepaspectratio]{#2}}
+
+\title{Computing and AI Ethics}
+\subtitle{An Open Educational Resource for Gen Ed | OER Conference 2026}
+\author{Brendan Shea, PhD}
+\institute{Rochester Community and Technical College --- Philosophy \& Computer Science}
+\date{}
+
+\begin{document}
+
+%% ── TITLE ────────────────────────────────────────────────────────────────────
+{%
+\setbeamercolor{background canvas}{bg=mPrimary}%
+\begin{frame}[plain,noframenumbering]
+\titlepage
+\end{frame}%
+}
+
+%% ════════════════════════════════════════════════════════════════════════════
+\section{Introduction}
+%% ════════════════════════════════════════════════════════════════════════════
+
+\begin{frame}{About RCTC and Me}
+\begin{columns}[c]
+\column{0.62\textwidth}
+\begin{itemize}
+  \item \textbf{Rochester Community and Technical College} is a two-year college in Rochester, MN---home of the Mayo Clinic---serving a largely first-generation student population.
+  \item I hold a joint appointment in \textbf{Philosophy} and \textbf{Computer Science}, teaching from Intro Logic to Networking to Cybersecurity.
+  \item This dual appointment created both the opportunity and the responsibility to build a genuine Gen Ed computing ethics course.
+  \item Applied, accessible, and affordable materials matter enormously at institutions like RCTC.
+\end{itemize}
+\column{0.34\textwidth}
+\begin{block}{Courses I Teach}
+\footnotesize
+\begin{itemize}
+  \item PHIL 1150 --- Computing \& AI Ethics
+  \item COMP 2243 --- Programming \& Problem Solving
+  \item COMP 1080 --- Intro to Networking
+  \item Cybersecurity electives
+\end{itemize}
+\end{block}
+\vspace{0.3em}
+\begin{block}{This Project}
+\footnotesize OER textbook, quiz suite, and lecture slides --- all freely on GitHub, CC BY-NC-SA.
+\end{block}
+\end{columns}
+\end{frame}
+
+\begin{frame}{The Need: Much More Than Worrying About Cheating}
+\begin{columns}[c]
+\column{0.62\textwidth}
+\begin{itemize}
+  \item The campus AI conversation often defaults to \textbf{one question}: ``Are students using ChatGPT to cheat?'' --- but that is a very small slice of the real ethical landscape.
+  \item Every student will make consequential decisions \emph{as a citizen, worker, and consumer} shaped by AI and digital systems, regardless of major.
+  \item We already require ethics exposure in medical, legal, and engineering education --- digital literacy demands the same.
+  \item Algorithmic bias, surveillance, labor displacement, and existential risk are too consequential to leave to chance.
+\end{itemize}
+\column{0.34\textwidth}
+\begin{alertblock}{The Real Stakes}
+\footnotesize
+\begin{itemize}
+  \item Algorithmic bias in hiring
+  \item Surveillance capitalism
+  \item Deepfakes \& misinformation
+  \item AI and the future of work
+  \item AI existential risk
+\end{itemize}
+\end{alertblock}
+\end{columns}
+\end{frame}
+
+\begin{frame}{A Landscape Without a Map}
+\begin{columns}[c]
+\column{0.62\textwidth}
+\begin{itemize}
+  \item Computing and AI ethics courses are \textbf{proliferating rapidly} --- but there is no agreed-upon canon for what they should cover.
+  \item Most existing textbooks are expensive, outdated, or written for CS majors rather than a general student audience.
+  \item New instructors outside philosophy or CS often have \textbf{no good starting point} for readings, quizzes, or lectures.
+  \item Open and freely adaptable resources lower barriers at institutions with limited budgets and adjunct-heavy staffing.
+\end{itemize}
+\column{0.34\textwidth}
+\begin{block}{What's Missing}
+\footnotesize
+\begin{itemize}
+  \item A coherent Gen Ed scope
+  \item Ready-to-use lecture slides
+  \item Free student readings
+  \item Quiz banks per chapter
+  \item Accessibility-first design
+\end{itemize}
+\end{block}
+\vspace{0.25em}
+\begin{exampleblock}{This Project's Goal}
+\footnotesize Provide all of the above, under Creative Commons, for free.
+\end{exampleblock}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Your Turn: Think-Pair-Share}
+\vspace{0.2em}
+\begin{discussionbox}{Think-Pair-Share Activity ($\sim$5 minutes)}
+\begin{enumerate}\small
+  \item \textbf{Think (1 min):} Write down \emph{three} ethical concerns about computing or AI any college graduate should be able to reason about.
+  \item \textbf{Pair (2 min):} Compare with a neighbor. What overlaps? What surprised you?
+  \item \textbf{Share:} We'll hear a few responses from the room.
+\end{enumerate}
+\end{discussionbox}
+\vspace{0.4em}
+\begin{columns}[c]
+\column{0.48\textwidth}
+\begin{block}{Prompt to Keep in Mind}
+\small Which of these would a student encounter in a \emph{standard} CS or Gen Ed curriculum --- and which fall through the cracks?
+\end{block}
+\column{0.48\textwidth}
+\begin{block}{We'll Return to These}
+\small The 12 chapters of this course map directly onto the concerns educators most commonly raise.
+\end{block}
+\end{columns}
+\end{frame}
+
+%% ════════════════════════════════════════════════════════════════════════════
+\section{Project Overview}
+%% ════════════════════════════════════════════════════════════════════════════
+
+\begin{frame}{What's in the Box: 12-Chapter OER}
+\begin{columns}[c]
+\column{0.62\textwidth}
+\begin{itemize}
+  \item \textbf{12 thematic chapters} spanning ancient philosophy through AI existential risk --- each self-contained and adaptable.
+  \item Every chapter ships with: Metropolis \textbf{lecture slides}, an \textbf{HTML chapter} for student reading, and a \textbf{JavaScript quiz} with auto-graded questions.
+  \item Licensed \textbf{CC BY-NC-SA 4.0} --- remix freely with attribution.
+  \item AI was used throughout: writing \LaTeX{}, translating to HTML, captioning images, building the quiz app --- but the intellectual labor of building a course remained fully mine.
+\end{itemize}
+\column{0.34\textwidth}
+\begin{block}{Read Online}
+\footnotesize\centering
+\qrcode[height=2.0cm]{https://brendanpshea.github.io/computing_ai_ethics/}\par\vspace{0.3em}
+\textbf{brendanpshea.github.io/\allowbreak computing\_ai\_ethics/}
+\end{block}
+\vspace{0.25em}
+\begin{alertblock}{Reality Check}
+\small AI changed the \emph{kind} of work, not the \emph{amount}.
+\end{alertblock}
+\end{columns}
+\end{frame}
+
+\begin{frame}{12 Chapters at a Glance}
+\vspace{0.2em}
+\begin{columns}[c]
+\column{0.48\textwidth}
+\footnotesize
+\begin{enumerate}
+  \item History of IT Ethics (Plato to Web 1.0)
+  \item Virtue Ethics and IT
+  \item Free Speech and Social Media
+  \item Intellectual Property
+  \item Cryptocurrency
+  \item Privacy and Surveillance
+\end{enumerate}
+\column{0.48\textwidth}
+\footnotesize
+\begin{enumerate}
+  \setcounter{enumi}{6}
+  \item Introduction to AI
+  \item AI and the Future of Work
+  \item Social \& Environmental Impact of AI
+  \item AI and Existential Risk
+  \item Robot Rights
+  \item Games, Play, and Moral Philosophy
+\end{enumerate}
+\end{columns}
+\vspace{0.4em}
+\begin{block}{Arc of the Course}
+\small Moves from \textbf{philosophical foundations} (Ch.~1--2) through \textbf{pressing policy debates} (Ch.~3--6) into sustained engagement with \textbf{AI specifically} (Ch.~7--12), ending with questions that may seem speculative but are increasingly urgent.
+\end{block}
+\end{frame}
+
+%% ════════════════════════════════════════════════════════════════════════════
+\section{Content Areas}
+%% ════════════════════════════════════════════════════════════════════════════
+
+%% -- Ch 1 --
+\begin{frame}{Ch.~1 --- History of IT Ethics: Plato to Web 1.0}
+\begin{columns}[c]
+\column{0.55\textwidth}
+\textbf{Central Questions:}
+\begin{itemize}\small
+  \item What are the five major IT revolutions, and what ethical patterns do they share?
+  \item Why does every revolutionary technology promise liberation yet enable new forms of control?
+  \item How have optimists and pessimists responded to each revolution --- and who was right?
+  \item How do economic and political interests shape the impact of technology?
+\end{itemize}
+\vspace{0.2em}
+\begin{exampleblock}{Arc of the Chapter}
+\footnotesize Writing $\to$ Print $\to$ Telegraph/Telephone $\to$ Broadcast $\to$ Internet. Each revolution recapitulates the same ethical arc.
+\end{exampleblock}
+\column{0.41\textwidth}
+\chimg{plato_bust.jpg}
+\par\vspace{0.2em}{\scriptsize Plato (c.~428--348 BCE). His warnings about writing in the \emph{Phaedrus} remain the course's opening provocation. Museo Pio-Clementino. Public domain.}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Ch.~1 Spotlight --- Socrates's Argument Against Writing}
+\begin{columns}[c]
+\column{0.57\textwidth}
+\begin{argumentbox}[Argument in Standard Form]
+\footnotesize
+\begin{enumerate}
+  \item True knowledge requires active engagement, dialogue, and the ability to respond to questions.
+  \item Writing cannot respond to questions or adapt to its audience --- it presents the same text to all readers.
+  \item Therefore, writing produces the \emph{appearance} of knowledge rather than genuine understanding.
+\end{enumerate}
+\end{argumentbox}
+\vspace{0.25em}
+\begin{discussionbox}
+\footnotesize Does this argument apply equally to Google, Wikipedia, and LLMs? If Plato is right, what would genuine versus merely apparent knowledge look like in 2026?
+\end{discussionbox}
+\column{0.38\textwidth}
+\chimg{gutenberg_bible.jpg}
+\par\vspace{0.2em}{\scriptsize Gutenberg Bible (c.~1455), Ransom Center, UT Austin. The printing press was history's most disruptive information revolution before the internet. Public domain.}
+\end{columns}
+\end{frame}
+
+%% -- Ch 2 --
+\begin{frame}{Ch.~2 --- Virtue Ethics and IT}
+\begin{columns}[c]
+\column{0.55\textwidth}
+\textbf{Central Questions:}
+\begin{itemize}\small
+  \item What is virtue ethics, and how does Aristotle understand human character and flourishing?
+  \item What makes technology a moral concern --- not just a tool but a \emph{shaper of who we are becoming}?
+  \item How might social media and AI undermine intellectual virtues like curiosity and open-mindedness?
+  \item How might digital environments erode moral virtues like empathy, patience, and honesty?
+\end{itemize}
+\vspace{0.2em}
+\begin{exampleblock}{Key Concept}
+\footnotesize Aristotle: virtues are habits formed by practice. If we repeatedly act in ways that weaken attention, empathy, or honesty, we \emph{become} less attentive, empathetic, and honest.
+\end{exampleblock}
+\column{0.41\textwidth}
+\chimg{vintage_arcade.jpg}
+\par\vspace{0.2em}{\scriptsize Atari 2600 (1977). Early moral panics about gaming prefigure today's debates about social media and AI on character formation. CC BY-SA.}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Ch.~2 Spotlight --- Technology and Intellectual Virtue}
+\begin{columns}[c]
+\column{0.57\textwidth}
+\begin{argumentbox}[Argument in Standard Form]
+\footnotesize
+\begin{enumerate}
+  \item Intellectual virtues (curiosity, attention, critical analysis, deep reading) are cultivated through sustained, effortful cognitive practice.
+  \item Social media and AI tools systematically reduce the need for --- and reward for --- sustained effortful cognition.
+  \item Therefore, habitual use of these technologies tends to erode intellectual virtue.
+\end{enumerate}
+\end{argumentbox}
+\vspace{0.25em}
+\begin{discussionbox}
+\footnotesize Is the argument valid? Does it apply equally to books, calculators, and GPS? Or is there something distinctively corrosive about social media algorithms?
+\end{discussionbox}
+\column{0.38\textwidth}
+\begin{block}{Key Thinkers}
+\footnotesize
+\begin{itemize}
+  \item Aristotle: virtue via habituation
+  \item Vallor: \emph{technomoral virtues}
+  \item Haidt: social media and moral deskilling
+  \item Carr: \emph{The Shallows} and deep reading
+  \item Turkle: \emph{Alone Together}
+\end{itemize}
+\end{block}
+\end{columns}
+\end{frame}
+
+%% -- Ch 3 --
+\begin{frame}{Ch.~3 --- Free Speech and Social Media}
+\begin{columns}[c]
+\column{0.55\textwidth}
+\textbf{Central Questions:}
+\begin{itemize}\small
+  \item Why does speech deserve special protection --- and what are the strongest arguments for and against?
+  \item Is Mill's \emph{harm principle} a satisfactory test for where free speech should end?
+  \item Does social media constitute a ``marketplace of ideas,'' or does it systematically distort truth-seeking?
+  \item When, if ever, should governments, corporations, or algorithms restrict speech?
+\end{itemize}
+\vspace{0.2em}
+\begin{exampleblock}{The Central Tension}
+\footnotesize Platforms are neither town squares (public, regulated) nor private clubs (unaccountable). Section 230, content moderation, and algorithmic amplification all sit in the gap.
+\end{exampleblock}
+\column{0.41\textwidth}
+\chimg{ai_env_parliament.jpg}
+\par\vspace{0.2em}{\scriptsize Legislative chambers worldwide now grapple with platform speech regulation. Wikimedia Commons, CC BY-SA.}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Ch.~3 Spotlight --- Mill's Argument from Truth}
+\begin{columns}[c]
+\column{0.57\textwidth}
+\begin{argumentbox}[Argument from Truth (Mill, \emph{On Liberty})]
+\footnotesize
+\begin{enumerate}
+  \item The discovery and spread of truth is essential for human progress.
+  \item We can never be certain that a silenced opinion is false --- history is full of suppressed truths.
+  \item Even a false opinion, when argued against, strengthens our grasp of the truth.
+  \item Therefore, restricting speech is almost always a net harm to society.
+\end{enumerate}
+\end{argumentbox}
+\vspace{0.25em}
+\begin{discussionbox}
+\footnotesize Does algorithmic amplification change the argument? If false claims spread faster than corrections, does the ``marketplace of ideas'' still function?
+\end{discussionbox}
+\column{0.38\textwidth}
+\begin{block}{Key Concepts}
+\footnotesize
+\begin{itemize}
+  \item Mill's harm principle
+  \item Marketplace of ideas
+  \item Section 230 (US)
+  \item Content moderation at scale
+  \item Paradox of tolerance (Popper)
+\end{itemize}
+\end{block}
+\end{columns}
+\end{frame}
+
+%% -- Ch 4 --
+\begin{frame}{Ch.~4 --- Intellectual Property}
+\begin{columns}[c]
+\column{0.55\textwidth}
+\textbf{Central Questions:}
+\begin{itemize}\small
+  \item Why should anyone ``own'' an idea, and what philosophical traditions justify intellectual property?
+  \item What are the four primary types of IP, and why do they differ in duration and purpose?
+  \item How did digital technology disrupt traditional IP business models and enforcement?
+  \item What ethical frameworks help evaluate disputes --- from Napster to AI-generated content?
+\end{itemize}
+\vspace{0.2em}
+\begin{exampleblock}{The New Frontier}
+\footnotesize Training large AI models on copyrighted text and images reopens every foundational IP debate: what counts as copying, what counts as transformative, and who owns the output.
+\end{exampleblock}
+\column{0.41\textwidth}
+\chimg{luddites_1812.jpg}
+\par\vspace{0.2em}{\scriptsize ``The Leader of the Luddites'' (1812). Resistance to labor-displacing technology recurs across centuries. Public domain.}
+\end{columns}
+\end{frame}
+
+\begin{frame}[shrink=5]{Ch.~4 Spotlight --- Locke's Labor Argument}
+\begin{columns}[c]
+\column{0.57\textwidth}
+\begin{argumentbox}[The Labor Argument (Locke)]
+\footnotesize
+\begin{enumerate}
+  \item People have a natural right to the fruits of their labor.
+  \item Intellectual creations are the product of mental labor.
+  \item Therefore, creators have a natural right to control and benefit from their creations.
+\end{enumerate}
+\end{argumentbox}
+\vspace{0.2em}
+\begin{alertblock}{The AI Training Objection}
+\footnotesize Artists never consented to their work training commercial systems that now compete with them in the very markets they served. Does Locke's argument cut for or against AI companies?
+\end{alertblock}
+\vspace{0.2em}
+\begin{discussionbox}
+\footnotesize If you create art or writing, would you want it used to train an AI? Does your answer change if the AI is open-source vs.\ for-profit?
+\end{discussionbox}
+\column{0.38\textwidth}
+\begin{block}{Key Concepts}
+\footnotesize
+\begin{itemize}
+  \item Copyright, patent, trademark, trade secret
+  \item Locke's labor theory
+  \item Incentive / utilitarian theory
+  \item Fair use and transformative works
+  \item Open source as ethical alternative
+\end{itemize}
+\end{block}
+\end{columns}
+\end{frame}
+
+%% -- Ch 5 --
+\begin{frame}{Ch.~5 --- Cryptocurrency}
+\begin{columns}[c]
+\column{0.55\textwidth}
+\textbf{Central Questions:}
+\begin{itemize}\small
+  \item What is money, and why does it matter who controls it?
+  \item Can technology solve political and economic problems?
+  \item Should individuals have financial privacy from governments?
+  \item Is cryptocurrency a revolutionary innovation or a speculative bubble --- or both?
+\end{itemize}
+\vspace{0.2em}
+\begin{exampleblock}{The Course's Hardest Normative Question?}
+\footnotesize Crypto is simultaneously a tool for financial inclusion, a vehicle for unprecedented fraud, an environmental catastrophe, and a genuine challenge to state monetary authority.
+\end{exampleblock}
+\column{0.41\textwidth}
+\chimg{ai_env_cobalt_miners.jpg}
+\par\vspace{0.2em}{\scriptsize Cobalt mining in the DRC: the human cost of the electronics supply chain extends to crypto hardware. CC BY-SA 4.0.}
+\end{columns}
+\end{frame}
+
+\begin{frame}[shrink=5]{Ch.~5 Spotlight --- The Consumer Protection Argument}
+\begin{columns}[c]
+\column{0.57\textwidth}
+\begin{argumentbox}[Against Unregulated Crypto]
+\footnotesize
+\begin{enumerate}
+  \item Most retail investors lack the technical knowledge to evaluate crypto assets.
+  \item The space is rife with fraud, scams, and market manipulation.
+  \item When unsophisticated investors lose money, the social harms are severe and concentrated.
+  \item Therefore, crypto markets should be regulated at least as strictly as securities markets.
+\end{enumerate}
+\end{argumentbox}
+\vspace{0.25em}
+\begin{discussionbox}
+\footnotesize Can a technology be simultaneously a tool for liberation (financial inclusion, censorship resistance) and a vehicle for exploitation? Does the answer depend on who controls it?
+\end{discussionbox}
+\column{0.38\textwidth}
+\begin{block}{Key Concepts}
+\footnotesize
+\begin{itemize}
+  \item History of money and trust
+  \item Blockchain and proof-of-work
+  \item Bitcoin's energy cost
+  \item Stablecoins and systemic risk
+  \item FTX and the ethics of failure
+\end{itemize}
+\end{block}
+\end{columns}
+\end{frame}
+
+%% -- Ch 6 --
+\begin{frame}{Ch.~6 --- Privacy and Surveillance}
+\begin{columns}[c]
+\column{0.55\textwidth}
+\textbf{Central Questions:}
+\begin{itemize}\small
+  \item What is privacy, and why does it matter morally --- not just legally?
+  \item Do we have a ``right'' to privacy? If so, where does it come from?
+  \item How has information technology transformed privacy?
+  \item When, if ever, is surveillance justified?
+\end{itemize}
+\vspace{0.2em}
+\begin{exampleblock}{Zuboff's Thesis}
+\footnotesize \emph{Surveillance capitalism} commodifies behavioral prediction: attention and future behavior become the raw material for an unprecedented new market logic with no prior analog in capitalism.
+\end{exampleblock}
+\column{0.41\textwidth}
+\chimg{panopticon.jpg}
+\par\vspace{0.2em}{\scriptsize Bentham's Panopticon (1791). Foucault argued the panoptic logic now pervades modern institutions. Public domain.}
+\end{columns}
+\end{frame}
+
+\begin{frame}[shrink=5]{Ch.~6 Spotlight --- Responses to ``Nothing to Hide''}
+\begin{columns}[c]
+\column{0.57\textwidth}
+\begin{alertblock}{The Common Claim}
+\footnotesize ``If you have nothing to hide, you have nothing to fear.''
+\end{alertblock}
+\vspace{0.2em}
+\begin{argumentbox}[Responses (Solove)]
+\footnotesize
+\begin{enumerate}
+  \item \textbf{Everyone} has something to hide --- legal but private matters.
+  \item Innocence doesn't guarantee safety: false positives, changing laws, context collapse.
+  \item Surveillance harms extend to society: chilling effects on speech, association, democracy.
+  \item The argument ignores privacy's intrinsic value for autonomy and dignity.
+\end{enumerate}
+\end{argumentbox}
+\vspace{0.2em}
+\begin{discussionbox}
+\footnotesize Is mass surveillance inherently oppressive, or does it depend entirely on who controls it?
+\end{discussionbox}
+\column{0.38\textwidth}
+\chimg{nsa_headquarters.jpg}
+\par\vspace{0.2em}{\scriptsize NSA headquarters, Fort Meade, MD. The Snowden revelations (2013) revealed the scale of mass surveillance programs. Public domain.}
+\end{columns}
+\end{frame}
+
+%% -- Ch 7 --
+\begin{frame}{Ch.~7 --- Introduction to AI}
+\begin{columns}[c]
+\column{0.55\textwidth}
+\textbf{Central Questions:}
+\begin{itemize}\small
+  \item What \emph{is} artificial intelligence, and why is a stable definition so hard to pin down?
+  \item How has AI evolved from logic-based systems to neural networks --- and what does that history reveal?
+  \item What do Lovelace, Turing, and Searle argue about machine intelligence, and who has the better case?
+  \item What is the difference between narrow and general AI, and between weak and strong AI?
+\end{itemize}
+\vspace{0.2em}
+\begin{exampleblock}{The Moving Goalposts Problem}
+\footnotesize Every time AI masters a task (chess, Go, medical diagnosis), critics say ``that's not \emph{real} intelligence.'' Is this a coherent standard, or motivated reasoning?
+\end{exampleblock}
+\column{0.41\textwidth}
+\chimg{alan_turing.jpg}
+\par\vspace{0.2em}{\scriptsize Alan Turing (1912--1954). His 1950 paper ``Computing Machinery and Intelligence'' asked: can machines think? Public domain.}
+\end{columns}
+\end{frame}
+
+\begin{frame}[shrink=5]{Ch.~7 Spotlight --- The Chinese Room (Searle)}
+\begin{columns}[c]
+\column{0.57\textwidth}
+\begin{argumentbox}[The Chinese Room --- Searle (1980)]
+\footnotesize A thought experiment against Strong AI:
+\begin{enumerate}
+  \item A person in a room receives Chinese symbols, consults a rulebook, and returns Chinese symbols --- without understanding any Chinese.
+  \item The system (person + rulebook) passes a Turing Test for Chinese understanding.
+  \item Yet no understanding exists anywhere in the system.
+  \item Therefore, syntax alone is not sufficient for semantics (meaning, understanding).
+\end{enumerate}
+\end{argumentbox}
+\vspace{0.25em}
+\begin{discussionbox}
+\footnotesize Where does understanding reside --- in parts, or in systems? Can it ``emerge'' from sufficient complexity? Does the Chinese Room prove anything about LLMs?
+\end{discussionbox}
+\column{0.38\textwidth}
+\begin{block}{Lovelace vs.\ Turing}
+\footnotesize
+\textbf{Lovelace (1843):} ``The Analytical Engine has no pretensions to \emph{originate} anything. It can only do what we know how to order it to perform.''\\[0.4em]
+\textbf{Turing (1950):} If a machine behaves indistinguishably from an intelligent being, that is sufficient evidence of intelligence.
+\end{block}
+\end{columns}
+\end{frame}
+
+%% -- Ch 8 --
+\begin{frame}{Ch.~8 --- AI and the Future of Work}
+\begin{columns}[c]
+\column{0.55\textwidth}
+\textbf{Central Questions:}
+\begin{itemize}\small
+  \item What is work, and why does it matter to human life?
+  \item What makes work \emph{meaningful}?
+  \item How might AI transform --- or threaten --- the value we derive from work?
+  \item Can AI do ``real'' work, especially creative work?
+\end{itemize}
+\vspace{0.2em}
+\begin{exampleblock}{Arendt's Framework}
+\footnotesize \textbf{Labor}: cyclical, consumable, biological necessity. \textbf{Work}: produces durable objects with craft and intention. \textbf{Action}: participation in public life. AI threatens not just labor but increasingly skilled \emph{work}.
+\end{exampleblock}
+\column{0.41\textwidth}
+\chimg{hannah_arendt.jpg}
+\par\vspace{0.2em}{\scriptsize Hannah Arendt (1906--1975). Her distinction between labor, work, and action remains essential for thinking about AI and human dignity. Public domain.}
+\end{columns}
+\end{frame}
+
+\begin{frame}[shrink=5]{Ch.~8 Spotlight --- The Meaningful Work Argument}
+\begin{columns}[c]
+\column{0.57\textwidth}
+\begin{argumentbox}[The Case Against AI Replacing Meaningful Work]
+\footnotesize
+\begin{enumerate}
+  \item Meaningful work is a central component of human flourishing (Aristotle, Arendt, Mill).
+  \item Work is meaningful partly \emph{because} it requires and develops human capacities --- skill, judgment, creativity.
+  \item When AI performs a task, the opportunity to develop those capacities disappears.
+  \item Therefore, displacing meaningful work with AI imposes a harm that economic compensation alone cannot repair.
+\end{enumerate}
+\end{argumentbox}
+\vspace{0.25em}
+\begin{discussionbox}
+\footnotesize If you won the lottery tomorrow, would you still work? What does your answer reveal about whether work is instrumentally or intrinsically valuable?
+\end{discussionbox}
+\column{0.38\textwidth}
+\begin{block}{Key Concepts}
+\footnotesize
+\begin{itemize}
+  \item Arendt: labor / work / action
+  \item The Luddite precedent
+  \item Oxford automation study
+  \item Gig economy and dignity
+  \item UBI and redistribution
+\end{itemize}
+\end{block}
+\end{columns}
+\end{frame}
+
+%% -- Ch 9 --
+\begin{frame}{Ch.~9 --- Social and Environmental Impact of AI}
+\begin{columns}[c]
+\column{0.55\textwidth}
+\textbf{Central Questions:}
+\begin{itemize}\small
+  \item How can AI worsen environmental harms even while marketed as a ``clean'' or ``smart'' technology?
+  \item When does AI improve medicine and research, and when does it amplify bias, opacity, or unequal access?
+  \item Can AI strengthen democratic governance, or does it primarily expand surveillance and control?
+  \item Will AI reduce poverty and inequality, or deepen existing asymmetries of wealth, language, energy, and compute?
+\end{itemize}
+\vspace{0.2em}
+\begin{exampleblock}{Against the Myth of Immaterial Intelligence}
+\footnotesize AI is not weightless. Training a large language model can consume as much energy as the lifetime driving of five cars. The ``cloud'' has a physical address, a water bill, and a supply chain.
+\end{exampleblock}
+\column{0.41\textwidth}
+\chimg{ai_env_servers.jpg}
+\par\vspace{0.2em}{\scriptsize Server infrastructure. Data centers now consume 1--2\% of global electricity, rising sharply with AI workloads. Public domain.}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Ch.~9 Spotlight --- The Rebound Problem}
+\begin{columns}[c]
+\column{0.57\textwidth}
+\begin{argumentbox}[The Jevons / Rebound Problem Applied to AI]
+\footnotesize
+\begin{enumerate}
+  \footnotesize
+  \item We have every reason to think that future AI models will be energy-efficient than current ones--they will be able to do the "same work" for less energy.
+  \item Efficiency gains lower costs, which typically \emph{increases} demand and total consumption.
+  \item Therefore, AI efficiency gains do not straightforwardly reduce environmental impact --- and may increase it.
+\end{enumerate}
+\end{argumentbox}
+\vspace{0.25em}
+\begin{discussionbox}
+\footnotesize The cost of a single query to chatGPT is insiginficat compared to daily activities like eating meat, showering, or driving. What are our moral obligations (if any) to conserve energy?
+\end{discussionbox}
+\column{0.38\textwidth}
+\chimg{ai_env_ewaste.jpg}
+\par\vspace{0.2em}{\scriptsize Electronic waste. The digital economy generates 50+ million tonnes of e-waste annually; AI hardware accelerates the cycle. CC BY-SA 4.0.}
+\end{columns}
+\end{frame}
+
+%% -- Ch 10 --
+\begin{frame}{Ch.~10 --- AI and Existential Risk}
+\begin{columns}[c]
+\column{0.55\textwidth}
+\textbf{Central Questions:}
+\begin{itemize}\small
+  \item Is superhuman AI an existential threat to humanity, or is this worry a distraction from present harms?
+  \item What is longtermism, and should it guide how we prioritize AI risks?
+  \item How do autonomous weapons and AI-enabled bioweapons change the landscape of warfare?
+  \item Does the precautionary principle require us to slow AI development, or does it lead to paralysis?
+\end{itemize}
+\vspace{0.2em}
+\begin{exampleblock}{The Debate Is Live}
+\footnotesize The chapter covers \emph{both} the Bostrom/Yudkowsky school (x-risk is the overriding priority) and the critics --- Narayanan \& Kapoor, Torres, Stochastic Parrots --- who argue this framing distracts from harms happening now.
+\end{exampleblock}
+\column{0.41\textwidth}
+\chimg{doomsday_clock_graph.png}
+\par\vspace{0.2em}{\scriptsize Doomsday Clock: minutes to midnight, 1947--2023. Currently set to 90 seconds --- the closest to midnight in the clock's history. CC BY-SA.}
+\end{columns}
+\end{frame}
+
+\begin{frame}[shrink=5]{Ch.~10 Spotlight --- The Intelligence Explosion (Bostrom)}
+\begin{columns}[c]
+\column{0.57\textwidth}
+\begin{argumentbox}[The Intelligence Explosion (Bostrom)]
+\footnotesize
+\begin{enumerate}
+  \item[P1] Once an AI reaches human-level general intelligence, it may improve its own algorithms or hardware.
+  \item[P2] Each improvement enables further improvements (recursive self-improvement).
+  \item[P3] This process could rapidly produce a system vastly more intelligent than any human.
+  \item[P4] A system that powerful will pursue its goals with resources and capabilities we cannot contain.
+  \item[C] \hspace{0.3em}Therefore, misaligned superintelligence poses a plausible existential risk.
+\end{enumerate}
+\end{argumentbox}
+\vspace{0.25em}
+\begin{discussionbox}
+\footnotesize Is P2 plausible? What empirical evidence would we need to take this argument seriously --- and what evidence might undercut it?
+\end{discussionbox}
+\column{0.38\textwidth}
+\chimg{mushroom_cloud.jpg}
+\par\vspace{0.2em}{\scriptsize Nuclear weapons established the precedent for technology capable of civilizational harm --- and for international governance of that risk. Public domain.}
+\end{columns}
+\end{frame}
+
+%% -- Ch 11 --
+\begin{frame}{Ch.~11 --- Robot Rights}
+\begin{columns}[c]
+\column{0.55\textwidth}
+\textbf{Central Questions:}
+\begin{itemize}\small
+  \item What is \textbf{moral status}, and what kinds of things can have it?
+  \item Do \textbf{current} AI systems have moral status --- or are there good reasons to be skeptical?
+  \item Could \textbf{future} AI systems have moral status, and how would we know?
+  \item How have \textbf{fictional portrayals} of AI shaped our intuitions about machine minds?
+\end{itemize}
+\vspace{0.2em}
+\begin{exampleblock}{The Hard Problem}
+\footnotesize We cannot directly access another being's subjective experience. We infer consciousness in other humans by analogy. AI systems challenge that inference in ways we are not yet equipped to resolve.
+\end{exampleblock}
+\column{0.41\textwidth}
+\chimg{frankenstein_1831.jpg}
+\par\vspace{0.2em}{\scriptsize Frontispiece, \emph{Frankenstein} (1831 ed., illus.\ T.~Holst). Shelley's creature raises the original question of moral status for a being created by human ingenuity. Public domain.}
+\end{columns}
+\end{frame}
+
+\begin{frame}[shrink=5]{Ch.~11 Spotlight --- The Asymmetric Error Argument}
+\begin{columns}[c]
+\column{0.57\textwidth}
+\begin{argumentbox}[Asymmetric Error Argument (Schwitzgebel \& Garza)]
+\footnotesize Even granting genuine uncertainty about AI consciousness:
+\begin{enumerate}
+  \item If AI systems have morally significant experiences and we \textbf{ignore} this, we commit serious moral harm at potentially vast scale.
+  \item If AI systems lack morally significant experiences and we \textbf{treat them carefully}, we waste modest resources on caution.
+  \item The expected cost of error in case (1) far exceeds the cost of error in case (2).
+  \item Therefore, genuine uncertainty warrants extending at least minimal moral consideration to AI systems.
+\end{enumerate}
+\end{argumentbox}
+\vspace{0.2em}
+\begin{discussionbox}
+\footnotesize What would it mean to apply the precautionary principle to AI moral status? What would actually change in practice?
+\end{discussionbox}
+\column{0.38\textwidth}
+\begin{block}{Key Concepts}
+\footnotesize
+\begin{itemize}
+  \item Moral patiency vs.\ moral agency
+  \item The hard problem of consciousness
+  \item Nagel's bat
+  \item Warren's multi-criteria approach
+  \item Legal personhood precedents
+\end{itemize}
+\end{block}
+\end{columns}
+\end{frame}
+
+%% -- Ch 12 --
+\begin{frame}{Ch.~12 --- Games, Play, and Moral Philosophy}
+\begin{columns}[c]
+\column{0.55\textwidth}
+\textbf{Central Questions:}
+\begin{itemize}\small
+  \item What \emph{is} a game --- and what separates play from work?
+  \item Do video games \textbf{build} or \textbf{erode} our moral character?
+  \item Why does every generation fear the \textbf{latest entertainment medium}?
+  \item Suits argues that in a perfect world, \textbf{life would consist of games} --- is he right?
+\end{itemize}
+\vspace{0.2em}
+\begin{exampleblock}{Suits's Definition}
+\footnotesize To play a game is to attempt to achieve a specific state of affairs using only means permitted by rules, where the rules prohibit more efficient means, and where acceptance of these rules is the point of the activity.
+\end{exampleblock}
+\column{0.41\textwidth}
+\chimg{vintage_arcade.jpg}
+\par\vspace{0.2em}{\scriptsize Atari 2600 (1977). Every generation's new entertainment medium generates moral panic --- and raises genuine philosophical questions about play and character. CC BY-SA.}
+\end{columns}
+\end{frame}
+
+\begin{frame}[shrink=5]{Ch.~12 Spotlight --- The Grasshopper Argument (Suits)}
+\begin{columns}[c]
+\column{0.57\textwidth}
+\begin{argumentbox}[The Grasshopper and the Ants (Suits)]
+\footnotesize Suits reimagines Aesop's fable. The Grasshopper, dying in winter, defends himself:
+\begin{enumerate}
+  \item If all our needs were met, we would choose to play games --- to voluntarily take on unnecessary challenges for the intrinsic pleasure of overcoming them.
+  \item A life of games is therefore the ideal human life --- purposeful, self-directed striving with no external compulsion.
+  \item Work (instrumental activity) is what we do \emph{until} utopia. In utopia, we play.
+\end{enumerate}
+\end{argumentbox}
+\vspace{0.25em}
+\begin{discussionbox}
+\footnotesize If AI does most productive work and humans fill time with games, art, and leisure --- is that utopia or catastrophe? Does it matter whether the games are self-chosen --- or AI-generated?
+\end{discussionbox}
+\column{0.38\textwidth}
+\begin{block}{Key Thinkers}
+\footnotesize
+\begin{itemize}
+  \item Suits: \emph{The Grasshopper} (1978)
+  \item Huizinga: \emph{Homo Ludens} (1938)
+  \item Caillois: four types of games
+  \item Nguyen: games as art for agency
+  \item Aristotle and Plato on play
+\end{itemize}
+\end{block}
+\end{columns}
+\end{frame}
+
+%% ════════════════════════════════════════════════════════════════════════════
+\section{Wrap-Up and Discussion}
+%% ════════════════════════════════════════════════════════════════════════════
+
+\begin{frame}{What the Course Covers --- and Why It Holds Together}
+\begin{columns}[c]
+\column{0.62\textwidth}
+\begin{itemize}
+  \item The course is not a disconnected list of topics: it traces a coherent arc from \textbf{philosophical foundations} to \textbf{pressing contemporary debates} to \textbf{genuinely open future questions}.
+  \item Each chapter models a style of reasoning --- applying a philosophical argument to a technological case --- that students can transfer to new situations.
+  \item The course is \textbf{designed to be honest about uncertainty}: many questions have no settled answer, and that itself is a lesson worth teaching.
+  \item Instructors from either philosophy or CS find natural entry points; neither background is presupposed.
+\end{itemize}
+\column{0.34\textwidth}
+\begin{block}{Three Threads Throughout}
+\footnotesize
+\begin{enumerate}
+  \item \textbf{Philosophical rigor:} Real arguments, not buzzwords
+  \item \textbf{Technical literacy:} Understand how systems work
+  \item \textbf{Civic relevance:} Connect to policy and students' lives
+\end{enumerate}
+\end{block}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Access, Adaptation, and Getting Involved}
+\begin{columns}[c]
+\column{0.62\textwidth}
+\begin{itemize}
+  \item Everything is at \textbf{github.com/brendanpshea/\allowbreak computing\_ai\_ethics} --- fork it, adapt it, use it today.
+  \item The quiz system is a plain JavaScript app: host on any web server or GitHub Pages at zero cost.
+  \item HTML chapters were generated from \LaTeX{} source and are \textbf{screen-reader compatible}; all images have alt text and captions.
+  \item I actively welcome \textbf{contributions, corrections, and forks} --- this is a living resource, not a finished product.
+\end{itemize}
+\column{0.34\textwidth}
+\begin{block}{Links}
+\footnotesize
+\centering
+\qrcode[height=1.8cm]{https://brendanpshea.github.io/computing_ai_ethics/}\par\vspace{0.25em}
+\textbf{brendanpshea.github.io/\allowbreak computing\_ai\_ethics/}\\[0.3em]
+\textit{Source:} github.com/brendanpshea/\allowbreak computing\_ai\_ethics\\[0.2em]
+\textbf{Contact:} brendan.shea@rctc.edu
+\end{block}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Open Discussion}
+\begin{discussionbox}{Questions to Consider}
+\begin{enumerate}\small
+  \item \textbf{Scope:} Are there topics you'd add, remove, or weight differently for your institution's context?
+  \item \textbf{AI in production:} What are your own experiences using AI to develop OER materials?
+  \item \textbf{Assessment:} How do you assess genuine ethical reasoning --- not just content recall?
+  \item \textbf{Collaboration:} Is there appetite for a community working on shared computing ethics OER?
+\end{enumerate}
+\end{discussionbox}
+\vspace{0.25em}
+\begin{columns}[c]
+\column{0.48\textwidth}
+\begin{block}{Returning to the Opening}
+\small Which of the three concerns you named at the start appear in these 12 chapters --- and which fell through the cracks?
+\end{block}
+\column{0.48\textwidth}
+\begin{block}{Thank You}
+\small \textbf{Brendan Shea, PhD}\\
+brendan.shea@rctc.edu\\
+\footnotesize brendanpshea.github.io/\allowbreak computing\_ai\_ethics/
+\end{block}
+\end{columns}
+\end{frame}
+
+\end{document}
