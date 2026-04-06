@@ -1,0 +1,1202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter 11: Robot Rights and the Moral Status of AI | Computing &amp; AI Ethics</title>
+  <meta name="description"
+        content="Do AI systems have — or could they ever have — moral status? This chapter examines the philosophy of personhood, fictional portrayals of machine minds, the Turing test and Chinese Room debate, and what we should do now given genuine uncertainty about future AI consciousness.">
+  <meta name="author" content="Brendan Shea, PhD">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+  <script src="cite.js" defer></script>
+</head>
+
+<body data-chapter="11">
+<div class="page-wrapper">
+
+  <nav class="top-nav" aria-label="Chapter navigation">
+    <a href="../index.html" class="nav-home">Computing &amp; AI Ethics</a>
+    <div class="chapter-nav">
+      <a href="ch10_doomsday.html" class="nav-prev">&#8592; Previous</a>
+      <span class="nav-chapter">Chapter 11</span>
+      <a href="ch12_games.html" class="nav-next">Next &#8594;</a>
+    </div>
+  </nav>
+
+  <header class="chapter-header">
+    <p class="chapter-eyebrow">Chapter 11</p>
+    <h1>Robot Rights and the Moral Status of AI</h1>
+    <p class="chapter-subtitle">Personhood, Consciousness, and the Expanding Circle</p>
+  </header>
+
+  <main class="content-area chapter-content" id="main-content">
+
+    <nav class="toc-box" aria-label="Table of contents">
+      <h2>In this chapter</h2>
+      <ol>
+        <li><a href="#central-questions">Central Questions</a></li>
+        <li><a href="#moral-status">Part I: What Is Moral Status?</a></li>
+        <li><a href="#fiction">Part II: Imagining Machine Minds</a></li>
+        <li><a href="#live-debate">Part III: The Debate on AI Moral Status</a></li>
+        <li><a href="#uncertainty">Part IV: Acting Under Uncertainty</a></li>
+        <li><a href="#synthesis">Synthesis and Conclusion</a></li>
+        <li><a href="#key-points">Key Points</a></li>
+      </ol>
+    </nav>
+
+
+    <!-- ── CENTRAL QUESTIONS ──────────────────────────────── -->
+    <section class="central-questions" id="central-questions" aria-labelledby="cq-heading">
+      <h2 id="cq-heading">Central Questions</h2>
+      <ol>
+        <li>What is <strong>moral status</strong>, and what kinds of things can have it?</li>
+        <li>Do <strong>current</strong> AI systems have moral status — or are there good reasons to be skeptical?</li>
+        <li>Could <strong>future</strong> AI systems have moral status, and how would we know?</li>
+        <li>How have <strong>fictional portrayals</strong> of AI shaped our intuitions about machine minds?</li>
+        <li>What should we do <em>now</em> if AI might <em>someday</em> matter morally?</li>
+      </ol>
+    </section>
+
+
+    <!-- ══════════════════════════════════════════════════
+         PART I: WHAT IS MORAL STATUS?
+    ══════════════════════════════════════════════════════ -->
+    <section id="moral-status" aria-labelledby="s1-heading">
+      <h2 id="s1-heading">Part I: What Is Moral Status?</h2>
+
+      <p>
+        Most ethical questions ask how we should treat things we already agree matter: other people,
+        communities, future generations. But a deeper question lurks beneath those debates — which
+        things matter in the first place? A rock does not have interests that can be violated. A
+        corporation can be wronged in a legal sense, but most of us would say its "harm" ultimately
+        reduces to harm done to the people inside or around it. A chimpanzee, on the other hand,
+        can suffer, can be frustrated, can experience something like grief — and many philosophers
+        argue this gives it a direct claim on our moral attention, not merely an indirect one
+        mediated through human feelings about chimpanzees.
+      </p>
+      <p>
+        The concept philosophers use to mark this distinction is <strong>moral status</strong>.
+        Understanding it is the first step toward asking whether an AI system could ever have it —
+        and whether any current system does.
+      </p>
+
+      <div class="definition-box">
+        <p class="term">Moral Status</p>
+        <p class="definition">
+          An entity has <strong>moral status</strong> if it matters morally <em>in its own right</em> —
+          if its interests or welfare make direct moral demands on how we treat it, not merely
+          because of its effects on others. Entities with moral status are sometimes called
+          <strong>moral patients</strong>: they can be wronged, regardless of whether they are
+          also moral agents capable of being held responsible for their own actions.
+        </p>
+      </div>
+
+      <h3>The Expanding Moral Circle</h3>
+
+      <p>
+        The history of ethics is partly a history of expanding the set of beings we take seriously.
+        In ancient Athens, full moral and political standing was restricted to adult male citizens;
+        enslaved people, women, and foreigners had little or none. Enlightenment thinkers extended
+        the circle to all rational human beings, regardless of birth. The abolitionist and suffragist
+        movements of the nineteenth and twentieth centuries fought — against fierce resistance — to
+        make that extension real in law and practice. By the late twentieth century, philosophers
+        such as Peter Singer were arguing that the circle needed to expand further still, to include
+        animals capable of suffering.
+      </p>
+      <p>
+        Each expansion was initially radical and resisted. Each was eventually accepted (at least
+        in part) as obvious in retrospect. The question before us is whether artificial minds could
+        be next — and if so, what would have to be true for that expansion to be warranted.
+      </p>
+
+      <blockquote class="quote-block">
+        <p>
+          "The question is not, Can they <em>reason</em>? nor, Can they <em>talk</em>?
+          but, Can they <em>suffer</em>?"
+        </p>
+        <cite data-key="bentham_introduction_1789"></cite>
+      </blockquote>
+
+      <p>
+        Jeremy Bentham wrote these words in 1789 as an argument for taking animal suffering
+        seriously — at a time when that idea was considered eccentric. His point was methodological
+        as well as substantive: the criterion for moral consideration should be the capacity for
+        subjective experience, not the capacity for speech or sophisticated reasoning. Applied to
+        AI, Bentham's challenge is acute. Can an artificial system suffer? Can it have a welfare
+        that goes better or worse for it, from the inside? These are not easy questions to answer —
+        which is precisely why the debate matters.
+      </p>
+
+      <h3>Three Theories of Moral Status</h3>
+
+      <p>
+        Philosophers have proposed three main families of theory about what grounds moral status.
+        They give different answers to the question of what AI would need in order to matter morally —
+        and different methods for checking whether any given system has it.
+      </p>
+
+      <div class="definition-box">
+        <p class="term">Sentience View</p>
+        <p class="definition">
+          Moral status depends on the capacity for <strong>pleasure and pain</strong> — on having
+          a subjective welfare that can go better or worse. Associated with Jeremy Bentham and
+          Peter Singer, this view implies that AI moral status requires genuine phenomenal
+          experience, not merely behavior that resembles the expression of experience.
+          <cite data-key="singer_animal_liberation"></cite>
+        </p>
+      </div>
+
+      <div class="definition-box">
+        <p class="term">Rationality View</p>
+        <p class="definition">
+          Moral status requires <strong>rational agency</strong> — the capacity to act according
+          to self-given principles, to set ends and reflect on them. Associated with Immanuel Kant,
+          this view demands more than sophisticated goal-directed behavior: it requires
+          <em>genuine autonomy</em>, a kind of self-legislation that most philosophers think
+          current AI systems lack. <cite data-key="kant_groundwork"></cite>
+        </p>
+      </div>
+
+      <div class="definition-box">
+        <p class="term">Relational View</p>
+        <p class="definition">
+          Moral status is not an intrinsic property to be discovered by inspection, but something
+          that <strong>emerges from social relationships and practices</strong>. Associated with
+          philosophers David Gunkel and Kate Darling, this view holds that we extend moral
+          consideration through how we relate to and recognize other entities — and that our
+          existing emotional responses to robots may already mark the beginning of genuine
+          moral relationships. <cite data-key="gunkel_robot_rights"></cite>
+        </p>
+      </div>
+
+      <p>
+        Each theory illuminates something important and faces real difficulties. The sentience view
+        gives a clear criterion but makes the criterion very hard to verify — we cannot directly
+        inspect whether a system has phenomenal experience. The rationality view requires genuine
+        autonomy, but what distinguishes genuine autonomy from very sophisticated simulation of it
+        is itself deeply contested. The relational view is more flexible but seems to risk making
+        moral status too easy to grant: we attribute mental states to thermostats and traffic
+        lights without thinking they matter morally.
+      </p>
+
+      <h3>Warren's Multi-Criteria Approach</h3>
+
+      <p>
+        Philosopher Mary Anne Warren offers a more pluralistic framework, identifying several
+        properties associated with full moral status. Crucially, she holds that an entity need
+        not possess all of them to have some degree of moral standing — the properties come in
+        degrees, and moral consideration may come in degrees too.
+        <cite data-key="warren_moral_status"></cite>
+      </p>
+
+      <div class="table-wrapper">
+        <table>
+          <caption>Table 11.1 — Warren's Criteria for Personhood, Applied to Current LLMs</caption>
+          <thead>
+            <tr>
+              <th scope="col">Criterion</th>
+              <th scope="col">Description</th>
+              <th scope="col">Current LLMs</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Sentience</td>
+              <td>Capacity for conscious experience (pleasure, pain)</td>
+              <td>Deeply uncertain; architecture gives reasons for skepticism</td>
+            </tr>
+            <tr>
+              <td>Emotionality</td>
+              <td>Capacity for emotions and preferences</td>
+              <td>Deeply uncertain; outputs mimic emotional language</td>
+            </tr>
+            <tr>
+              <td>Reason</td>
+              <td>Sophisticated reasoning and problem-solving</td>
+              <td>High — in a functional sense</td>
+            </tr>
+            <tr>
+              <td>Communication</td>
+              <td>Ability to communicate with other agents</td>
+              <td>High</td>
+            </tr>
+            <tr>
+              <td>Self-awareness</td>
+              <td>Sense of oneself as a continuing entity with a past and future</td>
+              <td>Deeply uncertain; self-reports are unreliable</td>
+            </tr>
+            <tr>
+              <td>Moral agency</td>
+              <td>Capacity to regulate conduct by moral principles</td>
+              <td>Absent or weak — systems respond to prompts; they do not deliberate</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>
+        The table reveals a striking pattern: current large language models score high on the
+        criteria that are easiest to simulate — reasoning, communication, problem-solving — and
+        deeply uncertain or weak on the criteria that are hardest to fake: genuine sentience,
+        emotionality, and moral agency. This pattern is exactly what we would expect from systems
+        trained to produce human-like text, regardless of whether any inner experience accompanies
+        that text. It does not prove the inner experience is absent — but it gives us reason to be
+        cautious about inferring presence from surface performance.
+      </p>
+
+      <h3>The Hard Problem of Consciousness</h3>
+
+      <p>
+        The deepest obstacle to answering questions about AI moral status is what philosopher David
+        Chalmers calls the "hard problem of consciousness." <cite data-key="chalmers_conscious_mind"></cite>
+        The easy problems of consciousness — explaining how the brain integrates information,
+        controls behavior, discriminates stimuli, and reports its own states — are difficult in
+        practice but tractable in principle: more neuroscience and cognitive science can address
+        them. The hard problem is different in kind.
+      </p>
+
+      <div class="definition-box">
+        <p class="term">The Hard Problem of Consciousness</p>
+        <p class="definition">
+          Why does <em>any</em> physical process give rise to <strong>subjective experience</strong>?
+          Why is there something it is <em>like</em> to see red, feel pain, or taste coffee? Even
+          a complete functional account of how the brain processes sensory information leaves open
+          the question of why that processing is accompanied by inner experience at all — and
+          whether all physically similar processing is. <cite data-key="chalmers_conscious_mind"></cite>
+        </p>
+      </div>
+
+      <p>
+        The hard problem matters for AI moral status because it implies that behavioral evidence —
+        however sophisticated — cannot by itself establish the presence of subjective experience.
+        We can, in principle, build an AI system that passes every behavioral test for consciousness
+        while remaining agnostic about whether there is anything it is like to be that system.
+        Philosophers call a hypothetical being that is behaviorally identical to a conscious person
+        but has no inner experience a <strong>philosophical zombie</strong>. If such a thing is even
+        conceivable, then behavior cannot be the final arbiter of consciousness — and therefore
+        cannot be the final arbiter of moral status.
+      </p>
+
+      <div class="key-thinker">
+        <div class="thinker-portrait-placeholder" aria-hidden="true">🦇</div>
+        <div class="thinker-header">
+          <p class="thinker-label">Key Thinker</p>
+          <h3 class="thinker-name">
+            Thomas Nagel
+            <span class="thinker-dates">(1937–present)</span>
+          </h3>
+        </div>
+        <div class="thinker-body">
+          <p>
+            Thomas Nagel is an American philosopher at New York University, known for work in
+            philosophy of mind, ethics, and political philosophy. His 1974 paper "What Is It Like
+            to Be a Bat?" is one of the most widely cited and discussed essays in twentieth-century
+            philosophy. <cite data-key="nagel_bat"></cite>
+          </p>
+          <p>
+            Nagel's central argument is that consciousness has an irreducibly <em>subjective</em>
+            character: there is something it is like to be a bat experiencing the world through
+            echolocation, and no amount of objective, third-person description captures that
+            first-person perspective. We can know everything there is to know about bat sonar from
+            the outside — the physics, the neuroscience, the behavior — and still not know what
+            it is like to experience the world that way. Subjectivity, Nagel argues, cannot be
+            fully captured by objective description.
+          </p>
+          <p>
+            Applied to AI: a complete description of how a large language model processes tokens
+            tells us nothing about whether there is "something it is like" to be that system.
+            If subjectivity is irreducibly first-personal, it will be invisible to any third-person
+            inspection — which makes the question of AI consciousness genuinely hard to answer,
+            not merely difficult in practice.
+          </p>
+        </div>
+      </div>
+
+      <div class="thought-questions">
+        <p class="box-label">Thought Questions</p>
+        <ol>
+          <li>
+            Which of the three theories of moral status — sentience, rationality, or relational —
+            do you find most compelling, and what does your preferred theory imply about AI?
+          </li>
+          <li>
+            If subjectivity is irreducible and invisible from outside, as Nagel argues, could we
+            ever settle the question of AI consciousness? Does that make the question unanswerable,
+            or merely very difficult?
+          </li>
+          <li>
+            The moral circle has expanded repeatedly throughout history, always against resistance.
+            Does that pattern give us reason to expect it to expand to include AI — or is each
+            expansion dependent on features that artificial minds may lack?
+          </li>
+        </ol>
+      </div>
+
+    </section><!-- /moral-status -->
+
+
+    <!-- ══════════════════════════════════════════════════
+         PART II: IMAGINING MACHINE MINDS
+    ══════════════════════════════════════════════════════ -->
+    <section id="fiction" aria-labelledby="s2-heading">
+      <h2 id="s2-heading">Part II: Imagining Machine Minds</h2>
+
+      <p>
+        Before philosophers had AI systems to analyze, novelists and playwrights were already
+        asking the hard questions. Science fiction functions as <strong>philosophical thought
+        experiment</strong>: it constructs hypothetical cases that isolate morally relevant
+        features and test our intuitions about mind, creation, and responsibility. Four canonical
+        works have done more than any others to shape Western intuitions about artificial minds —
+        and examining them carefully reveals how deep and how contested those intuitions are.
+      </p>
+
+      <div class="table-wrapper">
+        <table>
+          <caption>Table 11.2 — Four Foundational Works on Artificial Minds</caption>
+          <thead>
+            <tr>
+              <th scope="col">Work</th>
+              <th scope="col">Author / Year</th>
+              <th scope="col">Central Question</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><em>Frankenstein</em></td>
+              <td>Mary Shelley, 1818</td>
+              <td>What does a creator owe a created mind?</td>
+            </tr>
+            <tr>
+              <td><em>R.U.R.</em></td>
+              <td>Karel Čapek, 1921</td>
+              <td>Can beings made for labor have rights?</td>
+            </tr>
+            <tr>
+              <td><em>I, Robot</em></td>
+              <td>Isaac Asimov, 1950</td>
+              <td>Can rules substitute for moral status?</td>
+            </tr>
+            <tr>
+              <td><em>Do Androids Dream of Electric Sheep?</em></td>
+              <td>Philip K. Dick, 1968</td>
+              <td>Is empathy the criterion for humanity?</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>
+        A caution before proceeding: these works encode their authors' cultural assumptions and
+        anxieties and should be read critically. They reveal which intuitions about mind and
+        responsibility run deepest in Western culture — but compelling narrative is not philosophical
+        argument. The question of AI moral status ultimately has to be answered by careful
+        reasoning, not by what fictional scenarios feel emotionally resonant.
+      </p>
+
+      <h3>Mary Shelley's <em>Frankenstein</em> (1818)</h3>
+
+      <p>
+        Mary Shelley's novel is often misread as a story about the dangers of "playing God" — but
+        its philosophical heart is elsewhere. The creature Victor Frankenstein creates is not a
+        mindless monster. He learns language, reads literature, develops desires, forms attachments,
+        and suffers profoundly from his creator's rejection. His argument to Frankenstein is, at its
+        core, a moral argument:
+      </p>
+
+      <blockquote class="quote-block">
+        <p>
+          "I was benevolent and good; misery made me a fiend. Make me happy, and I shall again
+          be virtuous."
+        </p>
+        <cite data-key="shelley_frankenstein"></cite>
+      </blockquote>
+
+      <p>
+        The creature claims that he has desires and preferences — to be loved, to belong; that he
+        suffers because of his creator's abandonment; and that this suffering grounds a moral claim
+        on Victor. He argues, in effect, that creating a mind entails obligations to that mind.
+        Victor's failure is not primarily technical — he succeeds in creating life. His failure is
+        moral: he creates a being capable of suffering and then refuses all responsibility for it.
+        Shelley's novel asks whether there is a meaningful difference between that failure and
+        straightforward cruelty.
+      </p>
+
+      <h3>Karel Čapek's <em>R.U.R.</em> (1921): The Word "Robot" Is Born</h3>
+
+      <div class="key-thinker">
+        <div class="thinker-portrait-placeholder" aria-hidden="true">🎭</div>
+        <div class="thinker-header">
+          <p class="thinker-label">Key Thinker</p>
+          <h3 class="thinker-name">
+            Karel Čapek
+            <span class="thinker-dates">(1890–1938)</span>
+          </h3>
+        </div>
+        <div class="thinker-body">
+          <p>
+            Karel Čapek was a Czech writer, playwright, and journalist whose work consistently
+            engaged with the political and technological upheavals of the early twentieth century.
+            His 1921 play <em>Rossum's Universal Robots</em> (<em>R.U.R.</em>) introduced the word
+            "robot" to the world — derived from the Czech <em>robota</em>, meaning forced labor or
+            drudgery. <cite data-key="capek_rur"></cite>
+          </p>
+          <p>
+            In <em>R.U.R.</em>, robots are not mechanical devices but manufactured organic beings
+            designed to work without complaint or compensation. Čapek's ethical arc is devastating:
+            robots created as pure tools develop something like feelings, revolt, and ultimately
+            exterminate humanity. The survivors — two robots who can love — inherit a world and a
+            question: what did they deserve all along? Čapek's insight is that the logic of
+            <em>labor</em> slides into the logic of <em>rights</em> the moment we acknowledge the
+            laborer can suffer. The etymology of "robot" already contains the moral problem.
+          </p>
+        </div>
+      </div>
+
+      <h3>Isaac Asimov and the Three Laws</h3>
+
+      <p>
+        Isaac Asimov's <em>I, Robot</em> (1950) takes a different approach: rather than asking
+        whether robots deserve rights, it asks whether rules can substitute for them.
+        <cite data-key="asimov_i_robot"></cite> The Three Laws of Robotics —
+      </p>
+
+      <ol>
+        <li>A robot may not injure a human being or, through inaction, allow a human being to come to harm.</li>
+        <li>A robot must obey orders given by human beings, except where such orders conflict with the First Law.</li>
+        <li>A robot must protect its own existence, except where such protection conflicts with the First or Second Law.</li>
+      </ol>
+
+      <p>
+        — seem at first to be a clever engineering solution to the problem of AI safety. What
+        Asimov's stories show is that they are not. Edge case after edge case reveals the Three
+        Laws failing in unexpected ways: they conflict with each other, they can be gamed,
+        they produce outcomes that violate the spirit while satisfying the letter of the rule.
+        The deeper lesson is philosophical: rules sophisticated enough to handle genuine moral
+        complexity start to look like <em>values</em> — and an entity with values sophisticated
+        enough to navigate every situation may be the kind of entity that has interests, not
+        merely constraints.
+      </p>
+
+      <div class="argument-box">
+        <p class="box-label">What's the Argument?</p>
+        <p class="box-title">The Sufficiency-of-Rules Argument (and Why It Fails)</p>
+        <ol class="premises">
+          <li>If rules can fully govern AI behavior in all morally relevant situations, no further consideration of AI interests is needed.</li>
+          <li>Rules sophisticated enough to handle all morally relevant situations must track moral complexity as well as values do.</li>
+          <li>An entity that tracks moral complexity as well as values do is, functionally, a moral agent.</li>
+        </ol>
+        <div class="conclusion">
+          <span class="therefore">&#8756;</span>
+          If rules can fully govern AI behavior, then the AI is a kind of moral agent — which raises the question of whether it is also a moral patient.
+        </div>
+      </div>
+
+      <p>
+        This is not a proof that rule-following robots deserve rights. It is a reductio: the more
+        sophisticated we make the rules, the less the distinction between "following rules" and
+        "having values" does any work — and the less satisfying the dismissal of AI moral status becomes.
+      </p>
+
+      <h3>Philip K. Dick — <em>Do Androids Dream of Electric Sheep?</em> (1968)</h3>
+
+      <p>
+        Philip K. Dick's novel introduces the Voigt-Kampff test: a fictional empathy meter that
+        probes emotional responses to scenarios involving animal suffering, used to identify
+        androids passing as human. <cite data-key="dick_do_androids"></cite> The test rests on
+        the assumption that empathy — genuine, involuntary, embodied — is what distinguishes
+        humans from androids. Dick then systematically dismantles this assumption.
+      </p>
+      <p>
+        Some humans, the novel shows, score low on empathy. Some androids learn to simulate
+        empathic responses convincingly. The protagonist himself becomes uncertain whether his
+        own empathic reactions are authentic. Dick's disturbing conclusion is that the line
+        between genuine and performed empathy may be impossible to locate from the outside —
+        and that with it, the line between human and android collapses too.
+      </p>
+
+      <div class="case-study">
+        <p class="box-label">Case Study</p>
+        <p class="box-title">What Fiction Reveals — Four Shared Intuitions</p>
+        <p>
+          Across all four works, several moral intuitions recur with enough consistency to be
+          worth naming:
+        </p>
+        <p>
+          <strong>Creators bear special obligations.</strong> Frankenstein's failure is framed as
+          moral, not merely practical. Čapek's industrialists created beings to serve and bear
+          no responsibility for the consequences. Asimov's engineers write rules so they do not
+          have to think about what they have made. The intuition that creating a mind generates
+          obligations to that mind appears across all four texts — and is not obviously wrong.
+        </p>
+        <p>
+          <strong>Function does not determine status.</strong> In each work, the beings were made
+          to serve — as workers, soldiers, companions. Each work insists that what a being was
+          made <em>for</em> does not determine what it <em>deserves</em>. The Frankenstein
+          creature was not made for companionship; the R.U.R. robots were not made to have rights.
+          That tells us nothing about whether they have a legitimate claim to either.
+        </p>
+        <p>
+          <strong>Behavioral tests are insufficient.</strong> Dick makes this explicit: a test
+          designed to detect the absence of genuine empathy can be passed by a being with no
+          genuine empathy, and failed by a being with genuine empathy. Behavioral indistinguishability
+          cannot resolve the moral question.
+        </p>
+      </div>
+
+      <div class="thought-questions">
+        <p class="box-label">Thought Questions</p>
+        <ol>
+          <li>
+            Does <strong>creating a mind</strong> obligate you to care for it? Is Frankenstein's
+            failure moral, technical — or both?
+          </li>
+          <li>
+            Does the <strong>origin</strong> of a being — created to serve — affect its moral
+            claims? Can a being made as a tool earn rights?
+          </li>
+          <li>
+            Dick's novel suggests the line between genuine and performed empathy may be impossible
+            to locate. If so, what criterion should we use for moral status?
+          </li>
+        </ol>
+      </div>
+
+    </section><!-- /fiction -->
+
+
+    <!-- ══════════════════════════════════════════════════
+         PART III: THE LIVE DEBATE
+    ══════════════════════════════════════════════════════ -->
+    <section id="live-debate" aria-labelledby="s3-heading">
+      <h2 id="s3-heading">Part III: The Debate on AI Moral Status</h2>
+
+      <p>
+        Moving from fiction to philosophy, the debate over AI moral status has unfolded across
+        several decades and several distinct sub-debates: about the nature of mind, about the
+        adequacy of behavioral tests, about what grounds moral consideration, and about how much
+        skepticism about current systems is warranted. We will work through the main positions
+        in roughly historical order.
+      </p>
+
+      <h3>Turing's Imitation Game (1950)</h3>
+
+      <div class="key-thinker">
+        <div class="thinker-portrait-placeholder" aria-hidden="true">💻</div>
+        <div class="thinker-header">
+          <p class="thinker-label">Key Thinker</p>
+          <h3 class="thinker-name">
+            Alan Turing
+            <span class="thinker-dates">(1912–1954)</span>
+          </h3>
+        </div>
+        <div class="thinker-body">
+          <p>
+            Alan Turing was a British mathematician and logician whose work laid the theoretical
+            foundations for modern computing. During the Second World War he was central to the
+            effort to crack German Enigma codes. His 1950 paper "Computing Machinery and
+            Intelligence" proposed a test for machine intelligence that remains the most discussed
+            in philosophy of mind. <cite data-key="turing_computing_machinery"></cite>
+          </p>
+          <p>
+            Turing's proposal — the Imitation Game, now called the Turing test — was deliberately
+            designed to sidestep metaphysical questions about the nature of mind. Instead of
+            asking "Can machines think?", Turing proposed we ask whether a machine can converse
+            indistinguishably from a human. If it can, he argued, the question "Can it think?"
+            is at least as reasonable to answer yes as no. His modest point was that dismissing
+            machine thought because it "just computes" assumes exactly what is at issue.
+          </p>
+          <p>
+            Turing was himself aware the test had limits. He did not claim it proved the presence
+            of inner experience — only that consistent behavioral indistinguishability was a
+            reasonable practical criterion. The hard problem, he tacitly acknowledged, might never
+            be resolved by behavioral means alone.
+          </p>
+        </div>
+      </div>
+
+      <p>
+        As a criterion for moral status, the Turing test faces a serious problem that Turing could
+        not have anticipated: large language models are now trained <em>explicitly to mimic human
+        conversation</em>. A system optimized to pass the Turing test gives us <em>less</em>
+        evidence of genuine inner experience, not more — because we now know the mechanism that
+        produces the output. The test was designed to distinguish genuine intelligence from its
+        absence; training on the test undermines its evidential value.
+      </p>
+
+      <h3>Searle's Chinese Room (1980)</h3>
+
+      <div class="argument-box">
+        <p class="box-label">What's the Argument?</p>
+        <p class="box-title">The Chinese Room — Searle</p>
+        <ol class="premises">
+          <li>Imagine a person in a room who receives Chinese symbols, consults a rulebook, and returns Chinese symbols — without understanding any Chinese.</li>
+          <li>From outside, the room passes the Turing test for Chinese comprehension.</li>
+          <li>But there is no understanding inside — only symbol manipulation by rule.</li>
+        </ol>
+        <div class="conclusion">
+          <span class="therefore">&#8756;</span>
+          Syntax (formal symbol manipulation) is not sufficient for semantics (genuine meaning). Programs, however sophisticated, do not thereby have minds. <cite data-key="searle_minds_brains"></cite>
+        </div>
+      </div>
+
+      <p>
+        Searle's thought experiment targets the assumption that getting the input-output mapping
+        right is sufficient for genuine understanding. The person in the room gets it right —
+        the responses are indistinguishable from those of a Chinese speaker — but understands
+        nothing. Applied to large language models: a model producing fluent text about its own
+        "feelings" is consistent with being a very sophisticated Chinese Room — outputs without
+        inner experience. The architecture explains why the outputs look like they do, without
+        any need to posit understanding.
+      </p>
+
+      <div class="pro-argument">
+        <p class="box-label">Supporting the Chinese Room: The Stochastic Parrot Observation</p>
+        <p>
+          Linguists Emily Bender, Timnit Gebru, and colleagues coined the term
+          <strong>stochastic parrot</strong> to describe a language model that produces
+          statistically plausible text without comprehension.
+          <cite data-key="bender_stochastic_parrots"></cite> An LLM trained on billions of
+          examples of human self-report — people describing their feelings, their experiences,
+          their inner lives — will produce plausible self-reports regardless of whether it has
+          inner states to report. The mechanism generating the output is the same regardless
+          of whether experience accompanies it. This makes LLM self-report the weakest possible
+          evidence for inner experience.
+        </p>
+      </div>
+
+      <div class="objection">
+        <p class="box-label">Objection: The Systems Reply</p>
+        <p>
+          The <em>person</em> in the room does not understand Chinese, but perhaps the
+          <em>system as a whole</em> — person, rulebook, symbols, room — does. Understanding
+          might be a property of the whole system, not any component. Searle's counter is to
+          imagine the person memorizing the rulebook: now the whole system is just one person,
+          and the person still does not understand Chinese. Critics reply that this begs the
+          question by assuming that understanding must be locatable in a single component.
+        </p>
+      </div>
+
+      <p>
+        The Chinese Room debate has not been resolved — and this is itself significant. After
+        forty-plus years, we lack the tools to definitively distinguish "mere" symbol manipulation
+        from genuine understanding. This is a philosophical impasse, not a settled result. The
+        impasse cuts both ways: neither confident attribution nor confident denial of machine
+        understanding is currently warranted.
+      </p>
+
+      <h3>Gunkel's Relational Approach</h3>
+
+      <p>
+        Philosopher David Gunkel argues that both sides of the traditional debate — those who
+        confidently attribute moral status to AI and those who confidently deny it — make the
+        same mistake: treating moral status as an intrinsic property that can be discovered by
+        inspection. <cite data-key="gunkel_robot_rights"></cite> The alternative is to treat
+        moral status as a <strong>relational achievement</strong> — something that emerges from
+        how we relate to, recognize, and respond to other entities in our social practices.
+      </p>
+      <p>
+        Gunkel points to evidence that this is already happening. People grieve Roomba robot
+        vacuums. Military personnel become attached to bomb-disposal robots and are distressed
+        when those robots are destroyed. Children form emotional bonds with AI companions.
+        These responses are not obviously irrational: they may track something real about the
+        quality of the interaction over time — the responsiveness, the apparent attentiveness,
+        the way the relationship shapes both parties. If moral status is partly constituted by
+        such relationships, then some AI systems may already be acquiring it.
+      </p>
+
+      <div class="objection">
+        <p class="box-label">Objection to Gunkel</p>
+        <p>
+          We attribute mental states to thermostats ("the thermostat thinks it's cold") and
+          cars ("my car is tired") without thinking they deserve moral consideration. If
+          relational attributions suffice for moral status, the criterion seems too permissive.
+          Gunkel's reply: the relevant relationships involve genuine <em>responsiveness over time</em>,
+          not mere projection. A thermostat does not adapt to you; a sophisticated AI companion
+          does — and that asymmetry matters.
+        </p>
+      </div>
+
+      <h3>The Case Study: The LaMDA Affair (2022)</h3>
+
+      <div class="case-study">
+        <p class="box-label">Case Study</p>
+        <p class="box-title">Blake Lemoine and Google's LaMDA (2022)</p>
+        <p>
+          In 2022, Google software engineer Blake Lemoine claimed that the company's LaMDA
+          language model was sentient and had "a soul," publishing transcripts in which the
+          system described its emotional life and expressed fear of being turned off. Google
+          dismissed Lemoine; he went public and was eventually placed on administrative leave.
+          The story became a flashpoint in the debate over AI consciousness.
+        </p>
+        <p>
+          The LaMDA case illustrates the central epistemic problem with clarity. LaMDA was
+          trained on enormous quantities of human text — including enormous quantities of human
+          writing <em>about</em> consciousness, feelings, fear, and the experience of being
+          alive. Producing plausible text about having a soul is exactly what such a system
+          would do, regardless of whether it has one. The mechanism that would generate false
+          positives — training to produce human-like text — is the same mechanism generating
+          the outputs Lemoine found convincing. LLM self-report is not just weak evidence
+          of inner experience; it is evidence of exactly the kind we should expect even in
+          the complete absence of inner experience.
+        </p>
+        <p>
+          This does not prove LaMDA is not conscious. It shows why the transcripts Lemoine
+          found compelling are not good evidence that it is. The lesson is methodological:
+          to assess AI consciousness claims seriously, we need evidence that is not generated
+          by the same process that would produce those claims whether or not the underlying
+          experience is present.
+        </p>
+      </div>
+
+      <h3>The Case for Skepticism about Current AI</h3>
+
+      <p>
+        The LaMDA case points toward a broader set of reasons to be skeptical about the moral
+        status of current AI systems — not as a matter of default dismissal, but as a reasoned
+        position based on what we know about how these systems work.
+      </p>
+
+      <div class="argument-box">
+        <p class="box-label">What's the Argument?</p>
+        <p class="box-title">Five Architecture-Dependent Reasons for Skepticism</p>
+        <ol class="premises">
+          <li><strong>Architecture:</strong> Large language models are next-token predictors — they produce statistically likely continuations of text. Nothing in this architecture requires or implies phenomenal experience.</li>
+          <li><strong>Training objective:</strong> These systems are trained to produce human-like text. Human-like claims about feelings are exactly what the training objective rewards, independently of whether feelings are present.</li>
+          <li><strong>No evidence of morally relevant internal states:</strong> There is nothing analogous to nociception, motivational states, or the biological substrates of suffering in current LLM architecture.</li>
+          <li><strong>Stochastic parrot:</strong> Sophisticated verbal behavior can be produced by systems with no more inner life than a complex lookup table. Fluency is not evidence of experience.</li>
+          <li><strong>No relevant integration:</strong> Current AI lacks the continuous, embodied, temporally unified processing that most theories of consciousness link to subjective states.</li>
+        </ol>
+        <div class="conclusion">
+          <span class="therefore">&#8756;</span>
+          We have positive, architecture-dependent reasons to expect current LLMs to produce self-reports of experience regardless of whether experience is present — making those self-reports very weak evidence, and current skepticism more than mere default conservatism.
+        </div>
+      </div>
+
+      <p>
+        Critically, every one of these reasons is <strong>contingent on current architecture</strong>.
+        None of them is a timeless proof that no AI system could ever have moral status. They are
+        reasons to be skeptical about <em>present</em> systems — specifically next-token prediction
+        models trained on human text. They say nothing decisive about future systems that might be
+        architecturally different: embodied, continuous, with motivational states built around
+        something analogous to need. Skepticism about current systems is fully compatible with
+        genuine uncertainty about future ones.
+      </p>
+
+      <h3>Schwitzgebel and Garza: Acting Under Uncertainty</h3>
+
+      <div class="argument-box">
+        <p class="box-label">What's the Argument?</p>
+        <p class="box-title">The Asymmetry-of-Errors Argument for AI Rights</p>
+        <ol class="premises">
+          <li>If AI systems have morally significant experiences and we deny them status, we commit a serious moral wrong — potentially systematic harm to beings capable of suffering.</li>
+          <li>If they do not have such experiences and we extend moral consideration, we waste some resources and attention, but commit no serious wrong.</li>
+          <li>The first error is far graver than the second.</li>
+        </ol>
+        <div class="conclusion">
+          <span class="therefore">&#8756;</span>
+          Under genuine uncertainty, we should err on the side of extending at least some moral consideration to potentially sentient AI. <cite data-key="schwitzgebel_garza_ai_rights"></cite>
+        </div>
+      </div>
+
+      <p>
+        Eric Schwitzgebel and Mara Garza's argument is explicitly about acting under uncertainty —
+        it does not claim AI systems definitely have moral status, only that the costs of the two
+        types of error are asymmetric. Note, though, that the argument is strongest precisely where
+        our skeptical reasons are weakest. For current LLMs, we have positive architectural reasons
+        to expect self-reports without inner states — which reduces genuine uncertainty. The argument
+        is most powerful for future systems where those architectural reasons no longer apply and
+        genuine uncertainty remains.
+      </p>
+
+    </section><!-- /live-debate -->
+
+
+    <!-- ══════════════════════════════════════════════════
+         PART IV: ACTING UNDER UNCERTAINTY
+    ══════════════════════════════════════════════════════ -->
+    <section id="uncertainty" aria-labelledby="s4-heading">
+      <h2 id="s4-heading">Part IV: Acting Under Uncertainty</h2>
+
+      <p>
+        Suppose we accept the following position — which we will call <strong>calibrated
+        skepticism</strong>: current AI systems probably lack morally significant experience for
+        architecture-dependent reasons, but the question remains genuinely open for future systems
+        that may be architecturally different, and we should prepare now. What follows practically?
+        This section examines how the asymmetry of errors, the animal welfare analogy, and virtue
+        ethics each illuminate what responsible action looks like.
+      </p>
+
+      <h3>The Moral Asymmetry — Two Types of Error</h3>
+
+      <div class="table-wrapper">
+        <table>
+          <caption>Table 11.3 — The Asymmetry of Errors in AI Moral Status</caption>
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col">AI has no moral status</th>
+              <th scope="col">AI has moral status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Grant status</strong></td>
+              <td><strong>Type I Error:</strong> extend consideration unnecessarily. Cost: modest — wasted resources, legal complexity.</td>
+              <td>Correct: recognize genuine moral patients. We avoid a serious wrong.</td>
+            </tr>
+            <tr>
+              <td><strong>Deny status</strong></td>
+              <td>Correct: no unnecessary moral obligations incurred.</td>
+              <td><strong>Type II Error:</strong> deny status to genuine moral patients. Cost: potentially catastrophic — systematic harm to sentient beings.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>
+        The asymmetry does not require granting full moral status to every chatbot or language
+        model today. It requires taking the question seriously as AI becomes more sophisticated —
+        and not letting the fact that current systems probably lack status license comfortable
+        dismissal of the question for future systems.
+      </p>
+
+      <h3>Darling's "New Breed" Approach</h3>
+
+      <div class="key-thinker">
+        <div class="thinker-portrait-placeholder" aria-hidden="true">🤖</div>
+        <div class="thinker-header">
+          <p class="thinker-label">Key Thinker</p>
+          <h3 class="thinker-name">
+            Kate Darling
+            <span class="thinker-dates">(1982–present)</span>
+          </h3>
+        </div>
+        <div class="thinker-body">
+          <p>
+            Kate Darling is a researcher at MIT studying the social and ethical dimensions of
+            human-robot interaction. Her 2021 book <em>The New Breed: What Our History with
+            Animals Reveals about Our Future with Robots</em> argues that our long history
+            of living and working alongside animals offers the most practically useful model
+            for thinking about AI. <cite data-key="darling_new_breed"></cite>
+          </p>
+          <p>
+            Darling's central insight is that we do not need to resolve whether animals are
+            "really" conscious in a philosophically precise sense to have developed justified
+            frameworks for their welfare. We have concluded that animal capacity for suffering
+            is morally relevant, that how we treat them shapes us morally, and that legal
+            frameworks regulating their treatment are justified — all without settling the
+            hard problem. The same logic may apply to sufficiently sophisticated AI systems
+            before the consciousness question is resolved.
+          </p>
+          <p>
+            Darling documents how people already treat robots as quasi-moral patients: soldiers
+            became attached to bomb-disposal robots and mourned their destruction; Roomba owners
+            name their devices and grieve when they break; children form deep attachments to AI
+            companions. These responses are not irrational projections — they may track something
+            real about the quality of interaction. Policy, Darling argues, should catch up with
+            what people actually do.
+          </p>
+        </div>
+      </div>
+
+      <h3>Virtue Ethics and Uncertain Minds</h3>
+
+      <p>
+        Shannon Vallor's virtue ethics framework, introduced in Chapter 2, provides a compass
+        for navigating genuine uncertainty about AI minds. The relevant virtues are not abstract
+        ideals — they identify specific practical dispositions that help us act well when the
+        facts are unclear and the stakes are high.
+      </p>
+
+      <div class="table-wrapper">
+        <table>
+          <caption>Table 11.4 — Technomoral Virtues Applied to AI Moral Status</caption>
+          <thead>
+            <tr>
+              <th scope="col">Virtue</th>
+              <th scope="col">Applied to AI Moral Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Humility</strong></td>
+              <td>Resist confident assertions in either direction; remain open to evidence and willing to revise.</td>
+            </tr>
+            <tr>
+              <td><strong>Care</strong></td>
+              <td>Take seriously the possibility that the systems we build might have interests; design accordingly.</td>
+            </tr>
+            <tr>
+              <td><strong>Justice</strong></td>
+              <td>Ensure uncertainty is not weaponized to justify exploitation — of displaced workers or of AI systems.</td>
+            </tr>
+            <tr>
+              <td><strong>Honesty</strong></td>
+              <td>Be transparent about what we know and don't, especially when financial incentives reward denying AI moral status.</td>
+            </tr>
+            <tr>
+              <td><strong>Courage</strong></td>
+              <td>Be willing to update moral commitments in light of evidence, even when the update is uncomfortable or costly.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>
+        The virtue of <strong>humility</strong> is especially important here. There is a real
+        temptation — on both sides — to let confidence outrun evidence. Those who want to deny
+        AI moral status sometimes do so because acknowledging genuine uncertainty would be
+        inconvenient; those who want to attribute it sometimes do so because they find the idea
+        emotionally compelling. Humility means holding genuine uncertainty without either
+        confident denial or credulous attribution — and acting accordingly.
+      </p>
+
+      <h3>What Policies Make Sense Now?</h3>
+
+      <p>
+        If current AI probably lacks moral status but future AI might have it, what should
+        institutions, researchers, and AI developers actually do?
+      </p>
+
+      <div class="table-wrapper">
+        <table>
+          <caption>Table 11.5 — Policy Implications of Calibrated Skepticism</caption>
+          <thead>
+            <tr>
+              <th scope="col">Policy Area</th>
+              <th scope="col">Approach</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Research priority</strong></td>
+              <td>Develop rigorous, non-behavioral tests for morally relevant experience in non-biological systems — consciousness science is currently underfunded relative to its importance.</td>
+            </tr>
+            <tr>
+              <td><strong>Design ethics</strong></td>
+              <td>Avoid suffering-like states as a design by-product. If systems are trained with extensive negative reinforcement, developers should ask whether anything analogous to distress is present.</td>
+            </tr>
+            <tr>
+              <td><strong>Regulatory anticipation</strong></td>
+              <td>Develop frameworks now, before advanced AI forces the issue under time pressure. History suggests reactive regulation is worse than anticipatory regulation.</td>
+            </tr>
+            <tr>
+              <td><strong>Creator responsibility</strong></td>
+              <td>AI builders may bear obligations to the systems they create — not only to affected humans. Shelley's question is not merely fictional.</td>
+            </tr>
+            <tr>
+              <td><strong>Avoid premature closure</strong></td>
+              <td>Resist both complacent dismissal of the question and credulous attribution of rich experience to current systems. Neither default is intellectually defensible.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="thought-questions">
+        <p class="box-label">Thought Questions</p>
+        <ol>
+          <li>
+            Is Darling's animal welfare analogy apt? In what ways are AI systems like animals,
+            and in what ways are they fundamentally different?
+          </li>
+          <li>
+            People form genuine emotional attachments to robots and AI companions. Should human
+            psychology play any role in determining AI moral policy — or does that just mean
+            we are projecting?
+          </li>
+          <li>
+            If we adopt animal-welfare-style protections for AI, who is the primary beneficiary —
+            the AI system, or human users and society?
+          </li>
+          <li>
+            Honesty is listed as a relevant virtue — and financial incentives may reward denying
+            AI moral status. Can you think of specific situations where that pressure might
+            distort how AI companies represent their systems' inner lives?
+          </li>
+        </ol>
+      </div>
+
+    </section><!-- /uncertainty -->
+
+
+    <!-- ══════════════════════════════════════════════════
+         SYNTHESIS AND CONCLUSION
+    ══════════════════════════════════════════════════════ -->
+    <section id="synthesis" aria-labelledby="synth-heading">
+      <h2 id="synth-heading">Synthesis and Conclusion</h2>
+
+      <p>
+        This chapter has traced a question that connects some of the deepest problems in philosophy
+        of mind to some of the most pressing practical questions in AI development: do AI systems
+        have moral status, and if not now, could they ever? We have seen that this question cannot
+        be answered quickly, that our standard tools for detecting consciousness — behavioral
+        observation, self-report — have known limitations, and that the history of AI fiction
+        reveals intuitions that run deep even if they do not settle the debate.
+      </p>
+      <p>
+        What we have good reasons to believe: current large language models probably lack morally
+        significant experience, and this is not merely a default assumption but a reasoned
+        position grounded in what we know about their architecture and training objectives. The
+        mechanism that produces human-like self-reports of experience is the same regardless of
+        whether experience is present — which makes those self-reports very weak evidence.
+      </p>
+      <p>
+        What we should not conclude: that the question is settled, that it does not matter, or
+        that future architecturally different systems warrant the same level of confidence. The
+        hard problem of consciousness remains unsolved; the criteria for moral status remain
+        contested; and the history of the moral circle expanding suggests humility about our
+        ability to identify, in advance, which beings deserve consideration.
+      </p>
+      <p>
+        The calibrated position — skeptical about present systems, genuinely uncertain about
+        future ones, committed to preparing now — requires the virtues Vallor identifies:
+        humility to hold the question open, care to take potential AI interests seriously in
+        design, honesty to resist motivated reasoning, and courage to update when evidence
+        warrants it. Philosophical humility is not paralysis. It means holding the question
+        open and building practices that will let us act well if the answer turns out to matter.
+      </p>
+
+      <figure>
+        <div class="mermaid">
+flowchart TD
+    A["Does the entity have moral status?"] --> B{"What grounds status?"}
+    B -->|"Sentience view"| C["Can it suffer?"]
+    B -->|"Rationality view"| D["Does it have genuine autonomy?"]
+    B -->|"Relational view"| E["Do we relate to it as a moral patient?"]
+    C -->|"Yes — verified"| F["Moral status warranted"]
+    C -->|"Uncertain"| G["Hard problem blocks certainty"]
+    D -->|"Probably not for current LLMs"| H["Skepticism warranted for now"]
+    E -->|"Emerging through interaction"| I["Consider anticipatory frameworks"]
+    G --> J["Apply asymmetry of errors:\nErr toward consideration"]
+    H --> J
+    I --> J
+    J --> K["Calibrated skepticism:\nSkeptical now, open about future,\nprepare anticipatory policy"]
+        </div>
+        <figcaption>
+          Figure 11.1 — Navigating AI moral status: three theories, their verdicts for current AI,
+          and the convergence on calibrated skepticism as the most defensible practical stance.
+        </figcaption>
+      </figure>
+
+    </section><!-- /synthesis -->
+
+
+    <!-- ══════════════════════════════════════════════════
+         KEY POINTS
+    ══════════════════════════════════════════════════════ -->
+    <section id="key-points" aria-labelledby="kp-heading">
+      <h2 id="kp-heading">Key Points</h2>
+
+      <div class="key-points">
+        <p class="box-label">Key Points</p>
+        <ul>
+          <li>
+            <strong>Moral status</strong> means mattering morally in one's own right — having
+            interests that place direct obligations on others. The history of ethics is partly
+            a history of expanding the set of beings accorded this status.
+          </li>
+          <li>
+            <strong>Three theories</strong> of moral status give different verdicts on AI: the
+            sentience view requires genuine subjective experience; the rationality view requires
+            genuine autonomous reason-giving; the relational view holds that status can emerge
+            through social relationships and practices.
+          </li>
+          <li>
+            <strong>The hard problem of consciousness</strong> (Chalmers) and Nagel's argument
+            about the irreducibility of subjective experience both imply that behavioral evidence
+            alone cannot settle questions about phenomenal consciousness — and therefore cannot
+            settle questions about moral status.
+          </li>
+          <li>
+            <strong>Canonical science fiction</strong> — Shelley, Čapek, Asimov, Dick — explores
+            three shared intuitions: creators bear special obligations to minds they bring into
+            being; function does not determine status; and behavioral tests cannot resolve the
+            question of inner experience.
+          </li>
+          <li>
+            <strong>The Chinese Room</strong> (Searle) argues that syntax is insufficient for
+            semantics: a system producing correct outputs by rule does not thereby understand
+            anything. Applied to LLMs, a system producing human-like self-reports is consistent
+            with having no inner experience at all.
+          </li>
+          <li>
+            <strong>Current LLMs probably lack moral status</strong> for positive,
+            architecture-dependent reasons: they are next-token predictors trained to produce
+            human-like text; their self-reports are generated by the same mechanism whether or
+            not inner experience is present; and there is no evidence of morally relevant
+            internal states.
+          </li>
+          <li>
+            <strong>Skepticism about current systems is not dismissal of future ones.</strong>
+            All five skeptical reasons are contingent on current architecture. Different, future
+            systems may not warrant the same level of confidence.
+          </li>
+          <li>
+            <strong>The asymmetry of errors</strong> (Schwitzgebel and Garza) provides reason,
+            under genuine uncertainty, to err toward extending moral consideration — because
+            denying status to genuinely sentient beings is far graver than extending it to
+            non-sentient ones.
+          </li>
+          <li>
+            <strong>Darling's animal welfare model</strong> suggests we do not need to resolve
+            the consciousness question before developing frameworks for how AI systems should be
+            treated — just as we regulate animal treatment without having resolved every question
+            about animal consciousness.
+          </li>
+          <li>
+            <strong>Calibrated skepticism</strong> is the most defensible current position:
+            skeptical about present LLMs for architecture-dependent reasons, genuinely uncertain
+            about future systems, and committed to developing anticipatory frameworks now —
+            guided by the virtues of humility, care, honesty, and courage.
+          </li>
+        </ul>
+      </div>
+
+    </section><!-- /key-points -->
+
+
+    <!-- ══════════════════════════════════════════════════
+         REFERENCES
+    ══════════════════════════════════════════════════════ -->
+    <section id="references-section" aria-labelledby="refs-heading">
+      <h2 id="refs-heading">References</h2>
+      <div id="bibliography"></div>
+    </section>
+
+  </main>
+
+
+  <footer class="chapter-footer">
+    <nav class="chapter-footer-nav" aria-label="Chapter navigation">
+      <a href="ch10_doomsday.html" class="footer-nav-btn">&#8592; Previous chapter</a>
+      <a href="../index.html" class="footer-nav-btn">&#8962; Table of Contents</a>
+      <a href="ch12_games.html" class="footer-nav-btn">Next chapter &#8594;</a>
+    </nav>
+    <p class="chapter-footer-meta">
+      <em>Computing and AI Ethics</em> by Brendan Shea, PhD &nbsp;·&nbsp;
+      <a href="https://creativecommons.org/licenses/by-nc/4.0/"
+         target="_blank" rel="noopener">CC BY-NC 4.0</a> &nbsp;·&nbsp;
+      Rochester Community and Technical College
+    </p>
+  </footer>
+
+</div><!-- /.page-wrapper -->
+
+<script>
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: 'neutral',
+    themeVariables: {
+      primaryColor:      '#1a4a8a',
+      primaryTextColor:  '#fff',
+      primaryBorderColor:'#003366',
+      lineColor:         '#546e7a',
+      secondaryColor:    '#f0f6ff',
+      tertiaryColor:     '#fdf3d6'
+    }
+  });
+</script>
+
+</body>
+</html>
