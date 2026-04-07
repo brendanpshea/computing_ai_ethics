@@ -1,0 +1,14 @@
+{
+  "name": "computing-ai-ethics",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build-docx": "node scripts/build-docx.js",
+    "build-docx-chapter": "node scripts/build-docx.js",
+    "setup-docx": "python scripts/make-reference-docx.py"
+  },
+  "devDependencies": {
+    "@mermaid-js/mermaid-cli": "^11.4.2",
+    "cheerio": "^1.0.0"
+  }
+}
