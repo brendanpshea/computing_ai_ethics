@@ -29,13 +29,13 @@
     \vfill
   \end{minipage}%
 }
-\setbeamertemplate{frame footer}{\textcolor{black!40}{\tiny Computing \& AI Ethics --- OER Conference 2026}}
+\setbeamertemplate{frame footer}{\textcolor{black!40}{\tiny Computing \& AI Ethics --- Effordability Summit 2026}}
 \hfuzz=130pt  % suppress Metropolis progress bar hbox overflows
 \setbeamertemplate{itemize/enumerate body begin}{\setlength{\itemsep}{1pt}\setlength{\parsep}{0pt}\setlength{\topsep}{2pt}}
 \newcommand{\chimg}[2][0.60\textheight]{\includegraphics[width=\textwidth,height=#1,keepaspectratio]{#2}}
 
 \title{Computing and AI Ethics}
-\subtitle{An Open Educational Resource for Gen Ed | OER Conference 2026}
+\subtitle{An Open Educational Resource for Gen Ed | Effordability Summit 2026}
 \author{Brendan Shea, PhD}
 \institute{Rochester Community and Technical College --- Philosophy \& Computer Science}
 \date{}
@@ -58,19 +58,17 @@
 \begin{columns}[c]
 \column{0.62\textwidth}
 \begin{itemize}
-  \item \textbf{Rochester Community and Technical College} is a two-year college in Rochester, MN---home of the Mayo Clinic---serving a largely first-generation student population.
-  \item I hold a joint appointment in \textbf{Philosophy} and \textbf{Computer Science}, teaching from Intro Logic to Networking to Cybersecurity.
+  \item \textbf{Rochester Community and Technical College} is a two-year comprehesive community college in Rochester, MN. 
+  \item I hold a joint appointment in \textbf{Philosophy} and \textbf{Computer Science}, teaching from Intro Logic to Networking to Java Programming to Bioethics.
   \item This dual appointment created both the opportunity and the responsibility to build a genuine Gen Ed computing ethics course.
   \item Applied, accessible, and affordable materials matter enormously at institutions like RCTC.
 \end{itemize}
 \column{0.34\textwidth}
-\begin{block}{Courses I Teach}
+\begin{block}{My Interest in Computing and AI Ethics}
 \footnotesize
 \begin{itemize}
-  \item PHIL 1150 --- Computing \& AI Ethics
-  \item COMP 2243 --- Programming \& Problem Solving
-  \item COMP 1080 --- Intro to Networking
-  \item Cybersecurity electives
+  \item I've been writing computer programs since I was around 10 (BASIC on Apple IIe) and have always been interested in (and puzzled by!) the ethical issues raised by computing.
+  \item I have an MS in Computer Science and a PhD in Philosophy, both from the University of Illinois at Urbana-Champaign.
 \end{itemize}
 \end{block}
 \vspace{0.3em}
@@ -85,7 +83,7 @@
 \column{0.62\textwidth}
 \begin{itemize}
   \item The campus AI conversation often defaults to \textbf{one question}: ``Are students using ChatGPT to cheat?'' --- but that is a very small slice of the real ethical landscape.
-  \item Every student will make consequential decisions \emph{as a citizen, worker, and consumer} shaped by AI and digital systems, regardless of major.
+  \item Every student will make consequential decisions--in their personal, professional, and civic roles--shaped by AI and digital systems, regardless of major.
   \item We already require ethics exposure in medical, legal, and engineering education --- digital literacy demands the same.
   \item Algorithmic bias, surveillance, labor displacement, and existential risk are too consequential to leave to chance.
 \end{itemize}
@@ -110,7 +108,7 @@
   \item Computing and AI ethics courses are \textbf{proliferating rapidly} --- but there is no agreed-upon canon for what they should cover.
   \item Most existing textbooks are expensive, outdated, or written for CS majors rather than a general student audience.
   \item New instructors outside philosophy or CS often have \textbf{no good starting point} for readings, quizzes, or lectures.
-  \item Open and freely adaptable resources lower barriers at institutions with limited budgets and adjunct-heavy staffing.
+  \item Open and freely adaptable resources lower barriers at institutions teaching students who need this material the most.
 \end{itemize}
 \column{0.34\textwidth}
 \begin{block}{What's Missing}
@@ -207,6 +205,63 @@
 \begin{block}{Arc of the Course}
 \small Moves from \textbf{philosophical foundations} (Ch.~1--2) through \textbf{pressing policy debates} (Ch.~3--6) into sustained engagement with \textbf{AI specifically} (Ch.~7--12), ending with questions that may seem speculative but are increasingly urgent.
 \end{block}
+\end{frame}
+
+\begin{frame}{Why GitHub? Version Control for the Rest of Us}
+\begin{columns}[c]
+\column{0.62\textwidth}
+\begin{itemize}
+  \item \textbf{GitHub} is a free platform for storing and sharing files --- think of it as Google Drive with a superpower: it remembers \emph{every change ever made}, who made it, and why.
+  \item \textbf{Version control} means you can roll back any mistake, see exactly what changed between drafts, and never lose work --- like ``Track Changes'' but for an entire project.
+  \item \textbf{Forking} lets anyone make their own copy of your OER, adapt it for their course, and (optionally) share improvements back --- open collaboration by design.
+  \item \textbf{GitHub Pages} publishes your materials as a free, permanent website the moment you save --- no server, no IT request, no cost.
+\end{itemize}
+\column{0.34\textwidth}
+\begin{block}{The ``Vibe Coding'' Angle}
+\footnotesize
+Tools like \textbf{VS Code} and \textbf{Claude Code} let you edit files and deploy updates through a simple chat interface --- no command-line expertise needed. Describe what you want; the AI drafts it; GitHub publishes it.
+\end{block}
+\vspace{0.25em}
+\begin{exampleblock}{What This Means for OERs}
+\footnotesize
+\begin{itemize}
+  \item Free hosting, forever
+  \item Transparent revision history
+  \item Easy remixing by colleagues
+  \item Works from any device
+\end{itemize}
+\end{exampleblock}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Why \LaTeX{}? Professional Documents Without the Pain}
+\begin{columns}[c]
+\column{0.62\textwidth}
+\begin{itemize}
+  \item \textbf{\LaTeX{}} (pronounced ``lah-tech'') is a document system used by academics worldwide for anything that needs precise, beautiful typesetting --- journal articles, textbooks, slide decks.
+  \item Unlike PowerPoint, a \LaTeX{} file is \textbf{plain text} --- it tracks cleanly in GitHub, can be searched and edited with any tool, and never corrupts after a software update.
+  \item \textbf{Style is separated from content:} change one line to reformat an entire 200-page textbook. No hunting through 80 slides to fix a font.
+  \item It was once a specialist skill. \textbf{LLMs have changed that} --- you describe the layout you want in plain English, and the AI writes the code.
+\end{itemize}
+\column{0.34\textwidth}
+\begin{block}{PowerPoint vs.\ \LaTeX{}}
+\footnotesize
+\begin{tabular}{ll}
+\textbf{PowerPoint} & \textbf{\LaTeX{}} \\
+\hline
+Binary file & Plain text \\
+No history & Git-tracked \\
+Style tangled in & Style in one \\
+\quad each slide & \quad preamble \\
+Hard to fork & Fork \& adapt \\
+Vendor lock-in & Free forever \\
+\end{tabular}
+\end{block}
+\vspace{0.25em}
+\begin{alertblock}{Bottom Line}
+\footnotesize You don't need to \emph{learn} \LaTeX{} to \emph{use} it anymore --- just describe what you want and let the AI do the typing.
+\end{alertblock}
+\end{columns}
 \end{frame}
 
 %% ════════════════════════════════════════════════════════════════════════════
