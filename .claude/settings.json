@@ -13,7 +13,13 @@
       "Bash(python -c \":*)",
       "Bash(latexmk -pdf -interaction=nonstopmode ai_ethics_12_games.tex)",
       "Bash(grep -n \"\\\\\\\\begin{frame}\\\\[shrink\" \"c:/Users/brend/OneDrive/Documents/Github/computing_ai_ethics/ai_ethics_12_games.tex\")",
-      "Bash(sort -t'%' -k1 -rn)"
+      "Bash(sort -t'%' -k1 -rn)",
+      "Bash(node scripts/build-docx.js)",
+      "Bash(node -e ':*)",
+      "Bash(pandoc /tmp/test-cite.html -o /tmp/test-cite.docx --citeproc --bibliography refs.bib --csl apa.csl --metadata-file -)",
+      "Bash(echo \"exit: $?\")",
+      "Bash(pandoc /tmp/test-cite.html -t markdown --citeproc --bibliography refs.bib)",
+      "Bash(pandoc /tmp/test-cite.html -t native)"
     ]
   }
 }

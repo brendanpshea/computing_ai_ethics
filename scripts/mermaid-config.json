@@ -1,0 +1,13 @@
+{
+  "theme": "neutral",
+  "themeVariables": {
+    "primaryColor": "#f0f6ff",
+    "primaryTextColor": "#002855",
+    "primaryBorderColor": "#1a4a8a",
+    "lineColor": "#546e7a",
+    "secondaryColor": "#fdf3d6",
+    "tertiaryColor": "#f4fff4"
+  },
+  "flowchart": { "curve": "linear" },
+  "fontSize": 14
+}
