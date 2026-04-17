@@ -15,7 +15,7 @@ Create a 15–20 minute video presentation on a topic, case study, or figure rel
 ### Submission
 Submit the following to D2L:
 - **Video link** — YouTube (unlisted is fine) or MediaSpace
-- **Slides** — PowerPoint or PDF
+- **Slides** — PowerPoint, HTML, or PDF
 
 ### Content
 - **3+ images** with captions and source citations
@@ -23,7 +23,7 @@ Submit the following to D2L:
 - **AI disclosure** — if you used generative AI tools, include a slide or section explaining which models you used and how
 
 ### Partner Option
-You may work with **one partner**. Both partners must appear on camera in the presentation, and each person must submit the files individually to D2L.
+You may optionally work with **one partner**. Both partners must appear on camera in the presentation, and each person must submit the files individually to D2L. 
 
 ---
 
@@ -38,65 +38,91 @@ You may work with **one partner**. Both partners must appear on camera in the pr
 
 ## Sample Topics
 
+*These are starting points — feel free to pitch your own, or remix these.*
+
 ### Chapter 1 — Intro and History of Computing
 1. Ada Lovelace and the origins of programming
-2. The ENIAC and the first generation of electronic computers
-3. Alan Turing's contributions and his persecution by the British government
+2. Alan Turing's contributions and his persecution by the British government
+3. The "ENIAC girls": the forgotten women who programmed the first computer
+4. Grace Hopper, COBOL, and the invention of the software "bug"
+5. Hedy Lamarr, frequency hopping, and the hidden origins of Wi-Fi
 
 ### Chapter 2 — Technology and Virtues
-4. Can social media platforms be designed to encourage virtuous behavior?
-5. Aristotle's virtue ethics applied to software engineering
-6. Digital citizenship and what it means to be a "good" online community member
+6. Can social media platforms be designed to encourage virtuous behavior?
+7. "Dark patterns" in app design: how interfaces manipulate you
+8. Digital minimalism (Cal Newport) vs. the attention economy
+9. TikTok's "For You" algorithm and the virtue of self-control
+10. Duolingo streaks, Snapchat streaks, and the ethics of habit-forming design
 
 ### Chapter 3 — Free Speech Online
-7. Section 230 and platform liability: should tech companies be publishers?
-8. Content moderation at scale: who decides what speech is harmful?
-9. The "Twitter Files" and government pressure on social media platforms
+11. Section 230 and platform liability: should tech companies be publishers?
+12. Deplatforming: when (if ever) is it justified to kick someone off the internet?
+13. Reddit moderators as unpaid labor and de facto speech regulators
+14. The Streisand Effect: how censorship backfires online
+15. Wikipedia's "notability wars" and who gets written out of history
 
 ### Chapter 4 — Owning Ideas
-10. AI-generated art and copyright: who owns the output?
-11. Open-source licensing and the ethics of software ownership
-12. The DMCA's impact on researchers and security professionals
+16. AI-generated art and copyright: who owns the output?
+17. Aaron Swartz, JSTOR, and the ethics of "liberating" academic knowledge
+18. Right to repair: John Deere tractors, iPhones, and farmer hacktivism
+19. 3D-printed guns and the limits of information freedom
+20. Napster 25 years later: did music piracy actually save the industry?
 
 ### Chapter 5 — Digital Cash
-13. Bitcoin and the environmental cost of proof-of-work mining
-14. Central bank digital currencies (CBDCs): privacy and government control
-15. NFTs and questions of digital ownership and speculation
+21. Bitcoin and the environmental cost of proof-of-work mining
+22. The FTX collapse and what Sam Bankman-Fried reveals about "effective altruism"
+23. Silk Road, Ross Ulbricht, and the ethics of dark web marketplaces
+24. El Salvador's Bitcoin experiment: success, failure, or something weirder?
+25. Venmo's public-by-default feeds: why do we share who we pay?
 
 ### Chapter 6 — Surveillance
-16. China's Social Credit System: surveillance, control, and Western misconceptions
-17. Facial recognition in law enforcement: accuracy, bias, and consent
-18. Edward Snowden and the ethics of mass NSA surveillance
+26. China's Social Credit System: surveillance reality vs. Western misconceptions
+27. Ring doorbells, the Neighbors app, and suburban surveillance culture
+28. Clearview AI: scraping your face from the internet for law enforcement
+29. Period-tracking apps after Dobbs: can your phone testify against you?
+30. School surveillance software (Gaggle, GoGuardian) and student privacy
 
 ### Chapter 7 — What is AI?
-19. How large language models work — and what they don't "understand"
-20. Training data and the hidden labor behind AI systems
-21. The "black box" problem: explainability and accountability in machine learning
+31. How large language models actually work — and what they don't "understand"
+32. The hidden human labor behind AI: Kenyan workers and OpenAI's data pipeline
+33. John Searle's Chinese Room vs. ChatGPT: does "understanding" matter?
+34. Why AI "hallucinates" and whether it can ever stop
+35. The Turing Test in 2026: has it already been passed, or was it the wrong test?
 
 ### Chapter 8 — AI and the Future of Work and Art
-22. Generative AI and the impact on creative professions (writers, illustrators, musicians)
-23. Automation and the gig economy: are platforms like Uber and DoorDash exploitative?
-24. Universal Basic Income as a policy response to AI-driven job displacement
+36. The 2023 Hollywood writers' strike and the AI clauses in the new contract
+37. Getty Images v. Stability AI: can you copyright a training dataset?
+38. GitHub Copilot, AI coding assistants, and the changing nature of programming
+39. AI in radiology: should an algorithm be allowed to "read" your scan first?
+40. Universal Basic Income as a policy response to AI-driven job displacement
 
 ### Chapter 9 — Environmental and Social Impact of AI
-25. The water and energy footprint of training and running AI models
-26. AI and global inequality: who benefits, who is left behind?
-27. Predictive policing algorithms and racial disparate impact
+41. The water and energy footprint of training and running AI models
+42. E-waste in Agbogbloshie, Ghana: where our old laptops actually go
+43. Content moderator trauma: the psychological cost of keeping platforms "clean"
+44. Predictive policing algorithms and racial disparate impact
+45. Data centers in small towns: local benefits, local costs, who decides?
 
 ### Chapter 10 — AI and the End of the World
-28. Existential risk from AI: how seriously should we take the arguments of figures like Nick Bostrom?
-29. Autonomous weapons and the ethics of lethal AI decision-making
-30. OpenAI's shift from nonprofit to for-profit and what it means for AI safety
+46. Nick Bostrom's "paperclip maximizer" and the alignment problem for non-philosophers
+47. Autonomous weapons and the ethics of lethal AI decision-making
+48. OpenAI's shift from nonprofit to for-profit: can you trust AI companies to self-regulate?
+49. The 2023 FLI "pause AI" open letter: reasonable caution or moral panic?
+50. "Slaughterbots" and the realistic near-term risks of drone swarms
 
 ### Chapter 11 — Robot Rights and the Moral Status of AI
-31. Do large language models have anything like consciousness or sentience?
-32. The ethics of companion robots and AI relationships
-33. Peter Singer's utilitarian framework applied to AI moral status
+51. Blake Lemoine, LaMDA, and the Google engineer who thought his chatbot was alive
+52. Replika and Character.AI: what do we owe the AI "friend" who never logs off?
+53. Peter Singer's utilitarianism applied to AI moral status
+54. Sophia the Robot's Saudi citizenship: publicity stunt or philosophical milestone?
+55. Lawsuits against Character.AI after teen suicide: who's responsible when a chatbot harms?
 
 ### Chapter 12 — Games and Ethics
-34. Loot boxes, gambling mechanics, and the ethics of monetization in games
-35. Representation of race, gender, and disability in video game characters
-36. Virtual worlds and moral responsibility: does in-game behavior matter?
+56. Loot boxes, gacha games, and why regulators call them gambling for kids
+57. Representation of race, gender, and disability in video game characters
+58. Harassment in VR: what happens when someone gropes your avatar?
+59. Pokémon GO, Grand Theft Auto, and the ethics of games that spill into real life
+60. Esports betting and the looming integrity crisis in competitive gaming
 
 ---
 
