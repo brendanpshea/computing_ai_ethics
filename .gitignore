@@ -1,1 +1,26 @@
-node_modules
+# Node
+node_modules/
+
+# Python
+__pycache__/
+*.pyc
+
+# LaTeX build artifacts (build.ps1 cleans these, but gitignore in case of interrupted build)
+PDFs/*.aux
+PDFs/*.log
+PDFs/*.out
+PDFs/*.nav
+PDFs/*.snm
+PDFs/*.toc
+PDFs/*.vrb
+PDFs/*.fls
+PDFs/*.fdb_latexmk
+PDFs/*.bcf
+PDFs/*.run.xml
+PDFs/*.bbl
+PDFs/*.blg
+PDFs/*-SAVE-ERROR
+
+# OS
+.DS_Store
+Thumbs.db

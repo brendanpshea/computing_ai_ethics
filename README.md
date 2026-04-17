@@ -27,7 +27,7 @@ Each of the twelve chapters is available in three formats:
 | 11 | Robot Rights and Moral Status | [PDF](PDFs/ai_ethics_11_robot_rights.pdf) | [HTML](html/ch11_robot_rights.html) | [Quiz](html/quiz_11.html) |
 | 12 | Games, Play, and the Meaning of Life | [PDF](PDFs/ai_ethics_12_games.pdf) | [HTML](html/ch12_games.html) | [Quiz](html/quiz_12.html) |
 
-**Lecture slides** are compiled from LaTeX source (`.tex` files in the root directory) using the Beamer document class. Build instructions are in [`docs/BUILD.md`](docs/BUILD.md). Authoring guidelines for HTML chapters are in [`docs/CHAPTER_GUIDELINES.md`](docs/CHAPTER_GUIDELINES.md). **HTML readings** expand the slides into extended prose, with definition boxes, key-thinker profiles, argument boxes, case studies, and thought questions. **Quizzes** are auto-graded in the browser with 20+ questions per chapter (multiple choice, select-all-that-apply, and matching); progress is saved locally.
+**Lecture slides** are compiled from LaTeX source (`.tex` files in [`latex/`](latex/)) using the Beamer document class. Build instructions are in [`docs/BUILD.md`](docs/BUILD.md). Authoring guidelines for HTML chapters are in [`docs/CHAPTER_GUIDELINES.md`](docs/CHAPTER_GUIDELINES.md). **HTML readings** expand the slides into extended prose, with definition boxes, key-thinker profiles, argument boxes, case studies, and thought questions. **Quizzes** are auto-graded in the browser with 20+ questions per chapter (multiple choice, select-all-that-apply, and matching); progress is saved locally. **Word downloads** (`.docx`, beta) are generated from the HTML readings via Pandoc — see [`docs/BUILD.md`](docs/BUILD.md) for the build pipeline.
 
 No prior background in philosophy or computer science is required.
 

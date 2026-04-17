@@ -1,6 +1,9 @@
 param([string]$Lecture="all", [switch]$NoCleanup)
 
 $OutputDir = "PDFs"
+$SourceDir = "latex"
+# Let pdflatex find \input{lecture_preamble.tex} etc. in latex/ while cwd is project root
+$env:TEXINPUTS = ".\$SourceDir;" + $env:TEXINPUTS
 # Artifacts to clean AFTER build completes (not during biber processing)
 $Artifacts = @('.aux','.log','.out','.nav','.snm','.toc','.vrb','.fls','.fdb_latexmk','.bcf','.run.xml','.bbl','.blg')
 $Files = @{
@@ -50,9 +53,10 @@ $ok = 0; $bad = 0
 
 foreach ($n in $list) {
     $src = $Files[$n]
-    if (Test-Path $src) {
+    $fullSrc = Join-Path $SourceDir $src
+    if (Test-Path $fullSrc) {
         $base = [IO.Path]::GetFileNameWithoutExtension($src)
-        if ((BuildLecture $src $n $base) -eq 1) { $ok++ } else { $bad++ }
+        if ((BuildLecture $fullSrc $n $base) -eq 1) { $ok++ } else { $bad++ }
     }
 }
 
@@ -60,7 +64,8 @@ foreach ($n in $list) {
 if (-not $NoCleanup) {
     foreach ($n in $list) {
         $src = $Files[$n]
-        if (Test-Path $src) {
+        $fullSrc = Join-Path $SourceDir $src
+        if (Test-Path $fullSrc) {
             $base = [IO.Path]::GetFileNameWithoutExtension($src)
             CleanArtifacts $base
         }
