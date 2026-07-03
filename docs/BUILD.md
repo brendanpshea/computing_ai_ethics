@@ -63,7 +63,11 @@ pdflatex -output-directory=PDFs latex\ai_ethics_01_history.tex
 pdflatex -output-directory=PDFs latex\ai_ethics_01_history.tex
 ```
 
-`\includegraphics{images/...}` and `\addbibresource{refs.bib}` both resolve against the project root, so no paths inside `.tex` files need to change when compiling this way.
+`\includegraphics{images/...}` and `\addbibresource{refs.bib}` both resolve against the project root, so no paths inside `.tex` files need to change when compiling this way. Both the script and manual compilation **must be run from the project root** — setting `TEXINPUTS` to include `latex\` is what lets `\input{lecture_preamble.tex}` resolve.
+
+### Article mode (not maintained)
+
+The preamble and lectures contain `\mode<article>{...}` blocks for a `beamerarticle` handout build. **This build is not maintained or distributed** — the article-mode narrative blocks are incomplete in later lectures and nothing in this repo compiles them. The blocks are harmless in the normal presentation build (beamer ignores them); don't sink time into extending them.
 
 ---
 

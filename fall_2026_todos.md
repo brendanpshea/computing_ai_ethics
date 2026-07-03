@@ -186,7 +186,7 @@ Do one sweep in August 2026. LLM implementers: verify each with current sources 
 
 6. **Accessibility pass.** Several tikz diagrams encode meaning purely in red/green (L1 pattern diagram, L5 centralized/decentralized, L6 balance beam). For projection and colorblind students, add shape or label redundancy where cheap. Low effort: the boxred/boxgreen pairs already carry labels in most cases; audit the handful that don't.
 
-7. **Handout/article mode is half-maintained.** L1–L9 have `\mode<article>` narrative blocks; they're rich in L1–L4, thinner later, and L10–L12 have only the single abstract paragraph. If the article build is actually distributed to students, backfill L10–12 section summaries; if it isn't, note that in `BUILD.md` so nobody sinks time into it.
+7. ~~**Handout/article mode is half-maintained.**~~ **Resolved 2026-07:** article mode is not used or maintained; noted in `docs/BUILD.md`. Do not extend `\mode<article>` blocks; they're harmless in the presentation build.
 
 ---
 
