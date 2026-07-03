@@ -16,9 +16,9 @@ Each of the twelve chapters is available in three formats:
 |---|---------|-------------|--------------|------|
 | 1 | The History of IT Ethics | [PDF](PDFs/ai_ethics_01_history.pdf) | [HTML](html/ch01_history.html) | [Quiz](html/quiz_01.html) |
 | 2 | Virtue Ethics and Modern Technology | [PDF](PDFs/ai_ethics_02_virtues.pdf) | [HTML](html/ch02_virtue_ethics.html) | [Quiz](html/quiz_02.html) |
-| 3 | Free Speech in the Digital Age | [PDF](PDFs/ai_ethics_03.free_speech.pdf) | [HTML](html/ch03_free_speech.html) | [Quiz](html/quiz_03.html) |
+| 3 | Free Speech in the Digital Age | [PDF](PDFs/ai_ethics_03_free_speech.pdf) | [HTML](html/ch03_free_speech.html) | [Quiz](html/quiz_03.html) |
 | 4 | Intellectual Property | [PDF](PDFs/ai_ethics_04_intellectual_property.pdf) | [HTML](html/ch04_intellectual_property.html) | [Quiz](html/quiz_04.html) |
-| 5 | Cryptography, Security, and Digital Money | [PDF](PDFs/ai_ethics_05.crypto.pdf) | [HTML](html/ch05_crypto.html) | [Quiz](html/quiz_05.html) |
+| 5 | Cryptography, Security, and Digital Money | [PDF](PDFs/ai_ethics_05_crypto.pdf) | [HTML](html/ch05_crypto.html) | [Quiz](html/quiz_05.html) |
 | 6 | Privacy in the Information Age | [PDF](PDFs/ai_ethics_06_privacy.pdf) | [HTML](html/ch06_privacy.html) | [Quiz](html/quiz_06.html) |
 | 7 | AI Ethics: Bias, Fairness, and Accountability | [PDF](PDFs/ai_ethics_07_ai.pdf) | [HTML](html/ch07_ai_intro.html) | [Quiz](html/quiz_07.html) |
 | 8 | Work, Automation, and Economic Justice | [PDF](PDFs/ai_ethics_08_work.pdf) | [HTML](html/ch08_work_automation.html) | [Quiz](html/quiz_08.html) |

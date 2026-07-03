@@ -9,13 +9,16 @@ $Artifacts = @('.aux','.log','.out','.nav','.snm','.toc','.vrb','.fls','.fdb_lat
 $Files = @{
     "1"="ai_ethics_01_history.tex"
     "2"="ai_ethics_02_virtues.tex"
-    "3"="ai_ethics_03.free_speech.tex"
+    "3"="ai_ethics_03_free_speech.tex"
     "4"="ai_ethics_04_intellectual_property.tex"
-    "5"="ai_ethics_05.crypto.tex"
+    "5"="ai_ethics_05_crypto.tex"
     "6"="ai_ethics_06_privacy.tex"
     "7"="ai_ethics_07_ai.tex"
     "8"="ai_ethics_08_work.tex"
     "9"="ai_ethics_09_impact.tex"
+    "10"="ai_ethics_10_doomsday.tex"
+    "11"="ai_ethics_11_robot_rights.tex"
+    "12"="ai_ethics_12_games.tex"
     "bib"="bibliography.tex"
 }
 
@@ -48,7 +51,7 @@ function BuildLecture([string]$Source, [string]$Num, [string]$Base) {
 Write-Host ""
 if (-not (Test-Path $OutputDir)) { New-Item -Type Directory $OutputDir | Out-Null }
 
-$list = if ($Lecture -eq "all") { @("1","2","3","4","5","6","7","8","9","bib") } else { @($Lecture) }
+$list = if ($Lecture -eq "all") { @("1","2","3","4","5","6","7","8","9","10","11","12","bib") } else { @($Lecture) }
 $ok = 0; $bad = 0
 
 foreach ($n in $list) {

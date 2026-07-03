@@ -37,7 +37,7 @@ improvements (nice to have).
 - **Fix:** Change to `\textit{why}` and `\textit{how}`.
 
 ### 1.5 "ML's arguments" typo (Lecture 3)
-- **File:** `latex/ai_ethics_03.free_speech.tex` (~line 980, in the `\mode<article>` block)
+- **File:** `latex/ai_ethics_03_free_speech.tex` (~line 980, in the `\mode<article>` block)
 - **Find:** `ML's arguments for protecting speech`
 - **Fix:** "Mill's arguments". (Only appears in article mode, but it prints in the reader/handout build.)
 
@@ -53,7 +53,7 @@ improvements (nice to have).
 - **Fix (minimum):** Change attribution line to "attributed to Martin Luther" and keep the Clemen citation. If you can verify it, leave as is.
 
 ### 1.8 Trump deplatforming: "permanently ban" + missing reinstatement (Lecture 3)
-- **File:** `latex/ai_ethics_03.free_speech.tex` (~line 885)
+- **File:** `latex/ai_ethics_03_free_speech.tex` (~line 885)
 - **Find:** `Twitter, Facebook, YouTube permanently ban sitting U.S. President`
 - **Problem:** Only Twitter's ban was "permanent"; Facebook's was indefinite → 2-year suspension. All three reinstated the account by 2023, which students will know and which changes the case study.
 - **Fix:** "…ban sitting U.S. President after Capitol riot (Twitter permanently; Facebook and YouTube indefinitely). All three accounts were reinstated by 2023." Consider adding a discussion beat: does reinstatement vindicate either side?
@@ -75,12 +75,12 @@ improvements (nice to have).
 - **Fix:** "Belgium banned loot boxes as gambling (2018); a similar Dutch ruling was overturned on appeal in 2022."
 
 ### 1.12 Verify Do Kwon sentencing detail (Lecture 5)
-- **File:** `latex/ai_ethics_05.crypto.tex` (~line 934)
+- **File:** `latex/ai_ethics_05_crypto.tex` (~line 934)
 - **Find:** `Sentenced December 2025 to 15 years in prison`
 - **Action:** Verify sentence length/date against reporting before reprinting (he pleaded guilty in Aug 2025; confirm the December sentencing outcome). Same slide: confirm the "$2.02B stolen in 2025" Lazarus figure is the final Chainalysis year-end number, not a mid-year estimate.
 
 ### 1.13 Per-transaction Bitcoin energy metric is contested (Lecture 5)
-- **File:** `latex/ai_ethics_05.crypto.tex` (~line 717)
+- **File:** `latex/ai_ethics_05_crypto.tex` (~line 717)
 - **Find:** `Single transaction: $\sim$1,400+ kWh`
 - **Problem:** "Energy per transaction" divides total mining energy by transaction count — a methodology critics (and even Digiconomist's rivals at CBECI) call misleading, since mining energy doesn't scale with transactions. The wealth-concentration stat on the next slide ("2% of accounts hold 95%") has a similar flaw (exchange addresses hold many users' coins).
 - **Fix:** Keep the aggregate TWh numbers (solid), and either cut the per-transaction line or add "(a contested metric — mining energy does not scale per transaction)." Add "(addresses ≠ people; exchanges hold pooled funds)" to the concentration slide. Both are good critical-thinking asides for this audience.
@@ -94,15 +94,15 @@ Do one sweep in August 2026. LLM implementers: verify each with current sources 
 | File | Item | What to check |
 |---|---|---|
 | `ai_ethics_04_intellectual_property.tex` | "AI Copyright Wars" slide (~line 846) | Status of NYT v. OpenAI, the S.D.N.Y. consolidated cases, and the Anthropic *Bartz* settlement; "Recent developments (2025)" heading will read stale |
-| `ai_ethics_05.crypto.tex` | BTC market cap "$2+ trillion", Satoshi holdings "$100–135B" (~lines 309–314) | Refresh figures |
-| `ai_ethics_05.crypto.tex` | CBDC table (~line 1041) | Atlantic Council tracker; e-CNY stats; US status |
+| `ai_ethics_05_crypto.tex` | BTC market cap "$2+ trillion", Satoshi holdings "$100–135B" (~lines 309–314) | Refresh figures |
+| `ai_ethics_05_crypto.tex` | CBDC table (~line 1041) | Atlantic Council tracker; e-CNY stats; US status |
 | `ai_ethics_06_privacy.tex` | Data broker stats table (2024), Clearview photo count | Refresh |
 | `ai_ethics_07_ai.tex` | LLM timeline row "2023--25: GPT-4, Claude, Gemini…" (~line 599) | Extend timeline through 2026 |
 | `ai_ethics_09_impact.tex` | FDA AI device count "1,451 as of 2026-03-04" (~line 392); IEA Electricity 2026 | Update to latest list; also reformat the ISO date to prose ("as of March 2026") |
 | `ai_ethics_10_doomsday.tex` | Doomsday Clock "89 seconds (Jan 2025)" (~line 243) | Check for a 2026 announcement |
 | `ai_ethics_10_doomsday.tex` | Bostrom slide (~line 270) | FHI closed April 2024 — say "co-founded Oxford's Future of Humanity Institute (closed 2024)" |
 | `ai_ethics_02_virtues.tex` | Australia minimum-age law (~line 1009) | Add early evidence on how the Dec 2025 rollout went — great fresh discussion material |
-| `ai_ethics_03.free_speech.tex` | Platform user-count table (~line 456); EU AI Act status (~line 1026) | Refresh |
+| `ai_ethics_03_free_speech.tex` | Platform user-count table (~line 456); EU AI Act status (~line 1026) | Refresh |
 
 ---
 
@@ -135,21 +135,21 @@ Do one sweep in August 2026. LLM implementers: verify each with current sources 
 
 ## P4 — Consistency and design
 
-### 4.1 Standardize title metadata (course rename remnants)
+### 4.1 Standardize title metadata (course rename remnants) — DONE 2026-07
 - L1: `\subtitle{IT Ethics}`, `\author{Brendan Shea, PhD}`; L2–4: author Brendan Shea, institute "…\\Computing and AI Ethics"; **L5–12: `\author{Computing and AI Ethics}` with no human author at all.**
 - **Fix (all 12 files):** uniform block —
   `\author{Brendan Shea, PhD}` / `\institute{Rochester Community and Technical College\\PHIL 1150: Computing and AI Ethics}`. Also retitle L1's title/subtitle away from "IT Ethics" (e.g., title "The History of Information Technology and Ethics", subtitle matching the others). Update the L1 header comment block too.
 
-### 4.2 Standardize title-slide style
+### 4.2 Standardize title-slide style — DONE 2026-07 (added `\lecturetitleslide` to the preamble; generated fractal_09–12 so every deck has a unique cover)
 - L1–L8 put white `\titlepage` text directly over fractal images (legibility depends on the fractal); L9–L12 use a dark tcolorbox overlay, which always reads well.
 - **Fix:** Adopt the tcolorbox overlay in all 12 decks. Best done by moving the whole title-slide construct into `lecture_preamble.tex` as a command, e.g. `\lecturetitleslide{images/fractal_01.png}`, so future changes are one edit.
 - Also: **fractal reuse** — L10 and L12 both use `fractal_05.png` (as does L5); L11 reuses `fractal_06.png` (L6). Generate `fractal_09`–`fractal_12` with the existing script (`fractal generation script` is in repo per commit history) so each lecture has a unique cover.
 
-### 4.3 Rename files with dots to underscores
-- `ai_ethics_03.free_speech.tex` → `ai_ethics_03_free_speech.tex`; `ai_ethics_05.crypto.tex` → `ai_ethics_05_crypto.tex`.
+### 4.3 Rename files with dots to underscores — DONE 2026-07
+- `ai_ethics_03_free_speech.tex` → `ai_ethics_03_free_speech.tex`; `ai_ethics_05_crypto.tex` → `ai_ethics_05_crypto.tex`.
 - **Caution (LLM implementers):** grep the repo for references to the old names (Makefile/BUILD docs/README/CI) before renaming; use `git mv`.
 
-### 4.4 Standardize `\documentclass` options
+### 4.4 Standardize `\documentclass` options — DONE 2026-07 (11pt everywhere)
 - L1–4: `[aspectratio=169]`; L5–12: `[aspectratio=169,11pt]`. Pick one (11pt everywhere, or move sizing into the preamble) so identical content renders identically across decks.
 
 ### 4.5 Reduce/eliminate `[shrink=N]` in Lectures 10–11

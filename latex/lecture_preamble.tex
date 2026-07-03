@@ -236,6 +236,47 @@
 % fontawesome5 defines \faQuoteLeft, \faBalanceScale, etc. natively --- no aliases needed.
 \newcommand{\discussion}[1]{\discussionquestion{#1}}
 
+% ------------------------------------------------------------------------------
+% Standard Title Slide
+% ------------------------------------------------------------------------------
+% Uniform title slide for all lectures: a full-bleed background image with a
+% dark tcolorbox overlay so the title text stays legible over any image.
+% Usage (immediately after \begin{document}):
+%   \lecturetitleslide{images/fractal_01.png}
+\newcommand{\lecturetitleslide}[1]{%
+{%
+\usebackgroundtemplate{\includegraphics[width=\paperwidth,height=\paperheight]{#1}}%
+\begin{frame}
+\vfill
+\begin{center}
+\begin{tcolorbox}[
+    enhanced,
+    width=0.84\textwidth,
+    colback=black!82,
+    colframe=white!85,
+    boxrule=0.6pt,
+    arc=3pt,
+    left=10pt,
+    right=10pt,
+    top=10pt,
+    bottom=10pt
+]
+{\centering
+{\usebeamerfont{title}\color{white}\inserttitle\par}
+\vspace{0.35em}
+{\usebeamerfont{subtitle}\color{mAccent}\insertsubtitle\par}
+\vspace{0.8em}
+{\usebeamerfont{author}\color{white}\insertauthor\par}
+{\usebeamerfont{institute}\color{white!85}\insertinstitute\par}
+{\usebeamerfont{date}\color{white!75}\insertdate\par}
+}
+\end{tcolorbox}
+\end{center}
+\vfill
+\end{frame}
+}%
+}
+
 % Simple divider for slide sections
 \newcommand{\sectiondivider}{%
     \begin{center}

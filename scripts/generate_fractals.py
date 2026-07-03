@@ -10,12 +10,16 @@ Output: images/fractal_0N.png  (1920×1080, 16:9)
 Usage:  python generate_fractals.py
 """
 
+import sys
 import numpy as np
+import matplotlib
+matplotlib.use("Agg")   # headless: render to file, never open a window
 import matplotlib.pyplot as plt
 from matplotlib.colors import LinearSegmentedColormap
 from pathlib import Path
 
-OUT_DIR = Path(__file__).parent / "images"
+# images/ lives at the project root, one level up from scripts/
+OUT_DIR = Path(__file__).parent.parent / "images"
 OUT_DIR.mkdir(exist_ok=True)
 
 # ── Color palette ────────────────────────────────────────────────────────────
@@ -42,6 +46,10 @@ FRACTALS = [
     (-0.1620,  1.0400,  0.00,  0.00, 1.30, "fractal_06", "Privacy"),
     ( 0.3550,  0.3550,  0.00,  0.00, 1.40, "fractal_07", "Artificial Intelligence"),
     (-0.1230,  0.7450,  0.00,  0.00, 1.30, "fractal_08", "Work & Labor"),
+    (-0.7018, -0.3842,  0.00,  0.00, 1.35, "fractal_09", "Environmental & Social Impact"),
+    (-0.7500,  0.1100,  0.00,  0.00, 1.35, "fractal_10", "End of the World"),
+    (-0.5400,  0.5400,  0.00,  0.00, 1.30, "fractal_11", "Robot Rights"),
+    (-0.2351,  0.8272,  0.00,  0.00, 1.30, "fractal_12", "Games"),
 ]
 
 WIDTH, HEIGHT = 1920, 1080
@@ -113,12 +121,19 @@ def render(M, filename):
     out = OUT_DIR / f"{filename}.png"
     fig.savefig(out, dpi=100, pad_inches=0, facecolor="#0A1628")
     plt.close(fig)
-    print(f"  → {out}")
+    print(f"  -> {out}")
 
 
 def main():
-    print(f"Rendering {len(FRACTALS)} fractal backgrounds to {OUT_DIR}/\n")
+    # Existing PNGs are skipped so re-runs don't churn unchanged images;
+    # pass --force to regenerate everything.
+    force = "--force" in sys.argv
+    print(f"Rendering fractal backgrounds to {OUT_DIR}/  (force={force})\n")
     for c_r, c_i, xc, yc, zoom, name, title in FRACTALS:
+        out = OUT_DIR / f"{name}.png"
+        if out.exists() and not force:
+            print(f"  [{name}]  exists, skipping ({title})")
+            continue
         print(f"  [{name}]  c = {c_r:+.4f}{c_i:+.4f}i   ({title})")
         M = julia(c_r, c_i, xc, yc, zoom)
         render(M, name)
