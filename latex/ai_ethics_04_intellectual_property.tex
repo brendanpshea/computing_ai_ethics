@@ -252,6 +252,14 @@ Is it ethical to reverse-engineer a competitor's trade secret?
 \textbf{Key observation}: IP terms have \textbf{consistently expanded}, always justified by ``encouraging creativity''---but is that what's actually happening?
 \end{frame}
 
+% ===== PHILOSOPHICAL FOUNDATIONS =====
+
+\section{Philosophical Foundations}
+
+\mode<article>{
+Intellectual property can be justified through three competing philosophical frameworks: the labor-desert theory (Locke) argues creators deserve to control their work; utilitarian theory argues IP incentivizes socially beneficial creation; personality theory (Hegel) argues ownership expresses the creator's personality. These justifications conflict in practice and lead to different policy conclusions. Understanding these frameworks helps evaluate whether current IP systems achieve their purported goals or instead serve incumbent interests.
+}
+
 % ===== IMAGE SLIDE: Plato on Ideas =====
 \begin{frame}{A Philosophical Puzzle: Can You Own an Idea?}
 \begin{columns}
@@ -368,17 +376,9 @@ Does an AI have ``personality'' that could be expressed in creative works?
 \end{quotebox}
 \end{frame}
 
-% ===== PART II HEADER =====
+% ===== DIGITAL DISRUPTION =====
 
-\section{Part I: Philosophical Foundations}
-
-\mode<article>{
-Intellectual property can be justified through three competing philosophical frameworks: the labor-desert theory (Locke) argues creators deserve to control their work; utilitarian theory argues IP incentivizes socially beneficial creation; personality theory (Hegel) argues ownership expresses the creator's personality. These justifications conflict in practice and lead to different policy conclusions. Understanding these frameworks helps evaluate whether current IP systems achieve their purported goals or instead serve incumbent interests.
-}
-
-\subsection{Philosophical Justifications for IP Rights}
-
-\section{Part II: Digital Disruption and Adaptation}
+\section{Digital Disruption and Adaptation}
 
 \mode<article>{
 Digital technology fundamentally challenges intellectual property law's assumptions. Perfect, costless copying eliminates the natural scarcity that historically protected information goods. Global, instantaneous distribution makes enforcement difficult at individual level. The Napster case exemplifies the music industry's struggle to adapt, ultimately leading to new business models based on streaming rather than ownership. The DMCA's anti-circumvention provisions attempted to restore artificial scarcity through "digital locks" but created tensions with fair use, security research, and right to repair. The shift from ownership to access models represents a broader transformation in how IP functions in practice.
@@ -519,19 +519,11 @@ Is ``access to everything'' better than ``owning some things''?
 
 % ===== PART III HEADER =====
 
-\section{Part III: Critiques and Abuses of IP}
+\section{Critiques and Abuses of IP}
 
 \mode<article>{
 Critical IP scholars like Peter Drahos, Cory Doctorow, and Tim Wu argue that contemporary IP law often serves concentrated corporate power rather than its stated goals of promoting innovation and creativity. Drahos's ``information feudalism'' describes how IP has been globalized through trade agreements to benefit wealthy countries and large corporations at developing nations' expense \parencite{drahos_information_feudalism}. Doctorow's ``chokepoint capitalism'' shows how platforms use IP to maintain bottleneck control over markets \parencite{doctorow_chokepoint}. Case studies including Disney's copyright extensions, pharmaceutical patent abuses, and patent trolls demonstrate how IP can become a tool for rent-seeking rather than innovation.
 }
-
-\begin{frame}
-\begin{center}
-{\Huge \textbf{Part III}}\\[0.5cm]
-{\Large Critiques and Abuses of IP}\\[0.3cm]
-{\large When Protection Becomes Predation}
-\end{center}
-\end{frame}
 
 % ===== SLIDE 20: Peter Drahos =====
 \begin{frame}{Peter Drahos: Information Feudalism}
@@ -698,7 +690,7 @@ Have you experienced enshittification? Which platforms?
 
 % ===== SECTION III: BIG TECH AND IP =====
 
-\section{Part III: Market Power and Control}
+\section{Market Power and Control}
 
 \mode<article>{
 Large technology companies deploy intellectual property strategically as competitive weapons and defensive shields. Patents accumulate in vast portfolios enabling cross-licensing among giants while creating barriers for smaller competitors. Terms of service agreements function as IP-like control mechanisms without traditional IP law's limitations. The Oracle v. Google case over API copyrightability illustrates how fundamental questions about interoperability and competition depend on IP boundaries. The right to repair movement challenges how manufacturers use IP to restrict product modifications and repairs, raising questions about the meaning of ownership in digital contexts.
@@ -794,21 +786,71 @@ Do you own a device if you can't repair it?
 \end{alertblock}
 \end{frame}
 
-% ===== PART V HEADER =====
+% ===== BEYOND TRADITIONAL IP =====
 
-\section{Part V: AI and Intellectual Property}
+\section{Beyond Traditional IP: Open Source and Creative Commons}
+
+\mode<article>{
+The open source movement demonstrates that significant innovation and value creation can occur outside traditional IP incentive structures. Open source software licenses use copyright law itself to ensure works remain open rather than enclosed. Creative Commons provides similar frameworks for non-software content. These alternative models challenge utilitarian IP justifications by showing that other motivations---including reputation, community participation, and ideological commitment---can drive creation. The success of projects like Linux, Wikipedia, and countless open source libraries suggests that the optimal IP system may look quite different from current arrangements, particularly in contexts where collaborative and cumulative innovation predominate.
+}
+
+% ===== SLIDE 38: Open Source Movement =====
+\begin{frame}{The Open Source Movement}
+\textbf{Core idea}: Use copyright to keep things \textbf{open}, not closed
+
+\vspace{0.2cm}
+\textbf{How it works}: Software released under \textbf{open source license}. License grants permission to use, modify, distribute. ``\textbf{Copyleft}'' (GPL) requires derivatives stay open; ``\textbf{Permissive}'' (MIT, Apache) allows any use.
+
+\vspace{0.2cm}
+\textbf{Success stories}: \textbf{Linux} (runs most servers, Android), \textbf{Apache/nginx} (web servers), \textbf{Python} and JavaScript frameworks, \textbf{Wikipedia} (open content).
+
+\vspace{0.2cm}
+\textbf{The economic puzzle}: Violates standard IP incentive theory, yet produces \textbf{enormous value}. Motivations: reputation, community, ideology, strategic.
+
+\begin{alertblock}{?}
+Why do people contribute to open source for free?
+\end{alertblock}
+\end{frame}
+
+% ===== SLIDE 39: Creative Commons =====
+\begin{frame}{Creative Commons and Alternative Licensing}
+\textbf{Creative Commons} (founded 2001):
+\begin{itemize}
+    \item \textbf{Standardized licenses} for non-software content
+    \item Allows creators to grant permissions \textbf{in advance}
+    \item Range from very open to more restrictive
+\end{itemize}
+
+\vspace{0.2cm}
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{>{\bfseries}l p{7cm}}
+\toprule
+License & Allows \\
+\midrule
+CC0 & Anything (public domain equivalent) \\
+CC BY & Any use with attribution \\
+CC BY-SA & Any use with attribution + share alike \\
+CC BY-NC & Non-commercial use with attribution \\
+CC BY-NC-ND & Non-commercial, no derivatives, attribution \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\vspace{0.2cm}
+\textbf{Impact}: Wikipedia uses CC BY-SA; many educational resources (OER movement)
+
+\textbf{The AI complication}: CC-licensed works have been used in AI training---was this the intent?
+\end{frame}
+
+% ===== AI AND IP =====
+
+\section{AI and Intellectual Property}
 
 \mode<article>{
 Artificial intelligence creates novel IP challenges that existing legal frameworks struggle to address. The training of large language models on copyrighted works raises questions about whether such use constitutes infringement or transformative fair use. Multiple lawsuits by publishers, authors, and artists against AI companies are currently working through courts. Additionally, the authorship status of AI-generated content remains contested, with U.S. authorities currently requiring human authorship for copyright protection. These issues will significantly shape both AI development and IP law's evolution, potentially determining whether AI capabilities remain concentrated among well-resourced actors or become more democratically accessible.
 }
-
-\begin{frame}
-\begin{center}
-{\Huge \textbf{Part V}}\\[0.5cm]
-{\Large AI and Intellectual Property}\\[0.3cm]
-{\large When Machines Learn from Human Creativity}
-\end{center}
-\end{frame}
 
 % ===== SLIDE 33: AI Training and Copyright =====
 \begin{frame}{AI Training Data and Copyright}
@@ -907,66 +949,6 @@ Market & Doesn't replace originals? & Competes with creators \\
 \textbf{The key question}: Is statistical learning ``transformative'' enough?
 
 \textbf{Precedent}: \textit{Google Books} (scanning for search = fair use); but that preserved originals and limited display.
-\end{frame}
-
-% ===== SECTION IV: OPEN SOURCE AND ALTERNATIVES =====
-
-\section{Part IV: Beyond Traditional IP}
-
-\mode<article>{
-The open source movement demonstrates that significant innovation and value creation can occur outside traditional IP incentive structures. Open source software licenses use copyright law itself to ensure works remain open rather than enclosed. Creative Commons provides similar frameworks for non-software content. These alternative models challenge utilitarian IP justifications by showing that other motivations---including reputation, community participation, and ideological commitment---can drive creation. The success of projects like Linux, Wikipedia, and countless open source libraries suggests that the optimal IP system may look quite different from current arrangements, particularly in contexts where collaborative and cumulative innovation predominate.
-}
-
-\subsection{Beyond Traditional IP: Alternatives and Innovations}
-
-% ===== SLIDE 38: Open Source Movement =====
-\begin{frame}{The Open Source Movement}
-\textbf{Core idea}: Use copyright to keep things \textbf{open}, not closed
-
-\vspace{0.2cm}
-\textbf{How it works}: Software released under \textbf{open source license}. License grants permission to use, modify, distribute. ``\textbf{Copyleft}'' (GPL) requires derivatives stay open; ``\textbf{Permissive}'' (MIT, Apache) allows any use.
-
-\vspace{0.2cm}
-\textbf{Success stories}: \textbf{Linux} (runs most servers, Android), \textbf{Apache/nginx} (web servers), \textbf{Python} and JavaScript frameworks, \textbf{Wikipedia} (open content).
-
-\vspace{0.2cm}
-\textbf{The economic puzzle}: Violates standard IP incentive theory, yet produces \textbf{enormous value}. Motivations: reputation, community, ideology, strategic.
-
-\begin{alertblock}{?}
-Why do people contribute to open source for free?
-\end{alertblock}
-\end{frame}
-
-% ===== SLIDE 39: Creative Commons =====
-\begin{frame}{Creative Commons and Alternative Licensing}
-\textbf{Creative Commons} (founded 2001):
-\begin{itemize}
-    \item \textbf{Standardized licenses} for non-software content
-    \item Allows creators to grant permissions \textbf{in advance}
-    \item Range from very open to more restrictive
-\end{itemize}
-
-\vspace{0.2cm}
-\begin{table}[h]
-\centering
-\small
-\begin{tabular}{>{\bfseries}l p{7cm}}
-\toprule
-License & Allows \\
-\midrule
-CC0 & Anything (public domain equivalent) \\
-CC BY & Any use with attribution \\
-CC BY-SA & Any use with attribution + share alike \\
-CC BY-NC & Non-commercial use with attribution \\
-CC BY-NC-ND & Non-commercial, no derivatives, attribution \\
-\bottomrule
-\end{tabular}
-\end{table}
-
-\vspace{0.2cm}
-\textbf{Impact}: Wikipedia uses CC BY-SA; many educational resources (OER movement)
-
-\textbf{The AI complication}: CC-licensed works have been used in AI training---was this the intent?
 \end{frame}
 
 % ===== SLIDE 40: Conclusion - Key Terms and Ideas =====
