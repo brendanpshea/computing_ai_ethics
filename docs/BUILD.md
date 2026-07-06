@@ -27,18 +27,23 @@ All scripts are run from the **project root**.
 ### Quick start
 
 ```powershell
-.\build.ps1                 # all lectures
+.\build.ps1                 # build only decks whose sources changed (incremental)
 .\build.ps1 -Lecture 1      # chapter 1 only
-.\build.ps1 -Lecture 3
+.\build.ps1 -Lecture 4 -Quick   # single pdflatex pass — fast layout check, citations show [?]
+.\build.ps1 -Force          # rebuild everything regardless of timestamps
 .\build.ps1 -NoCleanup      # keep .aux/.log files in PDFs/ for debugging
 ```
 
 ### What it does
 
 1. Prepends `latex/` to `TEXINPUTS` so `\input{lecture_preamble.tex}` resolves.
-2. Runs `pdflatex` → `biber` → `pdflatex` × 2 for each lecture (resolves all references).
-3. Writes PDFs to `PDFs/`.
-4. Cleans build artifacts (`.aux`, `.log`, `.nav`, `.bcf`, etc.) unless `-NoCleanup` is set.
+2. **Incremental**: skips a deck when its PDF is newer than its `.tex`,
+   `lecture_preamble.tex`, and `refs.bib`. Caveat: **image changes are not
+   tracked** — after swapping an image, use `-Force` (or `-Lecture N`).
+3. Builds stale decks **in parallel** (default: min(6, cores−1) jobs; tune with
+   `-MaxParallel N`), each running `pdflatex` → `biber` → `pdflatex` × 2.
+4. Writes PDFs to `PDFs/`; exits nonzero if any deck fails.
+5. Cleans build artifacts (`.aux`, `.log`, `.nav`, `.bcf`, etc.) unless `-NoCleanup` is set.
 
 ### Editing and testing
 

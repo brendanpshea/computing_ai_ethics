@@ -68,6 +68,12 @@ try {
         # Commit bytes as-is and skip line-ending normalization warnings.
         git config core.autocrlf false; Assert-LastExit 'git config autocrlf'
         git config core.safecrlf false; Assert-LastExit 'git config safecrlf'
+        # Fetch the remote gh-pages tip so push pack-negotiation can skip every
+        # blob the remote already has (unchanged images/docx/PDFs). Without
+        # this, the fresh repo re-uploads the whole ~60 MB site each deploy.
+        # Tolerate failure: on the very first deploy the branch doesn't exist.
+        git fetch -q $remote gh-pages 2>$null
+        if ($LASTEXITCODE -ne 0) { Write-Host "(no existing gh-pages on remote -- full upload)" -ForegroundColor DarkGray }
         git add -A;                     Assert-LastExit 'git add'
         $stamp = Get-Date -Format 'yyyy-MM-dd HH:mm'
         git -c user.name=site-deploy -c user.email=site-deploy@localhost commit -q -m "Deploy site $stamp"
