@@ -21,6 +21,13 @@ PDFs/*.bbl
 PDFs/*.blg
 PDFs/*-SAVE-ERROR
 
+# Built lecture PDFs — regenerated locally by build.ps1 and published to the
+# gh-pages branch by deploy-pages.ps1, so they are NOT tracked on main.
+# (The few non-lecture PDFs, e.g. charts/fahrenheit/oer, stay tracked because
+# nothing auto-rebuilds them.)
+PDFs/ai_ethics_*.pdf
+PDFs/bibliography.pdf
+
 # OS
 .DS_Store
 Thumbs.db

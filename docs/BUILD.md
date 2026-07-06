@@ -71,6 +71,40 @@ The preamble and lectures contain `\mode<article>{...}` blocks for a `beamerarti
 
 ---
 
+## Publishing to GitHub Pages
+
+The lecture PDFs are **not tracked on `main`** (they're gitignored) so the repo
+doesn't gain a fresh ~20 MB binary snapshot on every rebuild. They're built
+locally and published to a `gh-pages` branch that is **force-pushed as a single
+commit** each deploy, so no branch accumulates PDF history.
+
+### One-time setup
+
+In GitHub: **Settings → Pages → Build and deployment** → **Source = "Deploy from
+a branch"**, **Branch = `gh-pages`**, folder **`/ (root)`**.
+
+### Deploy
+
+```powershell
+.\deploy-pages.ps1              # rebuild all decks, then publish the site
+.\deploy-pages.ps1 -SkipBuild   # publish the PDFs already in PDFs/
+```
+
+The script runs `build.ps1`, copies the site (`index.html`, `PDFs/`, `html/`,
+`images/`, `docx/`) into a throwaway repo, adds `.nojekyll`, and force-pushes it
+to `gh-pages`. `main` never carries the built PDFs; `gh-pages` is overwritten
+each run.
+
+> **First-time rollout order:** (1) run `.\deploy-pages.ps1`, (2) switch the
+> Pages source to `gh-pages`, (3) then `git push` main. Pushing main first would
+> 404 the live PDFs until Pages is repointed, since `main` no longer serves them.
+
+`docx/` is still tracked on `main` (those change rarely and rebuilding them needs
+the heavier node+pandoc+mermaid pipeline). Give it the same treatment later if
+its history grows.
+
+---
+
 ## HTML → Word (docx)
 
 ### One-time setup
