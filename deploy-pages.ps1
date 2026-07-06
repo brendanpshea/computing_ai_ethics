@@ -22,15 +22,22 @@
 #>
 param([switch]$SkipBuild)
 
-$ErrorActionPreference = 'Stop'
+# git writes progress and normalization warnings to stderr; under 'Stop',
+# PowerShell 5.1 turns that into a terminating error. Use 'Continue' and gate
+# on $LASTEXITCODE instead. Critical cmdlets get explicit -ErrorAction Stop.
+$ErrorActionPreference = 'Continue'
 $root = $PSScriptRoot
+
+function Assert-LastExit([string]$what) {
+    if ($LASTEXITCODE -ne 0) { throw "$what failed (exit $LASTEXITCODE)" }
+}
 
 if (-not $SkipBuild) {
     & "$root\build.ps1"
-    if ($LASTEXITCODE -ne 0) { throw "build.ps1 failed; aborting deploy." }
+    Assert-LastExit 'build.ps1'
 }
 
-# Sanity check: all 12 lecture PDFs must exist before we publish.
+# Sanity: all 12 lecture PDFs must exist before we publish.
 $pdfs = Get-ChildItem (Join-Path $root 'PDFs') -Filter 'ai_ethics_*.pdf' -ErrorAction SilentlyContinue
 if (-not $pdfs -or $pdfs.Count -lt 12) {
     throw "Expected 12 lecture PDFs in PDFs/, found $($pdfs.Count). Build first (drop -SkipBuild)."
@@ -44,25 +51,30 @@ if (-not $remote) { throw "No 'origin' remote configured." }
 $include = @('index.html', 'PDFs', 'html', 'images', 'docx')
 
 $staging = Join-Path ([IO.Path]::GetTempPath()) ("ghpages_" + [Guid]::NewGuid().ToString('N'))
-New-Item -ItemType Directory -Force $staging | Out-Null
+New-Item -ItemType Directory -Force $staging -ErrorAction Stop | Out-Null
 try {
     foreach ($item in $include) {
         $src = Join-Path $root $item
-        if (Test-Path $src) { Copy-Item $src -Destination $staging -Recurse -Force }
+        if (Test-Path $src) { Copy-Item $src -Destination $staging -Recurse -Force -ErrorAction Stop }
         else { Write-Warning "site asset not found, skipping: $item" }
     }
     # Disable Jekyll so files/folders (incl. any leading-underscore names) serve verbatim.
-    Set-Content -Path (Join-Path $staging '.nojekyll') -Value '' -NoNewline
+    Set-Content -Path (Join-Path $staging '.nojekyll') -Value '' -NoNewline -ErrorAction Stop
 
     Push-Location $staging
     try {
-        git init -q
-        git checkout -q -b gh-pages
-        git add -A
+        git init -q;                    Assert-LastExit 'git init'
+        git checkout -q -b gh-pages;    Assert-LastExit 'git checkout'
+        # Commit bytes as-is and skip line-ending normalization warnings.
+        git config core.autocrlf false; Assert-LastExit 'git config autocrlf'
+        git config core.safecrlf false; Assert-LastExit 'git config safecrlf'
+        git add -A;                     Assert-LastExit 'git add'
         $stamp = Get-Date -Format 'yyyy-MM-dd HH:mm'
-        git -c user.name='site-deploy' -c user.email='site-deploy@localhost' commit -q -m "Deploy site $stamp"
+        git -c user.name=site-deploy -c user.email=site-deploy@localhost commit -q -m "Deploy site $stamp"
+        Assert-LastExit 'git commit'
         Write-Host "Force-pushing gh-pages -> $remote ..." -ForegroundColor Cyan
         git push -q --force $remote gh-pages
+        Assert-LastExit 'git push'
     } finally {
         Pop-Location
     }
