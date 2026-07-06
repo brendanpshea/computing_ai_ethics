@@ -41,29 +41,29 @@ improvements (nice to have).
 - **Find:** `ML's arguments for protecting speech`
 - **Fix:** "Mill's arguments". (Only appears in article mode, but it prints in the reader/handout build.)
 
-### 1.6 China Social Credit System — nuance to match current scholarship (Lecture 6)
+### 1.6 China Social Credit System — nuance to match current scholarship (Lecture 6) — DONE 2026-07
 - **File:** `latex/ai_ethics_06_privacy.tex` (~lines 608–626, "China---The Surveillance State Model")
 - **Problem:** The slide presents a unified national "scoring citizens on trustworthiness" system with rewards/punishments. Scholarship (Jeremy Daum/China Law Translate, MIT Tech Review, MERICS) shows this is largely a Western misconception: the real system is a fragmented mix of corporate pilots (many discontinued), court blacklists (the travel-ban mechanism), and regulatory records — mostly not an algorithmic citizen score. **Your own final project topic #26 asks students to debunk exactly this framing**, so the lecture shouldn't reinforce it.
 - **Fix:** Reframe the bullet as "Social Credit System: often described in the West as a unified citizen score; in practice a patchwork of blacklists, pilots, and regulatory records — the surveillance is real, the 'score' mostly isn't." Attach the punishments (travel bans) to the court **judgment-defaulter blacklist** specifically. Keep the camera counts and Great Firewall content, which are accurate.
 
-### 1.7 Luther printing-press quote — flag provenance (Lecture 1)
+### 1.7 Luther printing-press quote — flag provenance (Lecture 1) — DONE 2026-07 (attribution softened + provenance note tying back to the Socrates/Plato irony)
 - **File:** `latex/ai_ethics_01_history.tex` (~line 526)
 - **Find:** `The art of book printing is the \textbf{last and greatest gift}`
 - **Problem:** This quote circulates widely but its provenance is thin (attributed via a secondary German source; sometimes traced to Table Talk paraphrases). Verify against Clemen or soften to "attributed to Luther."
 - **Fix (minimum):** Change attribution line to "attributed to Martin Luther" and keep the Clemen citation. If you can verify it, leave as is.
 
-### 1.8 Trump deplatforming: "permanently ban" + missing reinstatement (Lecture 3)
+### 1.8 Trump deplatforming: "permanently ban" + missing reinstatement (Lecture 3) — DONE 2026-07
 - **File:** `latex/ai_ethics_03_free_speech.tex` (~line 885)
 - **Find:** `Twitter, Facebook, YouTube permanently ban sitting U.S. President`
 - **Problem:** Only Twitter's ban was "permanent"; Facebook's was indefinite → 2-year suspension. All three reinstated the account by 2023, which students will know and which changes the case study.
 - **Fix:** "…ban sitting U.S. President after Capitol riot (Twitter permanently; Facebook and YouTube indefinitely). All three accounts were reinstated by 2023." Consider adding a discussion beat: does reinstatement vindicate either side?
 
-### 1.9 Unsourced attention statistics table (Lecture 2)
+### 1.9 Unsourced attention statistics table (Lecture 2) — DONE 2026-07 (table now cites Gloria Mark and flags the screen-switching vs. attention-span distinction; deep-reading row cut; both tikz sketch-graphs labeled "illustrative")
 - **File:** `latex/ai_ethics_02_virtues.tex` (~lines 527–540, table under "Premise 2a: The Attention Crisis")
 - **Problem:** The 2004→2024 table ("attention span 2.5 min → 47 seconds", "deep reading 60 → 15 min/day", "150+ phone checks") is labeled only "approximate figures from attention research." The 47-second figure is Gloria Mark's screen-switching research (real but often misrepresented as "attention span"); the teen deep-reading row appears to be invented. In a course teaching intellectual virtue, unsourced stats are a liability.
 - **Fix:** Cite Gloria Mark explicitly for the task-switching row and reframe it as "average time on a single screen before switching"; delete or source the other rows. Same concern applies to the hand-drawn empathy-decline and depression tikz "graphs" (~lines 725–737 and 898–910): add "illustrative, not to scale" to captions or rebuild from actual Konrath / CDC-YRBS data.
 
-### 1.10 Haidt presented without the counter-evidence (Lecture 2)
+### 1.10 Haidt presented without the counter-evidence (Lecture 2) — DONE 2026-07 (new "But Is It Causal?" slide: Odgers / Orben & Przybylski critique + Haidt's reply)
 - **Files:** `latex/ai_ethics_02_virtues.tex` (Premise 2a mental health, ~line 887)
 - **Problem:** *The Anxious Generation* correlation-vs-causation critiques (Odgers' *Nature* review, Przybylski's work) are prominent and well known; presenting Haidt uncontested undercuts the deck's own "examine the evidence for each premise" framing. Lecture 12 models this well (Anderson vs. Ferguson) — Lecture 2 should match.
 - **Fix:** Add one objection block: "Critics (Odgers 2024; Orben & Przybylski) argue the correlational evidence is weak and effect sizes small; the causal question is open." One slide or half-slide suffices.
@@ -74,12 +74,12 @@ improvements (nice to have).
 - **Problem:** The Dutch ruling (against EA/FIFA) was overturned on appeal in March 2022. Belgium's ban stands.
 - **Fix:** "Belgium banned loot boxes as gambling (2018); a similar Dutch ruling was overturned on appeal in 2022."
 
-### 1.12 Verify Do Kwon sentencing detail (Lecture 5)
+### 1.12 Verify Do Kwon sentencing detail (Lecture 5) — VERIFIED 2026-07: 15 years (sentenced Dec 11, 2025, Judge Engelmayer, SDNY) — slide was correct. Lazarus figures confirmed against Chainalysis year-end data ($2.02B in 2025; $6.75B cumulative); Bybit heist hedged to ~$1.4–1.5B (year-end vs. contemporaneous valuation)
 - **File:** `latex/ai_ethics_05_crypto.tex` (~line 934)
 - **Find:** `Sentenced December 2025 to 15 years in prison`
 - **Action:** Verify sentence length/date against reporting before reprinting (he pleaded guilty in Aug 2025; confirm the December sentencing outcome). Same slide: confirm the "$2.02B stolen in 2025" Lazarus figure is the final Chainalysis year-end number, not a mid-year estimate.
 
-### 1.13 Per-transaction Bitcoin energy metric is contested (Lecture 5)
+### 1.13 Per-transaction Bitcoin energy metric is contested (Lecture 5) — DONE 2026-07 (both the per-transaction and address-concentration caveats added)
 - **File:** `latex/ai_ethics_05_crypto.tex` (~line 717)
 - **Find:** `Single transaction: $\sim$1,400+ kWh`
 - **Problem:** "Energy per transaction" divides total mining energy by transaction count — a methodology critics (and even Digiconomist's rivals at CBECI) call misleading, since mining energy doesn't scale with transactions. The wealth-concentration stat on the next slide ("2% of accounts hold 95%") has a similar flaw (exchange addresses hold many users' coins).
