@@ -75,8 +75,8 @@
         \end{frame}
     }
 
-    % FiraSans has ~15% taller metrics than Computer Modern; pull line spacing back
-    % to avoid the massive overflows Metropolis + FiraSans produce by default.
+    % IBM Plex Sans (loaded above) runs tall relative to Computer Modern; pull line
+    % spacing back to avoid the overflows Metropolis + a tall sans produce by default.
     \renewcommand{\baselinestretch}{0.88}
 
     % Tighter list spacing
@@ -227,10 +227,12 @@
 \newcommand{\iconCon}{\faThumbsDown}
 
 % Discussion question command (for interactive moments)
+% Discussion prompts use the gold discussionbox (inviting), never the red
+% alertblock (which is reserved for warnings and key tensions).
 \newcommand{\discussionquestion}[1]{%
-    \begin{alertblock}{Discussion Question}
+    \begin{discussionbox}[Discussion]
     #1
-    \end{alertblock}
+    \end{discussionbox}
 }
 
 % fontawesome5 defines \faQuoteLeft, \faBalanceScale, etc. natively --- no aliases needed.
