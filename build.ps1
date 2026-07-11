@@ -117,6 +117,10 @@ foreach ($n in $list) {
 }
 
 # Launch throttled parallel jobs.
+# Precompute a clean boolean: an inline [bool]$Quick cast inside -ArgumentList
+# mis-parses across the Start-Job boundary and arrives as a truthy string,
+# which would make every job take the -Quick path and skip biber.
+$quickFlag = [bool]$Quick.IsPresent
 $jobs = @()
 foreach ($item in $toBuild) {
     # Count every job not yet finished (freshly dispatched jobs briefly report
@@ -126,7 +130,7 @@ foreach ($item in $toBuild) {
     }
     $n, $fullSrc, $base = $item
     Write-Host "Lecture $n... building" -ForegroundColor Cyan
-    $job = Start-Job -ScriptBlock $BuildScript -ArgumentList $Root, $SourceDir, $OutputDir, $fullSrc, $base, [bool]$Quick
+    $job = Start-Job -ScriptBlock $BuildScript -ArgumentList $Root, $SourceDir, $OutputDir, $fullSrc, $base, $quickFlag
     $jobs += [PSCustomObject]@{ N=$n; Base=$base; Job=$job }
 }
 
