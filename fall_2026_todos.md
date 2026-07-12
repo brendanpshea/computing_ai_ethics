@@ -152,7 +152,7 @@ Do one sweep in August 2026. LLM implementers: verify each with current sources 
 ### 4.4 Standardize `\documentclass` options — DONE 2026-07 (11pt everywhere)
 - L1–4: `[aspectratio=169]`; L5–12: `[aspectratio=169,11pt]`. Pick one (11pt everywhere, or move sizing into the preamble) so identical content renders identically across decks.
 
-### 4.5 Reduce/eliminate `[shrink=N]` in Lectures 10–11
+### 4.5 Reduce/eliminate `[shrink=N]` in Lectures 10–11 — ASSESSED 2026-07: NOT NEEDED. Rendered the worst offenders (R.U.R. shrink=25, Asimov/Campaign/Kargu shrink=20, Bostrom shrink=18); all read fine with whitespace to spare — the caps are conservative but the *actual* shrink beamer applies is mild, so there's no visible font-size problem. Ironically shrink is why L10/L11 have ~0 overflows. Leaving as-is. (Open follow-ups found while checking: a "Figure N: *" caption artifact on L10/11/12 image slides, and a broad content-overflow issue in L1–9/L12 — see notes below.)
 - `ai_ethics_10_doomsday.tex` and `ai_ethics_11_robot_rights.tex` use `shrink` up to **25**, which silently scales text so font sizes visibly vary slide to slide (bad for projection and accessibility).
 - **Fix:** For any frame with `shrink > ~8`, split into two slides or cut text instead. The worst offenders: L10 "Ord's Risk Estimates" (shrink=16), "Bostrom" (18), "Campaign to Stop Killer Robots" (20), "Kargu-2" (20); L11 "R.U.R." (25), "Asimov" (20).
 

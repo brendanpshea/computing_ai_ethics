@@ -195,13 +195,18 @@
 }
 
 % Discussion Box (for group activities, questions)
+% Compact padding: these appear at slide bottoms very often, so keep the
+% vertical footprint close to a beamer block to avoid pushing content off-slide.
 \newtcolorbox{discussionbox}[1][Discussion]{
     colback=boxgold!5,
     colframe=boxgold,
     fonttitle=\bfseries,
     title={#1},
     boxrule=1pt,
-    arc=2pt
+    arc=2pt,
+    boxsep=1pt,
+    top=2pt, bottom=2pt, left=5pt, right=5pt,
+    toptitle=1pt, bottomtitle=1pt
 }
 
 % Figure Box (for diagrams with explanations)
