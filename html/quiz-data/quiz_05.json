@@ -1,0 +1,275 @@
+{
+  "id": "ch05",
+  "chapter": 5,
+  "title": "Chapter 5 Quiz: The Political Philosophy of Cryptocurrency",
+  "description": "Twenty questions on the key people, dates, concepts, and events covered in Chapter 5.",
+  "chapter_url": "ch05_crypto.html",
+  "questions": [
+    {
+      "id": "ch05-q01",
+      "question": "The Bitcoin genesis block — the very first block in the blockchain — was timestamped on:",
+      "options": [
+        "October 31, 2008",
+        "January 3, 2009",
+        "September 15, 2008",
+        "March 12, 2010"
+      ],
+      "correct": 1,
+      "explanation": "The genesis block was timestamped January 3, 2009. Satoshi Nakamoto had published the Bitcoin white paper on October 31, 2008 — Halloween — but the network went live on January 3. The two-month gap allowed early cypherpunks to review the protocol before launch.",
+      "section": "how-it-works"
+    },
+    {
+      "id": "ch05-q02",
+      "question": "What message did Satoshi Nakamoto embed in the Bitcoin genesis block?",
+      "options": [
+        "\"Vires in Numeris\" — Strength in Numbers",
+        "\"The Times 03/Jan/2009 Chancellor on brink of second bailout for banks\"",
+        "\"Don't trust, verify — digital currency for the sovereign individual\"",
+        "\"In cryptography we trust — a peer-to-peer electronic cash system\""
+      ],
+      "correct": 1,
+      "explanation": "The embedded headline — from that day's London Times — served as both a timestamp proving the genesis block was not pre-mined and a political statement: Bitcoin was born specifically in response to government bailouts of failing banks. Nakamoto's white paper was published six weeks after the Lehman Brothers collapse.",
+      "section": "how-it-works"
+    },
+    {
+      "id": "ch05-q03",
+      "question": "Who wrote 'A Cypherpunk's Manifesto' (1993), declaring that 'privacy is necessary for an open society in the electronic age'?",
+      "options": [
+        "Timothy May",
+        "Eric Hughes",
+        "Nick Szabo",
+        "Hal Finney"
+      ],
+      "correct": 1,
+      "explanation": "Eric Hughes (b. 1958) — mathematician and cryptographer — wrote 'A Cypherpunk's Manifesto' in 1993. The manifesto argued that privacy could not be granted by governments or corporations but had to be built by individuals using cryptography. The cypherpunk mailing list was the intellectual crucible from which Bitcoin eventually emerged.",
+      "section": "case-for"
+    },
+    {
+      "id": "ch05-q04",
+      "question": "Which Austrian-British economist argued in 'Denationalisation of Money' (1976) that governments should lose their monopoly over currency creation?",
+      "options": [
+        "Milton Friedman",
+        "Friedrich Hayek",
+        "John Maynard Keynes",
+        "Ludwig von Mises"
+      ],
+      "correct": 1,
+      "explanation": "Friedrich Hayek (1899–1992) received the Nobel Prize in Economics in 1974. In a 1984 interview he said: 'I don't believe we shall ever have a good money again before we take the thing out of the hands of government... all we can do is by some sly roundabout way introduce something they can't stop.' Cypherpunks read this as prophetic of Bitcoin.",
+      "section": "case-for"
+    },
+    {
+      "id": "ch05-q05",
+      "question": "What is the maximum number of Bitcoins that can ever be created?",
+      "options": [
+        "100 million",
+        "21 million",
+        "1 billion",
+        "There is no fixed maximum"
+      ],
+      "correct": 1,
+      "explanation": "Bitcoin's protocol hard-codes a maximum supply of 21 million coins. New Bitcoin is created through mining, but the reward is halved approximately every four years ('the halving'). The last Bitcoin is expected to be mined around the year 2140. This fixed supply is central to the 'sound money' argument: unlike fiat currencies, Bitcoin cannot be inflated by any central authority.",
+      "section": "how-it-works"
+    },
+    {
+      "id": "ch05-q06",
+      "question": "Bitcoin's annual energy consumption of approximately 150–175 TWh is comparable to the total electricity usage of which country?",
+      "options": [
+        "Switzerland (~60 TWh)",
+        "Poland (~170 TWh)",
+        "Norway (~140 TWh)",
+        "Denmark (~35 TWh)"
+      ],
+      "correct": 1,
+      "explanation": "Bitcoin consumes roughly 150–175 TWh per year (2025), comparable to Poland's ~170 TWh. For context, Google's entire global operations consume about 33 TWh — less than one-fifth of Bitcoin's usage. Ethereum, by contrast, reduced its energy consumption by 99.9% when it switched from Proof of Work to Proof of Stake in 2022, falling to ~0.02 TWh/year.",
+      "section": "critiques-pro"
+    },
+    {
+      "id": "ch05-q07",
+      "question": "Who received the very first Bitcoin transaction, sent by Satoshi Nakamoto shortly after the network launched in January 2009?",
+      "options": [
+        "Nick Szabo",
+        "Hal Finney",
+        "Timothy May",
+        "Eric Hughes"
+      ],
+      "correct": 1,
+      "explanation": "Hal Finney — a cryptographer and one of the original cypherpunks — received ten Bitcoin from Satoshi Nakamoto in the network's first transaction. Finney had been an early collaborator on PGP and was deeply engaged with the Bitcoin whitepaper before launch. He died in 2014 from ALS; at the time of his death, his Bitcoin holdings were cryogenically preserved with his body.",
+      "section": "how-it-works"
+    },
+    {
+      "id": "ch05-q08",
+      "question": "Silk Road — the Bitcoin-exclusive darknet marketplace that operated from 2011 to 2013 — was founded by:",
+      "options": [
+        "Sam Bankman-Fried",
+        "Ross Ulbricht",
+        "Do Kwon",
+        "Nick Szabo"
+      ],
+      "correct": 1,
+      "explanation": "Ross Ulbricht, operating under the alias 'Dread Pirate Roberts,' founded Silk Road in 2011. The marketplace reached $1.2 billion in peak annual transactions, with Bitcoin as its exclusive currency. Ulbricht was arrested in 2013, convicted in 2015, and sentenced to life in prison — a sentence commuted by President Trump in January 2025.",
+      "section": "critiques-pro"
+    },
+    {
+      "id": "ch05-q09",
+      "question": "Which cryptocurrency exchange collapsed in November 2022 after its founder misappropriated over $8 billion in customer funds?",
+      "options": [
+        "Binance",
+        "FTX",
+        "Celsius",
+        "Coinbase"
+      ],
+      "correct": 1,
+      "explanation": "FTX — founded by Sam Bankman-Fried in 2019 and once valued at $32 billion — collapsed within days in November 2022 after it emerged that customer deposits had been transferred to sister trading firm Alameda Research. The implosion wiped out billions and triggered cascading failures across the crypto industry.",
+      "section": "critiques-pro"
+    },
+    {
+      "id": "ch05-q10",
+      "question": "Sam Bankman-Fried (SBF) was sentenced in March 2024 to how many years in federal prison?",
+      "options": [
+        "10 years",
+        "15 years",
+        "25 years",
+        "Life imprisonment"
+      ],
+      "correct": 2,
+      "explanation": "Bankman-Fried was convicted in November 2023 on all seven counts of fraud and conspiracy. In March 2024, he was sentenced to 25 years in federal prison and ordered to forfeit $11 billion. He had presented himself as an 'effective altruist' who intended to donate his fortune to charity — a narrative prosecutors argued was cover for deliberate fraud.",
+      "section": "critiques-pro"
+    },
+    {
+      "id": "ch05-q11",
+      "question": "In May 2022, the algorithmic stablecoin UST and its companion token LUNA collapsed, destroying approximately how much market value in less than a week?",
+      "options": [
+        "$1–2 billion",
+        "$8–10 billion",
+        "$40–60 billion",
+        "$200 billion"
+      ],
+      "correct": 2,
+      "explanation": "The Terra/Luna collapse in May 2022 destroyed approximately $40–60 billion in market value in less than a week. UST was designed to maintain a $1 peg through a mint-and-burn relationship with LUNA, but when confidence broke, a 'death spiral' ensued: falling UST triggered LUNA issuance, which crashed LUNA's price, which undermined UST's peg further. Do Kwon was sentenced to 15 years in prison in December 2025.",
+      "section": "critiques-pro"
+    },
+    {
+      "id": "ch05-q12",
+      "question": "El Salvador adopted Bitcoin as legal tender in September 2021. By 2024, approximately what percentage of Salvadorans were NOT using Bitcoin?",
+      "options": [
+        "34%",
+        "58%",
+        "78%",
+        "92%"
+      ],
+      "correct": 3,
+      "explanation": "By 2024, surveys found that 92% of Salvadorans were not using Bitcoin, and only 1.3% of remittances were being sent via cryptocurrency. The government's Chivo wallet was plagued by technical failures and identity theft. In January 2025, El Salvador revoked Bitcoin's legal-tender status as a condition of a $1.4 billion IMF loan.",
+      "section": "case-regulation"
+    },
+    {
+      "id": "ch05-q13",
+      "question": "In 1971, President Nixon ended the convertibility of U.S. dollars to gold. What term describes currencies backed only by government decree, with no commodity backing?",
+      "options": [
+        "Representative money",
+        "Fiat money",
+        "Commodity money",
+        "Reserve currency"
+      ],
+      "correct": 1,
+      "explanation": "After the 'Nixon Shock' of 1971, the dollar became pure fiat money — backed only by trust in the U.S. government. 'Fiat' is Latin for 'let it be done' — the money has value because the government says it does. Bitcoin's advocates argue this makes fiat money inherently prone to inflation and political manipulation, which motivates the appeal of a mathematically fixed supply.",
+      "section": "money"
+    },
+    {
+      "id": "ch05-q14",
+      "question": "Approximately how many adults worldwide currently lack access to formal banking services?",
+      "options": [
+        "300 million",
+        "700 million",
+        "1.3 billion",
+        "3.5 billion"
+      ],
+      "correct": 2,
+      "explanation": "Approximately 1.3 billion adults remain unbanked globally, concentrated in Sub-Saharan Africa and South Asia. Bitcoin proponents argue that smartphone-based cryptocurrency wallets can reach this population faster than traditional banks. Critics respond that mobile money systems like M-Pesa (Kenya, launched 2007) already serve many of these communities more effectively and with lower volatility.",
+      "section": "case-for"
+    },
+    {
+      "id": "ch05-q15",
+      "question": "Which country launched the world's first central bank digital currency (CBDC), called the Sand Dollar, in 2020?",
+      "options": [
+        "Nigeria",
+        "Jamaica",
+        "China",
+        "The Bahamas"
+      ],
+      "correct": 3,
+      "explanation": "The Bahamas launched the Sand Dollar in 2020, becoming the world's first country with an operational CBDC. Nigeria (eNaira, 2021), Jamaica (JAM-DEX, 2022), and China (e-CNY, piloting since 2020 with 260 million wallets) followed. The United States, by contrast, issued an executive order in January 2025 prohibiting CBDC development.",
+      "section": "future"
+    },
+    {
+      "id": "ch05-q16",
+      "type": "multiple",
+      "question": "Which of the following are the three standard economic functions of money? Select all that apply.",
+      "options": [
+        "Medium of exchange (accepted in trade for goods and services)",
+        "Store of value (retains worth over time, enabling saving)",
+        "Unit of account (standard measure for expressing prices and debts)",
+        "Reserve standard (held by central banks as backing for other currencies)",
+        "Inflation hedge (automatically rises in value when prices increase)"
+      ],
+      "correct": [0, 1, 2],
+      "explanation": "Economists define money's three functions as: medium of exchange, store of value, and unit of account. These three criteria are also used to evaluate Bitcoin's claims to be 'real money.' Critics argue Bitcoin fails as a store of value (80%+ crashes in 2018 and 2022) and as a medium of exchange (few merchants accept it), despite working technically as a unit of account.",
+      "section": "money"
+    },
+    {
+      "id": "ch05-q17",
+      "type": "multiple",
+      "question": "Which of the following accurately describe Bitcoin's Proof of Work (PoW) consensus mechanism? Select all that apply.",
+      "options": [
+        "Computers compete to solve computationally difficult puzzles to earn the right to add the next block",
+        "The winning miner receives newly created Bitcoin as a reward",
+        "Each block contains a cryptographic hash of the previous block, making tampering detectable",
+        "Miners must hold a minimum 'stake' of existing Bitcoin to participate",
+        "Approximately four mining pools currently control over 50% of Bitcoin's total hashrate"
+      ],
+      "correct": [0, 1, 2, 4],
+      "explanation": "Proof of Work involves competitive puzzle-solving; winners earn new Bitcoin and add the next block. Hash chaining makes the ledger tamper-evident. Requiring a minimum stake is a feature of Proof of Stake (PoS), not PoW. The concentration of hashrate in four large pools is a documented centralization concern that undermines Bitcoin's 'decentralized' branding.",
+      "section": "how-it-works"
+    },
+    {
+      "id": "ch05-q18",
+      "type": "multiple",
+      "question": "Which of the following are accurate statements about the FTX collapse in November 2022? Select all that apply.",
+      "options": [
+        "FTX founder Sam Bankman-Fried channeled customer funds to his trading firm Alameda Research",
+        "FTX had reached a peak valuation of approximately $32 billion",
+        "SBF was convicted of fraud and sentenced to 25 years in federal prison",
+        "Do Kwon was the founder and CEO of FTX",
+        "FTX customers lost more than $8 billion in deposits"
+      ],
+      "correct": [0, 1, 2, 4],
+      "explanation": "FTX did misappropriate customer funds via Alameda Research, did peak at a $32 billion valuation, and SBF was convicted and sentenced to 25 years. Customers lost over $8 billion. Do Kwon was not FTX's founder — he was the South Korean entrepreneur behind Terra/Luna, which collapsed separately in May 2022.",
+      "section": "critiques-pro"
+    },
+    {
+      "id": "ch05-q19",
+      "type": "matching",
+      "question": "Match each figure to the work, proposal, or contribution most closely associated with them in cryptocurrency history.",
+      "pairs": [
+        { "left": "Satoshi Nakamoto", "right": "Bitcoin white paper: 'A Peer-to-Peer Electronic Cash System' (2008)" },
+        { "left": "Nick Szabo",       "right": "'Bit gold' — the direct conceptual predecessor to Bitcoin (2005)" },
+        { "left": "Eric Hughes",      "right": "'A Cypherpunk's Manifesto' — 'Privacy is necessary for an open society' (1993)" },
+        { "left": "Friedrich Hayek",  "right": "'Denationalisation of Money' — competing private currencies (1976)" }
+      ],
+      "explanation": "The intellectual lineage of Bitcoin runs from Hayek's theoretical case for private currencies (1976), through the cypherpunk movement Hughes helped launch (1993), through Szabo's 'bit gold' design (2005), to Nakamoto's synthesis in the 2008 white paper. Each step added a piece: the political motivation, the privacy philosophy, the technical prototype, and the working implementation.",
+      "section": "how-it-works"
+    },
+    {
+      "id": "ch05-q20",
+      "type": "matching",
+      "question": "Match each cryptocurrency collapse or fraud to its approximate financial damage.",
+      "pairs": [
+        { "left": "BitConnect Ponzi scheme (2018)",             "right": "~$2.5 billion defrauded from investors" },
+        { "left": "Terra/Luna algorithmic stablecoin (May 2022)", "right": "~$40–60 billion in market value destroyed" },
+        { "left": "FTX exchange collapse (November 2022)",      "right": "$8 billion+ in customer funds misappropriated" },
+        { "left": "Lazarus Group theft (cumulative to 2025)",   "right": "~$6.75 billion stolen across multiple heists" }
+      ],
+      "explanation": "These four cases represent different failure modes: BitConnect was a classic Ponzi promising 40% monthly returns; Terra/Luna was a structural flaw in algorithmic stablecoin design; FTX was deliberate executive fraud; and the Lazarus Group represents state-sponsored theft by North Korea, which has used stolen cryptocurrency to fund its weapons program.",
+      "section": "critiques-pro"
+    }
+  ]
+}

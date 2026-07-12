@@ -1,0 +1,227 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global/global}
+    \entry{boyle_public_domain}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=1d6c5c677a1017e881059e98aff27ba5}{%
+           family={Boyle},
+           familyi={B\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {New Haven, CT}%
+      }
+      \list{publisher}{1}{%
+        {Yale University Press}%
+      }
+      \strng{namehash}{1d6c5c677a1017e881059e98aff27ba5}
+      \strng{fullhash}{1d6c5c677a1017e881059e98aff27ba5}
+      \strng{fullhashraw}{1d6c5c677a1017e881059e98aff27ba5}
+      \strng{bibnamehash}{1d6c5c677a1017e881059e98aff27ba5}
+      \strng{authorbibnamehash}{1d6c5c677a1017e881059e98aff27ba5}
+      \strng{authornamehash}{1d6c5c677a1017e881059e98aff27ba5}
+      \strng{authorfullhash}{1d6c5c677a1017e881059e98aff27ba5}
+      \strng{authorfullhashraw}{1d6c5c677a1017e881059e98aff27ba5}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Public Domain: Enclosing the Commons of the Mind}
+      \field{year}{2008}
+    \endentry
+    \entry{doctorow_chokepoint}{book}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=f07392ff66b0c83a1520683a348eabe1}{%
+           family={Doctorow},
+           familyi={D\bibinitperiod},
+           given={Cory},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2e02486dc541c07182382b0e07988312}{%
+           family={Giblin},
+           familyi={G\bibinitperiod},
+           given={Rebecca},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Boston}%
+      }
+      \list{publisher}{1}{%
+        {Beacon Press}%
+      }
+      \strng{namehash}{b99dd1eb3781db037ae0f0167b905527}
+      \strng{fullhash}{b99dd1eb3781db037ae0f0167b905527}
+      \strng{fullhashraw}{b99dd1eb3781db037ae0f0167b905527}
+      \strng{bibnamehash}{b99dd1eb3781db037ae0f0167b905527}
+      \strng{authorbibnamehash}{b99dd1eb3781db037ae0f0167b905527}
+      \strng{authornamehash}{b99dd1eb3781db037ae0f0167b905527}
+      \strng{authorfullhash}{b99dd1eb3781db037ae0f0167b905527}
+      \strng{authorfullhashraw}{b99dd1eb3781db037ae0f0167b905527}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Chokepoint Capitalism: How Big Tech and Big Content Captured Creative Labor Markets and How We'll Win Them Back}
+      \field{year}{2022}
+    \endentry
+    \entry{drahos_information_feudalism}{book}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=27566f075a9be378731bb4218daa0706}{%
+           family={Drahos},
+           familyi={D\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e8408612ab51acb69567214ed8f80e5a}{%
+           family={Braithwaite},
+           familyi={B\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {London}%
+      }
+      \list{publisher}{1}{%
+        {Earthscan}%
+      }
+      \strng{namehash}{36792bab85913ca17ec33b1d864c869b}
+      \strng{fullhash}{36792bab85913ca17ec33b1d864c869b}
+      \strng{fullhashraw}{36792bab85913ca17ec33b1d864c869b}
+      \strng{bibnamehash}{36792bab85913ca17ec33b1d864c869b}
+      \strng{authorbibnamehash}{36792bab85913ca17ec33b1d864c869b}
+      \strng{authornamehash}{36792bab85913ca17ec33b1d864c869b}
+      \strng{authorfullhash}{36792bab85913ca17ec33b1d864c869b}
+      \strng{authorfullhashraw}{36792bab85913ca17ec33b1d864c869b}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Information Feudalism: Who Owns the Knowledge Economy?}
+      \field{year}{2002}
+    \endentry
+    \entry{jefferson_mcpherson}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f70f9b115860a2958473a8d6a8eb794a}{%
+           family={Jefferson},
+           familyi={J\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f70f9b115860a2958473a8d6a8eb794a}
+      \strng{fullhash}{f70f9b115860a2958473a8d6a8eb794a}
+      \strng{fullhashraw}{f70f9b115860a2958473a8d6a8eb794a}
+      \strng{bibnamehash}{f70f9b115860a2958473a8d6a8eb794a}
+      \strng{authorbibnamehash}{f70f9b115860a2958473a8d6a8eb794a}
+      \strng{authornamehash}{f70f9b115860a2958473a8d6a8eb794a}
+      \strng{authorfullhash}{f70f9b115860a2958473a8d6a8eb794a}
+      \strng{authorfullhashraw}{f70f9b115860a2958473a8d6a8eb794a}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{8}
+      \field{note}{Discusses the nature of ideas and intellectual property}
+      \field{title}{Letter to Isaac McPherson}
+      \field{year}{1813}
+    \endentry
+    \entry{wu_master_switch}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3f26aadd2ef4416a03f75e1898338872}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Tim},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {Alfred A. Knopf}%
+      }
+      \strng{namehash}{3f26aadd2ef4416a03f75e1898338872}
+      \strng{fullhash}{3f26aadd2ef4416a03f75e1898338872}
+      \strng{fullhashraw}{3f26aadd2ef4416a03f75e1898338872}
+      \strng{bibnamehash}{3f26aadd2ef4416a03f75e1898338872}
+      \strng{authorbibnamehash}{3f26aadd2ef4416a03f75e1898338872}
+      \strng{authornamehash}{3f26aadd2ef4416a03f75e1898338872}
+      \strng{authorfullhash}{3f26aadd2ef4416a03f75e1898338872}
+      \strng{authorfullhashraw}{3f26aadd2ef4416a03f75e1898338872}
+      \field{extraname}{1}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Master Switch: The Rise and Fall of Information Empires}
+      \field{year}{2010}
+    \endentry
+    \entry{wu_attention_merchants}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3f26aadd2ef4416a03f75e1898338872}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Tim},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {Alfred A. Knopf}%
+      }
+      \strng{namehash}{3f26aadd2ef4416a03f75e1898338872}
+      \strng{fullhash}{3f26aadd2ef4416a03f75e1898338872}
+      \strng{fullhashraw}{3f26aadd2ef4416a03f75e1898338872}
+      \strng{bibnamehash}{3f26aadd2ef4416a03f75e1898338872}
+      \strng{authorbibnamehash}{3f26aadd2ef4416a03f75e1898338872}
+      \strng{authornamehash}{3f26aadd2ef4416a03f75e1898338872}
+      \strng{authorfullhash}{3f26aadd2ef4416a03f75e1898338872}
+      \strng{authorfullhashraw}{3f26aadd2ef4416a03f75e1898338872}
+      \field{extraname}{2}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Attention Merchants: The Epic Scramble to Get Inside Our Heads}
+      \field{year}{2016}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

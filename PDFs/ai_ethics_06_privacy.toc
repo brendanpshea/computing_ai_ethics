@@ -1,0 +1,4 @@
+\beamer@sectionintoc {1}{Part I: Understanding Privacy}{4}{0}{1}
+\beamer@sectionintoc {2}{Part II: A History of IT and Privacy}{18}{0}{2}
+\beamer@sectionintoc {3}{Part III: IT Surveillance in Authoritarian States}{28}{0}{3}
+\beamer@sectionintoc {4}{Part IV: Surveillance Debates in Liberal Democracies}{39}{0}{4}

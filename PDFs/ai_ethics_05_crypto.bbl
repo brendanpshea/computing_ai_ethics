@@ -1,0 +1,122 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global/global}
+    \entry{hayek_denationalization}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=98e46b1dddd71a1b8786b9778e4ea675}{%
+           family={Hayek},
+           familyi={H\bibinitperiod},
+           given={Friedrich\bibnamedelima A.},
+           giveni={F\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {London}%
+      }
+      \list{publisher}{1}{%
+        {Institute of Economic Affairs}%
+      }
+      \strng{namehash}{98e46b1dddd71a1b8786b9778e4ea675}
+      \strng{fullhash}{98e46b1dddd71a1b8786b9778e4ea675}
+      \strng{fullhashraw}{98e46b1dddd71a1b8786b9778e4ea675}
+      \strng{bibnamehash}{98e46b1dddd71a1b8786b9778e4ea675}
+      \strng{authorbibnamehash}{98e46b1dddd71a1b8786b9778e4ea675}
+      \strng{authornamehash}{98e46b1dddd71a1b8786b9778e4ea675}
+      \strng{authorfullhash}{98e46b1dddd71a1b8786b9778e4ea675}
+      \strng{authorfullhashraw}{98e46b1dddd71a1b8786b9778e4ea675}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Denationalisation of Money: The Argument Refined}
+      \field{year}{1976}
+    \endentry
+    \entry{hughes_cypherpunk}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ac4a4f2972f2af18e92d40dda3a0ac8d}{%
+           family={Hughes},
+           familyi={H\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ac4a4f2972f2af18e92d40dda3a0ac8d}
+      \strng{fullhash}{ac4a4f2972f2af18e92d40dda3a0ac8d}
+      \strng{fullhashraw}{ac4a4f2972f2af18e92d40dda3a0ac8d}
+      \strng{bibnamehash}{ac4a4f2972f2af18e92d40dda3a0ac8d}
+      \strng{authorbibnamehash}{ac4a4f2972f2af18e92d40dda3a0ac8d}
+      \strng{authornamehash}{ac4a4f2972f2af18e92d40dda3a0ac8d}
+      \strng{authorfullhash}{ac4a4f2972f2af18e92d40dda3a0ac8d}
+      \strng{authorfullhashraw}{ac4a4f2972f2af18e92d40dda3a0ac8d}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{3}
+      \field{title}{A Cypherpunk's Manifesto}
+      \field{year}{1993}
+      \verb{urlraw}
+      \verb https://www.activism.net/cypherpunk/manifesto.html
+      \endverb
+      \verb{url}
+      \verb https://www.activism.net/cypherpunk/manifesto.html
+      \endverb
+    \endentry
+    \entry{nakamoto_bitcoin}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=1977190f018b398e43ede3de043de8ea}{%
+           family={Nakamoto},
+           familyi={N\bibinitperiod},
+           given={Satoshi},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1977190f018b398e43ede3de043de8ea}
+      \strng{fullhash}{1977190f018b398e43ede3de043de8ea}
+      \strng{fullhashraw}{1977190f018b398e43ede3de043de8ea}
+      \strng{bibnamehash}{1977190f018b398e43ede3de043de8ea}
+      \strng{authorbibnamehash}{1977190f018b398e43ede3de043de8ea}
+      \strng{authornamehash}{1977190f018b398e43ede3de043de8ea}
+      \strng{authorfullhash}{1977190f018b398e43ede3de043de8ea}
+      \strng{authorfullhashraw}{1977190f018b398e43ede3de043de8ea}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Bitcoin: A Peer-to-Peer Electronic Cash System}
+      \field{year}{2008}
+      \verb{urlraw}
+      \verb https://bitcoin.org/bitcoin.pdf
+      \endverb
+      \verb{url}
+      \verb https://bitcoin.org/bitcoin.pdf
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

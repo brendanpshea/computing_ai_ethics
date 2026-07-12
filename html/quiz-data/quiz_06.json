@@ -1,0 +1,275 @@
+{
+  "id": "ch06",
+  "chapter": 6,
+  "title": "Chapter 6 Quiz: Privacy in the Information Age",
+  "description": "Twenty questions on the key people, cases, laws, and concepts covered in Chapter 6.",
+  "chapter_url": "ch06_privacy.html",
+  "questions": [
+    {
+      "id": "ch06-q01",
+      "question": "Samuel Warren and Louis Brandeis published 'The Right to Privacy' — coining the phrase 'the right to be let alone' — in the Harvard Law Review in:",
+      "options": [
+        "1867",
+        "1890",
+        "1914",
+        "1928"
+      ],
+      "correct": 1,
+      "explanation": "The 1890 article was prompted by Warren and Brandeis's alarm at new portable cameras and sensational 'yellow journalism.' They argued that existing property and contract law was insufficient to protect a new kind of harm: intrusion into private life. The article is widely considered the founding document of modern privacy law.",
+      "section": "history-privacy"
+    },
+    {
+      "id": "ch06-q02",
+      "question": "The 1967 Supreme Court case Katz v. United States established which foundational privacy standard?",
+      "options": [
+        "The 'right to be let alone' doctrine",
+        "The 'reasonable expectation of privacy' test",
+        "The 'chilling effect' standard for surveillance",
+        "The 'contextual integrity' requirement"
+      ],
+      "correct": 1,
+      "explanation": "Katz held that the Fourth Amendment protects people, not places — the government needs a warrant to tap a phone booth even though the caller is in a public space. The 'reasonable expectation of privacy' standard replaced the older property-based approach from Olmstead v. United States (1928), in which Justice Brandeis had written a famous dissent arguing wiretapping violated the Constitution.",
+      "section": "history-privacy"
+    },
+    {
+      "id": "ch06-q03",
+      "question": "Jeremy Bentham proposed his Panopticon prison design in 1791. Michel Foucault analyzed its implications for surveillance and social control in which work?",
+      "options": [
+        "Madness and Civilization (1961)",
+        "The Order of Things (1966)",
+        "Discipline and Punish (1975)",
+        "The History of Sexuality (1976)"
+      ],
+      "correct": 2,
+      "explanation": "In 'Discipline and Punish' (1975), Foucault argued that the Panopticon's key innovation was not constant surveillance but the uncertainty of being watched: prisoners who cannot tell when they are observed begin to police themselves. Foucault extended this analysis to schools, hospitals, and factories, arguing that modern institutions discipline subjects through the same mechanism.",
+      "section": "understanding-privacy"
+    },
+    {
+      "id": "ch06-q04",
+      "question": "Edward Snowden's first revelations about NSA surveillance programs — including the PRISM program and bulk telephone metadata collection — were published by The Guardian on:",
+      "options": [
+        "September 11, 2013",
+        "June 5, 2013",
+        "January 20, 2015",
+        "March 18, 2012"
+      ],
+      "correct": 1,
+      "explanation": "The Guardian published the first Snowden story on June 5, 2013, revealing the NSA's court order compelling Verizon to hand over all domestic phone metadata. Subsequent revelations disclosed PRISM (direct server access from Google, Facebook, and Apple), upstream fiber-optic tapping, and XKeyscore (described as capturing 'nearly everything a user does on the internet').",
+      "section": "history-privacy"
+    },
+    {
+      "id": "ch06-q05",
+      "question": "The Cambridge Analytica scandal involved a personality quiz app called 'This Is Your Digital Life' that harvested the data of approximately how many Facebook users without their knowledge?",
+      "options": [
+        "14 million",
+        "50 million",
+        "87 million",
+        "200 million"
+      ],
+      "correct": 2,
+      "explanation": "The app harvested 87 million profiles by exploiting Facebook's API, which at the time allowed apps to collect data not just from users who installed them but from all their Facebook friends. Cambridge Analytica claimed to use this data to build psychographic profiles for targeted political advertising in the Brexit referendum and 2016 U.S. election. The revelations led to a $5 billion FTC fine against Facebook.",
+      "section": "history-privacy"
+    },
+    {
+      "id": "ch06-q06",
+      "question": "The EU's General Data Protection Regulation (GDPR) took effect in which month and year?",
+      "options": [
+        "May 2014",
+        "January 2016",
+        "May 2018",
+        "January 2020"
+      ],
+      "correct": 2,
+      "explanation": "GDPR was adopted in April 2016 and took effect on May 25, 2018, giving organizations two years to prepare. It introduced rights including erasure, portability, and data minimization, and set maximum penalties of 4% of global annual revenue. In 2023, Meta was fined €1.2 billion — the largest GDPR penalty to date — for transferring European users' data to U.S. servers.",
+      "section": "history-privacy"
+    },
+    {
+      "id": "ch06-q07",
+      "question": "Which philosopher developed the 'contextual integrity' framework, arguing that privacy is violated when information flows in ways that violate the norms of its original social context?",
+      "options": [
+        "James Rachels",
+        "Helen Nissenbaum",
+        "Judith Jarvis Thomson",
+        "Richard Posner"
+      ],
+      "correct": 1,
+      "explanation": "Helen Nissenbaum's contextual integrity framework explains why sharing medical information with a doctor feels private even though a third party now knows it — because the flow matches the norms of the medical context. The same information shared with an employer violates contextual integrity. This framework is more nuanced than the binary private/public distinction and better explains many real-world privacy intuitions.",
+      "section": "understanding-privacy"
+    },
+    {
+      "id": "ch06-q08",
+      "question": "Shoshana Zuboff's 'The Age of Surveillance Capitalism,' which argues that tech firms commodify human behavioral data as 'behavioral surplus,' was published in:",
+      "options": [
+        "2013",
+        "2016",
+        "2019",
+        "2022"
+      ],
+      "correct": 2,
+      "explanation": "Zuboff (b. 1951), professor emerita at Harvard Business School, argued that surveillance capitalism is a new economic logic distinct from industrial capitalism. Firms collect more behavioral data than needed to improve services ('behavioral surplus'), use it to predict and modify behavior, and sell those predictions to advertisers. She coined the term 'instrumentarian power' for the ability to shape human behavior at scale.",
+      "section": "history-privacy"
+    },
+    {
+      "id": "ch06-q09",
+      "question": "The Pegasus Project (July 2021) revealed that NSO Group's Pegasus spyware had infected phones linked to over 50,000 targets. NSO Group is based in:",
+      "options": [
+        "Russia",
+        "United States",
+        "Israel",
+        "China"
+      ],
+      "correct": 2,
+      "explanation": "NSO Group is an Israeli cybersecurity company that marketed Pegasus as a counter-terrorism tool for governments. The Pegasus Project — a consortium of 17 media organizations — found the spyware was used against 180 journalists in 20 countries, multiple heads of state (including French President Macron), activists, lawyers, and opposition politicians. The U.S. Commerce Department added NSO to its export blacklist in November 2021.",
+      "section": "democratic-debates"
+    },
+    {
+      "id": "ch06-q10",
+      "question": "In 2023, Meta (Facebook's parent company) received the largest GDPR fine in history. The penalty was:",
+      "options": [
+        "€500 million",
+        "€750 million",
+        "€1.2 billion",
+        "€2.5 billion"
+      ],
+      "correct": 2,
+      "explanation": "Ireland's Data Protection Commission fined Meta €1.2 billion in May 2023 for illegally transferring European users' personal data to U.S. servers without adequate protections. This exceeded the previous record GDPR fine of €746 million (also Meta/Facebook, 2021). GDPR allows fines of up to 4% of global annual revenue, meaning Meta's fine could theoretically have been several times larger.",
+      "section": "history-privacy"
+    },
+    {
+      "id": "ch06-q11",
+      "question": "The USA PATRIOT Act — which dramatically expanded domestic surveillance authorities, including bulk collection of all Americans' phone metadata — was passed approximately how long after the September 11, 2001 attacks?",
+      "options": [
+        "Two days",
+        "Six weeks",
+        "Six months",
+        "One year"
+      ],
+      "correct": 1,
+      "explanation": "The PATRIOT Act was signed into law on October 26, 2001 — just 45 days after the September 11 attacks. Critics argued the rapid passage left little time for deliberation or civil liberties review. Section 215, which authorized bulk phone metadata collection, was the provision Snowden revealed in 2013; it was curtailed by the USA FREEDOM Act in 2015.",
+      "section": "history-privacy"
+    },
+    {
+      "id": "ch06-q12",
+      "question": "China's IJOP (Integrated Joint Operations Platform) uses AI-based predictive scoring to monitor which population in Xinjiang?",
+      "options": [
+        "Approximately 1 million political dissidents nationwide",
+        "Approximately 4 million Han Chinese residents of border regions",
+        "Approximately 12 million Uyghur Muslims and other minorities",
+        "Approximately 50 million residents of Xinjiang province"
+      ],
+      "correct": 2,
+      "explanation": "IJOP targets Xinjiang's approximately 12 million Uyghur Muslim population and other minorities. The system flags behaviors including praying regularly, owning more than one phone, traveling abroad, and avoiding alcohol as markers of 'suspicion.' Since approximately 2017, over 1 million people have been detained in what the Chinese government calls 'vocational education and training centers.'",
+      "section": "authoritarian-surveillance"
+    },
+    {
+      "id": "ch06-q13",
+      "question": "The Los Angeles Police Department discontinued PredPol — its place-based predictive policing system — in 2020 primarily because of:",
+      "options": [
+        "High software licensing costs",
+        "Technical system failures and repeated outages",
+        "Disparate racial impact and feedback loops that encoded historical enforcement biases",
+        "Lack of accuracy in predicting the locations of violent crimes"
+      ],
+      "correct": 2,
+      "explanation": "Predictive policing systems trained on historical crime data inherit and amplify historical enforcement patterns: more police in communities of color → more arrests → more data labeling those areas as high-crime → more predicted crime → more police. LAPD's own investigations found PredPol produced this feedback loop. The chapter calls this a structural problem, not a bug to be fixed by better data.",
+      "section": "democratic-debates"
+    },
+    {
+      "id": "ch06-q14",
+      "question": "The Fair Credit Reporting Act (FCRA) of 1970 is significant in U.S. privacy history as:",
+      "options": [
+        "The first law requiring commercial websites to post privacy policies",
+        "The first major U.S. data privacy law, regulating credit reporting agencies",
+        "The law that created the NSA and authorized domestic intelligence collection",
+        "The federal law establishing HIPAA protections for health information"
+      ],
+      "correct": 1,
+      "explanation": "The FCRA (1970) was the first major U.S. data privacy law and was driven by Congress's alarm at the growth of computerized credit files. It gave consumers rights to see and challenge their credit reports. The U.S. approach since then has been 'sectoral' — separate laws for credit, health (HIPAA), education (FERPA), and children (COPPA) — rather than a comprehensive European-style framework.",
+      "section": "history-privacy"
+    },
+    {
+      "id": "ch06-q15",
+      "question": "Facial recognition company Clearview AI built its database by scraping approximately how many photos from social media and public websites?",
+      "options": [
+        "500 million",
+        "3 billion",
+        "30 billion",
+        "300 billion"
+      ],
+      "correct": 2,
+      "explanation": "Clearview AI scraped over 30 billion photos without consent. By 2020, its software was being used by 2,400+ U.S. law enforcement agencies. Multiple countries have fined or banned it (Netherlands: €30.5 million; Italy: €20 million; UK: £7.5 million). The ACLU settled with Clearview, obtaining a ban on selling the technology to private businesses in Illinois.",
+      "section": "democratic-debates"
+    },
+    {
+      "id": "ch06-q16",
+      "type": "multiple",
+      "question": "Which of the following are categories of privacy identified in the chapter? Select all that apply.",
+      "options": [
+        "Informational privacy — control over personal data and who can access it",
+        "Physical / spatial privacy — freedom from bodily intrusion or location tracking",
+        "Decisional privacy — autonomy over personal choices (medical, reproductive, lifestyle)",
+        "Economic privacy — protection of financial activity from taxation or audit",
+        "Associational privacy — freedom to associate with others privately"
+      ],
+      "correct": [0, 1, 2, 4],
+      "explanation": "The chapter identifies informational, physical/spatial, decisional, communications, associational, and intellectual privacy as distinct categories. 'Economic privacy as protection from taxation' is not one of them — while financial data privacy (e.g., GLBA) is discussed, it is a form of informational privacy, not a separate category protecting people from legitimate tax oversight.",
+      "section": "understanding-privacy"
+    },
+    {
+      "id": "ch06-q17",
+      "type": "multiple",
+      "question": "Which of the following are among the original Fair Information Practice Principles (FIPPs), established by a 1973 U.S. government report? Select all that apply.",
+      "options": [
+        "Notice — individuals should know what data is being collected about them",
+        "Choice — individuals should be able to consent or opt out",
+        "Security — data must be protected against unauthorized access or breaches",
+        "Encryption — all personal data must be stored using encryption technology",
+        "Enforcement — there must be consequences for violations of these principles"
+      ],
+      "correct": [0, 1, 2, 4],
+      "explanation": "The 1973 HEW Report established five FIPPs: Notice, Choice, Access (the right to see one's own data), Security, and Enforcement. 'Encryption' is not one of the original principles — Security is the relevant principle, but the FIPPs did not specify technical methods. The FIPPs remain the conceptual backbone of U.S. privacy regulation and influenced GDPR's design.",
+      "section": "history-privacy"
+    },
+    {
+      "id": "ch06-q18",
+      "type": "multiple",
+      "question": "Which of the following accurately describe China's surveillance infrastructure as discussed in the chapter? Select all that apply.",
+      "options": [
+        "China has approximately 600–700 million CCTV cameras nationwide — roughly one camera per two people",
+        "Over 1 million Uyghur Muslims have been detained in Xinjiang since approximately 2017",
+        "The IJOP app flags behaviors such as regular prayer, avoiding alcohol, and foreign travel as suspicious",
+        "China's 'Safe City' surveillance packages have been exported to over 100 countries",
+        "China's Social Credit System is a single, unified national scoring program that has been fully operational since 2015"
+      ],
+      "correct": [0, 1, 2, 3],
+      "explanation": "The first four statements are accurate per the chapter. The Social Credit System is often described as a unified national program, but in practice it consists of multiple disconnected local and sector-specific pilots rather than one fully operational national system — making the fifth statement misleading.",
+      "section": "authoritarian-surveillance"
+    },
+    {
+      "id": "ch06-q19",
+      "type": "matching",
+      "question": "Match each privacy thinker to the key concept or argument they are known for in the chapter.",
+      "pairs": [
+        { "left": "Helen Nissenbaum", "right": "Contextual integrity — privacy violated when information flows outside the norms of its original context" },
+        { "left": "Shoshana Zuboff",  "right": "Surveillance capitalism — behavioral surplus commodified to predict and modify human behavior" },
+        { "left": "Michel Foucault",  "right": "The Panopticon — permanent visibility disciplines subjects even without constant observation" },
+        { "left": "James Rachels",    "right": "Privacy enables different relationships — we appropriately share different selves with doctors, friends, and employers" }
+      ],
+      "explanation": "Each thinker offers a distinct lens. Nissenbaum asks: does this information flow match the norms of its context? Zuboff asks: who profits from capturing behavioral data? Foucault asks: how does the possibility of being watched change behavior? Rachels asks: what human relationships and autonomy does privacy make possible?",
+      "section": "understanding-privacy"
+    },
+    {
+      "id": "ch06-q20",
+      "type": "matching",
+      "question": "Match each U.S. privacy law to its primary subject matter.",
+      "pairs": [
+        { "left": "COPPA (1998)",  "right": "Children's online data — parental consent required for collecting data from users under 13" },
+        { "left": "FERPA (1974)", "right": "Educational records — students' right to access and control their school records" },
+        { "left": "HIPAA",        "right": "Health data — privacy and security of medical records and health information" },
+        { "left": "GLBA (1999)",  "right": "Financial data — privacy requirements for banks and financial services companies" }
+      ],
+      "explanation": "The U.S. 'sectoral' approach means privacy protections are fragmented across domain-specific laws. FERPA predates the internet; HIPAA and GLBA addressed 1990s concerns about electronic records; COPPA responded to early commercial websites targeting children. Critics argue this patchwork leaves significant gaps — most notably, there is no comprehensive federal law covering commercial data collection generally.",
+      "section": "history-privacy"
+    }
+  ]
+}

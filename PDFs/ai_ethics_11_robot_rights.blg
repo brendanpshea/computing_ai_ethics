@@ -1,0 +1,15 @@
+[0] Config.pm:328> INFO - This is Biber 2.21
+[1] Config.pm:331> INFO - Logfile is 'PDFs/ai_ethics_11_robot_rights.blg'
+[284] biber-MSWIN64:342> INFO - === 
+[374] Biber.pm:421> INFO - Reading 'PDFs/ai_ethics_11_robot_rights.bcf'
+[751] Biber.pm:1002> INFO - Found 12 citekeys in bib section 0
+[791] Biber.pm:4487> INFO - Processing section 0
+[819] Biber.pm:4678> INFO - Looking for bibtex file 'refs.bib' for section 0
+[951] bibtex.pm:1713> INFO - LaTeX decoding ...
+[1353] bibtex.pm:1519> INFO - Found BibTeX data source 'refs.bib'
+[1604] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1604] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1605] Biber.pm:4307> INFO - Sorting list 'nyt/global//global/global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[1605] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
+[1636] bbl.pm:676> INFO - Writing 'PDFs/ai_ethics_11_robot_rights.bbl' with encoding 'UTF-8'
+[1653] bbl.pm:779> INFO - Output to PDFs/ai_ethics_11_robot_rights.bbl

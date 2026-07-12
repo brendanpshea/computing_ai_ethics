@@ -1,0 +1,634 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global/global}
+    \entry{anderson_violent_video_games}{article}{}{}
+      \name{author}{8}{}{%
+        {{un=0,uniquepart=base,hash=841657a06f4c97708f0d5b1fee4d0a4e}{%
+           family={Anderson},
+           familyi={A\bibinitperiod},
+           given={Craig\bibnamedelima A.},
+           giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=126e346bdcef2d1450c355335d3291e5}{%
+           family={Shibuya},
+           familyi={S\bibinitperiod},
+           given={Akiko},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c8554c60eb7b373e1c136a4be684a162}{%
+           family={Ihori},
+           familyi={I\bibinitperiod},
+           given={Nobuko},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2d323bdf5dcddd3d4a24f873f05f23d1}{%
+           family={Swing},
+           familyi={S\bibinitperiod},
+           given={Edward\bibnamedelima L.},
+           giveni={E\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=be8ce3892d67d592706e0cb4247b2db4}{%
+           family={Bushman},
+           familyi={B\bibinitperiod},
+           given={Brad\bibnamedelima J.},
+           giveni={B\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f5b480a4753281a5ad129345dd7d5fb7}{%
+           family={Sakamoto},
+           familyi={S\bibinitperiod},
+           given={Akira},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b3742ad61b7aed5c2fd7ca97b7e2093f}{%
+           family={Rothstein},
+           familyi={R\bibinitperiod},
+           given={Hannah\bibnamedelima R.},
+           giveni={H\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=253101d496a034c235cd42786ec99676}{%
+           family={Saleem},
+           familyi={S\bibinitperiod},
+           given={Muniba},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{266a8197333c85ca164c6146ffcf382f}
+      \strng{fullhash}{65b01a864a8d2c8d2ba3ee9760d8dfad}
+      \strng{fullhashraw}{65b01a864a8d2c8d2ba3ee9760d8dfad}
+      \strng{bibnamehash}{266a8197333c85ca164c6146ffcf382f}
+      \strng{authorbibnamehash}{266a8197333c85ca164c6146ffcf382f}
+      \strng{authornamehash}{266a8197333c85ca164c6146ffcf382f}
+      \strng{authorfullhash}{65b01a864a8d2c8d2ba3ee9760d8dfad}
+      \strng{authorfullhashraw}{65b01a864a8d2c8d2ba3ee9760d8dfad}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Psychological Bulletin}
+      \field{number}{2}
+      \field{title}{Violent Video Game Effects on Aggression, Empathy, and Prosocial Behavior in Eastern and Western Countries: A Meta-Analytic Review}
+      \field{volume}{136}
+      \field{year}{2010}
+      \field{pages}{151\bibrangedash 173}
+      \range{pages}{23}
+      \verb{doi}
+      \verb 10.1037/a0018251
+      \endverb
+    \endentry
+    \entry{aristotle_nicomachean}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=798a01f212a8e620a6940400717a56d9}{%
+           family={Aristotle},
+           familyi={A\bibinitperiod}}}%
+      }
+      \name{translator}{1}{}{%
+        {{hash=f47ed39ab1b2b6b1254258e226d10e27}{%
+           family={Ross},
+           familyi={R\bibinitperiod},
+           given={W.\bibnamedelimi D.},
+           giveni={W\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{798a01f212a8e620a6940400717a56d9}
+      \strng{fullhash}{798a01f212a8e620a6940400717a56d9}
+      \strng{fullhashraw}{798a01f212a8e620a6940400717a56d9}
+      \strng{bibnamehash}{798a01f212a8e620a6940400717a56d9}
+      \strng{authorbibnamehash}{798a01f212a8e620a6940400717a56d9}
+      \strng{authornamehash}{798a01f212a8e620a6940400717a56d9}
+      \strng{authorfullhash}{798a01f212a8e620a6940400717a56d9}
+      \strng{authorfullhashraw}{798a01f212a8e620a6940400717a56d9}
+      \strng{translatorbibnamehash}{f47ed39ab1b2b6b1254258e226d10e27}
+      \strng{translatornamehash}{f47ed39ab1b2b6b1254258e226d10e27}
+      \strng{translatorfullhash}{f47ed39ab1b2b6b1254258e226d10e27}
+      \strng{translatorfullhashraw}{f47ed39ab1b2b6b1254258e226d10e27}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{Revised}
+      \field{note}{Original work circa 340 BCE}
+      \field{series}{Oxford World's Classics}
+      \field{title}{Nicomachean Ethics}
+      \field{year}{2009}
+    \endentry
+    \entry{bogost_persuasive_games}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=177d8df6daf6a988ce917b97d3ce360c}{%
+           family={Bogost},
+           familyi={B\bibinitperiod},
+           given={Ian},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Cambridge, MA}%
+      }
+      \list{publisher}{1}{%
+        {MIT Press}%
+      }
+      \strng{namehash}{177d8df6daf6a988ce917b97d3ce360c}
+      \strng{fullhash}{177d8df6daf6a988ce917b97d3ce360c}
+      \strng{fullhashraw}{177d8df6daf6a988ce917b97d3ce360c}
+      \strng{bibnamehash}{177d8df6daf6a988ce917b97d3ce360c}
+      \strng{authorbibnamehash}{177d8df6daf6a988ce917b97d3ce360c}
+      \strng{authornamehash}{177d8df6daf6a988ce917b97d3ce360c}
+      \strng{authorfullhash}{177d8df6daf6a988ce917b97d3ce360c}
+      \strng{authorfullhashraw}{177d8df6daf6a988ce917b97d3ce360c}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Persuasive Games: The Expressive Power of Videogames}
+      \field{year}{2007}
+    \endentry
+    \entry{caillois_man_play}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=5757def291d60477d87d079b3f2972ef}{%
+           family={Caillois},
+           familyi={C\bibinitperiod},
+           given={Roger},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{translator}{1}{}{%
+        {{hash=3015c6f377a11660926daaef6a71b678}{%
+           family={Barash},
+           familyi={B\bibinitperiod},
+           given={Meyer},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Urbana}%
+      }
+      \list{publisher}{1}{%
+        {University of Illinois Press}%
+      }
+      \strng{namehash}{5757def291d60477d87d079b3f2972ef}
+      \strng{fullhash}{5757def291d60477d87d079b3f2972ef}
+      \strng{fullhashraw}{5757def291d60477d87d079b3f2972ef}
+      \strng{bibnamehash}{5757def291d60477d87d079b3f2972ef}
+      \strng{authorbibnamehash}{5757def291d60477d87d079b3f2972ef}
+      \strng{authornamehash}{5757def291d60477d87d079b3f2972ef}
+      \strng{authorfullhash}{5757def291d60477d87d079b3f2972ef}
+      \strng{authorfullhashraw}{5757def291d60477d87d079b3f2972ef}
+      \strng{translatorbibnamehash}{3015c6f377a11660926daaef6a71b678}
+      \strng{translatornamehash}{3015c6f377a11660926daaef6a71b678}
+      \strng{translatorfullhash}{3015c6f377a11660926daaef6a71b678}
+      \strng{translatorfullhashraw}{3015c6f377a11660926daaef6a71b678}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Originally published in French as Les jeux et les hommes, 1958}
+      \field{title}{Man, Play and Games}
+      \field{year}{2001}
+    \endentry
+    \entry{ferguson_video_game_debate}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=98e4345ba416ca2ca5da84fffb772c24}{%
+           family={Ferguson},
+           familyi={F\bibinitperiod},
+           given={Christopher\bibnamedelima J.},
+           giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{98e4345ba416ca2ca5da84fffb772c24}
+      \strng{fullhash}{98e4345ba416ca2ca5da84fffb772c24}
+      \strng{fullhashraw}{98e4345ba416ca2ca5da84fffb772c24}
+      \strng{bibnamehash}{98e4345ba416ca2ca5da84fffb772c24}
+      \strng{authorbibnamehash}{98e4345ba416ca2ca5da84fffb772c24}
+      \strng{authornamehash}{98e4345ba416ca2ca5da84fffb772c24}
+      \strng{authorfullhash}{98e4345ba416ca2ca5da84fffb772c24}
+      \strng{authorfullhashraw}{98e4345ba416ca2ca5da84fffb772c24}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Perspectives on Psychological Science}
+      \field{number}{5}
+      \field{title}{Do Angry Birds Make for Angry Children? A Meta-Analysis of Video Game Influences on Children's and Adolescents' Aggression, Mental Health, Prosocial Behavior, and Academic Performance}
+      \field{volume}{10}
+      \field{year}{2015}
+      \field{pages}{646\bibrangedash 666}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1177/1745691615592234
+      \endverb
+    \endentry
+    \entry{graeber_bullshit_jobs}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a56cdebc84e02fdfad5780f9cf7c9b29}{%
+           family={Graeber},
+           familyi={G\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {Simon \& Schuster}%
+      }
+      \strng{namehash}{a56cdebc84e02fdfad5780f9cf7c9b29}
+      \strng{fullhash}{a56cdebc84e02fdfad5780f9cf7c9b29}
+      \strng{fullhashraw}{a56cdebc84e02fdfad5780f9cf7c9b29}
+      \strng{bibnamehash}{a56cdebc84e02fdfad5780f9cf7c9b29}
+      \strng{authorbibnamehash}{a56cdebc84e02fdfad5780f9cf7c9b29}
+      \strng{authornamehash}{a56cdebc84e02fdfad5780f9cf7c9b29}
+      \strng{authorfullhash}{a56cdebc84e02fdfad5780f9cf7c9b29}
+      \strng{authorfullhashraw}{a56cdebc84e02fdfad5780f9cf7c9b29}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Bullshit Jobs: A Theory}
+      \field{year}{2018}
+    \endentry
+    \entry{huizinga_homo_ludens}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e116188b49539dd54a57266d7fbbc28c}{%
+           family={Huizinga},
+           familyi={H\bibinitperiod},
+           given={Johan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {London}%
+      }
+      \list{publisher}{1}{%
+        {Routledge \& Kegan Paul}%
+      }
+      \strng{namehash}{e116188b49539dd54a57266d7fbbc28c}
+      \strng{fullhash}{e116188b49539dd54a57266d7fbbc28c}
+      \strng{fullhashraw}{e116188b49539dd54a57266d7fbbc28c}
+      \strng{bibnamehash}{e116188b49539dd54a57266d7fbbc28c}
+      \strng{authorbibnamehash}{e116188b49539dd54a57266d7fbbc28c}
+      \strng{authornamehash}{e116188b49539dd54a57266d7fbbc28c}
+      \strng{authorfullhash}{e116188b49539dd54a57266d7fbbc28c}
+      \strng{authorfullhashraw}{e116188b49539dd54a57266d7fbbc28c}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Originally published in Dutch as Homo Ludens, 1938}
+      \field{title}{Homo Ludens: A Study of the Play-Element in Culture}
+      \field{year}{1949}
+    \endentry
+    \entry{keynes_economic_possibilities}{incollection}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=612862f6008b8bea8cd4a13783af9a93}{%
+           family={Keynes},
+           familyi={K\bibinitperiod},
+           given={John\bibnamedelima Maynard},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {W. W. Norton \& Co.}%
+      }
+      \strng{namehash}{612862f6008b8bea8cd4a13783af9a93}
+      \strng{fullhash}{612862f6008b8bea8cd4a13783af9a93}
+      \strng{fullhashraw}{612862f6008b8bea8cd4a13783af9a93}
+      \strng{bibnamehash}{612862f6008b8bea8cd4a13783af9a93}
+      \strng{authorbibnamehash}{612862f6008b8bea8cd4a13783af9a93}
+      \strng{authornamehash}{612862f6008b8bea8cd4a13783af9a93}
+      \strng{authorfullhash}{612862f6008b8bea8cd4a13783af9a93}
+      \strng{authorfullhashraw}{612862f6008b8bea8cd4a13783af9a93}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Essays in Persuasion}
+      \field{note}{Essay originally published 1930}
+      \field{title}{Economic Possibilities for our Grandchildren}
+      \field{year}{1963}
+      \field{pages}{358\bibrangedash 373}
+      \range{pages}{16}
+    \endentry
+    \entry{mcgonigal_reality_broken}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=35b4286fbfa020556c1254a759e91da6}{%
+           family={McGonigal},
+           familyi={M\bibinitperiod},
+           given={Jane},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {Penguin Press}%
+      }
+      \strng{namehash}{35b4286fbfa020556c1254a759e91da6}
+      \strng{fullhash}{35b4286fbfa020556c1254a759e91da6}
+      \strng{fullhashraw}{35b4286fbfa020556c1254a759e91da6}
+      \strng{bibnamehash}{35b4286fbfa020556c1254a759e91da6}
+      \strng{authorbibnamehash}{35b4286fbfa020556c1254a759e91da6}
+      \strng{authornamehash}{35b4286fbfa020556c1254a759e91da6}
+      \strng{authorfullhash}{35b4286fbfa020556c1254a759e91da6}
+      \strng{authorfullhashraw}{35b4286fbfa020556c1254a759e91da6}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Reality Is Broken: Why Games Make Us Better and How They Can Change the World}
+      \field{year}{2011}
+    \endentry
+    \entry{nguyen_games_agency}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=73273e00fa56a74d86132765ba45c973}{%
+           family={Nguyen},
+           familyi={N\bibinitperiod},
+           given={C.\bibnamedelimi Thi},
+           giveni={C\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{73273e00fa56a74d86132765ba45c973}
+      \strng{fullhash}{73273e00fa56a74d86132765ba45c973}
+      \strng{fullhashraw}{73273e00fa56a74d86132765ba45c973}
+      \strng{bibnamehash}{73273e00fa56a74d86132765ba45c973}
+      \strng{authorbibnamehash}{73273e00fa56a74d86132765ba45c973}
+      \strng{authornamehash}{73273e00fa56a74d86132765ba45c973}
+      \strng{authorfullhash}{73273e00fa56a74d86132765ba45c973}
+      \strng{authorfullhashraw}{73273e00fa56a74d86132765ba45c973}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{series}{Oxford Studies in Philosophy of Art}
+      \field{title}{Games: Agency as Art}
+      \field{year}{2020}
+    \endentry
+    \entry{plato_republic}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3aa3cde8444ac980b28ba1f1af3aaeb4}{%
+           family={Plato},
+           familyi={P\bibinitperiod}}}%
+      }
+      \name{translator}{2}{}{%
+        {{hash=bc90a3ad73667ff5a0134fc0267e2961}{%
+           family={Grube},
+           familyi={G\bibinitperiod},
+           given={G.\bibnamedelimi M.\bibnamedelimi A.},
+           giveni={G\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=32b62f4b0e47252a78a47bb2edf71f28}{%
+           family={Reeve},
+           familyi={R\bibinitperiod},
+           given={C.\bibnamedelimi D.\bibnamedelimi C.},
+           giveni={C\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Hackett Publishing}%
+      }
+      \strng{namehash}{3aa3cde8444ac980b28ba1f1af3aaeb4}
+      \strng{fullhash}{3aa3cde8444ac980b28ba1f1af3aaeb4}
+      \strng{fullhashraw}{3aa3cde8444ac980b28ba1f1af3aaeb4}
+      \strng{bibnamehash}{3aa3cde8444ac980b28ba1f1af3aaeb4}
+      \strng{authorbibnamehash}{3aa3cde8444ac980b28ba1f1af3aaeb4}
+      \strng{authornamehash}{3aa3cde8444ac980b28ba1f1af3aaeb4}
+      \strng{authorfullhash}{3aa3cde8444ac980b28ba1f1af3aaeb4}
+      \strng{authorfullhashraw}{3aa3cde8444ac980b28ba1f1af3aaeb4}
+      \strng{translatorbibnamehash}{42dfbdf284ce5d605c21afcba882166a}
+      \strng{translatornamehash}{42dfbdf284ce5d605c21afcba882166a}
+      \strng{translatorfullhash}{42dfbdf284ce5d605c21afcba882166a}
+      \strng{translatorfullhashraw}{42dfbdf284ce5d605c21afcba882166a}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Original work circa 380 BCE}
+      \field{title}{Republic}
+      \field{year}{1992}
+    \endentry
+    \entry{ryan_deci_sdt}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=49ad03aeb3155f395016c49dd507c027}{%
+           family={Ryan},
+           familyi={R\bibinitperiod},
+           given={Richard\bibnamedelima M.},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d733c22238af349bac296bb1e5b60deb}{%
+           family={Deci},
+           familyi={D\bibinitperiod},
+           given={Edward\bibnamedelima L.},
+           giveni={E\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b8fdaf35d2ee9a085c4bd58b7f47fcc4}
+      \strng{fullhash}{b8fdaf35d2ee9a085c4bd58b7f47fcc4}
+      \strng{fullhashraw}{b8fdaf35d2ee9a085c4bd58b7f47fcc4}
+      \strng{bibnamehash}{b8fdaf35d2ee9a085c4bd58b7f47fcc4}
+      \strng{authorbibnamehash}{b8fdaf35d2ee9a085c4bd58b7f47fcc4}
+      \strng{authornamehash}{b8fdaf35d2ee9a085c4bd58b7f47fcc4}
+      \strng{authorfullhash}{b8fdaf35d2ee9a085c4bd58b7f47fcc4}
+      \strng{authorfullhashraw}{b8fdaf35d2ee9a085c4bd58b7f47fcc4}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{American Psychologist}
+      \field{number}{1}
+      \field{title}{Self-Determination Theory and the Facilitation of Intrinsic Motivation, Social Development, and Well-Being}
+      \field{volume}{55}
+      \field{year}{2000}
+      \field{pages}{68\bibrangedash 78}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1037/0003-066X.55.1.68
+      \endverb
+    \endentry
+    \entry{suits_grasshopper}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=16861a6880434dfd03d948006d4e5d0f}{%
+           family={Suits},
+           familyi={S\bibinitperiod},
+           given={Bernard},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Peterborough, Ontario}%
+      }
+      \list{publisher}{1}{%
+        {Broadview Press}%
+      }
+      \strng{namehash}{16861a6880434dfd03d948006d4e5d0f}
+      \strng{fullhash}{16861a6880434dfd03d948006d4e5d0f}
+      \strng{fullhashraw}{16861a6880434dfd03d948006d4e5d0f}
+      \strng{bibnamehash}{16861a6880434dfd03d948006d4e5d0f}
+      \strng{authorbibnamehash}{16861a6880434dfd03d948006d4e5d0f}
+      \strng{authornamehash}{16861a6880434dfd03d948006d4e5d0f}
+      \strng{authorfullhash}{16861a6880434dfd03d948006d4e5d0f}
+      \strng{authorfullhashraw}{16861a6880434dfd03d948006d4e5d0f}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Originally published 1978 by University of Toronto Press}
+      \field{title}{The Grasshopper: Games, Life and Utopia}
+      \field{year}{2014}
+    \endentry
+    \entry{vallor_technology_virtues}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d71d4e22a512b99daa7807bb1ac96a4b}{%
+           family={Vallor},
+           familyi={V\bibinitperiod},
+           given={Shannon},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{d71d4e22a512b99daa7807bb1ac96a4b}
+      \strng{fullhash}{d71d4e22a512b99daa7807bb1ac96a4b}
+      \strng{fullhashraw}{d71d4e22a512b99daa7807bb1ac96a4b}
+      \strng{bibnamehash}{d71d4e22a512b99daa7807bb1ac96a4b}
+      \strng{authorbibnamehash}{d71d4e22a512b99daa7807bb1ac96a4b}
+      \strng{authornamehash}{d71d4e22a512b99daa7807bb1ac96a4b}
+      \strng{authorfullhash}{d71d4e22a512b99daa7807bb1ac96a4b}
+      \strng{authorfullhashraw}{d71d4e22a512b99daa7807bb1ac96a4b}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Technology and the Virtues: A Philosophical Guide to a Future Worth Wanting}
+      \field{year}{2016}
+    \endentry
+    \entry{weber_protestant_ethic}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=5c5b680247c92b67e657f8faab60250e}{%
+           family={Weber},
+           familyi={W\bibinitperiod},
+           given={Max},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{translator}{1}{}{%
+        {{hash=923dbf4029f9c827a07d8374c4ab7823}{%
+           family={Parsons},
+           familyi={P\bibinitperiod},
+           given={Talcott},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {Charles Scribner's Sons}%
+      }
+      \strng{namehash}{5c5b680247c92b67e657f8faab60250e}
+      \strng{fullhash}{5c5b680247c92b67e657f8faab60250e}
+      \strng{fullhashraw}{5c5b680247c92b67e657f8faab60250e}
+      \strng{bibnamehash}{5c5b680247c92b67e657f8faab60250e}
+      \strng{authorbibnamehash}{5c5b680247c92b67e657f8faab60250e}
+      \strng{authornamehash}{5c5b680247c92b67e657f8faab60250e}
+      \strng{authorfullhash}{5c5b680247c92b67e657f8faab60250e}
+      \strng{authorfullhashraw}{5c5b680247c92b67e657f8faab60250e}
+      \strng{translatorbibnamehash}{923dbf4029f9c827a07d8374c4ab7823}
+      \strng{translatornamehash}{923dbf4029f9c827a07d8374c4ab7823}
+      \strng{translatorfullhash}{923dbf4029f9c827a07d8374c4ab7823}
+      \strng{translatorfullhashraw}{923dbf4029f9c827a07d8374c4ab7823}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Originally published in German, 1904--1905}
+      \field{title}{The Protestant Ethic and the Spirit of Capitalism}
+      \field{year}{1958}
+    \endentry
+    \entry{who_gaming_disorder_2019}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=531217507bec092b6ec36c0f78f46736}{%
+           family={{World Health Organization}},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{531217507bec092b6ec36c0f78f46736}
+      \strng{fullhash}{531217507bec092b6ec36c0f78f46736}
+      \strng{fullhashraw}{531217507bec092b6ec36c0f78f46736}
+      \strng{bibnamehash}{531217507bec092b6ec36c0f78f46736}
+      \strng{authorbibnamehash}{531217507bec092b6ec36c0f78f46736}
+      \strng{authornamehash}{531217507bec092b6ec36c0f78f46736}
+      \strng{authorfullhash}{531217507bec092b6ec36c0f78f46736}
+      \strng{authorfullhashraw}{531217507bec092b6ec36c0f78f46736}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{ICD-11 for Mortality and Morbidity Statistics}
+      \field{note}{Classification 6C51; \url{https://icd.who.int/browse/2024-01/mms/en\#1041487064}}
+      \field{title}{Gaming Disorder}
+      \field{year}{2019}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

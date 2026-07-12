@@ -1,0 +1,348 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global/global}
+    \entry{arendt_human_condition}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f50f57f3bb1808b3fd67c3e65baf025f}{%
+           family={Arendt},
+           familyi={A\bibinitperiod},
+           given={Hannah},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Chicago}%
+      }
+      \list{publisher}{1}{%
+        {University of Chicago Press}%
+      }
+      \strng{namehash}{f50f57f3bb1808b3fd67c3e65baf025f}
+      \strng{fullhash}{f50f57f3bb1808b3fd67c3e65baf025f}
+      \strng{fullhashraw}{f50f57f3bb1808b3fd67c3e65baf025f}
+      \strng{bibnamehash}{f50f57f3bb1808b3fd67c3e65baf025f}
+      \strng{authorbibnamehash}{f50f57f3bb1808b3fd67c3e65baf025f}
+      \strng{authornamehash}{f50f57f3bb1808b3fd67c3e65baf025f}
+      \strng{authorfullhash}{f50f57f3bb1808b3fd67c3e65baf025f}
+      \strng{authorfullhashraw}{f50f57f3bb1808b3fd67c3e65baf025f}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Human Condition}
+      \field{year}{1958}
+    \endentry
+    \entry{aristotle_nicomachean}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=798a01f212a8e620a6940400717a56d9}{%
+           family={Aristotle},
+           familyi={A\bibinitperiod}}}%
+      }
+      \name{translator}{1}{}{%
+        {{hash=f47ed39ab1b2b6b1254258e226d10e27}{%
+           family={Ross},
+           familyi={R\bibinitperiod},
+           given={W.\bibnamedelimi D.},
+           giveni={W\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{798a01f212a8e620a6940400717a56d9}
+      \strng{fullhash}{798a01f212a8e620a6940400717a56d9}
+      \strng{fullhashraw}{798a01f212a8e620a6940400717a56d9}
+      \strng{bibnamehash}{798a01f212a8e620a6940400717a56d9}
+      \strng{authorbibnamehash}{798a01f212a8e620a6940400717a56d9}
+      \strng{authornamehash}{798a01f212a8e620a6940400717a56d9}
+      \strng{authorfullhash}{798a01f212a8e620a6940400717a56d9}
+      \strng{authorfullhashraw}{798a01f212a8e620a6940400717a56d9}
+      \strng{translatorbibnamehash}{f47ed39ab1b2b6b1254258e226d10e27}
+      \strng{translatornamehash}{f47ed39ab1b2b6b1254258e226d10e27}
+      \strng{translatorfullhash}{f47ed39ab1b2b6b1254258e226d10e27}
+      \strng{translatorfullhashraw}{f47ed39ab1b2b6b1254258e226d10e27}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{Revised}
+      \field{note}{Original work circa 340 BCE}
+      \field{series}{Oxford World's Classics}
+      \field{title}{Nicomachean Ethics}
+      \field{year}{2009}
+    \endentry
+    \entry{floridi_ethics_ai}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=0d57a43cc17e895c38b6d1656af4ece5}{%
+           family={Floridi},
+           familyi={F\bibinitperiod},
+           given={Luciano},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Oxford}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{0d57a43cc17e895c38b6d1656af4ece5}
+      \strng{fullhash}{0d57a43cc17e895c38b6d1656af4ece5}
+      \strng{fullhashraw}{0d57a43cc17e895c38b6d1656af4ece5}
+      \strng{bibnamehash}{0d57a43cc17e895c38b6d1656af4ece5}
+      \strng{authorbibnamehash}{0d57a43cc17e895c38b6d1656af4ece5}
+      \strng{authornamehash}{0d57a43cc17e895c38b6d1656af4ece5}
+      \strng{authorfullhash}{0d57a43cc17e895c38b6d1656af4ece5}
+      \strng{authorfullhashraw}{0d57a43cc17e895c38b6d1656af4ece5}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Ethics of Artificial Intelligence: Principles, Challenges, and Opportunities}
+      \field{year}{2023}
+    \endentry
+    \entry{graeber_bullshit_jobs}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a56cdebc84e02fdfad5780f9cf7c9b29}{%
+           family={Graeber},
+           familyi={G\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {Simon \& Schuster}%
+      }
+      \strng{namehash}{a56cdebc84e02fdfad5780f9cf7c9b29}
+      \strng{fullhash}{a56cdebc84e02fdfad5780f9cf7c9b29}
+      \strng{fullhashraw}{a56cdebc84e02fdfad5780f9cf7c9b29}
+      \strng{bibnamehash}{a56cdebc84e02fdfad5780f9cf7c9b29}
+      \strng{authorbibnamehash}{a56cdebc84e02fdfad5780f9cf7c9b29}
+      \strng{authornamehash}{a56cdebc84e02fdfad5780f9cf7c9b29}
+      \strng{authorfullhash}{a56cdebc84e02fdfad5780f9cf7c9b29}
+      \strng{authorfullhashraw}{a56cdebc84e02fdfad5780f9cf7c9b29}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Bullshit Jobs: A Theory}
+      \field{year}{2018}
+    \endentry
+    \entry{kant_groundwork}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e1e09a59acd7633f469747be85d5edc0}{%
+           family={Kant},
+           familyi={K\bibinitperiod},
+           given={Immanuel},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{translator}{1}{}{%
+        {{hash=f6289054fed50f8a69dfd70d1e6f9dc5}{%
+           family={Gregor},
+           familyi={G\bibinitperiod},
+           given={Mary},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{e1e09a59acd7633f469747be85d5edc0}
+      \strng{fullhash}{e1e09a59acd7633f469747be85d5edc0}
+      \strng{fullhashraw}{e1e09a59acd7633f469747be85d5edc0}
+      \strng{bibnamehash}{e1e09a59acd7633f469747be85d5edc0}
+      \strng{authorbibnamehash}{e1e09a59acd7633f469747be85d5edc0}
+      \strng{authornamehash}{e1e09a59acd7633f469747be85d5edc0}
+      \strng{authorfullhash}{e1e09a59acd7633f469747be85d5edc0}
+      \strng{authorfullhashraw}{e1e09a59acd7633f469747be85d5edc0}
+      \strng{translatorbibnamehash}{f6289054fed50f8a69dfd70d1e6f9dc5}
+      \strng{translatornamehash}{f6289054fed50f8a69dfd70d1e6f9dc5}
+      \strng{translatorfullhash}{f6289054fed50f8a69dfd70d1e6f9dc5}
+      \strng{translatorfullhashraw}{f6289054fed50f8a69dfd70d1e6f9dc5}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Original work 1785}
+      \field{series}{Cambridge Texts in the History of Philosophy}
+      \field{title}{Groundwork of the Metaphysics of Morals}
+      \field{year}{1998}
+    \endentry
+    \entry{macintyre_after_virtue}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a03b13f0e7e445453545fdc9549992ba}{%
+           family={MacIntyre},
+           familyi={M\bibinitperiod},
+           given={Alasdair},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Notre Dame, IN}%
+      }
+      \list{publisher}{1}{%
+        {University of Notre Dame Press}%
+      }
+      \strng{namehash}{a03b13f0e7e445453545fdc9549992ba}
+      \strng{fullhash}{a03b13f0e7e445453545fdc9549992ba}
+      \strng{fullhashraw}{a03b13f0e7e445453545fdc9549992ba}
+      \strng{bibnamehash}{a03b13f0e7e445453545fdc9549992ba}
+      \strng{authorbibnamehash}{a03b13f0e7e445453545fdc9549992ba}
+      \strng{authornamehash}{a03b13f0e7e445453545fdc9549992ba}
+      \strng{authorfullhash}{a03b13f0e7e445453545fdc9549992ba}
+      \strng{authorfullhashraw}{a03b13f0e7e445453545fdc9549992ba}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{3rd}
+      \field{title}{After Virtue: A Study in Moral Theory}
+      \field{year}{1981}
+    \endentry
+    \entry{martela_ryan_2016}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=f9a39798f3751e4951b0fe7d8b69a5bb}{%
+           family={Martela},
+           familyi={M\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=49ad03aeb3155f395016c49dd507c027}{%
+           family={Ryan},
+           familyi={R\bibinitperiod},
+           given={Richard\bibnamedelima M.},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1327a0669cc442578bbcd54c5d7c23b1}
+      \strng{fullhash}{1327a0669cc442578bbcd54c5d7c23b1}
+      \strng{fullhashraw}{1327a0669cc442578bbcd54c5d7c23b1}
+      \strng{bibnamehash}{1327a0669cc442578bbcd54c5d7c23b1}
+      \strng{authorbibnamehash}{1327a0669cc442578bbcd54c5d7c23b1}
+      \strng{authornamehash}{1327a0669cc442578bbcd54c5d7c23b1}
+      \strng{authorfullhash}{1327a0669cc442578bbcd54c5d7c23b1}
+      \strng{authorfullhashraw}{1327a0669cc442578bbcd54c5d7c23b1}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Personality}
+      \field{number}{6}
+      \field{title}{The Benefits of Benevolence: Basic Psychological Needs, Beneficence, and the Enhancement of Well-Being}
+      \field{volume}{84}
+      \field{year}{2016}
+      \field{pages}{750\bibrangedash 764}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1111/jopy.12215
+      \endverb
+    \endentry
+    \entry{mckinsey_automation}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f16b2e129dc4f39811f4611e60d06026}{%
+           family={{McKinsey Global Institute}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {McKinsey \& Company}%
+      }
+      \strng{namehash}{f16b2e129dc4f39811f4611e60d06026}
+      \strng{fullhash}{f16b2e129dc4f39811f4611e60d06026}
+      \strng{fullhashraw}{f16b2e129dc4f39811f4611e60d06026}
+      \strng{bibnamehash}{f16b2e129dc4f39811f4611e60d06026}
+      \strng{authorbibnamehash}{f16b2e129dc4f39811f4611e60d06026}
+      \strng{authornamehash}{f16b2e129dc4f39811f4611e60d06026}
+      \strng{authorfullhash}{f16b2e129dc4f39811f4611e60d06026}
+      \strng{authorfullhashraw}{f16b2e129dc4f39811f4611e60d06026}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Jobs Lost, Jobs Gained: Workforce Transitions in a Time of Automation}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb https://www.mckinsey.com/featured-insights/future-of-work/jobs-lost-jobs-gained-what-the-future-of-work-will-mean-for-jobs-skills-and-wages
+      \endverb
+      \verb{url}
+      \verb https://www.mckinsey.com/featured-insights/future-of-work/jobs-lost-jobs-gained-what-the-future-of-work-will-mean-for-jobs-skills-and-wages
+      \endverb
+    \endentry
+    \entry{ryan_deci_sdt}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=49ad03aeb3155f395016c49dd507c027}{%
+           family={Ryan},
+           familyi={R\bibinitperiod},
+           given={Richard\bibnamedelima M.},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d733c22238af349bac296bb1e5b60deb}{%
+           family={Deci},
+           familyi={D\bibinitperiod},
+           given={Edward\bibnamedelima L.},
+           giveni={E\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b8fdaf35d2ee9a085c4bd58b7f47fcc4}
+      \strng{fullhash}{b8fdaf35d2ee9a085c4bd58b7f47fcc4}
+      \strng{fullhashraw}{b8fdaf35d2ee9a085c4bd58b7f47fcc4}
+      \strng{bibnamehash}{b8fdaf35d2ee9a085c4bd58b7f47fcc4}
+      \strng{authorbibnamehash}{b8fdaf35d2ee9a085c4bd58b7f47fcc4}
+      \strng{authornamehash}{b8fdaf35d2ee9a085c4bd58b7f47fcc4}
+      \strng{authorfullhash}{b8fdaf35d2ee9a085c4bd58b7f47fcc4}
+      \strng{authorfullhashraw}{b8fdaf35d2ee9a085c4bd58b7f47fcc4}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{American Psychologist}
+      \field{number}{1}
+      \field{title}{Self-Determination Theory and the Facilitation of Intrinsic Motivation, Social Development, and Well-Being}
+      \field{volume}{55}
+      \field{year}{2000}
+      \field{pages}{68\bibrangedash 78}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1037/0003-066X.55.1.68
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

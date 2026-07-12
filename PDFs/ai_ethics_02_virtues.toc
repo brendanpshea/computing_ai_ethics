@@ -1,0 +1,6 @@
+\beamer@sectionintoc {1}{Introduction: Virtue Ethics and Technology}{3}{0}{1}
+\beamer@sectionintoc {2}{Intellectual Virtues Under Threat}{18}{0}{2}
+\beamer@sectionintoc {3}{Moral Virtues Under Threat}{27}{0}{3}
+\beamer@sectionintoc {4}{Eudaimonia Under Threat}{36}{0}{4}
+\beamer@sectionintoc {5}{Policy Responses}{43}{0}{5}
+\beamer@sectionintoc {6}{Objections and Responses}{47}{0}{6}

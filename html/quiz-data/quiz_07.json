@@ -1,0 +1,275 @@
+{
+  "id": "ch07",
+  "chapter": 7,
+  "title": "Chapter 7 Quiz: Introduction to Artificial Intelligence",
+  "description": "Twenty questions on key people, dates, systems, and philosophical arguments in the history and theory of AI.",
+  "chapter_url": "ch07_ai_intro.html",
+  "questions": [
+    {
+      "id": "ch07-q01",
+      "question": "Ada Lovelace (1815–1852) published what are widely regarded as the first computer algorithms in 1843. In what form did she publish them?",
+      "options": [
+        "A standalone paper titled 'Notes on the Analytical Engine' in the Royal Society's Philosophical Transactions",
+        "Supplementary notes — published under her initials 'A.A.L.' — appended to a translation of an Italian article about Babbage's machine",
+        "A co-authored paper with Charles Babbage in the Cambridge Mathematical Journal",
+        "A private letter to Babbage published posthumously in 1880"
+      ],
+      "correct": 1,
+      "explanation": "Lovelace contributed extensive notes — published under her initials 'A.A.L.' in 1843 — to a translation of Luigi Menabrea's article about Babbage's Analytical Engine. Her notes were longer than the original article and contained the first algorithm intended to be processed by a machine. The U.S. Department of Defense named the Ada programming language in her honor in 1980.",
+      "section": "history-ai"
+    },
+    {
+      "id": "ch07-q02",
+      "question": "Alan Turing published 'Computing Machinery and Intelligence' — in which he proposed the Imitation Game — in which year?",
+      "options": [
+        "1936",
+        "1945",
+        "1950",
+        "1956"
+      ],
+      "correct": 2,
+      "explanation": "Turing's 1950 paper opened with the question 'Can machines think?' and immediately replaced it with the more precise Imitation Game. His 1936 work established the theoretical foundations of computation (the Universal Turing Machine). The 1956 Dartmouth Conference coined the term 'artificial intelligence' six years later.",
+      "section": "classical-debates"
+    },
+    {
+      "id": "ch07-q03",
+      "question": "The Dartmouth Conference of 1956 — which founded the academic field of artificial intelligence — was organized by four researchers. Which of the following was NOT one of them?",
+      "options": [
+        "John McCarthy",
+        "Marvin Minsky",
+        "Claude Shannon",
+        "John von Neumann"
+      ],
+      "correct": 3,
+      "explanation": "The Dartmouth Conference was organized by John McCarthy, Marvin Minsky, Claude Shannon, and Nathaniel Rochester. John von Neumann was a towering figure in early computing but was not among the four Dartmouth organizers. The conference proposed 'a 2 month, 10 man study of artificial intelligence' — a proposal whose optimism was characteristic of the field's early years.",
+      "section": "history-ai"
+    },
+    {
+      "id": "ch07-q04",
+      "question": "In Turing's Imitation Game, when does a machine count as having passed the test?",
+      "options": [
+        "When a machine can solve any mathematical problem a human can solve",
+        "When an interrogator communicating by text cannot reliably distinguish the machine from a human",
+        "When a machine can write original poetry that expert judges rate superior to human poetry",
+        "When a machine can physically perform any task a human can perform"
+      ],
+      "correct": 1,
+      "explanation": "The Imitation Game involves a text-only interrogator asking questions to a hidden human and a hidden machine. If the interrogator cannot reliably tell which is which, Turing argued we have no grounds to deny the machine intelligence. He predicted that by 2000, machines would fool 30% of interrogators after five minutes — a prediction roughly borne out by later competitions.",
+      "section": "classical-debates"
+    },
+    {
+      "id": "ch07-q05",
+      "question": "John Searle published his Chinese Room argument — one of the most influential philosophical critiques of AI — in which year?",
+      "options": [
+        "1950",
+        "1968",
+        "1980",
+        "1997"
+      ],
+      "correct": 2,
+      "explanation": "Searle published 'Minds, Brains, and Programs' in 1980. The Chinese Room imagines a person in a room following rules to respond to Chinese symbols without understanding Chinese — arguing that a computer similarly manipulates symbols without genuine semantic understanding. The argument targets 'Strong AI': the claim that a program running on a computer could actually think.",
+      "section": "classical-debates"
+    },
+    {
+      "id": "ch07-q06",
+      "question": "In Searle's Chinese Room argument, a person follows rulebook instructions to produce correct Chinese responses without understanding Chinese. What philosophical conclusion does this support?",
+      "options": [
+        "That machine translation will always be inferior to human translation",
+        "That a system can produce apparently intelligent behavior without genuine semantic understanding — undermining the case for Strong AI",
+        "That intelligence requires a physical body, not just information processing",
+        "That Chinese is too structurally complex for symbol-manipulation systems to process"
+      ],
+      "correct": 1,
+      "explanation": "The Chinese Room is an argument against Strong AI — the view that running the right program is sufficient for genuine understanding or consciousness. The person in the room is functionally equivalent to a computer: both manipulate symbols according to rules. Searle concludes that syntax (symbol manipulation) is not sufficient for semantics (meaning), so no computer program, however sophisticated, genuinely understands anything.",
+      "section": "classical-debates"
+    },
+    {
+      "id": "ch07-q07",
+      "question": "'Tesler's Theorem' captures which recurring pattern in the history of artificial intelligence?",
+      "options": [
+        "AI systems must be empirically tested against human experts before any real-world deployment",
+        "'AI is whatever hasn't been done yet' — once a system succeeds at a task, that task gets reclassified as mere computation, not real intelligence",
+        "Neural networks can only approximate intelligence; genuine AI requires symbolic reasoning",
+        "The more training data a model receives, the more reliably it generalizes to new tasks"
+      ],
+      "correct": 1,
+      "explanation": "Tesler's Theorem (sometimes called the 'AI effect') describes the moving-goalposts problem: chess was once considered a pinnacle of human intelligence, but after Deep Blue's 1997 victory over Kasparov, chess was promptly reclassified as 'just search algorithms.' The same pattern recurred with speech recognition, spam filtering, and face recognition — each success leads people to say 'that's not real AI.'",
+      "section": "defining-ai"
+    },
+    {
+      "id": "ch07-q08",
+      "question": "The MYCIN expert system, developed in the 1980s, demonstrated early AI's potential in a commercial domain by:",
+      "options": [
+        "Defeating a world chess champion for the first time",
+        "Diagnosing blood infections with physician-level accuracy, representing the expert systems boom",
+        "Processing natural language commands about objects in the 'blocks world' (SHRDLU)",
+        "Proving 38 theorems in Russell and Whitehead's Principia Mathematica"
+      ],
+      "correct": 1,
+      "explanation": "MYCIN diagnosed blood infections with physician-level accuracy, and XCON saved Digital Equipment Corporation millions by configuring computer orders. These successes powered the 1980s expert systems boom. But expert systems were brittle — MYCIN could diagnose blood infections but couldn't answer a simple question outside its domain. This brittleness triggered the second AI winter when the limitations became clear.",
+      "section": "history-ai"
+    },
+    {
+      "id": "ch07-q09",
+      "question": "AlexNet's victory in the 2012 ImageNet competition is considered a watershed moment in AI history because it:",
+      "options": [
+        "Was the first time an AI system outperformed humans at image recognition",
+        "Demonstrated that deep neural networks could dramatically reduce image-recognition error rates, launching the deep learning era",
+        "Proved that AI could understand the semantic content of images, not just classify them by surface statistics",
+        "Was the first application of graphics processing units (GPUs) to any computational problem"
+      ],
+      "correct": 1,
+      "explanation": "AlexNet reduced the ImageNet error rate by nearly half compared to previous approaches, demonstrating that deep convolutional neural networks — trained on large datasets using GPUs — could leapfrog the previous state of the art. The three enabling factors were vastly more training data, much more computing power (GPUs), and better training algorithms like dropout and batch normalization.",
+      "section": "history-ai"
+    },
+    {
+      "id": "ch07-q10",
+      "question": "IBM Watson for Oncology was launched in 2013 with promises to transform cancer treatment. What eventually happened to it?",
+      "options": [
+        "It was successfully deployed in over 500 hospitals worldwide and became a standard of care",
+        "It was quietly abandoned by hospital after hospital between 2017 and 2020 after internal documents revealed it gave unsafe and incorrect treatment recommendations",
+        "It was rebranded as 'Watson Health' and pivoted successfully to drug discovery research",
+        "It was acquired by Google and integrated into the DeepMind Health division"
+      ],
+      "correct": 1,
+      "explanation": "Internal IBM documents leaked to STAT News revealed that Watson for Oncology had recommended 'unsafe and incorrect' treatments. The core problem was a 'knowledge bottleneck': the system had been trained on a limited set of cancer cases that did not reflect the diversity of real patients. Hospital after hospital quietly abandoned it between 2017 and 2020 — a cautionary tale about marketing AI capabilities ahead of validation.",
+      "section": "history-ai"
+    },
+    {
+      "id": "ch07-q11",
+      "question": "Ada Lovelace's objection to machine intelligence — that machines 'have no power of originating anything' — holds that:",
+      "options": [
+        "Machines cannot be trusted with decisions affecting human welfare",
+        "Machines can only execute what they are explicitly programmed to do and cannot produce genuinely new ideas",
+        "Machine intelligence will always be faster than human intelligence but lacks creativity",
+        "Machines cannot achieve consciousness because they lack biological substrates"
+      ],
+      "correct": 1,
+      "explanation": "Lovelace argued that the Analytical Engine could only do what it was told — it had no power to originate ideas. This objection retains force in debates about large language models: critics like Gary Marcus and Emily Bender describe LLMs as 'stochastic parrots' that recombine training data patterns rather than generating genuinely novel understanding. Turing's response was that programs produce outputs that surprise their creators, and learning systems modify their behavior through experience.",
+      "section": "classical-debates"
+    },
+    {
+      "id": "ch07-q12",
+      "question": "The transformer architecture — the technical foundation of GPT and other modern large language models — was introduced in a landmark 2017 paper. What is that paper's title?",
+      "options": [
+        "'Deep Learning for Natural Language Processing'",
+        "'Attention Is All You Need'",
+        "'A Universal Approximator for Sequence-to-Sequence Tasks'",
+        "'BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding'"
+      ],
+      "correct": 1,
+      "explanation": "'Attention Is All You Need' (Vaswani et al., 2017) introduced the transformer architecture, which replaced recurrent neural networks with a self-attention mechanism. This enabled much faster parallel training on large corpora. GPT-1 and BERT (both 2018) applied the transformer to language modeling; GPT-3 (2020) demonstrated emergent capabilities at scale; and the architecture underlies virtually every major language model today.",
+      "section": "history-ai"
+    },
+    {
+      "id": "ch07-q13",
+      "question": "During both AI winters (1974–1980 and 1987–1993), research funding dried up primarily because:",
+      "options": [
+        "AI researchers were found to have falsified experimental results",
+        "AI systems repeatedly failed to generalize beyond narrow domains and could not scale to deliver on their promised capabilities",
+        "Governments redirected funding to nuclear research and the Space Race",
+        "The computing hardware required for AI was still decades away from being feasible"
+      ],
+      "correct": 1,
+      "explanation": "The first AI winter followed the Lighthill Report (1974), which concluded that AI had failed to live up to its grand promises. Expert systems — the success story of the 1980s — were brittle and expensive to maintain, unable to handle situations outside their narrow domains. When Lisp machine hardware collapsed commercially in the late 1980s, the second winter set in. In both cases, the core problem was that success in narrow tasks did not scale to general intelligence.",
+      "section": "history-ai"
+    },
+    {
+      "id": "ch07-q14",
+      "question": "The distinction between 'Narrow AI' and 'Artificial General Intelligence (AGI)' is that:",
+      "options": [
+        "Narrow AI operates locally on a device; AGI requires cloud computing and massive parallel processing",
+        "Narrow AI excels at one specific task; AGI would match or surpass human performance across the full range of intellectual domains",
+        "Narrow AI relies exclusively on rule-based programming; AGI relies exclusively on neural networks",
+        "Narrow AI is already commercially deployed; AGI is a theoretical concept that scientists consider scientifically impossible"
+      ],
+      "correct": 1,
+      "explanation": "Narrow AI systems — including GPT-4, AlphaFold, and every deployed commercial AI — excel at specific tasks but fail outside them. AGI would perform any intellectual task a human can, transferring knowledge and reasoning across domains. Every AI system that exists today is narrow. Whether AGI is achievable, and when, is one of the most actively debated questions in the field.",
+      "section": "modern-views"
+    },
+    {
+      "id": "ch07-q15",
+      "question": "A 2016 ProPublica study of COMPAS — an algorithmic risk-assessment tool used in U.S. criminal sentencing — found that:",
+      "options": [
+        "COMPAS was 94% accurate across all demographic groups, significantly outperforming human judges",
+        "COMPAS falsely flagged Black defendants as future criminals at nearly twice the rate of white defendants",
+        "COMPAS systematically under-predicted recidivism among high-income defendants of all races",
+        "COMPAS was less accurate than a coin flip for any defendant, regardless of demographics"
+      ],
+      "correct": 1,
+      "explanation": "ProPublica's 'Machine Bias' investigation found that COMPAS falsely labeled Black defendants as future criminals at nearly double the rate for white defendants — even after controlling for criminal history and other variables. The company that built COMPAS disputed the methodology, but the case sparked a major debate about algorithmic fairness and due process: how do you appeal a sentencing recommendation you cannot see or understand?",
+      "section": "why-definitions-matter"
+    },
+    {
+      "id": "ch07-q16",
+      "type": "multiple",
+      "question": "Which of the following are among the four key distinctions the chapter uses to categorize different conceptions of AI? Select all that apply.",
+      "options": [
+        "Narrow AI vs. Artificial General Intelligence (AGI)",
+        "Weak AI vs. Strong AI",
+        "Symbolic AI (GOFAI) vs. Connectionist AI",
+        "Tool AI vs. Agent AI",
+        "Conscious AI vs. Philosophical Zombie AI"
+      ],
+      "correct": [0, 1, 2, 3],
+      "explanation": "The chapter's Table 7.2 presents four distinctions: Narrow vs. General (breadth of capability), Weak vs. Strong (genuine mentality or simulation), Symbolic vs. Connectionist (rule-based vs. learned patterns), and Tool vs. Agent (passive instrument vs. autonomous actor). 'Conscious vs. Philosophical Zombie AI' is not one of the chapter's four distinctions, though philosophical zombie arguments do appear in consciousness debates.",
+      "section": "modern-views"
+    },
+    {
+      "id": "ch07-q17",
+      "type": "multiple",
+      "question": "Which of the following are accurately described in the chapter as high-stakes domains where AI algorithmic decision-making raises ethical concerns? Select all that apply.",
+      "options": [
+        "Criminal sentencing (COMPAS recidivism risk scores)",
+        "Hiring and résumé screening (Amazon's discontinued system)",
+        "Healthcare resource allocation (racially biased care-need prediction)",
+        "Highway speed-limit optimization (traffic management algorithms)",
+        "Credit and loan decisioning"
+      ],
+      "correct": [0, 1, 2, 4],
+      "explanation": "The chapter discusses criminal sentencing (COMPAS), hiring (Amazon's résumé screener), healthcare (a system that underestimated Black patients' care needs using historical spending as a proxy), and credit decisions as high-stakes domains raising bias and due-process concerns. Highway traffic management is not one of the chapter's case studies.",
+      "section": "why-definitions-matter"
+    },
+    {
+      "id": "ch07-q18",
+      "type": "multiple",
+      "question": "Which of the following accurately describe the history of AI as presented in the chapter? Select all that apply.",
+      "options": [
+        "The Logic Theorist (1956) was an early symbolic AI program that proved mathematical theorems",
+        "AlexNet's 2012 ImageNet victory nearly halved the image-recognition error rate compared to previous methods",
+        "IBM Watson for Oncology was abandoned by multiple hospitals after being found to recommend unsafe treatments",
+        "The first AI Winter (1974–1980) was triggered by AlphaGo's 2016 victory, which was seen as a research dead end",
+        "GPT-3 (2020) demonstrated emergent capabilities that surprised even its creators"
+      ],
+      "correct": [0, 1, 2, 4],
+      "explanation": "The Logic Theorist, AlexNet's breakthrough, Watson's failure, and GPT-3's emergent capabilities are all accurately described in the chapter. The first AI Winter (1974–1980) was triggered by the Lighthill Report and DARPA funding cuts — not by AlphaGo, which didn't exist until 2016, more than a decade after the second AI Winter had already ended.",
+      "section": "history-ai"
+    },
+    {
+      "id": "ch07-q19",
+      "type": "matching",
+      "question": "Match each AI milestone to the year it occurred.",
+      "pairs": [
+        { "left": "Alan Turing proposes the Imitation Game ('Computing Machinery and Intelligence')", "right": "1950" },
+        { "left": "Dartmouth Conference coins the term 'artificial intelligence'",                   "right": "1956" },
+        { "left": "John Searle publishes the Chinese Room argument",                               "right": "1980" },
+        { "left": "Transformer architecture introduced in 'Attention Is All You Need'",            "right": "2017" }
+      ],
+      "explanation": "These four dates span the arc of AI's intellectual history: Turing's behavioral test (1950), the founding conference and the term itself (1956), the most influential philosophical challenge to AI (1980), and the architectural breakthrough underlying all current large language models (2017).",
+      "section": "classical-debates"
+    },
+    {
+      "id": "ch07-q20",
+      "type": "matching",
+      "question": "Match each AI concept to its correct description.",
+      "pairs": [
+        { "left": "Weak AI",            "right": "Simulates intelligent behavior without possessing genuine mental states or understanding" },
+        { "left": "Strong AI",          "right": "Actually has genuine mental states — real understanding, not mere symbol manipulation" },
+        { "left": "Symbolic AI (GOFAI)", "right": "Uses explicit rules and knowledge representation; the approach of early expert systems" },
+        { "left": "Connectionist AI",   "right": "Neural networks that learn statistical patterns from data, without explicit programmed rules" }
+      ],
+      "explanation": "These four concepts define the key intellectual fault lines in AI theory. Weak vs. Strong is a philosophical distinction about genuine mentality. Symbolic vs. Connectionist is a technical distinction about how knowledge is represented. Deep learning systems like GPT are connectionist (weak) AI — they learn patterns from data but, by Searle's argument, do not genuinely understand what they process.",
+      "section": "modern-views"
+    }
+  ]
+}

@@ -1,0 +1,275 @@
+{
+  "id": "ch04",
+  "chapter": 4,
+  "title": "Chapter 4 Quiz: Intellectual Property in the Digital Age",
+  "description": "Twenty questions on the key people, cases, laws, and concepts covered in Chapter 4.",
+  "chapter_url": "ch04_intellectual_property.html",
+  "questions": [
+    {
+      "id": "ch04-q01",
+      "question": "Britain's Statute of Anne — the world's first copyright law — was enacted in:",
+      "options": [
+        "1640",
+        "1710",
+        "1776",
+        "1886"
+      ],
+      "correct": 1,
+      "explanation": "The Statute of Anne (1710) created the first statutory copyright, granting authors a 14-year term renewable once. Before it, the Stationers' Company had held a royal monopoly on printing. The Statute's framing as a protection for authors rather than printers laid the conceptual foundation for all subsequent copyright law.",
+      "section": "intro"
+    },
+    {
+      "id": "ch04-q02",
+      "question": "Under the original U.S. Copyright Act of 1790, how long was the copyright term?",
+      "options": [
+        "7 years with no renewal",
+        "14 years, renewable once for another 14 years",
+        "28 years flat",
+        "The life of the author"
+      ],
+      "correct": 1,
+      "explanation": "The Copyright Act of 1790 established a 14-year term, renewable once for another 14 years if the author was still alive — a total maximum of 28 years. Copyright protection today extends to the life of the author plus 70 years, reflecting nearly two centuries of expansion.",
+      "section": "intro"
+    },
+    {
+      "id": "ch04-q03",
+      "question": "Who launched Napster in 1999 as a student at Northeastern University?",
+      "options": [
+        "Sean Parker",
+        "Shawn Fanning",
+        "Linus Torvalds",
+        "Lawrence Lessig"
+      ],
+      "correct": 1,
+      "explanation": "Shawn Fanning developed Napster as a Northeastern University student; Sean Parker was his co-founder. At its peak, Napster had over 80 million registered users and indexed hundreds of millions of songs. Courts found Napster liable for contributory copyright infringement, forcing its shutdown in 2001.",
+      "section": "digital"
+    },
+    {
+      "id": "ch04-q04",
+      "question": "At its peak, approximately how many registered users did Napster have?",
+      "options": [
+        "2 million",
+        "10 million",
+        "80 million",
+        "500 million"
+      ],
+      "correct": 2,
+      "explanation": "Napster reached over 80 million registered users and indexed hundreds of millions of songs before being shut down by court order in 2001. The scale of its adoption made the recording industry's revenue collapse a pivotal moment — and forced the music business to eventually pivot toward streaming models like iTunes (2003) and Spotify (2008).",
+      "section": "digital"
+    },
+    {
+      "id": "ch04-q05",
+      "question": "The 1998 Sonny Bono Copyright Term Extension Act — informally called the 'Mickey Mouse Protection Act' — extended U.S. copyright to:",
+      "options": [
+        "Life of the author plus 25 years",
+        "Life of the author plus 50 years",
+        "Life of the author plus 70 years",
+        "99 years from the date of publication"
+      ],
+      "correct": 2,
+      "explanation": "The Sonny Bono Act extended U.S. copyright to life plus 70 years (and 95 years for corporate works). The 'Mickey Mouse Protection Act' nickname reflects the widely held belief that Disney lobbied heavily to prevent Steamboat Willie (1928) from entering the public domain. Despite the extension, Willie did finally enter the public domain on January 1, 2024.",
+      "section": "intro"
+    },
+    {
+      "id": "ch04-q06",
+      "question": "Lawrence Lessig co-founded Creative Commons — the system of flexible copyright licenses — in which year?",
+      "options": [
+        "1991",
+        "1998",
+        "2001",
+        "2007"
+      ],
+      "correct": 2,
+      "explanation": "Creative Commons was founded in 2001 by Lawrence Lessig and others as a response to what Lessig called 'permission culture.' The organization created a suite of licenses ranging from CC0 (public domain dedication) to CC BY-NC-ND (non-commercial, no derivatives, attribution required), allowing creators to share on their own terms without the all-or-nothing choice of full copyright.",
+      "section": "alternatives"
+    },
+    {
+      "id": "ch04-q07",
+      "question": "Disney's earliest Mickey Mouse cartoon, Steamboat Willie (1928), finally entered the U.S. public domain on:",
+      "options": [
+        "January 1, 2019",
+        "January 1, 2024",
+        "January 1, 2028",
+        "It has not yet entered the public domain"
+      ],
+      "correct": 1,
+      "explanation": "Steamboat Willie entered the public domain on January 1, 2024 — nearly 100 years after its 1928 release. The repeated copyright extensions that delayed this are a prime example of retroactive term extension: works already created cannot be incentivized to be created again, so the extensions served primarily to maintain corporate revenue streams rather than to encourage new creativity.",
+      "section": "intro"
+    },
+    {
+      "id": "ch04-q08",
+      "question": "In Oracle v. Google (2021), the Supreme Court ruled 6–2 that Google's use of Java APIs in the Android operating system was:",
+      "options": [
+        "Not copyrightable, because APIs are factual rather than creative",
+        "Fair use, due to the transformative nature of Android and programmer investment",
+        "Licensed under an implied agreement between the companies",
+        "Infringing, and Google owed Oracle billions in damages"
+      ],
+      "correct": 1,
+      "explanation": "The Supreme Court found in Google's favor on fair use grounds, emphasizing the transformative nature of Android and the fact that programmers had already invested in learning the Java APIs. The Court avoided ruling on whether APIs are copyrightable at all, leaving that question open. The case had implications for the entire software industry, where API reuse is standard practice.",
+      "section": "critiques"
+    },
+    {
+      "id": "ch04-q09",
+      "question": "Scholar Peter Drahos uses the term 'information feudalism' to describe:",
+      "options": [
+        "Large tech platforms extracting rent from small creators",
+        "A global IP system that creates hierarchical relationships between wealthy IP-holding nations and developing countries",
+        "The concentration of AI training data in the hands of a few corporations",
+        "Patent trolls extracting licensing fees from operating companies"
+      ],
+      "correct": 1,
+      "explanation": "Peter Drahos (b. 1955) coined 'information feudalism' to describe how the TRIPS Agreement (1994) forced developing nations to adopt strong IP regimes as a condition of trade access — effectively requiring them to pay rents to wealthy IP-holding countries, much as medieval peasants paid to use land owned by lords.",
+      "section": "critiques"
+    },
+    {
+      "id": "ch04-q10",
+      "question": "James Boyle's concept of the 'second enclosure movement' refers to:",
+      "options": [
+        "A wave of patent filings that blocked competitors from entire technology sectors",
+        "Fencing off the intangible commons of ideas and cultural works, just as 18th-century landowners fenced common agricultural land",
+        "The practice of applying DRM locks to public-domain works",
+        "Large platforms using Terms of Service to claim perpetual licenses over user content"
+      ],
+      "correct": 1,
+      "explanation": "James Boyle drew a deliberate analogy to the historical Enclosure Movement, in which English common lands were fenced off and converted to private property. He argued that expanded copyright, software patents, and database rights were doing the same thing to the intangible commons — the shared pool of knowledge, culture, and ideas that everyone depends on for future creation.",
+      "section": "critiques"
+    },
+    {
+      "id": "ch04-q11",
+      "question": "John Locke's 'labor theory' of property holds that creators deserve rights over their work primarily because:",
+      "options": [
+        "Society benefits when creators are rewarded with exclusive rights",
+        "They have mixed their labor with a resource and thereby made it their own",
+        "Creative works express the creator's personality and identity",
+        "Exclusive rights encourage creators to disclose inventions to the public"
+      ],
+      "correct": 1,
+      "explanation": "Locke argued that labor transforms unowned resources into personal property — if you cultivate land or write a book, you have mixed your labor with it and deserve to enjoy the fruits. Applied to IP, this justifies copyright and patent rights. Critics note the analogy is imperfect: unlike land, knowledge is non-rivalrous, so 'fencing it off' denies no physical resource to others.",
+      "section": "justifications"
+    },
+    {
+      "id": "ch04-q12",
+      "question": "As of 2024, how much does Spotify pay rights holders per stream?",
+      "options": [
+        "$0.10–$0.15 per stream",
+        "$0.01–$0.05 per stream",
+        "$0.003–$0.005 per stream",
+        "$0.0001–$0.0003 per stream"
+      ],
+      "correct": 2,
+      "explanation": "Spotify's per-stream rate is approximately $0.003–$0.005, meaning an artist needs roughly 200–330 streams to earn one dollar. A track must reach 1,000 streams per year just to qualify for payment at all. The chapter uses these numbers to illustrate Cory Doctorow's 'chokepoint capitalism': platforms have enormous leverage over creators who depend on their distribution.",
+      "section": "digital"
+    },
+    {
+      "id": "ch04-q13",
+      "question": "Companies that own patents but do not manufacture products, instead filing infringement suits to extract licensing fees, are known as:",
+      "options": [
+        "Cross-licensors",
+        "Non-Practicing Entities (NPEs), or patent trolls",
+        "Trademark squatters",
+        "Copyleft contributors"
+      ],
+      "correct": 1,
+      "explanation": "Non-Practicing Entities (NPEs) — widely called 'patent trolls' — hold patents purely as litigation weapons. Because defending a patent lawsuit through trial costs $2–5 million, many companies settle for $100,000–$500,000 rather than fight. Billions of dollars annually flow to NPE shareholders and their lawyers rather than to the inventors the patent system was designed to reward.",
+      "section": "bigtech"
+    },
+    {
+      "id": "ch04-q14",
+      "question": "The GNU General Public License (GPL) is called a 'copyleft' license because:",
+      "options": [
+        "It was created in opposition to copyright law, which it seeks to abolish",
+        "Any modified version of GPL-licensed software must be released under the same license, keeping the code permanently open",
+        "It grants permission for unlimited commercial use without requiring attribution",
+        "The government sponsored its creation to promote software competition"
+      ],
+      "correct": 1,
+      "explanation": "The GPL's 'viral' property means that any derivative work must also be GPL-licensed — preventing proprietary forks. This is called 'copyleft' because it uses copyright law to achieve the opposite of its usual effect: guaranteeing openness rather than restriction. Linux, which runs the majority of the world's web servers, is licensed under the GPL.",
+      "section": "alternatives"
+    },
+    {
+      "id": "ch04-q15",
+      "question": "The Berne Convention, which established automatic international copyright protection (no registration required), was signed in:",
+      "options": [
+        "1790",
+        "1836",
+        "1886",
+        "1927"
+      ],
+      "correct": 2,
+      "explanation": "The Berne Convention (1886) harmonized copyright across member nations and introduced the principle of automatic protection: a work is protected from the moment of creation without any registration formality. The U.S. did not join Berne until 1989, having long required copyright registration — a delay that reflected American publishers' historical interest in reproducing European works freely.",
+      "section": "intro"
+    },
+    {
+      "id": "ch04-q16",
+      "type": "multiple",
+      "question": "Which of the following are among the four main types of intellectual property recognized in U.S. and international law? Select all that apply.",
+      "options": [
+        "Copyright",
+        "Trade secrets",
+        "Patents",
+        "Moral rights",
+        "Trademarks",
+        "Personality rights"
+      ],
+      "correct": [0, 1, 2, 4],
+      "explanation": "The four main IP categories are copyright (original expression), trade secrets (confidential business information), patents (novel inventions), and trademarks (brand identifiers). 'Moral rights' — protecting attribution and integrity — are recognized in European systems but are not one of the four main categories. 'Personality rights' is not a standard IP category.",
+      "section": "intro"
+    },
+    {
+      "id": "ch04-q17",
+      "type": "multiple",
+      "question": "Which of the following are recognized philosophical justifications for intellectual property rights as discussed in the chapter? Select all that apply.",
+      "options": [
+        "The labor argument (Locke — creators deserve the fruits of their work)",
+        "The incentive / utilitarian argument (IP maximizes social welfare by motivating creation)",
+        "The personality argument (Hegel — creative works express the creator's identity)",
+        "The democratic participation argument (IP enables civic engagement)",
+        "The social contract of IP (temporary monopoly in exchange for eventual public access)"
+      ],
+      "correct": [0, 1, 2, 4],
+      "explanation": "The chapter presents four justifications: the labor argument (Locke), the incentive/utilitarian argument, the personality argument (Hegel), and the social contract of IP. 'Democratic participation' is not one of them. Importantly, each justification has different implications — Locke's theory suggests strong author rights; the incentive theory implies IP should last only as long as necessary to motivate creation.",
+      "section": "justifications"
+    },
+    {
+      "id": "ch04-q18",
+      "type": "multiple",
+      "question": "Which of the following accurately describe the current legal and regulatory landscape around AI and intellectual property? Select all that apply.",
+      "options": [
+        "The U.S. Copyright Office holds that purely AI-generated content is not copyrightable, because copyright requires human authorship",
+        "Two federal courts have found AI training on copyrighted works to be 'highly transformative' under fair use doctrine",
+        "The New York Times filed suit against OpenAI and Microsoft, alleging large-scale copyright infringement",
+        "The Supreme Court ruled in 2023 that AI training data is always covered by fair use"
+      ],
+      "correct": [0, 1, 2],
+      "explanation": "All three of the first statements are accurate as of 2024–2025. The Copyright Office's human-authorship requirement is established guidance; two federal courts did find AI training transformative; and the New York Times lawsuit is ongoing. The fourth statement is false — no Supreme Court has ruled that AI training is categorically fair use; the question remains actively litigated.",
+      "section": "ai"
+    },
+    {
+      "id": "ch04-q19",
+      "type": "matching",
+      "question": "Match each IP scholar or critic to the concept most closely associated with their work.",
+      "pairs": [
+        { "left": "James Boyle",     "right": "\"Second enclosure movement\" — fencing the intangible commons" },
+        { "left": "Cory Doctorow",   "right": "\"Chokepoint capitalism\" — platforms squeezing creators from both sides" },
+        { "left": "Peter Drahos",    "right": "\"Information feudalism\" — global IP hierarchies between nations" },
+        { "left": "Tim Wu",          "right": "\"The Master Switch\" — cycles of corporate capture in media industries" }
+      ],
+      "explanation": "Each critic diagnoses a distinct failure mode of the IP system. Boyle focuses on over-expansion into the commons (enclosure). Doctorow focuses on platform intermediaries extracting from creators (chokepoint). Drahos focuses on international power asymmetries (feudalism). Wu focuses on historical cycles of open vs. closed media industries (master switch).",
+      "section": "critiques"
+    },
+    {
+      "id": "ch04-q20",
+      "type": "matching",
+      "question": "Match each intellectual property milestone to the year it occurred.",
+      "pairs": [
+        { "left": "Statute of Anne — Britain's first copyright law",          "right": "1710" },
+        { "left": "Berne Convention — automatic international copyright",     "right": "1886" },
+        { "left": "DMCA and Sonny Bono Act — digital locks + life+70 years", "right": "1998" },
+        { "left": "Oracle v. Google — Supreme Court fair-use ruling",         "right": "2021" }
+      ],
+      "explanation": "These four dates mark major turning points in copyright history: the origin of statutory copyright (1710), international harmonization (1886), the digital-era expansion that extended terms and criminalized circumvention (1998), and a landmark ruling on software APIs that shaped the future of cloud computing (2021).",
+      "section": "intro"
+    }
+  ]
+}

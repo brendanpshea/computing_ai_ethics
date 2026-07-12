@@ -1,0 +1,285 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global/global}
+    \entry{nissenbaum_privacy_context}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b87272f33535d7231ff18fbf708063a0}{%
+           family={Nissenbaum},
+           familyi={N\bibinitperiod},
+           given={Helen},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Stanford, CA}%
+      }
+      \list{publisher}{1}{%
+        {Stanford University Press}%
+      }
+      \strng{namehash}{b87272f33535d7231ff18fbf708063a0}
+      \strng{fullhash}{b87272f33535d7231ff18fbf708063a0}
+      \strng{fullhashraw}{b87272f33535d7231ff18fbf708063a0}
+      \strng{bibnamehash}{b87272f33535d7231ff18fbf708063a0}
+      \strng{authorbibnamehash}{b87272f33535d7231ff18fbf708063a0}
+      \strng{authornamehash}{b87272f33535d7231ff18fbf708063a0}
+      \strng{authorfullhash}{b87272f33535d7231ff18fbf708063a0}
+      \strng{authorfullhashraw}{b87272f33535d7231ff18fbf708063a0}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Privacy in Context: Technology, Policy, and the Integrity of Social Life}
+      \field{year}{2010}
+    \endentry
+    \entry{posner_privacy}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ba66a9580d92756347985517c224e1fe}{%
+           family={Posner},
+           familyi={P\bibinitperiod},
+           given={Richard\bibnamedelima A.},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ba66a9580d92756347985517c224e1fe}
+      \strng{fullhash}{ba66a9580d92756347985517c224e1fe}
+      \strng{fullhashraw}{ba66a9580d92756347985517c224e1fe}
+      \strng{bibnamehash}{ba66a9580d92756347985517c224e1fe}
+      \strng{authorbibnamehash}{ba66a9580d92756347985517c224e1fe}
+      \strng{authornamehash}{ba66a9580d92756347985517c224e1fe}
+      \strng{authorfullhash}{ba66a9580d92756347985517c224e1fe}
+      \strng{authorfullhashraw}{ba66a9580d92756347985517c224e1fe}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Georgia Law Review}
+      \field{title}{The Right of Privacy}
+      \field{volume}{12}
+      \field{year}{1978}
+      \field{pages}{393\bibrangedash 422}
+      \range{pages}{30}
+    \endentry
+    \entry{rachels_privacy}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=837f3deb19144b7c364fe629c9097e2e}{%
+           family={Rachels},
+           familyi={R\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{837f3deb19144b7c364fe629c9097e2e}
+      \strng{fullhash}{837f3deb19144b7c364fe629c9097e2e}
+      \strng{fullhashraw}{837f3deb19144b7c364fe629c9097e2e}
+      \strng{bibnamehash}{837f3deb19144b7c364fe629c9097e2e}
+      \strng{authorbibnamehash}{837f3deb19144b7c364fe629c9097e2e}
+      \strng{authornamehash}{837f3deb19144b7c364fe629c9097e2e}
+      \strng{authorfullhash}{837f3deb19144b7c364fe629c9097e2e}
+      \strng{authorfullhashraw}{837f3deb19144b7c364fe629c9097e2e}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Philosophy \& Public Affairs}
+      \field{number}{4}
+      \field{title}{Why Privacy Is Important}
+      \field{volume}{4}
+      \field{year}{1975}
+      \field{pages}{323\bibrangedash 333}
+      \range{pages}{11}
+    \endentry
+    \entry{schneier_data_goliath}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d8df23ab843a37bf97ea40354db74d15}{%
+           family={Schneier},
+           familyi={S\bibinitperiod},
+           given={Bruce},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {W. W. Norton}%
+      }
+      \strng{namehash}{d8df23ab843a37bf97ea40354db74d15}
+      \strng{fullhash}{d8df23ab843a37bf97ea40354db74d15}
+      \strng{fullhashraw}{d8df23ab843a37bf97ea40354db74d15}
+      \strng{bibnamehash}{d8df23ab843a37bf97ea40354db74d15}
+      \strng{authorbibnamehash}{d8df23ab843a37bf97ea40354db74d15}
+      \strng{authornamehash}{d8df23ab843a37bf97ea40354db74d15}
+      \strng{authorfullhash}{d8df23ab843a37bf97ea40354db74d15}
+      \strng{authorfullhashraw}{d8df23ab843a37bf97ea40354db74d15}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Data and Goliath: The Hidden Battles to Collect Your Data and Control Your World}
+      \field{year}{2015}
+    \endentry
+    \entry{solove_understanding_privacy}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f1dc39ef46c82aedd794fbb782c60c49}{%
+           family={Solove},
+           familyi={S\bibinitperiod},
+           given={Daniel\bibnamedelima J.},
+           giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Cambridge, MA}%
+      }
+      \list{publisher}{1}{%
+        {Harvard University Press}%
+      }
+      \strng{namehash}{f1dc39ef46c82aedd794fbb782c60c49}
+      \strng{fullhash}{f1dc39ef46c82aedd794fbb782c60c49}
+      \strng{fullhashraw}{f1dc39ef46c82aedd794fbb782c60c49}
+      \strng{bibnamehash}{f1dc39ef46c82aedd794fbb782c60c49}
+      \strng{authorbibnamehash}{f1dc39ef46c82aedd794fbb782c60c49}
+      \strng{authornamehash}{f1dc39ef46c82aedd794fbb782c60c49}
+      \strng{authorfullhash}{f1dc39ef46c82aedd794fbb782c60c49}
+      \strng{authorfullhashraw}{f1dc39ef46c82aedd794fbb782c60c49}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Understanding Privacy}
+      \field{year}{2008}
+    \endentry
+    \entry{thomson_privacy}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d5c58a46c74182b0ae2e3d82ef666920}{%
+           family={Thomson},
+           familyi={T\bibinitperiod},
+           given={Judith\bibnamedelima Jarvis},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d5c58a46c74182b0ae2e3d82ef666920}
+      \strng{fullhash}{d5c58a46c74182b0ae2e3d82ef666920}
+      \strng{fullhashraw}{d5c58a46c74182b0ae2e3d82ef666920}
+      \strng{bibnamehash}{d5c58a46c74182b0ae2e3d82ef666920}
+      \strng{authorbibnamehash}{d5c58a46c74182b0ae2e3d82ef666920}
+      \strng{authornamehash}{d5c58a46c74182b0ae2e3d82ef666920}
+      \strng{authorfullhash}{d5c58a46c74182b0ae2e3d82ef666920}
+      \strng{authorfullhashraw}{d5c58a46c74182b0ae2e3d82ef666920}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Philosophy \& Public Affairs}
+      \field{number}{4}
+      \field{title}{The Right to Privacy}
+      \field{volume}{4}
+      \field{year}{1975}
+      \field{pages}{295\bibrangedash 314}
+      \range{pages}{20}
+    \endentry
+    \entry{warren_brandeis_privacy}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=4798b25ccccf6f2ad9882278fbc71c92}{%
+           family={Warren},
+           familyi={W\bibinitperiod},
+           given={Samuel\bibnamedelima D.},
+           giveni={S\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4ec62b16dd0665c83d4be32f61c1d145}{%
+           family={Brandeis},
+           familyi={B\bibinitperiod},
+           given={Louis\bibnamedelima D.},
+           giveni={L\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{04ef1a0b6c27ba9be96a5021c6858c3f}
+      \strng{fullhash}{04ef1a0b6c27ba9be96a5021c6858c3f}
+      \strng{fullhashraw}{04ef1a0b6c27ba9be96a5021c6858c3f}
+      \strng{bibnamehash}{04ef1a0b6c27ba9be96a5021c6858c3f}
+      \strng{authorbibnamehash}{04ef1a0b6c27ba9be96a5021c6858c3f}
+      \strng{authornamehash}{04ef1a0b6c27ba9be96a5021c6858c3f}
+      \strng{authorfullhash}{04ef1a0b6c27ba9be96a5021c6858c3f}
+      \strng{authorfullhashraw}{04ef1a0b6c27ba9be96a5021c6858c3f}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Harvard Law Review}
+      \field{number}{5}
+      \field{title}{The Right to Privacy}
+      \field{volume}{4}
+      \field{year}{1890}
+      \field{pages}{193\bibrangedash 220}
+      \range{pages}{28}
+      \verb{doi}
+      \verb 10.2307/1321160
+      \endverb
+    \endentry
+    \entry{zuboff_surveillance_capitalism}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=19b83c33a232c9892502d941e4cfcf56}{%
+           family={Zuboff},
+           familyi={Z\bibinitperiod},
+           given={Shoshana},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {PublicAffairs}%
+      }
+      \strng{namehash}{19b83c33a232c9892502d941e4cfcf56}
+      \strng{fullhash}{19b83c33a232c9892502d941e4cfcf56}
+      \strng{fullhashraw}{19b83c33a232c9892502d941e4cfcf56}
+      \strng{bibnamehash}{19b83c33a232c9892502d941e4cfcf56}
+      \strng{authorbibnamehash}{19b83c33a232c9892502d941e4cfcf56}
+      \strng{authornamehash}{19b83c33a232c9892502d941e4cfcf56}
+      \strng{authorfullhash}{19b83c33a232c9892502d941e4cfcf56}
+      \strng{authorfullhashraw}{19b83c33a232c9892502d941e4cfcf56}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power}
+      \field{year}{2019}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

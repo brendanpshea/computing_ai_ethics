@@ -1,0 +1,122 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global/global}
+    \entry{arendt_origins}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f50f57f3bb1808b3fd67c3e65baf025f}{%
+           family={Arendt},
+           familyi={A\bibinitperiod},
+           given={Hannah},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {Harcourt, Brace \& Company}%
+      }
+      \strng{namehash}{f50f57f3bb1808b3fd67c3e65baf025f}
+      \strng{fullhash}{f50f57f3bb1808b3fd67c3e65baf025f}
+      \strng{fullhashraw}{f50f57f3bb1808b3fd67c3e65baf025f}
+      \strng{bibnamehash}{f50f57f3bb1808b3fd67c3e65baf025f}
+      \strng{authorbibnamehash}{f50f57f3bb1808b3fd67c3e65baf025f}
+      \strng{authornamehash}{f50f57f3bb1808b3fd67c3e65baf025f}
+      \strng{authorfullhash}{f50f57f3bb1808b3fd67c3e65baf025f}
+      \strng{authorfullhashraw}{f50f57f3bb1808b3fd67c3e65baf025f}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Origins of Totalitarianism}
+      \field{year}{1951}
+    \endentry
+    \entry{mill1859liberty}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b627c5e688e8b7502c2468b40c681f20}{%
+           family={Mill},
+           familyi={M\bibinitperiod},
+           given={John\bibnamedelima Stuart},
+           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {London}%
+      }
+      \list{publisher}{2}{%
+        {John W. Parker}%
+        {Son}%
+      }
+      \strng{namehash}{b627c5e688e8b7502c2468b40c681f20}
+      \strng{fullhash}{b627c5e688e8b7502c2468b40c681f20}
+      \strng{fullhashraw}{b627c5e688e8b7502c2468b40c681f20}
+      \strng{bibnamehash}{b627c5e688e8b7502c2468b40c681f20}
+      \strng{authorbibnamehash}{b627c5e688e8b7502c2468b40c681f20}
+      \strng{authornamehash}{b627c5e688e8b7502c2468b40c681f20}
+      \strng{authorfullhash}{b627c5e688e8b7502c2468b40c681f20}
+      \strng{authorfullhashraw}{b627c5e688e8b7502c2468b40c681f20}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{On Liberty}
+      \field{year}{1859}
+    \endentry
+    \entry{orwell_1984}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=2ef7da5d483d3c197804e8f1eb7b36eb}{%
+           family={Orwell},
+           familyi={O\bibinitperiod},
+           given={George},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {London}%
+      }
+      \list{publisher}{1}{%
+        {Secker \& Warburg}%
+      }
+      \strng{namehash}{2ef7da5d483d3c197804e8f1eb7b36eb}
+      \strng{fullhash}{2ef7da5d483d3c197804e8f1eb7b36eb}
+      \strng{fullhashraw}{2ef7da5d483d3c197804e8f1eb7b36eb}
+      \strng{bibnamehash}{2ef7da5d483d3c197804e8f1eb7b36eb}
+      \strng{authorbibnamehash}{2ef7da5d483d3c197804e8f1eb7b36eb}
+      \strng{authornamehash}{2ef7da5d483d3c197804e8f1eb7b36eb}
+      \strng{authorfullhash}{2ef7da5d483d3c197804e8f1eb7b36eb}
+      \strng{authorfullhashraw}{2ef7da5d483d3c197804e8f1eb7b36eb}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Nineteen Eighty-Four}
+      \field{year}{1949}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

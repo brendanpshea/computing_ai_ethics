@@ -1,0 +1,11 @@
+\beamer@sectionintoc {1}{Introduction: Intellectual Property in the Digital Age}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Deep Dives: Copyright, Patents, and Trade Secrets}{7}{0}{1}
+\beamer@sectionintoc {2}{Philosophical Foundations}{12}{0}{2}
+\beamer@sectionintoc {3}{Digital Disruption and Adaptation}{18}{0}{3}
+\beamer@subsectionintoc {3}{1}{How Technology Disrupted IP}{19}{0}{3}
+\beamer@sectionintoc {4}{Critiques and Abuses of IP}{24}{0}{4}
+\beamer@sectionintoc {5}{Market Power and Control}{32}{0}{5}
+\beamer@subsectionintoc {5}{1}{IP as a Competitive and Defensive Weapon}{33}{0}{5}
+\beamer@sectionintoc {6}{Beyond Traditional IP: Open Source and Creative Commons}{37}{0}{6}
+\beamer@sectionintoc {7}{AI and Intellectual Property}{40}{0}{7}
+\beamer@sectionintoc {8}{Conclusion: Intellectual Property in the Digital Age}{45}{0}{8}

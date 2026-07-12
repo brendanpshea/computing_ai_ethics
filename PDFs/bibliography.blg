@@ -1,0 +1,15 @@
+[0] Config.pm:328> INFO - This is Biber 2.21
+[0] Config.pm:331> INFO - Logfile is 'PDFs/bibliography.blg'
+[210] biber-MSWIN64:342> INFO - === 
+[273] Biber.pm:421> INFO - Reading 'PDFs/bibliography.bcf'
+[496] Biber.pm:999> INFO - Using all citekeys in bib section 0
+[520] Biber.pm:4487> INFO - Processing section 0
+[547] Biber.pm:4678> INFO - Looking for bibtex file 'refs.bib' for section 0
+[677] bibtex.pm:1713> INFO - LaTeX decoding ...
+[949] bibtex.pm:1519> INFO - Found BibTeX data source 'refs.bib'
+[2332] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[2332] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[2332] Biber.pm:4307> INFO - Sorting list 'nyt/global//global/global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[2332] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
+[2677] bbl.pm:676> INFO - Writing 'PDFs/bibliography.bbl' with encoding 'UTF-8'
+[2829] bbl.pm:779> INFO - Output to PDFs/bibliography.bbl

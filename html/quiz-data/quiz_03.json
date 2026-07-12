@@ -1,0 +1,275 @@
+{
+  "id": "ch03",
+  "chapter": 3,
+  "title": "Free Speech in the Digital Age",
+  "description": "Test your understanding of free speech theory, its key thinkers, historical cases, and the challenges posed by social media and AI.",
+  "chapter_url": "ch03_free_speech.html",
+  "questions": [
+    {
+      "id": "ch03-q01",
+      "question": "John Stuart Mill published On Liberty in 1859. Which other landmark work was published in the same year?",
+      "options": [
+        "Karl Marx's Das Kapital",
+        "Charles Darwin's On the Origin of Species",
+        "Harriet Taylor's The Enfranchisement of Women",
+        "Jeremy Bentham's Introduction to the Principles of Morals and Legislation"
+      ],
+      "correct": 1,
+      "explanation": "On Liberty was published in 1859, the same year as Darwin's On the Origin of Species — a coincidence that underscores the intellectual ferment of the Victorian era. Mill had been developing the ideas in the book for years in collaboration with Harriet Taylor.",
+      "section": "mill"
+    },
+    {
+      "id": "ch03-q02",
+      "question": "Mill's harm principle states that the only legitimate reason to restrict liberty is:",
+      "options": [
+        "To prevent offence to the majority of society",
+        "To uphold the moral traditions of the community",
+        "To prevent harm to others",
+        "To protect the stability of democratic institutions"
+      ],
+      "correct": 2,
+      "explanation": "The harm principle is the cornerstone of Mill's political philosophy in On Liberty: the state and society may only interfere with an individual's freedom of action — including speech — in order to prevent harm to other people. Offence, immorality, or mere disagreement do not clear this bar.",
+      "section": "mill"
+    },
+    {
+      "id": "ch03-q03",
+      "question": "Mill's argument from truth holds that even false opinions must be permitted because:",
+      "options": [
+        "False opinions are harmless and do not require regulation",
+        "Suppressing false views drives them underground and makes them more appealing",
+        "We need to engage with false views in order to understand why our own beliefs are true",
+        "The government is not capable of reliably distinguishing truth from falsehood"
+      ],
+      "correct": 2,
+      "explanation": "Mill argued that a belief held without ever being challenged becomes a dead dogma — a habit rather than a living understanding. Even if a view is false, engaging with it sharpens our grasp of the truth and our ability to defend it. A suppressed true opinion, meanwhile, is simply lost to humanity.",
+      "section": "mill"
+    },
+    {
+      "id": "ch03-q04",
+      "question": "Mill used the term 'dead dogma' to describe:",
+      "options": [
+        "Religious doctrine that has been officially condemned by a church authority",
+        "A belief held as habit or convention without understanding why it is true or how to defend it",
+        "An outdated law that remains on the books but is no longer enforced",
+        "Political ideology that has lost popular support"
+      ],
+      "correct": 1,
+      "explanation": "A dead dogma, in Mill's account, is a belief that a person holds as received wisdom — they know the conclusion but have never had to defend it against a serious challenge. Mill argued that the collision of opposing views is what keeps beliefs alive as genuine understanding rather than mere repetition.",
+      "section": "mill"
+    },
+    {
+      "id": "ch03-q05",
+      "question": "What did Mill call the informal suppression of speech through ostracism and reputational destruction, without any formal legal mechanism?",
+      "options": [
+        "The marketplace of ideas",
+        "Epistemic coercion",
+        "Social tyranny",
+        "Structural silencing"
+      ],
+      "correct": 2,
+      "explanation": "Mill coined the term social tyranny to describe the pressure that society itself — through public opinion, ostracism, and reputational harm — can bring to bear on individuals who express unpopular views. He considered this form of suppression potentially more dangerous than legal censorship because it operates invisibly and pervasively.",
+      "section": "mill"
+    },
+    {
+      "id": "ch03-q06",
+      "question": "Which of the following accurately quotes Mill from On Liberty regarding the suppression of a single dissenting opinion?",
+      "options": [
+        "'The only purpose for which power can be rightfully exercised over any member of a civilized community is to prevent harm to others.'",
+        "'If all mankind minus one, were of one opinion, and only one person were of the contrary opinion, mankind would be no more justified in silencing that one person, than he, if he had the power, would be justified in silencing mankind.'",
+        "'The remedy for harmful speech is more speech, not enforced silence.'",
+        "'Liberty consists in doing what one desires, and is not restrained by law, custom, or the opinion of others.'"
+      ],
+      "correct": 1,
+      "explanation": "This is Mill's famous statement on the case for free expression even when the minority is one person against all of humanity. The quote appears in On Liberty and encapsulates his argument that the rightness or wrongness of silencing a view does not depend on the ratio of those who hold it.",
+      "section": "mill"
+    },
+    {
+      "id": "ch03-q08",
+      "question": "Catharine MacKinnon's 'silencing argument' in Only Words (1993) holds that some speech should be restricted because:",
+      "options": [
+        "It causes psychological distress that impairs rational deliberation",
+        "It drives targeted groups out of public discourse, thereby reducing overall free expression",
+        "It constitutes a form of physical violence equivalent to assault",
+        "It conflicts with the equal protection clause of the Fourteenth Amendment"
+      ],
+      "correct": 1,
+      "explanation": "MacKinnon's silencing argument is a sophisticated move within free speech theory rather than against it: she argues that pornography and harassment function to silence the speech of women, removing them from public discourse. Restricting such speech can therefore be justified on free speech grounds — protecting the free expression of those who are silenced.",
+      "section": "limits"
+    },
+    {
+      "id": "ch03-q09",
+      "question": "Mari Matsuda's concept of 'looking to the bottom' means that free expression theory must be:",
+      "options": [
+        "Grounded in the original intent of the Constitution's drafters",
+        "Grounded in the experiences of targeted and marginalized groups, not just abstract principles",
+        "Applied consistently without regard to the social position of the speaker",
+        "Derived from empirical data on the actual effects of speech, not philosophical principles"
+      ],
+      "correct": 1,
+      "explanation": "Matsuda, co-founder of Critical Race Theory and author of Words That Wound, argued that abstract free speech principles developed without reference to those most harmed by unregulated speech will systematically fail those groups. Looking to the bottom means centering the analysis in the lived experiences of targeted minorities.",
+      "section": "limits"
+    },
+    {
+      "id": "ch03-q10",
+      "question": "Justice Louis Brandeis is associated with which dictum about harmful speech?",
+      "options": [
+        "'Clear and present danger is the only legitimate test for restricting speech.'",
+        "'The remedy for harmful speech is more speech, not enforced silence.'",
+        "'Congress shall make no law abridging the freedom of speech or of the press.'",
+        "'It is the right of the viewers and listeners, not the right of the broadcasters, which is paramount.'"
+      ],
+      "correct": 1,
+      "explanation": "Brandeis's famous dictum — that the remedy for harmful speech is more speech, not enforced silence — articulates what is sometimes called the counter-speech doctrine. It holds that the correct response to dangerous or false ideas is to rebut them in open debate rather than to suppress them.",
+      "section": "limits"
+    },
+    {
+      "id": "ch03-q11",
+      "question": "The FCC's Fairness Doctrine, established in 1949, required broadcast license holders to:",
+      "options": [
+        "Reserve a fixed percentage of airtime for minority-owned programming",
+        "Cover controversial public issues and present contrasting viewpoints fairly",
+        "Obtain advance approval from the FCC before broadcasting political content",
+        "Provide free airtime to candidates for federal office during election campaigns"
+      ],
+      "correct": 1,
+      "explanation": "The Fairness Doctrine obligated holders of broadcast licenses to cover public controversies and to present contrasting viewpoints fairly. The rationale was spectrum scarcity: because broadcast frequencies are finite public resources, the public had a right to balanced coverage. The doctrine was eliminated by the FCC in 1987.",
+      "section": "history"
+    },
+    {
+      "id": "ch03-q12",
+      "question": "In Red Lion Broadcasting Co. v. FCC (1969), the Supreme Court upheld the Fairness Doctrine, declaring that which right was paramount?",
+      "options": [
+        "The right of broadcasters to editorial independence",
+        "The right of the viewers and listeners, not the right of the broadcasters",
+        "The right of political candidates to equal access to broadcast media",
+        "The right of the FCC to regulate the content of political speech"
+      ],
+      "correct": 1,
+      "explanation": "The Supreme Court's unanimous 1969 ruling in Red Lion held that the First Amendment rights of the audience — viewers and listeners — outweighed the editorial autonomy of broadcast license holders. Because broadcasters used a scarce public resource, they bore obligations to the public interest that private publishers did not.",
+      "section": "history"
+    },
+    {
+      "id": "ch03-q13",
+      "question": "When the Reagan-era FCC eliminated the Fairness Doctrine in 1987, what was one documented consequence?",
+      "options": [
+        "A sharp increase in defamation lawsuits against broadcast networks",
+        "The rise of partisan talk radio and, eventually, outlets like Fox News and MSNBC",
+        "Broadcaster consolidation that reduced the total number of radio stations",
+        "A Supreme Court challenge that was eventually struck down in 1993"
+      ],
+      "correct": 1,
+      "explanation": "The elimination of the Fairness Doctrine removed the requirement that broadcasters present contrasting viewpoints on controversial issues. One widely observed consequence was the rise of unapologetically partisan talk radio, which laid the groundwork for cable outlets like Fox News and MSNBC and contributed to the erosion of a shared factual baseline in American public discourse.",
+      "section": "history"
+    },
+    {
+      "id": "ch03-q14",
+      "question": "Section 230 of the Communications Decency Act (1996) was significant because it:",
+      "options": [
+        "Criminalized the distribution of obscene material over the internet",
+        "Protected online platforms from legal liability for content posted by users",
+        "Required internet service providers to block access to foreign extremist websites",
+        "Established the FCC's jurisdiction over internet content regulation"
+      ],
+      "correct": 1,
+      "explanation": "Section 230 gave online platforms — social networks, forums, hosting services — broad immunity from civil liability for third-party content. This legal protection allowed platforms to grow rapidly without facing defamation suits for user posts, and it remains one of the most consequential and contested laws governing the internet.",
+      "section": "social-media"
+    },
+    {
+      "id": "ch03-q15",
+      "question": "When Australia passed its News Media Bargaining Code in 2021 and required platforms to pay news publishers, how did Facebook respond?",
+      "options": [
+        "It challenged the law in the Australian Federal Court",
+        "It geo-blocked Australian users from accessing Facebook entirely",
+        "It temporarily blocked all news content in Australia, including government health pages, emergency services, and domestic violence support pages",
+        "It paid the required fees and then lobbied the U.S. Congress to pass retaliatory tariffs"
+      ],
+      "correct": 2,
+      "explanation": "Facebook's response to Australia's News Media Bargaining Code was to temporarily block all news content shared on its platform within Australia. The block swept in not only journalism but also government health information, emergency services pages, and domestic violence support resources — illustrating the power that large platforms hold over information infrastructure.",
+      "section": "social-media"
+    },
+    {
+      "id": "ch03-q16",
+      "question": "According to the chapter, women journalists and politicians receive approximately how many more abusive tweets than their male counterparts?",
+      "options": [
+        "3 times more",
+        "10 times more",
+        "27 times more",
+        "50 times more"
+      ],
+      "correct": 2,
+      "explanation": "Research cited in the chapter found that women journalists and politicians receive approximately 27 times more abusive tweets than their male counterparts. This harassment differential is directly relevant to the silencing argument: formal equality of speech rights does not produce actual equality of participation when targeted groups face disproportionate abuse.",
+      "section": "threats"
+    },
+    {
+      "id": "ch03-q17",
+      "type": "multiple",
+      "question": "Which of the following are listed in the chapter as legally unprotected categories of speech under U.S. doctrine? Select all that apply.",
+      "options": [
+        "Incitement to imminent lawless action",
+        "Dead dogma",
+        "True threats",
+        "Social tyranny",
+        "Defamation"
+      ],
+      "correct": [0, 2, 4],
+      "explanation": "U.S. First Amendment doctrine recognizes several narrow categories of speech that fall outside constitutional protection, including incitement (speech directed at producing imminent lawless action), true threats (serious expressions of intent to commit violence), defamation (false statements of fact harming reputation), fraud, obscenity, and fighting words. Dead dogma and social tyranny are Mill's descriptive concepts, not legal categories.",
+      "section": "limits"
+    },
+    {
+      "id": "ch03-q18",
+      "type": "multiple",
+      "question": "Which of the following are proposed regulatory frameworks for AI speech discussed in the chapter? Select all that apply.",
+      "options": [
+        "Disclosure requirements: AI must identify itself and may not impersonate humans",
+        "Requiring all AI to be open-source so outputs can be audited",
+        "Watermarking: AI-generated content carries detectable markers",
+        "Nationalizing large AI companies to prevent monopoly power over speech",
+        "Liability frameworks: developers bear legal responsibility for AI harms"
+      ],
+      "correct": [0, 2, 4],
+      "explanation": "The chapter outlines four regulatory proposals for AI speech: disclosure requirements (AI must identify itself), liability frameworks (developers bear responsibility for harms), content restrictions (AI refuses certain outputs such as CSAM or weapons instructions), and watermarking (AI-generated content carries detectable markers). Mandating open-source code and nationalization are not among the proposals discussed.",
+      "section": "ai"
+    },
+    {
+      "id": "ch03-q19",
+      "type": "multiple",
+      "question": "Which of the following are objections to Mill's marketplace of ideas discussed in the chapter? Select all that apply.",
+      "options": [
+        "Misinformation spreads faster than correction, and the attention economy rewards extremism",
+        "Mill's harm principle is internally inconsistent and self-refuting",
+        "Power imbalances mean formal speech rights do not translate into real ability to speak",
+        "Mill plagiarised the harm principle from earlier utilitarian writers",
+        "Corporate flooding, bots, and radical inequality in reach distort the marketplace"
+      ],
+      "correct": [0, 2, 4],
+      "explanation": "The chapter presents two main objections to the marketplace of ideas model. First, the marketplace fails empirically: misinformation spreads faster than correction and the attention economy rewards outrage and extremism over accuracy. Second, power imbalances — corporate resources, bots, and vastly unequal reach — mean that formal equality of speech rights does not produce substantive equality of voice.",
+      "section": "objections"
+    },
+    {
+      "id": "ch03-q20",
+      "type": "matching",
+      "question": "Match each historical event or law to its correct date.",
+      "pairs": [
+        { "left": "FCC establishes the Fairness Doctrine", "right": "1949" },
+        { "left": "Red Lion Broadcasting Co. v. FCC upholds the Fairness Doctrine", "right": "1969" },
+        { "left": "FCC under Reagan eliminates the Fairness Doctrine", "right": "1987" },
+        { "left": "Section 230 of the Communications Decency Act enacted", "right": "1996" }
+      ],
+      "explanation": "These four dates mark key moments in the regulatory history of speech media. The Fairness Doctrine was established in 1949, upheld unanimously by the Supreme Court in Red Lion in 1969, and then eliminated by the Reagan-era FCC in 1987 — a sequence that shaped the trajectory of partisan media. Section 230, enacted in 1996, became the foundational legal protection for online platforms.",
+      "section": "history"
+    },
+    {
+      "id": "ch03-q21",
+      "type": "matching",
+      "question": "Match each thinker to their key concept or contribution.",
+      "pairs": [
+        { "left": "Jeremy Waldron", "right": "Hate speech as a dignitary harm attacking equal citizenship" },
+        { "left": "Mari Matsuda", "right": "'Looking to the bottom' — grounding free speech theory in marginalized groups' experiences" },
+        { "left": "Catharine MacKinnon", "right": "Silencing argument — some speech silences others, justifying restriction on free speech grounds" },
+        { "left": "John Stuart Mill", "right": "Social tyranny — informal suppression through ostracism and reputational destruction" }
+      ],
+      "explanation": "Waldron argued that hate speech inflicts a distinctively liberal harm by attacking the social standing and equal citizenship of groups. Matsuda's 'looking to the bottom' insists that free speech theory must be accountable to the experiences of targeted groups. MacKinnon developed the silencing argument, and Mill identified social tyranny as a form of suppression potentially more dangerous than legal censorship.",
+      "section": "limits"
+    }
+  ]
+}

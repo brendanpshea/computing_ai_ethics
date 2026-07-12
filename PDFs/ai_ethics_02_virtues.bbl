@@ -1,0 +1,339 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global/global}
+    \entry{aristotle_nicomachean}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=798a01f212a8e620a6940400717a56d9}{%
+           family={Aristotle},
+           familyi={A\bibinitperiod}}}%
+      }
+      \name{translator}{1}{}{%
+        {{hash=f47ed39ab1b2b6b1254258e226d10e27}{%
+           family={Ross},
+           familyi={R\bibinitperiod},
+           given={W.\bibnamedelimi D.},
+           giveni={W\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{798a01f212a8e620a6940400717a56d9}
+      \strng{fullhash}{798a01f212a8e620a6940400717a56d9}
+      \strng{fullhashraw}{798a01f212a8e620a6940400717a56d9}
+      \strng{bibnamehash}{798a01f212a8e620a6940400717a56d9}
+      \strng{authorbibnamehash}{798a01f212a8e620a6940400717a56d9}
+      \strng{authornamehash}{798a01f212a8e620a6940400717a56d9}
+      \strng{authorfullhash}{798a01f212a8e620a6940400717a56d9}
+      \strng{authorfullhashraw}{798a01f212a8e620a6940400717a56d9}
+      \strng{translatorbibnamehash}{f47ed39ab1b2b6b1254258e226d10e27}
+      \strng{translatornamehash}{f47ed39ab1b2b6b1254258e226d10e27}
+      \strng{translatorfullhash}{f47ed39ab1b2b6b1254258e226d10e27}
+      \strng{translatorfullhashraw}{f47ed39ab1b2b6b1254258e226d10e27}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{Revised}
+      \field{note}{Original work circa 340 BCE}
+      \field{series}{Oxford World's Classics}
+      \field{title}{Nicomachean Ethics}
+      \field{year}{2009}
+    \endentry
+    \entry{carr_shallows}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e34c4ff52dae113762a8ba08d9248b00}{%
+           family={Carr},
+           familyi={C\bibinitperiod},
+           given={Nicholas},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {W. W. Norton}%
+      }
+      \strng{namehash}{e34c4ff52dae113762a8ba08d9248b00}
+      \strng{fullhash}{e34c4ff52dae113762a8ba08d9248b00}
+      \strng{fullhashraw}{e34c4ff52dae113762a8ba08d9248b00}
+      \strng{bibnamehash}{e34c4ff52dae113762a8ba08d9248b00}
+      \strng{authorbibnamehash}{e34c4ff52dae113762a8ba08d9248b00}
+      \strng{authornamehash}{e34c4ff52dae113762a8ba08d9248b00}
+      \strng{authorfullhash}{e34c4ff52dae113762a8ba08d9248b00}
+      \strng{authorfullhashraw}{e34c4ff52dae113762a8ba08d9248b00}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Shallows: What the Internet Is Doing to Our Brains}
+      \field{year}{2010}
+    \endentry
+    \entry{haidt_anxious_generation}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4ad5db1a3e5b2a00eb7b9f09db549ab6}{%
+           family={Haidt},
+           familyi={H\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {Penguin Press}%
+      }
+      \strng{namehash}{4ad5db1a3e5b2a00eb7b9f09db549ab6}
+      \strng{fullhash}{4ad5db1a3e5b2a00eb7b9f09db549ab6}
+      \strng{fullhashraw}{4ad5db1a3e5b2a00eb7b9f09db549ab6}
+      \strng{bibnamehash}{4ad5db1a3e5b2a00eb7b9f09db549ab6}
+      \strng{authorbibnamehash}{4ad5db1a3e5b2a00eb7b9f09db549ab6}
+      \strng{authornamehash}{4ad5db1a3e5b2a00eb7b9f09db549ab6}
+      \strng{authorfullhash}{4ad5db1a3e5b2a00eb7b9f09db549ab6}
+      \strng{authorfullhashraw}{4ad5db1a3e5b2a00eb7b9f09db549ab6}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Anxious Generation: How the Great Rewiring of Childhood Is Causing an Epidemic of Mental Illness}
+      \field{year}{2024}
+    \endentry
+    \entry{james_principles}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7e6824f8d67a0e956aae72188825dbf2}{%
+           family={James},
+           familyi={J\bibinitperiod},
+           given={William},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{2}{%
+        {Henry Holt}%
+        {Company}%
+      }
+      \strng{namehash}{7e6824f8d67a0e956aae72188825dbf2}
+      \strng{fullhash}{7e6824f8d67a0e956aae72188825dbf2}
+      \strng{fullhashraw}{7e6824f8d67a0e956aae72188825dbf2}
+      \strng{bibnamehash}{7e6824f8d67a0e956aae72188825dbf2}
+      \strng{authorbibnamehash}{7e6824f8d67a0e956aae72188825dbf2}
+      \strng{authornamehash}{7e6824f8d67a0e956aae72188825dbf2}
+      \strng{authorfullhash}{7e6824f8d67a0e956aae72188825dbf2}
+      \strng{authorfullhashraw}{7e6824f8d67a0e956aae72188825dbf2}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Principles of Psychology}
+      \field{year}{1890}
+    \endentry
+    \entry{konrath_empathy_decline}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=1fdca32717bee42a107f73fd8bbcb879}{%
+           family={Konrath},
+           familyi={K\bibinitperiod},
+           given={Sara\bibnamedelima H.},
+           giveni={S\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=79e0f271fd09d3891f5dc1ff7db22ee6}{%
+           family={O'Brien},
+           familyi={O\bibinitperiod},
+           given={Edward\bibnamedelima H.},
+           giveni={E\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b86c80f00fd265ab10ac3b8d28993ecd}{%
+           family={Hsing},
+           familyi={H\bibinitperiod},
+           given={Courtney},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6c74aab09d7d86a60ea97874338f4707}
+      \strng{fullhash}{6360aba21db3a54ceb5447bbb3a55cdd}
+      \strng{fullhashraw}{6360aba21db3a54ceb5447bbb3a55cdd}
+      \strng{bibnamehash}{6360aba21db3a54ceb5447bbb3a55cdd}
+      \strng{authorbibnamehash}{6360aba21db3a54ceb5447bbb3a55cdd}
+      \strng{authornamehash}{6c74aab09d7d86a60ea97874338f4707}
+      \strng{authorfullhash}{6360aba21db3a54ceb5447bbb3a55cdd}
+      \strng{authorfullhashraw}{6360aba21db3a54ceb5447bbb3a55cdd}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Personality and Social Psychology Review}
+      \field{number}{2}
+      \field{title}{Changes in Dispositional Empathy in American College Students Over Time: A Meta-Analysis}
+      \field{volume}{15}
+      \field{year}{2011}
+      \field{pages}{180\bibrangedash 198}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1177/1088868310377395
+      \endverb
+    \endentry
+    \entry{macintyre_after_virtue}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a03b13f0e7e445453545fdc9549992ba}{%
+           family={MacIntyre},
+           familyi={M\bibinitperiod},
+           given={Alasdair},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Notre Dame, IN}%
+      }
+      \list{publisher}{1}{%
+        {University of Notre Dame Press}%
+      }
+      \strng{namehash}{a03b13f0e7e445453545fdc9549992ba}
+      \strng{fullhash}{a03b13f0e7e445453545fdc9549992ba}
+      \strng{fullhashraw}{a03b13f0e7e445453545fdc9549992ba}
+      \strng{bibnamehash}{a03b13f0e7e445453545fdc9549992ba}
+      \strng{authorbibnamehash}{a03b13f0e7e445453545fdc9549992ba}
+      \strng{authornamehash}{a03b13f0e7e445453545fdc9549992ba}
+      \strng{authorfullhash}{a03b13f0e7e445453545fdc9549992ba}
+      \strng{authorfullhashraw}{a03b13f0e7e445453545fdc9549992ba}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{3rd}
+      \field{title}{After Virtue: A Study in Moral Theory}
+      \field{year}{1981}
+    \endentry
+    \entry{turkle_alone_together}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=c3c256b09f1db966e18883d875486b70}{%
+           family={Turkle},
+           familyi={T\bibinitperiod},
+           given={Sherry},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {Basic Books}%
+      }
+      \strng{namehash}{c3c256b09f1db966e18883d875486b70}
+      \strng{fullhash}{c3c256b09f1db966e18883d875486b70}
+      \strng{fullhashraw}{c3c256b09f1db966e18883d875486b70}
+      \strng{bibnamehash}{c3c256b09f1db966e18883d875486b70}
+      \strng{authorbibnamehash}{c3c256b09f1db966e18883d875486b70}
+      \strng{authornamehash}{c3c256b09f1db966e18883d875486b70}
+      \strng{authorfullhash}{c3c256b09f1db966e18883d875486b70}
+      \strng{authorfullhashraw}{c3c256b09f1db966e18883d875486b70}
+      \field{extraname}{1}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Alone Together: Why We Expect More from Technology and Less from Each Other}
+      \field{year}{2011}
+    \endentry
+    \entry{turkle_reclaiming}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=c3c256b09f1db966e18883d875486b70}{%
+           family={Turkle},
+           familyi={T\bibinitperiod},
+           given={Sherry},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {Penguin Press}%
+      }
+      \strng{namehash}{c3c256b09f1db966e18883d875486b70}
+      \strng{fullhash}{c3c256b09f1db966e18883d875486b70}
+      \strng{fullhashraw}{c3c256b09f1db966e18883d875486b70}
+      \strng{bibnamehash}{c3c256b09f1db966e18883d875486b70}
+      \strng{authorbibnamehash}{c3c256b09f1db966e18883d875486b70}
+      \strng{authornamehash}{c3c256b09f1db966e18883d875486b70}
+      \strng{authorfullhash}{c3c256b09f1db966e18883d875486b70}
+      \strng{authorfullhashraw}{c3c256b09f1db966e18883d875486b70}
+      \field{extraname}{2}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Reclaiming Conversation: The Power of Talk in a Digital Age}
+      \field{year}{2015}
+    \endentry
+    \entry{vallor_technology_virtues}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d71d4e22a512b99daa7807bb1ac96a4b}{%
+           family={Vallor},
+           familyi={V\bibinitperiod},
+           given={Shannon},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{d71d4e22a512b99daa7807bb1ac96a4b}
+      \strng{fullhash}{d71d4e22a512b99daa7807bb1ac96a4b}
+      \strng{fullhashraw}{d71d4e22a512b99daa7807bb1ac96a4b}
+      \strng{bibnamehash}{d71d4e22a512b99daa7807bb1ac96a4b}
+      \strng{authorbibnamehash}{d71d4e22a512b99daa7807bb1ac96a4b}
+      \strng{authornamehash}{d71d4e22a512b99daa7807bb1ac96a4b}
+      \strng{authorfullhash}{d71d4e22a512b99daa7807bb1ac96a4b}
+      \strng{authorfullhashraw}{d71d4e22a512b99daa7807bb1ac96a4b}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Technology and the Virtues: A Philosophical Guide to a Future Worth Wanting}
+      \field{year}{2016}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
