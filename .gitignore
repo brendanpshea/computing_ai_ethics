@@ -31,3 +31,6 @@ PDFs/bibliography.pdf
 # OS
 .DS_Store
 Thumbs.db
+
+# Machine-specific Puppeteer config for the docx build (see .example)
+scripts/puppeteer-config.json

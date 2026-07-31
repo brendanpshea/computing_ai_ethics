@@ -35,6 +35,16 @@ const CSL_FILE   = path.join(ROOT, 'apa.csl');
 const MMDC = path.join(ROOT, 'node_modules', '.bin',
   process.platform === 'win32' ? 'mmdc.cmd' : 'mmdc');
 
+// Optional Puppeteer config for mmdc. Needed wherever mmdc can't use its own
+// bundled Chromium — CI images and containers, where you typically install with
+// PUPPETEER_SKIP_DOWNLOAD=true and must point at a system browser, and where
+// running as root also requires --no-sandbox. Set PUPPETEER_CONFIG_FILE, or drop
+// a scripts/puppeteer-config.json in place; ignored entirely when absent, so
+// ordinary local builds are unaffected. See docs/BUILD.md.
+const PUPPETEER_CFG = process.env.PUPPETEER_CONFIG_FILE
+  || path.join(__dirname, 'puppeteer-config.json');
+const HAS_PUPPETEER_CFG = fs.existsSync(PUPPETEER_CFG);
+
 // ── Helpers ──────────────────────────────────────────────────────────────────
 
 function run(cmd, args, opts = {}) {
@@ -82,6 +92,7 @@ function renderMermaid($, chapterSlug, tempDir) {
       '-c', MMD_CFG,
       '-b', 'white',
       '--width', '900',
+      ...(HAS_PUPPETEER_CFG ? ['-p', PUPPETEER_CFG] : []),
     ]);
 
     if (result.status !== 0) {

@@ -83,16 +83,28 @@
         labor at every stage: the workers who mine materials, the contractors who label training
         data, the moderators who filter harmful content, the technicians who maintain physical
         infrastructure. And when hardware is replaced — as it must be, on short upgrade cycles —
-        electronic waste creates new burdens that also fall unevenly. A few concrete numbers make
-        this vivid: training a single large language model like GPT-3 consumed an estimated
-        1,287 megawatt-hours — roughly equal to the annual electricity use of 120 American
-        households — and emitted around 550 tonnes of CO₂. Microsoft's data centers consumed
-        approximately 6 million cubic meters of water in 2022, much of it in drought-prone areas
-        of the American West. The Democratic Republic of Congo, one of the world's poorest
-        countries, supplies roughly 70% of global cobalt — a metal essential to the batteries and
-        circuit boards inside AI hardware — often through mines with severe safety and environmental
-        problems. The people answering chatbot queries in San Francisco and Singapore are connected
-        to these realities by supply chains that are carefully designed not to be visible.
+        electronic waste creates new burdens that also fall unevenly.
+      </p>
+      <p>
+        A few concrete numbers make this vivid — though each one has to be handled carefully,
+        because environmental statistics about AI circulate much faster than they are checked.
+        Training GPT-3, OpenAI's 2020 language model, is estimated to have consumed about
+        1,287 megawatt-hours of electricity — roughly the annual electricity use of 120 American
+        homes — and to have emitted around 550 tonnes of CO₂. That estimate comes from a 2021
+        analysis by researchers at Google and the University of California, Berkeley
+        <cite data-key="patterson_carbon_2021"></cite>, not from
+        OpenAI, which has never published figures of its own; it describes a single training run
+        of a model that is now several generations old, and it tells us nothing about the far
+        larger runs that followed. Microsoft reported consuming roughly 6.4 million cubic meters
+        of water in 2022, a 34% increase over the previous year, most of it for cooling its cloud
+        data centers; in July 2022 alone its cluster outside West Des Moines, Iowa drew about
+        11.5 million gallons — around 6% of the surrounding water district's total for the month.
+        The Democratic Republic of Congo, one of the world's poorest countries, supplies roughly
+        three-quarters of the world's mined cobalt — a metal used in the lithium-ion batteries
+        that power both the devices through which we reach AI systems and the backup power supplies
+        data centers depend on — often from mines with severe safety and environmental problems.
+        The people typing chatbot queries in San Francisco or Singapore are connected to these
+        realities by supply chains carefully designed not to be visible.
       </p>
 
       <div class="definition-box">
@@ -156,13 +168,44 @@ flowchart LR
         </figcaption>
       </figure>
 
+      <div class="argument-box">
+        <p class="box-label">What's the Argument?</p>
+        <p class="box-title">The Externalized Cost Argument</p>
+        <ol class="premises">
+          <li>The benefits of an AI system — speed, convenience, capability, profit — accrue mainly to the people who use it and the firms that build it.</li>
+          <li>Many of the costs of that same system — mining hazards, water and grid strain near data centers, electronic waste — fall on communities that are neither its users nor its shareholders.</li>
+          <li>When the parties who decide whether to build a system do not bear its costs, they have no reliable incentive to weigh those costs accurately.</li>
+          <li>A decision procedure that systematically underweights real costs to identifiable people is unjust, regardless of how efficient it is.</li>
+        </ol>
+        <div class="conclusion">
+          <span class="therefore">&#8756;</span>
+          The uneven distribution of AI's benefits and burdens is an ethical problem in its own
+          right, and one that individual consumers making better purchasing choices cannot fix.
+        </div>
+      </div>
+
+      <p>
+        In plain English: the argument says that AI's costs are not merely large but
+        <em>misdirected</em>. Economists call this an <strong>externality</strong> — a cost of
+        producing something that is borne by someone outside the transaction. If a firm builds a
+        data center and its neighbors absorb the noise, the water draw, and the higher electricity
+        prices, those neighbors are paying part of the price of a product they may never use. The
+        third premise is the one that does the real work. It is not an accusation of bad faith;
+        it is a claim about incentives. Even a scrupulous company that genuinely wants to minimize
+        harm has no market signal telling it how much harm it is causing in a Congolese mining town,
+        because that harm never appears on its balance sheet. The fourth premise turns the economics
+        into ethics. And the conclusion explains why the chapter keeps returning to institutions:
+        externalities are, by definition, the kind of problem that individual choices cannot solve,
+        because the whole difficulty is that the chooser is not the payer.
+      </p>
+
       <div class="key-thinker">
         <div class="thinker-portrait-placeholder" aria-hidden="true">🌍</div>
         <div class="thinker-header">
           <p class="thinker-label">Key Thinker</p>
           <h3 class="thinker-name">
             Kate Crawford
-            <span class="thinker-dates">(1976–present)</span>
+            <span class="thinker-dates">(1974–present)</span>
           </h3>
         </div>
         <div class="thinker-body">
@@ -192,6 +235,33 @@ flowchart LR
           </p>
         </div>
       </div><!-- /.key-thinker -->
+
+      <div class="thought-questions">
+        <p class="box-label">Thought Questions</p>
+        <ol>
+          <li>
+            Crawford insists on visiting mines, data centers, and recycling yards in person.
+            What can you learn about a technology by standing next to its infrastructure that
+            you cannot learn from reading about it? What might that method miss?
+          </li>
+          <li>
+            The Externalized Cost Argument claims that consumer choice cannot solve the problem.
+            Construct the strongest reply on the other side: is there any version of individual
+            action — boycott, disclosure demands, voting with your usage — that would change
+            the outcome?
+          </li>
+          <li>
+            Every technology has a supply chain, including the pencil and the paperback. Is there
+            anything ethically distinctive about AI's material footprint, or is the critique in
+            this section really a critique of industrial production in general?
+          </li>
+          <li>
+            The chapter warns that AI statistics "circulate much faster than they are checked."
+            Think of an environmental figure you have seen shared online. Could you say where it
+            came from, what it measured, and what year it described?
+          </li>
+        </ol>
+      </div>
 
     </section><!-- /material-system -->
 
@@ -254,16 +324,37 @@ flowchart LR
       </div>
 
       <p>
-        The International Energy Agency estimates that global data-center electricity use
-        reached 240–340 TWh in 2022, roughly 1–1.3% of global final electricity demand.
-        <cite data-key="iea_data_centres_2023"></cite> Data centers and transmission networks
-        together accounted for around 330 Mt CO₂e in 2020 — about 0.9% of energy-related
-        greenhouse-gas emissions. The IEA's <em>Electricity 2026</em> report identifies AI
-        and data centers as central drivers of a projected increase in global electricity
-        demand of more than 3.5% per year through 2030. <cite data-key="iea_electricity_2026"></cite>
-        More than 2,500 GW of new energy projects are currently stalled in grid connection
-        queues worldwide — partly because large-load customers including data centers are
-        competing for the same connections as renewable energy projects.
+        The International Energy Agency (IEA) has become the standard reference for the
+        electricity side of this picture. Its April 2025 report <em>Energy and AI</em> put
+        global data-center electricity use at roughly 415 TWh in 2024 — about 1.5% of world
+        electricity consumption. <cite data-key="iea_energy_and_ai_2025"></cite> Ten months
+        later, its <em>Electricity 2026</em> report raised the 2025 figure to about 485 TWh:
+        data-center demand grew roughly 17% in a single year, against about 3% growth in global
+        electricity demand overall. <cite data-key="iea_electricity_2026"></cite> The IEA
+        projects that data-center consumption will roughly double to about 950 TWh by 2030,
+        around 3% of global electricity. Within that total, the AI-specific share is growing
+        much faster than data centers as a whole: electricity use by AI-focused data centers
+        surged roughly 50% in 2025 alone and is projected to triple by 2030. The concentration
+        is starker still in the United States, where data centers account for close to
+        <em>half</em> of all projected growth in electricity demand through 2030. For emissions,
+        the IEA's earlier accounting attributed around 330 Mt CO₂e in 2020 to data centers and
+        data transmission networks together — about 0.9% of energy-related greenhouse-gas
+        emissions — a baseline that predates most of the current build-out.
+        <cite data-key="iea_data_centres_2023"></cite>
+      </p>
+      <p>
+        Two features of these numbers deserve attention, because they teach something about how
+        to read a forecast. The first is that between the two IEA reports the headline 2030
+        projection barely moved — from roughly 945 TWh to roughly 950 TWh — while the near-term
+        baseline rose substantially. The destination stayed put; the starting point caught up to
+        it. A reader who saw only the 2026 headline might conclude that the outlook had worsened
+        dramatically, when in fact the agency's view of 2030 was almost unchanged. The second is
+        that the 2026 report puts unusual emphasis on bottlenecks. More than 2,500 GW of projects
+        — renewables, storage, and large loads such as data centers — sit stalled in grid
+        connection queues worldwide, and the IEA treats supply-chain and grid constraints as a
+        real brake on the more aggressive growth scenarios. A projection is not a prediction. It
+        is a statement about what would happen if a trend met no obstacles, and here the obstacles
+        are visible.
       </p>
       <p>
         These numbers are neither trivial nor catastrophic in isolation. What makes them
@@ -271,6 +362,40 @@ flowchart LR
         already-stressed energy and water systems, and they are growing at a time when
         the same systems are being asked to support a transition to renewable energy.
       </p>
+
+      <div class="case-study">
+        <p class="box-label">Case Study</p>
+        <p class="box-title">Data Centers and Water in West Des Moines, Iowa (2022–2026)</p>
+        <p>
+          Microsoft operates a cluster of data centers in West Des Moines, Iowa, built next to
+          cornfields on the western edge of the metro area. In July 2022 — the month before
+          OpenAI says it finished training GPT-4 on Microsoft hardware — the cluster drew
+          about 11.5 million gallons of water, roughly 6% of everything the West Des Moines
+          Water Works supplied that month. The figure comes from the utility's own records,
+          obtained and reported by the Associated Press in 2023. Evaporative cooling towers
+          are cheap and effective, but they consume the water they use: it leaves as vapor
+          rather than returning to the system.
+        </p>
+        <p>
+          The city responded not by refusing data centers but by setting a condition. In 2023
+          West Des Moines told Microsoft it would approve additional facilities only if the
+          company could substantially reduce peak water demand. In 2024 Microsoft announced a
+          closed-loop design that circulates the same water between servers and chillers and
+          consumes almost none of it; the design began piloting in 2026, and the next West Des
+          Moines buildings are slated to use it. Local regulatory pressure, not corporate
+          conscience alone, produced the change.
+        </p>
+        <p>
+          The case also carries a warning about evidence. In June 2025, and again in June 2026,
+          central Iowa's water utility imposed mandatory lawn-watering bans, and a great deal of
+          online commentary blamed the data centers. It was not the data centers. The bans were
+          triggered by near-record nitrate concentrations in the Raccoon and Des Moines rivers,
+          driven by agricultural runoff. Both things are true at once: the water draw was real
+          and large enough to change municipal policy, <em>and</em> the most viral local water
+          story of those years had a different cause. Getting AI's environmental ethics right
+          requires holding both facts, not choosing the more satisfying one.
+        </p>
+      </div>
 
       <h3>The Rebound Problem</h3>
 
@@ -308,6 +433,37 @@ flowchart LR
         dramatically, and total aviation fuel burn grew. In each case, the efficiency gain was
         real; the resource savings were partially or entirely offset by expanded use. AI
         efficiency improvements are subject to the same dynamic.
+      </p>
+
+      <div class="argument-box">
+        <p class="box-label">What's the Argument?</p>
+        <p class="box-title">The Rebound Argument</p>
+        <ol class="premises">
+          <li>Making a technology more efficient lowers the resource cost of each unit of use.</li>
+          <li>When the cost of each unit of use falls, the technology is built into more products and used far more often.</li>
+          <li>If total use expands faster than efficiency improves, total resource consumption rises even though every individual use has become cheaper.</li>
+          <li>The cost of an AI query has fallen dramatically, and the total volume of AI queries has risen faster still.</li>
+        </ol>
+        <div class="conclusion">
+          <span class="therefore">&#8756;</span>
+          Efficiency improvements in AI cannot by themselves be counted as environmental
+          progress; the measure that matters is total resource use, not cost per query.
+        </div>
+      </div>
+
+      <p>
+        The argument is worth stating carefully because it is easy to overstate. It does
+        <em>not</em> say that efficiency is bad, or that improving a model's energy profile is
+        pointless. It says that efficiency and reduction are two different things, and that the
+        first does not automatically deliver the second. Premise 3 contains a genuine empirical
+        condition — "if total use expands faster than efficiency improves" — and that condition
+        can fail. Refrigerator efficiency standards, for instance, did cut household refrigeration
+        energy in absolute terms, because there is a natural ceiling on how many refrigerators a
+        household wants. The worry about AI is that no such ceiling is in view: there is no obvious
+        limit to how many tasks a firm might route through a model once each one costs a fraction
+        of a cent. The practical upshot is a test you can apply to any corporate sustainability
+        claim. If a company reports that its emissions per query fell 40%, ask the next question:
+        what happened to the number of queries?
       </p>
 
       <p>
@@ -369,12 +525,42 @@ flowchart LR
         </figcaption>
       </figure>
 
+      <div class="argument-box">
+        <p class="box-label">What's the Argument?</p>
+        <p class="box-title">The Comparative Justification Argument</p>
+        <ol class="premises">
+          <li>Every deployed AI system imposes real material costs: electricity, water, minerals, land, and eventually waste.</li>
+          <li>Some AI systems avert harms — earlier wildfire detection, better grid balancing, faster flood warning — that are plausibly greater than the harms their operation causes.</li>
+          <li>Other AI systems avert no comparable harm; what they deliver is convenience, novelty, or a marginal commercial advantage.</li>
+          <li>A cost is justified only when it purchases a benefit at least as weighty as the cost itself.</li>
+        </ol>
+        <div class="conclusion">
+          <span class="therefore">&#8756;</span>
+          Whether AI is environmentally justified is not one question about AI in general but a
+          separate question about each application, and it can only be answered with evidence
+          about that application.
+        </div>
+      </div>
+
       <p>
-        The environmental question is therefore <em>comparative</em> rather than binary: does
-        a specific use of AI reduce enough harm to justify its material costs? The answer will
-        be different for wildfire detection, for optimizing a recommendation algorithm, and for
-        generating marketing copy. Applying a uniform judgment — "AI is bad for the environment"
-        or "AI will save the climate" — obscures the distinctions that actually matter.
+        This argument is the reason the chapter refuses both of the available slogans. "AI is
+        an environmental disaster" and "AI will save the climate" are claims about a category
+        that contains wildfire detection systems, protein-folding models, warehouse routing
+        software, and tools for generating advertising copy. Those things have almost nothing in
+        common except the technique used to build them. Premise 4 is a familiar principle of
+        practical reasoning — you would apply it without hesitation to a decision about whether
+        a medical procedure's risks are worth its benefits — and applying it here forces the
+        comparison to be made case by case.
+      </p>
+
+      <p>
+        Two cautions follow. First, the argument sets a standard that is genuinely demanding:
+        to run it, someone has to measure both the costs and the averted harms, and firms
+        currently disclose far more about the second than the first. Second, the argument is
+        silent about distribution. A system could pass the comparative test in aggregate while
+        the harms fall on one population and the benefits on another — which is precisely what
+        the Externalized Cost Argument warned about. Comparative justification is necessary here,
+        but it is not sufficient.
       </p>
 
       <div class="thought-questions">
@@ -394,6 +580,11 @@ flowchart LR
           <li>
             "The cloud" encourages people to think of digital systems as weightless and
             placeless. Who benefits from that framing? Who is harmed by it?
+          </li>
+          <li>
+            In West Des Moines the water use was real, and the widely shared story blaming data
+            centers for the watering ban was wrong. Does getting a detail like that wrong damage
+            the underlying case against data-center water use, or is it beside the point?
           </li>
         </ol>
       </div>
@@ -420,14 +611,35 @@ flowchart LR
       <h3>Scale and Concentration of Medical AI</h3>
 
       <p>
-        The scale of AI deployment in medicine has grown dramatically. The FDA approved 223
-        AI-enabled medical devices in 2023 alone, up from just 6 in 2015.
-        <cite data-key="stanford_ai_index_2025"></cite> Its public list of approved AI-enabled
-        devices contained 1,451 entries as of early 2026. <cite data-key="fda_ai_medical_devices_2026"></cite>
-        Radiology dominates: over 1,100 approved devices are for imaging applications, reflecting
-        the fact that medical images are abundant, standardized, and amenable to the classification
-        and anomaly-detection tasks at which current AI excels. Cardiovascular and neurology
-        applications follow.
+        The scale of AI deployment in medicine has grown dramatically. Stanford's AI Index reports
+        that the U.S. Food and Drug Administration authorized 223 AI-enabled medical devices in
+        2023 alone, up from just six in 2015. <cite data-key="stanford_ai_index_2025"></cite>
+        The agency's public list of AI-enabled devices passed 1,500 entries in early 2026 and
+        continues to rise. <cite data-key="fda_ai_medical_devices_2026"></cite> The list is
+        revised several times a year, which is why this chapter gives no exact figure: any precise
+        count is stale before the semester ends.
+      </p>
+      <p>
+        Two features of that list matter more than its length. The first is concentration. Roughly
+        three-quarters of the authorized devices are radiology devices, because medical images are
+        abundant, standardized, and well suited to the classification, segmentation, and
+        anomaly-detection tasks at which current systems excel. Cardiovascular and neurology
+        applications follow at a considerable distance, and most of medicine barely appears at all.
+        Adoption is real; it is also narrow. A student who reads "1,500 AI devices approved" and
+        pictures AI spread evenly across the practice of medicine has misread the number.
+      </p>
+      <p>
+        The second feature is more instructive. The list is not what it appears to be. The FDA
+        itself cautions that the list is <em>"not a comprehensive resource"</em>: it is assembled
+        by keyword-searching the public summaries that accompany device authorizations, so a device
+        whose paperwork used different vocabulary may simply be absent, and inclusion depends on
+        what a manufacturer chose to write rather than on what the software actually does. This is
+        worth pausing over. What looks like a census is really a search result. That does not make
+        it useless — it is the best public inventory available, and its broad trends are almost
+        certainly right — but it does mean the number carries an error bar the number itself never
+        displays. Learning to ask <em>how a statistic was constructed</em>, and not merely how large
+        it is, is one of the more transferable skills this chapter can offer; we will need it again
+        when we turn to global poverty counts in Part V.
       </p>
 
       <figure>
@@ -452,9 +664,12 @@ flowchart LR
         of possible configurations is astronomically large.
       </p>
       <p>
-        AlphaFold achieved a dramatic breakthrough in 2020, producing highly accurate structure
-        predictions for hundreds of millions of proteins and making the results freely available.
-        The knock-on effects for drug discovery, vaccine development, and fundamental biology
+        AlphaFold achieved a dramatic breakthrough at the 2020 CASP structure-prediction
+        competition, and the public database built from it now holds roughly 200 million predicted
+        structures, freely available. In 2024 the work received the Nobel Prize in Chemistry: half
+        the prize went to Demis Hassabis and John Jumper for protein-structure prediction, the
+        other half to David Baker for computational protein design. The knock-on effects for drug
+        discovery, vaccine development, and fundamental biology
         research are still unfolding. This case is important not only as a scientific achievement
         but as a proof of concept: AI can genuinely accelerate research in ways that create broad
         social value, not merely commercial convenience. It also illustrates what "AI for good"
@@ -516,14 +731,15 @@ flowchart LR
         rights, public accountability, and the needs of health workers and patients — not only
         by technical performance metrics. <cite data-key="who_ai_health_2021"></cite> This framing
         matters because it refuses to let "accuracy on a benchmark" serve as a sufficient standard
-        for deployment. A system that achieves 95% accuracy overall but 82% accuracy for dark-skinned
-        patients is not equally useful to all patients, and its deployment without acknowledgment
-        of that disparity is an ethical failure, not merely a technical limitation.
+        for deployment. Consider, as an illustration, a system that achieves 95% accuracy overall
+        but 82% accuracy for patients with darker skin. It is not equally useful to all patients,
+        and deploying it without acknowledging that disparity is an ethical failure, not merely a
+        technical limitation.
       </p>
 
       <div class="case-study">
         <p class="box-label">Case Study</p>
-        <p class="box-title">Triage, Scarcity, and Algorithmic Allocation</p>
+        <p class="box-title">Hypothetical: Triage, Scarcity, and Algorithmic Allocation</p>
         <p>
           Suppose a hospital facing resource constraints implements an AI system to prioritize
           appointments, flag likely no-shows, and rank patients by clinical risk. The case for
@@ -547,6 +763,38 @@ flowchart LR
           scarce care more efficiently. That is not the same thing as making the health
           system more just. Efficiency within an unjust system is not justice.
         </p>
+      </div>
+
+      <div class="thought-questions">
+        <p class="box-label">Thought Questions</p>
+        <ol>
+          <li>
+            If a medical AI system improves average accuracy but performs noticeably worse for one
+            vulnerable group, should it be deployed? Your answer will depend on whether you weight
+            overall utility, equal treatment, protection of the worst-off, or informed patient
+            choice most heavily. Which do you weight most heavily, and why?
+          </li>
+          <li>
+            The FDA's device list is a keyword-derived sample that the agency says is "not a
+            comprehensive resource." Whose responsibility is it to communicate that caveat — the
+            agency's, the journalist's, or the reader's?
+          </li>
+          <li>
+            Radiology accounts for roughly three-quarters of authorized AI devices. What does that
+            concentration tell you about where AI is likely to be useful in medicine, and what
+            might it be telling you instead about where the training data happens to be?
+          </li>
+          <li>
+            AlphaFold's results were released freely, which is part of why it did so much good.
+            Would the same breakthrough have been worth as much if it had been kept proprietary?
+            Does that suggest anything about how publicly funded AI research should be licensed?
+          </li>
+          <li>
+            Automation bias means clinicians may stop scrutinizing recommendations they are
+            supposed to check. Design a workflow that keeps the human check real. What would you
+            have to give up in speed to get it?
+          </li>
+        </ol>
       </div>
 
     </section><!-- /medicine -->
@@ -582,7 +830,9 @@ flowchart LR
       <h3>What Good AI Governance Requires</h3>
 
       <p>
-        The OECD's AI Principles — adopted by more than fifty countries — explicitly identify
+        The OECD's AI Principles — first adopted in 2019, updated in May 2024, and now adhered
+        to by 47 parties, including every OECD member state, a number of non-members, and the
+        European Union — explicitly identify
         inclusive growth, human rights and democratic values, transparency, robustness, and
         accountability as core requirements for trustworthy AI.
         <cite data-key="oecd_ai_principles_2024"></cite> These are not merely technical standards;
@@ -680,8 +930,10 @@ flowchart LR
           <p>
             Eubanks identifies what she calls a "digital poorhouse" — a set of automated systems
             that discipline and surveil poor people rather than helping them. When Indiana automated
-            its welfare system, thousands of people were incorrectly denied benefits due to
-            technical errors. When Los Angeles used a predictive model to prioritize housing
+            and privatized welfare eligibility under a 2006 contract with IBM and its partners,
+            denials rose by more than half — over a million in three years — many of them recorded
+            as "failure to cooperate" after a fax went astray or a form was completed wrongly. The
+            state cancelled the contract in 2009. When Los Angeles used a predictive model to prioritize housing
             for homeless people, the system produced rankings that were opaque and difficult to
             challenge. When Allegheny County used a predictive risk model for child welfare,
             the system drew disproportionately on data from social services — data that poor
@@ -705,20 +957,97 @@ flowchart LR
         protective services. Automation then appears to solve a technical problem (efficient
         allocation of scarce resources) while the underlying political problem (inadequate
         resources, structural disadvantage) remains intact. In this sense, AI can become a
-        technology for making exclusion look objective. The pattern is visible across countries
-        and systems. The Netherlands government's childcare-benefits fraud-detection algorithm
-        incorrectly flagged thousands of families — disproportionately those with non-Dutch
-        surnames — for repayment demands, pushing many into bankruptcy; the scandal brought down
-        the Dutch cabinet in 2021. The UK Home Office's visa and immigration systems used
-        algorithmic processing that contributed to the wrongful classification of thousands of
-        the "Windrush generation" — British citizens of Caribbean origin — as illegal immigrants,
-        triggering deportations and benefit denials. In the United States, predictive child
-        welfare models in Allegheny County drew so heavily on data generated by poverty itself —
-        welfare applications, housing assistance, public mental health visits — that families
-        were effectively flagged for investigation partly because of their socioeconomic status.
-        In each case, the algorithm did not create the underlying inequality; it automated and
-        laundered it, making a political choice appear to be a technical output.
+        technology for making exclusion look objective.
       </p>
+      <p>
+        The pattern is visible across countries and systems. In the United Kingdom, the Home
+        Office ran a "visa streaming" tool from 2015 that sorted visa applications into red,
+        amber, and green risk tiers partly on the basis of the applicant's nationality, with
+        red-tier applications receiving far more scrutiny and far more refusals. In August 2020
+        the department suspended the tool rather than defend it in a judicial review brought by
+        the Joint Council for the Welfare of Immigrants and the campaign group Foxglove, who
+        argued that it was discriminatory under the Equality Act 2010 and irrational at common
+        law. In the United States, predictive child-welfare models in Allegheny County, Pennsylvania,
+        drew so heavily on data generated by poverty itself — welfare applications, housing
+        assistance, public mental-health visits — that families could be flagged for investigation
+        partly because of their socioeconomic status. In each case, the algorithm did not create
+        the underlying inequality; it automated and laundered it, making a political choice appear
+        to be a technical output.
+      </p>
+      <p>
+        It is worth being precise about what automation is and is not responsible for. Britain's
+        better-known <strong>Windrush scandal</strong>, in which long-settled British residents of
+        Caribbean origin were wrongly classified as illegal immigrants and in some cases detained
+        or deported, was not an algorithmic failure. It grew out of the "hostile environment"
+        policy, which shifted the burden of proving lawful status onto individuals, combined with
+        the Home Office's own destruction of the landing-card records that would have supplied
+        that proof. The lesson cuts both ways: automated systems can encode injustice, and
+        ordinary bureaucratic policy can do the same thing without any software at all. Blaming
+        the algorithm is sometimes accurate and sometimes a way of avoiding the political question.
+      </p>
+
+      <div class="case-study">
+        <p class="box-label">Case Study</p>
+        <p class="box-title">The Dutch Childcare Benefits Scandal (2005–2021)</p>
+        <p>
+          Between roughly 2005 and 2019, the Dutch tax administration used a risk-classification
+          system to identify suspected fraud in applications for childcare benefits. The system
+          was self-learning, largely undocumented, and — as later investigations established —
+          used dual nationality as an input variable, in violation of Dutch and European
+          non-discrimination law. Families flagged by the model were treated as fraudsters rather
+          than as people who might have made a paperwork error, and the agency's policy at the
+          time required full repayment of every benefit received.
+        </p>
+        <p>
+          About 26,000 parents were wrongly accused. Repayment demands typically ran from
+          €20,000 to €60,000, due in full, often with penalties and without any option of a
+          payment plan. Families lost homes and businesses; in more than 1,600 cases children
+          were removed by youth-protection services. Appeals were slow and, for years, largely
+          futile, because the model's outputs carried the authority of an objective finding while
+          its reasoning was inaccessible even to the officials relying on it.
+        </p>
+        <p>
+          A parliamentary inquiry reported in December 2020 under the title <em>Unprecedented
+          Injustice</em> <cite data-key="dutch_parliament_ongekend_onrecht_2020"></cite>, and in January 2021 the third cabinet of Prime Minister Mark Rutte
+          resigned over the affair. The case is the sharpest available illustration of the
+          Efficiency–Legitimacy Tension. Nothing about the system was technically exotic. What
+          made it catastrophic was institutional: no meaningful explanation, no workable appeal,
+          a presumption of guilt, and a discriminatory variable that nobody outside the agency
+          could see. Compensation and reform programs were still running years later, which is
+          its own lesson — automated harms are far cheaper to inflict than to undo.
+        </p>
+      </div>
+
+      <div class="thought-questions">
+        <p class="box-label">Thought Questions</p>
+        <ol>
+          <li>
+            Which matters more in public administration: making decisions quickly, or making them
+            explainably and appealably? Can a government at scale really do both well, or is some
+            trade-off unavoidable?
+          </li>
+          <li>
+            Virginia Eubanks argues that automated government systems tend to discipline and
+            punish the poor rather than help them. Is that an inherent feature of such systems,
+            or a contingent failure that better design and oversight could correct?
+          </li>
+          <li>
+            In the Dutch case, officials could not explain the model's outputs either. Does that
+            make them less blameworthy, or more — given that they acted on reasoning they did not
+            understand?
+          </li>
+          <li>
+            The public-sector checklist in Table 9.3 asks whether "meaningful human review"
+            remains. What would you accept as evidence that a human review is meaningful rather
+            than a rubber stamp?
+          </li>
+          <li>
+            Governments are, by the OECD's account, more cautious adopters of AI than firms.
+            Steelman the opposite view: what is lost when a public agency declines to automate
+            something it could automate?
+          </li>
+        </ol>
+      </div>
 
     </section><!-- /governance -->
 
@@ -731,11 +1060,26 @@ flowchart LR
 
       <p>
         The most consequential questions about AI's social impact may be global rather than
-        national. About 700 million people — 8.5% of the world's population — live in extreme
-        poverty on less than $2.15 per day. <cite data-key="worldbank_poverty_planet_2024"></cite>
-        About 3.5 billion people, 44% of the world, live on less than $6.85 per day. Sub-Saharan
-        Africa contained 67% of the world's extreme poor in 2024, despite having only 16% of
-        the global population. Against this background, claims that AI will transform human welfare
+        national. The World Bank's 2024 <em>Poverty, Prosperity and Planet</em> report estimated
+        that about 700 million people — 8.5% of the world's population — were living in extreme
+        poverty on less than $2.15 per day, and that about 3.5 billion people, 44% of the world,
+        were living on less than $6.85 per day. <cite data-key="worldbank_poverty_planet_2024"></cite>
+        Sub-Saharan Africa contained 67% of the world's extreme poor in 2024, despite having only
+        16% of the global population.
+      </p>
+      <p>
+        Those figures deserve exactly the scrutiny we gave the FDA's device list. In June 2025 the
+        World Bank moved its international poverty line from $2.15 measured in 2017 prices to $3.00
+        measured in 2021 prices, and folded in new household survey data from more than 160
+        countries. The same underlying world was suddenly recorded as containing roughly 125
+        million more extremely poor people; the Bank's estimate for 2025 is about 808 million, or
+        close to one person in ten <cite data-key="worldbank_poverty_update_2025"></cite>. Nobody became poorer on the day the line moved. The count
+        changed because the definition did. This is not a reason to dismiss poverty statistics —
+        the revision made them more accurate, not less — but it is a reason to ask of any headline
+        figure who drew the line, in what currency, and for what year.
+      </p>
+      <p>
+        Against this background, claims that AI will transform human welfare
         need to be evaluated carefully: not just for whether specific applications provide genuine
         value, but for whether AI development as a whole reproduces or disrupts the structural
         inequalities that generate poverty in the first place.
@@ -759,7 +1103,8 @@ flowchart LR
         <figcaption>
           Artisanal cobalt miners in the Democratic Republic of Congo. Cobalt is a critical
           component of the lithium-ion batteries and electronics that underpin AI hardware.
-          The DRC produces roughly 70% of the world's cobalt, often under dangerous working
+          The DRC produces roughly three-quarters of the world's mined cobalt, often under
+          dangerous working
           conditions with severe environmental impacts. The benefits of AI accrue to users
           in wealthy countries; the costs of its material foundation fall on some of the
           world's poorest communities. CC BY 2.5, via Wikimedia Commons.
@@ -818,11 +1163,19 @@ flowchart LR
 
       <blockquote class="quote-block">
         <p>
-          "Development is not just higher output. It is an expansion of what people are
-          actually able to do and be."
+          Development is not just higher output. It is an expansion of what people are
+          actually able to do and be.
         </p>
-        <cite>— Amartya Sen, <cite data-key="sen_development_freedom"></cite></cite>
+        <cite>A paraphrase of Amartya Sen's central claim in <em>Development as Freedom</em> (1999)</cite>
       </blockquote>
+
+      <p>
+        That sentence is a compression rather than a quotation, but it captures the move that makes
+        Sen's framework useful here. Output is a proxy; capability is the thing the proxy was
+        supposed to stand for. Once you separate the two, you can ask a question that a
+        productivity statistic cannot answer — whether the people whose lives an AI system touches
+        end up with more genuine options than they had before.
+      </p>
 
       <h3>Algorithmic Bias and Racial Justice</h3>
 
@@ -887,7 +1240,7 @@ flowchart LR
 
       <div class="case-study">
         <p class="box-label">Case Study</p>
-        <p class="box-title">AI for Development — or a New Dependency?</p>
+        <p class="box-title">Hypothetical: AI for Development — or a New Dependency?</p>
         <p>
           Consider an AI-powered agricultural advisory service deployed in a low-income country.
           The service provides localized crop advice and weather alerts via mobile phone, drawing
@@ -918,10 +1271,10 @@ flowchart LR
         <p class="box-label">Thought Questions</p>
         <ol>
           <li>
-            Virginia Eubanks argues that automated government systems tend to discipline
-            and punish the poor rather than helping them. Do you think this is an inherent
-            feature of such systems, or a contingent failure that could be corrected with
-            better design and oversight?
+            The World Bank's extreme-poverty count rose by roughly 125 million people when the
+            poverty line was redrawn in 2025, without anyone's circumstances changing. Does that
+            make you trust such figures more or less? What would you want to know before quoting
+            one?
           </li>
           <li>
             Sen argues that development means expanding capabilities, not just raising output.
@@ -971,20 +1324,26 @@ flowchart LR
             supply chain.
           </li>
           <li>
-            <strong>The rebound effect:</strong> efficiency improvements in AI do not automatically
-            reduce total resource use. Cheaper inference encourages wider deployment, potentially
-            increasing aggregate energy demand even as unit costs fall.
+            <strong>Judging environmental claims</strong> takes two moves. The <em>rebound
+            effect</em> means efficiency gains do not automatically reduce total resource use,
+            because cheaper inference invites wider deployment. The <em>comparative test</em> means
+            the real question is never "is AI good for the environment?" but whether a specific
+            application — grid balancing, wildfire detection, materials discovery, marketing copy —
+            averts enough harm to justify its material costs. The answer differs case by case.
           </li>
           <li>
-            <strong>AI for climate</strong> requires comparative, evidence-based evaluation: do
-            specific applications (grid balancing, wildfire detection, materials discovery) reduce
-            enough harm to justify their material costs? The answer differs case by case.
+            <strong>Medical AI</strong> shows genuine promise — more than 1,500 FDA-authorized
+            devices and a Nobel-recognized breakthrough in AlphaFold — but adoption is highly
+            concentrated (roughly three-quarters of those devices are radiology), and the risks
+            are serious: bias in training data, automation-induced overreliance, access inequality,
+            and the danger that efficiency in allocating scarce care is mistaken for justice in
+            the health system.
           </li>
           <li>
-            <strong>Medical AI</strong> shows genuine promise (FDA-approved devices, AlphaFold)
-            but carries serious risks: bias in training data, automation-induced overreliance,
-            access inequality, and the danger that efficiency in allocating scarce care is
-            mistaken for justice in the health system.
+            <strong>Statistics are constructed:</strong> the FDA's device list is a keyword-derived
+            sample the agency says is "not a comprehensive resource," and the World Bank's
+            extreme-poverty count rose by roughly 125 million when the poverty line was redrawn in
+            2025. Ask how a number was made, not only how big it is.
           </li>
           <li>
             <strong>Virginia Eubanks</strong> showed that automated government systems often
@@ -1024,6 +1383,32 @@ flowchart LR
         </ul>
       </div>
 
+      <div class="thought-questions">
+        <p class="box-label">Thought Questions</p>
+        <ol>
+          <li>
+            Apply the four tests — sustainability, human benefit, legitimacy, justice — to one AI
+            system you actually use. Which test does it pass most clearly? Which does it fail?
+          </li>
+          <li>
+            Can a system fail one of the four tests badly and still be worth building? If so,
+            which of the four is most negotiable, and what does your answer reveal about the
+            ethical framework you are working from?
+          </li>
+          <li>
+            This chapter argues that AI should be judged by how it redistributes benefits, risks,
+            and decision-making power. Someone might reply that we do not hold other technologies
+            — bricks, antibiotics, spreadsheets — to that standard. Is AI genuinely different, or
+            is the standard simply one we should have been applying all along?
+          </li>
+          <li>
+            Suppose you were advising a state legislature drafting rules for AI in public agencies.
+            Which single requirement from this chapter would you insist on first, and what would
+            you expect it to cost?
+          </li>
+        </ol>
+      </div>
+
     </section><!-- /key-points -->
 
     <!-- ══════════════════════════════════════════════════
@@ -1044,9 +1429,9 @@ flowchart LR
       <a href="ch10_doomsday.html" class="footer-nav-btn">Next chapter &#8594;</a>
     </nav>
     <p class="chapter-footer-meta">
-      <em>Computing and AI Ethics</em> by Brendan Shea, PhD &nbsp;·&nbsp;
+      <em>Computing and AI Ethics</em> by Brendan Shea, PhD &nbsp;&middot;&nbsp;
       <a href="https://creativecommons.org/licenses/by-nc/4.0/"
-         target="_blank" rel="noopener">CC BY-NC 4.0</a> &nbsp;·&nbsp;
+         target="_blank" rel="noopener">CC BY-NC 4.0</a> &nbsp;&middot;&nbsp;
       Rochester Community and Technical College
     </p>
   </footer>

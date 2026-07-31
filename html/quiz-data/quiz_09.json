@@ -80,7 +80,7 @@
         "4,200"
       ],
       "correct": 2,
-      "explanation": "The FDA approved 6 AI-enabled medical devices in 2015; by 2023 that number reached 223 in a single year; and the cumulative total reached 1,451 by early 2026. Radiology dominates, with over 1,100 approved imaging applications. The rapid growth reflects genuine advances in pattern recognition, but also raises concerns about validation standards: are these devices being tested rigorously enough across diverse patient populations before deployment?",
+      "explanation": "The FDA approved 6 AI-enabled medical devices in 2015; by 2023 that number reached 223 in a single year; and the cumulative total reached 1,451 by early 2026, passing 1,500 later that year. The FDA itself cautions that this list is not a comprehensive inventory but a keyword-derived sample drawn from public authorization summaries — even the official count is a constructed artifact. Radiology dominates, with over 1,100 approved imaging applications. The rapid growth reflects genuine advances in pattern recognition, but also raises concerns about validation standards: are these devices being tested rigorously enough across diverse patient populations before deployment?",
       "section": "medicine"
     },
     {

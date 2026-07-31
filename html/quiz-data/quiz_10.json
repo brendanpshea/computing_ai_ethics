@@ -41,7 +41,7 @@
         "Atomic Energy Commission scientists advising on civilian nuclear policy"
       ],
       "correct": 1,
-      "explanation": "The Bulletin of the Atomic Scientists was founded by physicists who worked on the Manhattan Project — including Albert Einstein and J. Robert Oppenheimer — who felt a moral responsibility to warn the public about the dangers of the weapons they had helped create. The Doomsday Clock is their symbolic measure of how close humanity is to catastrophic self-destruction.",
+      "explanation": "The Bulletin of the Atomic Scientists was founded in December 1945 by Eugene Rabinowitch and Hyman Goldsmith, Manhattan Project scientists at the University of Chicago who felt a moral responsibility to warn the public about the dangers of the weapons they had helped create. (Albert Einstein supported the Bulletin and chaired the Emergency Committee of Atomic Scientists, which raised money for it, but he did not work on the Manhattan Project — he was denied security clearance.) The Doomsday Clock is their symbolic measure of how close humanity is to catastrophic self-destruction.",
       "section": "existential-risk"
     },
     {
@@ -54,7 +54,7 @@
         "It represented the first time climate change — not nuclear weapons — drove the setting"
       ],
       "correct": 2,
-      "explanation": "90 seconds to midnight was the closest the Doomsday Clock had ever been set in its 76-year history, surpassing the previous record of 100 seconds (2020). The 2023 setting cited Russia's nuclear posturing and the Ukraine war, ongoing climate inaction, and AI-enabled information warfare and disinformation as the compounding threats driving the decision.",
+      "explanation": "90 seconds to midnight was the closest the Doomsday Clock had ever been set at that point in its 76-year history, surpassing the previous record of 100 seconds (2020). It has since moved closer still — 89 seconds in January 2025, and 85 seconds in January 2026, the closest setting in its history. The 2023 setting cited Russia's nuclear posturing and the Ukraine war, ongoing climate inaction, and AI-enabled information warfare and disinformation as the compounding threats driving the decision.",
       "section": "existential-risk"
     },
     {
@@ -197,7 +197,7 @@
         "2024"
       ],
       "correct": 3,
-      "explanation": "FHI closed in 2024. Its closure was attributed to a combination of institutional tensions with Oxford's administrative structures, funding difficulties, and internal leadership challenges. The closure was widely discussed in the existential risk community as a significant loss of institutional capacity for long-term AI safety research.",
+      "explanation": "FHI closed in April 2024, after 19 years. Its closure followed sustained administrative friction with Oxford's Faculty of Philosophy, including a freeze on fundraising and hiring imposed in 2020 and a decision not to renew staff contracts; Bostrom characterised it as “death by bureaucracy” and resigned from Oxford. He now runs the Macrostrategy Research Initiative. The closure was widely discussed in the existential risk community as a significant loss of institutional capacity for long-term AI safety research.",
       "section": "existential-risk"
     },
     {

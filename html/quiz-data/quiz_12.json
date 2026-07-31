@@ -72,15 +72,15 @@
     },
     {
       "id": "ch12-q06",
-      "question": "In 2018, Belgium and the Netherlands determined that loot boxes in video games constituted gambling. What was the specific consequence for Electronic Arts?",
+      "question": "In 2018, Belgium's Gaming Commission determined that paid loot boxes constituted gambling. What was the consequence for Electronic Arts?",
       "options": [
         "EA was fined $500 million for predatory monetization practices targeting minors",
-        "EA's FIFA 'Ultimate Team' randomized player-pack system was effectively prohibited in those countries",
+        "EA stopped selling FIFA Points in Belgium, disabling paid packs in 'Ultimate Team' there",
         "EA was required to publish the probability rates for all loot box items across its catalog",
         "EA voluntarily removed all loot boxes from its games worldwide in response to the regulatory pressure"
       ],
       "correct": 1,
-      "explanation": "Belgium and the Netherlands applied existing gambling law to loot boxes, determining that randomized rewards purchased with real money met the legal definition of gambling. FIFA's 'Ultimate Team' mode — which generates hundreds of millions of dollars annually through randomized player packs — was effectively banned in games accessible to minors. EA refused to change the mechanic globally, choosing to exit some markets instead.",
+      "explanation": "Belgium applied existing gambling law to loot boxes, concluding that randomized rewards bought with real money met the legal definition of gambling. Rather than seek a gambling licence, EA stopped selling FIFA Points to Belgian players in 2019, disabling paid packs in Ultimate Team there; that ban remains in force. The Netherlands is often named alongside Belgium, but its outcome was the opposite: the Dutch gambling authority fined EA €10 million, and in March 2022 the Council of State overturned the penalty, holding that opening FIFA packs is not a standalone game of chance but part of a wider game of skill. Two European regulators applied similar reasoning to identical mechanics and reached opposite conclusions — which tells you how unsettled the underlying category is.",
       "section": "moral-panic"
     },
     {
@@ -236,13 +236,13 @@
       "question": "Which of the following are accurate statements about loot boxes and gaming regulation as discussed in the chapter? Select all that apply.",
       "options": [
         "Loot boxes use variable ratio reinforcement — the most powerful behavioral reinforcement schedule, identical to that of slot machines",
-        "Belgium and the Netherlands banned loot boxes in games accessible to minors in 2018 under existing gambling law",
-        "EA's FIFA 'Ultimate Team' randomized player-pack system was prohibited in Belgium and the Netherlands",
+        "Belgium banned paid loot boxes as gambling in 2018, and EA responded by withdrawing FIFA Points from the Belgian market",
+        "A Dutch ruling against EA's loot boxes was overturned on appeal in 2022, so FIFA packs are not treated as gambling in the Netherlands",
         "The World Health Organization removed Gaming Disorder from ICD-11 in 2022 after a systematic evidence review",
         "C. Thi Nguyen describes manipulative loot-box mechanics as a form of 'value capture' that colonizes players' authentic motivations"
       ],
       "correct": [0, 1, 2, 4],
-      "explanation": "All four of the first, second, third, and fifth statements are accurate. The WHO did not remove Gaming Disorder — it was added to ICD-11 in 2019 and remains there. The fourth statement is false.",
+      "explanation": "The first, second, third and fifth statements are accurate. Note the contrast between the second and third: Belgium's 2018 ban stands and pushed EA out of that market, while the Dutch penalty against the same mechanic was overturned by the Council of State in March 2022. It is a common error — repeated in a great deal of secondary writing — to say that “Belgium and the Netherlands banned loot boxes,” as though both bans survived. The fourth statement is false: the WHO did not remove Gaming Disorder; it was added to ICD-11 in 2019 and remains there.",
       "section": "video-games"
     },
     {
@@ -265,10 +265,10 @@
       "pairs": [
         { "left": "Johan Huizinga publishes 'Homo Ludens'",                               "right": "1938" },
         { "left": "U.S. Senate holds hearings on comic books and juvenile delinquency",   "right": "1954" },
-        { "left": "Belgium and Netherlands ban loot boxes as gambling",                   "right": "2018" },
+        { "left": "Belgium bans paid loot boxes as gambling",                   "right": "2018" },
         { "left": "WHO adds Gaming Disorder to ICD-11; Fortnite World Cup pays $30M",    "right": "2019" }
       ],
-      "explanation": "These four dates mark the chapter's key historical waypoints: the theoretical foundation (Huizinga, 1938), the template moral panic (comics hearings, 1954), the first major loot-box regulation (Belgium/Netherlands, 2018), and two simultaneous 2019 events — the formal medicalization of problematic gaming and the spectacular commercial scale of competitive gaming — that together define the contemporary moment.",
+      "explanation": "These four dates mark the chapter's key historical waypoints: the theoretical foundation (Huizinga, 1938), the template moral panic (the comics hearings, 1954), the first major loot-box regulation (Belgium, 2018), and two simultaneous 2019 events — the formal medicalization of problematic gaming and the spectacular commercial scale of competitive gaming — that together define the contemporary moment. A parallel Dutch ruling went the other way on appeal in 2022, so 2018 marks Belgium's ban specifically, not a joint one.",
       "section": "moral-panic"
     }
   ]

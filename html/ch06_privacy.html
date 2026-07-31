@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chapter 6: Privacy in the Information Age | Computing &amp; AI Ethics</title>
   <meta name="description"
-        content="What is privacy, and why does it matter? This chapter examines privacy's philosophical foundations, the history of surveillance from the telegraph to TikTok, authoritarian surveillance states, and the ongoing debate over security versus liberty in democracies.">
+        content="What is privacy, and why does it matter? This chapter examines privacy's philosophical foundations, the history of surveillance from the telegraph to TikTok, the data broker economy, authoritarian surveillance states, and the ongoing debate over security versus liberty in democracies.">
   <meta name="author" content="Brendan Shea, PhD">
   <link rel="stylesheet" href="styles.css">
   <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
@@ -88,6 +88,7 @@
           it is about <em>appropriate information flows</em>. A privacy violation occurs when information moves
           to a context where it doesn't belong: your medical records flowing to your employer, your private
           messages shared with strangers, or your location data sold to advertisers.
+          <cite data-key="nissenbaum_privacy_context"></cite>
         </p>
       </div>
 
@@ -182,10 +183,10 @@
 
       <blockquote class="quote-block">
         <p>
-          "Arguing that you don't care about privacy because you have nothing to hide is like arguing you
-          don't care about free speech because you have nothing to say."
+          Arguing that you don't care about privacy because you have nothing to hide is like arguing you
+          don't care about free speech because you have nothing to say.
         </p>
-        <cite>— Edward Snowden</cite>
+        <cite>Edward Snowden, Reddit "Ask Me Anything" (2015)</cite>
       </blockquote>
 
       <p>
@@ -194,6 +195,11 @@
         to have for them right now. You need not currently be planning to speak dangerously to value free
         speech. You need not currently be hiding anything shameful to value privacy. The value of the right
         lies partly in protecting possibilities — including possibilities that may never be exercised.
+        Two further problems are worth holding onto: everyone has legal matters that are simply nobody
+        else's business, so "nothing to hide" quietly equates privacy with guilt; and individually harmless
+        facts can be aggregated into a revealing profile. Because this is the most common defense of
+        surveillance in ordinary conversation, we set it out in standard form and examine each premise
+        in Part IV, once the surveillance cases are on the table.
       </p>
 
       <h3>Why Privacy Matters: Intrinsic Arguments</h3>
@@ -388,16 +394,20 @@
         the word past recognition.
       </p>
       <p>
-        Research has documented just how small a reward is enough to overcome stated privacy
-        preferences. For example, a Carnegie Mellon study found that users would share their
-        purchase history with a website in exchange for discounts as small as a few cents on
-        a $15 product — a trade most said in principle they would never make. Loyalty programs
-        at grocery stores, pharmacies, and coffee chains collect detailed purchase histories
-        in exchange for modest discounts, and hundreds of millions of people have enrolled
-        without meaningful reflection. A 2023 report found that the average American has
-        accepted over 1,500 different terms-of-service agreements — documents that, read
-        consecutively, would take weeks. The privacy paradox is less a paradox than a
-        description of what happens when real alternatives are systematically absent.
+        Research has documented just how small a reward is enough to shift privacy behavior — and how
+        much the framing of the offer matters. In a well-known Carnegie Mellon experiment, shoppers were
+        given one of two gift cards: a $10 card that kept their purchases anonymous, or a $12 card that
+        tracked them. Among those handed the anonymous $10 card, more than half refused $2 to give up
+        that anonymity; among those handed the trackable $12 card, fewer than one in ten paid $2 to buy
+        privacy back. The same privacy was worth six times more to people who already had it
+        <cite data-key="acquisti_privacy_worth"></cite>. Loyalty
+        programs at grocery stores, pharmacies, and coffee chains work on the same margin, collecting
+        detailed purchase histories in exchange for modest discounts. And the paperwork is genuinely
+        unreadable: Carnegie Mellon researchers Aleecia McDonald and Lorrie Faith Cranor estimated that
+        the average American internet user encounters roughly 1,500 privacy policies a year, and that
+        reading them all would take about 244 hours — six full working weeks
+        <cite data-key="mcdonald_cranor_cost"></cite>. The privacy paradox is
+        less a paradox than a description of what happens when real alternatives are systematically absent.
       </p>
 
       <div class="thought-questions">
@@ -495,8 +505,9 @@ timeline
 
       <p>
         The most influential product of this era was not a law but a framework. The 1973 Department of
-        Health, Education, and Welfare report on data systems articulated what it called <strong>Fair
-        Information Practice Principles</strong> (FIPPs): Notice (people should know data is being
+        Health, Education, and Welfare report on data systems articulated what became known as the
+        <strong>Fair Information Practice Principles</strong> (FIPPs). In the compact form the Federal
+        Trade Commission later gave them, they are: Notice (people should know data is being
         collected), Choice (people should be able to consent or opt out), Access (people should be
         able to see their own data), Security (data should be protected), and Enforcement (violations
         should have consequences). These five principles became the conceptual foundation for privacy
@@ -658,6 +669,107 @@ timeline
         underlying tension.
       </p>
 
+      <h3>The Data Broker Economy</h3>
+
+      <p>
+        Cambridge Analytica and the Snowden disclosures were dramatic events, and dramatic events are
+        what get remembered. But the steadiest pressure on privacy in the 2020s comes from something far
+        less cinematic: a large, quiet industry of intermediaries who buy, merge, score, and resell
+        personal information about people who have never heard of them. If surveillance capitalism
+        describes what platforms do with the data you hand them, the data broker industry describes what
+        happens to that data afterward.
+      </p>
+
+      <div class="definition-box">
+        <p class="term">Data Broker</p>
+        <p class="definition">
+          A company that collects personal information about individuals it has no direct relationship
+          with — from public records, commercial transactions, apps, and other brokers — and then sells,
+          licenses, or otherwise makes that information available to third parties. Because you are not
+          the customer, the ordinary consumer-protection instincts (read the terms, switch providers,
+          complain) have nothing to attach to.
+        </p>
+      </div>
+
+      <p>
+        How big is this industry? The honest answer is that nobody outside it knows precisely.
+        Commercial market-research estimates for 2026 cluster somewhere in the range of $307–363
+        billion globally, but those are paywalled reports that disagree with one another by roughly
+        twenty percent and that define "data broker" loosely enough to include or exclude tens of
+        billions of dollars at will. It is tempting to pick the most impressive number and move on.
+        It is more instructive to notice the measurement failure itself: an industry whose entire
+        business is knowing things about people cannot be measured, by outsiders, to better than a
+        fifth of its own size. That opacity is not a footnote to the privacy problem. It is part of it.
+      </p>
+
+      <p>
+        Public registries give a firmer, if partial, picture. A handful of US states now require data
+        brokers to register. California's registry reached a record <strong>581</strong> registered
+        brokers in June 2026; Vermont's, the oldest, lists roughly 280. Pooling five state registries,
+        the Privacy Rights Clearinghouse identified about <strong>750</strong> distinct broker groups —
+        and found around 309 companies registered in at least one state but absent from Vermont's list,
+        which suggests that non-registration is common rather than exceptional. The individual profiles
+        can be extraordinarily detailed: Acxiom, one of the oldest names in the business, advertises
+        2.6 billion verified identifiers worldwide and more than 1,500 attributes per US consumer.
+        (A common error is to treat "Acxiom/LiveRamp" as one company. They are not. The original Acxiom
+        Corporation renamed itself LiveRamp in 2018 after selling its marketing-services division, and
+        the Acxiom name now sits inside the advertising conglomerate Omnicom.)
+      </p>
+
+      <p>
+        Regulation has moved in two directions at once. California's DELETE Act created
+        <strong>DROP</strong> (Delete Request and Opt-out Platform), a single site where a resident can
+        submit one deletion request that every registered broker must honor. The platform opened to the
+        public on 1 January 2026, and brokers are required to begin processing its requests on
+        <strong>1 August 2026</strong>; more than 300,000 Californians signed up in the first five
+        months. Enforcement is real — the state privacy agency created a data broker enforcement
+        strike force in late 2025 and has brought a series of public actions — though compliance
+        remains poor: a 2026 study of the 522 brokers then on the California registry, "Privacy Without
+        Remedy," found that only about 9% fully met the Act's transparency requirements. At the federal
+        level, movement went backward. A rule proposed by the Consumer Financial Protection Bureau in
+        December 2024 would have treated many brokers as consumer reporting agencies under the Fair
+        Credit Reporting Act, subjecting the sale of sensitive personal data to the same rules that
+        govern credit reports. That proposal was <strong>withdrawn in May 2025</strong>. No federal
+        data broker rule is in effect.
+      </p>
+
+      <p>
+        The result is a patchwork that would be familiar to anyone who followed the earlier history in
+        this chapter: technology moves, one jurisdiction responds, another declines to, and the gap
+        between them becomes a business model. It is also a clean illustration of Nissenbaum's point.
+        Almost nothing a broker holds is secret. Your address is public; your purchases were shared
+        willingly with a store; your location was handed to a weather app. The violation is in the
+        flow, not the fact.
+      </p>
+
+      <div class="thought-questions">
+        <p class="box-label">Thought Questions</p>
+        <ol>
+          <li>
+            Every technology in this section — photography, the telephone, the mainframe database,
+            the web, the smartphone — produced roughly the same sequence: new capability, public alarm,
+            partial legal response. Is that pattern evidence that privacy law works, or evidence that
+            it always arrives a generation late?
+          </li>
+          <li>
+            Try to reconstruct your own data trail for a single ordinary day. Which of those records
+            would you guess have already been sold to someone you have never heard of? Does it change
+            how you feel about the day?
+          </li>
+          <li>
+            Make the strongest case <em>for</em> the data broker industry. Credit scoring, fraud
+            detection, and locating missing persons all depend on aggregating information about people
+            who did not individually consent. Where exactly does the legitimate version end?
+          </li>
+          <li>
+            California requires brokers to register and honor deletion requests; the federal government
+            withdrew its proposed rule. Is state-by-state privacy regulation a workable long-run
+            arrangement for an industry that operates nationally, or does it mainly reward brokers who
+            are willing to ignore the strictest state?
+          </li>
+        </ol>
+      </div>
+
     </section><!-- /history-privacy -->
 
 
@@ -765,9 +877,9 @@ timeline
               <td>All internet traffic</td>
             </tr>
             <tr>
-              <td><strong>Social Credit System</strong></td>
-              <td>Behavioral scoring with rewards and punishments</td>
-              <td>National, multiple local pilots</td>
+              <td><strong>"Social Credit" programs</strong></td>
+              <td>Court blacklists, regulatory records, local pilot schemes</td>
+              <td>Blacklists national; point-scoring local and mostly discontinued</td>
             </tr>
             <tr>
               <td><strong>IJOP</strong></td>
@@ -779,13 +891,40 @@ timeline
       </div>
 
       <p>
-        The Social Credit System — widely misunderstood in Western media as a single unified
-        "score" — is better understood as a set of overlapping local and sectoral programs that
-        reward and punish behavior across various domains. High-scoring citizens may receive
-        benefits like faster government services or better loan rates. Low scores can trigger
-        travel bans, public shaming on billboards and TV, and restricted access to employment
-        and education. The system reflects a specific theory of governance: that visible,
-        pervasive accountability will produce a more ordered and law-abiding society.
+        The "Social Credit System" deserves a careful word, because the version of it that circulates
+        in Western media is largely a misconception — and a costly one, since it makes the real system
+        harder to see. The familiar picture is of a single national algorithm assigning every Chinese
+        citizen a live numerical score that rises when they volunteer and falls when they jaywalk.
+        No such unified citizen score exists, and none has ever been rolled out nationally. Researchers
+        who read the underlying Chinese-language policy documents — Jeremy Daum of Yale's Paul Tsai
+        China Center and analysts at the Mercator Institute for China Studies among them — describe
+        something considerably messier.
+      </p>
+
+      <p>
+        What actually exists is a patchwork of three loosely related things. First, corporate
+        pilots: private scoring products such as Ant Financial's Sesame Credit, which were voluntary,
+        commercial, and closer to a loyalty program than a citizenship rating. China's central bank
+        ultimately declined to license these firms as credit-reporting agencies, and several of the
+        pilots were discontinued. Second, and most consequentially, court
+        <strong>judgment-defaulter blacklists</strong> — public lists of people who have lost a lawsuit
+        and refused to comply with the judgment. This is where the widely reported travel bans actually
+        come from: a named individual on the list can be barred from buying plane or high-speed rail
+        tickets, by court order, for a specific documented reason. Third, sprawling regulatory and
+        compliance records, most of which concern <em>companies</em> rather than individuals. Some
+        municipal governments did run point-scoring pilots, and a few produced the billboard-shaming
+        stories that traveled abroad; most were scaled back or abandoned.
+      </p>
+
+      <p>
+        Getting this right matters in both directions. The corrective is not reassurance: China's
+        surveillance apparatus is genuinely vast, and the sections that follow describe what it does
+        in Xinjiang. The point is that the frightening part is the cameras, the databases, the
+        real-name registration, and the discretionary power to blacklist — not a sci-fi scoreboard.
+        Attributing the harm to a system that does not exist makes the harm easier to dismiss when the
+        story is corrected, and it lets Western readers file the whole problem as something foreign.
+        The Chinese state's actual theory of governance here is more mundane and more portable: that
+        visible, permanent, cross-linked records of past conduct will make people behave.
       </p>
 
       <div class="case-study">
@@ -894,6 +1033,42 @@ timeline
         what obligations do manufacturers, exporters, and international bodies have?
       </p>
 
+      <div class="thought-questions">
+        <p class="box-label">Thought Questions</p>
+        <ol>
+          <li>
+            The unified Chinese "citizen score" turns out to be largely a Western invention, while the
+            court blacklists and camera networks are entirely real. Why do you think the fictional
+            version traveled so much further than the documented one? What does that suggest about how
+            we reason about surveillance in countries we do not live in?
+          </li>
+          <li>
+            Foucault argued that the Panopticon's power lies in prisoners regulating themselves. Can
+            you identify a setting in your own life — a classroom, a workplace, a group chat, a
+            platform — where you behave differently because you might be observed, even though you are
+            almost certainly not being watched at that moment?
+          </li>
+          <li>
+            Make the strongest case for the Chinese government's position on Safe City exports: that
+            developing countries are entitled to the same public-safety infrastructure wealthy nations
+            already have, and that refusing to sell it is paternalism. Where, if anywhere, does that
+            argument break down?
+          </li>
+          <li>
+            NSO Group insists Pegasus is sold only to vetted governments for legitimate purposes. If a
+            company genuinely cannot control how its customers use a product, does that reduce its
+            responsibility for the misuse, or increase its responsibility for building the product at
+            all?
+          </li>
+          <li>
+            Every capability described in this section — facial recognition in public, database
+            integration across agencies, predictive flagging — also exists in democracies. What
+            specifically is doing the work of keeping them different: the technology, the law, the
+            courts, the press, or something else?
+          </li>
+        </ol>
+      </div>
+
     </section><!-- /authoritarian-surveillance -->
 
 
@@ -926,11 +1101,20 @@ timeline
 
       <blockquote class="quote-block">
         <p>
-          "Too many wrongly characterize the debate as 'security versus privacy.' The real
-          choice is liberty versus control."
+          Too many wrongly characterize the debate as "security versus privacy." The real
+          choice is liberty versus control.
         </p>
-        <cite>— Bruce Schneier, <cite data-key="schneier_data_goliath"></cite></cite>
+        <cite data-key="schneier_data_goliath"></cite>
       </blockquote>
+
+      <p>
+        Security technologist Bruce Schneier's reframing is worth taking seriously rather than treating
+        as a slogan. Locking your front door is a security measure and a privacy measure at once; so is
+        encrypting a message. What the "security versus privacy" framing actually smuggles in is a
+        particular <em>kind</em> of security — the state's ability to see — and a particular assumption
+        about who is most at risk from whom. Schneier's alternative asks a different question: after a
+        given surveillance program is built, who has more power over whom than before?
+      </p>
 
       <h3>The Case for Surveillance</h3>
 
@@ -991,21 +1175,21 @@ timeline
       <div class="pro-argument">
         <p class="box-label">Supporting argument</p>
         <p>
-          Post-Snowden studies found measurable decreases in searches for terrorism-related
-          terms following the revelations — suggesting people were self-censoring even when
-          conducting legitimate research. If innocent people are deterred from legally
-          exploring controversial topics because they fear being flagged as suspicious, the
-          aggregate effect on intellectual life and political discourse could be substantial.
-          The chilling effect is not hypothetical: it has been empirically documented.
-          A 2015 PEN America survey found that 28% of American writers had avoided writing
-          or speaking about certain topics because of surveillance concerns, and 24% had
-          deliberately avoided discussing certain subjects by phone or email. A study of
-          Wikipedia traffic by Jon Penney found significant drops in visits to
-          terrorism-related articles after the Snowden revelations — not because interest
-          in those topics declined, but because people feared being monitored. Searches
-          for terms like "anthrax," "dirty bomb," and "pressure cooker" — relevant to
-          students, journalists, and fiction writers — all declined. Surveillance changes
-          behavior even when no one is actually watching and no one does anything wrong.
+          The chilling effect is not hypothetical; it has been measured. In a November 2013 survey of
+          more than 520 American writers, PEN America found that 28% had curtailed or avoided social
+          media activity because of surveillance concerns, 24% had deliberately avoided certain topics
+          in phone or email conversations, and 16% had avoided writing or speaking about a particular
+          subject altogether <cite data-key="pen_chilling_effects_2013"></cite>. The legal scholar Jon Penney, studying Wikipedia traffic, found a
+          significant and lasting drop in views of articles on terrorism-related topics after the
+          Snowden revelations — not because public interest in those topics collapsed, but because
+          readers appeared to fear that their reading was being logged
+          <cite data-key="penney_chilling_wikipedia"></cite>. Related work on search traffic
+          found similar declines in queries for terms such as "anthrax" and "dirty bomb," words that
+          are of ordinary professional interest to students, journalists, and novelists. If innocent
+          people are deterred from legally exploring controversial topics because they fear being
+          flagged as suspicious, the aggregate effect on intellectual life and political discourse
+          could be substantial. Surveillance changes behavior even when no one is actually watching
+          and no one has done anything wrong.
         </p>
       </div>
 
@@ -1014,7 +1198,10 @@ timeline
       <p>
         The most common defense of surveillance in everyday conversation is the "nothing to hide"
         argument. If you're not doing anything wrong, the reasoning goes, you have nothing to fear
-        from being watched. This argument is intuitively appealing but philosophically weak.
+        from being watched. We met it briefly in Part I; it earns a second, fuller pass here, because
+        a weak argument that almost everyone finds convincing does more work in the world than a good
+        one nobody uses. Set out in standard form, its structure is easy to see — and so are its
+        failures.
       </p>
 
       <div class="argument-box">
@@ -1034,25 +1221,82 @@ timeline
       <div class="objection">
         <p class="box-label">Objection</p>
         <p>
-          <strong>Premise 1 is false:</strong> surveillance harms through chilling effects, power
-          imbalances, errors (wrongful identification), mission creep, and the potential for
-          abuse — none of which require the target to have done anything wrong.
-          <strong>Premise 2 conflates privacy with guilt:</strong> everyone has things they
-          prefer to keep private — legal medical information, political views, relationship
-          details, financial struggles. "Nothing to hide" treats privacy as only relevant to
-          wrongdoers. <strong>The aggregation problem</strong> (Daniel Solove <cite data-key="solove_understanding_privacy"></cite>): data points that are individually innocuous can combine into
-          sensitive profiles that reveal far more than any single item would suggest.
-          <strong>Laws change:</strong> today's legal behavior may be criminalized by future
-          governments — a real concern in authoritarian transitions. For instance, being gay
-          was a criminal offense in Britain until 1967 (Alan Turing was prosecuted for it
-          in 1952) and in many US states until the Supreme Court's 2003 <em>Lawrence v. Texas</em>
-          ruling. Abortion was a federally protected right until 2022. Interracial marriage
-          was illegal in sixteen states until 1967. People who were "law-abiding" under one
-          legal regime have become criminals under another. Data collected today about
-          perfectly legal behavior — healthcare choices, political associations, religious
-          practice — can become evidence against people under future governments with
-          different definitions of what is permitted.
+          The argument fails, and it fails in five distinct ways that are worth keeping separate.
         </p>
+        <ol>
+          <li>
+            <strong>Chilling effects.</strong> Premise 1 assumes surveillance only touches the guilty.
+            But being watched changes what innocent people do — the self-censorship documented in the
+            PEN America and Wikipedia studies above. Add errors (wrongful identification), mission
+            creep, and the standing potential for abuse, and the harm to the blameless is substantial.
+          </li>
+          <li>
+            <strong>Aggregation.</strong> Data points that are individually innocuous combine into
+            profiles far more revealing than any single item. Daniel Solove argues that this is where
+            most of the real damage happens, precisely because no single disclosure looks like a
+            violation <cite data-key="solove_understanding_privacy"></cite>.
+          </li>
+          <li>
+            <strong>Contextual integrity.</strong> Premise 2 treats information as either secret or
+            not. Nissenbaum's point from Part I applies directly: what is perfectly appropriate in one
+            setting is a violation in another. The pharmacist may know your prescriptions; your
+            landlord may not. "Nothing to hide" has no vocabulary for this.
+          </li>
+          <li>
+            <strong>The static-law assumption.</strong> The argument silently assumes that what is
+            legal today will be legal tomorrow. Being gay was a criminal offense in England and Wales
+            until 1967 — Alan Turing was prosecuted in 1952 — and in a number of US states until
+            <em>Lawrence v. Texas</em> (2003). Interracial marriage was illegal in sixteen states
+            until <em>Loving v. Virginia</em> (1967). Abortion was a federally protected right until
+            2022. Data collected today about lawful conduct — healthcare, political association,
+            religious practice — becomes evidence under a later government with a different list of
+            crimes.
+          </li>
+          <li>
+            <strong>Unequal distribution.</strong> Surveillance is not spread evenly. Its weight falls
+            hardest on people already subject to official attention — immigrants, welfare recipients,
+            residents of heavily policed neighborhoods, political and religious minorities. Someone
+            insulated from that attention can say "I have nothing to hide" and be describing their
+            social position rather than making an argument.
+          </li>
+        </ol>
+      </div>
+
+      <p>
+        Two features of this critique deserve emphasis. The first is that the objections are
+        independent: someone who is unmoved by chilling effects still has to answer aggregation, and
+        someone untroubled by aggregation still has to answer the static-law assumption. Defenders of
+        the argument often rebut one objection and treat the whole case as answered. The second is
+        that even if both premises were granted, the conclusion would not follow. That <em>you</em>
+        are not harmed by a practice is not a reason to think the practice is acceptable; it is a
+        reason to go and find out who is. "Nothing to hide" is, at bottom, an argument about the
+        speaker rather than about surveillance.
+      </p>
+
+      <div class="thought-questions">
+        <p class="box-label">Thought Questions</p>
+        <ol>
+          <li>
+            Of the five objections above, which do you find strongest, and which would be least
+            persuasive to someone who sincerely believes they have nothing to hide? Why the gap?
+          </li>
+          <li>
+            Steelman the argument. Is there a version of "nothing to hide" that survives these
+            objections — perhaps one restricted to narrow, warrant-based, judicially supervised
+            surveillance rather than bulk collection? Try to state it so that it is actually defensible.
+          </li>
+          <li>
+            The static-law objection asks you to imagine a future government with different laws.
+            Is there anything you do legally today that you would not want documented if the rules
+            changed? Does answering that question honestly change how you weigh present-day data
+            collection?
+          </li>
+          <li>
+            The deterrence argument and the chilling-effects argument both make empirical claims that
+            could in principle be tested. If the evidence turned out to favor deterrence more strongly
+            than it currently does, how much should that change your overall view?
+          </li>
+        </ol>
       </div>
 
       <h3>Facial Recognition and Predictive Policing</h3>
@@ -1065,24 +1309,43 @@ timeline
 
       <div class="case-study">
         <p class="box-label">Case Study</p>
-        <p class="box-title">Clearview AI: The Facial Recognition Database</p>
+        <p class="box-title">Clearview AI: The Facial Recognition Database (2020–2026)</p>
         <p>
-          Clearview AI is a technology company that built a facial recognition product by
-          scraping more than 30 billion photos from social media platforms and public websites.
-          Its product allows law enforcement to identify virtually any person from a photograph —
-          a capability that had previously been limited to government intelligence agencies.
-          By 2020, more than 2,400 law enforcement agencies in the United States were using
-          Clearview, often without any official authorization from their departments or
-          oversight from prosecutors or courts.
+          Clearview AI is a technology company that built a facial recognition product by scraping
+          photographs from social media platforms and public websites without permission. When
+          journalists first exposed the company in January 2020, the database held about 3 billion
+          images; federal contracting documents in 2025–26 describe it as roughly <strong>50
+          billion</strong>. Its product lets a police officer identify virtually any person from a
+          single photograph — a capability that had previously belonged only to national intelligence
+          agencies. By 2020, more than 2,400 US law enforcement agencies were using Clearview, often
+          without authorization from their own departments, let alone oversight from prosecutors or
+          courts.
         </p>
         <p>
-          The legal and regulatory response was swift in some jurisdictions. Clearview was
-          sued by the ACLU and settled with an agreement banning sales to private businesses.
-          Regulators in the Netherlands (€30.5M fine), Italy (€20M), and the UK (£7.5M)
-          found the company had violated their data protection laws. Australia and Canada
-          banned its use. In the United States, where no federal privacy law governs such
-          systems, the company's CEO argued it had a First Amendment right to collect
-          publicly available photographs.
+          Abroad, the legal response has been vigorous and largely unenforceable. Regulators fined the
+          company €30.5 million in the Netherlands and €20 million each in France, Italy, and Greece;
+          the UK's Information Commissioner imposed a £7.5 million penalty. Clearview has largely
+          <strong>not paid</strong>, and does not engage with European regulators at all. It keeps no
+          European establishment, no European assets, and no European customers to lose — which poses
+          an uncomfortable question about the enforcement model behind the GDPR: what is a fundamental
+          right worth against a firm that can simply decline to answer the letter? Australia and
+          Canada ordered it to stop collecting their residents' images, and litigation over whether
+          British regulators have jurisdiction at all is still running.
+        </p>
+        <p>
+          American law has bitten harder, if erratically. An ACLU suit under Illinois's Biometric
+          Information Privacy Act ended in 2022 with Clearview barred from selling its database to most
+          private businesses nationwide. A parallel class action under the same statute produced an
+          unusual settlement — no cash, but a roughly <strong>23% equity stake</strong> in the company
+          itself, handed to the class. A district court approved it in March 2025; on
+          <strong>13 July 2026 the Seventh Circuit vacated that approval</strong> and sent the case
+          back, holding the defect procedural (no class representative had participated in allocating
+          the award on behalf of the nationwide class) while pointedly declining to say that paying a
+          class in equity is inherently unfair. The case is open again. Meanwhile the company has
+          changed shape: founder and CEO Hoan Ton-That resigned in February 2025, and Clearview has
+          pivoted to federal contracts — Immigration and Customs Enforcement, Customs and Border
+          Protection, and the US Army — running through 2026. Its public defense throughout has been
+          that scraping public photographs is protected expression under the First Amendment.
         </p>
         <p>
           The Clearview case crystallizes a broader debate. Facial recognition in public spaces
@@ -1205,21 +1468,23 @@ timeline
         <p class="box-label">Thought Questions</p>
         <ol>
           <li>
-            The "nothing to hide" argument is widely used in everyday conversation. After
-            reading this chapter's analysis of its weaknesses, how would you respond to a friend
-            who made this argument to defend a new government surveillance program?
+            Clearview AI has been fined tens of millions of euros by four European regulators and has
+            largely ignored them. If a right cannot be enforced against a company that keeps no assets
+            in your jurisdiction, is it still a right? What tools — trade rules, payment blocking,
+            liability for its customers — would you be willing to use, and at what cost?
           </li>
           <li>
-            China's Social Credit System is often described in Western media as dystopian.
-            But credit scores, insurance risk ratings, and employee monitoring all apply
-            similar logic in Western societies. Is the difference one of <em>degree</em>,
-            <em>kind</em>, or <em>context</em>? What makes one more acceptable than the other?
+            China's court blacklists bar named individuals from air travel for failing to satisfy a
+            court judgment. American credit scores, no-fly lists, tenant screening reports, and
+            insurance risk ratings all restrict access to goods based on recorded past conduct. Is the
+            difference one of <em>degree</em>, <em>kind</em>, or <em>context</em> — and which specific
+            feature makes one more acceptable than the other?
           </li>
           <li>
-            Foucault argued that the panopticon's power lies in people regulating themselves.
-            To what extent do social media platforms create a voluntary panopticon? Does your
-            behavior online change because you know your posts are public or potentially
-            monitored?
+            Facial recognition and predictive policing both promise real benefits and both carry
+            documented accuracy and bias problems. Would you accept a facial recognition system that
+            was demonstrably accurate across all demographic groups? If not, what was actually doing
+            the work in your objection?
           </li>
           <li>
             The eight principles of democratic surveillance listed above are mostly procedural —
@@ -1243,7 +1508,7 @@ timeline
       <p>
         This chapter has traced privacy from its philosophical foundations through its historical
         transformation by successive waves of information technology, to the concrete challenges
-        posed today by surveillance capitalism, authoritarian states, and democratic governments
+        posed today by surveillance capitalism, the data broker economy, authoritarian states, and democratic governments
         navigating the genuine tension between security and liberty. Privacy is neither a simple
         right nor a minor interest: it is a condition for autonomy, intimacy, democracy, and the
         very possibility of being a self. The technologies that threaten it are powerful, pervasive,
@@ -1268,7 +1533,8 @@ timeline
             as an end in itself should value what privacy makes possible.
           </li>
           <li>
-            <strong>Warren and Brandeis</strong> (1890) coined the phrase "the right to be let alone,"
+            <strong>Warren and Brandeis</strong> (1890) borrowed Judge Thomas Cooley's phrase "the right
+            to be let alone" and made it famous,
             launching the modern legal concept of privacy in response to invasive photography and
             tabloid journalism — a pattern (new technology, new privacy threat, new legal response)
             that has repeated across every subsequent information revolution.
@@ -1292,17 +1558,28 @@ timeline
             surveillance a threat to free expression even when no one is arrested.
           </li>
           <li>
-            <strong>Authoritarian surveillance</strong> (China, Russia, others) uses overlapping
-            systems — cameras, databases, AI, spyware — to achieve comprehensive social control.
-            The export of this technology through China's Belt and Road Initiative raises concerns
-            about the global normalization of mass surveillance.
+            <strong>Data brokers</strong> buy, merge, and resell personal information about people
+            they have no relationship with. The industry cannot be measured to better than about a
+            fifth of its own size, 581 brokers are registered in California alone, and regulation is
+            diverging: California's DROP deletion platform binds registered brokers from August 2026,
+            while the proposed federal rule that would have covered them under the Fair Credit
+            Reporting Act was withdrawn in May 2025.
           </li>
           <li>
-            <strong>The "nothing to hide" argument</strong> fails because surveillance harms
-            through chilling effects, error, power asymmetry, aggregation, and future-law risk —
-            none of which require the target to have done anything wrong. The aggregation problem
-            (Solove) shows that individually innocuous data points can combine into highly
-            sensitive profiles.
+            <strong>Authoritarian surveillance</strong> (China, Russia, others) uses overlapping
+            systems — cameras, databases, AI, spyware — to achieve comprehensive social control.
+            The Western picture of a unified Chinese "citizen score" is largely a misconception: the
+            reality is court blacklists, regulatory records, and mostly abandoned local pilots. The
+            surveillance is real; the score mostly is not. The export of this technology through
+            China's Belt and Road Initiative raises concerns about the global normalization of mass
+            surveillance.
+          </li>
+          <li>
+            <strong>The "nothing to hide" argument</strong> fails in five separable ways: chilling
+            effects on the innocent, aggregation of innocuous data into sensitive profiles (Solove),
+            contextual integrity, the false assumption that today's laws are permanent, and the
+            unequal distribution of surveillance across social groups. None of these require the
+            target to have done anything wrong.
           </li>
           <li>
             <strong>Democratic surveillance</strong> requires judicial oversight, transparency,
@@ -1330,12 +1607,12 @@ timeline
     <nav class="chapter-footer-nav" aria-label="Chapter navigation">
       <a href="ch05_crypto.html" class="footer-nav-btn">&#8592; Previous chapter</a>
       <a href="../index.html" class="footer-nav-btn">&#8962; Table of Contents</a>
-      <a href="ch07_ai_ethics.html" class="footer-nav-btn">Next chapter &#8594;</a>
+      <a href="ch07_ai_intro.html" class="footer-nav-btn">Next chapter &#8594;</a>
     </nav>
     <p class="chapter-footer-meta">
-      <em>Computing and AI Ethics</em> by Brendan Shea, PhD &nbsp;·&nbsp;
+      <em>Computing and AI Ethics</em> by Brendan Shea, PhD &nbsp;&middot;&nbsp;
       <a href="https://creativecommons.org/licenses/by-nc/4.0/"
-         target="_blank" rel="noopener">CC BY-NC 4.0</a> &nbsp;·&nbsp;
+         target="_blank" rel="noopener">CC BY-NC 4.0</a> &nbsp;&middot;&nbsp;
       Rochester Community and Technical College
     </p>
   </footer>

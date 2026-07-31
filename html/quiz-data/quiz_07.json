@@ -145,7 +145,7 @@
         "Machines cannot achieve consciousness because they lack biological substrates"
       ],
       "correct": 1,
-      "explanation": "Lovelace argued that the Analytical Engine could only do what it was told — it had no power to originate ideas. This objection retains force in debates about large language models: critics like Gary Marcus and Emily Bender describe LLMs as 'stochastic parrots' that recombine training data patterns rather than generating genuinely novel understanding. Turing's response was that programs produce outputs that surprise their creators, and learning systems modify their behavior through experience.",
+      "explanation": "Lovelace argued that the Analytical Engine could only do what it was told — it had no power to originate ideas. This objection retains force in debates about large language models: Bender, Gebru, McMillan-Major and Shmitchell (2021) describe LLMs as “stochastic parrots” that recombine training data patterns rather than generating genuinely novel understanding. Turing's response was that programs produce outputs that surprise their creators, and learning systems modify their behavior through experience.",
       "section": "classical-debates"
     },
     {

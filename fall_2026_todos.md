@@ -232,4 +232,97 @@ Note for future implementers: `biber` needs `BIBINPUTS` pointing at the project 
 - **P5.4** — course-wide "Argument N.M" numbering.
 - **P5.6** — accessibility pass on red/green-only tikz diagrams.
 - **Broad slide overflow** in L1 (34) and L3 (32), which predates this pass.
-- **HTML chapters** were not regenerated. The slide decks and the `html/` readings have now diverged for L2 (Australia), L4 (AI copyright), L5 (crypto figures), L6 (Clearview, Nothing-to-Hide), L7 (timeline), L9 (energy/FDA), L10 (Doomsday Clock), and L11 (AI companions). Chapter 8 already covered Marx's alienation, so only the slides needed that fix.
+(The HTML chapters were brought back into sync in the follow-up pass below.)
+
+---
+
+# HTML chapter pass — 2026-07-31
+
+All twelve `html/ch*.html` readings were synced with the revised decks and given an
+accuracy and style proofread. Each chapter was worked on independently, then the
+highest-stakes corrections were re-verified by a separate reviewer.
+
+## The thing to know: five fabricated or misattributed quotations
+
+The chapters were derived from the slides with LLM assistance, and the
+characteristic failure mode showed up exactly where you would fear it — in
+quotations. In a course that teaches source evaluation, these were the most
+damaging defects in the book:
+
+| Chapter | What was there | What is true |
+|---|---|---|
+| 10 | A quotation attributed to **Narayanan & Kapoor** about present-day AI harms | **Unverifiable, almost certainly invented.** Replaced with the verified DAIR statement line. |
+| 10 | A quotation attributed to **Shannon Vallor** closing the Synthesis | **Unverifiable, almost certainly invented.** Replaced with a verifiable line from *The AI Mirror*. |
+| 1 | Mill "called this the **marketplace of ideas**" | Mill never used the phrase. It comes from 20th-century American free-speech law. |
+| 3 | Brandeis's "more speech, not enforced silence" given as a **quotation** | It is a paraphrase. Replaced with the verbatim *Whitney* concurrence, including the load-bearing "If there be time…" condition. |
+| 3 | "**27 times** as many abusive tweets" | Unverifiable anywhere; appears fabricated. Replaced with Amnesty International's *Troll Patrol* figures. |
+| 12 | Two quotations attributed to **Bernard Suits** | Could not be verified against the text; both converted to paraphrase without quotation marks. |
+| 2 | "We are what we repeatedly do…" attributed to **Aristotle** | **Will Durant's** paraphrase (1926) — the same error already fixed in the deck. |
+| 8, 7 | Lovelace "has no power of originating anything" | Her actual wording is "has no pretensions whatever to originate any thing" (Note G, 1843). |
+
+**Recommendation:** treat any remaining direct quotation in these materials as
+unverified until checked. The pattern is that plausible-sounding paraphrases
+acquire quotation marks. Worth a standing rule for future chapter drafting.
+
+## Second pattern: ideas credited to the wrong person
+
+- The **six characteristics of play** (free, separate, uncertain, unproductive, rule-governed, make-believe) were credited to **Huizinga**. They are **Caillois's**, from *Man, Play and Games* (1958). (Ch12)
+- **"GOFAI"** was credited to McCarthy. The term is **John Haugeland's** (1985). (Ch7)
+- **"Moral grandstanding"** was credited to Haidt. It is **Tosi & Warmke** (2016). (Ch2)
+- **"Stochastic parrots"** was credited to "Gary Marcus and Emily Bender." Marcus is not an author of that paper. (quiz 7)
+- The **responsibility-gap argument** was credited to Scharre; it originates with **Robert Sparrow** (2007). (Ch10)
+- **"Magic circle"** as a term of art owes more to **Salen & Zimmerman** (2003) than to Huizinga, who uses the phrase in passing. (Ch12)
+
+## Third pattern: positions misrepresented
+
+- **Paul Scharre** was presented as an abolitionist who thinks autonomous weapons cross a line that must not be crossed. He is not — *Army of None* is skeptical that a comprehensive preemptive ban could be defined or verified, and he proposes a narrower anti-personnel ban. Corrected in prose, thinker card, Key Points, and a thought question. (Ch10)
+- **Shannon Vallor's** argument had been replaced with **Torres and Gebru's** (that x-risk discourse serves institutional prestige and funding). Her actual case is the anthropomorphism error and the abdication of moral agency. (Ch10)
+- The **Luddites** were described as machine-breakers; they were skilled workers protesting the degradation of craft, and the modern pejorative inverts their argument. (Ch8)
+- The **violent-video-game** literature was presented as settled with a "current scientific consensus." It is genuinely contested; the APA narrowed its own position in February 2020. (Ch12)
+
+## Navigation was broken in the second half of the book
+
+Found by audit, not reported by anyone: a student reading straight through would
+**fall off the end at Chapter 8**. Specifically —
+
+- Ch8's "next" pointed at the table of contents (a leftover from when the book had eight chapters; `docs/CHAPTER_GUIDELINES.md` §10 still says "For ch08: make the Next button `.disabled`" and should be updated).
+- Ch10 had **no "next" link at all**.
+- Ch12's "previous" pointed at the table of contents instead of Ch11.
+- Ch6's footer linked to `ch07_ai_ethics.html`, which **does not exist** (the file is `ch07_ai_intro.html`) — a 404.
+- Ch2–Ch5 used `.footer-nav` / `.footer-license`, **neither of which is defined in `styles.css`** — those four footers rendered unstyled.
+
+All twelve top and footer navs were regenerated from a single source so the chain
+is complete and consistent.
+
+## Quizzes contradicted the corrected chapters
+
+The quizzes are auto-graded, so this was live: a student who learned the corrected
+material would have been **marked wrong**. Sixteen corrections across eight quiz files.
+
+- **quiz_12** had three questions resting on the false premise that the Netherlands banned loot boxes. The Dutch ruling against EA was **overturned on appeal in March 2022**; only Belgium's ban stands. One question's marked-correct answer was simply wrong. Rewritten so the Belgium/Netherlands divergence is itself the teaching point.
+- **quiz_04** marked as true the over-coarse claim that "two federal courts found AI training highly transformative." Replaced with the *Bartz* conduct split.
+- **quiz_10** said the *Bulletin of the Atomic Scientists* was founded by Manhattan Project physicists "including Albert Einstein and J. Robert Oppenheimer." Einstein never worked on the Manhattan Project (he was denied security clearance) and neither man founded the Bulletin — Rabinowitch and Goldsmith did.
+- Plus: Clearview's database figure, e-CNY wallets, the FDA count, the Doomsday Clock, FHI's closure, and the Australia ban outcome data.
+
+## Also done
+
+- **Accessibility**: 51 `<th>` elements across ch02/ch03/ch05 gained `scope="col"`; two `h2 → h4` heading skips in ch03 fixed.
+- **House style**: ch03 was the only chapter using `<h3>Pause and Reflect</h3>` + `<ul>` for thought questions; normalized to the `box-label` + `<ol>` pattern used by the other eleven and the template. ch12 was the only chapter not using the house `∴` conclusion markup in argument boxes.
+- **Structural minimums** (guidelines §3) now met everywhere. Thought-question boxes went from 53 to 87 — ch12 had **one** box for eight sections. Case studies went 50 → 58 and argument boxes 50 → 54, filled in where short (ch09 had 1 argument box against a minimum of 3).
+- **Malformed HTML** fixed in several chapters: doubled `</p>`, `<ul>` nested inside `<p>`, nested `<cite>` inside `<cite>`, duplicate ids, and quote blocks with hard-coded quotation marks that the CSS already supplies.
+- **66 new BibTeX entries** added to `refs.bib` for the sources behind these corrections, followed by a pass attaching `<cite>` tags.
+- **`.docx` exports regenerated** from the corrected HTML.
+
+## Still open on the chapters
+
+- **Chapter length.** Every chapter now runs 8,800–12,000 words against a `CHAPTER_GUIDELINES.md` §12 target of 4,000–7,000. They were already over before this pass (6,000–8,900); the sync material only added. **Either the guideline should be revised to describe actual practice, or a deliberate trimming pass is needed** — that is an editorial call, so nothing was cut.
+- **Guidelines are stale in two places**: §4's file-naming table stops at Chapter 8 and lists `ch05_cryptography.html` / `ch07_ai_ethics.html`, neither of which is the real filename; §10 still describes an eight-chapter book.
+- A handful of claims were deliberately **softened rather than deleted** because they could not be verified — flagged in each chapter's working notes. The one most worth a human check is the Vallor line quoted from *The AI Mirror*, which came from secondary reporting rather than the book.
+- `ch07_ai_intro.html` keeps its filename (guidelines say `ch07_ai_ethics.html`); every sibling nav link points at the current name, so renaming would be a coordinated change.
+- **The chapters are not actually self-contained**, which `CHAPTER_GUIDELINES.md` §2 says they must be for students without reliable internet. Every chapter loads Mermaid from the jsDelivr CDN. Verified by rendering all twelve in a headless browser with outbound access blocked: citations and bibliographies still resolved (`cite.js` reads a local file), but every Mermaid diagram failed to draw. Vendoring `mermaid.min.js` into the repo would close the gap; it is the only remaining external dependency.
+
+### Verified end to end
+All twelve chapters were rendered in a headless browser against a local server:
+**every one of the 254 `<cite data-key>` tags resolves**, and each chapter's
+reference list populates (7--31 entries). No unresolved-key markers and no
+JavaScript errors other than the blocked CDN noted above.

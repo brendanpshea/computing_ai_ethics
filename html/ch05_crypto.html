@@ -70,7 +70,7 @@
 
       <figure>
         <img src="../images/lydian_coin.jpg" alt="Ancient Lydian electrum coin, circa 600 BCE">
-        <figcaption>A Lydian electrum coin, circa 600&ndash;620 BCE &mdash; among the earliest standardized coins in history. Stamped by the state to certify weight and purity, coins enabled commerce between strangers and represent one of humanity's first attempts to build trust through a technological standard. Public domain.</figcaption>
+        <figcaption>A Lydian electrum coin, circa 620&ndash;600 BCE &mdash; among the earliest standardized coins in history. Stamped by the state to certify weight and purity, coins enabled commerce between strangers and represent one of humanity's first attempts to build trust through a technological standard. Public domain.</figcaption>
       </figure>
 
       <p>Economists identify three core functions that anything must perform to count as money. First, it must serve as a <strong>medium of exchange</strong> — something people will accept in trade. Second, it must work as a <strong>store of value</strong> — something that retains worth over time so you can save today and spend tomorrow. Third, it must function as a <strong>unit of account</strong> — a standard measure for expressing prices and debts. These three functions can sometimes pull in opposite directions, which creates ongoing tension in monetary policy. A currency that rises rapidly in value (a good store of value) may cause people to hoard it rather than spend it (making it a poor medium of exchange). A currency kept stable for accounting purposes may not be flexible enough to manage economic crises.</p>
@@ -80,10 +80,10 @@
           <caption>A Brief History of Money: Form, Backing, and Control</caption>
           <thead>
             <tr>
-              <th>Era</th>
-              <th>Form</th>
-              <th>Backing</th>
-              <th>Controller</th>
+              <th scope="col">Era</th>
+              <th scope="col">Form</th>
+              <th scope="col">Backing</th>
+              <th scope="col">Controller</th>
             </tr>
           </thead>
           <tbody>
@@ -149,7 +149,7 @@
         <div class="thinker-bio">
           <p class="thinker-label">Key Figure</p>
           <h3 class="thinker-name">Satoshi Nakamoto (pseudonym, identity unknown)</h3>
-          <p>Satoshi Nakamoto is the name used by the anonymous creator (or creators) of Bitcoin. In October 2008, Nakamoto published a nine-page white paper describing a peer-to-peer electronic cash system that would eliminate the need for trusted financial intermediaries. The system went live on January 3, 2009. Nakamoto corresponded with early collaborators via email and forums, then gradually withdrew from the project and ceased all communication around 2011. Their true identity has never been confirmed. Nakamoto's estimated holdings — approximately 1.1 million Bitcoin, worth over $100 billion at various valuations — have never been moved, adding to the mystique. The creation of a $2+ trillion asset class by an anonymous person who vanished is itself a philosophically interesting fact about the nature of trust, value, and authority.</p>
+          <p>Satoshi Nakamoto is the name used by the anonymous creator (or creators) of Bitcoin. In October 2008, Nakamoto published a nine-page white paper describing a peer-to-peer electronic cash system that would eliminate the need for trusted financial intermediaries. The system went live on January 3, 2009. Nakamoto corresponded with early collaborators via email and forums, then gradually withdrew from the project and ceased all communication around 2011. Their true identity has never been confirmed. Nakamoto is estimated to hold roughly 1.1 million Bitcoin — about 5% of all the Bitcoin that will ever exist — and those coins have not moved since 2010, adding to the mystique. That estimate deserves a caveat: it is a statistical inference drawn from distinctive patterns in the earliest mined blocks, not proof that any particular person controls those keys. Whatever the dollar figure happens to be in the month you read this, the creation of a trillion-dollar asset class by an anonymous person who then vanished is itself a philosophically interesting fact about the nature of trust, value, and authority.</p>
         </div>
       </div>
 
@@ -179,9 +179,9 @@ flowchart LR
           <caption>Proof of Work vs. Proof of Stake: Key Differences</caption>
           <thead>
             <tr>
-              <th>Feature</th>
-              <th>Proof of Work (Bitcoin)</th>
-              <th>Proof of Stake (Ethereum)</th>
+              <th scope="col">Feature</th>
+              <th scope="col">Proof of Work (Bitcoin)</th>
+              <th scope="col">Proof of Stake (Ethereum)</th>
             </tr>
           </thead>
           <tbody>
@@ -214,6 +214,17 @@ flowchart LR
         </table>
       </div>
 
+      <p>It is worth being precise about what this machinery does and does not guarantee, because both enthusiasts and critics routinely overstate it. A blockchain guarantees that the <em>ledger</em> is internally consistent and extremely expensive to rewrite: everyone can check that the records add up and that no coin was spent twice. It does not guarantee that what the ledger records is true or fair. If you are tricked into sending Bitcoin to a scammer, the blockchain will faithfully record the theft and offer you no way to reverse it. Nor is immutability a mathematical certainty; it is an economic one. Anyone who controlled a majority of the network's mining power could, in principle, reorganize recent history. The system is secure because that is ruinously expensive, not because it is impossible.</p>
+
+      <p>A second widespread misunderstanding concerns privacy. Bitcoin is often described as anonymous money. It is not.</p>
+
+      <div class="definition-box">
+        <p class="term">Pseudonymity</p>
+        <p class="definition">Acting under a persistent false name rather than under no name at all. A pseudonymous system hides your identity only for as long as no one succeeds in linking the pseudonym back to you — and every action taken under it remains permanently connected to every other.</p>
+      </div>
+
+      <p>Bitcoin addresses are pseudonyms, and the ledger they act on is public and permanent. Once any single transaction is tied to a real person — through an exchange that collected identification, a delivery address, an IP record, or an old forum post — the entire history attached to that address becomes visible in retrospect. This is why blockchain analytics has become a substantial industry, and why so many prosecutions of crypto-enabled crime turn on tracing funds that their owners believed to be untraceable. Cash, in this respect, is considerably more private than Bitcoin.</p>
+
       <p>Bitcoin was not invented in a vacuum. It emerged from the <strong>cypherpunk movement</strong>, a loose community of cryptographers, libertarians, and privacy advocates active from the late 1980s onward. Cypherpunks believed — and believe — that privacy is essential to freedom in the digital age, and that cryptographic tools are the means to achieve it. Eric Hughes captured the movement's ethos in "A Cypherpunk's Manifesto" (1993): "Privacy is necessary for an open society in the electronic age" <cite data-key="hughes_cypherpunk"></cite>. Earlier attempts at digital cash — DigiCash (1989), b-money (1998), bit gold (2005) — all failed for technical or legal reasons. Bitcoin succeeded where they failed by combining public key cryptography, a distributed ledger, and a proof-of-work consensus mechanism in a way that required no trusted third party at all.</p>
 
       <div class="key-thinker no-portrait">
@@ -243,7 +254,7 @@ flowchart LR
 
       <h3>Argument 1: Sound Money and Protection from Inflation</h3>
 
-      <p>The oldest and most persistent argument for Bitcoin is the <strong>sound money argument</strong>. Bitcoin's supply is algorithmically fixed at 21 million coins — no more can ever be created. (Roughly 19.8 million have been mined as of 2026; the last Bitcoin will be mined around the year 2140, thanks to a process called "halving" that cuts the rate of new coin creation in half approximately every four years.) No government, no central bank, no political decision can expand the supply. Contrast this with fiat currencies, which can be — and historically have been — expanded rapidly. Advocates argue that monetary expansion is a hidden tax on savers, transferring real wealth from ordinary people who hold cash to those closest to the money-creation process.</p>
+      <p>The oldest and most persistent argument for Bitcoin is the <strong>sound money argument</strong>. Bitcoin's supply is algorithmically fixed at 21 million coins — no more can ever be created. (Just over 20 million had been mined by mid-2026; the last Bitcoin will be mined around the year 2140, thanks to a process called "halving" that cuts the rate of new coin creation in half approximately every four years.) No government, no central bank, no political decision can expand the supply. Contrast this with fiat currencies, which can be — and historically have been — expanded rapidly. Advocates argue that monetary expansion is a hidden tax on savers, transferring real wealth from ordinary people who hold cash to those closest to the money-creation process.</p>
 
       <div class="argument-box">
         <p class="box-label">What's the Argument?</p>
@@ -259,7 +270,7 @@ flowchart LR
         </div>
       </div>
 
-      <p>Historical examples make this argument vivid. Weimar Germany in 1923 saw hyperinflation so severe that workers were paid twice daily so they could spend wages before prices rose again. Zimbabwe in 2008, Venezuela in 2018, and Argentina's ongoing crisis all illustrate what happens when governments monetize debt by printing currency. Crypto advocates argue that Bitcoin provides a lifeline — an asset that governments cannot inflate away. Critics respond that these extreme cases don't describe most developed economies, and that Bitcoin's own price volatility makes it a poor store of value in practice. (Bitcoin lost more than 80% of its peak value in both 2018 and 2022.)</p>
+      <p>Historical examples make this argument vivid. Weimar Germany in 1923 saw hyperinflation so severe that workers were paid twice daily so they could spend wages before prices rose again. Zimbabwe in 2008, Venezuela in 2018, and Argentina's ongoing crisis all illustrate what happens when governments monetize debt by printing currency. Crypto advocates argue that Bitcoin provides a lifeline — an asset that governments cannot inflate away. Critics respond that these extreme cases don't describe most developed economies, and that Bitcoin's own price volatility makes it a poor store of value in practice. (Measured from peak to trough, Bitcoin lost roughly 85% of its value in 2014, about 84% in 2018, and about 77% in 2022.)</p>
 
       <div class="case-study">
         <p class="box-label">Case Study</p>
@@ -291,16 +302,16 @@ flowchart LR
 
       <h3>Argument 3: Financial Inclusion</h3>
 
-      <p>A third argument is humanitarian: cryptocurrency could bank the <strong>unbanked</strong>. Approximately 1.3 billion adults worldwide lack access to any formal banking services, according to World Bank data. To open a bank account, you typically need a government-issued ID, a physical address, a minimum deposit, and proximity to a bank branch. Many poor and rural people, refugees, and stateless persons cannot meet these requirements. Cryptocurrency requires only internet access — no ID, no minimum balance, no institutional approval.</p>
+      <p>A third argument is humanitarian: cryptocurrency could bank the <strong>unbanked</strong>. Approximately 1.3 billion adults worldwide lack access to any formal banking services, according to World Bank data <cite data-key="worldbank_findex_2025"></cite>. To open a bank account, you typically need a government-issued ID, a physical address, a minimum deposit, and proximity to a bank branch. Many poor and rural people, refugees, and stateless persons cannot meet these requirements. Cryptocurrency requires only internet access — no ID, no minimum balance, no institutional approval.</p>
 
       <div class="table-wrapper">
         <table>
           <caption>Global Financial Account Ownership (World Bank Global Findex, 2025)</caption>
           <thead>
             <tr>
-              <th>Region</th>
-              <th>Account Ownership</th>
-              <th>Change since 2011</th>
+              <th scope="col">Region</th>
+              <th scope="col">Account Ownership</th>
+              <th scope="col">Change since 2011</th>
             </tr>
           </thead>
           <tbody>
@@ -316,8 +327,8 @@ flowchart LR
             </tr>
             <tr>
               <td>South Asia</td>
-              <td>68%</td>
-              <td>+40%</td>
+              <td>78%</td>
+              <td>+46%</td>
             </tr>
             <tr>
               <td><strong>Global average</strong></td>
@@ -359,6 +370,8 @@ flowchart LR
 
       <p>Bitcoin's wild price volatility compounds the problem. For Bitcoin to function as a medium of exchange, merchants and buyers need to be able to agree on a price — but if Bitcoin's value can change by 20% in a week, pricing goods in Bitcoin is essentially impossible. This is why, despite enormous media attention, actual Bitcoin transactions for ordinary goods and services remain vanishingly rare. The practical use case for most Bitcoin holders is not payment but speculation.</p>
 
+      <p>The scale of that instability is easy to underestimate, and it is the reason this chapter avoids quoting a headline price. Bitcoin's total market value rose above $2 trillion in late 2025 and stood at roughly $1.3 trillion in the middle of 2026 — a decline of about a third in six months, with no change whatsoever in the underlying technology. Any dollar figure printed in a textbook is stale before the book is assigned. The <em>volatility itself</em> is the ethically and economically interesting property: an asset that can shed 30% of its value in half a year is difficult to use as a unit of account, which is precisely one of the three functions money is supposed to perform.</p>
+
       <h3>The Dark Side of Privacy</h3>
 
       <p>The financial privacy argument cuts in multiple directions. Yes, financial privacy protects dissidents and marginalized people. But it also shields ransomware attackers who extort hospitals, human traffickers, terrorists, and sanctions-evading states from accountability. Critically, some of the most enthusiastic users of cryptocurrency's pseudonymity have not been freedom fighters but criminals and hostile state actors.</p>
@@ -373,9 +386,9 @@ flowchart LR
             <caption>North Korea's Lazarus Group Cryptocurrency Theft (Chainalysis, 2025)</caption>
             <thead>
               <tr>
-                <th>Year</th>
-                <th>Amount Stolen</th>
-                <th>Notable Incident</th>
+                <th scope="col">Year</th>
+                <th scope="col">Amount Stolen</th>
+                <th scope="col">Notable Incident</th>
               </tr>
             </thead>
             <tbody>
@@ -413,13 +426,13 @@ flowchart LR
 
       <h3>Who Actually Benefits?</h3>
 
-      <p>The financial inclusion argument sounds compelling in theory, but empirical evidence suggests that crypto's actual user base looks nothing like "the unbanked." In most countries, cryptocurrency adoption is highest among young, already-banked, relatively affluent, technically sophisticated men. The people most likely to be unbanked — elderly people in rural areas of developing countries, refugees without smartphones, people with limited digital literacy — are also the people least able to safely use cryptocurrency. The contrast with actual financial inclusion successes is striking. Kenya's M-Pesa mobile payment system, launched in 2007, now covers 96% of Kenyan households and processed over $300 billion in transactions in 2023 — using ordinary text messaging, not blockchain technology. The Philippines' GCash and Bangladesh's bKash have achieved similar penetration. These systems succeeded because they were designed for feature phones, local merchants, and people without internet access. Bitcoin, by contrast, requires a smartphone, a reliable internet connection, a grasp of private key management, and a tolerance for 50% price swings. It is useful for some legitimate applications; as a tool for the world's poorest, it largely is not.</p></p>
+      <p>The financial inclusion argument sounds compelling in theory, but empirical evidence suggests that crypto's actual user base looks nothing like "the unbanked." In most countries, cryptocurrency adoption is highest among young, already-banked, relatively affluent, technically sophisticated men. The people most likely to be unbanked — elderly people in rural areas of developing countries, refugees without smartphones, people with limited digital literacy — are also the people least able to safely use cryptocurrency. The contrast with actual financial inclusion successes is striking. Kenya's M-Pesa mobile payment system, launched in 2007, reaches roughly 96% of Kenyan households and processed more than $300 billion worth of transactions in its 2023–24 financial year — using ordinary text messaging, not blockchain technology. The Philippines' GCash and Bangladesh's bKash have achieved similar penetration. These systems succeeded because they were designed for feature phones, local merchants, and people without internet access. Bitcoin, by contrast, requires a smartphone, a reliable internet connection, a grasp of private key management, and a tolerance for 50% price swings. It is useful for some legitimate applications; as a tool for the world's poorest, it largely is not.</p>
 
       <p>The volatility problem is especially acute for the poor. If you hold $500 in Bitcoin and the price drops 50%, you have $250. For someone living paycheck to paycheck, that loss is catastrophic. For a wealthy investor with diversified assets, it's a learning experience. The people who can afford to bear Bitcoin's risk are precisely the people who least need Bitcoin's promised benefits. And the complexity and prevalence of scams in the crypto space create additional barriers: poorly designed interfaces, irreversible transactions, phishing attacks targeting novice users, and "rug pulls" where project developers disappear with investor funds are endemic to the ecosystem.</p>
 
       <h3>Is It Actually Decentralized?</h3>
 
-      <p>Perhaps the most devastating critique of the decentralization argument is that Bitcoin and other major cryptocurrencies are not, in practice, particularly decentralized. Approximately four mining pools control more than 50% of Bitcoin's hashrate (computing power). Roughly 2% of Bitcoin addresses hold approximately 95% of all Bitcoin. A small number of core developers make critical protocol decisions. The vast majority of Bitcoin trading happens on a handful of centralized exchanges — Coinbase, Binance, Kraken — which are subject to government regulation and can freeze accounts, delist coins, and comply with law enforcement orders just like traditional banks.</p>
+      <p>Perhaps the most devastating critique of the decentralization argument is that Bitcoin and other major cryptocurrencies are not, in practice, particularly decentralized. Approximately four mining pools control more than 50% of Bitcoin's hashrate (computing power). Roughly 2% of Bitcoin addresses hold approximately 95% of all Bitcoin — though that particular statistic deserves a caveat worth internalizing, because it is repeated constantly without one. Addresses are not people. A single exchange address may pool the holdings of millions of customers, while one determined individual may spread coins across hundreds of addresses. Address-based concentration figures therefore overstate how concentrated <em>ownership</em> is, even though the underlying point — that Bitcoin wealth is highly unequal — survives more careful measurement. A small number of core developers make critical protocol decisions. The vast majority of Bitcoin trading happens on a handful of centralized exchanges — Coinbase, Binance, Kraken — which are subject to government regulation and can freeze accounts, delist coins, and comply with law enforcement orders just like traditional banks.</p>
 
       <p>This raises what critics call the "decentralization theater" problem: cryptocurrency is marketed as a radical departure from centralized control, but in practice, economic forces inexorably reconcentrate power. Mining is dominated by large industrial operations in a few countries with cheap electricity. Liquidity concentrates on major exchanges. Influential developers and holders wield disproportionate influence over protocol decisions. The Bitcoin block size debate of 2015–2017 — in which a small group of developers and miners effectively determined the outcome for the entire network — demonstrated that "governance by code" does not eliminate governance; it merely obscures it.</p>
 
@@ -433,15 +446,15 @@ flowchart LR
 
       <h3>The Environmental Critique</h3>
 
-      <p>Bitcoin's Proof of Work mechanism consumes enormous amounts of electricity. The Cambridge Centre for Alternative Finance estimated Bitcoin's annual energy consumption at approximately 150–175 terawatt-hours in 2025 — roughly comparable to the entire annual electricity consumption of Poland or Argentina. A single Bitcoin transaction uses more electricity than a typical American household uses in several weeks. The hardware for mining — specialized Application-Specific Integrated Circuits (ASICs) — becomes obsolete rapidly, generating roughly 20,000 tonnes of electronic waste annually.</p>
+      <p>Bitcoin's Proof of Work mechanism consumes enormous amounts of electricity. The Cambridge Centre for Alternative Finance estimated Bitcoin's annual energy consumption at approximately 150–175 terawatt-hours in 2025 — roughly comparable to the entire annual electricity consumption of Poland or Argentina. You will often see this restated as a per-transaction figure — "a single Bitcoin transaction uses more electricity than a typical American household uses in several weeks." Treat that number with care. It is produced by dividing total mining energy by the number of transactions, and mining energy does not actually scale with transaction volume: miners burn essentially the same electricity whether a block carries three thousand transactions or three. The honest claim is about the network's total consumption, not about any individual payment. The hardware for mining — specialized Application-Specific Integrated Circuits (ASICs) — becomes obsolete rapidly, generating roughly 20,000 tonnes of electronic waste annually <cite data-key="devries_stoll_ewaste"></cite>.</p>
 
       <div class="table-wrapper">
         <table>
           <caption>Comparing Bitcoin's Energy Consumption (2025)</caption>
           <thead>
             <tr>
-              <th>Entity</th>
-              <th>Annual Electricity Use (TWh)</th>
+              <th scope="col">Entity</th>
+              <th scope="col">Annual Electricity Use (TWh)</th>
             </tr>
           </thead>
           <tbody>
@@ -534,7 +547,7 @@ flowchart LR
         <p class="box-label">Case Study</p>
         <p class="box-title">Terra/Luna: The $60 Billion Collapse</p>
         <p>Terra's UST was an "algorithmic stablecoin" — designed to maintain a $1 peg not through actual dollar reserves, but through an algorithmic relationship with a companion token, LUNA. The system was promoted by Do Kwon, a South Korean entrepreneur who was openly contemptuous of critics, referring to those who doubted the project as "poor."</p>
-        <p>In May 2022, UST lost its peg. The algorithmic mechanism designed to restore it instead entered a "death spiral": falling UST prices triggered LUNA issuance, which flooded the market, which caused both to crash in a reflexive feedback loop. Approximately $40–60 billion in market value was destroyed in less than a week. The collapse triggered a cascade of failures across the crypto industry, including the insolvency of lender Celsius, hedge fund Three Arrows Capital, and — contributing factors — FTX itself.</p>
+        <p>In May 2022, UST lost its peg. The algorithmic mechanism designed to restore it instead entered a "death spiral": falling UST prices triggered LUNA issuance, which flooded the market, which caused both to crash in a reflexive feedback loop. Approximately $40–60 billion in market value was destroyed in less than a week. The collapse triggered a cascade of failures across the crypto industry, including the insolvency of the lender Celsius and the hedge fund Three Arrows Capital, and it contributed to the pressures that later brought down FTX.</p>
         <p>Do Kwon fled South Korea, was arrested in Montenegro in March 2023 with a forged passport while attempting to travel to Dubai, and was sentenced in December 2025 to 15 years in prison. The Terra/Luna collapse is a vivid demonstration that "algorithmic" design does not confer safety. Systems that depend on confidence can lose that confidence instantly, and when they do, "decentralized" mechanisms can collapse just as catastrophically as centralized institutions — but with no deposit insurance and no lender of last resort.</p>
       </div>
 
@@ -557,13 +570,13 @@ flowchart LR
 
     <!-- ── SECTION 6: CRITICISMS OF REGULATION ARGUMENTS ─────────────────────────────── -->
     <section id="critiques-regulation" aria-labelledby="critreg-heading">
-      <h2 id="critiques-regulation">Criticisms of Regulation Arguments</h2>
+      <h2 id="critreg-heading">Criticisms of Regulation Arguments</h2>
 
       <p>Cryptocurrency advocates respond to the case for regulation with several counter-arguments. Some of these are tu quoque arguments ("you too" — pointing out that traditional finance has similar problems), while others raise genuine concerns about regulatory competence, captured regulatory processes, and the practicalities of regulating a global decentralized system.</p>
 
       <h3>Traditional Finance Also Has Problems</h3>
 
-      <p>The most immediate counter-argument is that the frauds and failures in crypto are not exceptional — they closely parallel the frauds and failures in traditional regulated finance. The 2008 financial crisis was caused by regulated banks packaging fraudulent mortgages into complex securities that received high ratings from regulated rating agencies, sold by regulated brokers to regulated investment funds. HSBC paid $1.9 billion in fines for laundering money for Mexican drug cartels — without any executive going to prison. Deutsche Bank paid billions in fines for various forms of market manipulation, fraud, and sanctions evasion. The pattern of large financial institutions committing crimes, paying manageable fines, and continuing to operate is itself a form of regulatory failure. For a sense of scale, consider some of the largest frauds and settlements from regulated financial institutions in a single decade: Enron's $74 billion accounting fraud (2001), Bernie Madoff's $65 billion Ponzi scheme that operated undetected for decades despite SEC investigations (2008), Wells Fargo's systematic creation of 3.5 million unauthorized customer accounts (2016, $3 billion settlement), and JPMorgan Chase's $13 billion settlement over fraudulent mortgage securities sold before the 2008 crash. These are not fringe actors — they are the core of the regulated financial system. Crypto advocates who cite these cases are not wrong that traditional finance is riddled with fraud; they are making a tu quoque argument that does not, by itself, resolve whether crypto-specific regulation would be beneficial.</p></p>
+      <p>The most immediate counter-argument is that the frauds and failures in crypto are not exceptional — they closely parallel the frauds and failures in traditional regulated finance. The 2008 financial crisis was caused by regulated banks packaging fraudulent mortgages into complex securities that received high ratings from regulated rating agencies, sold by regulated brokers to regulated investment funds. HSBC paid $1.9 billion in fines for laundering money for Mexican drug cartels — without any executive going to prison. Deutsche Bank paid billions in fines for various forms of market manipulation, fraud, and sanctions evasion. The pattern of large financial institutions committing crimes, paying manageable fines, and continuing to operate is itself a form of regulatory failure. For a sense of scale, consider some of the largest frauds and settlements involving regulated institutions: Enron's accounting fraud, which wiped out roughly $74 billion in shareholder value before the company's 2001 collapse; Bernie Madoff's Ponzi scheme, exposed in 2008 after operating undetected for decades despite repeated SEC inquiries (customer statements showed $65 billion, though the principal actually lost was closer to $17 billion); Wells Fargo's systematic creation of some 3.5 million unauthorized customer accounts, revealed in 2016 and settled for $3 billion in 2020; and JPMorgan Chase's $13 billion settlement in 2013 over fraudulent mortgage securities sold before the 2008 crash. These are not fringe actors — they are the core of the regulated financial system. Crypto advocates who cite these cases are not wrong that traditional finance is riddled with fraud; they are, however, making a <em>tu quoque</em> argument that does not by itself resolve whether crypto-specific regulation would be beneficial.</p>
 
       <p>The response to this argument is not that it's wrong — it isn't — but that "traditional finance has problems" does not resolve whether cryptocurrency's specific problems warrant regulatory attention. Two wrongs don't make a right. The question is whether regulation would make crypto <em>better</em>, not whether traditional finance is <em>good</em>.</p>
 
@@ -623,60 +636,65 @@ flowchart TD
 
       <div class="table-wrapper">
         <table>
-          <caption>Central Bank Digital Currencies: Global Status (2025–2026)</caption>
+          <caption>Central Bank Digital Currencies: Global Status (mid-2026)</caption>
           <thead>
             <tr>
-              <th>Country / Region</th>
-              <th>Status</th>
-              <th>Notes</th>
+              <th scope="col">Country / Region</th>
+              <th scope="col">Status</th>
+              <th scope="col">Notes</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>Bahamas</td>
               <td>Launched (2020)</td>
-              <td>Sand Dollar — world's first CBDC</td>
+              <td>Sand Dollar — the world's first CBDC; still under 1% of Bahamian currency in circulation</td>
             </tr>
             <tr>
               <td>Nigeria</td>
               <td>Launched (2021)</td>
-              <td>eNaira — adoption has been slow</td>
+              <td>eNaira — roughly 13 million wallets, but about 98.5% have never been used</td>
             </tr>
             <tr>
               <td>Jamaica</td>
               <td>Launched (2022)</td>
-              <td>JAM-DEX</td>
+              <td>JAM-DEX — adoption stalled, chiefly on merchant point-of-sale infrastructure</td>
             </tr>
             <tr>
               <td>China</td>
               <td>Pilot ongoing</td>
-              <td>e-CNY: 260M wallets, 7 trillion yuan in transactions</td>
+              <td>e-CNY — about 230 million personal wallets; 16.7 trillion yuan in cumulative transactions</td>
             </tr>
             <tr>
               <td>European Union</td>
-              <td>Preparation phase</td>
-              <td>Digital Euro under development</td>
+              <td>Legislation in negotiation</td>
+              <td>Digital euro — in trilogue since July 2026; pilot targeted for 2027, first issuance 2029 at the earliest</td>
             </tr>
             <tr>
               <td><strong>United States</strong></td>
-              <td><strong>Banned</strong></td>
-              <td>Trump executive order (January 2025) prohibits U.S. CBDC development</td>
+              <td><strong>Blocked by executive order</strong></td>
+              <td>Executive Order 14178 (January 2025) bars federal agencies from issuing or promoting a retail CBDC; a statutory ban has passed the House but is not law</td>
             </tr>
           </tbody>
         </table>
       </div>
 
+      <p>The Atlantic Council's CBDC tracker counted 146 countries and currency unions exploring a central bank digital currency in 2026, up from 134 in earlier counts — but only three have actually launched one for retail use, and all three are struggling with the same problem <cite data-key="atlanticcouncil_cbdc_tracker"></cite>. Notice the pattern in the table: the technology works, and almost nobody uses it. The Bahamas has resorted to announcing that commercial banks must distribute the Sand Dollar; Jamaica's constraint turned out to be merchant terminals rather than consumer wallets; and in June 2026 Nigeria repositioned the eNaira as back-end payment infrastructure rather than a consumer product. The comparison that makes this genuinely interesting is what happened alongside the eNaira: cNGN, a <em>privately</em> issued stablecoin pegged to the naira, gained real traction without anyone being required to use it. The same country, the same currency, the same technology — and voluntary adoption succeeded where official adoption did not. This raises a question that runs through the whole chapter: who should be allowed to issue digital money, and can adoption of a currency be mandated at all?</p>
+
       <p>CBDCs present a genuinely interesting middle ground — and a genuinely troubling set of possibilities. On the positive side, a CBDC could enable near-instant, low-cost payments; could be programmed to distribute government benefits directly to citizens without bank intermediaries; and could improve the effectiveness of monetary policy. On the negative side, a CBDC issued by an authoritarian government could be programmed with unprecedented surveillance capabilities (every transaction visible to authorities), with expiration dates (money that disappears if not spent by a certain time, eliminating savings), or with restrictions (money that cannot be used for disfavored purchases). The same technology that could democratize finance could also enable total financial surveillance.</p>
 
-      <p>China's e-CNY pilot illustrates the ambiguity. China has distributed hundreds of millions of dollars in digital yuan through lottery systems, enabled rapid payments, and integrated the CBDC into existing payment infrastructure. It has also given the government detailed visibility into transactions that were previously conducted in cash. Whether the efficiency gains outweigh the surveillance costs depends heavily on one's prior views about the appropriate relationship between citizens and the state — exactly the political philosophy question this chapter began with.</p>
+      <p>China's e-CNY pilot illustrates the ambiguity. China has distributed hundreds of millions of dollars in digital yuan through lottery systems, enabled rapid payments, and integrated the CBDC into existing payment infrastructure — reaching roughly 230 million personal wallets and some 16.7 trillion yuan in cumulative transactions. It has also given the government detailed visibility into transactions that were previously conducted in cash. Whether the efficiency gains outweigh the surveillance costs depends heavily on one's prior views about the appropriate relationship between citizens and the state — exactly the political philosophy question this chapter began with.</p>
 
-      <p>The Trump administration's January 2025 executive order prohibiting CBDC development in the United States reflects a different political philosophy: the view that a government-issued digital currency with programmable restrictions or surveillance capabilities represents an unacceptable threat to individual financial freedom. This position aligns the administration, somewhat paradoxically, with libertarian crypto advocates who have long argued that CBDCs are the dystopian endgame of state monetary control — crypto's technology, stripped of crypto's philosophy of decentralization and individual sovereignty.</p>
+      <p>One recent change in the e-CNY makes the privacy stakes unusually concrete. Since January 1, 2026, digital yuan balances have earned interest at ordinary deposit rates. That breaks a long-standing piece of central-banking orthodoxy — the assumption that a CBDC should pay no interest, so that it does not compete with commercial bank deposits. More important for our purposes is who qualifies. The interest applies only to wallets whose holders have completed identity verification; the lower-tier, effectively anonymous wallets are excluded. Privacy, in other words, has been given an explicit price. You may transact without identifying yourself, but you forfeit a financial benefit if you do. Systems that grade privacy against functionality in this way will become more common, and they force a question worth sitting with: is a privacy that you can be paid to give up still a right, or has it quietly become a commodity?</p>
+
+      <p>The United States has moved in the opposite direction, though the popular description of the U.S. position is usually too strong. Executive Order 14178, signed in January 2025, prohibits federal agencies from establishing, issuing, or promoting a retail central bank digital currency <cite data-key="eo_14178_cbdc_2025"></cite>. It is not a legislative ban: an executive order binds the executive branch and can be revoked by a later president with a stroke of a pen. A statutory prohibition — the Anti-CBDC Surveillance State Act — passed the House of Representatives in July 2025 by a narrow margin and has been attached to broader pending crypto legislation, but it has not become law. What is accurate to say is that the United States is, for now, the only G20 member not actively exploring a CBDC. The reasoning behind that stance reflects a distinct political philosophy: the view that a government-issued digital currency with programmable restrictions or surveillance capabilities represents an unacceptable threat to individual financial freedom. It aligns the administration, somewhat paradoxically, with libertarian crypto advocates who have long argued that CBDCs are the dystopian endgame of state monetary control — crypto's technology, stripped of crypto's philosophy of decentralization and individual sovereignty.</p>
 
       <div class="key-thinker no-portrait">
         <div class="thinker-bio">
           <p class="thinker-label">Key Figure</p>
-          <h3 class="thinker-name">Eric Hughes (b. 1958) — The Cypherpunk Manifesto</h3>
-          <p>Eric Hughes is a mathematician and cryptographer who was one of the founders of the cypherpunk movement. In 1993 he published "A Cypherpunk's Manifesto" <cite data-key="hughes_cypherpunk"></cite>, a short but influential document arguing that privacy is necessary for an open society and that electronic privacy — achievable through cryptography — should be a political priority. Hughes distinguished between privacy (the power to selectively reveal oneself) and secrecy (hiding information from everyone), arguing that privacy-preserving systems allow individuals to control what they share and with whom. The manifesto declared that cypherpunks write code — rather than lobbying governments for privacy rights, they build privacy tools directly. This "code is law" philosophy, which holds that technical design can substitute for legal protection, is foundational to much of the cryptocurrency ideology. For instance, the cypherpunk community produced a remarkable series of practical privacy tools in the years before Bitcoin: Philip Zimmermann's PGP (Pretty Good Privacy) email encryption in 1991 — which the US government initially tried to classify as an illegal weapons export — the Tor anonymity network, co-developed with US Naval funding in 2002 and now used by millions of journalists, dissidents, and privacy-conscious users; Ian Goldberg and Adam Back's work on anonymous remailers and digital cash protocols; and, ultimately, the pseudonymous Satoshi Nakamoto's Bitcoin whitepaper in 2008, which the cypherpunk community immediately recognized as the fulfillment of a two-decade project to create money that neither required institutional trust nor could be confiscated by any government.</p>
+          <h3 class="thinker-name">Eric Hughes — The Cypherpunk Manifesto</h3>
+          <p>Eric Hughes is an American mathematician and programmer who, with Timothy May and John Gilmore, founded the cypherpunk movement and its mailing list. In March 1993 he published "A Cypherpunk's Manifesto" <cite data-key="hughes_cypherpunk"></cite>, a short but influential document arguing that privacy is necessary for an open society and that electronic privacy — achievable through cryptography — should be a political priority. Hughes distinguished between privacy (the power to selectively reveal oneself) and secrecy (hiding information from everyone), arguing that privacy-preserving systems let individuals control what they share and with whom. The manifesto declared that cypherpunks write code: rather than lobbying governments for privacy rights, they build privacy tools directly.</p>
+          <p>That "code is law" philosophy — the claim that technical design can substitute for legal protection — is foundational to much of cryptocurrency ideology, and the two decades before Bitcoin produced a string of tools that made the claim plausible. Philip Zimmermann released PGP (Pretty Good Privacy) email encryption in 1991, and the U.S. government responded by investigating whether publishing it amounted to illegally exporting a munition. Hughes himself wrote and ran one of the first anonymous remailers. The Tor anonymity network, first released in 2002, grew out of U.S. Naval Research Laboratory work and is now used by millions of journalists, dissidents, and privacy-conscious users. Satoshi Nakamoto's 2008 white paper was announced on a cryptography mailing list descended from this tradition — where, it is worth noting, the initial reception was interested but distinctly skeptical rather than triumphant.</p>
         </div>
       </div>
 
@@ -685,7 +703,9 @@ flowchart TD
         <ol>
           <li>El Salvador's Bitcoin experiment failed partly because trust cannot be mandated. What would voluntary, successful adoption of a cryptocurrency for everyday transactions require? Has any cryptocurrency achieved this?</li>
           <li>A CBDC with programmable restrictions (e.g., money that expires, or cannot be spent on certain goods) would be far more powerful than any previous monetary tool. Is this power necessarily bad? Can you imagine legitimate uses?</li>
-          <li>The U.S. has banned CBDC development while China has aggressively piloted one. What does this divergence suggest about the relationship between monetary technology and political philosophy?</li>
+          <li>The United States has blocked federal CBDC work by executive order while China has aggressively piloted one. What does this divergence suggest about the relationship between monetary technology and political philosophy? Does it matter that the U.S. restriction rests on an executive order rather than a statute?</li>
+          <li>Nigeria's state-issued eNaira went almost entirely unused while a privately issued naira stablecoin caught on voluntarily. Who <em>should</em> be allowed to issue digital money — and what, if anything, would justify requiring people to use a particular currency?</li>
+          <li>China's digital yuan now pays interest, but only to wallets whose owners have verified their identity. Is it acceptable for a government to attach financial rewards to giving up anonymity, or does that make privacy something only the well-off can afford?</li>
         </ol>
       </div>
 
@@ -705,28 +725,44 @@ flowchart TD
           <li><strong>Four main critiques of cryptocurrency</strong>: (1) deflation risks and volatility undermine the medium-of-exchange function; (2) pseudonymity enables crime (North Korea, ransomware); (3) actual adoption skews toward speculators, not the poor; (4) the system is less decentralized in practice than in theory (mining pools, wealth concentration).</li>
           <li><strong>The environmental cost of Proof of Work</strong> (Bitcoin's consensus mechanism) is substantial — roughly comparable to a mid-sized country's annual electricity consumption. Proof of Stake (used by Ethereum) reduces this by 99.9%.</li>
           <li><strong>The case for regulation</strong> rests on consumer protection (rampant fraud), systemic risk (collapses like Terra/Luna and FTX spread contagion), and democratic governance (tax evasion, crime financing). The case against notes that traditional finance has similar problems and that international coordination challenges limit regulatory effectiveness.</li>
-          <li><strong>Central Bank Digital Currencies (CBDCs)</strong> represent a middle path: government-issued digital currency using blockchain-derived technology. They offer efficiency gains and financial inclusion potential but raise serious concerns about programmable surveillance and state financial control.</li>
+          <li><strong>Central Bank Digital Currencies (CBDCs)</strong> represent a middle path: government-issued digital currency using blockchain-derived technology. They offer efficiency gains and financial inclusion potential but raise serious concerns about programmable surveillance and state financial control. Some 146 jurisdictions are exploring one, yet all three that have launched a retail CBDC — the Bahamas, Jamaica, and Nigeria — have struggled to persuade anyone to use it.</li>
           <li><strong>Pseudonymity is not anonymity</strong>: blockchain records are permanent and public, and blockchain analytics firms can often identify users through behavioral patterns, IP data, and exchange records.</li>
+          <li><strong>Be careful with crypto statistics.</strong> Headline dollar figures go stale within months, "energy per transaction" divides a total that does not scale with transactions, and address-based wealth concentration confuses addresses with people. The underlying claims may still be true; the numbers used to advertise them often are not.</li>
         </ul>
+      </div>
+
+      <div class="thought-questions">
+        <p class="box-label">Thought Questions</p>
+        <ol>
+          <li>Having now seen the arguments on both sides, what is your own view: should cryptocurrency be banned, regulated like traditional finance, or largely left alone? Which single consideration does the most work in your answer?</li>
+          <li>Is cryptocurrency best understood as a financial technology, a political statement, or a speculative asset — or are these three descriptions inseparable?</li>
+          <li>Every information revolution in this book has promised to remove intermediaries, and most have eventually produced new ones. Exchanges, mining pools, and custodial wallets already occupy much of the space Bitcoin was meant to empty. Is reintermediation a failure of the technology, or an unavoidable feature of how humans organize trust?</li>
+          <li>This chapter began with the claim that money is a social technology rather than a natural fact. After working through Bitcoin, stablecoins, and CBDCs, has your view of what money <em>is</em> changed — and if so, what changed it?</li>
+        </ol>
       </div>
 
     </section>
 
     <!-- ── BIBLIOGRAPHY ─────────────────────────────── -->
-    <section id="bibliography" aria-labelledby="bib-heading">
+    <section id="references" aria-labelledby="bib-heading">
       <h2 id="bib-heading">References</h2>
-      <div id="bibliography" data-keys="nakamoto_bitcoin,hayek_denationalization,hughes_cypherpunk"></div>
+      <div id="bibliography" data-keys="nakamoto_bitcoin hayek_denationalization hughes_cypherpunk"></div>
     </section>
 
   </main>
 
   <footer class="chapter-footer">
-    <div class="footer-nav">
-      <a href="ch04_intellectual_property.html" class="nav-prev">&#8592; Chapter 4: Intellectual Property</a>
-      <a href="../index.html" class="footer-home">Table of Contents</a>
-      <a href="ch06_privacy.html" class="nav-next">Chapter 6: Privacy &#8594;</a>
-    </div>
-    <p class="footer-credit">Computing and AI Ethics &mdash; Rochester Community and Technical College &mdash; Brendan Shea, PhD</p>
+    <nav class="chapter-footer-nav" aria-label="Chapter navigation">
+      <a href="ch04_intellectual_property.html" class="footer-nav-btn">&#8592; Previous chapter</a>
+      <a href="../index.html" class="footer-nav-btn">&#8962; Table of Contents</a>
+      <a href="ch06_privacy.html" class="footer-nav-btn">Next chapter &#8594;</a>
+    </nav>
+    <p class="chapter-footer-meta">
+      <em>Computing and AI Ethics</em> by Brendan Shea, PhD &nbsp;&middot;&nbsp;
+      <a href="https://creativecommons.org/licenses/by-nc/4.0/"
+         target="_blank" rel="noopener">CC BY-NC 4.0</a> &nbsp;&middot;&nbsp;
+      Rochester Community and Technical College
+    </p>
   </footer>
 
 </div>

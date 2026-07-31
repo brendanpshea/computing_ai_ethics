@@ -86,10 +86,14 @@ Chapter footer navigation
 | 2 — Virtue Ethics | `ch02_virtue_ethics.html` | `2` |
 | 3 — Free Speech | `ch03_free_speech.html` | `3` |
 | 4 — Intellectual Property | `ch04_intellectual_property.html` | `4` |
-| 5 — Cryptography | `ch05_cryptography.html` | `5` |
+| 5 — Cryptography and Digital Money | `ch05_crypto.html` | `5` |
 | 6 — Privacy | `ch06_privacy.html` | `6` |
-| 7 — AI Ethics | `ch07_ai_ethics.html` | `7` |
+| 7 — What Is AI? | `ch07_ai_intro.html` | `7` |
 | 8 — Work & Automation | `ch08_work_automation.html` | `8` |
+| 9 — Social and Environmental Impact | `ch09_social_impact.html` | `9` |
+| 10 — Existential Risk | `ch10_doomsday.html` | `10` |
+| 11 — Robot Rights | `ch11_robot_rights.html` | `11` |
+| 12 — Games and Meaning | `ch12_games.html` | `12` |
 
 The `data-chapter` attribute on `<body>` selects the chapter's accent color
 automatically via CSS custom properties — always set it correctly.
@@ -269,6 +273,17 @@ automatically via CSS custom properties — always set it correctly.
 - Always follow with a paragraph explaining the quote's relevance.
 - The CSS automatically adds opening and closing curly quotes; do **not** add
   `"` inside the `<p>` tag.
+
+> **Verify every quotation against the source before it goes in.** The July 2026
+> accuracy pass found five fabricated or misattributed quotations across the
+> chapters, plus several paraphrases that had silently acquired quotation marks —
+> Mill was credited with "marketplace of ideas," Aristotle with Will Durant's
+> paraphrase, Brandeis with a modern gloss of his own concurrence, and two
+> quotations attributed to living scholars could not be traced to anything they
+> wrote. This is the characteristic failure mode of LLM-assisted drafting, and it
+> is the most damaging error type in a course that teaches source evaluation.
+> If you cannot find the exact wording in the source, **write it as a paraphrase
+> without quotation marks** and cite the work. Never quote from memory.
 
 ---
 
@@ -572,18 +587,24 @@ Every chapter must have:
 
 1. **Top nav** (`<nav class="top-nav">`):
    - Home link to `index.html`
-   - Previous chapter link (remove if Chapter 1)
+   - Previous chapter link (omit for Chapter 1)
    - Chapter number display
-   - Next chapter link (remove if Chapter 8)
+   - Next chapter link (for Chapter 12, link to the contents page instead)
 
 2. **Footer nav** (`.chapter-footer-nav`):
    - "← Previous chapter" button
    - "⌂ Table of Contents" button
    - "Next chapter →" button
    - For ch01: make the Previous button `.disabled`
-   - For ch08: make the Next button `.disabled`
+   - For ch12: make the Next button `.disabled`
 
-Update both sets of links whenever a new chapter is added.
+Use **only** `.chapter-footer-nav` with `.footer-nav-btn` and `.chapter-footer-meta`.
+`.footer-nav` and `.footer-license` are **not defined in `styles.css`** — chapters
+that used them rendered with unstyled footers.
+
+Update both sets of links whenever a new chapter is added, and check the whole
+chain end to end: a reader should be able to go 1 → 12 and back without
+hitting a dead end or a 404.
 
 
 ## 11. Accessibility Checklist

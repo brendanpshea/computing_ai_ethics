@@ -237,12 +237,12 @@
       "question": "Which of the following accurately describe the current legal and regulatory landscape around AI and intellectual property? Select all that apply.",
       "options": [
         "The U.S. Copyright Office holds that purely AI-generated content is not copyrightable, because copyright requires human authorship",
-        "Two federal courts have found AI training on copyrighted works to be 'highly transformative' under fair use doctrine",
+        "A federal court has held that training a model on lawfully obtained books is transformative fair use, but that retaining a library of pirated books is not",
         "The New York Times filed suit against OpenAI and Microsoft, alleging large-scale copyright infringement",
         "The Supreme Court ruled in 2023 that AI training data is always covered by fair use"
       ],
       "correct": [0, 1, 2],
-      "explanation": "All three of the first statements are accurate as of 2024–2025. The Copyright Office's human-authorship requirement is established guidance; two federal courts did find AI training transformative; and the New York Times lawsuit is ongoing. The fourth statement is false — no Supreme Court has ruled that AI training is categorically fair use; the question remains actively litigated.",
+      "explanation": "All three of the first statements are accurate as of mid-2026. The Copyright Office's human-authorship requirement is established guidance, and the Supreme Court declined to review Thaler v. Perlmutter in March 2026, settling it. The New York Times suit is ongoing, with no fair-use ruling yet. The second statement captures the crucial distinction from Bartz v. Anthropic (2025): Judge Alsup held that training on the books was “exceedingly transformative” fair use, and that scanning lawfully purchased print books was fair use — but that downloading and keeping more than seven million pirated books was not. Anthropic then paid $1.5 billion to settle over precisely that conduct. Beware the common shorthand that “courts ruled AI training is fair use”: it is too coarse, and it drops the part that actually cost a company one and a half billion dollars. The fourth statement is false — no Supreme Court ruling exists, and as of mid-2026 no federal appeals court had ruled on AI-training fair use at all.",
       "section": "ai"
     },
     {

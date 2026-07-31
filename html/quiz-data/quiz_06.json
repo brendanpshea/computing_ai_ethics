@@ -189,15 +189,15 @@
     },
     {
       "id": "ch06-q15",
-      "question": "Facial recognition company Clearview AI built its database by scraping approximately how many photos from social media and public websites?",
+      "question": "Facial recognition company Clearview AI has built its database by scraping roughly how many photos from social media and public websites?",
       "options": [
         "500 million",
         "3 billion",
-        "30 billion",
-        "300 billion"
+        "50 billion",
+        "500 billion"
       ],
       "correct": 2,
-      "explanation": "Clearview AI scraped over 30 billion photos without consent. By 2020, its software was being used by 2,400+ U.S. law enforcement agencies. Multiple countries have fined or banned it (Netherlands: €30.5 million; Italy: €20 million; UK: £7.5 million). The ACLU settled with Clearview, obtaining a ban on selling the technology to private businesses in Illinois.",
+      "explanation": "Clearview AI's database was reported at about 3 billion images when the company was first exposed in 2020, and by 2025–26 the company was describing roughly 50 billion — all scraped without consent. Its software has been used by 2,400+ U.S. law enforcement agencies. European regulators have fined it repeatedly (Netherlands €30.5 million; France, Italy and Greece €20 million each; UK £7.5 million), but Clearview has largely not paid and does not engage with those regulators — which raises the harder question of what a privacy right is worth when the enforcing state cannot reach the company. A U.S. class settlement that would have given claimants a 23% equity stake in the company rather than cash was approved in 2025 and then vacated on appeal in July 2026, reopening the case.",
       "section": "democratic-debates"
     },
     {
