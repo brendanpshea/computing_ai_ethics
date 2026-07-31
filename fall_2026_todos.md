@@ -87,22 +87,23 @@ improvements (nice to have).
 
 ---
 
-## P2 — Time-sensitive content to refresh before Fall 2026
+## P2 — Time-sensitive content to refresh before Fall 2026 — **SWEEP COMPLETED 2026-07-31**
 
-Do one sweep in August 2026. LLM implementers: verify each with current sources before editing; do not invent numbers.
+All rows below were researched against current sources and applied. Highlights of what actually changed:
 
-| File | Item | What to check |
+| File | Item | Outcome |
 |---|---|---|
-| `ai_ethics_04_intellectual_property.tex` | "AI Copyright Wars" slide (~line 846) | Status of NYT v. OpenAI, the S.D.N.Y. consolidated cases, and the Anthropic *Bartz* settlement; "Recent developments (2025)" heading will read stale |
-| `ai_ethics_05_crypto.tex` | BTC market cap "$2+ trillion", Satoshi holdings "$100–135B" (~lines 309–314) | Refresh figures |
-| `ai_ethics_05_crypto.tex` | CBDC table (~line 1041) | Atlantic Council tracker; e-CNY stats; US status |
-| `ai_ethics_06_privacy.tex` | Data broker stats table (2024), Clearview photo count | Refresh |
-| `ai_ethics_07_ai.tex` | LLM timeline row "2023--25: GPT-4, Claude, Gemini…" (~line 599) | Extend timeline through 2026 |
-| `ai_ethics_09_impact.tex` | FDA AI device count "1,451 as of 2026-03-04" (~line 392); IEA Electricity 2026 | Update to latest list; also reformat the ISO date to prose ("as of March 2026") |
-| `ai_ethics_10_doomsday.tex` | Doomsday Clock "89 seconds (Jan 2025)" (~line 243) | Check for a 2026 announcement |
-| `ai_ethics_10_doomsday.tex` | Bostrom slide (~line 270) | FHI closed April 2024 — say "co-founded Oxford's Future of Humanity Institute (closed 2024)" |
-| `ai_ethics_02_virtues.tex` | Australia minimum-age law (~line 1009) | Add early evidence on how the Dec 2025 rollout went — great fresh discussion material |
-| `ai_ethics_03_free_speech.tex` | Platform user-count table (~line 456); EU AI Act status (~line 1026) | Refresh |
+| `ai_ethics_04_intellectual_property.tex` | "AI Copyright Wars" slide | Rewritten. Stale "two courts found training fair use" claim replaced with the *Bartz* conduct split (training fair use / pirated-library retention **not**) on a new companion slide; added the $1.5B settlement (final approval July 2026), the S.D.N.Y. MDL, and the fact that **no appellate court has yet ruled**. Also updated the AI-authorship slide for *Thaler* cert denial (Mar 2026) and the "prompts alone don't confer authorship" position. |
+| `ai_ethics_05_crypto.tex` | BTC market cap, Satoshi holdings | **Both were wrong by ~half.** BTC market cap $2T+ → ~$1.3T (mid-2026); Satoshi holdings $100–135B → reframed as "~5% of all Bitcoin that will ever exist" (staleness-proof) with a note that the 1.1M figure is a statistical inference. Added a volatility caveat. |
+| `ai_ethics_05_crypto.tex` | CBDC table | Jurisdictions 134 → ~146; e-CNY 260M wallets/7T yuan → 230M personal wallets; digital euro "preparation" → in trilogue, pilot 2027 / issuance 2029; USA "Banned" → "Prohibited by executive order; statutory ban still pending". Added Nigeria (13M wallets, 98.5% never used) and an adoption-failure discussion beat. |
+| `ai_ethics_06_privacy.tex` | Data broker stats, Clearview | Broker table refreshed (581 registered in CA; ~750 across five states) with a caveat that market-size estimates disagree by ~20%. Clearview: 30B → ~50B images; added the vacated equity-stake settlement (July 2026), unpaid EU fines, and current federal contracts. |
+| `ai_ethics_07_ai.tex` | LLM timeline | Extended through 2026 (reasoning models, open weights, agents), vendor-neutral. The two developments that matter pedagogically were split onto a new slide: the open-weight cost shock, and capability itself beginning to constrain release. |
+| `ai_ethics_09_impact.tex` | FDA device count; IEA | FDA count reframed as ">1,500 and rising" (the exact live total moves several times a year) plus the FDA's own caveat that the list is not comprehensive. IEA figures updated: 415 TWh (2024) → 485 TWh (2025) → ~950 TWh projected 2030. |
+| `ai_ethics_10_doomsday.tex` | Doomsday Clock; Bostrom | Clock 89 → **85 seconds (27 Jan 2026), closest ever**, with the Bulletin's AI-in-nuclear-command-and-control rationale. Bostrom: FHI noted as closed 2024, added Macrostrategy Research Initiative and *Deep Utopia*. |
+| `ai_ethics_02_virtues.tex` | Australia minimum-age law | Updated, plus a **new slide** ("Did It Work? Australia as a Natural Experiment") with seven months of outcome data — the strongest new discussion material in the course. |
+| `ai_ethics_03_free_speech.tex` | Platform user counts; EU AI Act | Table refreshed with a note on why cross-platform comparison is dishonest (X has published nothing audited since 2022). EU AI Act updated for the Digital Omnibus: transparency rules live Aug 2026, **high-risk postponed to Dec 2027**. |
+
+**Next sweep:** the fastest-moving items are the crypto figures, the FDA count, and the AI copyright litigation (the Third Circuit *Ross* decision could land mid-semester). Re-check those first.
 
 ---
 
@@ -116,17 +117,17 @@ Do one sweep in August 2026. LLM implementers: verify each with current sources 
   3. `\section{Part V: AI and Intellectual Property}` (~line 799) appears **before** `\section{Part IV: Beyond Traditional IP}` (~line 914).
 - **Fix:** Renumber/reorder so the presented order is: Intro → Foundations → Digital Disruption → Critiques → Market Power → Alternatives (open source/CC) → AI & IP → Conclusion (AI last flows best into Lecture 7), and move the orphaned Part I `\mode<article>` paragraph up to where the foundations content actually lives. Easiest robust fix: drop the "Part N" prefixes entirely (the metropolis progress bar + TOC slides already communicate position), matching Lectures 1–3.
 
-### 3.2 Duplicate "Nothing to Hide" coverage (Lecture 6)
+### 3.2 Duplicate "Nothing to Hide" coverage (Lecture 6) — DONE 2026-07-31
 - **File:** `latex/ai_ethics_06_privacy.tex`
 - **Problem:** The argument is treated three times: "The 'Nothing to Hide' Argument" (~line 267), "The 'Nothing to Hide' Argument (Standard Form)" (~line 929), and "The 'Nothing to Fear' Response---Revisited" (~line 1059). The bullets overlap heavily (chilling effects, aggregation, power asymmetry appear in all three). The deck is also the longest in the course (~44 slides).
 - **Fix:** Keep the Part I teaser short (2 bullets + "we'll return to this"), keep the Part IV standard-form treatment, and delete the "Revisited" slide (fold the Schneier quote into the standard-form slide).
 
-### 3.3 Key-concepts frames promise content the deck never covered (Lecture 8)
+### 3.3 Key-concepts frames promise content the deck never covered (Lecture 8) — DONE 2026-07-31
 - **File:** `latex/ai_ethics_08_work.tex` (~lines 913–916)
 - **Problem:** The closing "Key Thinkers and Concepts" lists **Marx's four alienations** and **Braverman's deskilling** — neither appears anywhere in the slides. Students revising from the summary will be lost.
 - **Fix:** Either add a short Marx-alienation slide in Part I (it fits naturally next to Arendt and would strengthen the deck) or cut those two entries.
 
-### 3.4 Bibliography frames only exist in Lectures 10–12
+### 3.4 Bibliography frames only exist in Lectures 10–12 — DONE 2026-07-31
 - **Files:** all lectures
 - **Problem:** L10, L11, L12 end with `\printbibliography`; L1–L9 cite with biblatex but never print references. Either is defensible; the inconsistency isn't.
 - **Fix:** Add a `[allowframebreaks]{References}` frame with `\printbibliography[heading=none]` to L1–L9 (recommended — models citation practice for the final project), or remove from L10–12.
@@ -176,13 +177,17 @@ Do one sweep in August 2026. LLM implementers: verify each with current sources 
 
 1. **Lecture 6 length.** ~44 content slides is the longest deck; combined with three "nothing to hide" passes (see 3.2), it likely overruns. After the 3.2 cut, consider trimming Part III (authoritarian states) — the Russia/other-states/Pegasus/exporting sequence is 5 slides that could be 3.
 
-2. **Lecture 1: Mill/Marx framing is a simplification — say so.** Mill never wrote about the telegraph as such; the "optimist vs. pessimist" pairing is a useful pedagogical construct. One sentence ("we're using these thinkers as representatives of two enduring positions, not reporting a debate they actually had") inoculates against a student citing the slide as history. Same soft caveat could apply to Theuth (optimist) — the myth is Plato's own invention.
+2. ~~**Lecture 1: Mill/Marx framing is a simplification — say so.**~~ **DONE 2026-07-31** — caveat added to the "Who Were Mill and Marx?" slide ("we are using them as representatives of two enduring positions, not reporting an argument they actually had. Don't cite this slide as history."), plus a note on the Theuth slide that the myth is Plato's own invention.
+   Original item:
+   **Lecture 1: Mill/Marx framing is a simplification — say so.** Mill never wrote about the telegraph as such; the "optimist vs. pessimist" pairing is a useful pedagogical construct. One sentence ("we're using these thinkers as representatives of two enduring positions, not reporting a debate they actually had") inoculates against a student citing the slide as history. Same soft caveat could apply to Theuth (optimist) — the myth is Plato's own invention.
 
 3. **Give Lecture 7 a "Key Thinkers"-style visual anchor for Searle/Dennett/Chalmers.** L7 covers the deepest philosophy in the course but is the most text-table-heavy deck. The `figurebox` bio cards (~lines 148–210) work well — consider one image slide (Searle or the Chinese Room) to break up Part III, matching the image cadence of other lectures (~2–3 images each; L7 has only Turing and Lovelace, both in the history half).
 
 4. **Standard-form arguments: keep it up, and consider numbering them course-wide.** The `argumentbox` standard-form arguments are the best recurring pedagogical device in the course. L3 numbers them ("Argument 1…4"); most decks don't. A consistent "Argument N.M" scheme (lecture.number) would let exams and the final project reference them cleanly.
 
-5. **Add one slide on AI companions/parasocial relationships to Lecture 11.** Final project topics #52 and #55 (Replika/Character.AI, the Character.AI lawsuits) have no lecture home; L11's relational-view section (Gunkel/Darling) is the natural place and would make the deck feel current rather than purely theoretical.
+5. ~~**Add one slide on AI companions/parasocial relationships to Lecture 11.**~~ **DONE 2026-07-31** — added *two* slides after Gunkel's relational approach: "AI Companions: The Relational View's Hardest Test" (the Feb 2023 Replika filter episode as the anchor case, the HBS identity-discontinuity study, Common Sense Media teen-usage data, and the collision between the relational view and the stochastic-parrot critique) and "Can a Relationship with an AI Be Valuable?" (Danaher vs. Turkle/Sparrow, with Nyholm & Frank's particularity objection, closing on the fact that the 2025–26 companion-chatbot laws sidestep the philosophical question entirely). New bib entries added for Danaher, Sparrow, Nyholm & Frank, De Freitas et al., and Common Sense Media.
+   Original item:
+   **Add one slide on AI companions/parasocial relationships to Lecture 11.** Final project topics #52 and #55 (Replika/Character.AI, the Character.AI lawsuits) have no lecture home; L11's relational-view section (Gunkel/Darling) is the natural place and would make the deck feel current rather than purely theoretical.
 
 6. **Accessibility pass.** Several tikz diagrams encode meaning purely in red/green (L1 pattern diagram, L5 centralized/decentralized, L6 balance beam). For projection and colorblind students, add shape or label redundancy where cheap. Low effort: the boxred/boxgreen pairs already carry labels in most cases; audit the handful that don't.
 
@@ -203,3 +208,28 @@ Do one sweep in August 2026. LLM implementers: verify each with current sources 
 (`latexmk -pdf -interaction=nonstopmode <file>.tex` from `latex/`, with biber) and confirm
 zero new "Overfull \hbox" warnings on edited frames and that `\printbibliography` resolves
 (no `[?]` citations).
+
+---
+
+## Completed 2026-07-31 (this pass)
+
+Beyond the P2 sweep and P3.2–3.4 above:
+
+- **Caption bug, all 12 decks (was an open follow-up under P4.5).** `\caption*` is **not defined by beamer** — every `\caption*{Credit line}` was rendering as literal "Figure N: *" followed by the credit as body text. Confirmed by compiling a minimal test case. Fixed by configuring beamer's caption template in `lecture_preamble.tex` to drop the "Figure N:" label entirely (these captions are image credits, and nothing in the decks says "see Figure 3"), then converting all 40 `\caption*` calls to plain `\caption`. The preamble now carries a comment warning against reintroducing `\caption*`.
+- **Slide overflow.** New content was trimmed until it stopped being the worst offender in its deck; four genuinely dense slides (L5 Bitcoin, L5 CBDC, L6 Nothing-to-Hide standard form, L6 Clearview) carry a modest `shrink`. Net change across all decks, measured by building HEAD and the new tree the same way: **180 → 176 overfull vboxes**, despite adding five new slides. The broad pre-existing overflow issue in L1/L3 (34 and 32) is **still open**.
+- **Course documents.** Term rolled Spring → Fall 2026 in the syllabus, final project, and final exam. Syllabus: exam description now matches `final_exam.md` (published topics, handwritten notes, webcam); the project description now matches `final_project.md` (15–20 min video, not a "20-minute lesson"); added a scope note reconciling the official course outline with the twelve-lecture sequence students actually see. **The official Major Content Areas and Learning Outcomes were left untouched** — they look like Common Course Outline / MnTC text that shouldn't be rewritten unilaterally. Worth confirming.
+- **Glossary** gained Braverman, alienation, and species-being entries to match the new Lecture 8 content.
+
+### Verified by build
+All 12 decks compile with `pdflatex` → `biber` → `pdflatex` ×2: **zero undefined citations, zero unresolved references**, bibliographies resolving in all twelve (they previously printed only in L10–12).
+
+Note for future implementers: `biber` needs `BIBINPUTS` pointing at the project root, since `refs.bib` lives there and the build runs from the root with `TEXINPUTS=./latex`.
+
+## Still open
+
+- **P5.1** — Lecture 6 length. One slide was removed via 3.2, but the Part III authoritarian-states sequence is untrimmed.
+- **P5.3** — Lecture 7 visual anchor for Searle/Dennett/Chalmers.
+- **P5.4** — course-wide "Argument N.M" numbering.
+- **P5.6** — accessibility pass on red/green-only tikz diagrams.
+- **Broad slide overflow** in L1 (34) and L3 (32), which predates this pass.
+- **HTML chapters** were not regenerated. The slide decks and the `html/` readings have now diverged for L2 (Australia), L4 (AI copyright), L5 (crypto figures), L6 (Clearview, Nothing-to-Hide), L7 (timeline), L9 (energy/FDA), L10 (Doomsday Clock), and L11 (AI companions). Chapter 8 already covered Marx's alienation, so only the slides needed that fix.

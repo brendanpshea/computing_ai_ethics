@@ -186,7 +186,7 @@ If you write a song that sounds exactly like another song but you never heard th
 \begin{column}{0.47\textwidth}
 \begin{figure}
 \includegraphics[width=\textwidth,height=0.65\textheight,keepaspectratio]{images/edison.jpg}
-\caption*{\scriptsize Thomas A.\ Edison, c.\ 1877--1880. Public domain.}
+\caption{\scriptsize Thomas A.\ Edison, c.\ 1877--1880. Public domain.}
 \end{figure}
 \end{column}
 \end{columns}
@@ -273,7 +273,7 @@ Intellectual property can be justified through three competing philosophical fra
 \begin{column}{0.47\textwidth}
 \begin{figure}
 \includegraphics[width=\textwidth,height=0.65\textheight,keepaspectratio]{images/plato_bust.jpg}
-\caption*{\scriptsize Plato (428--348 BCE), Roman marble copy. Musei Capitolini, Rome. Public domain.}
+\caption{\scriptsize Plato (428--348 BCE), Roman marble copy. Musei Capitolini, Rome. Public domain.}
 \end{figure}
 \end{column}
 \end{columns}
@@ -880,21 +880,50 @@ New paradigm & Copyright not designed for this; need new rules \\
 % ===== SLIDE 34: AI Copyright Wars =====
 \begin{frame}{Case Study: The AI Copyright Wars}
 \begin{casestudybox}[Major AI Copyright Lawsuits (2023--Present)]
-\textbf{Key cases}: \textit{NYT v. OpenAI/Microsoft}, \textit{Authors Guild v. OpenAI}, \textit{Getty v. Stability AI}, plus class actions against Meta, Anthropic, others.
+\textbf{Key cases}: \textit{NYT v.\ OpenAI/Microsoft}, \textit{Getty v.\ Stability AI}, \textit{Kadrey v.\ Meta}, \textit{Bartz v.\ Anthropic}, \textit{Thomson Reuters v.\ Ross}.
 \end{casestudybox}
 
-\vspace{0.2cm}
-\textbf{The claims}: Training on copyrighted works without license; models can reproduce copyrighted content.
+\vspace{0.15cm}
+\textbf{The claims}: Training without a license; models reproducing protected content; and---separately---\emph{how the training data was obtained}.
 
-\vspace{0.2cm}
-\textbf{Recent developments} (2025):
+\vspace{0.15cm}
+\textbf{Where things stand} (mid-2026):
 \begin{itemize}
-    \item 16 lawsuits consolidated in S.D.N.Y.
-    \item Judge ordered OpenAI to produce 20 million ChatGPT logs
-    \item Two federal courts found AI training ``\textbf{highly transformative}'' (fair use)
+    \item More than a dozen suits against OpenAI and Microsoft consolidated as an \textbf{MDL} in the Southern District of New York
+    \item Anthropic's \textbf{\$1.5 billion} class settlement---the largest in US copyright history---received final approval in July 2026
+    \item \textbf{No federal appeals court has yet ruled} on AI training and fair use; the first to hear the question was argued in June 2026 and is undecided
 \end{itemize}
 
-\textbf{Status}: Litigation ongoing; will shape AI industry for decades.
+\vspace{0.1em}
+{\scriptsize Almost nothing here is binding precedent yet. Expect the ground to shift during this semester.}
+\end{frame}
+
+% ===== SLIDE 34b: What Courts Have Actually Held =====
+\begin{frame}{What the Courts Have Actually Held}
+It is often said that ``courts ruled AI training is fair use.'' That is too coarse. \textit{Bartz v.\ Anthropic} (N.D.\ Cal.\ 2025) split the conduct apart:
+
+\vspace{0.2em}
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{@{}p{6.6cm}l@{}}
+\toprule
+\textbf{Conduct} & \textbf{Holding} \\
+\midrule
+Training a model on the books & \textbf{Fair use} (``exceedingly transformative'') \\
+Scanning \emph{lawfully purchased} print books & \textbf{Fair use} (format shift) \\
+Keeping a permanent library of \textbf{7M+ pirated books} & \textbf{Not fair use} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\vspace{0.2em}
+Anthropic then paid \$1.5 billion---roughly \$3,000 per work across some 482,000 titles---over precisely that last row.
+
+\begin{conceptbox}[The distinction worth remembering]
+\scriptsize
+The fight is turning less on \emph{what models learn} than on \textbf{how the corpus was acquired}. A separate theory, \textbf{market dilution}, asks whether a flood of AI output can harm the market for human work even when no passage is copied.
+\end{conceptbox}
 \end{frame}
 
 % ===== SLIDE 35: AI-Generated Content =====
@@ -902,15 +931,16 @@ New paradigm & Copyright not designed for this; need new rules \\
 \textbf{The question}: If AI creates something, who owns the copyright?
 
 \vspace{0.2cm}
-\textbf{Current US position (Copyright Office, 2023--2025)}:
+\textbf{Current US position}:
 \begin{itemize}
-    \item Copyright requires \textbf{human authorship}
-    \item Purely AI-generated works \textbf{not copyrightable}
-    \item Human-AI collaboration: Human contributions \textbf{may be} copyrightable
+    \item Copyright requires \textbf{human authorship}---now settled, after the Supreme Court declined to review \textit{Thaler v.\ Perlmutter} in March 2026
+    \item Purely AI-generated works are \textbf{not copyrightable}
+    \item Human-AI collaboration: human contributions \textbf{may be} copyrightable, case by case
+    \item \textbf{Prompts alone---however detailed---do not make you an author}
 \end{itemize}
 
-\vspace{0.2cm}
-\textbf{The complications}: How much human input is \textbf{enough}? What about prompts, curation, selection? Different countries may reach different conclusions.
+\vspace{0.15cm}
+\textbf{The complications}: How much human input is \textbf{enough}? What about curation and selection? Different countries may reach different conclusions.
 
 \vspace{0.1cm}
 \textbf{Implications}: AI art may be \textbf{public domain by default}; creates incentive to \textbf{hide AI involvement}.
@@ -963,6 +993,13 @@ Market & Doesn't replace originals? & Competes with creators \\
 \begin{discussionbox}[Discussion]
 If you could redesign IP law from scratch, what would you prioritize: creator incentives, public access, or a healthy innovation ecosystem?
 \end{discussionbox}
+\end{frame}
+
+% ============================================================
+% BIBLIOGRAPHY
+% ============================================================
+\begin{frame}[allowframebreaks]{References}
+\printbibliography[heading=none]
 \end{frame}
 
 \end{document}

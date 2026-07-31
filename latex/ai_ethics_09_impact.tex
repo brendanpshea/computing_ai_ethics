@@ -121,7 +121,7 @@ The ethical question is never just "What does the model do?" It is also: \textbf
 \begin{column}{0.47\textwidth}
 \begin{figure}
 \includegraphics[width=\textwidth,height=0.65\textheight,keepaspectratio]{images/ai_env_servers.jpg}
-\caption*{\scriptsize Servers in a rack. CC BY-SA 3.0, via Wikimedia Commons.}
+\caption{\scriptsize Servers in a rack. CC BY-SA 3.0, via Wikimedia Commons.}
 \end{figure}
 \end{column}
 \end{columns}
@@ -174,10 +174,10 @@ The key mistake is to think of AI as only a question of software efficiency. It 
 
 \begin{frame}{Current Environmental Statistics}
 \begin{itemize}
-    \item The IEA estimates global data-center electricity use at \textbf{240--340 TWh in 2022}, about \textbf{1--1.3\%} of global final electricity demand \parencite{iea_data_centres_2023}.
-    \item Data centers and data transmission networks accounted for about \textbf{330 Mt CO$_2$e} in 2020, roughly \textbf{0.9\%} of energy-related greenhouse-gas emissions \parencite{iea_data_centres_2023}.
-    \item The IEA's \textit{Electricity 2026} report identifies \textbf{AI and data centers} as part of the demand growth driving global electricity demand up by more than \textbf{3.5\% per year on average through 2030} \parencite{iea_electricity_2026}.
-    \item More than \textbf{2,500 GW} of projects are stalled in grid connection queues worldwide, including projects with large loads such as data centers \parencite{iea_electricity_2026}.
+    \item Data centers used roughly \textbf{415 TWh in 2024} (about \textbf{1.5\%} of world electricity), rising to about \textbf{485 TWh} in 2025 \parencite{iea_energy_and_ai_2025, iea_electricity_2026}.
+    \item The IEA projects that roughly \textbf{doubling to $\sim$950 TWh by 2030}, about \textbf{3\%} of global electricity. \textbf{AI-specific} use grew about \textbf{50\% in 2025} alone \parencite{iea_electricity_2026}.
+    \item In the \textbf{United States}, data centers account for close to \textbf{half} of all projected electricity demand growth through 2030 \parencite{iea_electricity_2026}.
+    \item More than \textbf{2,500 GW} of projects sit stalled in grid connection queues worldwide \parencite{iea_electricity_2026}.
 \end{itemize}
 
 \begin{alertblock}{Interpretive Point}
@@ -314,7 +314,7 @@ Public value depends on who has access to the tools, the data, and the response 
 \begin{column}{0.47\textwidth}
 \begin{figure}
 \includegraphics[width=\textwidth,height=0.65\textheight,keepaspectratio]{images/ai_env_wildfire_satellite.jpg}
-\caption*{\scriptsize NASA wildfire satellite image. CC BY 2.0, via Wikimedia Commons.}
+\caption{\scriptsize NASA wildfire satellite image. CC BY 2.0, via Wikimedia Commons.}
 \end{figure}
 \end{column}
 \end{columns}
@@ -359,7 +359,8 @@ Unlike many AI use cases, medical gains can be stated in terms of \textbf{reduce
 \begin{frame}{Current Medical AI Statistics}
 \begin{itemize}
     \item Stanford HAI reports that the FDA approved \textbf{223 AI-enabled medical devices in 2023}, up from just \textbf{6 in 2015} \parencite{stanford_ai_index_2025}.
-    \item The FDA's current public list contains \textbf{1,451 AI-enabled devices} as of 2026-03-04 \parencite{fda_ai_medical_devices_2026}.
+    \item The FDA's public list passed \textbf{1,500 AI-enabled devices} in early 2026 and is updated several times a year \parencite{fda_ai_medical_devices_2026}. Roughly \textbf{three-quarters are radiology} devices---the adoption is real but highly concentrated.
+    \item Read that list carefully: the FDA itself cautions it is \textbf{not a comprehensive inventory}, but a keyword-derived sample drawn from public authorization summaries. Even our regulatory statistics are constructed artifacts.
     \item Of those, \textbf{radiology dominates} the field: 1,104 devices, followed by cardiovascular and neurology applications.
 \end{itemize}
 
@@ -416,7 +417,7 @@ If clinicians over-trust AI systems, error can become harder to detect rather th
 \begin{column}{0.47\textwidth}
 \begin{figure}
 \includegraphics[width=\textwidth,height=0.65\textheight,keepaspectratio]{images/ai_env_ct_scan.jpg}
-\caption*{\scriptsize First CT scan brain image. CC BY 4.0, via Wikimedia Commons.}
+\caption{\scriptsize First CT scan brain image. CC BY 4.0, via Wikimedia Commons.}
 \end{figure}
 \end{column}
 \end{columns}
@@ -587,7 +588,7 @@ Automation in welfare and child-protection systems often disciplines the poor ra
 \begin{column}{0.47\textwidth}
 \begin{figure}
 \includegraphics[width=\textwidth,height=0.65\textheight,keepaspectratio]{images/ai_env_parliament.jpg}
-\caption*{\scriptsize Scottish Parliament chamber. CC BY-SA 4.0, via Wikimedia Commons.}
+\caption{\scriptsize Scottish Parliament chamber. CC BY-SA 4.0, via Wikimedia Commons.}
 \end{figure}
 \end{column}
 \end{columns}
@@ -823,7 +824,7 @@ Can an "AI for good" project still be unjust if it is built on exploitative labo
 \begin{column}{0.47\textwidth}
 \begin{figure}
 \includegraphics[width=\textwidth,height=0.65\textheight,keepaspectratio]{images/ai_env_cobalt_miners.jpg}
-\caption*{\scriptsize Artisanal cobalt miners in the DRC. CC BY 2.5, via Wikimedia Commons.}
+\caption{\scriptsize Artisanal cobalt miners in the DRC. CC BY 2.5, via Wikimedia Commons.}
 \end{figure}
 \end{column}
 \end{columns}
@@ -846,7 +847,7 @@ Can an "AI for good" project still be unjust if it is built on exploitative labo
 \begin{column}{0.47\textwidth}
 \begin{figure}
 \includegraphics[width=\textwidth,height=0.65\textheight,keepaspectratio]{images/ai_env_ewaste.jpg}
-\caption*{\scriptsize Electronic waste sorting. CC0, via Wikimedia Commons.}
+\caption{\scriptsize Electronic waste sorting. CC0, via Wikimedia Commons.}
 \end{figure}
 \end{column}
 \end{columns}
@@ -924,6 +925,13 @@ The real task is not to choose simple optimism or pessimism. It is to identify w
 \begin{discussionbox}[Discussion]
 If AI can simultaneously improve medicine, intensify resource use, and deepen inequality, what standards should determine when it ought to be built or deployed?
 \end{discussionbox}
+\end{frame}
+
+% ============================================================
+% BIBLIOGRAPHY
+% ============================================================
+\begin{frame}[allowframebreaks]{References}
+\printbibliography[heading=none]
 \end{frame}
 
 \end{document}

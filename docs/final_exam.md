@@ -1,6 +1,6 @@
 # Final Exam: Essays on Computing & AI Ethics
 
-**PHIL 1150-71 | Spring 2026 | See D2L for date and time**
+**PHIL 1150-71 | Fall 2026 | See D2L for date and time**
 
 ---
 

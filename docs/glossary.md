@@ -357,6 +357,9 @@
 | **Identity and Self-Expression** | Work provides means of expressing self; "what do you do?" is primary identity question. |
 | **Job Displacement** | Elimination of job category due to automation; raises economic and existential concerns. |
 | **Deskilling** | Reduction of skill requirements in job; AI handles complex work, humans execute; undermines craft. |
+| **Harry Braverman** | Author of *Labor and Monopoly Capital* (1974); argued industrial management systematically breaks skilled trades into simple, monitorable steps — cheaper to staff, easier to control, emptier to perform. |
+| **Alienation** | (Marx, *Economic and Philosophic Manuscripts of 1844*) separation of the worker from the product, the activity, species-being, and other people. Each has a contemporary echo in AI-mediated and algorithmically managed work. |
+| **Species-Being** | (Marx) the human capacity for free, conscious, creative production; the dimension of alienation that makes degraded work a degradation of the person, not just of the job. |
 | **Replacement Scenario** | AI eliminates jobs entirely; different sectors face different timelines and risks. |
 | **Deskilling Scenario** | AI handles meaningful aspects; humans do routine execution; work becomes labor. |
 | **Augmentation Scenario** | Optimistic scenario where AI handles labor, freeing humans for meaningful work. |

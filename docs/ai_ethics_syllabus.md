@@ -1,6 +1,6 @@
 # Computing & AI Ethics 🤖
 
-**PHIL 1150-71 | Spring 2026**
+**PHIL 1150-71 | Fall 2026**
 
 ## Course Information
 
@@ -18,6 +18,8 @@
 ## Course Description 📖
 
 In a world increasingly reliant on technology, the ethical implications of computing and artificial intelligence (AI) are more relevant than ever. This course seeks to bridge the gap between technology and ethical inquiry, providing students with the tools to critically evaluate and address ethical dilemmas in various domains of computing, AI, and data science. The course covers a wide range of topics, from fundamental ethical theories to futuristic considerations in AI ethics. Topics include the history of computing, AI and machine learning basics, data privacy, algorithmic bias and fairness, surveillance, security, employment in the age of AI, bioethics in computing, ethics in video games and virtual reality, AI ethics in science fiction, and future policy and design considerations.
+
+> **A note on scope.** The content areas and learning outcomes below come from the official course outline and describe the range of material the course is approved to cover. The way we will actually work through that material this semester is the twelve-lecture sequence in the [Course Calendar](#course-calendar-) at the end of this syllabus — including several topics the outline states more broadly, such as free speech and content moderation, intellectual property, cryptography and digital money, existential risk, and the moral status of AI systems. If you are trying to figure out what we will be doing in a given week, use the calendar.
 
 ## Course Content and Learning Outcomes 🎯
 
@@ -155,9 +157,9 @@ Your final grade is a weighted average of the following:
 
 **Lectures, Readings, and Quizzes on Perusall (30% total).** You'll receive credit for engaging with lectures and case studies on [www.perusall.com](http://www.perusall.com). Grading is based on a combination of (1) time spent actively working on the assignment, (2) number and quality of comments, and (3) score on the final quiz.
 
-**Midterm and Final Exams (50% total).**  These are the exams for the course. You'll have two hours to complete each. You'll need a computer with a **webcam** to take these.
+**Midterm and Final Exams (50% total).** These are the two exams for the course (Exam 1 near the midpoint, Exam 2 near the end — see the Course Calendar). Each is a **2-hour timed essay exam** taken online with your **webcam** on. The possible essay topics are published in advance so you can prepare, and you may bring **one page of handwritten notes** (front and back), which you'll show to the camera before you begin. Full format and topic lists are posted on D2L.
 
-**Presentation (20% total)**. Near the end of the semester, you'll be designing and delvering your own 20-minute "lesson" on a topic related to AI and Computing Ethics. 
+**Final Project — Video Presentation (20% total)**. Near the end of the semester, you'll design and deliver your own 15–20 minute video presentation on a topic, case study, or figure related to computing and AI ethics. You may go deeper on something we covered in class or explore something we didn't. Full requirements, sample topics, and the grading rubric are in the Final Project handout on D2L.
 
 ### Plagiarism and Academic Integrity ⚖️ 
 

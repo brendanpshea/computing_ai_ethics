@@ -1,6 +1,6 @@
 # Final Project: Video Presentation on Computing & AI Ethics
 
-**PHIL 1150-71 | Spring 2026 | Due: See D2L**
+**PHIL 1150-71 | Fall 2026 | Due: See D2L**
 
 ---
 

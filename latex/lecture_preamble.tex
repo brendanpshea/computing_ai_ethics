@@ -82,6 +82,17 @@
     % Tighter list spacing
     \setbeamertemplate{itemize/enumerate body begin}{\setlength{\itemsep}{2pt}\setlength{\parsep}{0pt}}
     \setbeamertemplate{itemize/enumerate subbody begin}{\setlength{\itemsep}{1pt}\setlength{\parsep}{0pt}}
+
+    % Captions here are image credits and source lines, not numbered figure
+    % references -- nothing in the decks says "see Figure 3". Drop the
+    % "Figure N:" prefix so \caption prints just the credit text.
+    %
+    % Do NOT use \caption* to achieve this: beamer does not define the starred
+    % form, so \caption*{Credit} silently renders as "Figure N: *" followed by
+    % the credit as body text. Always use plain \caption here.
+    \setbeamertemplate{caption}{\raggedright\insertcaption\par}
+    \setbeamertemplate{caption label separator}{}
+    \setbeamerfont{caption}{size=\scriptsize}
 }
 
 % ------------------------------------------------------------------------------

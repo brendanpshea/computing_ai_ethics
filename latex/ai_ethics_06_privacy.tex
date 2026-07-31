@@ -260,22 +260,17 @@ Posner argued that privacy is often economically inefficient because it enables 
 
 % Slide 12: Nothing to Hide Argument
 \begin{frame}{The ``Nothing to Hide'' Argument}
-\textbf{Common claim}: ``If you have nothing to hide, you have nothing to fear''
+\textbf{The most common objection to privacy}: ``If you have nothing to hide, you have nothing to fear.''
 
-\begin{objectionbox}[Responses to ``Nothing to Hide'']
-\small
-\begin{enumerate}
-    \item Everyone has something to hide (legal but private matters)
-    \item Innocence doesn't guarantee safety (false positives, changed laws)
-    \item \textbf{Chilling effects} on speech and behavior
-    \item Power asymmetry: ``You show me yours first''
-    \item \textbf{Aggregation problem}: Innocuous data combines into sensitive profiles
-    \item Future unknown: Today's normal may be tomorrow's suspicious
-\end{enumerate}
-\end{objectionbox}
+\vspace{0.3em}
+Two quick problems, to sit with for now:
+\begin{itemize}
+    \item \textbf{Everyone has something to hide}---not crimes, but legal matters that are nobody else's business. ``Nothing to hide'' quietly equates privacy with guilt.
+    \item \textbf{Aggregation}: individually harmless facts combine into a revealing profile. \textcite{solove_understanding_privacy} argues this is where the real damage happens---no single disclosure looks like a violation.
+\end{itemize}
 
-\vspace{0.2em}
-\textbf{Daniel Solove} \parencite{solove_understanding_privacy}: The problem isn't isolated data, but the ``aggregation problem.''
+\vspace{0.3em}
+This argument is important enough to deserve a careful treatment. We will put it in standard form and examine each premise in Part IV, once we have the surveillance cases on the table.
 \end{frame}
 
 % Slide 13: Privacy Paradox
@@ -319,7 +314,7 @@ Is \textbf{social media} a kind of panopticon---where the audience is both the w
 \begin{column}{0.47\textwidth}
 \begin{figure}
 \includegraphics[width=\textwidth,height=0.65\textheight,keepaspectratio]{images/panopticon.jpg}
-\caption*{\scriptsize Panopticon floor plan, from Jeremy Bentham, \textit{Works} (1843). Public domain.}
+\caption{\scriptsize Panopticon floor plan, from Jeremy Bentham, \textit{Works} (1843). Public domain.}
 \end{figure}
 \end{column}
 \end{columns}
@@ -442,7 +437,7 @@ Google & Searches, emails, YouTube \\
 Amazon & Purchases, Alexa, browsing \\
 \bottomrule
 \end{tabular}
-\caption*{\scriptsize Data collected (indefinite retention)}
+\caption{\scriptsize Data collected (indefinite retention)}
 \end{table}
 \end{column}
 \end{columns}
@@ -486,7 +481,7 @@ Amazon & Purchases, Alexa, browsing \\
 \begin{column}{0.47\textwidth}
 \begin{figure}
 \includegraphics[width=\textwidth,height=0.65\textheight,keepaspectratio]{images/nsa_headquarters.jpg}
-\caption*{\scriptsize NSA Headquarters, Fort Meade, Maryland. US Government photo. Public domain.}
+\caption{\scriptsize NSA Headquarters, Fort Meade, Maryland. US Government photo. Public domain.}
 \end{figure}
 \end{column}
 \end{columns}
@@ -534,13 +529,16 @@ Amazon & Purchases, Alexa, browsing \\
 \toprule
 \textbf{Data Broker Stats} & \\
 \midrule
-Market size (2024) & \$280B+ \\
-Brokers globally & $\sim$5,000 \\
-Avg databases/American & 1,500+ \\
-Data points/profile & 1,500+ \\
+Market size (est., 2026) & \$300B+ \\
+Registered in California & 581 \\
+Identified across 5 states & $\sim$750 \\
+Attributes per US consumer & 1,500+ \\
 \bottomrule
 \end{tabular}
 \end{table}
+
+\vspace{0.2em}
+{\scriptsize Treat the market-size figure carefully: it comes from commercial research reports that disagree with each other by about 20\% and define ``data broker'' loosely. That an industry this large cannot be measured to better than a fifth is itself part of the problem.}
 \end{column}
 \end{columns}
 \end{frame}
@@ -920,7 +918,7 @@ Let's examine one of these arguments more carefully...
 \end{frame}
 
 % Slide 37: The Nothing to Hide Argument Examined
-\begin{frame}{The ``Nothing to Hide'' Argument (Standard Form)}
+\begin{frame}[shrink=10]{The ``Nothing to Hide'' Argument (Standard Form)}
 \begin{probox}[The Argument]
 \scriptsize
 \begin{enumerate}
@@ -934,12 +932,16 @@ Let's examine one of these arguments more carefully...
 \begin{objectionbox}[Multiple Problems]
 \scriptsize
 \begin{itemize}
-    \item \textbf{Premise 1 is false}: Surveillance harms through chilling effects, power imbalances, errors, and abuse---none requiring wrongdoing.
-    \item \textbf{Premise 2 is misleading}: Everyone has \emph{something} to hide---legal but private matters. ``Nothing to hide'' conflates privacy with guilt.
-    \item \textbf{Ignores aggregation}: Innocuous data points combine into sensitive profiles.
-    \item \textbf{Assumes static law}: Today's legal behavior may be tomorrow's crime.
+    \item \textbf{Premise 1 is false}: chilling effects, power imbalances, errors and abuse harm the innocent too.
+    \item \textbf{Premise 2 is misleading}: everyone has legal but private matters to hide; the premise conflates privacy with guilt.
+    \item \textbf{Ignores aggregation}: innocuous data points combine into sensitive profiles.
+    \item \textbf{Ignores context}: what is appropriate in one setting is a violation in another---\textbf{contextual integrity}.
+    \item \textbf{Assumes static law}: today's legal behavior may be tomorrow's crime---and who decides what is ``wrong''?
+    \item \textbf{Ignores distribution}: surveillance falls hardest on marginalized groups.
 \end{itemize}
 \end{objectionbox}
+
+{\scriptsize \textbf{Schneier} \parencite{schneier_data_goliath}: ``The real choice is liberty versus control.''}
 \end{frame}
 
 % Slide 38: Facial Recognition Debate
@@ -975,23 +977,23 @@ Let's examine one of these arguments more carefully...
 \end{frame}
 
 % Slide 39: Clearview AI
-\begin{frame}{Case Study: Clearview AI}
+\begin{frame}[shrink=10]{Case Study: Clearview AI}
 \begin{casestudybox}[The Controversial Facial Recognition Company]
 \small
-\textbf{Database}: Scraped \textbf{30+ billion photos} from social media (CEO claims 50B)\\
+\textbf{Database}: Roughly \textbf{50 billion} scraped facial images---up from 3 billion when the company was first exposed in 2020\\
 \textbf{Product}: App for police to identify anyone from a photo\\
-\textbf{Customers}: 2,400+ law enforcement agencies (often without official approval)
+\textbf{Customers}: 2,400+ law enforcement agencies; federal contracts with ICE, CBP and the Army run through 2026
 \end{casestudybox}
 
 \vspace{0.2em}
 \textbf{Legal battles}:
 \begin{itemize}
-    \item Sued by ACLU; settled with ban on sales to private businesses
-    \item Fined \texteuro30.5M (Netherlands), \texteuro20M (Italy), \pounds7.5M (UK)
-    \item Banned in Australia, Canada
+    \item Fined \texteuro30.5M (Netherlands), \texteuro20M each (France, Italy, Greece), \pounds7.5M (UK)---and has largely \textbf{not paid}
+    \item Banned in Australia and Canada
+    \item The Illinois class action settled for a \textbf{23\% equity stake} rather than cash; an appeals court vacated that settlement in 2026
 \end{itemize}
 
-\textbf{CEO claim}: ``First Amendment right'' to collect public photos
+\textbf{Company claim}: ``First Amendment right'' to collect public photos
 
 \begin{discussionbox}[Discussion]
 Should police be able to identify anyone, anywhere, anytime?
@@ -1049,25 +1051,7 @@ Should police be able to identify anyone, anywhere, anytime?
 \textbf{Key point}: Government isn't the only surveillor---private companies too
 \end{frame}
 
-% Slide 42: Sophisticated Response to Nothing to Hide
-\begin{frame}{The ``Nothing to Fear'' Response---Revisited}
-\begin{objectionbox}[Sophisticated Responses to Surveillance]
-\small
-\begin{enumerate}
-    \item \textbf{Definitional problem}: Who decides what's ``wrong''? Laws change.
-    \item Information appropriate in one context isn't in another---\textbf{contextual integrity}.
-    \item Innocuous data points combine into sensitive profiles---\textbf{aggregation}.
-    \item Even innocent people change behavior when watched---\textbf{chilling effects}.
-    \item Surveillance creates \textbf{power asymmetry}: ``Show me yours first.''
-    \item Surveillance falls disproportionately on marginalized groups---\textbf{equality}.
-\end{enumerate}
-\end{objectionbox}
-
-\vspace{0.1em}
-\textbf{Bruce Schneier} \parencite{schneier_data_goliath}: ``Too many wrongly characterize the debate as `security versus privacy.' The real choice is liberty versus control.''
-\end{frame}
-
-% Slide 43: Frameworks for Democratic Surveillance
+% Slide 42: Frameworks for Democratic Surveillance
 \begin{frame}{Possible Frameworks for Democratic Surveillance}
 \begin{conceptbox}[Constraints for Democratic Surveillance]
 \small
@@ -1084,7 +1068,7 @@ Should police be able to identify anyone, anywhere, anytime?
 \end{conceptbox}
 \end{frame}
 
-% Slide 44: Key Tensions
+% Slide 43: Key Tensions
 \begin{frame}{Privacy in the Balance---Key Tensions}
 \begin{center}
 \begin{tikzpicture}[scale=0.7, every node/.style={font=\small}]
@@ -1111,7 +1095,7 @@ Should police be able to identify anyone, anywhere, anytime?
 These tensions cannot be fully ``resolved''---they must be navigated case by case.
 \end{frame}
 
-% Slide 46: Conclusion
+% Slide 44: Conclusion
 \begin{frame}[allowframebreaks]{Key Concepts}
 \footnotesize
 \begin{description}
@@ -1126,6 +1110,13 @@ These tensions cannot be fully ``resolved''---they must be navigated case by cas
 \begin{discussionbox}[Discussion]
 Where do you draw the line? What surveillance, if any, is acceptable in a free society?
 \end{discussionbox}
+\end{frame}
+
+% ============================================================
+% BIBLIOGRAPHY
+% ============================================================
+\begin{frame}[allowframebreaks]{References}
+\printbibliography[heading=none]
 \end{frame}
 
 \end{document}

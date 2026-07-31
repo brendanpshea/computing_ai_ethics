@@ -102,7 +102,7 @@ What gives money its value if it's not backed by gold?
 \begin{column}{0.47\textwidth}
 \begin{figure}
 \includegraphics[width=\textwidth,height=0.65\textheight,keepaspectratio]{images/lydian_coin.jpg}
-\caption*{\scriptsize Lydian electrum coin (\textit{trite}), c.\ 620--600 BCE. Public domain.}
+\caption{\scriptsize Lydian electrum coin (\textit{trite}), c.\ 620--600 BCE. Public domain.}
 \end{figure}
 \end{column}
 \end{columns}
@@ -288,24 +288,27 @@ Pseudonymity $\neq$ anonymity. Blockchain analysis can often identify users.
 \end{frame}
 
 % Slide 10: Bitcoin - The Original
-\begin{frame}{Bitcoin---The Original Cryptocurrency}
+\begin{frame}[shrink=10]{Bitcoin---The Original Cryptocurrency}
 Created \textbf{January 3, 2009} by ``Satoshi Nakamoto'' \parencite{nakamoto_bitcoin} (pseudonymous, identity unknown).
 
 \begin{quotebox}
 Genesis block message: ``The Times 03/Jan/2009 Chancellor on brink of second bailout for banks''
 \end{quotebox}
 
-\vspace{0.3em}
+\vspace{0.2em}
 \textbf{Key properties:}
 \begin{itemize}
-    \item Maximum supply: 21 million BTC (ever)
-    \item ``Halving'' every $\sim$4 years reduces new supply
-    \item Emerged during 2008 financial crisis---not coincidental
-    \item Current market cap: \$2+ trillion
+    \item Maximum supply: 21 million BTC (ever); ``halving'' every $\sim$4 years reduces new supply
+    \item Emerged during the 2008 financial crisis---not coincidental
+    \item Market cap: roughly \$1.3 trillion (mid-2026), after peaking above \$2 trillion in late 2025
 \end{itemize}
 
+\vspace{0.1em}
+{\scriptsize Treat that last figure as a snapshot: the asset shed about a third of its value in six months. The \emph{volatility} is the ethically interesting property---a currency that swings 30\% in half a year is hard to use as a unit of account.}
+
 \begin{alertblock}{The Mystery}
-Satoshi disappeared in 2011. Estimated holdings: $\sim$1.1 million BTC (\$100--135 billion)---never moved.
+\scriptsize
+Satoshi disappeared in 2011. Estimated holdings: $\sim$1.1 million BTC---roughly \textbf{5\% of all Bitcoin that will ever exist}, unmoved since 2010. (Inferred from patterns in early blocks, not proof of ownership.)
 \end{alertblock}
 \end{frame}
 
@@ -328,7 +331,7 @@ Satoshi disappeared in 2011. Estimated holdings: $\sim$1.1 million BTC (\$100--1
 \begin{column}{0.47\textwidth}
 \begin{figure}
 \includegraphics[width=\textwidth,height=0.65\textheight,keepaspectratio]{images/yap_stone_money.jpg}
-\caption*{\scriptsize Rai (stone money), Yap, Federated States of Micronesia. Public domain.}
+\caption{\scriptsize Rai (stone money), Yap, Federated States of Micronesia. Public domain.}
 \end{figure}
 \end{column}
 \end{columns}
@@ -512,7 +515,7 @@ Sub-Saharan Africa & 58\% & +35\% \\
 \textbf{Global} & \textbf{79\%} & \textbf{+28\%} \\
 \bottomrule
 \end{tabular}
-\caption*{\scriptsize Source: World Bank Global Findex 2025}
+\caption{\scriptsize Source: World Bank Global Findex 2025}
 \end{table}
 \end{frame}
 
@@ -842,7 +845,7 @@ Cryptocurrency is the preferred payment for ransomware, darknet markets, money l
 \textbf{Total} & \textbf{\$6.75 billion} & Funds weapons programs \\
 \bottomrule
 \end{tabular}
-\caption*{\scriptsize Source: Chainalysis year-end data, Dec.\ 2025}
+\caption{\scriptsize Source: Chainalysis year-end data, Dec.\ 2025}
 \end{table}
 \vspace{-0.5em}
 {\small \textbf{Key Point}: State-sponsored hackers funding nuclear weapons development.}
@@ -1029,30 +1032,32 @@ Is crypto more like the internet (hard to regulate) or like banking (heavily reg
 \section{Part VI: The Future and Conclusion}
 
 % Slide 39: CBDCs
-\begin{frame}{Central Bank Digital Currencies (CBDCs)---A Middle Path?}
+\begin{frame}[shrink=12]{Central Bank Digital Currencies (CBDCs)---A Middle Path?}
 \textbf{CBDCs}: Digital currency issued by central banks. Adopts crypto's technology while rejecting its philosophy.
 
 \vspace{0.2em}
 \begin{table}[h]
 \centering
 \footnotesize
-\begin{tabular}{@{}llp{5cm}@{}}
+\begin{tabular}{@{}llp{5.4cm}@{}}
 \toprule
 \textbf{Country} & \textbf{Status} & \textbf{Notes} \\
 \midrule
-Bahamas & Launched (2020) & Sand Dollar---first CBDC \\
-Jamaica & Launched (2022) & JAM-DEX \\
-China & Pilot & e-CNY: 260M wallets, 7T yuan in transactions \\
-EU & Preparation & Digital Euro in development \\
-\textbf{USA} & \textbf{Banned} & Trump executive order (Jan 2025) \\
+Bahamas & Launched (2020) & Sand Dollar---first CBDC; under 1\% of currency in circulation \\
+Jamaica & Launched (2022) & JAM-DEX; stalled on merchant terminals \\
+Nigeria & Launched (2021) & eNaira: $\sim$13M wallets, \textbf{98.5\% never used} \\
+China & Pilot & e-CNY: 230M personal wallets \\
+EU & In negotiation & Digital Euro: pilot 2027, issuance 2029 at the earliest \\
+\textbf{USA} & \textbf{Prohibited} & By executive order (2025); statutory ban still pending \\
 \bottomrule
 \end{tabular}
-\caption*{\footnotesize Source: Atlantic Council CBDC Tracker (134 jurisdictions exploring)}
+\caption{\scriptsize Atlantic Council CBDC Tracker ($\sim$146 jurisdictions exploring, mid-2026)}
 \end{table}
 
-\textbf{Potential benefits}: Financial inclusion, payment efficiency, monetary policy tools.
+{\scriptsize \textbf{Benefits}: financial inclusion, payment efficiency, monetary policy tools. \textbf{Concerns}: \textbf{total financial surveillance}, programmable restrictions.
 
-\textbf{Concerns}: \textbf{Total financial surveillance}, programmable restrictions, negative interest rates.
+\vspace{0.1em}
+\textbf{Note the pattern}: all three countries that launched a retail CBDC struggle with adoption. Nigeria repositioned the eNaira as back-end infrastructure in 2026, while a \emph{privately} issued naira stablecoin gained traction voluntarily. Can adoption be mandated?}
 \end{frame}
 
 % Slide 40: Conclusion
@@ -1071,6 +1076,13 @@ EU & Preparation & Digital Euro in development \\
 \begin{discussionbox}[Discussion]
 After considering all arguments, what's your view? Should crypto be banned, regulated, or left alone?
 \end{discussionbox}
+\end{frame}
+
+% ============================================================
+% BIBLIOGRAPHY
+% ============================================================
+\begin{frame}[allowframebreaks]{References}
+\printbibliography[heading=none]
 \end{frame}
 
 \end{document}

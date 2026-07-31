@@ -285,7 +285,7 @@ This objection---that machines merely follow instructions---remains central to d
 \begin{column}{0.47\textwidth}
 \begin{figure}
 \includegraphics[width=\textwidth,height=0.65\textheight,keepaspectratio]{images/alan_turing.jpg}
-\caption*{\scriptsize Alan Turing, aged 16, c.\ 1928. Turing family. Public domain.}
+\caption{\scriptsize Alan Turing, aged 16, c.\ 1928. Turing family. Public domain.}
 \end{figure}
 \end{column}
 \end{columns}
@@ -591,7 +591,9 @@ Systems that predict what you'll want to see, buy, or do.
 2018 & GPT-1, BERT demonstrate transfer learning for language \\
 2020 & GPT-3 shows emergent capabilities at scale \\
 2022 & ChatGPT launches; DALL-E 2, Stable Diffusion for images \\
-2023--25 & GPT-4, Claude, Gemini; multimodal models; AI agents and assistants \\
+2023--24 & GPT-4, Claude, Gemini; multimodal models become standard \\
+2025 & \textbf{Reasoning models}: capability starts scaling with thinking time at the moment of use, not just with training. Open-weight models match closed ones at a fraction of the cost \\
+2026 & \textbf{Agents}: systems that operate software and act, rather than only answer. Release cycles compress to weeks \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -601,9 +603,20 @@ Systems that predict what you'll want to see, buy, or do.
 
 \vspace{0.2em}
 \textbf{Open question}: Are these systems intelligent, or are they sophisticated pattern matchers? Do they ``understand'' anything, or merely predict plausible next tokens?
+\end{frame}
+
+\begin{frame}{Two Changes Worth Naming}
+\begin{block}{1. Capability stopped staying put}
+In January 2025 a capable \textbf{open-weight} model---free to download and run---matched the leading closed systems at a small fraction of their cost. Nvidia lost roughly \textbf{\$600 billion} in market value in a single trading day, the largest one-day loss in market history. The assumption that frontier capability stays locked inside a few well-resourced labs no longer holds.
+\end{block}
 
 \vspace{0.2em}
-This question returns us to the classical debates...
+\begin{alertblock}{2. Capability started constraining release}
+In 2026, for the first time, labs and governments withheld systems \emph{because of what they could do}: one lab declined to release a model over its autonomous cyber-exploitation ability, and the US government asked another to stagger a rollout pending federal evaluation.
+\end{alertblock}
+
+\vspace{0.2em}
+These two pull in opposite directions---one disperses capability, the other tries to contain it. Both will matter when we reach questions of governance and risk.
 \end{frame}
 
 %% PART III: CLASSICAL DEBATES %%
@@ -728,7 +741,7 @@ Is behavioral equivalence sufficient for attributing thought?
 \begin{column}{0.47\textwidth}
 \begin{figure}
 \includegraphics[width=\textwidth,height=0.65\textheight,keepaspectratio]{images/ada_lovelace.jpg}
-\caption*{\scriptsize Ada Lovelace, daguerreotype by Antoine Claudet, c.\ 1843. Public domain.}
+\caption{\scriptsize Ada Lovelace, daguerreotype by Antoine Claudet, c.\ 1843. Public domain.}
 \end{figure}
 \end{column}
 \end{columns}
@@ -1329,6 +1342,13 @@ How we define AI shapes how we regulate it, deploy it, and hold people accountab
 \begin{discussionbox}[Discussion]
 How would \emph{you} define artificial intelligence---and does your definition commit you to any position on Lovelace, Turing, or Searle?
 \end{discussionbox}
+\end{frame}
+
+% ============================================================
+% BIBLIOGRAPHY
+% ============================================================
+\begin{frame}[allowframebreaks]{References}
+\printbibliography[heading=none]
 \end{frame}
 
 \end{document}
