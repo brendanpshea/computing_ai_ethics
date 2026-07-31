@@ -10,11 +10,12 @@ Quick reference for building lecture PDFs and Word (docx) chapter downloads.
 latex/       LaTeX sources (.tex files, lecture_preamble, bibliography)
 html/        Authored HTML chapters
 images/      Shared image assets (used by LaTeX, HTML, and docx builds)
-scripts/     Build scripts (build-docx.js, make-reference-docx.py, etc.)
-PDFs/        Generated lecture PDFs
+scripts/     Build and check tooling (build-pdfs.sh, build-docx.js,
+             check-chapters.py, make-reference-docx.py, etc.)
+PDFs/        Generated lecture PDFs (not tracked in git)
 docx/        Generated Word chapter downloads
-refs.bib     Shared bibliography (LaTeX and docx pipelines)
-build.ps1    LaTeX build script (root)
+refs.bib     Shared bibliography (LaTeX slides, HTML chapters, docx pipeline)
+build.ps1    LaTeX build script, Windows (root)
 package.json Node tooling for docx build (root)
 ```
 
@@ -33,6 +34,23 @@ All scripts are run from the **project root**.
 .\build.ps1 -Force          # rebuild everything regardless of timestamps
 .\build.ps1 -NoCleanup      # keep .aux/.log files in PDFs/ for debugging
 ```
+
+On Linux and macOS, use the portable equivalent instead:
+
+```bash
+./scripts/build-pdfs.sh     # all 12 decks
+./scripts/build-pdfs.sh 4   # lecture 4 only
+```
+
+It runs the same `pdflatex` → `biber` → `pdflatex` × 2 pipeline and exits
+nonzero if any deck fails or reports an undefined citation. It always rebuilds
+(no incremental skip) and does not parallelise — `build.ps1` remains the faster
+option on Windows.
+
+`biber` needs to find `refs.bib` at the project root, so both scripts set
+`BIBINPUTS`/run from the root. If you invoke `pdflatex` by hand, set
+`TEXINPUTS=./latex:` and `BIBINPUTS=<project root>:` or biber will report
+"Cannot find 'refs.bib'".
 
 ### What it does
 
@@ -95,10 +113,17 @@ a branch"**, **Branch = `gh-pages`**, folder **`/ (root)`**.
 .\deploy-pages.ps1 -SkipBuild   # publish the PDFs already in PDFs/
 ```
 
-The script runs `build.ps1`, copies the site (`index.html`, `PDFs/`, `html/`,
-`images/`, `docx/`) into a throwaway repo, adds `.nojekyll`, and force-pushes it
-to `gh-pages`. `main` never carries the built PDFs; `gh-pages` is overwritten
-each run.
+The script runs `build.ps1`, copies the site (`index.html`, `refs.bib`, `PDFs/`,
+`html/`, `images/`, `docx/`) into a throwaway repo, adds `.nojekyll`, and
+force-pushes it to `gh-pages`. `main` never carries the built PDFs; `gh-pages` is
+overwritten each run.
+
+> **`refs.bib` has to ship with the site.** `cite.js` fetches `../refs.bib` at
+> runtime to render every inline citation and build each chapter's reference
+> list. It was missing from the publish list until July 2026, which meant every
+> citation on the live site silently failed and every bibliography rendered
+> empty — with no error anywhere in the build. If you change the include list,
+> keep it.
 
 > **First-time rollout order:** (1) run `.\deploy-pages.ps1`, (2) switch the
 > Pages source to `gh-pages`, (3) then `git push` main. Pushing main first would

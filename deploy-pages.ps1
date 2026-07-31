@@ -48,7 +48,10 @@ if (-not $remote) { throw "No 'origin' remote configured." }
 
 # Everything the published pages reference. html/ carries its own css/js and
 # quiz-data/; chapters load ../images/... so images/ must sit at the site root.
-$include = @('index.html', 'PDFs', 'html', 'images', 'docx')
+# refs.bib is required too: cite.js fetches '../refs.bib' at runtime to render
+# every inline citation and build each chapter's reference list. Without it the
+# citations silently fail and every bibliography renders empty.
+$include = @('index.html', 'refs.bib', 'PDFs', 'html', 'images', 'docx')
 
 $staging = Join-Path ([IO.Path]::GetTempPath()) ("ghpages_" + [Guid]::NewGuid().ToString('N'))
 New-Item -ItemType Directory -Force $staging -ErrorAction Stop | Out-Null
