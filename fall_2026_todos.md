@@ -315,7 +315,7 @@ material would have been **marked wrong**. Sixteen corrections across eight quiz
 
 ## Still open on the chapters
 
-- **Chapter length.** Every chapter now runs 8,800–12,000 words against a `CHAPTER_GUIDELINES.md` §12 target of 4,000–7,000. They were already over before this pass (6,000–8,900); the sync material only added. **Either the guideline should be revised to describe actual practice, or a deliberate trimming pass is needed** — that is an editorial call, so nothing was cut.
+- **Chapter length — trimming pass IN PROGRESS.** See the section below.
 - **Guidelines are stale in two places**: §4's file-naming table stops at Chapter 8 and lists `ch05_cryptography.html` / `ch07_ai_ethics.html`, neither of which is the real filename; §10 still describes an eight-chapter book.
 - A handful of claims were deliberately **softened rather than deleted** because they could not be verified — flagged in each chapter's working notes. The one most worth a human check is the Vallor line quoted from *The AI Mirror*, which came from secondary reporting rather than the book.
 - `ch07_ai_intro.html` keeps its filename (guidelines say `ch07_ai_ethics.html`); every sibling nav link points at the current name, so renaming would be a coordinated change.
@@ -326,3 +326,91 @@ All twelve chapters were rendered in a headless browser against a local server:
 **every one of the 254 `<cite data-key>` tags resolves**, and each chapter's
 reference list populates (7--31 entries). No unresolved-key markers and no
 JavaScript errors other than the blocked CDN noted above.
+
+
+---
+
+# Trimming pass — started 2026-07-31
+
+The author's verdict on the post-accuracy-pass chapters: **"students aren't going to
+read this much."** The measurements back that up.
+
+## What the numbers showed
+
+Chapters were **at** the style guide's ceiling before the accuracy pass and went 38%
+over it afterwards. The bloat is almost entirely from that pass, not pre-existing:
+
+| | words |
+|---|---|
+| Before the accuracy pass (12 chapters) | 86,431 — i.e. ~7,200 each, right at the §12 ceiling |
+| After it | 115,557 (**+29,126, +34%**) |
+| Guideline ceiling (7,000 x 12) | 84,000 |
+
+Where the 29,126 added words went:
+
+| element | added |
+|---|---|
+| running prose | +15,377 |
+| thought-questions boxes | +5,795 |
+| case studies | +4,071 |
+| key points | +1,179 |
+| definition boxes | +692 |
+| argument boxes | +653 |
+| key thinker cards | +588 |
+| objections / tables / pro-arguments | +771 |
+
+Individual elements are mostly **within** their per-element budgets (case studies
+average 247 words against a 300 ceiling; thinker cards average 194 against 250). The
+problem is volume and verbosity, not fat boxes — which means the cure is compression,
+not deletion.
+
+## Target
+
+**7,200 words per chapter** (86,400 total), i.e. back to roughly the pre-pass length
+while keeping every accuracy correction. Measure with
+`python3 scripts/check-chapters.py` for structure and a word count over `<main>`.
+
+## Done so far
+
+- **Thought-question boxes trimmed to three questions each** — 76 questions removed
+  across 11 chapters, **-2,443 words**. Every one of the 86 boxes was read first: the
+  question dropped was the most generic or the one duplicating a sibling, never the
+  one tied to a chapter's specific evidence or to a correction. (Several boxes' *last*
+  question is the sharpest, because the accuracy pass appended evidence-quality
+  questions — blind truncation would have destroyed the best material.)
+- Seven chapters also carry partial prose compression from an interrupted first
+  attempt; those edits are good and were kept.
+
+**Now at 112,477 words — still 26,077 over target.**
+
+## What remains, in priority order
+
+1. **Running prose (~15,000 of the overage).** The technique that works, from the
+   partial edits: collapse appositive asides, merge clauses, and delete sentences that
+   restate the one before. A worked example that loses nothing —
+   *before (60w):* "That estimate comes from a 2021 analysis by researchers at Google
+   and the University of California, Berkeley, not from OpenAI, which has never
+   published figures of its own; it describes a single training run of a model that is
+   now several generations old, and it tells us nothing about the far larger runs that
+   followed."
+   *after (28w):* "The estimate comes from outside researchers, not OpenAI, and covers
+   a single run of a model several generations old — it says nothing about the far
+   larger runs since."
+   Both caveats survive; institutional detail and a repeated clause go.
+2. **The 57 paragraphs over 150 words.** Median paragraph in the book is 84. These
+   hold ~10,100 words and most can lose a third.
+3. **Key Points bullets**, now averaging ~50 words each against a one-sentence
+   intent — roughly 2,500 words recoverable across the book.
+4. **Case studies over 250 words** — the Doomsday Clock (525w), Clearview (490w),
+   Australia (419w), and loot boxes (417w) are the worst.
+5. **Chapters 4 and 5 carry 8 and 6 case studies** against a §3 range of 3–5; the
+   weakest could fold into surrounding prose.
+
+## The rule that must not be broken
+
+**Never cut a hedge or a correction to save words.** The accuracy pass is the reason
+these chapters are trustworthy — every misattribution fixed, every "estimated"/"about"
+qualifier, every caveat that stops a claim from being false, and every `<cite>` tag
+stays. If a caveat is wordy, *compress* it. Chapters 1–12 each have a specific list of
+untouchable items; they are recorded in the trimming briefs and are recoverable from
+the corrections documented above.
