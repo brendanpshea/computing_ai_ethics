@@ -67,44 +67,40 @@
 
       <p>
         Most discussions of AI treat it as if it were pure information — weightless, placeless,
-        and detached from the physical world. We speak of "the cloud" as if computing happened
+        detached from the physical world. We speak of "the cloud" as if computing happened
         somewhere clean and frictionless, beyond geography and consequence. This framing is
         not just imprecise; it is ethically dangerous. It encourages us to evaluate AI purely
-        on the basis of what it produces — what a model outputs — while ignoring everything
-        required to make that output possible.
+        on what it produces while ignoring everything required to make that output possible.
       </p>
       <p>
         In reality, artificial intelligence is a material and social system. It requires
-        energy-intensive computation and cooling in massive data centers. It depends on water
-        to keep those data centers from overheating, and on land and electrical grid capacity
-        that must be competed for with other uses. It is built from minerals — cobalt, lithium,
-        copper, rare earths — extracted through global supply chains whose costs fall unevenly
-        on workers and communities far from where the AI is eventually used. It relies on human
-        labor at every stage: the workers who mine materials, the contractors who label training
-        data, the moderators who filter harmful content, the technicians who maintain physical
-        infrastructure. And when hardware is replaced — as it must be, on short upgrade cycles —
+        energy-intensive computation and cooling in massive data centers, water to keep those
+        centers from overheating, and land and grid capacity that must be competed for with
+        other uses. It is built from minerals — cobalt, lithium, copper, rare earths — extracted
+        through supply chains whose costs fall unevenly on communities far from where the AI is
+        used. It relies on human labor at every stage: miners, data labelers, content moderators,
+        technicians. And when hardware is replaced — as it must be, on short upgrade cycles —
         electronic waste creates new burdens that also fall unevenly.
       </p>
       <p>
-        A few concrete numbers make this vivid — though each one has to be handled carefully,
-        because environmental statistics about AI circulate much faster than they are checked.
-        Training GPT-3, OpenAI's 2020 language model, is estimated to have consumed about
-        1,287 megawatt-hours of electricity — roughly the annual electricity use of 120 American
-        homes — and to have emitted around 550 tonnes of CO₂. That estimate comes from a 2021
-        analysis by researchers at Google and the University of California, Berkeley
-        <cite data-key="patterson_carbon_2021"></cite>, not from
-        OpenAI, which has never published figures of its own; it describes a single training run
-        of a model that is now several generations old, and it tells us nothing about the far
-        larger runs that followed. Microsoft reported consuming roughly 6.4 million cubic meters
-        of water in 2022, a 34% increase over the previous year, most of it for cooling its cloud
-        data centers; in July 2022 alone its cluster outside West Des Moines, Iowa drew about
-        11.5 million gallons — around 6% of the surrounding water district's total for the month.
-        The Democratic Republic of Congo, one of the world's poorest countries, supplies roughly
-        three-quarters of the world's mined cobalt — a metal used in the lithium-ion batteries
-        that power both the devices through which we reach AI systems and the backup power supplies
-        data centers depend on — often from mines with severe safety and environmental problems.
-        The people typing chatbot queries in San Francisco or Singapore are connected to these
-        realities by supply chains carefully designed not to be visible.
+        A few concrete numbers make this vivid — though each has to be handled carefully, because
+        environmental statistics about AI circulate much faster than they are checked. Training
+        GPT-3, OpenAI's 2020 language model, is estimated to have consumed about 1,287
+        megawatt-hours of electricity — roughly the annual use of 120 American homes — and to
+        have emitted around 550 tonnes of CO₂. The estimate comes from outside researchers
+        <cite data-key="patterson_carbon_2021"></cite>, not OpenAI, and covers a single run of a
+        model several generations old — it says nothing about the far larger runs since.
+      </p>
+      <p>
+        Microsoft reported consuming roughly 6.4 million cubic meters of water company-wide in
+        2022, a 34% increase over the previous year, most of it cooling its cloud data centers;
+        in July 2022 alone its cluster outside West Des Moines, Iowa drew about 11.5 million
+        gallons — around 6% of that water district's total for the month. And the Democratic
+        Republic of Congo, one of the world's poorest countries, supplies roughly three-quarters
+        of the world's mined cobalt — the metal in the lithium-ion batteries behind both our
+        devices and data centers' backup power — often from mines with severe safety and
+        environmental problems. The people typing chatbot queries in San Francisco or Singapore
+        are connected to these realities by supply chains designed not to be visible.
       </p>
 
       <div class="definition-box">
@@ -134,22 +130,20 @@
       <p>
         A key feature of AI's social and environmental impacts is that they are
         <strong>distributed, delayed, and offloaded</strong>. A single chatbot query feels
-        trivial to the person who types it. Multiplied across millions of users and billions
-        of daily interactions, it becomes a significant infrastructure load. The benefits of
-        that query are immediate and visible — a faster answer, a completed task, a convenience.
-        The costs are indirect and dispersed: a marginal increase in electricity demand, a
-        fractional draw on water used for cooling, a small contribution to hardware wear that
-        will eventually require replacement.
+        trivial to the person who types it; multiplied across billions of daily interactions,
+        it becomes a significant infrastructure load. The benefits of that query are immediate
+        and visible — a faster answer, a completed task. The costs are indirect and dispersed:
+        a marginal increase in electricity demand, a fractional draw on cooling water, a small
+        contribution to hardware wear.
       </p>
       <p>
         This structure — immediate, visible benefits; delayed, dispersed, often invisible
-        costs — is a recurring feature of environmental and social harms. It makes them
-        genuinely difficult to evaluate through ordinary individual decision-making, because
-        no individual's choice looks significant in isolation. This is precisely why
-        <strong>institutional ethics</strong> — collective standards enforced through regulation,
-        procurement policy, reporting requirements, and democratic oversight — is necessary.
-        Individual consumers choosing "greener" AI products is not a substitute for systemic
-        accountability.
+        costs — is a recurring feature of environmental and social harms, and it is genuinely
+        difficult to evaluate through individual decision-making, because no individual's choice
+        looks significant in isolation. This is precisely why <strong>institutional ethics</strong>
+        — collective standards enforced through regulation, procurement policy, reporting
+        requirements, and democratic oversight — is necessary. Consumers choosing "greener" AI
+        products is not a substitute for systemic accountability.
       </p>
 
       <figure>
@@ -185,18 +179,16 @@ flowchart LR
       </div>
 
       <p>
-        In plain English: the argument says that AI's costs are not merely large but
-        <em>misdirected</em>. Economists call this an <strong>externality</strong> — a cost of
-        producing something that is borne by someone outside the transaction. If a firm builds a
-        data center and its neighbors absorb the noise, the water draw, and the higher electricity
-        prices, those neighbors are paying part of the price of a product they may never use. The
-        third premise is the one that does the real work. It is not an accusation of bad faith;
-        it is a claim about incentives. Even a scrupulous company that genuinely wants to minimize
-        harm has no market signal telling it how much harm it is causing in a Congolese mining town,
-        because that harm never appears on its balance sheet. The fourth premise turns the economics
-        into ethics. And the conclusion explains why the chapter keeps returning to institutions:
-        externalities are, by definition, the kind of problem that individual choices cannot solve,
-        because the whole difficulty is that the chooser is not the payer.
+        In plain English: AI's costs are not merely large but <em>misdirected</em>. Economists
+        call this an <strong>externality</strong> — a cost of producing something that is borne
+        by someone outside the transaction. If a firm builds a data center and its neighbors
+        absorb the noise, the water draw, and the higher electricity prices, those neighbors are
+        paying part of the price of a product they may never use. The third premise does the real
+        work, and it is not an accusation of bad faith but a claim about incentives: even a
+        scrupulous company has no market signal telling it how much harm it is causing in a
+        Congolese mining town, because that harm never appears on its balance sheet. Externalities
+        are, by definition, the kind of problem individual choices cannot solve, because the
+        chooser is not the payer.
       </p>
 
       <div class="key-thinker">
@@ -215,23 +207,18 @@ flowchart LR
             the Planetary Costs of Artificial Intelligence</em> is the most comprehensive critical
             account of AI as a material system. <cite data-key="crawford_atlas_ai"></cite> Crawford
             physically visited the sites that make AI possible — lithium mines in Nevada, data
-            centers in the American West, Amazon warehouses, and computer recycling facilities in
-            Asia — to document what the smooth marketing language of "the cloud" obscures.
+            centers in the American West, Amazon warehouses, computer recycling facilities in
+            Asia — to document what the marketing language of "the cloud" obscures.
           </p>
           <p>
-            Crawford argues that AI is not a neutral technology but a system that extends and
-            amplifies existing structures of power and extraction. The same firms that promise
-            AI will solve problems of efficiency and climate are driving extraordinary demand for
-            energy, minerals, and labor. The same systems that promise objectivity and fairness
-            encode the classifications and hierarchies of the datasets on which they were trained.
-            Crawford does not argue that AI is simply bad — she argues that it cannot be understood
-            or governed without understanding what it is materially and politically.
-          </p>
-          <p>
-            Crawford's work is part of a broader turn in AI criticism away from speculative futures
-            (superintelligence, robot uprisings) and toward the present and mundane: the supply
-            chains, labor conditions, energy politics, and institutional structures that AI systems
-            depend on today.
+            Crawford argues that AI is not a neutral technology but a system that extends existing
+            structures of power and extraction. The same firms promising AI will solve problems of
+            efficiency and climate are driving extraordinary demand for energy, minerals, and labor;
+            the same systems promising objectivity encode the hierarchies of the datasets they were
+            trained on. She does not argue that AI is simply bad — she argues that it cannot be
+            understood or governed without understanding what it is materially and politically.
+            Her work is part of a broader turn in AI criticism away from speculative futures
+            (superintelligence, robot uprisings) toward the present and mundane.
           </p>
         </div>
       </div><!-- /.key-thinker -->
@@ -268,13 +255,12 @@ flowchart LR
       <h2 id="s2-heading">Part II: Environment and Climate Change</h2>
 
       <p>
-        AI's relationship to the environment is genuinely two-sided — and the complexity of
-        that relationship is itself ethically important. AI systems contribute to environmental
-        problems through their energy and material demands. They may also help address
-        environmental problems through better prediction, monitoring, and resource management.
-        Understanding both sides, and the conditions under which each claim holds, is more
-        useful than either dismissing AI's environmental costs or accepting uncritically the
-        claims of "AI for climate."
+        AI's relationship to the environment is genuinely two-sided, and that complexity is
+        itself ethically important. AI systems contribute to environmental problems through their
+        energy and material demands; they may also help address them through better prediction,
+        monitoring, and resource management. Understanding both sides, and the conditions under
+        which each claim holds, is more useful than either dismissing AI's environmental costs
+        or accepting the claims of "AI for climate" uncritically.
       </p>
 
       <h3>AI's Environmental Footprint</h3>
@@ -319,88 +305,80 @@ flowchart LR
       </div>
 
       <p>
-        The International Energy Agency (IEA) has become the standard reference for the
-        electricity side of this picture. Its April 2025 report <em>Energy and AI</em> put
-        global data-center electricity use at roughly 415 TWh in 2024 — about 1.5% of world
-        electricity consumption. <cite data-key="iea_energy_and_ai_2025"></cite> Ten months
-        later, its <em>Electricity 2026</em> report raised the 2025 figure to about 485 TWh:
-        data-center demand grew roughly 17% in a single year, against about 3% growth in global
-        electricity demand overall. <cite data-key="iea_electricity_2026"></cite> The IEA
-        projects that data-center consumption will roughly double to about 950 TWh by 2030,
-        around 3% of global electricity. Within that total, the AI-specific share is growing
-        much faster than data centers as a whole: electricity use by AI-focused data centers
-        surged roughly 50% in 2025 alone and is projected to triple by 2030. The concentration
-        is starker still in the United States, where data centers account for close to
-        <em>half</em> of all projected growth in electricity demand through 2030. For emissions,
-        the IEA's earlier accounting attributed around 330 Mt CO₂e in 2020 to data centers and
-        data transmission networks together — about 0.9% of energy-related greenhouse-gas
-        emissions — a baseline that predates most of the current build-out.
-        <cite data-key="iea_data_centres_2023"></cite>
+        The International Energy Agency (IEA) is the standard reference for the electricity side
+        of this picture. Its April 2025 report <em>Energy and AI</em> put global data-center
+        electricity use at roughly 415 TWh in 2024 — about 1.5% of world consumption.
+        <cite data-key="iea_energy_and_ai_2025"></cite> Ten months later, its <em>Electricity
+        2026</em> report raised the 2025 figure to about 485 TWh: data-center demand grew roughly
+        17% in a single year, against about 3% growth in global electricity demand overall.
+        <cite data-key="iea_electricity_2026"></cite> The IEA projects consumption will roughly
+        double to about 950 TWh by 2030, around 3% of global electricity, with the AI-specific
+        share growing fastest — up roughly 50% in 2025 alone, projected to triple by 2030. In the
+        United States, data centers account for close to <em>half</em> of all projected growth in
+        electricity demand through 2030. For emissions, the IEA's earlier accounting attributed
+        around 330 Mt CO₂e in 2020 to data centers and transmission networks together — about
+        0.9% of energy-related greenhouse-gas emissions, a baseline predating most of the current
+        build-out. <cite data-key="iea_data_centres_2023"></cite>
       </p>
       <p>
-        Two features of these numbers deserve attention, because they teach something about how
-        to read a forecast. The first is that between the two IEA reports the headline 2030
-        projection barely moved — from roughly 945 TWh to roughly 950 TWh — while the near-term
-        baseline rose substantially. The destination stayed put; the starting point caught up to
-        it. A reader who saw only the 2026 headline might conclude that the outlook had worsened
-        dramatically, when in fact the agency's view of 2030 was almost unchanged. The second is
-        that the 2026 report puts unusual emphasis on bottlenecks. More than 2,500 GW of projects
-        — renewables, storage, and large loads such as data centers — sit stalled in grid
-        connection queues worldwide, and the IEA treats supply-chain and grid constraints as a
-        real brake on the more aggressive growth scenarios. A projection is not a prediction. It
-        is a statement about what would happen if a trend met no obstacles, and here the obstacles
+        Two features of these numbers teach something about how to read a forecast. First, between
+        the two IEA reports the headline 2030 projection barely moved — from roughly 945 TWh to
+        roughly 950 TWh — while the near-term baseline rose substantially. The destination stayed
+        put; the starting point caught up to it. A reader who saw only the 2026 headline might
+        conclude the outlook had worsened dramatically, when the agency's view of 2030 was almost
+        unchanged. Second, the 2026 report emphasizes bottlenecks: more than 2,500 GW of projects
+        sit stalled in grid connection queues worldwide, and the IEA treats supply-chain and grid
+        constraints as a real brake on the more aggressive growth scenarios. A projection is not a
+        prediction. It states what would happen if a trend met no obstacles, and here the obstacles
         are visible.
       </p>
       <p>
         These numbers are neither trivial nor catastrophic in isolation. What makes them
         politically significant is their context: they compound existing pressures on
-        already-stressed energy and water systems, and they are growing at a time when
-        the same systems are being asked to support a transition to renewable energy.
+        already-stressed energy and water systems, at a time when those same systems are
+        being asked to support a transition to renewable energy.
       </p>
 
       <div class="case-study">
         <p class="box-label">Case Study</p>
         <p class="box-title">Data Centers and Water in West Des Moines, Iowa (2022–2026)</p>
         <p>
-          Microsoft operates a cluster of data centers in West Des Moines, Iowa, built next to
-          cornfields on the western edge of the metro area. In July 2022 — the month before
-          OpenAI says it finished training GPT-4 on Microsoft hardware — the cluster drew
-          about 11.5 million gallons of water, roughly 6% of everything the West Des Moines
-          Water Works supplied that month. The figure comes from the utility's own records,
-          obtained and reported by the Associated Press in 2023. Evaporative cooling towers
-          are cheap and effective, but they consume the water they use: it leaves as vapor
-          rather than returning to the system.
+          Microsoft operates a cluster of data centers in West Des Moines, Iowa. In July 2022 —
+          the month before OpenAI says it finished training GPT-4 on Microsoft hardware — the
+          cluster drew about 11.5 million gallons of water, roughly 6% of everything the West Des
+          Moines Water Works supplied that month, according to the utility's own records, obtained
+          and reported by the Associated Press in 2023. Evaporative cooling towers are cheap and
+          effective, but they consume the water they use: it leaves as vapor.
         </p>
         <p>
-          The city responded not by refusing data centers but by setting a condition. In 2023
-          West Des Moines told Microsoft it would approve additional facilities only if the
-          company could substantially reduce peak water demand. In 2024 Microsoft announced a
-          closed-loop design that circulates the same water between servers and chillers and
-          consumes almost none of it; the design began piloting in 2026, and the next West Des
-          Moines buildings are slated to use it. Local regulatory pressure, not corporate
-          conscience alone, produced the change.
+          The city responded not by refusing data centers but by setting a condition. In 2023 it
+          told Microsoft it would approve additional facilities only if the company substantially
+          reduced peak water demand. In 2024 Microsoft announced a closed-loop design that
+          circulates the same water between servers and chillers and consumes almost none of it;
+          it began piloting in 2026, and the next West Des Moines buildings are slated to use it.
+          Local regulatory pressure, not corporate conscience alone, produced the change.
         </p>
         <p>
           The case also carries a warning about evidence. In June 2025, and again in June 2026,
-          central Iowa's water utility imposed mandatory lawn-watering bans, and a great deal of
-          online commentary blamed the data centers. It was not the data centers. The bans were
-          triggered by near-record nitrate concentrations in the Raccoon and Des Moines rivers,
-          driven by agricultural runoff. Both things are true at once: the water draw was real
-          and large enough to change municipal policy, <em>and</em> the most viral local water
-          story of those years had a different cause. Getting AI's environmental ethics right
-          requires holding both facts, not choosing the more satisfying one.
+          central Iowa's water utility imposed mandatory lawn-watering bans, and much online
+          commentary blamed the data centers. It was not the data centers. The bans were triggered
+          by near-record nitrate concentrations in the Raccoon and Des Moines rivers, driven by
+          agricultural runoff. Both things are true at once: the water draw was real and large
+          enough to change municipal policy, <em>and</em> the most viral local water story of those
+          years had a different cause. Getting AI's environmental ethics right requires holding
+          both facts, not choosing the more satisfying one.
         </p>
       </div>
 
       <h3>The Rebound Problem</h3>
 
       <p>
-        A common response to concerns about AI's energy footprint is that models are
-        becoming more efficient — each query costs less energy than it did a year ago.
-        This is true, but it does not follow that total energy use is declining. The
-        <strong>rebound effect</strong> — also called the Jevons paradox — describes
-        a well-documented pattern in which efficiency improvements lead to higher total
-        resource use because cheaper systems are deployed more widely.
+        A common response to concerns about AI's energy footprint is that models are becoming
+        more efficient — each query costs less energy than it did a year ago. True, but it does
+        not follow that total energy use is declining. The <strong>rebound effect</strong> — also
+        called the Jevons paradox — describes a well-documented pattern in which efficiency
+        improvements lead to higher total resource use because cheaper systems are deployed
+        more widely.
       </p>
 
       <div class="definition-box">
@@ -416,18 +394,16 @@ flowchart LR
 
       <p>
         Applied to AI: as models become cheaper per query, firms integrate them into more
-        products at larger scales. The total volume of inference requests rises dramatically.
-        Aggregate electricity and hardware demand therefore still grows, even as unit costs
-        fall. This is why "smaller and cheaper models" cannot be straightforwardly celebrated
-        as an environmental solution: lower unit cost may simply mean more total use. History
-        offers precise analogies. When fuel-efficient cars were introduced after the 1970s oil
-        crisis, total gasoline consumption did not fall proportionately — Americans drove more
-        miles because driving was cheaper. When LED lighting replaced incandescent bulbs,
-        total light consumption increased because lights were installed in more places and left
-        on longer. When jet engines became more efficient, the number of flights increased
-        dramatically, and total aviation fuel burn grew. In each case, the efficiency gain was
-        real; the resource savings were partially or entirely offset by expanded use. AI
-        efficiency improvements are subject to the same dynamic.
+        products at larger scales, the total volume of inference requests rises dramatically,
+        and aggregate electricity and hardware demand still grows even as unit costs fall. This
+        is why "smaller and cheaper models" cannot be straightforwardly celebrated as an
+        environmental solution. History offers precise analogies. Fuel-efficient cars after the
+        1970s oil crisis did not cut gasoline consumption proportionately — Americans drove more
+        miles because driving was cheaper. LED lighting increased total light consumption, because
+        lights went into more places and stayed on longer. More efficient jet engines were followed
+        by far more flights and greater total fuel burn. In each case the efficiency gain was real;
+        the savings were partly or entirely offset by expanded use. AI is subject to the same
+        dynamic.
       </p>
 
       <div class="argument-box">
@@ -447,38 +423,33 @@ flowchart LR
       </div>
 
       <p>
-        The argument is worth stating carefully because it is easy to overstate. It does
-        <em>not</em> say that efficiency is bad, or that improving a model's energy profile is
-        pointless. It says that efficiency and reduction are two different things, and that the
-        first does not automatically deliver the second. Premise 3 contains a genuine empirical
-        condition — "if total use expands faster than efficiency improves" — and that condition
-        can fail. Refrigerator efficiency standards, for instance, did cut household refrigeration
-        energy in absolute terms, because there is a natural ceiling on how many refrigerators a
-        household wants. The worry about AI is that no such ceiling is in view: there is no obvious
-        limit to how many tasks a firm might route through a model once each one costs a fraction
-        of a cent. The practical upshot is a test you can apply to any corporate sustainability
-        claim. If a company reports that its emissions per query fell 40%, ask the next question:
-        what happened to the number of queries?
+        The argument is easy to overstate. It does <em>not</em> say efficiency is bad, only that
+        efficiency and reduction are two different things and the first does not automatically
+        deliver the second. Premise 3 contains a genuine empirical condition — "if total use
+        expands faster than efficiency improves" — and that condition can fail. Refrigerator
+        efficiency standards did cut household refrigeration energy in absolute terms, because
+        there is a ceiling on how many refrigerators a household wants. The worry about AI is that
+        no such ceiling is in view once each task costs a fraction of a cent. The practical upshot
+        is a test for any corporate sustainability claim: if a company reports that emissions per
+        query fell 40%, ask what happened to the number of queries.
       </p>
 
       <p>
-        There is also an important distinction between the costs of <strong>training</strong>
-        and <strong>inference</strong>. Early public discussion focused on the spectacular
-        energy cost of training large frontier models — a one-time or periodic event visible
-        to the public when labs publish training runs. But evidence suggests that inference
-        — running the model to answer actual queries — represents the larger long-run burden,
-        because it scales with mass adoption. The environmental story of AI is therefore not
-        primarily about a few dramatic training events; it is about what happens when AI
-        becomes ordinary infrastructure embedded in search, office software, medicine, and
-        government services.
+        There is also an important distinction between <strong>training</strong> and
+        <strong>inference</strong>. Early public discussion focused on the spectacular energy cost
+        of training frontier models. But evidence suggests inference — running the model to answer
+        actual queries — is the larger long-run burden, because it scales with mass adoption. AI's
+        environmental story is not primarily about a few dramatic training events; it is about what
+        happens when AI becomes ordinary infrastructure embedded in search, office software,
+        medicine, and government services.
       </p>
 
       <h3>AI for Climate: A Comparative Judgment</h3>
 
       <p>
-        AI is also being actively developed and deployed for climate applications — and this
-        is not merely marketing. There are genuine use cases where AI can help reduce emissions
-        or adapt to a changing climate.
+        AI is also being deployed for climate applications, and this is not merely marketing.
+        There are genuine use cases where AI can help reduce emissions or adapt to a changing
+        climate.
       </p>
 
       <div class="pro-argument">
@@ -538,24 +509,22 @@ flowchart LR
       </div>
 
       <p>
-        This argument is the reason the chapter refuses both of the available slogans. "AI is
-        an environmental disaster" and "AI will save the climate" are claims about a category
-        that contains wildfire detection systems, protein-folding models, warehouse routing
-        software, and tools for generating advertising copy. Those things have almost nothing in
-        common except the technique used to build them. Premise 4 is a familiar principle of
-        practical reasoning — you would apply it without hesitation to a decision about whether
-        a medical procedure's risks are worth its benefits — and applying it here forces the
-        comparison to be made case by case.
+        This is why the chapter refuses both available slogans. "AI is an environmental disaster"
+        and "AI will save the climate" are claims about a category containing wildfire detection
+        systems, protein-folding models, warehouse routing software, and tools for generating
+        advertising copy — things with almost nothing in common except the technique used to build
+        them. Premise 4 is a familiar principle of practical reasoning, one you would apply without
+        hesitation to whether a medical procedure's risks are worth its benefits, and applying it
+        here forces the comparison to be made case by case.
       </p>
 
       <p>
-        Two cautions follow. First, the argument sets a standard that is genuinely demanding:
-        to run it, someone has to measure both the costs and the averted harms, and firms
-        currently disclose far more about the second than the first. Second, the argument is
-        silent about distribution. A system could pass the comparative test in aggregate while
-        the harms fall on one population and the benefits on another — which is precisely what
-        the Externalized Cost Argument warned about. Comparative justification is necessary here,
-        but it is not sufficient.
+        Two cautions follow. The standard is demanding: someone has to measure both the costs and
+        the averted harms, and firms currently disclose far more about the second than the first.
+        And the argument is silent about distribution — a system could pass the comparative test
+        in aggregate while the harms fall on one population and the benefits on another, which is
+        precisely what the Externalized Cost Argument warned about. Comparative justification is
+        necessary, but not sufficient.
       </p>
 
       <div class="thought-questions">
@@ -590,13 +559,12 @@ flowchart LR
       <h2 id="s3-heading">Part III: Medicine and Research</h2>
 
       <p>
-        Medicine is often presented as AI's strongest case — the domain where the technology's
-        benefits are most tangible, most clearly in the public interest, and most difficult to
-        dismiss as mere convenience or commercial gain. A model that helps a radiologist catch
-        a tumor she would have missed, or a drug-discovery system that identifies a promising
-        compound years faster than traditional methods, saves lives in a direct and comprehensible
-        way. This makes medical AI worth taking seriously on its merits — and worth subjecting
-        to rigorous critical examination, because the stakes of getting it wrong are correspondingly high.
+        Medicine is often presented as AI's strongest case — the domain where the benefits are
+        most tangible and hardest to dismiss as convenience or commercial gain. A model that helps
+        a radiologist catch a tumor she would have missed, or a drug-discovery system that finds a
+        promising compound years faster, saves lives in a direct and comprehensible way. That makes
+        medical AI worth taking seriously on its merits, and worth examining critically, because
+        the stakes of getting it wrong are correspondingly high.
       </p>
 
       <h3>Scale and Concentration of Medical AI</h3>
