@@ -166,11 +166,31 @@ uniform scale. Effect across the 12 decks: **33 frames are compressed at all**, 
 5–15%, which reads as slightly tighter leading and nothing more. Overfull-vbox counts
 are unchanged or slightly better than before the change.
 
-The **13 frames that blow past the 20% cap** are the ones with genuinely too much
-content — they are the slides where type still ends up smaller than its neighbours, and
-each emits a `Past the vertical-squeeze cap` warning at build time. By page in the built
-PDFs: **L5** 13, 48; **L10** 11, 12; **L11** 5, 9, 14, 22, 24, 25, 26, 35, 38. Cutting a
-box or splitting the slide is the real fix for these.
+#### 4.5b DONE 2026-08: the over-cap slides trimmed
+Every frame that blew past the cap has been cut back until it fits. **All 12 decks now
+build with zero `Past the vertical-squeeze cap` warnings**, so no slide anywhere is being
+scaled down uniformly; the 33 frames that compress at all do so vertically, by 5–20%.
+
+Trimmed (page numbers as built): **L5** 13 Bitcoin, 48 CBDCs; **L10** 11 Doomsday Clock,
+12 Bostrom, 21 LAWS, plus a light pass on Ord's estimates; **L11** 5 Moral Circle,
+9 Hard Problem, 14 R.U.R., 22 Responses to Searle, 24 AI Companions, 25 Relationship
+with an AI, 26 LaMDA, 35 Policies, 38 Synthesis. The cuts were compression, not
+deletion — redundant clauses, `\vspace` padding, and one oversized image (R.U.R. poster
+`0.72\textheight` → `0.62`). Every `\parencite`/`\textcite` key and every figure survives;
+verified by diffing citation keys before and after. Two details were genuinely dropped:
+Bostrom's Macrostrategy Research Initiative affiliation, and "Key properties:"/"Key
+contributions:" list headers.
+
+Declared budgets on the trimmed frames were normalised to `shrink=8`, which under the new
+scheme controls only when the warning fires — the old values (up to 25) were suppressing
+exactly the warning that should have flagged them.
+
+**Note on `Overfull \vbox` counts.** They are a poor proxy for "runs off the slide."
+`\beamer@frametextheight` reserves a bottom margin, so a frame can exceed it by roughly a
+quarter and still land inside the visible slide area. L1 p31 has the largest overfull
+warning in that deck (84pt) and renders fine with content to the bottom edge. The ~150
+overfull warnings in the decks that declare no `shrink` are mostly of this kind; they eat
+the bottom margin rather than losing text. Worth tidying eventually, not urgent.
 
 ### 4.6 Standardize the discussion-prompt idiom
 - Current mix: `\begin{alertblock}{?}` (L1–4), `\begin{alertblock}{Discussion}` (L5–7), `discussionbox` (L8–12), plus the preamble's unused `\discussionquestion` command.
