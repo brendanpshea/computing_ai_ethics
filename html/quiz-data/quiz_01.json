@@ -1,0 +1,276 @@
+{
+  "id": "ch01",
+  "chapter": 1,
+  "title": "Chapter 1 Quiz: The History of IT Ethics",
+  "description": "Ten questions on the specific people, dates, inventions, and ideas covered in Chapter 1.",
+  "chapter_url": "ch01_history.html",
+  "questions": [
+    {
+      "id": "ch01-q01",
+      "question": "Around 3200 BCE, the world's first writing system — cuneiform — was developed in the city-states of which region?",
+      "options": [
+        "Egypt (the Nile Delta)",
+        "Mesopotamia (modern Iraq)",
+        "China (the Yellow River Valley)",
+        "Greece (the Aegean coast)"
+      ],
+      "correct": 1,
+      "explanation": "Cuneiform originated in ancient Mesopotamia — the region we now call Iraq — where scribes pressed reed styluses into wet clay tablets. Its earliest uses were mundane: grain allocations, cattle inventories, and commercial debts. Writing began as an accounting tool before evolving into law, literature, and religion.",
+      "section": "writing"
+    },
+    {
+      "id": "ch01-q02",
+      "question": "In Plato's Phaedrus, the Egyptian god who invents writing and presents it to the king for royal approval is named:",
+      "options": [
+        "Osiris",
+        "Hermes",
+        "Theuth",
+        "Anubis"
+      ],
+      "correct": 2,
+      "explanation": "In the myth Socrates tells in the Phaedrus, the Egyptian god Theuth invents writing and presents it to Thamus, the king of Egypt. Theuth claims writing will improve memory and make Egyptians wiser. Thamus rejects the gift, arguing that writing will produce forgetfulness and the mere appearance of wisdom — 'an elixir not of memory, but of reminding.'",
+      "section": "writing"
+    },
+    {
+      "id": "ch01-q03",
+      "question": "The Code of Hammurabi (c. 1754 BCE) contained 282 laws and was inscribed on:",
+      "options": [
+        "A bronze tablet hung in the palace throne room",
+        "Papyrus scrolls copied and distributed to provincial courts",
+        "An eight-foot basalt stele displayed publicly in Babylon",
+        "Clay tablets sealed in temple vaults for priestly use"
+      ],
+      "correct": 2,
+      "explanation": "Hammurabi's Code was inscribed on an eight-foot basalt stele and publicly displayed so that anyone who could read could check whether a judge's ruling conformed to written law. The chapter uses this as an example of writing's double-edged nature: the same technology that constrained arbitrary royal power also enabled the bureaucratic record-keeping that sustained a vast empire.",
+      "section": "writing"
+    },
+    {
+      "id": "ch01-q04",
+      "question": "Martin Luther posted his 95 Theses on the door of a church in Wittenberg, Germany, on October 31, 1517. How quickly did printed copies reach most of Europe?",
+      "options": [
+        "Within two days — Luther had arranged printing in advance",
+        "Within two months — about the speed of horseback courier routes",
+        "Within a year — the Church initially suppressed distribution",
+        "Within a decade — literacy was still too limited for faster spread"
+      ],
+      "correct": 1,
+      "explanation": "Within two weeks of October 31, 1517, friends had the Theses printed in Leipzig, Nuremberg, and Basel. Within two months they had circulated to virtually every corner of the German-speaking world and into France, England, and Italy. The Pope, receiving reports about an obscure German monk's complaint, initially dismissed it as a 'monks' quarrel' — by the time the Church acted, the ideas had already taken root across a continent.",
+      "section": "printing"
+    },
+    {
+      "id": "ch01-q05",
+      "question": "In 1450, there were approximately 30,000 books in all of Europe. By 1500 — fifty years after Gutenberg's press began operating — how many were there?",
+      "options": [
+        "Approximately 300,000",
+        "Approximately 1 million",
+        "Approximately 10 million",
+        "Approximately 50 million"
+      ],
+      "correct": 2,
+      "explanation": "By 1500, there were approximately ten million books in Europe — a 330-fold increase in fifty years. The cost of a book had fallen by ninety percent. This is one of the starkest statistics in the chapter: it illustrates how the printing press did not just make books cheaper but fundamentally transformed who could access, produce, and challenge written knowledge.",
+      "section": "printing"
+    },
+    {
+      "id": "ch01-q06",
+      "question": "On May 24, 1844, Samuel Morse sent the first long-distance telegraph message forty miles from Washington, D.C., to Baltimore. What were the words of that message?",
+      "options": [
+        "\"Mr. Watson, come here — I want to see you.\"",
+        "\"What hath God wrought!\"",
+        "\"One small step for man, one giant leap for mankind.\"",
+        "\"Come quickly — I am ready.\""
+      ],
+      "correct": 1,
+      "explanation": "The message 'What hath God wrought!' — a line from the Book of Numbers chosen by a young woman named Annie Ellsworth — was the first long-distance telegraph transmission. The phrase captured the era's astonishment at a technology that moved information at the speed of electricity. Before the telegraph, the fastest communication moved at the speed of a horse.",
+      "section": "distance"
+    },
+    {
+      "id": "ch01-q07",
+      "question": "John Stuart Mill's 1859 book On Liberty introduced the 'harm principle' and coined the phrase 'marketplace of ideas.' Mill argued that even false opinions must be allowed expression because:",
+      "options": [
+        "Suppressing any opinion violates a natural right to self-expression",
+        "Governments are incapable of reliably identifying which opinions are false",
+        "The collision of ideas — including false ones — is how truth advances",
+        "False opinions tend to collapse on their own when exposed to public scrutiny"
+      ],
+      "correct": 2,
+      "explanation": "Mill argued that if a false opinion is suppressed, we lose the opportunity to understand why it is wrong — and an unexamined belief is a fragile one. If a true opinion is suppressed, we lose the truth. In both cases, open debate produces better epistemic outcomes than censorship. Marx countered that this 'marketplace' is rigged: whoever owns the means of communication controls which voices are amplified.",
+      "section": "distance"
+    },
+    {
+      "id": "ch01-q08",
+      "question": "George Orwell — author of Animal Farm (1945) and Nineteen Eighty-Four (1949) — was born with what name?",
+      "options": [
+        "George Arthur Orwell",
+        "Eric Arthur Blair",
+        "Arthur George Prescott",
+        "Eric George Huxley"
+      ],
+      "correct": 1,
+      "explanation": "George Orwell was born Eric Arthur Blair in British India in 1903. He took the pen name 'George Orwell' as an adult. His novels, written under that name, introduced coinages — 'doublethink,' 'memory hole,' 'Big Brother,' 'Newspeak,' 'thoughtcrime' — that have entered the English language as permanent vocabulary for describing political manipulation and propaganda.",
+      "section": "mass-media"
+    },
+    {
+      "id": "ch01-q09",
+      "question": "The Nazi Volksempfänger ('People's Receiver') was a cheap, standardized radio set rolled out after 1933. By 1939, Germany had the highest per-capita radio ownership in the world. Approximately what share of the German population could be reached by Nazi broadcasts?",
+      "options": [
+        "Around 20 percent",
+        "Around 40 percent",
+        "Around 70 percent",
+        "Nearly 100 percent"
+      ],
+      "correct": 2,
+      "explanation": "By 1939, Germany had over sixteen million radio sets reaching approximately seventy percent of the population. Nazi Propaganda Minister Joseph Goebbels recognized radio's potential immediately and used it to broadcast Hitler's speeches live to the entire nation. The chapter notes that the Volksempfänger were designed to receive but not transmit — the audience could only listen, not respond — making it structurally suited to one-way propaganda.",
+      "section": "mass-media"
+    },
+    {
+      "id": "ch01-q10",
+      "question": "Tim Berners-Lee invented the World Wide Web in 1989–1991 while working at which institution?",
+      "options": [
+        "MIT's Computer Science and Artificial Intelligence Laboratory in Cambridge",
+        "Bell Labs in Murray Hill, New Jersey",
+        "ARPA (the Advanced Research Projects Agency) in Washington, D.C.",
+        "CERN, the European particle physics laboratory in Switzerland"
+      ],
+      "correct": 3,
+      "explanation": "Berners-Lee was a British physicist at CERN in Switzerland when he wrote a 1989 memo proposing a system for managing information across the lab's network. His supervisor returned it with the note 'Vague but exciting.' Two years later he had built the Web. Crucially, he deliberately refused to patent his invention, releasing it as an open standard — a choice the chapter treats as one of the most consequential acts of technological generosity in history.",
+      "section": "the-web"
+    },
+    {
+      "id": "ch01-q13",
+      "question": "The Epic of Gilgamesh — one of the earliest pieces of literature in human history — was composed around 2100 BCE. It survives because it was written on:",
+      "options": [
+        "Papyrus scrolls preserved in the dry climate of the Nile Delta",
+        "Clay tablets that hardened and survived for millennia",
+        "Parchment codices copied by Babylonian scribes",
+        "Stone inscriptions on the walls of temple complexes"
+      ],
+      "correct": 1,
+      "explanation": "The Epic of Gilgamesh survives on clay tablets — the same medium as cuneiform accounting records. The durability of baked clay is one reason Mesopotamian records have outlasted many later civilizations' parchment or papyrus archives. The chapter describes Gilgamesh as 'a meditation on mortality, friendship, and the search for meaning that would not feel out of place in a contemporary bookstore.'",
+      "section": "writing"
+    },
+    {
+      "id": "ch01-q14",
+      "question": "Erasmus, Luther's great contemporary, produced a critical edition of the Greek New Testament using the printing press. Yet he viewed Luther's use of the press with deep unease. What was Erasmus's main concern?",
+      "options": [
+        "Luther's German Bible contained numerous translation errors that would mislead ordinary readers",
+        "Luther was flooding the reading public with arguments that most readers were not equipped to evaluate",
+        "The press was producing too many copies of Scripture, cheapening its sacred character",
+        "Luther's pamphlets were being read by Catholic clergy and corrupting the Church from within"
+      ],
+      "correct": 1,
+      "explanation": "Erasmus worried not about the press itself but about Luther's use of it: rapidly distributing complex theological arguments to a mass audience that, in Erasmus's view, lacked the training to evaluate them critically. Where Luther saw a marketplace of ideas in which truth would triumph, Erasmus saw a dangerous bazaar where the loudest voice — not the wisest — would win. The chapter describes this as the prototype of every subsequent debate between free-flow and gatekeeping advocates.",
+      "section": "printing"
+    },
+    {
+      "id": "ch01-q15",
+      "question": "The first transatlantic telegraph cable, permanently connecting North America and Europe, was completed in:",
+      "options": [
+        "1844",
+        "1858",
+        "1866",
+        "1876"
+      ],
+      "correct": 2,
+      "explanation": "The first transatlantic telegraph cable was completed in 1866, connecting North America and Europe for the first time. The chapter describes it as 'celebrated as one of the greatest achievements in human history.' Historian Tom Standage later called the telegraph 'the Victorian Internet,' noting that the same utopian claims made about the telegraph in the 1860s were made almost word for word about the internet in the 1990s.",
+      "section": "distance"
+    },
+    {
+      "id": "ch01-q16",
+      "question": "Historian Tom Standage called the telegraph 'the Victorian Internet' because:",
+      "options": [
+        "Both technologies were invented by government researchers before being handed to private companies",
+        "The same utopian claims made about the telegraph in the 1860s were made almost word for word about the internet in the 1990s",
+        "Both technologies were initially developed for military communication and surveillance",
+        "The telegraph and the internet were each invented within the same country and spread globally from there"
+      ],
+      "correct": 1,
+      "explanation": "Standage's comparison rests on the rhetorical parallel: commentators in the 1860s declared the telegraph would unite all nations, abolish war, and usher in universal peace — the same promises that were made about the internet in the 1990s. The chapter uses this parallel to argue that utopian claims about new communication technologies follow a predictable script across every revolution.",
+      "section": "distance"
+    },
+    {
+      "id": "ch01-q17",
+      "question": "Karl Marx argued that in any society, the dominant ideas reflect the interests of those who control the means of production and communication. Which quotation from the chapter captures this view?",
+      "options": [
+        "'The philosophers have only interpreted the world; the point is to change it.'",
+        "'The ruling ideas of each age have ever been the ideas of its ruling class.'",
+        "'Workers of the world, unite — you have nothing to lose but your chains.'",
+        "'History repeats itself, first as tragedy, then as farce.'"
+      ],
+      "correct": 1,
+      "explanation": "Marx's claim that 'the ruling ideas of each age have ever been the ideas of its ruling class' is the core of his analysis of communication technology: whoever owns the newspapers, telegraph wires, or social media platforms controls which ideas reach the public, and on what terms. The chapter presents this as a direct challenge to Mill's belief in an open, fair marketplace of ideas.",
+      "section": "distance"
+    },
+    {
+      "id": "ch01-q18",
+      "question": "Plato founded one of the first institutions of higher learning in Western history in Athens, which operated for nearly nine hundred years. It was called:",
+      "options": [
+        "The Lyceum",
+        "The Stoa",
+        "The Academy",
+        "The Agora"
+      ],
+      "correct": 2,
+      "explanation": "After Socrates' execution in 399 BCE, Plato traveled widely before returning to Athens to found the Academy — one of the first institutions of higher learning in Western history. It should not be confused with the Lyceum, which was founded later by Plato's most famous student, Aristotle. The Stoa was the porch where Stoic philosophers taught; the Agora was the Athenian public marketplace.",
+      "section": "writing"
+    },
+    {
+      "id": "ch01-q19",
+      "type": "multiple",
+      "question": "Which of the following facts about the Gutenberg Bible (c. 1455) are stated in the chapter? Select all that apply.",
+      "options": [
+        "Approximately 180 copies were printed",
+        "It was printed in German rather than Latin",
+        "Approximately 49 copies survive today",
+        "It was the very first document ever produced with movable type",
+        "The quality of its printing rivaled the finest hand-copied manuscripts"
+      ],
+      "correct": [0, 2, 4],
+      "explanation": "The chapter states that approximately 180 copies of the Gutenberg Bible were printed, that about 49 survive today, and that 'the quality of the printing rivaled the finest hand-copied manuscripts.' It was printed in Latin, not German — Luther's German Bible translation came about sixty years later. And while the Gutenberg Bible is the first major book printed in Europe using movable type, it was not the very first document ever printed that way.",
+      "section": "printing"
+    },
+    {
+      "id": "ch01-q20",
+      "type": "matching",
+      "question": "Using the chapter's Table 1.1, match each IT revolution to the 'core tension' that defines it.",
+      "pairs": [
+        { "left": "Writing (~3200 BCE)",         "right": "Memory vs. external record" },
+        { "left": "Printing Press (~1440 CE)",   "right": "Free dissemination vs. responsible gatekeeping" },
+        { "left": "Distance Communication (~1840s)", "right": "Individual liberty vs. ownership and power" },
+        { "left": "Mass Media (~1920s)",          "right": "Shared culture vs. propaganda and control" },
+        { "left": "The World Wide Web (~1990s)",  "right": "Democratization vs. surveillance capitalism" }
+      ],
+      "explanation": "Table 1.1 in the chapter maps each revolution to its defining ethical tension. Writing raises the question of memory and externalized knowledge (Plato's Thamus). The press raises the question of gatekeeping (Luther vs. Erasmus). Distance communication raises questions of ownership and power (Mill vs. Marx). Mass media raises the question of propaganda (Orwell and Arendt). The Web raises the question of democratization versus surveillance capitalism.",
+      "section": "patterns"
+    },
+    {
+      "id": "ch01-q11",
+      "type": "matching",
+      "question": "Match each key thinker to the work, invention, or concept most closely associated with them in this chapter.",
+      "pairs": [
+        { "left": "Plato",             "right": "Phaedrus — critique of writing as mere 'reminding'" },
+        { "left": "Johannes Gutenberg", "right": "Movable type printing press (~1440 CE)" },
+        { "left": "John Stuart Mill",  "right": "On Liberty (1859) — the 'marketplace of ideas'" },
+        { "left": "Hannah Arendt",     "right": "The 'banality of evil' and Origins of Totalitarianism" },
+        { "left": "Tim Berners-Lee",   "right": "The World Wide Web — released as an open standard" }
+      ],
+      "explanation": "Each revolution in the chapter has a key thinker: Plato (writing), Gutenberg (printing press), Mill (distance communication and free speech), Arendt (mass media and totalitarianism), and Berners-Lee (the Web). Knowing who argued what — and when — is essential for applying their ideas to new contexts.",
+      "section": "patterns"
+    },
+    {
+      "id": "ch01-q12",
+      "type": "multiple",
+      "question": "Which of the following terms were coined by George Orwell in Nineteen Eighty-Four (1949)? Select all that apply.",
+      "options": [
+        "Doublethink",
+        "The marketplace of ideas",
+        "Newspeak",
+        "The banality of evil",
+        "Memory hole",
+        "Big Brother"
+      ],
+      "correct": [0, 2, 4, 5],
+      "explanation": "Doublethink, Newspeak, memory hole, and Big Brother all appear in Nineteen Eighty-Four and have since entered general English usage. 'The marketplace of ideas' was John Stuart Mill's phrase from On Liberty (1859). 'The banality of evil' was Hannah Arendt's concept, coined in her coverage of Adolf Eichmann's 1961 trial in Jerusalem.",
+      "section": "mass-media"
+    }
+  ]
+}

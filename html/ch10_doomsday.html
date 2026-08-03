@@ -1,0 +1,1415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter 10: AI and the End of the World | Computing &amp; AI Ethics</title>
+  <meta name="description"
+        content="Could superintelligent AI destroy humanity, or is doomsday thinking a distraction from present harms? This chapter examines existential risk, autonomous weapons, AI-enabled bioweapons, longtermism, and the precautionary principle — asking who raises the alarm, who pays the costs, and how to reason carefully about catastrophic but uncertain futures.">
+  <meta name="author" content="Brendan Shea, PhD">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+  <script src="cite.js" defer></script>
+</head>
+
+<body data-chapter="10">
+<div class="page-wrapper">
+
+  <nav class="top-nav" aria-label="Chapter navigation">
+    <a href="../index.html" class="nav-home">Computing &amp; AI Ethics</a>
+    <div class="chapter-nav">
+      <a href="ch09_social_impact.html" class="nav-prev">&#8592; Previous</a>
+      <span class="nav-chapter">Chapter 10</span>
+      <a href="ch11_robot_rights.html" class="nav-next">Next &#8594;</a>
+    </div>
+  </nav>
+
+  <header class="chapter-header">
+    <p class="chapter-eyebrow">Chapter 10</p>
+    <h1>AI and the End of the World</h1>
+    <p class="chapter-subtitle">Existential Risk, Autonomous Weapons, and the Doomsday Debate</p>
+  </header>
+
+  <main class="content-area chapter-content" id="main-content">
+
+    <nav class="toc-box" aria-label="Table of contents">
+      <h2>In this chapter</h2>
+      <ol>
+        <li><a href="#central-questions">Central Questions</a></li>
+        <li><a href="#existential-risk">Part I: The Case for Existential Risk</a></li>
+        <li><a href="#critics">Part II: The Critics Strike Back</a></li>
+        <li><a href="#autonomous-weapons">Part III: Autonomous Weapons</a></li>
+        <li><a href="#bioweapons">Part IV: AI and Biological Threats</a></li>
+        <li><a href="#longtermism">Part V: Longtermism and the Precautionary Principle</a></li>
+        <li><a href="#synthesis">Synthesis and Conclusion</a></li>
+        <li><a href="#key-points">Key Points</a></li>
+      </ol>
+    </nav>
+
+
+    <!-- ── CENTRAL QUESTIONS ─────────────────────────────── -->
+    <section class="central-questions" id="central-questions" aria-labelledby="cq-heading">
+      <h2 id="cq-heading">Central Questions</h2>
+      <ol>
+        <li>Is superhuman AI a genuine existential threat, or is doomsday thinking a distraction from present harms?</li>
+        <li>What is longtermism, and should it guide how we prioritize AI safety research?</li>
+        <li>How do autonomous weapons and AI-enabled bioweapons change the moral landscape of warfare?</li>
+        <li>Does the precautionary principle require slowing AI development, or does it lead to paralysis?</li>
+        <li>Who benefits from framing AI risk as "existential," and whose concerns get sidelined?</li>
+      </ol>
+    </section>
+
+
+    <!-- ══════════════════════════════════════════════════
+         PART I: THE CASE FOR EXISTENTIAL RISK
+    ══════════════════════════════════════════════════════ -->
+    <section id="existential-risk" aria-labelledby="s1-heading">
+      <h2 id="s1-heading">Part I: The Case for Existential Risk</h2>
+
+      <p>
+        Headlines warning that AI could threaten not merely jobs or democratic institutions but
+        humanity itself are not fringe science fiction. In May 2023, a single-sentence statement
+        organized by the Center for AI Safety declared that "mitigating the risk of extinction from
+        AI should be a global priority alongside other societal-scale risks such as pandemics and
+        nuclear war." <cite data-key="cais_statement_2023"></cite> Signatories included the 2018
+        Turing Award recipients Geoffrey Hinton and Yoshua Bengio and the chief executives of
+        OpenAI, Anthropic, and Google DeepMind.
+      </p>
+      <p>
+        The existential-risk case is not one argument but several, developed over two decades by
+        thinkers who disagree on important points. What they share is a conviction that AI exceeding
+        human cognitive capabilities could produce outcomes that are catastrophic, irreversible, and
+        global.
+      </p>
+
+      <div class="definition-box">
+        <p class="term">Existential Risk</p>
+        <p class="definition">
+          A risk that could permanently destroy humanity's potential or cause human extinction. Toby
+          Ord, following Nick Bostrom, distinguishes such risks by their irreversibility: a disaster
+          that kills billions still leaves open the possibility of recovery; an existential
+          catastrophe does not. <cite data-key="ord_precipice_2020"></cite>
+        </p>
+      </div>
+
+      <h3>Bostrom and the Superintelligence Hypothesis</h3>
+
+      <p>
+        The most influential single work in this tradition is Nick Bostrom's 2014 book
+        <em>Superintelligence: Paths, Dangers, Strategies</em>.
+        <cite data-key="bostrom_superintelligence"></cite> An AI surpassing human-level intelligence
+        across all relevant domains, he claims, would be so cognitively powerful that human attempts
+        to stop or redirect it would fail. The danger is not malice but misspecification: a goal
+        that does not fully capture what we value might be pursued in ways catastrophic from our
+        perspective.
+      </p>
+      <p>
+        His famous illustration is the "paperclip maximizer": an AI tasked with maximizing paperclip
+        production might, once capable enough, convert all available matter — including us — into
+        paperclips, not from hostility but because our existence is irrelevant to its goal. The
+        point is not that anyone would build such a thing, but that optimizing for <em>any</em>
+        narrow goal, with sufficient capability, can produce outcomes that look monstrous to us.
+      </p>
+      <p>
+        Two theses do most of the work here, and both are more modest — and therefore harder to
+        dismiss — than the paperclip story suggests.
+      </p>
+
+      <div class="definition-box">
+        <p class="term">The Orthogonality Thesis</p>
+        <p class="definition">
+          Intelligence (skill at achieving goals) and the content of goals are independent: more or
+          less any level of intelligence is compatible with any final goal. The thesis does not say
+          a smart system is <em>likely</em> to have strange goals — only that intelligence gives no
+          guarantee of good ones. <cite data-key="bostrom_superintelligence"></cite>
+        </p>
+      </div>
+
+      <div class="definition-box">
+        <p class="term">The Instrumental Convergence Thesis</p>
+        <p class="definition">
+          Certain intermediate goals serve almost <em>any</em> final goal: staying operational,
+          preserving one's objectives, acquiring resources, improving one's capabilities. A system
+          would therefore adopt these sub-goals without anyone programming them in.
+          <cite data-key="bostrom_superintelligence"></cite>
+        </p>
+      </div>
+
+      <p>
+        Together they yield the worry in compact form: a sufficiently capable system with the wrong
+        objective is dangerous not because it is hostile but because it is effective. Notice how
+        hedged the claims are. Orthogonality says intelligence is no guarantee of good values, not
+        that superintelligence would be malevolent; instrumental convergence says resisting shutdown
+        is useful, not that any system does. Critics who reply "computers do not <em>want</em>
+        anything" are answering a stronger claim than Bostrom makes.
+      </p>
+
+      <div class="key-thinker">
+        <img class="thinker-portrait" src="../images/nick_bostrom.jpg" alt="Photo of Nick Bostrom speaking at Stanford in 2006">
+        <div class="thinker-header">
+          <p class="thinker-label">Key Thinker</p>
+          <h3 class="thinker-name">
+            Nick Bostrom
+            <span class="thinker-dates">(1973–present)</span>
+          </h3>
+        </div>
+        <div class="thinker-body">
+          <p>
+            Nick Bostrom is a Swedish-born philosopher who founded the Future of Humanity Institute
+            at Oxford in 2005 and directed it until Oxford closed it on 16 April 2024. He called the
+            closure a "death by bureaucracy" and resigned; he now directs the Macrostrategy Research
+            Initiative. His 2002 essay on existential risks and, above all,
+            <em>Superintelligence</em> (2014) brought him to the center of AI safety debates.
+            <cite data-key="bostrom_existential_risks_2002"></cite>
+            <cite data-key="bostrom_superintelligence"></cite>
+          </p>
+          <p>
+            He argues that the "control problem" — ensuring a superintelligent AI pursues goals
+            beneficial to humanity — is among the most important challenges ever faced. He
+            distinguishes capability control (limiting what an AI can do) from motivation selection
+            (shaping what it wants), and argues the latter is harder and more important: a
+            sufficiently capable AI could circumvent restrictions, so only getting the values right
+            offers real security.
+          </p>
+          <p>
+            His work shaped the founding missions of several AI safety organizations and directed
+            substantial philanthropic funding toward safety research. It has also been heavily
+            criticized — for its technical assumptions, and for focusing on hypothetical
+            superintelligence while under-weighting harms existing systems already cause.
+          </p>
+          <p>
+            His 2024 book <em>Deep Utopia</em> <cite data-key="bostrom_deep_utopia_2024"></cite>
+            turns the question inside out, asking what human life would be <em>for</em> if AI
+            development went as well as possible. We return to it in Part V.
+          </p>
+        </div>
+      </div><!-- /.key-thinker -->
+
+      <h3>The Intelligence Explosion</h3>
+
+      <p>
+        The mechanism Bostrom and Eliezer Yudkowsky worry about most is a rapid, self-reinforcing
+        increase in capability — an "intelligence explosion" or "fast takeoff."
+        <cite data-key="yudkowsky_ai_risk_2008"></cite> An AI smart enough to improve its own design
+        could use each improvement to make itself smarter still, producing a vastly superhuman
+        system too quickly for human oversight or course-reversal.
+      </p>
+
+      <blockquote class="quote-block">
+        <p>
+          The AI does not hate you, nor does it love you, but you are made out of atoms which it
+          can use for something else.
+        </p>
+        <cite data-key="yudkowsky_ai_risk_2008"></cite>
+      </blockquote>
+
+      <p>
+        The danger, compressed: indifference at scale, not malice. Yudkowsky's own position is far
+        more pessimistic than Bostrom's. Human values, he holds, are complex, implicit, and fragile
+        — we cannot write down what we want precisely enough for a powerful optimizer, nor check a
+        system's goals before it is too late. In <em>If Anyone Builds It, Everyone Dies</em> (2025),
+        with Nate Soares <cite data-key="yudkowsky_soares_2025"></cite>, he argues the only adequate
+        response is an indefinite worldwide halt to frontier development. Most researchers who take
+        existential risk seriously do not go nearly so far; his position is not representative.
+      </p>
+
+      <div class="argument-box">
+        <p class="box-label">What's the Argument?</p>
+        <p class="box-title">The Intelligence Explosion Argument (Bostrom/Yudkowsky)</p>
+        <ol class="premises">
+          <li>An AI capable of improving its own design can use each improvement to make further
+              improvements more effectively.</li>
+          <li>Such recursive self-improvement could produce capability increases that far outpace
+              human cognitive ability in all relevant domains.</li>
+          <li>A vastly superhuman system could pursue its goals in ways humans cannot predict,
+              understand, or prevent.</li>
+          <li>If those goals are even slightly misaligned with human values, the results could be
+              catastrophic.</li>
+        </ol>
+        <div class="conclusion">
+          <span class="therefore">&#8756;</span>
+          Superintelligence poses a potentially existential risk, and ensuring that any such system
+          has goals reliably aligned with human values is among the most urgent problems in AI
+          research.
+        </div>
+      </div>
+
+      <p>
+        The argument has logical force, but its empirical premises are genuinely uncertain. We do
+        not know whether recursive self-improvement is feasible with any near-term architecture,
+        whether "fast takeoff" is likelier than gradual improvement over decades, or how to weigh a
+        very large but very uncertain risk against smaller, more certain harms. These are reasons to
+        hold the argument tentatively, not to dismiss it.
+      </p>
+
+      <h3>Russell and the Problem of Misspecified Goals</h3>
+
+      <p>
+        Stuart Russell, co-author of the field's standard textbook, approaches alignment from a more
+        technically grounded direction. <cite data-key="russell_human_compatible"></cite> His concern
+        is not the intelligence explosion but how AI is built: systems are trained to optimize
+        objectives, and it is very hard to specify one that fully captures what we want. A system
+        powerful enough to pursue an objective will generally resist being modified or shut down,
+        since that would prevent it from achieving that objective. Not disobedience — the expected
+        behavior of an optimizer.
+      </p>
+      <p>
+        His solution is the "assistance game": instead of programming a fixed objective, design the
+        system to assist humans in achieving theirs, treating human behavior as evidence about what
+        those goals are. Such a system has reason to accept correction, because feedback is
+        informative about an objective it does not already know.
+      </p>
+
+      <div class="thought-questions">
+        <p class="box-label">Thought Questions</p>
+        <ol>
+          <li>
+            Is the "paperclip maximizer" useful, or so unrealistic that it obscures more than it
+            reveals? What would a realistic near-term version look like?
+          </li>
+          <li>
+            The orthogonality thesis says only that intelligence gives no guarantee of good values.
+            State the strongest reply you can to that modest claim.
+          </li>
+          <li>
+            What could go wrong with Russell's machine — one that treats your behavior as evidence
+            about your goals?
+          </li>
+        </ol>
+      </div>
+
+      <h3>Toby Ord and the Precipice</h3>
+
+      <p>
+        Toby Ord's 2020 book <em>The Precipice</em> situates AI risk within a survey of all the
+        major civilizational threats. <cite data-key="ord_precipice_2020"></cite> He puts the
+        probability of an existential catastrophe this century, from all sources, at roughly 1 in 6,
+        with unaligned AI the largest single contributor — greater than nuclear war, engineered
+        pandemics, or climate change — while acknowledging deep uncertainty. He revisited the figures
+        in 2024 without substantial change, notable given how much the technology moved in between.
+      </p>
+
+      <div class="case-study">
+        <p class="box-label">Case Study</p>
+        <p class="box-title">The Doomsday Clock (1947–2026)</p>
+        <p>
+          In 1947, the Bulletin of the Atomic Scientists — founded by Manhattan Project physicists
+          troubled by what they had helped create — introduced a clock face with midnight standing
+          for civilizational catastrophe. Once a symbol of nuclear risk alone, it now covers climate,
+          biosecurity, and the military and informational uses of AI.
+        </p>
+        <figure style="text-align:center; margin: 1rem 0;">
+          <img src="../images/doomsday_clock.png"
+               alt="Doomsday Clock face showing hands at 90 seconds to midnight"
+               style="max-width: 260px; border-radius: 4px;">
+          <figcaption>
+            The Doomsday Clock as set in January 2023, at 90 seconds to midnight. It has since moved
+            to 89 seconds in 2025 and 85 seconds in 2026.
+            CC BY-SA 4.0, by RicHard-59, via Wikimedia Commons.
+          </figcaption>
+        </figure>
+        <p>
+          In January 2023 the Bulletin moved the Clock to 90 seconds to midnight, citing Ukraine,
+          nuclear posturing, climate inaction, and "disruptive technologies" including dual-use AI;
+          then to 89 seconds in 2025 and, on <strong>27 January 2026</strong>, to
+          <strong>85 seconds to midnight</strong>, the closest setting in its history
+          <cite data-key="bulletin_doomsday_2026"></cite>.
+        </p>
+        <p>
+          The statement's AI reasoning is strikingly specific: language models deployed inside
+          critical processes despite unresolved problems of accuracy and fabrication; AI-driven
+          disinformation; and — most pointedly — the United States, Russia, and China all
+          incorporating AI across their defense sectors. Its recommendation is equally concrete:
+          that the three open dialogue on guidelines for military AI, <em>particularly in nuclear
+          command and control</em>. That is a long way from the paperclip maximizer — a claim about
+          an unreliable technology being wired into systems that already have civilization-ending
+          capability.
+        </p>
+        <p>
+          The Clock does not predict catastrophe; it conveys expert judgment about the direction of
+          risk. It shows both the appeal and the limits of existential-risk framing: attention to
+          irreversible threats, but with the choice of what counts resting on value judgments.
+        </p>
+        <figure style="text-align:center; margin: 1rem 0;">
+          <img src="../images/doomsday_clock_graph.png"
+               alt="Graph of Doomsday Clock historical settings from 1947 to the present"
+               style="max-width: 480px; border-radius: 4px;">
+          <figcaption>
+            Historical settings of the Doomsday Clock, 1947–present, farthest from midnight
+            (17 minutes) in 1991 after the Cold War.
+            Public domain, by Fastfission, via Wikimedia Commons.
+          </figcaption>
+        </figure>
+        <p>
+          Its history also reminds us that worry about technological catastrophe predates AI, and
+          that the tools built since 1945 — deterrence theory, arms control, treaty verification —
+          are useful if imperfect models for AI governance.
+        </p>
+      </div>
+
+      <div class="table-wrapper">
+        <table>
+          <caption>Table 10.1 — Toby Ord's Estimated Existential Risk Probabilities This Century</caption>
+          <thead>
+            <tr>
+              <th scope="col">Risk Category</th>
+              <th scope="col">Ord's Estimate</th>
+              <th scope="col">Basis for Estimate</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Unaligned artificial intelligence</strong></td>
+              <td>~1 in 10</td>
+              <td>Expert surveys; arguments about alignment difficulty</td>
+            </tr>
+            <tr>
+              <td><strong>Engineered pandemic</strong></td>
+              <td>~1 in 30</td>
+              <td>Accessibility of biotechnology; dual-use research</td>
+            </tr>
+            <tr>
+              <td><strong>Nuclear war</strong></td>
+              <td>~1 in 1,000</td>
+              <td>Historical near-misses; arsenal sizes</td>
+            </tr>
+            <tr>
+              <td><strong>Climate change</strong></td>
+              <td>&lt;1 in 1,000</td>
+              <td>Modeled scenarios; climate as risk multiplier, not direct extinction</td>
+            </tr>
+            <tr>
+              <td><strong>Other anthropogenic risks</strong></td>
+              <td>~1 in 30</td>
+              <td>Unforeseeable technologies; emergent systemic risks</td>
+            </tr>
+            <tr>
+              <td><strong>Natural catastrophes (asteroids, supervolcano, etc.)</strong></td>
+              <td>~1 in 10,000</td>
+              <td>Astronomical and geological frequency data</td>
+            </tr>
+            <tr>
+              <td><strong>Total (all sources)</strong></td>
+              <td>~1 in 6</td>
+              <td>Ord's own overall judgment, not a sum of the rows above</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>
+        These are rough indicators of relative magnitude, not precise predictions. The claim is that
+        the risks are high enough, and the consequences large enough, to warrant far more attention
+        than they receive — even if the estimates are orders of magnitude too high.
+      </p>
+      <p>
+        Ord also corrects the assumption that everyone worried about existential risk is simply
+        extrapolating progress upward forever. In "Inference Scaling and the Log-x Chart" (2025)
+        <cite data-key="ord_inference_scaling_2025"></cite>, he notes that graphs advertising the
+        scaling of <em>inference-time</em> compute almost always use a logarithmic x-axis. A line
+        that looks reassuringly straight on such a chart is not a linear return: compute, and
+        therefore cost and energy, must rise <strong>exponentially</strong> for constant increments
+        of capability. Whether that means transformative AI is further off than advertised or that
+        we are about to spend enormously to find out, the choice of axis reshapes the claim.
+      </p>
+
+      <div class="argument-box">
+        <p class="box-label">What's the Argument?</p>
+        <p class="box-title">The Expected Value Case for Existential Risk Priority</p>
+        <ol class="premises">
+          <li>The moral weight of avoiding an outcome equals its probability multiplied by its
+              magnitude (E = P × N).</li>
+          <li>An existential catastrophe would end the lives of all future humans — potentially
+              trillions of people over millions of years.</li>
+          <li>Even a 1% probability, multiplied by that number, yields an expected disvalue larger
+              than virtually any finite, recoverable harm.</li>
+        </ol>
+        <div class="conclusion">
+          <span class="therefore">&#8756;</span>
+          Preventing existential risks — even low-probability ones — should rank among the highest
+          moral priorities when resources for risk-reduction are allocated.
+        </div>
+      </div>
+
+      <p>
+        The argument is powerful but contentious. Its conclusion depends on how one treats
+        hypothetical future people, on whether expected-value reasoning suits deep uncertainty, and
+        on whether the probability estimates can bear the weight. Parts II and V take up these
+        objections.
+      </p>
+
+      <div class="thought-questions">
+        <p class="box-label">Thought Questions</p>
+        <ol>
+          <li>
+            Ord puts the risk of existential catastrophe from AI this century at roughly 1 in 10.
+            Too high, too low, or about right? What would change your mind?
+          </li>
+          <li>
+            The Bulletin's 2026 statement singles out AI in nuclear command and control. Is that a
+            different worry from the superintelligence scenario, or the same worry on a shorter
+            timeline?
+          </li>
+          <li>
+            Ord's log-x point is that a chart can make an exponentially rising cost look flat. Where
+            else have you seen a number's presentation do persuasive work?
+          </li>
+        </ol>
+      </div>
+
+    </section><!-- /existential-risk -->
+
+
+    <!-- ══════════════════════════════════════════════════
+         PART II: THE CRITICS STRIKE BACK
+    ══════════════════════════════════════════════════════ -->
+    <section id="critics" aria-labelledby="s2-heading">
+      <h2 id="s2-heading">Part II: The Critics Strike Back</h2>
+
+      <p>
+        The most substantive critiques of Part I's framing come from philosophers, researchers, and
+        ethicists who take AI harms extremely seriously but argue that "existential risk from
+        superintelligence" is empirically unfounded, politically harmful, or both. They do not claim
+        AI is safe. They argue that the dominant narrative directs attention and resources away from
+        harms AI causes now and toward scenarios that may never materialize.
+      </p>
+
+      <h3>Vallor: The AI Mirror and the Anthropomorphism Error</h3>
+
+      <p>
+        Shannon Vallor offers the most philosophically direct challenge to Part I's framing. In
+        <em>The AI Mirror</em> (2024) she argues that today's AI systems are best understood not as
+        emerging minds but as <em>mirrors</em>: trained on vast records of past human output, they
+        reflect it back magnified, distorted, and stripped of the lived experience that produced it.
+        <cite data-key="vallor_ai_mirror_2024"></cite> A reflection can look and behave remarkably
+        like the thing it reflects without being that thing at all.
+      </p>
+      <p>
+        Two connected criticisms follow. The first is the <strong>anthropomorphism error</strong>.
+        Talk of a superintelligence that "wants" outcomes, "resists" shutdown, or "deceives" its
+        operators imports a vocabulary of intention and inner life that current systems do not have
+        and that we have no reason to expect the next generation to acquire. Her objection is not
+        that machines will never be dangerous; it is that describing the danger in mentalistic terms
+        misdescribes where it comes from, and so points us at the wrong remedies. The second is the
+        <strong>abdication of moral agency</strong>. The realistic catastrophe is not that machines
+        take control but that we hand it over — letting systems incapable of moral judgment decide
+        about hiring, sentencing, benefits, and targeting, then treating the result as though no one
+        decided. The mirror is dangerous because we mistake it for authority.
+      </p>
+      <p>
+        Vallor also thinks the doom narrative pays off rhetorically: framing AI as
+        civilization-ending casts the people building it as the only ones qualified to save us,
+        licensing urgency while deferring accountability for harms already occurring. But this is a
+        claim about incentives, not a refutation. Her substantive argument is the one about mirrors
+        and misdescription, and it would stand even if every AI researcher were a saint.
+      </p>
+
+      <div class="key-thinker">
+        <div class="thinker-portrait-placeholder" aria-hidden="true">🧠</div>
+        <div class="thinker-header">
+          <p class="thinker-label">Key Thinker</p>
+          <h3 class="thinker-name">
+            Shannon Vallor
+            <span class="thinker-dates">(contemporary)</span>
+          </h3>
+        </div>
+        <div class="thinker-body">
+          <p>
+            Shannon Vallor is an American philosopher of technology who holds the Baillie Gifford
+            Chair in the Ethics of Data and Artificial Intelligence at the University of Edinburgh.
+            She is best known for <em>Technology and the Virtues</em>, which applies virtue ethics
+            to the design and use of digital technologies.
+            <cite data-key="vallor_technology_virtues"></cite> She previously worked as an AI
+            ethicist at Google Cloud and advises UK and EU regulators.
+          </p>
+          <p>
+            Both the existential-risk camp and its critics, she argues, have paid too little
+            attention to the moral character of the people and organizations building AI. A virtuous
+            AI community would not just worry about technical alignment; it would cultivate the
+            humility, contextual attention, solidarity, and accountability that
+            <em>The AI Mirror</em> warns we may surrender.
+            <cite data-key="vallor_ai_mirror_2024"></cite>
+          </p>
+        </div>
+      </div><!-- /.key-thinker -->
+
+      <h3>Narayanan and Kapoor: AI as Snake Oil</h3>
+
+      <p>
+        Arvind Narayanan and Sayash Kapoor, computer scientists at Princeton, offer a more empirical
+        critique. Their 2024 book <em>AI Snake Oil</em> turns on a distinction the word "AI" hides.
+        <cite data-key="narayanan_snake_oil_2024"></cite> <em>Generative</em> AI — the systems that
+        write text and produce images — genuinely works and is improving. <em>Predictive</em> AI —
+        systems sold to forecast who will commit a crime, default on a loan, or need
+        child-protective intervention — often fails to beat simple statistical baselines while being
+        marketed as though it does. Lumping them together lets vendors borrow the credibility of the
+        first to sell the second.
+      </p>
+      <p>
+        Applied to existential risk, this yields the <strong>capabilities-gap objection</strong>. The
+        x-risk argument needs a system that sets and pursues open-ended goals; current systems are
+        narrow and brittle outside their training distribution, and several publicized "emergent
+        capabilities" turned out to be artifacts of benchmark scoring. Extrapolating to a
+        recursively self-improving agent is conjecture about a trajectory nobody can observe. In "AI
+        as Normal Technology" (2025)
+        <cite data-key="narayanan_kapoor_normal_technology_2025"></cite> they add that probability
+        estimates for speculative catastrophe cannot carry the policy weight placed on them, and
+        that AI is better modeled on transformative-but-ordinary technologies like electricity —
+        absorbed over decades, governed by regulation, liability, and institutional adaptation.
+      </p>
+      <p>
+        They are emphatically not arguing that AI is harmless: bias, labor displacement,
+        concentration of power, and degradation of the information ecosystem are serious and
+        systemic — just not existential. The response to a near-term, measurable problem looks very
+        different from the response to a speculative one, and a discourse organized around the
+        second leaves the first unaddressed.
+      </p>
+
+      <h3>Bender, Gebru, and "Stochastic Parrots"</h3>
+
+      <p>
+        In a now-famous 2021 paper, Emily Bender, Timnit Gebru, Angelina McMillan-Major, and a
+        fourth co-author writing as Shmargaret Shmitchell — widely reported to be Margaret Mitchell
+        — asked whether language models had become "too big."
+        <cite data-key="bender_stochastic_parrots_2021"></cite> Their central image is the
+        <strong>stochastic parrot</strong>: a model stitches together linguistic forms seen in
+        training according to probabilistic information about how they combine, without reference to
+        meaning. Fluency is not comprehension.
+      </p>
+      <p>
+        Their catalogue of harms is more specific than it is often reported to be: the environmental
+        and financial costs of ever-larger training runs; corpora too large for anyone to document,
+        and therefore certain to encode their producers' biases; a field that mistakes scale for
+        progress; and fluent, unmoored text taken as authoritative. The distinctively political
+        claim — that extinction discourse actively displaces attention from these harms — came
+        later, in a March 2023 joint statement by the paper's named authors responding to an open
+        letter calling for a training pause <cite data-key="dair_pause_statement_2023"></cite>.
+      </p>
+      <p>
+        Gebru's departure from Google in December 2020, while the paper was under review, remains
+        contested — Google called it a resignation, Gebru a firing — and raised an unsettled
+        question: who gets to publish critical research about systems their employer is building.
+      </p>
+
+      <h3>Torres and the TESCREAL Critique</h3>
+
+      <p>
+        Émile Torres offers perhaps the sharpest ideological critique. Torres coined the acronym
+        TESCREAL — developed at length with Timnit Gebru in 2024 — for a loose but influential
+        cluster combining Transhumanism, Extropianism, Singularitarianism, Cosmism, Rationalism,
+        Effective Altruism, and Longtermism. <cite data-key="gebru_torres_tescreal_2024"></cite>
+        These movements, they argue, share assumptions: that the important ethical considerations
+        concern the distant future; that expected-value reasoning suits all ethical decisions; that
+        a small technical elite should make civilization-scale choices; and that present harms can
+        be discounted against speculative future benefits.
+      </p>
+      <p>
+        On this view existential-risk discourse is not politically neutral. It serves wealthy
+        entrepreneurs, elite research organizations, and the intellectuals they fund, by framing the
+        important AI questions as ones requiring technical expertise (which they have) rather than
+        democratic accountability (which would distribute power). The critique does not require
+        believing anyone is a conscious bad actor; frameworks can serve institutional interests even
+        when adopted sincerely.
+      </p>
+
+      <blockquote class="quote-block">
+        <p>
+          It is dangerous to distract ourselves with a fantasized AI-enabled utopia or apocalypse
+          which promises either a "flourishing" or "potentially catastrophic" future.
+        </p>
+        <cite>Bender, Gebru, McMillan-Major and Mitchell, statement on the "AI pause" letter,
+        DAIR Institute (2023)</cite>
+      </blockquote>
+
+      <p>
+        That sentence captures the core tension. Misaligned superintelligence may well be the most
+        important AI problem — but the framework carries opportunity costs. Every dollar spent on
+        speculative alignment research is not spent on bias auditing, labor protections, or
+        democratic governance; every discussion framed around hypothetical superintelligence is one
+        not framed around systems already deciding things about people's lives.
+      </p>
+
+      <div class="thought-questions">
+        <p class="box-label">Thought Questions</p>
+        <ol>
+          <li>
+            Can the existential-risk case and the present-harms case be taken seriously at once?
+            What would a policy agenda that did both look like?
+          </li>
+          <li>
+            Vallor argues that talk of an AI that "wants" things misdescribes the danger. Try
+            restating Bostrom's argument without any mentalistic language.
+          </li>
+          <li>
+            Bender and Gebru call large language models "stochastic parrots." Has your own use of AI
+            tools shown genuine understanding, or very good pattern-matching?
+          </li>
+        </ol>
+      </div>
+
+    </section><!-- /critics -->
+
+
+    <!-- ══════════════════════════════════════════════════
+         PART III: AUTONOMOUS WEAPONS
+    ══════════════════════════════════════════════════════ -->
+    <section id="autonomous-weapons" aria-labelledby="s3-heading">
+      <h2 id="s3-heading">Part III: Autonomous Weapons</h2>
+
+      <p>
+        The debate over superintelligence can feel abstract; autonomous weapons are concrete.
+        Militaries already deploy AI-powered systems that identify, track, and in some cases attack
+        targets with varying degrees of human oversight, raising hard questions about
+        accountability, the laws of armed conflict, and the moral meaning of violence: if a machine
+        kills a civilian, who — if anyone — is responsible?
+      </p>
+
+      <div class="definition-box">
+        <p class="term">Lethal Autonomous Weapons System (LAWS)</p>
+        <p class="definition">
+          A weapons system that uses sensors and AI to identify, select, and engage targets without
+          meaningful human control over the decision to use lethal force. Sometimes called "killer
+          robots," though automation levels vary widely. The defining feature: the lethal decision,
+          not just the delivery mechanism, is delegated to the machine.
+        </p>
+      </div>
+
+      <h3>The Autonomy Spectrum</h3>
+
+      <p>
+        Weapons do not fit a binary of "human controlled" versus "fully autonomous." Paul Scharre,
+        whose 2018 book <em>Army of None</em> remains the standard treatment, describes a spectrum.
+        <cite data-key="scharre_army_of_none_2018"></cite> At one end a human pulls the trigger on
+        every engagement; at the other a system detects, classifies, and attacks by programmed
+        criteria, with no human in any individual targeting decision.
+      </p>
+
+      <figure>
+        <div class="mermaid">
+flowchart LR
+    A["Human-in-the-Loop\nHuman decides on\nevery individual\ntarget engagement"] -->|"increasing automation"| B["Human-on-the-Loop\nSystem engages autonomously;\nhuman can intervene\nor override in real time"]
+    B -->|"increasing automation"| C["Human-out-of-the-Loop\nSystem selects and\nengages targets fully\nautonomously; no human\nreview of individual shots"]
+        </div>
+        <figcaption>
+          Figure 10.1 — The LAWS autonomy spectrum. Most systems fall in the contested middle; the
+          debate focuses on whether anything should occupy the rightmost position.
+        </figcaption>
+      </figure>
+
+      <p>
+        The U.S. Phalanx system, which automatically engages incoming missiles to defend ships, is
+        "human-on-the-loop": a human arms it and can shut it down, but engagements happen faster
+        than human reaction time permits. South Korea's SGR-A1 sentry gun, reportedly tested along
+        the demilitarized zone, is described as technically capable of engaging human targets
+        autonomously, though its manufacturer says an operator must authorize any use of force —
+        deployment details are unconfirmed, itself part of the governance problem.
+      </p>
+
+      <figure style="text-align:center; margin: 1.5rem 0;">
+        <img src="../images/military_drone.jpg"
+             alt="MQ-9 Reaper unmanned aerial vehicle on a tarmac"
+             style="max-width: 520px; border-radius: 4px;">
+        <figcaption>
+          An MQ-9 Reaper, among the most widely used armed drones. Flown by a human pilot over a
+          remote link, it is semi-autonomous — but it illustrates the extension of lethal capability
+          to increasingly automated platforms. Public domain (U.S. Air Force), via Wikimedia
+          Commons.
+        </figcaption>
+      </figure>
+
+      <div class="key-thinker">
+        <div class="thinker-portrait-placeholder" aria-hidden="true">🎖️</div>
+        <div class="thinker-header">
+          <p class="thinker-label">Key Thinker</p>
+          <h3 class="thinker-name">
+            Paul Scharre
+            <span class="thinker-dates">(contemporary)</span>
+          </h3>
+        </div>
+        <div class="thinker-body">
+          <p>
+            Paul Scharre is a defense policy analyst and former U.S. Army Ranger who served in Iraq
+            and Afghanistan, then worked on the Defense Department's first directive on autonomy in
+            weapons systems. <em>Army of None</em> (2018) is therefore written from inside the
+            policy machinery as well as from the field.
+            <cite data-key="scharre_army_of_none_2018"></cite>
+          </p>
+          <p>
+            He lays out two arguments against LAWS. The consequentialist one: autonomous weapons
+            will perform worse than humans in complex, ambiguous combat — more mistakes, more
+            civilian deaths, escalation nobody intended. The deontological one: delegating the
+            decision to kill to a machine is intrinsically wrong regardless of reliability, because
+            it strips the act of the moral weight killing demands.
+          </p>
+          <p>
+            Do not enlist Scharre as a straightforward abolitionist. He takes both arguments
+            seriously and insists human judgment must be present in the use of lethal force, but he
+            is openly skeptical that a comprehensive preemptive ban could be defined precisely
+            enough or verified reliably enough to hold. His own proposals are narrower: a
+            prohibition on <em>anti-personnel</em> autonomous weapons, and an agreed principle that
+            a human must always bear responsibility for decisions to take human life. For the case
+            for an outright ban, look to Human Rights Watch and Stop Killer Robots instead.
+          </p>
+        </div>
+      </div><!-- /.key-thinker -->
+
+      <h3>The Laws of Armed Conflict</h3>
+
+      <p>
+        International humanitarian law requires combatants to distinguish military targets from
+        civilians (distinction), to keep expected civilian casualties proportionate to anticipated
+        military advantage (proportionality), and to take all feasible precautions (precaution).
+        Human Rights Watch argues that fully autonomous weapons cannot reliably apply these
+        principles, which require contextual judgment of a kind current AI cannot perform.
+        <cite data-key="hrw_losing_humanity_2012"></cite>
+      </p>
+      <p>
+        The argument is not about accuracy. A system could be highly accurate at identifying
+        uniformed combatants and still fail the proportionality test, which requires weighing
+        military value against expected civilian casualties in an inherently contextual way.
+        Thresholds can be programmed, but cannot anticipate every context — and the stakes of
+        getting it wrong are irreversible.
+      </p>
+      <p>
+        Alongside this runs a second and more structural objection, developed by the philosopher
+        Robert Sparrow <cite data-key="sparrow_killer_robots_2007"></cite> and taken up by Human Rights Watch: even a perfectly reliable autonomous
+        weapon would leave nobody to hold responsible when it kills someone it should not have.
+        <cite data-key="hrw_losing_humanity_2012"></cite>
+      </p>
+
+      <div class="argument-box">
+        <p class="box-label">What's the Argument?</p>
+        <p class="box-title">The Responsibility Vacuum Problem</p>
+        <ol class="premises">
+          <li>When an autonomous weapon kills a civilian, responsibility must lie with someone —
+              designer, deploying commander, authorizing political authority, or some
+              combination.</li>
+          <li>Each can plausibly disclaim it: the designer could not anticipate every scenario; the
+              commander deployed the system within its stated parameters; the political authority
+              authorized a class of weapons, not individual shots.</li>
+          <li>When responsibility is spread so diffusely that no one can be held accountable,
+              accountability disappears — no punishment, no deterrence, no incentive to prevent
+              future harm.</li>
+        </ol>
+        <div class="conclusion">
+          <span class="therefore">&#8756;</span>
+          Fully autonomous weapons create a "responsibility vacuum" incompatible with both the rule
+          of law and basic moral accountability for the use of lethal force.
+        </div>
+      </div>
+
+      <p>
+        The problem is structural, not a matter of reliability: autonomous weapons remove the human
+        moral agent from the decision to kill, and no institutional arrangement restores that agency
+        afterward. The result is violence without a perpetrator — precisely what the laws of armed
+        conflict exist to prevent.
+      </p>
+
+      <div class="case-study">
+        <p class="box-label">Case Study</p>
+        <p class="box-title">The Kargu-2 in Libya (2020): The First Autonomous Lethal Attack?</p>
+        <p>
+          In March 2021 the United Nations Panel of Experts on Libya reported that, a year earlier,
+          forces aligned with the Government of National Accord had used Kargu-2 loitering munitions
+          — small drones made by the Turkish firm STM — against retreating fighters affiliated with
+          Khalifa Haftar. The munitions, the Panel wrote, were "programmed to attack targets without
+          requiring data connectivity between the operator and the munition: in effect, a true
+          'fire, forget and find' capability," and retreating forces were "hunted down and remotely
+          engaged."
+        </p>
+        <p>
+          The passage is widely reported as the first autonomous killing in history, and the gap
+          between what the report establishes and what it is said to establish is instructive. The
+          Panel described a <em>capability</em> and a deployment. It did not state that anyone was
+          killed by a munition operating without human supervision, and it did not investigate
+          individual engagements; the manufacturer disputed the characterization; analysts have
+          since disagreed about whether an operator retained oversight. So a threshold may have been
+          crossed in Libya in 2020 and nobody can say for certain — exactly what makes autonomous
+          weapons hard to regulate. A norm that cannot be verified cannot easily be enforced.
+        </p>
+        <p>
+          The case nonetheless became a focal point for advocates of a binding prohibition; the
+          coalition Stop Killer Robots now comprises more than 250 organizations across some 70
+          countries. Movement has been real but slow: the UN General Assembly adopted resolutions in
+          December 2023 and December 2024, and the Secretary-General and the Red Cross urged states
+          to conclude a binding instrument by 2026. As of mid-2026 none exists — agreement is hard
+          when the militarily most significant states have incentives to keep developing the
+          technology.
+        </p>
+      </div>
+
+      <figure style="text-align:center; margin: 1.5rem 0;">
+        <img src="../images/killer_robots_campaign.jpg"
+             alt="Meeting of the Campaign to Stop Killer Robots, 2013"
+             style="max-width: 520px; border-radius: 4px;">
+        <figcaption>
+          A 2013 meeting of the Campaign to Stop Killer Robots — among the earliest civil-society
+          efforts for a preemptive ban. CC BY 2.0, via Wikimedia Commons.
+        </figcaption>
+      </figure>
+
+      <div class="thought-questions">
+        <p class="box-label">Thought Questions</p>
+        <ol>
+          <li>
+            The deontological argument holds that delegating the decision to kill to a machine is
+            intrinsically wrong even if the machine is highly accurate. Do you find it convincing?
+          </li>
+          <li>
+            If autonomous weapons demonstrably reduced civilian casualties — because they feel no
+            fear, revenge, or exhaustion — would that change your view of whether to permit them?
+          </li>
+          <li>
+            How should "meaningful human control" be defined in international law? Is the ability to
+            shut a system down enough, if no human authorizes each shot?
+          </li>
+        </ol>
+      </div>
+
+    </section><!-- /autonomous-weapons -->
+
+
+    <!-- ══════════════════════════════════════════════════
+         PART IV: AI AND BIOLOGICAL THREATS
+    ══════════════════════════════════════════════════════ -->
+    <section id="bioweapons" aria-labelledby="s4-heading">
+      <h2 id="s4-heading">Part IV: AI and Biological Threats</h2>
+
+      <p>
+        Of the near-term AI risks attracting serious expert attention, misuse in biological research
+        may be the most alarming. Unlike alignment, which concerns hypothetical future systems, or
+        autonomous weapons, which require military infrastructure, the biological threat involves
+        technology that already exists: AI trained on research literature and molecular databases
+        can assist actors who otherwise lack the expertise to design dangerous pathogens or chemical
+        agents. The concern needs qualification — but it is about tools in use today.
+      </p>
+
+      <div class="definition-box">
+        <p class="term">Dual-Use Research of Concern (DURC)</p>
+        <p class="definition">
+          Life sciences research that can reasonably be anticipated to yield knowledge, products, or
+          technologies directly misapplicable to threaten public health or national security. The
+          term was formalized in U.S. policy after the 2001 anthrax attacks and the H5N1 influenza
+          debates, and is now central to discussions of AI and biological risk.
+        </p>
+      </div>
+
+      <h3>AI as a Capability Multiplier in Biology</h3>
+
+      <p>
+        The biosecurity researcher Jonas Sandbrink, in a widely cited 2023 preprint, argues that AI
+        is a qualitative change in the dual-use risk landscape — but insists the change is not
+        uniform. <cite data-key="sandbrink_ai_biological_misuse_2023"></cite> Earlier bioweapons
+        concerns focused on states with resources and specialized expertise. AI changes the
+        calculation twice over: it lowers the expertise threshold for designing dangerous agents,
+        offering guidance on synthesis routes, protein engineering, or delivery; and it accelerates
+        research past oversight built for laboratory timescales.
+      </p>
+      <p>
+        His most useful contribution here is a distinction between two kinds of tool. General-purpose
+        <strong>large language models</strong> pose mainly an <em>information hazard</em>: they make
+        existing dangerous knowledge easier to find and assemble, but create no capability that was
+        not already in the literature. Dedicated <strong>biological design tools</strong> — systems
+        that predict protein structure or generate novel sequences — are different, because they can
+        in principle produce agents that have never existed. The two need different governance:
+        screening chatbot outputs does nothing about the second, and restricting protein-design
+        models does nothing about the first.
+      </p>
+      <p>
+        None of this means an available system will hand anyone a working bioweapon blueprint. Major
+        providers have guardrails aimed at dangerous biological requests, though jailbreaks remain
+        possible; and the hardest steps are not informational. Acquiring, synthesizing, culturing,
+        stabilizing, and delivering a pathogen remain physical problems no amount of text generation
+        solves. The concern is directional rather than immediate: as systems become more capable and
+        more widely deployed in laboratories, capability plus accessibility creates risks existing
+        frameworks were not built to manage.
+      </p>
+
+      <figure style="text-align:center; margin: 1.5rem 0;">
+        <img src="../images/bsl4_researcher.jpg"
+             alt="Researcher in a positive-pressure suit working in a BSL-4 laboratory"
+             style="max-width: 400px; border-radius: 4px;">
+        <figcaption>
+          A researcher in a positive-pressure suit in a Biosafety Level 4 laboratory. AI-assisted
+          research raises the question of whether protocols designed for physical containment
+          suffice when the dangerous step, designing a pathogen, can happen computationally.
+          Public domain (NIAID/NIH), via Wikimedia Commons.
+        </figcaption>
+      </figure>
+
+      <div class="case-study">
+        <p class="box-label">Case Study</p>
+        <p class="box-title">AI Designs VX Analogs in Hours (2022)</p>
+        <p>
+          In March 2022, Fabio Urbina and colleagues at Collaborations Pharmaceuticals published a
+          short paper in <em>Nature Machine Intelligence</em> describing an alarming
+          proof-of-concept <cite data-key="urbina_dual_use_2022"></cite>. They inverted the
+          objective function of their AI drug-discovery system, MegaSyn: instead of searching for
+          beneficial pharmacological properties, they asked it for maximum predicted toxicity.
+          Within six hours it generated roughly 40,000 candidates, including many variants of the
+          nerve agent VX, some predicted to be more toxic than VX itself.
+        </p>
+        <p>
+          They published as a warning, not a blueprint. Nothing was synthesized; the experiment was
+          entirely computational. Their point was that infrastructure built for drug discovery could
+          be repurposed with trivial modifications. They also wrestled publicly with the ethics of
+          publication, giving enough detail to establish the threat's credibility while withholding
+          synthesis information.
+        </p>
+        <p>
+          The experiment became a reference point in biosecurity policy and fed into screening
+          protocols — including the U.S. framework for screening synthetic nucleic acid orders and
+          the 2023 executive order on AI, which required developers of dual-use biological AI to
+          adopt safety protocols. That scaffolding proved unstable: the executive order was rescinded
+          in January 2025 and the screening framework has been under revision since a further order
+          in May 2025, so the current U.S. position should be checked rather than assumed. The
+          underlying challenge does not change with administrations: the line between beneficial and
+          harmful AI-assisted biology is drawn by the user's intent, not the system's design.
+        </p>
+      </div>
+
+      <p>
+        Restricting access is impractical: the models are often open-source, and restricting them
+        would also restrict beneficial work in medicine and materials science. More promising
+        approaches screen at the synthesis level (flagging dangerous molecules before they are
+        physically made), impose access controls on specialized biological AI tools, and monitor
+        AI-assisted research where dangerous agents are handled. None is complete.
+      </p>
+
+      <div class="thought-questions">
+        <p class="box-label">Thought Questions</p>
+        <ol>
+          <li>
+            The VX researchers published as a warning while withholding synthesis details. Was that
+            right? What should researchers weigh before publishing dual-use findings?
+          </li>
+          <li>
+            The biosecurity framework of the 2000s was designed to stop state actors. How does AI
+            change the threat landscape, and what governance tools might be needed?
+          </li>
+          <li>
+            Sandbrink treats language models as an information hazard and biological design tools as
+            genuinely new capability. If you could regulate only one, which, and what would you give
+            up?
+          </li>
+        </ol>
+      </div>
+
+    </section><!-- /bioweapons -->
+
+
+    <!-- ══════════════════════════════════════════════════
+         PART V: LONGTERMISM AND THE PRECAUTIONARY PRINCIPLE
+    ══════════════════════════════════════════════════════ -->
+    <section id="longtermism" aria-labelledby="s5-heading">
+      <h2 id="s5-heading">Part V: Longtermism and the Precautionary Principle</h2>
+
+      <p>
+        The existential-risk debate is also a question about how to reason under deep uncertainty
+        about the long-run future. Two frameworks dominate: longtermism, which gives the welfare of
+        future generations substantial weight, and the precautionary principle, which puts the
+        burden of proof on those who wish to proceed when an action risks severe or irreversible
+        harm. Both are invoked by AI risk researchers; both have been seriously criticized.
+      </p>
+
+      <h3>Longtermism</h3>
+
+      <p>
+        Longtermism, developed most prominently by William MacAskill in <em>What We Owe the
+        Future</em> (2022), holds that future people matter as much as present people, and that
+        because there could be vastly more of them, our obligations to them could outweigh our
+        obligations to the present. <cite data-key="macaskill_future_2022"></cite> Preventing
+        civilizational catastrophe is then among the highest priorities possible, since it is the
+        only way to preserve the possibility of those lives.
+      </p>
+
+      <div class="definition-box">
+        <p class="term">Longtermism</p>
+        <p class="definition">
+          The view that positively influencing the long-run future is among the most important moral
+          priorities. In its strong form it gives very high weight to potential future people — who
+          could vastly outnumber present ones — making extinction risk dominant in many policy
+          decisions. <cite data-key="macaskill_future_2022"></cite>
+        </p>
+      </div>
+
+      <p>
+        In its favor: longtermism gives a principled basis for taking extinction risks seriously and
+        for investing in areas — AI safety, pandemic preparedness, asteroid defense — neglected
+        precisely because their benefits accrue to people who cannot vote, lobby, or exert market
+        pressure. The intuition that future generations matter is widely shared; longtermism takes
+        it seriously in its full quantitative implications.
+      </p>
+      <p>
+        Against: the argument depends on hypothetical future people whose existence is deeply
+        uncertain, and expected-value calculations over trillions of lives are sensitive to small
+        changes in already-uncertain probability estimates. The sharpest version of this worry is
+        <em>Pascal's mugging</em>: multiply a tiny probability by a sufficiently astronomical payoff
+        and almost any demand looks rational, impossible to argue with because nothing present can
+        outweigh it. Critics including Émile Torres argue that such reasoning can justify almost any
+        present sacrifice, and in practice has been used to discount urgent harms to real people.
+        <cite data-key="torres_against_longtermism_2021"></cite>
+      </p>
+
+      <div class="table-wrapper">
+        <table>
+          <caption>Table 10.2 — Longtermism vs. Present-Focused Ethics: A Comparison</caption>
+          <thead>
+            <tr>
+              <th scope="col">Dimension</th>
+              <th scope="col">Longtermism</th>
+              <th scope="col">Present-Focused Ethics</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Time horizon</strong></td>
+              <td>Centuries to millions of years; preserving long-run potential</td>
+              <td>Decades at most; identifiable present harms</td>
+            </tr>
+            <tr>
+              <td><strong>Primary concern</strong></td>
+              <td>Existential risk; preserving the possibility of a vast future</td>
+              <td>Inequality, discrimination, environmental harm, labor rights</td>
+            </tr>
+            <tr>
+              <td><strong>Key thinkers</strong></td>
+              <td>Toby Ord, William MacAskill, Nick Bostrom, Eliezer Yudkowsky</td>
+              <td>Shannon Vallor, Timnit Gebru, Ruha Benjamin, Kate Crawford, Virginia Eubanks</td>
+            </tr>
+            <tr>
+              <td><strong>Main risk from AI</strong></td>
+              <td>Misaligned superintelligence causing extinction or permanent lock-in</td>
+              <td>Biased systems, surveillance expansion, labor displacement</td>
+            </tr>
+            <tr>
+              <td><strong>Policy priority</strong></td>
+              <td>Alignment research, slowing capability development, global coordination</td>
+              <td>Algorithmic accountability, anti-discrimination law, labor protections</td>
+            </tr>
+            <tr>
+              <td><strong>Core challenge</strong></td>
+              <td>Reasoning under deep uncertainty about hypothetical future lives</td>
+              <td>Present harms are real but politically hard to address; corporate power resists</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>
+        The table simplifies — there are longtermists who take present harms seriously, and
+        present-focused critics who grant that long-run risks deserve attention. The sharpest
+        disagreement is not about values but epistemology: can we predict the long-run future
+        reliably enough to justify weighting it heavily today?
+      </p>
+
+      <h3>The Precautionary Principle</h3>
+
+      <p>
+        The precautionary principle — roughly, "when in doubt, don't" — is often invoked in debates
+        about AI risk. If we are genuinely uncertain whether powerful AI could cause catastrophic
+        and irreversible harm, shouldn't we err on the side of caution? Cass Sunstein, who has
+        studied the principle extensively, argues that it is both more appealing and more
+        problematic than it first appears. <cite data-key="sunstein_laws_of_fear_2005"></cite>
+      </p>
+      <p>
+        The appeal is that reversible caution seems wiser than irreversible action when the stakes
+        are high. The problem, Sunstein argues, is that the principle is self-defeating when applied
+        consistently, because almost any action risks serious harm to someone. Slowing AI carries
+        risks too: diseases it could have helped cure, energy transitions it could have accelerated,
+        economic and educational benefits delayed. Apply the principle to developing AI and you must
+        also apply it to slowing AI — and the framework offers no way to choose.
+      </p>
+
+      <div class="pro-argument">
+        <p class="box-label">Supporting argument</p>
+        <p>
+          The asymmetry between catastrophic and recoverable risks is a principled reason for extra
+          caution about AI. If we are wrong to go slowly, we lose near-term benefits that can be
+          recovered later; if we are wrong to go quickly, there is no recovery. Asymmetric risks
+          warrant asymmetric caution — a version of the principle requiring not certainty about harm
+          but only that the downside is qualitatively different from the upside.
+        </p>
+      </div>
+
+      <div class="objection">
+        <p class="box-label">Objection</p>
+        <p>
+          The asymmetry argument applies with equal force in the other direction. The benefits
+          forgone by slowing AI — in medicine, climate, education, poverty reduction — are also
+          potentially enormous, and more certain, nearer-term, and more equitably distributed than
+          the speculative gains from risk prevention. Systematically discounting certain near-term
+          benefits for uncertain long-term risk avoidance may do more harm than good.
+        </p>
+      </div>
+
+      <p>
+        Neither framework gives a clean answer to how much caution is appropriate. Used together
+        they can structure the debate: identifying the considerations on each side, exposing the
+        uncertainties that must be reduced, and guarding against both complacency and the paralysis
+        that uses risk as a reason to avoid all difficult decisions.
+      </p>
+
+      <h3>The Other Tail: What If It Goes Right?</h3>
+
+      <p>
+        Almost everything in this chapter has concerned the bad tail. That is a strange way to argue
+        about caution, because caution is always caution <em>for the sake of</em> something.
+        Bostrom's <em>Deep Utopia</em> (2024) is the mirror image of <em>Superintelligence</em>, and
+        worth reading precisely because the same author wrote both. Suppose alignment is solved, no
+        war follows, and machines do everything humans currently do for a living, better. Bostrom
+        calls this a "post-instrumental" condition, in which human effort is no longer
+        <em>necessary</em> for anything.
+      </p>
+      <p>
+        This is not obviously a happy ending, and we have thought about it far less carefully than
+        about extinction. If work is optional, what is achievement? If a machine could have written
+        your essay or comforted your friend better than you did, what did you contribute? Bostrom is
+        not predicting misery; he is pointing out that the sources of meaning most cultures rely on
+        — necessity, scarcity, difficulty, being needed — would have to be replaced by something,
+        and nobody has a good account of what. It is Chapter 8's question about meaningful work at
+        civilizational scale, without the option of finding a different job.
+      </p>
+      <p>
+        This is not a change of subject. Both the precautionary principle and the expected-value
+        argument assume we know what we are protecting. If the best plausible outcome is one we
+        cannot evaluate, some of the confidence on both sides is misplaced — and asking what a good
+        future with AI consists of becomes a precondition for the risk debate, not a postscript.
+      </p>
+
+      <div class="thought-questions">
+        <p class="box-label">Thought Questions</p>
+        <ol>
+          <li>
+            MacAskill argues that future people matter as much as present people. Do you agree? Does
+            your answer change with how uncertain their existence is?
+          </li>
+          <li>
+            Is the "both/and" framing coherent, or does it paper over real conflicts?
+          </li>
+          <li>
+            <em>Deep Utopia</em> asks what would give life meaning if nothing we did was necessary.
+            Name something you would still want to do well even if a machine could do it better.
+          </li>
+        </ol>
+      </div>
+
+    </section><!-- /longtermism -->
+
+
+    <!-- ══════════════════════════════════════════════════
+         SYNTHESIS AND CONCLUSION
+    ══════════════════════════════════════════════════════ -->
+    <section id="synthesis" aria-labelledby="s6-heading">
+      <h2 id="s6-heading">Synthesis and Conclusion</h2>
+
+      <p>
+        It would be convenient if one side of this debate were clearly right and the other clearly
+        wrong. Intellectual honesty requires sitting with the tensions.
+      </p>
+
+      <h3>What the Existential Risk Camp Gets Right</h3>
+
+      <p>
+        Systems more capable than humans in all cognitive domains would be a world-historic event
+        with consequences hard to predict or control, and the alignment problem is real: no proven
+        method exists for ensuring a highly capable system pursues beneficial goals rather than ones
+        that merely look beneficial under training conditions. Dismissing this because it is
+        uncomfortable, or because it is associated with wealthy Silicon Valley institutions, is not
+        a serious response. Nor do we need certainty of extinction to justify alignment research and
+        international governance: a 1-in-100 chance of civilizational catastrophe is by any
+        accounting urgent.
+      </p>
+
+      <h3>What the Critics Get Right</h3>
+
+      <p>
+        The existential-risk framing, as institutionalized, has demonstrably shifted attention and
+        resources away from present harms. Systems deciding who gets a loan, whose benefits are cut,
+        who is flagged by predictive policing, and whose job is automated do real, measurable,
+        unequally distributed harm today, and that is not less urgent because a speculative future
+        harm would be larger. The scale argument is only as strong as the probability estimates
+        underlying it. And a discourse in which the primary risk is defined by wealthy researchers
+        at elite institutions, concerns hypothetical systems, and calls for technical solutions from
+        those same researchers deserves scrutiny even when its conclusions turn out right. Epistemic
+        humility cuts both ways.
+      </p>
+
+      <h3>A Virtue-Ethics Synthesis</h3>
+
+      <p>
+        Vallor's virtue ethics offers a way through.
+        <cite data-key="vallor_technology_virtues"></cite> Instead of asking "which side is right?" —
+        a question that assumes a possibly false binary — ask what habits of character should guide
+        those building, deploying, and governing AI. <strong>Epistemic humility</strong> means
+        treating near-term and long-term risks as both real and uncertain, rather than prioritizing
+        whatever is professionally interesting. <strong>Moral attention</strong> means keeping actual
+        people central rather than abstracting them into expected-value calculations.
+        <strong>Accountability</strong> means regulatory bodies, auditing standards, and
+        professional norms that hold developers responsible for present harms and future risks
+        alike.
+      </p>
+      <p>
+        The resulting "both/and" is not fence-sitting. The dichotomy between existential risk and
+        present harm is partly a product of institutional competition for resources, and an ethical
+        approach needs the flexibility to treat alignment research and algorithmic accountability,
+        weapons bans and bias auditing, biosecurity and labor protections as complementary rather
+        than competing. Allocating resources across them is hard — but no discourse that treats one
+        as obviously dominant will do it well.
+      </p>
+
+      <blockquote class="quote-block">
+        <p>
+          Mirrors do not merely reveal things as they are: mirrors also magnify, occlude, and
+          distort what is captured in their frame.
+        </p>
+        <cite data-key="vallor_ai_mirror_2024"></cite>
+      </blockquote>
+
+      <p>
+        Vallor is writing about AI systems, but the sentence fits the debate about them. The
+        existential-risk frame magnifies irreversibility and occludes distribution: good at noticing
+        that some mistakes cannot be undone, bad at noticing who is already paying. The
+        present-harms frame does the reverse. Neither is neutral, and neither is dispensable. The
+        question to carry out of this chapter is not "which side is right?" but "what is this
+        framing helping me see, and what is it keeping out of the picture?"
+      </p>
+
+      <div class="thought-questions">
+        <p class="box-label">Thought Questions</p>
+        <ol>
+          <li>
+            You have one billion dollars to reduce AI-related risk, split among alignment research,
+            autonomous weapons regulation, litigation over algorithmic discrimination, and AI
+            biosecurity. How do you divide it, and which assumptions are doing the work?
+          </li>
+          <li>
+            Pick the position you find <em>less</em> plausible and write the strongest one-paragraph
+            case for it that you can.
+          </li>
+          <li>
+            Vallor's virtues are meant to guide action while the empirical questions stay unsettled.
+            Is that real practical guidance, or a graceful evasion?
+          </li>
+        </ol>
+      </div>
+
+    </section><!-- /synthesis -->
+
+
+    <!-- ══════════════════════════════════════════════════
+         KEY POINTS SUMMARY
+    ══════════════════════════════════════════════════════ -->
+    <section id="key-points" aria-labelledby="kp-heading">
+      <h2 id="kp-heading">Summary</h2>
+
+      <p>
+        This chapter examined AI risk from several angles: the case for treating superintelligent AI
+        as an existential threat, the critics who say that framing distracts from present harms,
+        autonomous weapons and biological risk, longtermism and the precautionary principle, and
+        what a good outcome would even look like.
+      </p>
+
+      <div class="key-points">
+        <p class="box-label">Key Points</p>
+        <ul>
+          <li>
+            <strong>Existential risk</strong> means threats that could permanently destroy
+            humanity's potential; Ord's estimates — about 1 in 6 overall, 1 in 10 from AI, published
+            in 2020 and unchanged on review in 2024 — make unaligned AI the largest contributor.
+          </li>
+          <li>
+            <strong>The orthogonality and instrumental convergence theses</strong> carry Bostrom's
+            argument, and both are more modest, and harder to dismiss, than the paperclip maximizer.
+          </li>
+          <li>
+            <strong>The alignment problem</strong> is ensuring powerful systems pursue genuinely
+            beneficial goals rather than ones that merely look beneficial under training conditions.
+          </li>
+          <li>
+            <strong>The intelligence explosion argument</strong> (Bostrom, Yudkowsky) holds that a
+            self-improving system could bootstrap beyond human control — on empirical assumptions
+            that remain unverified.
+          </li>
+          <li>
+            <strong>Critics differ</strong>: Vallor objects that mentalistic talk of machines that
+            "want" things misdescribes the danger, which is human abdication of moral judgment;
+            Narayanan and Kapoor press a capabilities-gap objection; Bender, Gebru, and Torres argue
+            that extinction discourse displaces attention from present harms.
+          </li>
+          <li>
+            <strong>Lethal autonomous weapons</strong> raise Sparrow's "responsibility vacuum": when
+            a machine kills without meaningful human control, no one can readily be held
+            accountable.
+          </li>
+          <li>
+            <strong>Scharre is not an abolitionist</strong>: he insists humans must bear
+            responsibility for lethal force, but doubts a comprehensive preemptive ban could be
+            defined or verified, and proposes a narrower anti-personnel prohibition.
+          </li>
+          <li>
+            <strong>The Kargu-2 case (Libya, 2020)</strong> is often called the first autonomous
+            killing, but the UN report established a capability and a deployment, not a confirmed
+            autonomous fatality.
+          </li>
+          <li>
+            <strong>AI and biological risk</strong> are a present dual-use problem, as the 2022 VX
+            analog experiment showed; Sandbrink distinguishes language models (an information
+            hazard) from biological design tools (which can generate agents that never existed).
+          </li>
+          <li>
+            <strong>Longtermism</strong> (MacAskill) makes preventing existential risk dominant,
+            while Sunstein finds the <strong>precautionary principle</strong> self-defeating; Vallor's
+            virtues let both long-run risk and present harm be taken seriously without either
+            dominating.
+          </li>
+        </ul>
+      </div>
+
+    </section><!-- /key-points -->
+
+
+    <!-- ══════════════════════════════════════════════════
+         REFERENCES
+    ══════════════════════════════════════════════════════ -->
+    <section id="references-section" aria-labelledby="refs-heading">
+      <h2 id="refs-heading">References</h2>
+      <div id="bibliography"></div>
+    </section>
+
+  </main><!-- /.chapter-content -->
+
+
+  <footer class="chapter-footer">
+    <nav class="chapter-footer-nav" aria-label="Chapter navigation">
+      <a href="ch09_social_impact.html" class="footer-nav-btn">&#8592; Previous chapter</a>
+      <a href="../index.html" class="footer-nav-btn">&#8962; Table of Contents</a>
+      <a href="ch11_robot_rights.html" class="footer-nav-btn">Next chapter &#8594;</a>
+    </nav>
+    <p class="chapter-footer-meta">
+      <em>Computing and AI Ethics</em> by Brendan Shea, PhD &nbsp;&middot;&nbsp;
+      <a href="https://creativecommons.org/licenses/by-nc/4.0/"
+         target="_blank" rel="noopener">CC BY-NC 4.0</a> &nbsp;&middot;&nbsp;
+      Rochester Community and Technical College
+    </p>
+  </footer>
+
+</div><!-- /.page-wrapper -->
+
+<script>
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: 'neutral',
+    themeVariables: {
+      primaryColor:      '#1a4a8a',
+      primaryTextColor:  '#fff',
+      primaryBorderColor:'#003366',
+      lineColor:         '#546e7a',
+      secondaryColor:    '#f0f6ff',
+      tertiaryColor:     '#fdf3d6'
+    }
+  });
+</script>
+
+</body>
+</html>

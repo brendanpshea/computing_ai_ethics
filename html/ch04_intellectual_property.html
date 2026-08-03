@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter 4: Intellectual Property in the Digital Age | Computing &amp; AI Ethics</title>
+  <meta name="description"
+        content="Why should anyone own an idea? This chapter examines the philosophical foundations of intellectual property, how digital technology disrupted IP business models, and the emerging challenges posed by AI-generated content.">
+  <meta name="author" content="Brendan Shea, PhD">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+  <script src="cite.js" defer></script>
+</head>
+
+<body data-chapter="4">
+<div class="page-wrapper">
+
+  <nav class="top-nav" aria-label="Chapter navigation">
+    <a href="../index.html" class="nav-home">Computing &amp; AI Ethics</a>
+    <div class="chapter-nav">
+      <a href="ch03_free_speech.html" class="nav-prev">&#8592; Previous</a>
+      <span class="nav-chapter">Chapter 4</span>
+      <a href="ch05_crypto.html" class="nav-next">Next &#8594;</a>
+    </div>
+  </nav>
+
+  <header class="chapter-header">
+    <p class="chapter-eyebrow">Chapter 4</p>
+    <h1>Intellectual Property in the Digital Age</h1>
+    <p class="chapter-subtitle">Creation, Control, and the Battle for Ideas</p>
+  </header>
+
+  <main class="content-area chapter-content" id="main-content">
+
+    <nav class="toc-box" aria-label="Table of contents">
+      <h2>In this chapter</h2>
+      <ol>
+        <li><a href="#central-questions">Central Questions</a></li>
+        <li><a href="#intro">Introduction: What Is Intellectual Property?</a></li>
+        <li><a href="#justifications">Philosophical Justifications for IP</a></li>
+        <li><a href="#digital">Digital Disruption</a></li>
+        <li><a href="#critiques">Critiques and Abuses of IP</a></li>
+        <li><a href="#bigtech">Big Tech and IP as a Competitive Weapon</a></li>
+        <li><a href="#ai">AI and Intellectual Property</a></li>
+        <li><a href="#alternatives">Open Source and Alternative Models</a></li>
+        <li><a href="#key-points">Key Points</a></li>
+      </ol>
+    </nav>
+
+    <!-- ── CENTRAL QUESTIONS ─────────────────────────────── -->
+    <section class="central-questions" id="central-questions" aria-labelledby="cq-heading">
+      <h2 id="cq-heading">Central Questions</h2>
+      <ol>
+        <li>Why should anyone "own" an idea, and what traditions justify intellectual property rights?</li>
+        <li>What are the four primary types of IP, and why do they differ in duration and purpose?</li>
+        <li>How did digital technology disrupt traditional IP business models, and how did the industry adapt?</li>
+        <li>Do IP mechanisms mainly promote innovation — or mainly enable control by powerful interests?</li>
+        <li>How should copyright and patent law respond to AI systems that train on human work and then generate new content?</li>
+        <li>How do we balance creators' rights with the public's interest in access to knowledge?</li>
+      </ol>
+    </section>
+
+    <!-- ── SECTION 1: INTRODUCTION ─────────────────────────────── -->
+    <section id="intro" aria-labelledby="intro-heading">
+      <h2 id="intro-heading">Introduction: What Is Intellectual Property?</h2>
+
+      <p>Consider a thought experiment from an 1813 letter of Thomas Jefferson's. Light a candle from mine and you have fire, but my flame is no smaller. Give you half my sandwich and I have half as much. Physical goods are <strong>rivalrous</strong> — my use prevents yours. Ideas are not: share one and you can pass it on a hundred times over, and none of us has any less. If ideas cannot be "taken," what would it mean to "own" one?</p>
+
+      <blockquote class="quote-block">
+        <p>He who receives an idea from me, receives instruction himself without lessening mine; as he who lights his taper at mine, receives light without darkening me.</p>
+        <cite data-key="jefferson_mcpherson"></cite>
+      </blockquote>
+
+      <p>Jefferson's puzzle is at the heart of <strong>intellectual property law</strong> — the rules granting creators exclusive rights for a set period. Unlike physical property rights, which protect what already exists, IP rights create legal scarcity where nature provides abundance. A book can be copied perfectly at near-zero cost; a drug formulation can be synthesized by any competent chemist. IP law manufactures the scarcity deliberately, on the argument that without it creators would have too little incentive to create.</p>
+
+      <p>Whether that argument is sound — whether IP systems serve their stated purpose or have been captured by incumbents — is a central debate of this chapter. It matters for digital technology because computers are at their core copy machines, and networks distribute those copies globally for nothing. Nearly everything a computer does collides with traditional IP law's assumptions.</p>
+
+      <figure>
+        <img src="../images/plato_bust.jpg" alt="Marble bust of Plato at the Musei Capitolini, Rome">
+        <figcaption>
+          Figure 4.1 — Plato (428–348 BCE), Roman marble copy. Musei Capitolini, Rome. Public domain. Whether ideas can be owned traces back to ancient debates about whether knowledge is discovered or invented.
+        </figcaption>
+      </figure>
+
+      <h3>The Four Types of Intellectual Property</h3>
+
+      <p>Modern IP law recognizes four categories, each with a different basis, duration, and rules. The differences matter because debates conflate them: arguments that work for patents may not apply to copyright.</p>
+
+      <div class="table-wrapper">
+        <table>
+          <caption>Table 4.1 — The Four Types of Intellectual Property</caption>
+          <thead>
+            <tr>
+              <th scope="col">Type</th>
+              <th scope="col">What It Protects</th>
+              <th scope="col">Duration (U.S.)</th>
+              <th scope="col">Key Feature</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Copyright</strong></td>
+              <td>Creative expression: books, music, films, software, art</td>
+              <td>Life of author + 70 years</td>
+              <td>Protects expression, not ideas; fair use exception</td>
+            </tr>
+            <tr>
+              <td><strong>Patents</strong></td>
+              <td>Novel, useful, non-obvious inventions and processes</td>
+              <td>20 years from filing</td>
+              <td>Requires public disclosure; exclusive right to make and sell</td>
+            </tr>
+            <tr>
+              <td><strong>Trademarks</strong></td>
+              <td>Brand identifiers: names, logos, slogans</td>
+              <td>Indefinite (if actively used and renewed)</td>
+              <td>Prevents confusion; can be lost through "genericide"</td>
+            </tr>
+            <tr>
+              <td><strong>Trade Secrets</strong></td>
+              <td>Confidential business information: formulas, algorithms, clients</td>
+              <td>Indefinite (while kept secret)</td>
+              <td>Ends if disclosed or independently discovered</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>Copyright matters most in the digital age, since it governs text, music, images, video, and software. Its crucial distinction is between <em>ideas</em> and <em>expression</em>: it protects the way an author expresses an idea, not the idea. Anyone may write a novel about a young wizard at a magical school; J.K. Rowling's copyright covers the words, characters, and plot of Harry Potter, not magical education as a premise. Ideas are the building blocks of intellectual activity, and the law treats them as unownable.</p>
+
+      <div class="definition-box">
+        <p class="term">Fair use</p>
+        <p class="definition">A doctrine in U.S. copyright law permitting limited unauthorized use of a protected work — for criticism, commentary, news reporting, teaching, scholarship, or parody. Courts decide case by case, weighing four factors: the purpose and character of the use, the nature of the original, how much was used, and the effect on its market.</p>
+      </div>
+
+      <p>Fair use is the copyright system's pressure valve, and it is deliberately vague: no list of permitted uses, no bright line, only four factors a judge weighs after the fact. That is a feature if you think copyright must bend to circumstances its drafters could not foresee, and a bug if you are a filmmaker trying to learn in advance whether you will be sued. Nearly every hard question in this chapter, from Google's use of Java to the training of language models, turns on how a court weighs those factors.</p>
+
+      <p>Patents differ from copyright in requiring public disclosure. An inventor must explain how the invention works, and that explanation becomes public record; in exchange comes a twenty-year monopoly on making, selling, and using it. The theory is a fair bargain: society gets the knowledge, the inventor a temporary exclusive right, and afterwards the invention is free for anyone. Whether twenty years is the right price the pharmaceutical case study below will sharpen.</p>
+
+      <h3>A Brief History of Expanding Rights</h3>
+
+      <div class="table-wrapper">
+        <table>
+          <caption>Table 4.2 — Key Milestones in Intellectual Property History</caption>
+          <thead>
+            <tr>
+              <th scope="col">Year</th>
+              <th scope="col">Development</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1710</td>
+              <td>Statute of Anne (Britain): first copyright law; 14-year term, renewable once</td>
+            </tr>
+            <tr>
+              <td>1790</td>
+              <td>U.S. Copyright Act: 14-year term, renewable once; narrow scope</td>
+            </tr>
+            <tr>
+              <td>1886</td>
+              <td>Berne Convention: international copyright harmonization; automatic protection</td>
+            </tr>
+            <tr>
+              <td>1976</td>
+              <td>U.S. Copyright Act: extended to life + 50 years; work-for-hire rules</td>
+            </tr>
+            <tr>
+              <td>1994</td>
+              <td>TRIPS Agreement: linked IP to global trade, forcing strong IP regimes on developing countries</td>
+            </tr>
+            <tr>
+              <td>1998</td>
+              <td>DMCA + Sonny Bono Act: life + 70 years; criminalized circumventing digital locks</td>
+            </tr>
+            <tr>
+              <td>2023–2026</td>
+              <td>Streaming and generative AI reshape every IP category at once; the first AI-training rulings arrive, and one AI company pays $1.5 billion to settle a class action</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>The striking feature of IP history is the relentless expansion of rights. U.S. copyright began at 14 years and now runs to the author's life plus 70; patents now cover software, business methods, and algorithms earlier courts would never have found patentable. Each extension was justified as "encouraging creativity," which applies awkwardly to retroactive ones: extending copyright on an existing work cannot incentivize its creation. Something else is driving the expansion.</p>
+
+      <div class="thought-questions">
+        <p class="box-label">Thought Questions</p>
+        <ol>
+          <li>Jefferson argued that sharing an idea doesn't diminish it. Does that make IP law unjust — or does non-rivalry affect only the appropriate <em>length</em> of protection?</li>
+          <li>Copyright terms have expanded from 14 years to life + 70. What term would you choose designing the system from scratch, and what would guide the decision?</li>
+          <li>The idea-expression distinction protects ideas from monopoly. Can you think of cases where the line is genuinely hard to draw?</li>
+        </ol>
+      </div>
+
+    </section>
+
+    <!-- ── SECTION 2: PHILOSOPHICAL JUSTIFICATIONS ─────────────────────────────── -->
+    <section id="justifications" aria-labelledby="just-heading">
+      <h2 id="just-heading">Philosophical Justifications for IP</h2>
+
+      <p>Why should intellectual property rights exist at all? Three traditions offer competing answers, each with different policy consequences. A Lockean thinks IP should track the labor invested; a utilitarian cares only whether the system produces more creation than the alternatives; a Hegelian thinks certain authorial rights are inalienable regardless of economics.</p>
+
+      <h3>The Labor Argument</h3>
+
+      <div class="argument-box">
+        <p class="box-label">What's the Argument?</p>
+        <p class="box-title">Locke's Labor Theory of Intellectual Property</p>
+        <ol class="premises">
+          <li>People have a natural right to the fruits of their labor — what they make by mixing their effort with the world belongs to them.</li>
+          <li>Intellectual creations are the product of sustained mental labor: a novelist's years of effort, an inventor's decades of research.</li>
+          <li>Without legal protection, others can copy the result of that labor without contributing to the effort that produced it.</li>
+        </ol>
+        <div class="conclusion">
+          <span class="therefore">&#8756;</span>
+          Creators have a natural right to control their intellectual creations, as they do the products of their physical labor.
+        </div>
+      </div>
+
+      <p>Locke's argument, adapted from his <em>Second Treatise of Government</em> <cite data-key="locke_second_treatise"></cite>, tracks our everyday sense that people deserve credit for what they make. But ideas are never purely original. Newton "stood on the shoulders of giants"; Shakespeare borrowed his plots wholesale; virtually every song shares chord progressions with countless predecessors. If creations always build on prior creations, how much of any work is genuinely the creator's own? The Lockean framework struggles to draw the line.</p>
+
+      <p>Locke added a proviso: appropriation is justified only so long as "enough and as good" is left for others. In the physical world that runs out — there is only so much land. In the world of ideas it never does, since Jefferson's expressing an idea does not stop anyone else from expressing it in their own words. So even if the labor theory justifies some IP rights, it justifies none of the strongest, which stop others building on existing ideas.</p>
+
+      <h3>The Incentive Argument</h3>
+
+      <div class="argument-box">
+        <p class="box-label">What's the Argument?</p>
+        <p class="box-title">The Utilitarian Case for Intellectual Property</p>
+        <ol class="premises">
+          <li>Society benefits greatly from creative works and inventions — from drugs that save lives to novels that deepen human understanding.</li>
+          <li>Creating such works requires substantial investment — a new drug can cost over a billion dollars to develop and test.</li>
+          <li>Without protection, competitors can copy successful works and undercut creators on price without having borne the development cost.</li>
+          <li>This free-rider problem would reduce creators' incentives and therefore the quantity of new creation.</li>
+        </ol>
+        <div class="conclusion">
+          <span class="therefore">&#8756;</span>
+          Temporary exclusive rights are justified because they maximize social welfare, creating incentives for valuable work that would otherwise be undersupplied.
+        </div>
+      </div>
+
+      <p>The incentive argument is how IP is most commonly defended in courts, legislatures, and economics textbooks. It is also the most testable, and the evidence is messier than the theory. In pharmaceuticals, where development cost vastly exceeds copying cost, patents do appear necessary to sustain R&D. Elsewhere, industries have thrived for centuries without meaningful IP. Consider four of the most creatively dynamic fields in modern life, all operating with minimal protection:</p>
+
+      <ul>
+        <li><strong>Fashion design.</strong> Garment designs generally cannot be copyrighted in the United States, yet Paris houses have driven global trends for a century on prestige and lead time.</li>
+        <li><strong>Restaurant cuisine.</strong> Recipes cannot be copyrighted, yet fine dining innovates continuously. Ferran Adrià's techniques at El Bulli were freely copied worldwide, and his restaurant remained the most coveted reservation on earth.</li>
+        <li><strong>Stand-up comedy.</strong> Once a joke is told publicly anyone can repeat it, and lawsuits are unheard of. Comedians keep producing new material, policed by a norm against joke theft.</li>
+        <li><strong>Sports strategy.</strong> A coach who invents a new play cannot patent it; opponents adopt it the following week. Coaching innovation continues unabated.</li>
+      </ul>
+
+      <p>In none of these cases has the absence of IP stifled creation. It has forced them to compete on ongoing innovation rather than past monopoly — on the utilitarian's own terms, not obviously worse. IP incentives are neither universally necessary nor universally effective.</p>
+
+      <p>Term length sharpens the question: how much protection is <em>enough</em>? Economic analysis puts the optimal term far below current law. A songwriter is not more likely to compose because copyright will run seventy years after their death rather than fifty; those extra decades pay heirs and rights-holders, not the creator. Current terms exceed what incentive theory justifies, which raises the question of whose interests they serve.</p>
+
+      <h3>The Personality Argument</h3>
+
+      <div class="argument-box">
+        <p class="box-label">What's the Argument?</p>
+        <p class="box-title">Hegel's Personality Theory of Creative Rights</p>
+        <ol class="premises">
+          <li>Persons have dignity and deserve respect as self-creating beings whose identity is expressed in their projects and creations.</li>
+          <li>Creative works embody the creator's personality and self-expression in a way that purely physical products do not.</li>
+        </ol>
+        <div class="conclusion">
+          <span class="therefore">&#8756;</span>
+          Creators have <em>moral rights</em> beyond economic interests — attribution (credit) and integrity (protection against distortion) — that persist even after commercial transfer.
+        </div>
+      </div>
+
+      <p>The personality theory, associated with Hegel's <em>Elements of the Philosophy of Right</em> <cite data-key="hegel_philosophy_right"></cite> and developed most fully in continental European law, gives rise to <strong>moral rights</strong> — rights independent of economic interests that in many jurisdictions cannot be signed away. A French author who sells the copyright in a novel still keeps the right to be named as its author and to object to alterations damaging their reputation. These appear across Europe and in Article 6<em>bis</em> of the Berne Convention, but are far weaker in the United States, where copyright is predominantly commercial.</p>
+
+      <p>A revealing example: in 1975 ABC broadcast <em>Monty Python's Flying Circus</em> with roughly a quarter of the running time cut for commercials and material thought offensive to Americans. The troupe sued and, in <em>Gilliam v. American Broadcasting Companies</em> (2d Cir. 1976) <cite data-key="gilliam_v_abc"></cite>, won a preliminary injunction — but through copyright, since the editing exceeded ABC's license, and through the Lanham Act's ban on false designation of origin, the court noting that American copyright does not recognize the <em>droit moral</em>. Their complaint — <em>this is no longer our work, yet it bears our name</em> — is what moral rights address, and US law had to reach it sideways. A French author would have had a direct claim.</p>
+
+      <h3>The Social Contract of IP</h3>
+
+      <p>All three justifications share a structure: IP rights are a bargain between creators and the public. Creators receive a temporary exclusive right; in exchange, the public eventually receives full, free access. The bargain is explicit in patent law, which requires disclosure for the monopoly, and implicit in copyright, which expires. Working properly it balances incentive against access — neither so weak that creators cannot recoup their investment, nor so strong as to be a permanent monopoly on knowledge.</p>
+
+      <figure>
+        <div class="mermaid">
+flowchart LR
+    CR["Creator<br/>invests effort"]
+    MON["Limited<br/>Monopoly<br/>(copyright / patent)"]
+    PD["Public<br/>Domain<br/>(free for all)"]
+    CR -->|"grant exclusive rights"| MON
+    MON -->|"term expires"| PD
+    PD -->|"builds new<br/>creative work"| CR
+    style CR fill:#ebe1fa,stroke:#3d1a8a
+    style MON fill:#f5f5d6,stroke:#888
+    style PD fill:#d6f0e4,stroke:#1a6040
+        </div>
+        <figcaption>
+          Figure 4.2 — The IP social contract as a cycle. Creators receive a temporary monopoly in exchange for eventual public release; new creators build on the public domain. Critics argue term extensions have broken the cycle by ensuring works never practically enter it.
+        </figcaption>
+      </figure>
+
+      <p>Critics like James Boyle argue that the bargain has broken down <cite data-key="boyle_public_domain"></cite>. Terms have been extended so often that works effectively never enter the public domain within the lifetime of anyone alive at their creation. The result, Boyle argues, is a "second enclosure movement" — the fencing off of the intangible commons of the mind, analogous to the enclosure of English common lands.</p>
+
+      <div class="thought-questions">
+        <p class="box-label">Thought Questions</p>
+        <ol>
+          <li>Which justification — labor, incentive, or personality — do you find most compelling? Does your answer change for music copyright versus pharmaceutical patents?</li>
+          <li>The incentive theory says IP should provide just enough protection to motivate creation. How would you test empirically whether a given term achieves that?</li>
+          <li>If AI can generate creative content without any financial incentive, what does that imply for the incentive justification for copyright?</li>
+        </ol>
+      </div>
+
+    </section>
+
+    <!-- ── SECTION 3: DIGITAL DISRUPTION ─────────────────────────────── -->
+    <section id="digital" aria-labelledby="digital-heading">
+      <h2 id="digital-heading">Digital Disruption</h2>
+
+      <p>IP law was built on assumptions about the physical world: that copying is expensive and imperfect, that distribution requires infrastructure, and that enforcement is practical at the level of commercial reproduction. Digital technology invalidated all three at once. A perfect copy costs nothing; the internet distributes it globally in seconds; the volume of copying makes suing copyists impractical. The result was one of the severest disruptions any industry has experienced.</p>
+
+      <div class="key-thinker">
+        <div class="thinker-img-wrap">
+          <img src="../images/edison.jpg" alt="Portrait photograph of Thomas Edison, c. 1877–1880">
+          <p class="img-caption">Thomas A. Edison, c. 1877–1880. Public domain.</p>
+        </div>
+        <div class="thinker-bio">
+          <h3>Thomas Edison (1847–1931)</h3>
+          <p>American inventor and businessman, Edison held 1,093 U.S. patents — a record that stood for decades. At Menlo Park, New Jersey, he pioneered the industrial research laboratory, his "invention factory": researchers whose job was to produce patentable inventions on a schedule. His best-known work includes the phonograph, the incandescent light bulb, and early motion picture technology.</p>
+          <p>His career raises a persistent question about patents and innovation. The laboratory's output was remarkable. But his aggressive patent strategies — especially in the "War of Currents" against Nikola Tesla and George Westinghouse — are widely seen as having retarded adoption of the superior AC system. Edison used IP as a competitive weapon, not merely a reward for invention: a combination of creativity and strategic litigation characteristic of large actors today.</p>
+        </div>
+      </div>
+
+      <h3>How Digital Changed Everything</h3>
+
+      <p>Before digitization, the economics of creative industries rested on the cost of physical reproduction: a record required pressing, a book printing and binding, a film celluloid and a projector. Record labels, publishers, and studios were therefore not primarily in the business of creating content but of manufacturing objects, and their power came from controlling that infrastructure.</p>
+
+      <p>Digital technology severed content from carrier. A music file is not an object but a pattern of numbers, copyable perfectly at negligible cost. When Napster launched in 1999, students were sharing millions of songs with no product, no money, and no license, and industry revenue collapsed. The response — litigation, legislation, and DRM — shaped the internet for decades.</p>
+
+      <div class="case-study">
+        <p class="box-label">Case Study</p>
+        <p class="box-title">Napster and the P2P Revolution (1999–2001)</p>
+        <p>Launched by Shawn Fanning and Sean Parker in 1999, Napster let users share MP3 files through a centralized index server; at its peak it had over 80 million users. The Recording Industry Association of America and the major labels sued for contributory infringement in <em>A&amp;M Records v. Napster</em>; the courts agreed, and Napster shut down in 2001.</p>
+        <p>But that did not end file sharing — it pushed it toward architectures with no central index to shut down. Kazaa, Grokster, and BitTorrent were harder targets: less to sue. In <em>MGM Studios v. Grokster</em> (2005) <cite data-key="mgm_v_grokster"></cite> the Supreme Court held unanimously that a service could be liable for inducing infringement, which finished Grokster but not the technology. Eventually the labels accepted that they could not sue their way out. Napster killed not piracy but the CD business model: the iTunes Music Store (2003) and Spotify (2008) showed consumers would pay for convenient legal access, and by the 2020s streaming had restored growth — with the value in platforms, not labels or artists.</p>
+      </div>
+
+      <div class="case-study">
+        <p class="box-label">Case Study</p>
+        <p class="box-title">The DMCA and the Problem of Digital Locks (1998)</p>
+        <p>The Digital Millennium Copyright Act was Congress's response to digital reproduction. Its most consequential provision was the anti-circumvention clause, which made it illegal to break "technological protection measures" (digital locks, or DRM) even for purposes otherwise entirely legal under copyright. The logic: a rights-holder's lock should itself be legally protected.</p>
+        <p>The consequences were broader than anticipated. Security researchers hunting vulnerabilities found themselves potentially criminalized. Owners wanting to repair their tractors, insulin pumps, or smartphones found that accessing the embedded diagnostics could violate the DMCA. Librarians making accessible versions of digital texts faced legal uncertainty. The EFF and others argue the law shifted power from content owners to manufacturers — you can own a DVD but not legally back it up. Copyright Office exemptions, renewed every three years, give limited relief, but the law still restricts the ownership and fair use privileges copyright protects.</p>
+      </div>
+
+      <h3>From Ownership to Access: The Streaming Model</h3>
+
+      <p>The dominant response to digital disruption has been a shift from ownership to access. Consumers once paid to own a physical copy; now they pay a monthly fee for a catalog they do not own and that can be modified or withdrawn at any time. The IP implications are easily overlooked in celebrations of streaming's convenience.</p>
+
+      <div class="table-wrapper">
+        <table>
+          <caption>Table 4.3 — Streaming Economics: Who Gets What</caption>
+          <thead>
+            <tr>
+              <th scope="col">Metric</th>
+              <th scope="col">Value (approximate)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Spotify pay per stream</td>
+              <td>$0.003–$0.005 (varies by country and deal)</td>
+            </tr>
+            <tr>
+              <td>Streams needed to earn $1</td>
+              <td>200–330 streams</td>
+            </tr>
+            <tr>
+              <td>Minimum payout threshold</td>
+              <td>Since 2024, a track must reach 1,000 streams a year to earn anything</td>
+            </tr>
+            <tr>
+              <td>Who captures most streaming revenue</td>
+              <td>Platforms and major labels, through negotiated catalog deals</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>Streaming reveals a gap between formal IP rights and economic power. An independent musician owns the copyright to their recordings but, to reach listeners, must accept terms set by a near-monopolist. The right is present; the bargaining power to extract value from it is not. That pattern — rights in creators, power in platforms — drives the critiques in the next section.</p>
+
+      <div class="thought-questions">
+        <p class="box-label">Thought Questions</p>
+        <ol>
+          <li>Did Napster "kill" the music industry, or force it toward a better business model? Could the industry have made that transition without the disruption?</li>
+          <li>The DMCA bars circumventing digital locks even for legal purposes. Is that a reasonable balance between creator and user rights, or has it tilted too far?</li>
+          <li>A streaming subscription rents access rather than conferring ownership. Does the distinction matter morally? What are its practical consequences?</li>
+        </ol>
+      </div>
+
+    </section>
+
+    <!-- ── SECTION 4: CRITIQUES AND ABUSES ─────────────────────────────── -->
+    <section id="critiques" aria-labelledby="crit-heading">
+      <h2 id="crit-heading">Critiques and Abuses of IP</h2>
+
+      <p>A significant body of scholarship argues that IP law, whatever its original justifications, now concentrates power in incumbent corporations rather than rewarding genuine creation. Three scholars have been especially influential.</p>
+
+      <div class="key-thinker no-portrait">
+        <div class="thinker-bio">
+          <h3>Peter Drahos (b. 1955)</h3>
+          <p>Australian legal scholar at the Australian National University, Drahos analyzes how IP has been globalized as a tool of corporate and geopolitical power. His central concept, developed with the criminologist John Braithwaite, is "information feudalism" <cite data-key="drahos_information_feudalism"></cite>: through trade agreements like TRIPS, a few American and European corporations pressed governments worldwide to adopt strong IP regimes — including developing countries with no domestic interest in them.</p>
+          <p>The mechanism was leverage: IP protection was bundled with access to wealthy-country markets, so countries that wanted trade had to accept terms written by their partners' corporate lobbies. The result is a set of global norms built to maximize rents to incumbents, not to balance incentive against access. Drahos calls this "IP feudalism" because it creates hierarchies between owners (lords) and those who must pay for medicines, seeds, and software (serfs).</p>
+        </div>
+      </div>
+
+      <div class="key-thinker no-portrait">
+        <div class="thinker-bio">
+          <h3>Cory Doctorow (b. 1971)</h3>
+          <p>Canadian-British science fiction writer and technology journalist, Doctorow is among the most accessible critics of how Big Tech and Big Content use IP to hold market power. His central concept, developed with the legal scholar Rebecca Giblin, is "chokepoint capitalism" <cite data-key="doctorow_chokepoint"></cite>: Amazon, Spotify, Google, Apple, and the content conglomerates have built bottlenecks in markets for creative goods, and IP law plus platform power lets them squeeze creators from both sides.</p>
+          <p>He distinguishes IP's original purpose — giving creators enough leverage to earn a living — from its current function of letting platforms extract rents from creators and consumers alike. The problem is not piracy but monopsony: creators face a few buyers with enormous power, while those buyers face many sellers with no leverage. IP law here protects not creators but platforms' control over the terms on which creators reach audiences.</p>
+        </div>
+      </div>
+
+      <div class="key-thinker no-portrait">
+        <div class="thinker-bio">
+          <h3>Tim Wu (b. 1972)</h3>
+          <p>American legal scholar, former White House adviser, and originator of "net neutrality," Wu has analyzed how communication technologies follow a predictable cycle in their relationship to power <cite data-key="wu_master_switch"></cite> <cite data-key="wu_attention_merchants"></cite>. His "Cycle" runs: open technology attracts users → incumbents use IP to close it → consolidation follows → until the next disruptive technology reopens the market.</p>
+          <p>IP, Wu argues, is a primary instrument of the "closing" phase. AT&T used patents to control the telephone network for decades; Hollywood used copyright to control film distribution; IBM used software patents to hold mainframe dominance. The rights were real and valid, but their function was incumbent control, not reward for innovation. Big Tech's dominance is one more iteration — one IP law lets persist far longer than it otherwise would.</p>
+        </div>
+      </div>
+
+      <h3>Case Studies in IP Abuse</h3>
+
+      <p>The clearest illustration is Mickey Mouse, who first appeared in "Steamboat Willie" in 1928 — a work that under the law of the time would have entered the public domain in the 1980s. Disney lobbied successfully for extensions in 1976 and 1998, the latter sardonically called the "Mickey Mouse Protection Act," each time just before Mickey would have gone free. Steamboat Willie finally entered the public domain on January 1, 2024 — though Disney still holds trademark on the modern Mickey, so even that version cannot be used in ways that confuse consumers.</p>
+
+      <p>A second abuse is the "patent troll" (the industry's term: "non-practicing entity"): a company that owns patents but makes no products. It acquires vaguely worded patents covering broad concepts and threatens companies that do make things, extracting settlements cheaper than defense. A patent suit costs two to five million dollars to defend through trial, so settling for $100,000–$500,000 is rational even for a defendant certain to win. Personal Audio LLC famously sued podcasters over a patent on "episodic content distribution"; the Electronic Frontier Foundation invalidated it, after years. Trolls extract billions annually, most of it going to lawyers rather than inventors.</p>
+
+      <div class="case-study">
+        <p class="box-label">Case Study</p>
+        <p class="box-title">Pharmaceutical Patents and Access to Essential Medicines</p>
+        <p>Pharmaceuticals present the starkest version of the tension between IP incentives and public welfare. Drug development is genuinely expensive: a new drug from research to FDA approval costs an estimated one to two billion dollars, and most compounds in clinical trials fail. Twenty years of patent protection lets companies recover those costs by charging far above production cost; afterwards generics sell for a fraction.</p>
+        <p>The human cost is stark. When HIV/AIDS antiretrovirals were first patented in the 1990s they cost $10,000–$15,000 a year — far beyond the reach of patients in sub-Saharan Africa, where the epidemic was worst. Generics, when permitted, cost around $100. Insulin costs several times more in the United States than in other wealthy countries, again because of patent strategy. An EpiPen two-pack's list price rose roughly sixfold from 2007 to 2016, to more than $600, though epinephrine has been off patent for decades; Mylan controlled the auto-injector and the regulatory pathway a competitor would have to clear. Such cases ask whether the patent bargain is well-calibrated to the public interest.</p>
+      </div>
+
+      <div class="thought-questions">
+        <p class="box-label">Thought Questions</p>
+        <ol>
+          <li>Retroactive extensions like those protecting Mickey Mouse cannot incentivize work already done. What best explains why they keep happening?</li>
+          <li>Pharmaceutical companies argue that without patents they could not afford to develop new drugs. Is that convincing? What alternative models might work?</li>
+          <li>Patent trolls use legally valid patents abusively. Is the problem with specific actors, or with the system that enables them?</li>
+        </ol>
+      </div>
+
+    </section>
+
+    <!-- ── SECTION 5: BIG TECH AND IP ─────────────────────────────── -->
+    <section id="bigtech" aria-labelledby="bigtech-heading">
+      <h2 id="bigtech-heading">Big Tech and IP as a Competitive Weapon</h2>
+
+      <p>Large technology companies use intellectual property not to recover investment costs but as an instrument of competitive advantage — IP as corporate strategy rather than reward for creators.</p>
+
+      <div class="table-wrapper">
+        <table>
+          <caption>Table 4.4 — How Big Tech Deploys IP Strategically</caption>
+          <thead>
+            <tr>
+              <th scope="col">IP Tool</th>
+              <th scope="col">Strategic Use</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Patent portfolios</strong></td>
+              <td>Cross-license with other giants; sue smaller competitors who cannot reciprocate</td>
+            </tr>
+            <tr>
+              <td><strong>Copyright</strong></td>
+              <td>Control user content; issue DMCA takedowns against critics and competitors; protect proprietary code</td>
+            </tr>
+            <tr>
+              <td><strong>Trade secrets</strong></td>
+              <td>Keep algorithms, training datasets, and business methods confidential, even in litigation</td>
+            </tr>
+            <tr>
+              <td><strong>Trademarks</strong></td>
+              <td>Brand protection; control keyword advertising; block similar names</td>
+            </tr>
+            <tr>
+              <td><strong>Terms of Service</strong></td>
+              <td>Create IP-like control over user behavior without formal IP law's limitations</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>One pattern is "mutually assured IP destruction." Google, Apple, Microsoft, and Amazon each hold tens of thousands of patents, so any one that sued another could expect an immediate counterclaim. The giants cross-license implicitly, by threat alone. The détente does not extend to smaller competitors, who lack the portfolio to retaliate; for them, litigation from a well-resourced incumbent is a serious barrier to entry — which is, of course, the point.</p>
+
+      <h3>Terms of Service as Private Law</h3>
+
+      <p>Terms of Service agreements function as private IP law. A typical ToS takes a perpetual, worldwide, royalty-free license over anything the user uploads, lets the platform remove content and change the agreement at will, and requires arbitration rather than court — IP-like control without copyright's limitations: no fair use, no term limit, no public domain, in a contract of adhesion signed by users with no alternative.</p>
+
+      <div class="case-study">
+        <p class="box-label">Case Study</p>
+        <p class="box-title">Oracle v. Google and the Question of API Copyright (2021)</p>
+        <p>An Application Programming Interface (API) is the set of function calls and definitions that let software systems interact. Google used Java APIs — the declarations of function names and signatures — in building Android, without licensing them from Oracle, which had bought Java from Sun Microsystems. Oracle sued for billions. The case turned on a question at the heart of the industry: can API declarations be copyrighted?</p>
+        <p>After more than a decade of litigation, the Supreme Court ruled 6–2 for Google in 2021 — but on fair use grounds, without deciding whether APIs are copyrightable at all <cite data-key="google_v_oracle"></cite>. It emphasized the transformative nature of Android's use and the programmer investment in learning Java's APIs. Had Oracle won, incumbents with established APIs could have locked competitors out of interoperable software. IP boundaries, the case shows, decide whether software markets stay competitive or get captured by first-movers.</p>
+      </div>
+
+      <p>The same logic runs through the right-to-repair fight. Buy an iPhone, a John Deere tractor, or a medical device and you get the object without full rights over it: manufacturers combine DMCA anti-circumvention provisions, parts pairing (software that rejects components they have not authenticated), and proprietary diagnostics to make independent repair impossible or illegal. A farmer locked out of a tractor's diagnostics may wait days for a technician rather than fix it in hours. If you cannot repair, modify, or resell a product, in what sense do you own it? Several states have passed right-to-repair laws since 2020, but the tension remains.</p>
+
+      <div class="thought-questions">
+        <p class="box-label">Thought Questions</p>
+        <ol>
+          <li>If APIs could be copyrighted with no fair use defense, how would the software industry change? Would innovation gain or suffer?</li>
+          <li>Do you "own" a device you cannot legally repair? What moral intuitions does the right-to-repair debate activate?</li>
+          <li>Terms of Service grant platforms sweeping rights over user content in exchange for access. Is that a fair exchange? Should ToS be regulated?</li>
+        </ol>
+      </div>
+
+    </section>
+
+    <!-- ── SECTION 6: AI AND IP ─────────────────────────────── -->
+    <section id="ai" aria-labelledby="ai-heading">
+      <h2 id="ai-heading">AI and Intellectual Property</h2>
+
+      <p>Artificial intelligence creates two clusters of IP problems existing law is ill-equipped to handle: whether training on copyrighted works infringes, and who — if anyone — owns the copyright in what an AI generates. Public discussion runs them together, but they are separate questions with separate answers: as of 2026 one is settled and the other very much not.</p>
+
+      <h3>Training Data and the Copyright Question</h3>
+
+      <p>Large language models are trained on massive collections of text, including enormous quantities of copyrighted books, articles, and academic papers; image models on billions of images, including the work of living artists. The legal question is whether copying protected works to extract statistical patterns infringes — and it contains several separate questions, which courts have answered differently.</p>
+
+      <div class="table-wrapper">
+        <table>
+          <caption>Table 4.5 — Competing Positions on AI Training and Copyright</caption>
+          <thead>
+            <tr>
+              <th scope="col">Position</th>
+              <th scope="col">Core Argument</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Infringement</strong></td>
+              <td>Training copies entire works; models can reproduce copyrighted content; creators' work was used without consent or compensation to build commercial products</td>
+            </tr>
+            <tr>
+              <td><strong>Fair use</strong></td>
+              <td>Training is transformative (pattern extraction, not reproduction); models don't substitute for the originals; analogous to Google Books, held fair use</td>
+            </tr>
+            <tr>
+              <td><strong>New paradigm needed</strong></td>
+              <td>Copyright was not designed for machine learning; a new licensing or levy framework is needed instead</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="case-study">
+        <p class="box-label">Case Study</p>
+        <p class="box-title">The AI Copyright Wars (2023–2026)</p>
+        <p>Beginning in 2023, a wave of copyright lawsuits landed on the major AI companies. <em>New York Times v. OpenAI and Microsoft</em> alleged that OpenAI had trained on millions of Times articles and that ChatGPT could reproduce passages almost verbatim, competing with the Times's own products. Authors, artists, and music publishers filed class actions against Meta, Anthropic, Stability AI, and others.</p>
+        <p>Three years on, the striking thing is how little has been settled. The dozen-plus suits against OpenAI and Microsoft, consolidated into one multidistrict litigation, have produced no fair-use ruling and no settlement. Anthropic's $1.5 billion class-action payout makes no precedent. And <strong>no federal appeals court has yet decided whether training an AI model on copyrighted work is fair use.</strong> The first to take it up, the Third Circuit in <em>Thomson Reuters v. Ross Intelligence</em>, heard argument on 11 June 2026 and has not ruled. There is no Supreme Court decision, and none pending.</p>
+        <p>The stakes are easy to state and hard to resolve. If training requires a license, only the best-capitalized firms can build frontier models. If it is broadly fair use, creators have little recourse when their work becomes raw material for systems that compete with them. Almost nothing here is binding precedent; expect the ground to move while you read.</p>
+      </div>
+
+      <h3>What the Courts Have Actually Held</h3>
+
+      <p>It is commonly said that "the courts ruled AI training is fair use." That summary is too coarse, and in one respect simply wrong. The most consequential decision so far, <em>Bartz v. Anthropic</em> (N.D. Cal., 23 June 2025) <cite data-key="bartz_v_anthropic"></cite>, delivered no single verdict on "AI training" at all. Judge William Alsup pulled the conduct apart into three distinct acts and evaluated each separately.</p>
+
+      <div class="table-wrapper">
+        <table>
+          <caption>Table 4.6 — <em>Bartz v. Anthropic</em> (2025): one lawsuit, three different answers</caption>
+          <thead>
+            <tr>
+              <th scope="col">Conduct</th>
+              <th scope="col">Holding</th>
+              <th scope="col">Reasoning</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Training the model on the books</strong></td>
+              <td>Fair use</td>
+              <td>"Exceedingly transformative" — the model learns statistical structure, it does not reproduce the works</td>
+            </tr>
+            <tr>
+              <td><strong>Destructively scanning lawfully purchased print books</strong></td>
+              <td>Fair use</td>
+              <td>A format shift: one copy in, one copy out, no new copies in the world</td>
+            </tr>
+            <tr>
+              <td><strong>Downloading and keeping 7 million-plus pirated books</strong></td>
+              <td><strong>Not</strong> fair use</td>
+              <td>Building a permanent library from pirate sources is not excused by the later transformative purpose</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>Anthropic settled the third claim rather than take it to trial. The settlement — $1.5 billion plus interest, roughly 482,000 titles at about $3,000 per work, four times the $750 statutory minimum — was approved on 20 July 2026 and is the largest copyright class settlement in United States history. Notice what it was <em>for</em>. Not for training a model, already held fair use. For downloading and keeping the books in the first place.</p>
+
+      <p>This is the most useful thing to carry away: <strong>the fight is turning less on what models learn than on how the training corpus was acquired.</strong> A company that buys books, scans them, and trains on the results is on reasonably firm ground. One that torrents a shadow library to avoid the purchase price is not — and Anthropic's shortcut cost far more than the books would have. Note the irony: because the case settled, Alsup's reasoning was never tested on appeal. It is a district court opinion that binds nobody.</p>
+
+      <div class="definition-box">
+        <p class="term">Market dilution</p>
+        <p class="definition">The claim that a flood of machine-generated works can damage the market for human-made works of the same kind — not by copying any passage, but by saturating the market the originals compete in.</p>
+      </div>
+
+      <p>Market dilution is the theory to watch, and the case introducing it is routinely reported backwards. In <em>Kadrey v. Meta</em> (2025) <cite data-key="kadrey_v_meta"></cite>, Judge Vince Chhabria granted Meta summary judgment on thirteen authors' training claim, and coverage read this as a second blessing for AI training. What Chhabria wrote was narrower: these plaintiffs lost <em>on this record</em>, having shown no evidence that Meta's models diluted the market for their books. He went out of his way to call market dilution a legitimate way of arguing the fourth fair-use factor — effect on the market — on which a better-prepared plaintiff could win. A separate claim about Meta's use of BitTorrent remains live. Again acquisition outlives training.</p>
+
+      <p>The one case where a fair-use defense has actually failed at trial level is <em>Thomson Reuters v. Ross Intelligence</em> (D. Del., 11 February 2025) <cite data-key="thomson_reuters_v_ross"></cite>, where Judge Stephanos Bibas held that Ross infringed 2,243 Westlaw headnotes in building a legal research tool. Two features limit its reach: Ross's system was <em>not</em> generative — it retrieved judicial language rather than producing new text — and it competed directly with the product it learned from, making the fourth factor easy for the plaintiff. Ross appealed, and that decision will be the first appellate word on any of this.</p>
+
+      <p>Outside the United States, the first judgment on generative-AI training resolved remarkably little. In <em>Getty Images v. Stability AI</em> ([2025] EWHC 2863 (Ch), 4 November 2025) <cite data-key="getty_v_stability_uk"></cite>, the English High Court took up Getty's claim that Stability trained Stable Diffusion on its photo library. Getty largely lost: it abandoned the training and copyright claims mid-trial, because the training happened outside the UK, beyond the court's reach, and its secondary-infringement claim failed on a consequential point — a model's weights are not an "infringing copy," since they do not store the images. Getty was left with narrow trade mark findings, settling nothing about training.</p>
+
+      <div class="thought-questions">
+        <p class="box-label">Thought Questions</p>
+        <ol>
+          <li><em>Bartz</em> treated buying-then-scanning and torrenting differently, though the resulting model is identical. Is that principled, or a convenient way to punish something without confronting the harder question?</li>
+          <li>Market dilution says a flood of AI-generated work can harm authors even when no sentence is copied. Is that a copyright harm — or ordinary competition, which copyright has never protected anyone against?</li>
+          <li>Very little here is settled law. How much weight should a headline like "court rules AI training is legal" carry? What would you want to know first?</li>
+        </ol>
+      </div>
+
+      <h3>AI-Generated Content: The Authorship Question</h3>
+
+      <p>The second cluster concerns what AI systems generate. If a language model writes a story, who — if anyone — holds the copyright? Here, unlike the training question, American law has a settled answer. The Copyright Office has long held that copyright requires a human author, and in <em>Thaler v. Perlmutter</em> the D.C. Circuit agreed, holding in March 2025 that the Act's "author" must be a human being <cite data-key="thaler_v_perlmutter"></cite>. The Supreme Court denied review on 2 March 2026. Human authorship is no longer an open question.</p>
+
+      <p>What that means in practice was spelled out in Part 2 of the Copyright Office's report on copyright and artificial intelligence, published 29 January 2025 <cite data-key="usco_ai_part2"></cite>. Purely AI-generated output is not copyrightable. Where a human exercises genuine creative control — selecting, arranging, modifying — those contributions may be protected, case by case. The line that surprises students most: <strong>prompts alone do not confer authorship, however long and detailed.</strong> A prompt describes a desired result but does not determine the expressive choices the system makes in reaching it.</p>
+
+      <p>The companion report on training, Part 3, is a different matter: released 9 May 2025 as a "pre-publication" version, it still has not been finalized <cite data-key="usco_ai_part3"></cite>. Its central claim counterweights confident assertions in either direction — fair use for AI training <em>cannot simply be presumed</em>. Commercial use of vast troves of copyrighted work to generate competing content goes beyond established fair use, the Office argued, "especially where this is accomplished through illegal access." That is its view, not a court's holding — but it is the distinction <em>Bartz</em> drew, reached independently.</p>
+
+      <p>The rule has practical consequences. Purely AI-generated content enters the public domain at once, so a publisher has reason to obscure the AI's role in order to claim protection, leaving courts to decide how much human input is "enough." The Hegelian tradition suggests a deeper rationale: if moral rights are grounded in the expression of a creator's self, a work a human selects, directs, and refines has a stronger claim than one produced with a single prompt — roughly where the Copyright Office landed, by way of case law rather than German idealism.</p>
+
+      <div class="thought-questions">
+        <p class="box-label">Thought Questions</p>
+        <ol>
+          <li>AI-generated works are not copyrightable because copyright requires human authorship. Is that the right line — or should protection track creative effort, human or machine?</li>
+          <li>If you spend three hours refining a prompt and a friend spends three hours editing a photograph, why should only one of you get a copyright? Make the best case for the Copyright Office's answer, then against it.</li>
+          <li>Because purely AI-generated work is uncopyrightable, creators have an incentive to conceal how much AI they used. Is that a reason to change the rule, or to require disclosure?</li>
+        </ol>
+      </div>
+
+    </section>
+
+    <!-- ── SECTION 7: OPEN SOURCE AND ALTERNATIVES ─────────────────────────────── -->
+    <section id="alternatives" aria-labelledby="alt-heading">
+      <h2 id="alt-heading">Open Source and Alternative Models</h2>
+
+      <p>The most important challenge to the incentive justification is not an argument but a fact: enormous quantities of high-quality work are produced outside the IP system entirely, through voluntary collaboration. Open source software is the most striking example, though not the only one.</p>
+
+      <h3>The Open Source Movement</h3>
+
+      <p>Linux — which runs most of the world's web servers, Android on billions of smartphones, and much of the internet's infrastructure — was not built by a corporation seeking IP profits. Linus Torvalds began it as a personal project in 1991, and thousands of volunteers have developed it since with no IP-derived revenue. On a typical website nearly every layer between you and the content is open source: the server, the database, the code generating the page, the browser rendering it. That stack was given away — by volunteers, and by employees of firms that found sharing cheaper than building privately. Either way, exclusivity was not the motivator.</p>
+
+      <p>The open source model uses IP law itself to ensure openness. "Copyleft" licenses like the GNU General Public License let anyone use, modify, and redistribute the software — but require any modified version to carry the same license. This "viral" property means no one can take a copyleft project and redistribute it as proprietary software: the moment you distribute, you must share your changes. "Permissive" licenses like MIT and Apache allow code into proprietary products. Both use copyright to achieve goals opposite to its traditional function.</p>
+
+      <p>If IP incentives are necessary for high-quality creation, how do we explain Linux, Wikipedia, and the thousands of other projects that form the de facto infrastructure of the internet? Researchers studying these communities find a mix of motives: professional reputation, community belonging, ideological commitment to open knowledge, and the benefit of improving tools one uses oneself. None require exclusivity.</p>
+
+      <h3>Creative Commons</h3>
+
+      <p>Founded in 2001 by Lawrence Lessig and others, Creative Commons provides standardized licenses for non-software content. Where traditional copyright is all-or-nothing, CC licenses let creators grant specific permissions in advance, spanning nearly public domain to only slightly looser than full copyright.</p>
+
+      <div class="table-wrapper">
+        <table>
+          <caption>Table 4.7 — Creative Commons License Types</caption>
+          <thead>
+            <tr>
+              <th scope="col">License</th>
+              <th scope="col">What It Allows</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>CC0</strong></td>
+              <td>Anything at all — equivalent to placing the work in the public domain</td>
+            </tr>
+            <tr>
+              <td><strong>CC BY</strong></td>
+              <td>Any use with attribution to the creator</td>
+            </tr>
+            <tr>
+              <td><strong>CC BY-SA</strong></td>
+              <td>Any use with attribution + share alike (derivatives must use same license)</td>
+            </tr>
+            <tr>
+              <td><strong>CC BY-NC</strong></td>
+              <td>Non-commercial use with attribution</td>
+            </tr>
+            <tr>
+              <td><strong>CC BY-NC-ND</strong></td>
+              <td>Non-commercial use, no derivatives, attribution required</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>Wikipedia is the most prominent example: its content is CC BY-SA, so anyone can use, translate, or adapt its articles provided they attribute it and license derivatives on the same terms. OpenStreetMap, Khan Academy, and most open educational resources use CC licenses too — an intellectual commons the traditional IP system does not easily accommodate.</p>
+
+      <p>The AI era has complicated this. Many image generators and language models were trained on CC-licensed content, including images from Flickr and text from Wikipedia. Whether that matches the spirit, if not the letter, of licenses chosen to enable sharing is a live debate: creators who picked CC licenses for human adaptation may feel that training a commercial model on their work without compensation is a use they never authorized, even where the license text permits it.</p>
+
+      <div class="thought-questions">
+        <p class="box-label">Thought Questions</p>
+        <ol>
+          <li>If vast quantities of software, encyclopedic knowledge, and educational content are produced without IP incentives, does that undermine the utilitarian case for strong protection — or are these exceptional cases that don't generalize?</li>
+          <li>The GPL uses copyright to enforce openness. Is that a clever hack turning IP against itself, or a misuse of a system built for a different purpose?</li>
+          <li>If you release a work under a CC license and an AI company trains a commercial model on it, have your rights been violated? Should CC licenses address this explicitly?</li>
+        </ol>
+      </div>
+
+    </section>
+
+    <!-- ── KEY POINTS ─────────────────────────────── -->
+    <section id="key-points" aria-labelledby="kp-heading">
+      <h2 id="kp-heading">Key Points</h2>
+      <div class="key-points">
+        <p class="box-label">Key Points</p>
+        <ul>
+          <li><strong>Intellectual property</strong> differs from physical property because ideas are non-rivalrous, so IP law must create artificial scarcity by legal rule rather than rely on natural limits.</li>
+          <li><strong>Three justifications compete</strong>: Locke's labor theory, the utilitarian incentive argument, and Hegel's personality theory, which grounds moral rights beyond economic ones.</li>
+          <li><strong>IP terms have expanded continuously</strong> — U.S. copyright from 14 years to life + 70 — well past what any incentive-based justification supports.</li>
+          <li><strong>Digital technology</strong> invalidated IP law's core assumptions at once, shifting economic value from creators to platforms; the <strong>DMCA's anti-circumvention provision</strong> then criminalized breaking digital locks even for legal purposes, blocking repair, security research, and accessibility.</li>
+          <li><strong>Critical scholars</strong> — Drahos, Doctorow, Wu — argue that IP has been captured by incumbents who use it to extract rents and foreclose competition rather than to incentivize creation.</li>
+          <li><strong>AI training and copyright remain unsettled</strong>: no federal appeals court has ruled on whether training a model on copyrighted work is fair use, the first such case was argued in June 2026 and is undecided, and no Supreme Court decision exists or is pending.</li>
+          <li><strong><em>Bartz v. Anthropic</em> split the conduct</strong> rather than ruling on "AI training": training the model and scanning lawfully purchased books were fair use, keeping over seven million pirated books was not — and that last act produced the $1.5 billion settlement. Because the case settled, the ruling binds nobody.</li>
+          <li><strong>The decisive question is increasingly acquisition, not learning</strong>; the theory to watch is <strong>market dilution</strong>, endorsed as valid in <em>Kadrey v. Meta</em> even though those plaintiffs failed to prove it on that record.</li>
+          <li><strong>AI-generated content is not copyrightable</strong> because copyright requires a human author — settled by <em>Thaler v. Perlmutter</em>, cert denied March 2026 — and prompts alone, however detailed, do not make you an author.</li>
+          <li><strong>Open source and Creative Commons</strong> show that high-quality work can be produced outside IP incentive structures, challenging the universality of the utilitarian argument.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ── REFERENCES ─────────────────────────────── -->
+    <section id="references" aria-labelledby="refs-heading">
+      <h2 id="refs-heading">References</h2>
+      <div id="bibliography"
+           data-keys="jefferson_mcpherson locke_second_treatise hegel_philosophy_right boyle_public_domain drahos_information_feudalism doctorow_chokepoint wu_master_switch wu_attention_merchants">
+      </div>
+    </section>
+
+  </main><!-- /.content-area -->
+
+  <footer class="chapter-footer">
+    <nav class="chapter-footer-nav" aria-label="Chapter navigation">
+      <a href="ch03_free_speech.html" class="footer-nav-btn">&#8592; Previous chapter</a>
+      <a href="../index.html" class="footer-nav-btn">&#8962; Table of Contents</a>
+      <a href="ch05_crypto.html" class="footer-nav-btn">Next chapter &#8594;</a>
+    </nav>
+    <p class="chapter-footer-meta">
+      <em>Computing and AI Ethics</em> by Brendan Shea, PhD &nbsp;&middot;&nbsp;
+      <a href="https://creativecommons.org/licenses/by-nc/4.0/"
+         target="_blank" rel="noopener">CC BY-NC 4.0</a> &nbsp;&middot;&nbsp;
+      Rochester Community and Technical College
+    </p>
+  </footer>
+
+</div><!-- /.page-wrapper -->
+
+<script>
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: 'base',
+    themeVariables: {
+      primaryColor: '#ebe1fa',
+      primaryTextColor: '#1a0a3a',
+      primaryBorderColor: '#3d1a8a',
+      lineColor: '#3d1a8a',
+      secondaryColor: '#f5f0ff',
+      tertiaryColor: '#ffffff'
+    }
+  });
+</script>
+</body>
+</html>

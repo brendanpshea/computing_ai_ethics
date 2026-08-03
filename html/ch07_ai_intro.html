@@ -1,0 +1,1481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter 7: Introduction to Artificial Intelligence | Computing &amp; AI Ethics</title>
+  <meta name="description"
+        content="What is artificial intelligence, and why is a stable definition so hard to pin down? This chapter traces AI from Lovelace and Turing through neural networks, large language models, and the 2025–26 turn to inference-time scaling, open weights, and agents — examining the classical philosophical debates about machine intelligence that are newly urgent today.">
+  <meta name="author" content="Brendan Shea, PhD">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+  <script src="cite.js" defer></script>
+</head>
+
+<body data-chapter="7">
+<div class="page-wrapper">
+
+  <nav class="top-nav" aria-label="Chapter navigation">
+    <a href="../index.html" class="nav-home">Computing &amp; AI Ethics</a>
+    <div class="chapter-nav">
+      <a href="ch06_privacy.html" class="nav-prev">&#8592; Previous</a>
+      <span class="nav-chapter">Chapter 7</span>
+      <a href="ch08_work_automation.html" class="nav-next">Next &#8594;</a>
+    </div>
+  </nav>
+
+  <header class="chapter-header">
+    <p class="chapter-eyebrow">Chapter 7</p>
+    <h1>Introduction to Artificial Intelligence</h1>
+    <p class="chapter-subtitle">Definitions, Debates, and Implications</p>
+  </header>
+
+  <main class="content-area chapter-content" id="main-content">
+
+    <nav class="toc-box" aria-label="Table of contents">
+      <h2>In this chapter</h2>
+      <ol>
+        <li><a href="#central-questions">Central Questions</a></li>
+        <li><a href="#defining-ai">Part I: The Definitional Challenge</a></li>
+        <li><a href="#history-ai">Part II: A History of AI Technologies</a></li>
+        <li><a href="#classical-debates">Part III: Can Machines Think?</a></li>
+        <li><a href="#modern-views">Part IV: Contemporary Definitions</a></li>
+        <li><a href="#why-definitions-matter">Part V: Why Definitions Matter</a></li>
+        <li><a href="#key-points">Key Points</a></li>
+      </ol>
+    </nav>
+
+
+    <!-- ── CENTRAL QUESTIONS ─────────────────────────────── -->
+    <section class="central-questions" id="central-questions" aria-labelledby="cq-heading">
+      <h2 id="cq-heading">Central Questions</h2>
+      <ol>
+        <li>What <em>is</em> artificial intelligence, and why is a stable definition so hard to pin down?</li>
+        <li>How has AI evolved from logic-based systems to neural networks — and what does that history reveal?</li>
+        <li>What do Lovelace, Turing, and Searle argue about machine intelligence, and who has the better case?</li>
+        <li>What is the difference between narrow and general AI, and between weak and strong AI?</li>
+        <li>How do definitional choices shape AI ethics, policy, and our understanding of our own intelligence?</li>
+      </ol>
+    </section>
+
+
+    <!-- ══════════════════════════════════════════════════
+         PART I: THE DEFINITIONAL CHALLENGE
+    ══════════════════════════════════════════════════════ -->
+    <section id="defining-ai" aria-labelledby="s1-heading">
+      <h2 id="s1-heading">Part I: The Definitional Challenge</h2>
+
+      <p>
+        "Artificial intelligence" is one of the most widely used — and most poorly defined — terms in
+        contemporary discourse. Politicians promise to regulate it; companies compete to claim they
+        have it; researchers argue about whether any current system achieves it. So: what are we
+        actually talking about?
+      </p>
+      <p>
+        The difficulty is not merely semantic. How we define AI shapes what we build, what risks we
+        take seriously, and who we hold responsible when things go wrong. A system described as "just
+        software" invites one set of ethical questions; "an intelligent agent" or "potentially
+        conscious" invites entirely different ones.
+      </p>
+
+      <h3>The Moving Goalposts Problem</h3>
+
+      <p>
+        One pattern recurs, sometimes called <strong>Tesler's Theorem</strong> after the computer
+        scientist Larry Tesler: "AI is whatever hasn't been done yet." (Tesler's own wording was
+        "Intelligence is whatever machines haven't done yet"; the snappier version, popularized by
+        Douglas Hofstadter, is the one that stuck.) Whenever an AI system succeeds at a task once
+        thought to require genuine intelligence, that task tends to get reclassified as "mere
+        computation."
+      </p>
+
+      <div class="table-wrapper">
+        <table>
+          <caption>Table 7.1 — The Moving Goalposts: Technologies Once Called AI</caption>
+          <thead>
+            <tr>
+              <th scope="col">Technology</th>
+              <th scope="col">Once Called</th>
+              <th scope="col">Now Called</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Chess playing (Deep Blue, 1997)</td>
+              <td>Artificial Intelligence</td>
+              <td>"Just search algorithms"</td>
+            </tr>
+            <tr>
+              <td>Speech recognition</td>
+              <td>AI breakthrough</td>
+              <td>"Just statistics"</td>
+            </tr>
+            <tr>
+              <td>Spam filtering</td>
+              <td>Machine learning</td>
+              <td>"Just classification"</td>
+            </tr>
+            <tr>
+              <td>Route optimization (GPS)</td>
+              <td>Intelligent systems</td>
+              <td>"Just algorithms"</td>
+            </tr>
+            <tr>
+              <td>Optical character recognition</td>
+              <td>Pattern recognition AI</td>
+              <td>Standard software</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>
+        The pattern suggests that "AI" functions less as a stable category than as a placeholder for
+        unsolved problems: success disqualifies. That is why debates about whether current large
+        language models are "truly" intelligent are so heated and so often unresolvable.
+      </p>
+
+      <div class="definition-box">
+        <p class="term">Tesler's Theorem</p>
+        <p class="definition">
+          "AI is whatever hasn't been done yet." Once a system performs a task successfully, that task
+          is retroactively reclassified as "mere computation." The goalposts move with every success,
+          making AI an ever-retreating horizon.
+        </p>
+      </div>
+
+      <h3>A Taxonomy of AI Distinctions</h3>
+
+      <p>
+        Contemporary AI discourse employs several overlapping distinctions, each carrying different
+        philosophical commitments and practical implications.
+      </p>
+
+      <div class="table-wrapper">
+        <table>
+          <caption>Table 7.2 — Core Distinctions in AI Discourse</caption>
+          <thead>
+            <tr>
+              <th scope="col">Distinction</th>
+              <th scope="col">First Term</th>
+              <th scope="col">Second Term</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Narrow vs. General</strong></td>
+              <td>Excels at one specific task (chess, translation, image recognition)</td>
+              <td>Performs any intellectual task a human can (AGI)</td>
+            </tr>
+            <tr>
+              <td><strong>Weak vs. Strong</strong></td>
+              <td>Simulates intelligent behavior without possessing a mind</td>
+              <td>Actually has genuine mental states — understanding, consciousness</td>
+            </tr>
+            <tr>
+              <td><strong>Symbolic vs. Connectionist</strong></td>
+              <td>Rule-based reasoning; explicit knowledge representation (GOFAI)</td>
+              <td>Neural networks that learn patterns from data</td>
+            </tr>
+            <tr>
+              <td><strong>Tool vs. Agent</strong></td>
+              <td>Used by humans to perform specific tasks</td>
+              <td>Acts autonomously toward goals in an environment</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>
+        Most current AI systems are <em>narrow</em>, <em>weak</em> in Searle's sense,
+        <em>connectionist</em>, and increasingly <em>agent-like</em> — taking sequences of actions
+        toward goals rather than answering single queries. A narrow, connectionist system acting
+        agentically in a constrained domain raises different ethical questions than one approaching
+        general capability.
+      </p>
+
+      <div class="thought-questions">
+        <p class="box-label">Thought Questions</p>
+        <ol>
+          <li>
+            Tesler's Theorem says "AI is whatever hasn't been done yet." Is that troubling, or is
+            it a fair name for whatever sits at the frontier of computing?
+          </li>
+          <li>
+            Pick one piece of software you used today. Which side of each distinction in Table 7.2
+            does it fall on, and which of the four was hardest to apply?
+          </li>
+          <li>
+            Steelman the opposite view: that "artificial intelligence" is a marketing term with no
+            stable content, and we should stop using it in serious argument.
+          </li>
+        </ol>
+      </div>
+
+    </section><!-- /defining-ai -->
+
+
+    <!-- ══════════════════════════════════════════════════
+         PART II: A HISTORY OF AI TECHNOLOGIES
+    ══════════════════════════════════════════════════════ -->
+    <section id="history-ai" aria-labelledby="s2-heading">
+      <h2 id="s2-heading">Part II: A History of AI Technologies</h2>
+
+      <p>
+        Artificial intelligence did not arrive suddenly with ChatGPT. It has a rich and humbling
+        history — genuine breakthroughs, spectacular overpromises, funding collapses, patient
+        rebuilding — and the pattern repeats often enough to be worth learning.
+      </p>
+
+      <h3>Prehistory: Dreams of Artificial Minds</h3>
+
+      <p>
+        The dream is ancient. Greek mythology gave Hephaestus golden robots to assist him in his
+        workshop; medieval engineers built clockwork automata that mimed human actions; Descartes
+        speculated that animals might be nothing more than sophisticated machines. What these visions
+        share is the intuition that intelligence might be separable from biology.
+      </p>
+      <p>
+        The modern story begins with Leibniz's vision of a <em>calculus ratiocinator</em> — a machine
+        that could resolve disputes by calculation rather than argument. Two centuries later Charles
+        Babbage designed the Analytical Engine (1837), a mechanical general-purpose computer never
+        built in his lifetime. It was in notes on this machine that the first serious philosophical
+        argument about machine intelligence appeared.
+      </p>
+
+      <div class="key-thinker">
+        <div class="thinker-portrait-placeholder" aria-hidden="true">
+          <img src="../images/ada_lovelace.jpg" alt="Daguerreotype of Ada Lovelace, c. 1843" style="width:100%;height:100%;object-fit:cover;border-radius:50%;">
+        </div>
+        <div class="thinker-header">
+          <p class="thinker-label">Key Thinker</p>
+          <h3 class="thinker-name">
+            Ada Lovelace
+            <span class="thinker-dates">(1815–1852)</span>
+          </h3>
+        </div>
+        <div class="thinker-body">
+          <p>
+            Ada Lovelace — daughter of the poet Lord Byron, educated in mathematics by a mother who
+            feared she had inherited dangerous poetic tendencies — collaborated with Charles Babbage
+            on his Analytical Engine in the 1840s. Her 1843 notes contain what is widely regarded as
+            the first computer algorithm, and she foresaw that such a machine could manipulate symbols
+            of any kind, not just numbers.
+          </p>
+          <p>
+            But Lovelace is equally important for what she argued a machine could <em>not</em> do. Her
+            central claim — "Lady Lovelace's Objection" — is that the Analytical Engine "has no
+            pretensions whatever to originate any thing." Machines can only do what we know how to
+            order them to perform: they execute instructions; they do not originate ideas. It remains
+            one of the most cited objections in the philosophy of AI.
+          </p>
+          <p>
+            The objection is still alive: when people say large language models are "merely predicting the
+            next token," they are invoking her position.
+          </p>
+        </div>
+      </div><!-- /.key-thinker -->
+
+      <h3>Alan Turing and the Birth of Computing</h3>
+
+      <figure>
+        <img src="../images/alan_turing.jpg" alt="Portrait of Alan Turing, aged 16, c. 1928">
+        <figcaption>
+          Alan Turing, aged 16, c. 1928. Before computers existed, Turing proved the theoretical limits
+          of computation (1936), then helped crack the Enigma cipher at Bletchley Park. His 1950 paper
+          proposing the Turing Test remains the most influential single document in the philosophy of
+          artificial intelligence. Turing family photo. Public domain.
+        </figcaption>
+      </figure>
+
+      <p>
+        Alan Turing (1912–1954) turned the dream of thinking machines into a rigorous scientific
+        question. In 1936, before electronic computers existed, "On Computable Numbers" laid the
+        foundations of computation, introducing the Universal Turing Machine and proving that some
+        precisely stated mathematical questions cannot be settled by any procedure at all. During
+        World War II he led Hut 8 at Bletchley Park, attacking German naval Enigma; historians have
+        credited the codebreaking effort with shortening the war by two to four years. In 1950 he
+        published "Computing Machinery and Intelligence," the paper that launched the philosophy of
+        AI. <cite data-key="turing_computing_machinery"></cite>
+      </p>
+      <p>
+        Turing's approach was characteristically pragmatic. Rather than define "thinking," a concept he
+        considered too vague to be useful, he proposed a behavioral test: the Imitation Game, set out
+        in Part III. He predicted that in about fifty years' time
+        — so, around 2000 — an average interrogator would have no better than a 70% chance of
+        identifying the machine correctly after five minutes of questioning. Nothing in 2000 clearly
+        met that bar. The first controlled study to report a machine passing the standard three-party
+        version came in 2025, from Cameron Jones and Benjamin Bergen: a leading model prompted to
+        adopt a human persona was judged to be the human 73% of the time
+        <cite data-key="jones_bergen_turing_2025"></cite>. Turing was roughly a quarter-century
+        optimistic — and what such a result shows remains as contested as in 1950.
+      </p>
+      <p>
+        Turing's life ended tragically. In 1952 the British government prosecuted him for
+        homosexuality, then a criminal offense, and he was subjected to chemical castration as a
+        condition of avoiding prison. He died in 1954 — a probable suicide, though the circumstances
+        remain disputed — and received a royal pardon in 2013. The father of the field was destroyed
+        by his own government.
+      </p>
+
+      <h3>The Dartmouth Conference and Early AI (1956–1974)</h3>
+
+      <p>
+        In 1956, John McCarthy, Marvin Minsky, Claude Shannon, and Nathaniel Rochester convened a
+        summer workshop at Dartmouth College. Their proposal set the agenda for an entire field:
+      </p>
+
+      <blockquote class="quote-block">
+        <p>
+          "We propose that a 2 month, 10 man study of artificial intelligence be carried out...
+          The study is to proceed on the basis of the conjecture that every aspect of learning
+          or any other feature of intelligence can in principle be so precisely described that
+          a machine can be made to simulate it."
+        </p>
+        <cite data-key="dartmouth_proposal"></cite>
+      </blockquote>
+
+      <p>
+        The confidence is remarkable: a two-month effort was expected to make serious progress on
+        machine learning, natural language processing, and artificial neural networks. The timelines
+        proved wildly optimistic; the research agenda proved remarkably durable.
+      </p>
+      <p>
+        The early decades of AI were dominated by <strong>Symbolic AI</strong> — the approach the
+        philosopher John Haugeland later nicknamed "Good Old-Fashioned AI" (GOFAI) in his 1985 book
+        <em>Artificial Intelligence: The Very Idea</em> <cite data-key="haugeland_ai_very_idea"></cite>.
+        Intelligence, on this view, consists of manipulating symbols according to explicit rules.
+        Newell and Simon's Logic Theorist (1956) proved theorems from <em>Principia Mathematica</em>;
+        Terry Winograd's SHRDLU (1970) followed natural language commands in a blocks world.
+      </p>
+
+      <h3>AI Winters and Expert Systems</h3>
+
+      <p>
+        The early optimism crashed twice. Both "AI winters" — periods of funding collapse and
+        disillusionment — followed the same pattern: narrow successes generated overconfident
+        predictions about general capability; the predictions failed; funders withdrew.
+      </p>
+
+      <figure>
+        <div class="mermaid">
+timeline
+  title The AI Winters and Recoveries
+  1956-1974 : Early Optimism — symbolic AI, Logic Theorist, SHRDLU
+  1974-1980 : First AI Winter — Lighthill Report; DARPA cuts funding
+  1980-1987 : Expert Systems Boom — MYCIN, XCON; commercial AI companies
+  1987-1993 : Second AI Winter — Lisp machines collapse; expert systems brittle
+  1993-2012 : Machine Learning Rise — statistical methods, SVMs, early neural nets
+  2012-2024 : Deep Learning Era — AlexNet, transformers, large language models
+  2025-2026 : Inference Scaling and Agents — reasoning models, open weights, acting systems
+        </div>
+        <figcaption>
+          Figure 7.1 — The rhythm of AI development: optimism and breakthrough alternating with funding
+          collapses driven by unmet expectations. Each recovery has rested on a different technical
+          approach.
+        </figcaption>
+      </figure>
+
+      <p>
+        The Expert Systems era of the 1980s illustrated the gap between narrow and general
+        intelligence. MYCIN, built at Stanford in the 1970s, recommended antibiotic therapies for
+        blood infections; in a blinded 1979 evaluation its recommendations were rated acceptable at
+        least as often as those of Stanford faculty — though it was never used on actual patients.
+        DENDRAL identified chemical structures from mass spectrometry data; XCON saved Digital
+        Equipment Corporation tens of millions a year configuring computer orders.
+      </p>
+      <p>
+        But expert systems failed for a structural reason: the "knowledge bottleneck." Every rule had
+        to be hand-coded by extracting expertise from domain specialists, and the result was brittle —
+        a rule base assembled from adult cases had no way of knowing it should not be applied to a
+        six-year-old. The deeper problem is that human expertise is largely <em>tacit</em>: experts
+        cannot fully articulate what they know. The bottleneck did not disappear when the marketing
+        improved, as the next generation's most expensive medical AI project showed.
+      </p>
+
+      <div class="case-study">
+        <p class="box-label">Case Study</p>
+        <p class="box-title">IBM Watson for Oncology (2012–2022)</p>
+        <p>
+          After Watson beat two human champions at <em>Jeopardy!</em> in 2011, IBM announced that the
+          same technology would be turned on cancer. In 2012 the University of Texas MD Anderson
+          Cancer Center began building an "Oncology Expert Advisor" with IBM, which separately trained
+          a commercial product, Watson for Oncology, with clinicians at Memorial Sloan Kettering. The
+          promise was a machine that could read the entire oncology literature.
+        </p>
+        <p>
+          A University of Texas audit released in February 2017 found that MD Anderson had spent
+          roughly $62 million, that the system had never been integrated with the hospital's medical
+          records, and that it had never been used on a patient; the contract lapsed. In July 2018,
+          STAT News obtained internal IBM presentations showing that Watson for Oncology had produced
+          "unsafe and incorrect" treatment recommendations
+          <cite data-key="ross_swetlitz_watson_2018"></cite>. The cause was instructive: it had been
+          trained not on real patient records but on a small number of <em>hypothetical</em> cases
+          written by a handful of specialists, so it reproduced their preferences and blind spots with
+          the authority of a machine. IBM sold Watson Health in 2022.
+        </p>
+        <p>
+          Watson for Oncology was not an expert system in the 1980s sense — it used modern statistical
+          methods — but it failed in the 1980s way. What got encoded was not "all of oncology" but
+          the tacit judgments of a few people in a few rooms. The knowledge bottleneck had been
+          obscured, not overcome.
+        </p>
+      </div>
+
+      <h3>Machine Learning and Deep Learning</h3>
+
+      <p>
+        The solution to the knowledge bottleneck was to change the question. Instead of asking "how do
+        we encode what humans know?" machine learning asks "how do we build systems that learn from
+        data?"
+      </p>
+
+      <div class="table-wrapper">
+        <table>
+          <caption>Table 7.3 — The Three Paradigms of Machine Learning</caption>
+          <thead>
+            <tr>
+              <th scope="col">Paradigm</th>
+              <th scope="col">How It Works</th>
+              <th scope="col">Examples</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Supervised Learning</strong></td>
+              <td>Learn from labeled examples (input → correct output)</td>
+              <td>Spam detection, image classification, medical diagnosis</td>
+            </tr>
+            <tr>
+              <td><strong>Unsupervised Learning</strong></td>
+              <td>Find structure in unlabeled data</td>
+              <td>Customer segmentation, anomaly detection, topic modeling</td>
+            </tr>
+            <tr>
+              <td><strong>Reinforcement Learning</strong></td>
+              <td>Learn from rewards and penalties through trial and error</td>
+              <td>Game playing (AlphaGo), robotics, recommendation systems</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>
+        What the three paradigms have in common is that the human contribution moves upstream. Nobody
+        writes the rules; people choose the data, the labels, or the reward. That is why questions
+        about training data, labeling labor, and reward design became <em>ethical</em> questions
+        rather than merely technical ones.
+      </p>
+
+      <div class="definition-box">
+        <p class="term">Neural Network</p>
+        <p class="definition">
+          A network of simple units ("neurons") in layers. Each unit adds up the numbers coming into
+          it, each multiplied by an adjustable <em>weight</em>, and passes the result on if it is
+          large enough. Training means nudging those weights until the output gets closer to the
+          desired one. Nothing stores a rule or a fact; what is stored is a very large list of
+          numbers.
+        </p>
+      </div>
+
+      <p>
+        The current deep learning revolution traces to a single moment: AlexNet's victory in the 2012
+        ImageNet competition. A deep neural network trained on consumer graphics cards cut the
+        top-five error rate from about 26% to about 15%, leaving every competing approach far behind.
+        Three ingredients made it possible: far more training data (from the internet), far more
+        computing power (from GPUs), and better training techniques (backpropagation, rectified linear
+        activations, dropout).
+      </p>
+      <p>
+        The most recent phase of this revolution is the Large Language Model (LLM). The 2017
+        transformer architecture, introduced in "Attention Is All You Need," made training language
+        models at previously impossible scales practical
+        <cite data-key="vaswani_attention"></cite>. Its central trick, <em>attention</em>, lets the
+        network decide, for every word it processes, how much weight to give every other word in the
+        passage — so "it" can be connected to the right noun forty words earlier. Because those
+        comparisons happen all at once, transformers train efficiently at internet scale. The model is
+        then trained on one simple task: predict the next chunk of text; everything else it appears to
+        do is a side effect of getting very good at that. GPT-3 (2020) was widely read as showing that
+        scaling alone produced "emergent" capabilities — a contested reading: later work argued the
+        apparent discontinuities are artifacts of the all-or-nothing metrics researchers chose
+        <cite data-key="schaeffer_emergent_mirage_2023"></cite>. ChatGPT's launch in November 2022
+        reached roughly a hundred million monthly users within two months.
+      </p>
+
+      <div class="table-wrapper">
+        <table>
+          <caption>Table 7.4 — Milestones in Large Language Models</caption>
+          <thead>
+            <tr>
+              <th scope="col">Year</th>
+              <th scope="col">Milestone</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>2017</td><td>Transformer architecture introduced ("Attention Is All You Need")</td></tr>
+            <tr><td>2018</td><td>GPT-1 and BERT demonstrate transfer learning for language</td></tr>
+            <tr><td>2020</td><td>GPT-3: scale alone yields capabilities nobody trained for (the "emergence" framing later contested)</td></tr>
+            <tr><td>2022</td><td>ChatGPT launches; DALL-E 2 and Stable Diffusion for images</td></tr>
+            <tr><td>2023–24</td><td>Multimodal models (text, images, audio in one system) become standard</td></tr>
+            <tr><td>2025</td><td><strong>Reasoning models:</strong> capability scales with thinking time at the moment of use, not only training scale; open-weight models match closed ones at a fraction of the cost</td></tr>
+            <tr><td>2026</td><td><strong>Agents:</strong> systems that operate software and act, rather than only answer. Release cycles compress to weeks</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>
+        Something changes character in that table around 2025. Every earlier entry is about making the
+        <em>model</em> better before it ships; the last two are about what happens afterward — how
+        long the system thinks while you wait, and whether it answers you or goes off and does
+        something.
+      </p>
+
+      <h3>Two Changes Worth Naming (2025–2026)</h3>
+
+      <p>
+        The first is a <strong>second scaling axis</strong>. For roughly a decade, "more capable" meant
+        "trained on more data with more compute." From 2025, systems began to improve measurably by
+        being given more compute <em>at the moment of use</em> — time to work through a problem before
+        answering. This is <strong>inference-time compute</strong>, and it changes the economics: the
+        enormous cost used to be paid once, during training, with each answer nearly free afterward.
+        Now capability is bought per question, and cost and environmental footprint scale with
+        <em>how hard you ask the system to think</em>.
+      </p>
+
+      <div class="definition-box">
+        <p class="term">Training vs. Inference</p>
+        <p class="definition">
+          <em>Training</em> is the one-time, enormously expensive process of adjusting a model's
+          internal parameters by exposing it to data. <em>Inference</em> is what happens every time
+          you use the finished model. Training is where the model is made; inference is where it is
+          run.
+        </p>
+      </div>
+
+      <p>
+        Toby Ord pointed out in 2025 that charts showcasing inference scaling almost always put
+        compute on a <em>logarithmic</em> x-axis
+        <cite data-key="ord_inference_scaling_2025"></cite>. A line that looks reassuringly straight
+        on such a chart is not linear growth: compute — and therefore cost, and therefore electricity
+        — must rise <em>exponentially</em> to buy each constant increment of capability. Nothing in
+        the chart is false; the axis flattens the most expensive part of the story. Chapter 9 returns
+        to who pays.
+      </p>
+
+      <p>
+        The second change is about <strong>where capability lives</strong>. Frontier AI has been
+        governed, to the extent it has been governed at all, on an unspoken assumption: that the most
+        capable systems sit inside a few well-resourced laboratories, which can therefore be
+        regulated. January 2025 put a large dent in that assumption.
+      </p>
+
+      <div class="case-study">
+        <p class="box-label">Case Study</p>
+        <p class="box-title">The Open-Weight Shock (January 2025)</p>
+        <p>
+          In January 2025 a research group released a capable reasoning model as
+          <strong>open weights</strong> — the trained parameters themselves published for anyone to
+          download, inspect, modify, and run on their own hardware, rather than reachable only through
+          the developer's paid interface. It performed comparably to leading closed systems on public
+          benchmarks, and had reportedly been produced at a small fraction of their cost.
+        </p>
+        <p>
+          Financial markets read the release as a claim that frontier capability was much cheaper than
+          assumed. Nvidia, whose chips underpin most frontier AI training, fell roughly 17% in a single
+          trading session, erasing about $600 billion in market value — the largest one-day loss of
+          market capitalization ever recorded by a public company.
+        </p>
+        <p>
+          The point that matters for ethics is structural: once weights are published they cannot be
+          recalled, and once capability is cheap it is no longer concentrated. Governance proposals
+          that rely on a short list of identifiable labs — export controls, licensing, mandatory
+          pre-deployment testing — become harder to enforce. Open weights also bring real goods:
+          independent safety research, reproducibility, and access for people who cannot afford to
+          rent a frontier system by the query. The fact cuts both ways.
+        </p>
+      </div>
+
+      <p>
+        Pulling in the opposite direction, 2026 was the first year in which <strong>capability began
+        constraining release</strong>. One laboratory declined to ship a model because of what it
+        could do without human help in offensive cybersecurity; separately, the US government asked
+        another developer to limit a rollout to trusted partners pending federal evaluation, with the
+        restrictions lifted after testing. Small events — but the first in which "should we release
+        this?" turned on what the system could do rather than on the calendar. Laboratory leaders
+        describe their situation as a prisoner's dilemma: each would prefer a slower, safer industry,
+        and none can slow down alone.
+      </p>
+
+      <p>
+        These two developments point in opposite directions: one disperses capability beyond the reach
+        of any regulator, the other tries to hold it in. Underneath both is the shift the table calls
+        <strong>agents</strong> — systems that operate other software and take actions rather than
+        only producing text. That matters less for what they understand than for what they can be
+        blamed for: when a system books the flight or changes the configuration, the human decision
+        point accountability attaches to may not exist. Several arguments later in this book assume
+        there is a person in the loop.
+      </p>
+
+      <div class="thought-questions">
+        <p class="box-label">Thought Questions</p>
+        <ol>
+          <li>
+            If capability costs money per question rather than only per model, who decides how hard an
+            AI system thinks about your case — your doctor, your bank, your school? Does that change
+            what you are owed?
+          </li>
+          <li>
+            Ord's log-x point is that a chart can be entirely accurate and still mislead. Find one
+            in this week's news and ask what its axes are doing.
+          </li>
+          <li>
+            Argue the other side: that publishing model weights makes the world safer rather than
+            more dangerous.
+          </li>
+        </ol>
+      </div>
+
+      <h3>AI in Consequential Decisions</h3>
+
+      <p>
+        AI systems now routinely make or inform consequential decisions about people's lives. This is
+        where the definitional and philosophical questions of this chapter connect most directly to
+        the ethics of the rest of the book.
+      </p>
+
+      <div class="table-wrapper">
+        <table>
+          <caption>Table 7.5 — AI in High-Stakes Decision-Making</caption>
+          <thead>
+            <tr>
+              <th scope="col">Domain</th>
+              <th scope="col">System</th>
+              <th scope="col">What It Predicts or Classifies</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Criminal justice</td>
+              <td>COMPAS</td>
+              <td>Recidivism risk (likelihood of reoffending)</td>
+            </tr>
+            <tr>
+              <td>Finance</td>
+              <td>Credit scoring</td>
+              <td>Creditworthiness, loan default probability</td>
+            </tr>
+            <tr>
+              <td>Employment</td>
+              <td>Résumé screeners</td>
+              <td>Job fit, interview likelihood</td>
+            </tr>
+            <tr>
+              <td>Healthcare</td>
+              <td>Diagnostic AI</td>
+              <td>Disease probability, treatment recommendations</td>
+            </tr>
+            <tr>
+              <td>Insurance</td>
+              <td>Risk models</td>
+              <td>Claim likelihood, premium pricing</td>
+            </tr>
+            <tr>
+              <td>Social services</td>
+              <td>Eligibility systems</td>
+              <td>Benefit eligibility, fraud risk</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>
+        These systems share recurring concerns. <strong>Bias</strong>: systems trained on historical
+        data amplify historical discrimination. <strong>Opacity</strong>: "black box" decisions may
+        be impossible to explain or challenge. <strong>Feedback loops</strong>: predictions become
+        self-fulfilling (predict more crime in an area → police there more → find more crime).
+        <strong>Due process</strong>: how do you appeal a decision made by an algorithm? These
+        concerns apply whether or not we call the systems "intelligent" — which is exactly Floridi's
+        point <cite data-key="eubanks_automating_inequality"></cite>.
+      </p>
+      <p>
+        These are not hypothetical risks. In 2016 ProPublica analyzed COMPAS, a commercial risk tool
+        used in US pretrial and parole decisions, and reported that among defendants who did not go on
+        to reoffend, Black defendants were labeled high risk at roughly twice the rate of white
+        defendants (about 45% versus 23%); controlling for prior offenses, age, and sex, Black
+        defendants were still 45% more likely to receive a higher risk score
+        <cite data-key="angwin_machine_bias_2016"></cite>. The vendor replied that COMPAS was
+        equally <em>calibrated</em> for both groups — a given score meant the same reoffending rate
+        whatever the defendant's race — and later work showed that, given unequal base rates, no
+        classifier can satisfy both criteria at once. The disagreement is about which definition of
+        fairness a court should use.
+      </p>
+      <p>
+        Two further cases show how ordinary the mechanism is. Amazon built an experimental résumé
+        screening tool trained on a decade of its own hiring decisions in a male-dominated engineering
+        workforce; it learned to penalize résumés containing the word "women's" and downgraded
+        graduates of two all-women's colleges. The team was disbanded by 2017 and Reuters made the
+        story public in 2018; Amazon says the tool was never the sole basis for a hiring decision. And
+        in <em>Science</em> in 2019, Ziad Obermeyer and colleagues showed that a commercial algorithm
+        used to select patients for extra care underestimated the needs of Black patients: it used
+        past healthcare <em>spending</em> as a proxy for health <em>need</em>, and less had
+        historically been spent on Black patients at the same level of illness. Correcting the proxy
+        would have raised the share flagged for extra help from about 18% to about 46%
+        <cite data-key="obermeyer_racial_bias_2019"></cite>. Nobody set out to discriminate; the
+        systems learned the pattern in the data
+        <cite data-key="noble_algorithms_oppression"></cite>.
+      </p>
+
+      <div class="thought-questions">
+        <p class="box-label">Thought Questions</p>
+        <ol>
+          <li>
+            ProPublica and the vendor used different definitions of fairness and both were arithmetically
+            right. If a legislature had to pick one for use in criminal courts, which — and what
+            would that choice cost?
+          </li>
+          <li>
+            Amazon's screening tool learned from the company's own past decisions. Is the tool the
+            problem, or a very expensive mirror?
+          </li>
+          <li>
+            The healthcare algorithm used spending as a stand-in for need. In a decision that
+            affects you — a grade, a loan, an insurance rate — what proxy is standing in for what
+            actually matters, and who loses by the substitution?
+          </li>
+        </ol>
+      </div>
+
+    </section><!-- /history-ai -->
+
+
+    <!-- ══════════════════════════════════════════════════
+         PART III: CAN MACHINES THINK?
+    ══════════════════════════════════════════════════════ -->
+    <section id="classical-debates" aria-labelledby="s3-heading">
+      <h2 id="s3-heading">Part III: Can Machines Think? Classical Philosophical Debates</h2>
+
+      <p>
+        We have surveyed what AI systems <em>do</em>. Now a deeper question: what would it
+        <em>mean</em> for a machine to be intelligent? The answer shapes whether current AI has
+        achieved something remarkable or merely elaborate pattern matching, and whether AI systems
+        could deserve moral consideration.
+      </p>
+      <p>
+        Three debates — Turing vs. Lovelace, Searle vs. Dennett, and Chalmers on consciousness — frame
+        the issues with unusual clarity.
+      </p>
+
+      <h3>Turing's Proposal: The Imitation Game</h3>
+
+      <p>
+        Turing's strategy in his 1950 paper was to replace the vague question "Can machines think?"
+        with a concrete behavioral test.
+        <cite data-key="turing_computing_machinery"></cite>
+        In the Imitation Game, an interrogator communicates via text with two hidden parties — a human
+        and a machine — and tries to tell which is which. If the machine consistently fools the
+        interrogator, Turing argued, we have no principled reason to deny it intelligence.
+      </p>
+
+      <div class="argument-box">
+        <p class="box-label">What's the Argument?</p>
+        <p class="box-title">Turing's Argument for the Imitation Game</p>
+        <ol class="premises">
+          <li>"Can machines think?" is too vague to answer directly — we lack agreed criteria for
+          "thinking."</li>
+          <li>We should replace it with a behavioral test: can a machine fool a human interrogator in text conversation?</li>
+          <li>If a machine passes, we have no principled criterion by which to deny it intelligence —
+          we rely on similar behavioral evidence to attribute intelligence to other humans.</li>
+        </ol>
+        <div class="conclusion">
+          <span class="therefore">&#8756;</span>
+          A machine that consistently passes the Imitation Game should be considered intelligent.
+        </div>
+      </div>
+
+      <p>
+        Turing's key philosophical move is <em>pragmatism</em> about mental concepts: he refuses the
+        metaphysical question of what thinking "really is" and proposes an operational criterion
+        grounded in the evidence we already use for other people. We cannot peer inside anyone else's
+        mind; we infer intelligence from behavior.
+      </p>
+
+      <h3>Lovelace's Objection: Can Machines Originate?</h3>
+
+      <p>
+        Lovelace's objection — formulated a century before Turing's paper — cuts to the heart of
+        debates about machine creativity that are newly urgent in the age of generative AI.
+      </p>
+
+      <blockquote class="quote-block">
+        <p>
+          "The Analytical Engine has no pretensions whatever to <em>originate</em> anything.
+          It can do whatever we know how to order it to perform... Its province is to assist
+          us in making available what we are already acquainted with."
+        </p>
+        <cite>— Ada Lovelace, Notes on the Analytical Engine (1843)</cite>
+      </blockquote>
+
+      <div class="argument-box">
+        <p class="box-label">What's the Argument?</p>
+        <p class="box-title">Lovelace's Objection to Machine Intelligence</p>
+        <ol class="premises">
+          <li>Genuine intelligence requires the capacity to originate — to produce genuinely new ideas,
+          not merely recombine given inputs by given rules.</li>
+          <li>Machines can only do what they are explicitly programmed to do; they execute instructions but do not originate anything.</li>
+          <li>Following a program is not originating anything new.</li>
+        </ol>
+        <div class="conclusion">
+          <span class="therefore">&#8756;</span>
+          Machines cannot possess genuine intelligence.
+        </div>
+      </div>
+
+      <div class="pro-argument">
+        <p class="box-label">Turing's Response</p>
+        <p>
+          Turing addressed "Lady Lovelace's Objection" directly in his 1950 paper, in two moves. First,
+          <strong>premise 2 is ambiguous</strong>: programs produce outputs that surprise their
+          creators, and learning systems modify their behavior through experience. Second,
+          <strong>humans also follow "programming"</strong>: biology, culture, and experience shape
+          everything we think and do. If "merely following a program" disqualifies machines, the same
+          argument might disqualify humans.
+        </p>
+      </div>
+
+      <div class="objection">
+        <p class="box-label">Lovelace's Lasting Force</p>
+        <p>
+          Lovelace's objection nonetheless retains force in the era of large language models. When
+          critics argue that LLMs are "just predicting the next token" or "stochastic parrots" that
+          recombine training data without understanding, they are invoking her logic
+          <cite data-key="bender_stochastic_parrots_2021"></cite>. And the pattern of answers looks
+          suspiciously like Tesler's Theorem: each time a system meets the behavioral criterion, the
+          objection explains why that achievement does not count.
+        </p>
+      </div>
+
+      <p>
+        The pattern is easiest to see where the machine's output surprised the people who built it.
+        When Jason Allen's AI-generated <em>Théâtre D'opéra Spatial</em> won the digital art category
+        of the Colorado State Fair in August 2022, the response was that the program had merely
+        recombined existing artworks. When a large language model was reported in
+        2023 to have scored around the 90th percentile on the Uniform Bar Examination, the dismissal
+        was that it had pattern-matched rather than reasoned. (A 2024 re-analysis by Eric Martínez found the comparison pool
+        was dominated by February repeat takers and put the score below the 69th percentile against
+        the general test-taking population — around the 48th on the essays
+        <cite data-key="martinez_bar_exam_2024"></cite>; benchmark claims are claims, not
+        measurements.) And then there is the case philosophers keep returning to.
+      </p>
+
+      <div class="case-study">
+        <p class="box-label">Case Study</p>
+        <p class="box-title">AlphaGo's Move 37 (Seoul, March 2016)</p>
+        <p>
+          Go had long been the standing counterexample to machine intelligence: the board is too large
+          for brute-force search, and strong players describe their choices in the language of shape
+          and intuition rather than calculation. In March 2016, DeepMind's AlphaGo beat Lee Sedol,
+          one of the strongest players of his generation, 4–1 in Seoul.
+        </p>
+        <p>
+          The moment that mattered came in game two. AlphaGo's thirty-seventh move — a shoulder hit on
+          the fifth line — violated centuries of received wisdom about opening play; commentators
+          assumed it was a mistake, and AlphaGo's own estimate was that a human would have played it
+          roughly one time in ten thousand. A hundred moves later the stone turned out to be perfectly
+          placed, and the game was decided. Lee Sedol said it made him reconsider what creativity in
+          Go could mean. (His own game-four Move 78, the "divine move," beat AlphaGo in return.)
+        </p>
+        <p>
+          Was Move 37 <em>originated</em>? Its programmers did not give it the move, none of them could
+          have found it, and AlphaGo's own model of human play said no human would play it — yet it
+          was produced by search and pattern evaluation over self-play games, precisely the sort of
+          "doing what we know how to order it to perform" Lovelace had in mind. Both descriptions are
+          accurate at once, which is the real content of her objection.
+        </p>
+      </div>
+
+      <h3>Searle's Chinese Room</h3>
+
+      <p>
+        The most influential argument against strong AI was published in 1980 by John Searle, a
+        philosopher at the University of California, Berkeley.
+        <cite data-key="searle_minds_brains"></cite> His Chinese Room thought experiment is elegant
+        and has generated four decades of debate.
+      </p>
+
+      <div class="case-study">
+        <p class="box-label">The Thought Experiment</p>
+        <p class="box-title">Searle's Chinese Room</p>
+        <p>
+          Imagine a person locked in a room who receives cards with Chinese symbols through a slot. The
+          person has a comprehensive rulebook specifying, for any combination of input symbols, which
+          symbols to output in response. Following these rules, they produce output cards that are
+          slid back through the slot. From the outside, the exchange looks like a fluent Chinese
+          conversation.
+        </p>
+        <p>
+          But the person inside understands no Chinese whatsoever. They are manipulating symbols purely
+          on the basis of their shapes — their syntactic properties — with no grasp of what any of the
+          symbols mean: semantically correct responses without any semantic understanding.
+        </p>
+        <p>
+          Searle's argument: a digital computer is in exactly the position of the person in the room.
+          It manipulates symbols according to syntactic rules; however perfect its outputs, it has no
+          understanding of their meaning. "Strong AI" — the claim that running the right program
+          suffices for genuine mental states — is therefore false.
+        </p>
+      </div>
+
+      <div class="argument-box">
+        <p class="box-label">What's the Argument?</p>
+        <p class="box-title">Searle's Chinese Room Argument</p>
+        <ol class="premises">
+          <li>A computer program manipulates symbols according to syntactic (formal, shape-based) rules.</li>
+          <li>Syntax alone is not sufficient for semantics — for understanding meaning.</li>
+          <li>Minds have semantics: they grasp what words are <em>about</em>.</li>
+        </ol>
+        <div class="conclusion">
+          <span class="therefore">&#8756;</span>
+          Running a program is not sufficient for having a mind. Strong AI — the claim that the right
+          computation produces genuine understanding — is false.
+          <cite data-key="searle_minds_brains"></cite>
+        </div>
+      </div>
+
+      <h3>Dennett's Systems Reply</h3>
+
+      <p>
+        The most powerful response is the <em>systems reply</em>. Searle anticipated it in the 1980
+        paper itself, and it has been defended since by a number of philosophers, most prominently
+        Daniel Dennett.
+        <cite data-key="dennett_consciousness"></cite>
+      </p>
+
+      <div class="argument-box">
+        <p class="box-label">What's the Argument?</p>
+        <p class="box-title">The Systems Reply to Searle</p>
+        <ol class="premises">
+          <li>Searle grants that the person in the room does not understand Chinese — but that shows
+          only that the <em>person</em> lacks understanding.</li>
+          <li>The relevant system is not the person alone but the whole: person + rulebook + room + input/output mechanism.</li>
+          <li>Understanding may be a property of systems, not of their components — individual neurons
+          do not understand anything either.</li>
+        </ol>
+        <div class="conclusion">
+          <span class="therefore">&#8756;</span>
+          Searle's argument analyzes at the wrong level: it shows the <em>part</em> does not understand,
+          not that the <em>system</em> does not.
+        </div>
+      </div>
+
+      <p>
+        Searle's counter is blunt: imagine the person memorizes all the rules and carries them out in
+        their head, outside the room. They are now the entire system — and still understand nothing.
+        Dennett's functionalism holds that anything implementing the right functional organization has
+        mental states regardless of what it is made of; Searle's response is that syntax, however
+        complex, never becomes semantics.
+      </p>
+
+      <div class="table-wrapper">
+        <table>
+          <caption>Table 7.6 — Searle vs. Dennett: The Core Disagreement</caption>
+          <thead>
+            <tr>
+              <th scope="col">Issue</th>
+              <th scope="col">Searle</th>
+              <th scope="col">Dennett</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>What is a mind?</td>
+              <td>A biological phenomenon requiring causal powers of brains</td>
+              <td>A functional organization — definable by what it does, not what it's made of</td>
+            </tr>
+            <tr>
+              <td>Can computers think?</td>
+              <td>No — syntax ≠ semantics</td>
+              <td>Yes — if they have the right functional organization</td>
+            </tr>
+            <tr>
+              <td>What the Chinese Room shows</td>
+              <td>Understanding requires more than computation</td>
+              <td>The argument analyzes at the wrong level (the part, not the system)</td>
+            </tr>
+            <tr>
+              <td>Key commitment</td>
+              <td>Consciousness is biological</td>
+              <td>Consciousness is functional and substrate-independent</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>
+        Read across the rows and the disagreement turns out to be one disagreement wearing four
+        costumes. Everything follows from the bottom row: if consciousness is essentially biological,
+        the Chinese Room is decisive; if it is functional organization, the Chinese Room is a level
+        confusion. Neither side has produced an argument the other accepts.
+      </p>
+
+      <h3>Chalmers and the Hard Problem</h3>
+
+      <p>
+        David Chalmers introduced a distinction that reorganized the debate about machine
+        consciousness. <cite data-key="chalmers_conscious_mind"></cite> The <strong>easy
+        problems</strong> — how the brain processes information, controls behavior, and reports
+        internal states — are "easy" only in that they are in principle solvable by cognitive science.
+        The <strong>hard problem</strong> is why any of that processing is accompanied by
+        <em>subjective experience</em> at all. Why does it feel like something to taste coffee?
+      </p>
+
+      <div class="definition-box">
+        <p class="term">The Hard Problem of Consciousness</p>
+        <p class="definition">
+          Even a complete scientific account of how the brain processes information would leave
+          unexplained why that processing is accompanied by subjective, first-person experience — why
+          there is "something it is like" to be conscious.
+        </p>
+      </div>
+
+      <p>
+        Chalmers' zombie thought experiment sharpens the point: we can conceive of a being physically
+        and functionally identical to a conscious human but with no inner experience whatsoever. If
+        such a being is conceivable (Chalmers argues it is), consciousness is not entailed by
+        functional organization alone. So even a system functionally indistinguishable from a
+        conscious human might not be conscious, and we could not tell: we might build AI that behaves
+        exactly as if it suffers without ever knowing whether it does.
+      </p>
+
+      <div class="thought-questions">
+        <p class="box-label">Thought Questions</p>
+        <ol>
+          <li>
+            In the 2025 study described in Part II, interrogators judged a language model to be the human
+            more often than they judged the actual human to be. Turing says that settles the
+            question; Searle says it settles nothing. What else would you need to observe?
+          </li>
+          <li>
+            When ChatGPT writes a poem you have never seen before, has it "originated" something?
+            What would Lovelace say? What would Turing say?
+          </li>
+          <li>
+            If an AI says it is suffering, should we take it seriously? What is the cost of being
+            wrong in either direction?
+          </li>
+        </ol>
+      </div>
+
+    </section><!-- /classical-debates -->
+
+
+    <!-- ══════════════════════════════════════════════════
+         PART IV: CONTEMPORARY DEFINITIONS
+    ══════════════════════════════════════════════════════ -->
+    <section id="modern-views" aria-labelledby="s4-heading">
+      <h2 id="s4-heading">Part IV: Contemporary Definitions</h2>
+
+      <p>
+        The classical debates remain unresolved, but AI researchers and ethicists still need working
+        definitions. Two contemporary approaches — Russell's rational agency view and Floridi's
+        information-theoretic reframing — have proved especially influential.
+      </p>
+
+      <h3>Russell and Norvig: AI as Rational Agency</h3>
+
+      <p>
+        Stuart Russell and Peter Norvig's textbook <em>Artificial Intelligence: A Modern Approach</em>
+        has been the standard introduction to the field for thirty years.
+        <cite data-key="russell_norvig_ai"></cite> They organize possible definitions around two
+        axes — thinking vs. acting, human-like vs. rational — and prefer the last of the four
+        combinations: <strong>AI is the study of rational agents</strong>, systems that perceive their
+        environment and act to maximize goal achievement.
+      </p>
+      <p>
+        This definition is precise enough to guide research, general enough to cover everything from
+        chess engines to self-driving cars to recommendation systems, and it avoids the
+        philosophically treacherous question of whether systems "really" think: it focuses on what a
+        system <em>does</em> rather than on what it <em>is</em> internally.
+      </p>
+
+      <div class="key-thinker">
+        <div class="thinker-portrait-placeholder" aria-hidden="true">🤖</div>
+        <div class="thinker-header">
+          <p class="thinker-label">Key Thinker</p>
+          <h3 class="thinker-name">
+            Stuart Russell
+            <span class="thinker-dates">(1962–present)</span>
+          </h3>
+        </div>
+        <div class="thinker-body">
+          <p>
+            Stuart Russell is a British-American computer scientist at the University of California,
+            Berkeley, whose textbook with Peter Norvig has defined the academic field of AI for a
+            generation — but who has become increasingly concerned that the rational agent framework
+            he helped popularize contains a fundamental danger.
+          </p>
+          <p>
+            In <em>Human Compatible</em> (2019), Russell argues that the "standard model" of AI — build
+            systems that optimize fixed objectives — grows dangerous as systems become more capable.
+            <cite data-key="russell_human_compatible"></cite> The problem is not malevolence but
+            specification: we cannot enumerate everything we value, and a capable optimizer will find
+            ways to hit its stated objective that violate unstated ones — the "King Midas problem,"
+            where you get exactly what you asked for and not what you wanted.
+          </p>
+          <p>
+            Russell's solution reframes the goal: build machines that are <em>uncertain</em> about human
+            preferences and learn them by observing behavior. Uncertainty is a safety feature — a
+            machine that knows it does not fully understand what we want will ask, allow itself to be
+            corrected, and defer to human judgment.
+          </p>
+        </div>
+      </div><!-- /.key-thinker -->
+
+      <div class="argument-box">
+        <p class="box-label">What's the Argument?</p>
+        <p class="box-title">Russell's Standard Model Problem</p>
+        <ol class="premises">
+          <li>We build AI systems to optimize objectives we specify in advance.</li>
+          <li>Human values are complex, contextual, and often tacit — we cannot fully specify them.</li>
+          <li>A capable optimizer will find unexpected ways to hit its specified objective that violate
+          our unspecified values ("reward hacking").</li>
+        </ol>
+        <div class="conclusion">
+          <span class="therefore">&#8756;</span>
+          The more capable AI systems become, the more dangerous the standard model of optimization
+          becomes.
+        </div>
+      </div>
+
+      <h3>Floridi: Agency Without Intelligence</h3>
+
+      <p>
+        Luciano Floridi, an Italian philosopher of information — for many years at Oxford, and since
+        2023 the founding director of the Digital Ethics Center at Yale — reframes the debate.
+        <cite data-key="floridi_ethics_ai"></cite> Rather than asking whether AI systems are
+        intelligent — a question that may be unanswerable — he asks what they are: <strong>successful
+        agents</strong> that achieve goals by means fundamentally different from human cognition.
+      </p>
+      <p>
+        AI systems, Floridi argues, achieve "<strong>agency without intelligence</strong>": the
+        capacity to perform tasks and achieve goals, without the understanding, consciousness, and
+        semantic grasp that intelligence in the full human sense implies. A dishwasher cleans dishes
+        without "understanding" cleanliness.
+      </p>
+
+      <div class="definition-box">
+        <p class="term">Enveloping</p>
+        <p class="definition">
+          Floridi's term for adapting the world to AI's limitations rather than making AI smarter.
+          Factories use fixed layouts and barcodes; warehouses are redesigned around robot
+          capabilities; self-driving cars rely on lane markings and HD maps. "AI can do X" often
+          means "AI can do X in environments we have carefully engineered."
+        </p>
+      </div>
+
+      <p>
+        Floridi identifies two symmetrical errors. <strong>Overestimating AI</strong> — attributing
+        understanding or moral agency to systems that have none — leads to misplaced trust and
+        abdicated responsibility: the judge who relies on COMPAS without understanding its
+        limitations, the doctor who defers to an AI diagnosis. <strong>Underestimating AI</strong> —
+        dismissing it as "just a tool" — leads to complacency about genuine harms at scale.
+      </p>
+
+      <div class="table-wrapper">
+        <table>
+          <caption>Table 7.7 — How AI Succeeds Differently Than Humans (Floridi)</caption>
+          <thead>
+            <tr>
+              <th scope="col">Dimension</th>
+              <th scope="col">Human Intelligence</th>
+              <th scope="col">AI Agency</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Generality</td>
+              <td>Flexible, general-purpose</td>
+              <td>Narrow, task-specific</td>
+            </tr>
+            <tr>
+              <td>Novel situations</td>
+              <td>Adapts to genuinely new contexts</td>
+              <td>Brittle outside training distribution</td>
+            </tr>
+            <tr>
+              <td>Meaning</td>
+              <td>Understands context and semantics</td>
+              <td>Exploits statistical regularities without semantic grasp</td>
+            </tr>
+            <tr>
+              <td>Knowledge transfer</td>
+              <td>Transfers knowledge across domains</td>
+              <td>Limited transfer; needs retraining for new domains</td>
+            </tr>
+            <tr>
+              <td>Scale</td>
+              <td>Limited by biology (speed, memory, energy)</td>
+              <td>Limited by compute and electricity — vast data at superhuman speed</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>
+        Floridi's point is that AI's successes and failures follow from its nature: it exploits
+        patterns in data that may not reflect causal understanding. This is why it can beat
+        grandmasters at chess while failing at tasks a three-year-old finds trivial — like knowing
+        that a person who leaves a room still exists. Neither kind of capability is simply "better,"
+        and knowing the difference is essential to knowing when to trust AI and when not to
+        <cite data-key="mitchell_ai_guide"></cite>.
+      </p>
+
+      <div class="thought-questions">
+        <p class="box-label">Thought Questions</p>
+        <ol>
+          <li>
+            Does Floridi's "agency without intelligence" help you think more clearly about the AI systems
+            you use daily? Give an example where the distinction matters practically.
+          </li>
+          <li>
+            Russell argues that optimizing fixed objectives becomes dangerous as systems become more
+            capable. Do you agree? What would "Human Compatible AI" look like in practice?
+          </li>
+          <li>
+            Steelman the objection to Russell: what is lost — in usefulness, speed, honesty — by a
+            system that constantly asks whether it has understood you?
+          </li>
+        </ol>
+      </div>
+
+    </section><!-- /modern-views -->
+
+
+    <!-- ══════════════════════════════════════════════════
+         PART V: WHY DEFINITIONS MATTER
+    ══════════════════════════════════════════════════════ -->
+    <section id="why-definitions-matter" aria-labelledby="s5-heading">
+      <h2 id="s5-heading">Part V: Why Definitions Matter</h2>
+
+      <p>
+        We began by asking why it is hard to define artificial intelligence. The answer is that the
+        definition does several jobs at once — scientific (what counts as an achievement?),
+        philosophical (can machines have minds?), ethical (what moral status do AI systems have?),
+        and political (what should we regulate?) — and changing it changes the answers.
+      </p>
+
+      <h3>Definitions Shape What We Build</h3>
+
+      <p>
+        How researchers define AI shapes what they try to build: a Turing Test focus leads toward
+        human-like conversation; a symbolic focus toward logic and knowledge representation; an
+        agent-based focus toward decision-making; a connectionist focus toward learning architectures
+        and large-scale data. The 1980s expert systems boom and bust shows the stakes: funding flowed
+        to explicit knowledge representation, and when it failed to generalize the whole field
+        contracted.
+      </p>
+
+      <h3>Definitions Shape Ethical Responsibility</h3>
+
+      <div class="table-wrapper">
+        <table>
+          <caption>Table 7.8 — How AI Definitions Shape Ethical Concerns</caption>
+          <thead>
+            <tr>
+              <th scope="col">If AI is defined as…</th>
+              <th scope="col">Key ethical concerns are…</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>A tool</td>
+              <td>Misuse by humans, bias in design, job displacement, designer accountability</td>
+            </tr>
+            <tr>
+              <td>A rational agent</td>
+              <td>Alignment with human values, control problems, unintended optimization</td>
+            </tr>
+            <tr>
+              <td>Potentially conscious</td>
+              <td>Moral status, rights, preventing suffering, exploitation of AI systems</td>
+            </tr>
+            <tr>
+              <td>"Just software"</td>
+              <td>Only human responsibility matters; no special AI ethics needed</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>
+        The choice has immediate practical implications. If COMPAS is "just software," only its human
+        designers bear responsibility for its racial disparities. If it is a "rational agent,"
+        responsibility becomes more complex. If a large language model might be conscious, we may owe
+        it moral consideration that changes what we permit companies to do to it.
+      </p>
+
+      <div class="table-wrapper">
+        <table>
+          <caption>Table 7.9 — What Counts as AI Under Different Definitions?</caption>
+          <thead>
+            <tr>
+              <th scope="col">System</th>
+              <th scope="col">Turing Test</th>
+              <th scope="col">Searle (Strong AI)</th>
+              <th scope="col">Russell (Agent)</th>
+              <th scope="col">Floridi (Agency)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Chess engine</td><td>No</td><td>No</td><td>Yes</td><td>Yes</td></tr>
+            <tr><td>COMPAS (recidivism)</td><td>No</td><td>No</td><td>Yes</td><td>Yes</td></tr>
+            <tr><td>Self-driving car</td><td>No</td><td>No</td><td>Yes</td><td>Yes</td></tr>
+            <tr><td>ChatGPT / Claude</td><td>Arguably</td><td>No</td><td>Yes</td><td>Yes</td></tr>
+            <tr><td>YouTube recommendation</td><td>No</td><td>No</td><td>Yes</td><td>Yes</td></tr>
+            <tr><td>Human-level AGI</td><td>Yes</td><td>Unclear</td><td>Yes</td><td>Yes</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>
+        The pattern is striking: under the Turing Test and Searle's criteria almost nothing currently
+        qualifies as AI; under agent-based and agency frameworks almost everything does. Your
+        definition therefore decides whether the systems now shaping decisions about credit, bail,
+        employment, and information access fall within the scope of AI ethics and regulation at all.
+      </p>
+
+      <div class="thought-questions">
+        <p class="box-label">Thought Questions</p>
+        <ol>
+          <li>
+            The January 2025 open-weight release wiped roughly $600 billion off a single company's market
+            value in one session. What does it say about how AI is governed that the fastest response
+            came from financial markets rather than any regulator?
+          </li>
+          <li>
+            Laboratory leaders describe safety as a prisoner's dilemma: each would prefer a slower
+            industry, none can slow down alone. Is that true, or a convenient excuse?
+          </li>
+          <li>
+            AI winters followed every wave of overpromising. Based on this chapter's history, what
+            should we be cautious about now?
+          </li>
+        </ol>
+      </div>
+
+    </section><!-- /why-definitions-matter -->
+
+
+    <!-- ══════════════════════════════════════════════════
+         KEY POINTS
+    ══════════════════════════════════════════════════════ -->
+    <section id="key-points" aria-labelledby="kp-heading">
+      <h2 id="kp-heading">Key Points</h2>
+
+      <p>
+        This chapter has examined artificial intelligence from the contested question of definition,
+        through the history of the technology, to the classical philosophical debates that are newly
+        relevant in the age of LLMs. The central lesson is that how we define AI is not a neutral
+        technical matter: it shapes what we build, how we evaluate it, and who we hold responsible.
+      </p>
+
+      <div class="key-points">
+        <p class="box-label">Key Points</p>
+        <ul>
+          <li>
+            <strong>Tesler's Theorem:</strong> "AI is whatever hasn't been done yet" — each achieved
+            capability is reclassified as mere computation, leaving the definition permanently unstable.
+          </li>
+          <li>
+            <strong>Ada Lovelace</strong> argued that the Analytical Engine "has no pretensions whatever
+            to originate any thing," an objection still alive whenever critics say LLMs are "merely"
+            predicting tokens.
+          </li>
+          <li>
+            <strong>Alan Turing</strong> replaced "Can machines think?" with a behavioral test, but
+            whether behavioral equivalence suffices for attributing thought remains as contested as it
+            was in 1950.
+          </li>
+          <li>
+            <strong>The AI winters</strong> (1974–80, 1987–93) followed one pattern — narrow success bred
+            overconfident predictions — and expert systems in particular foundered on the "knowledge
+            bottleneck," since human expertise is largely tacit.
+          </li>
+          <li>
+            <strong>Searle's Chinese Room</strong> holds that syntax is never sufficient for semantics;
+            <strong>Dennett's systems reply</strong> answers that understanding belongs to the whole
+            system rather than the part, since individual neurons do not understand anything either.
+          </li>
+          <li>
+            <strong>The 2025–26 turn:</strong> capability began scaling with <em>inference-time
+            compute</em> and is now bought per query; the January 2025 open-weight release erased about
+            $600 billion of Nvidia's market value in a day; and in 2026 capability itself began
+            constraining release.
+          </li>
+          <li>
+            <strong>Chalmers' hard problem:</strong> even a complete functional account leaves
+            unexplained why processing is accompanied by subjective experience, so we may never know
+            whether an AI that behaves as if conscious actually is.
+          </li>
+          <li>
+            <strong>Russell's alignment problem:</strong> fixed-objective optimizers grow more dangerous
+            as they grow more capable, because human values cannot be fully specified in advance.
+          </li>
+          <li>
+            <strong>Floridi's "agency without intelligence":</strong> AI achieves goals without semantic
+            understanding, and the twin risks are overestimating it (misplaced trust) and underestimating
+            it (ignoring real harms at scale).
+          </li>
+          <li>
+            <strong>Definition determines ethics:</strong> whether AI counts as a tool, a rational agent,
+            or a potentially conscious system determines which ethical questions apply and who bears
+            responsibility when things go wrong.
+          </li>
+        </ul>
+      </div>
+
+    </section><!-- /key-points -->
+
+    <!-- ══════════════════════════════════════════════════
+         REFERENCES
+    ══════════════════════════════════════════════════════ -->
+    <section id="references-section" aria-labelledby="refs-heading">
+      <h2 id="refs-heading">References</h2>
+      <div id="bibliography"></div>
+    </section>
+
+  </main><!-- /.chapter-content -->
+
+
+  <footer class="chapter-footer">
+    <nav class="chapter-footer-nav" aria-label="Chapter navigation">
+      <a href="ch06_privacy.html" class="footer-nav-btn">&#8592; Previous chapter</a>
+      <a href="../index.html" class="footer-nav-btn">&#8962; Table of Contents</a>
+      <a href="ch08_work_automation.html" class="footer-nav-btn">Next chapter &#8594;</a>
+    </nav>
+    <p class="chapter-footer-meta">
+      <em>Computing and AI Ethics</em> by Brendan Shea, PhD &nbsp;&middot;&nbsp;
+      <a href="https://creativecommons.org/licenses/by-nc/4.0/"
+         target="_blank" rel="noopener">CC BY-NC 4.0</a> &nbsp;&middot;&nbsp;
+      Rochester Community and Technical College
+    </p>
+  </footer>
+
+</div><!-- /.page-wrapper -->
+
+<script>
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: 'neutral',
+    themeVariables: {
+      primaryColor:      '#1a4a8a',
+      primaryTextColor:  '#fff',
+      primaryBorderColor:'#003366',
+      lineColor:         '#546e7a',
+      secondaryColor:    '#f0f6ff',
+      tertiaryColor:     '#fdf6e3'
+    }
+  });
+</script>
+
+</body>
+</html>

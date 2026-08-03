@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter 3: Freedom of Speech in the Digital Age | Computing &amp; AI Ethics</title>
+  <meta name="description"
+        content="Mill's harm principle, the marketplace of ideas, social media platforms, hate speech, and AI-generated content — examined through the lens of free expression philosophy.">
+  <meta name="author" content="Brendan Shea, PhD">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+  <script src="cite.js" defer></script>
+</head>
+
+<body data-chapter="3">
+<div class="page-wrapper">
+
+  <nav class="top-nav" aria-label="Chapter navigation">
+    <a href="../index.html" class="nav-home">Computing &amp; AI Ethics</a>
+    <div class="chapter-nav">
+      <a href="ch02_virtue_ethics.html" class="nav-prev">&#8592; Previous</a>
+      <span class="nav-chapter">Chapter 3</span>
+      <a href="ch04_intellectual_property.html" class="nav-next">Next &#8594;</a>
+    </div>
+  </nav>
+
+  <header class="chapter-header">
+    <p class="chapter-eyebrow">Chapter 3</p>
+    <h1>Freedom of Speech in the Digital Age</h1>
+    <p class="chapter-subtitle">Mill, Social Media, and the Limits of Expression</p>
+  </header>
+
+  <main class="content-area chapter-content" id="main-content">
+
+    <nav class="toc-box" aria-label="Table of contents">
+      <h2>In this chapter</h2>
+      <ol>
+        <li><a href="#central-questions">Central Questions</a></li>
+        <li><a href="#intro">Introduction: Why Free Speech Matters</a></li>
+        <li><a href="#mill">Mill's Arguments for Free Expression</a></li>
+        <li><a href="#threats">Four Threats to Free Speech</a></li>
+        <li><a href="#limits">The Limits of Free Expression</a></li>
+        <li><a href="#history">Historical Applications: Broadcast to Internet</a></li>
+        <li><a href="#social-media">Social Media Regulation</a></li>
+        <li><a href="#ai">AI and the Future of Speech</a></li>
+        <li><a href="#objections">Objections and Responses</a></li>
+        <li><a href="#key-points">Key Points</a></li>
+      </ol>
+    </nav>
+
+    <!-- ── CENTRAL QUESTIONS ─────────────────────────────── -->
+    <section class="central-questions" id="central-questions" aria-labelledby="cq-heading">
+      <h2 id="cq-heading">Central Questions</h2>
+      <ol>
+        <li>Why does speech deserve special protection — and what are the strongest arguments for and against free expression?</li>
+        <li>Is Mill's <em>harm principle</em> a satisfactory test for where free speech should end?</li>
+        <li>Does social media constitute a "marketplace of ideas," or does it systematically distort truth-seeking?</li>
+        <li>When, if ever, should governments, corporations, or algorithms restrict speech?</li>
+        <li>How should AI-generated speech be treated within a free expression framework?</li>
+      </ol>
+    </section>
+
+    <!-- ── SECTION 1: INTRODUCTION ─────────────────────────────── -->
+    <section id="intro" aria-labelledby="intro-heading">
+      <h2 id="intro-heading">Introduction: Why Free Speech Matters</h2>
+
+      <p>Few topics sit closer to the center of democratic life than freedom of speech. The right to express opinions — even unpopular, offensive, or factually contested ones — is enshrined in the First Amendment, in Article 19 of the Universal Declaration of Human Rights, and in the constitutions of liberal democracies worldwide. Yet every year brings fresh controversies: Should platforms remove misinformation about elections or vaccines? Should universities ban speakers some students find hateful? Should an AI system refuse to answer certain questions?</p>
+
+      <p>We examine those questions through the philosopher who gave the most influential liberal defense of free expression: John Stuart Mill <cite data-key="mill1859liberty"></cite>. Writing in Victorian England in 1859, Mill offered arguments that remain at the center of contemporary debate — though his world had no radio, no television, no internet, and certainly no artificial intelligence. Our task is to understand his framework on its own terms, appreciate its strengths, and then ask whether it is adequate to algorithmic platforms and AI-generated content.</p>
+
+      <p>The chapter connects to both preceding chapters. Chapter 1 traced five information revolutions, each triggering a new contest over who controls the flow of ideas: the printing press enabled both the Protestant Reformation and vicious waves of censorship; broadcast television built a shared factual consensus and then fractured into partisan silos. Chapter 2 asked what digital habits do to our character. If speech practices shape character, does Mill's framework need a virtue dimension — should we ask not just whether speech harms others, but what it does to speakers and audiences over time?</p>
+
+      <blockquote class="quote-block">
+        <p>If all mankind minus one, were of one opinion, and only one person were of the contrary opinion, mankind would be no more justified in silencing that one person, than he, if he had the power, would be justified in silencing mankind.</p>
+        <cite>John Stuart Mill, <em>On Liberty</em> (1859)</cite>
+      </blockquote>
+
+      <h3>What Is Liberalism?</h3>
+
+      <p>Mill's defense of free speech belongs to <strong>political liberalism</strong> — a broad family of philosophies committed to individual rights, the rule of law, tolerance, and democratic governance. It is not a single doctrine: it runs from the libertarian right, which sees government overreach as the primary threat to freedom, to the social-liberal left, which treats corporate power and economic inequality as equally real constraints. Both wings share a core commitment: freedom is the default, and any restriction on it requires justification.</p>
+
+      <p>Do not confuse this tradition with American partisan labels. Mill was radical for his era — he supported women's suffrage decades before it became law, advocated workers' cooperatives, and worried deeply about "social tyranny," the crushing pressure of majority opinion on individual thought. What he defended was not the right of the powerful to say whatever they like without consequence, but the right of every person — especially dissenters and minorities — to participate in public discourse without being silenced.</p>
+
+      <div class="table-wrapper">
+        <table>
+          <caption>Table 3.1 — Two Strands of Liberalism</caption>
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col">Left-Liberalism</th>
+              <th scope="col">Libertarianism</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Main threat to freedom</strong></td>
+              <td>Corporate power, monopolies, economic inequality</td>
+              <td>Government overreach</td>
+            </tr>
+            <tr>
+              <td><strong>Role of state</strong></td>
+              <td>Enable real freedom via regulation and safety nets</td>
+              <td>Minimal; let markets solve problems</td>
+            </tr>
+            <tr>
+              <td><strong>On free speech</strong></td>
+              <td>May restrict speech that silences marginalized groups</td>
+              <td>Near-absolute speech protection</td>
+            </tr>
+            <tr>
+              <td><strong>Key figures</strong></td>
+              <td>Rawls, Dewey, (late) Mill</td>
+              <td>Nozick, Hayek, Friedman</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="thought-questions">
+        <p class="box-label">Thought Questions</p>
+        <ol>
+          <li>Have you ever kept quiet in public — on social media, in class, at work — because you feared backlash? What made you hesitate?</li>
+          <li>Is free speech more threatened today by governments, by corporations, or by social pressure? Or equally by all three?</li>
+        </ol>
+      </div>
+
+    </section>
+
+    <!-- ── SECTION 2: MILL'S ARGUMENTS ─────────────────────────────── -->
+    <section id="mill" aria-labelledby="mill-heading">
+      <h2 id="mill-heading">Mill's Arguments for Free Expression</h2>
+
+      <!-- Key Thinker: Mill -->
+      <div class="key-thinker">
+        <div class="thinker-img-wrap">
+          <img src="../images/john_stuart_mill.jpg" alt="Portrait of John Stuart Mill, c. 1870">
+          <p class="img-caption">John Stuart Mill, c. 1870.<br>London Stereoscopic Company. Public domain.</p>
+        </div>
+        <div class="thinker-bio">
+          <h3>John Stuart Mill (1806–1873)</h3>
+          <p>British philosopher, economist, and Member of Parliament, Mill was among the most influential thinkers of the nineteenth century. His father, the philosopher James Mill, subjected him to an extraordinarily rigorous education — he was reading Greek by age three — but a mental breakdown in his twenties led him to temper his father's strict utilitarianism with a richer appreciation of poetry, emotion, and human diversity.</p>
+          <p>Published in 1859 — the same year as Darwin's <em>On the Origin of Species</em> — <em>On Liberty</em> remains the most important philosophical defense of free expression in English. In Parliament, Mill presented the first mass petition for women's suffrage to the House of Commons in June 1866 and, the following year, moved the amendment to the Second Reform Bill that would have replaced "man" with "person" — an effort he later called the only really important public service he performed there. He collaborated extensively with Harriet Taylor, whose ideas deeply shaped his feminism.</p>
+        </div>
+      </div>
+
+      <h3>The Harm Principle</h3>
+
+      <p>At the heart of Mill's politics is the <strong>harm principle</strong>: the only legitimate reason for society — whether through law or through social pressure — to restrict an individual's liberty is to prevent harm to others. Your own good, physical or moral, is not a sufficient warrant. If something affects only you, it is your business alone; only when your actions impose costs on others does society acquire a right to intervene.</p>
+
+      <p>Applied to speech, the harm principle creates a strong presumption in favor of expression. Offense, disgust, and moral disapproval do not by themselves count as harms — a deliberately demanding standard, in which the burden of proof lies with whoever would restrict speech. Crucially, Mill applies the principle not just to law but to the informal enforcement of social norms, the "tyranny of the prevailing opinion and feeling" that can crush dissent without any formal prohibition. Writing amid Victorian respectability, he knew social pressure could be a more pervasive censor than any statute.</p>
+
+      <p>On this foundation Mill builds two arguments for free speech — one consequentialist, one deontological.</p>
+
+      <div class="argument-box">
+        <h4>Argument 1: The Argument from Truth</h4>
+        <ol>
+          <li>Discovering and spreading truth is essential to human progress and happiness.</li>
+          <li>We can never be <em>certain</em> that a silenced opinion is false.</li>
+          <li>Even false opinions, when challenged, strengthen our grasp of true ones.</li>
+          <li>Free and open debate is the best method for discovering truth.</li>
+          <li><strong>C. Therefore, speech should be free except to prevent direct harm to others.</strong></li>
+        </ol>
+      </div>
+
+      <p>The premise that we might be wrong — even about cherished beliefs — is Mill's most powerful move. He calls silencing discussion "an assumption of infallibility," and history vindicates his skepticism: heliocentrism was condemned as heresy; germ theory was dismissed by leading physicians; women's suffrage was ridiculed as fringe radicalism; abolition was treated as economic lunacy. What looked like obvious consensus turned out badly wrong. Because our collective track record is poor, we should be humble about our ability to identify which views deserve silencing today.</p>
+
+      <p>The second part of the argument concerns not false views but true ones. Even if an opinion is correct, suppressing opposition does us harm: unchallenged beliefs become what Mill calls <strong>"dead dogma"</strong> — held out of habit, without understanding why they are true or how to defend them. Someone who has never engaged the arguments against their view is poorly equipped when those arguments surface. Taking the other side seriously is not an intellectual nicety but a practical necessity for keeping a living grasp of truth.</p>
+
+      <p>The image Mill invokes for premise four is among the most famous in political philosophy: the <strong>marketplace of ideas</strong>. Just as economic markets let goods compete so the best tend (over time, imperfectly) to prevail, an open marketplace lets arguments compete so the strongest positions win out. Suppression is counterproductive: it keeps bad ideas from being publicly refuted, drives them underground, and makes martyrs of their advocates. Consider the Congregation of the Index, which condemned Copernicus's <em>On the Revolutions of the Heavenly Spheres</em> in 1616 and added Galileo's <em>Dialogue Concerning the Two Chief World Systems</em> to the Index of Forbidden Books after his 1633 trial. The ban did not stop the argument — copies were smuggled out of Italy and a Latin translation appeared in Protestant Strasbourg in 1635 — but it advertised the book's importance while preventing the Church from refuting it on the merits.</p>
+
+      <div class="argument-box">
+        <h4>Argument 2: The Argument from Autonomy</h4>
+        <ol>
+          <li>Respect for persons requires treating them as agents capable of rational self-direction.</li>
+          <li>Such agency requires the freedom to form, express, and revise one's beliefs and values.</li>
+          <li>Restricting speech treats persons as incapable of judging ideas for themselves.</li>
+          <li><strong>C. Therefore, restricting speech violates human dignity and autonomy.</strong></li>
+        </ol>
+      </div>
+
+      <p>The second argument shifts from consequences to rights. Even if censoring a view had no bad epistemic effects, it would still be wrong, because it treats adults as children who cannot be trusted to evaluate ideas for themselves. Censorship is inherently <strong>paternalistic</strong> — it says, in effect, "we know better than you what you should be allowed to hear." That conflicts with the Kantian idea, which Mill endorses in modified form, that persons have a dignity demanding they be treated as ends in themselves, not merely means.</p>
+
+      <div class="thought-questions">
+        <p class="box-label">Thought Questions</p>
+        <ol>
+          <li>Name a belief once treated as obviously true — or obviously dangerous — that we now view very differently. What does that suggest about today's confident opinions?</li>
+          <li>Is being offended the same as being harmed? Where would you draw the line, and does your answer change with the type of speech?</li>
+          <li>The autonomy argument treats censorship as paternalistic. Is paternalism ever clearly justified — and if so, does that make some speech restrictions acceptable?</li>
+        </ol>
+      </div>
+
+    </section>
+
+    <!-- ── SECTION 3: FOUR THREATS ─────────────────────────────── -->
+    <section id="threats" aria-labelledby="threats-heading">
+      <h2 id="threats-heading">Four Threats to Free Speech</h2>
+
+      <p>Mill recognized that the threat to free expression comes not only from government censors. Contemporary analysis identifies four categories, each operating differently and calling for a different response.</p>
+
+      <figure>
+        <div class="mermaid">
+flowchart TD
+    GOV["Government<br/>Censorship"]
+    SOC["Social<br/>Tyranny"]
+    CORP["Corporate<br/>Platform Power"]
+    ECON["Economic<br/>Barriers"]
+    YOU(["Your<br/>Speech"])
+    GOV -->|"laws, prosecution"| YOU
+    SOC -->|"shaming, ostracism"| YOU
+    CORP -->|"deplatforming, demonetization"| YOU
+    ECON -->|"no reach, no audience"| YOU
+    style GOV fill:#f5d6d6,stroke:#a00
+    style SOC fill:#f5d6d6,stroke:#a00
+    style CORP fill:#f5d6d6,stroke:#a00
+    style ECON fill:#f5d6d6,stroke:#a00
+    style YOU fill:#d6f0e4,stroke:#1a6040,color:#1a6040
+        </div>
+        <figcaption>
+          Figure 3.1 — Four distinct threats to free expression. Mill wrote at length about the first two; the second pair, corporate platform decisions and economic barriers to reaching an audience, belong to a world he never saw. Each calls for a different remedy.
+        </figcaption>
+      </figure>
+
+      <h3>Threat 1: Government Censorship</h3>
+
+      <p>The most traditional threat is direct state suppression: prior restraint (blocking publication before it happens), criminal penalties for speech crimes, licensing that admits only approved voices. Mill wrote when blasphemy laws, sedition acts, and obscenity prosecutions endangered journalists and dissidents; the twentieth century added wartime restrictions, McCarthyism, and state-controlled media. Today China, Russia, and Iran represent the threat in its most technologically sophisticated form — platforms blocked, VPNs criminalized, keywords algorithmically filtered. China's "Great Firewall" blocks Google, YouTube, Facebook, Wikipedia, and the New York Times, substituting domestically controlled alternatives like Weibo and WeChat that are easier to monitor. Russia, after its 2022 invasion of Ukraine, blocked Facebook and Instagram and criminalized "false information" about its armed forces, with penalties up to fifteen years — enforced against anyone calling the invasion a "war" rather than a "special military operation."</p>
+
+      <p>In the United States, the First Amendment provides unusually strong protection against government censorship: "Congress shall make no law... abridging the freedom of speech, or of the press." American free speech law is notably more permissive than European approaches, reflecting colonial-era censorship and the founders' suspicion of concentrated government power. This background matters throughout what follows, because the First Amendment only constrains <em>government</em> actors — not private companies.</p>
+
+      <h3>Threat 2: Social Tyranny</h3>
+
+      <p>Mill's second threat is subtler but more pervasive. Social pressure — ostracism, reputational destruction, loss of employment, self-censorship born of fear — can suppress speech as effectively as any law, with no formal prohibition to challenge in court. Mill called this "social tyranny" and thought it more formidable than political oppression, because it leaves fewer means of escape, "penetrating much more deeply into the details of life, and enslaving the soul itself." You can leave a censorious country; it is harder to escape the disapproval of everyone around you.</p>
+
+      <p>Contemporary debates about "cancel culture" map directly onto this concern. Whether shaming or boycotting someone for their views is illegitimate suppression or a legitimate exercise of others' free speech is genuinely contested, and Mill does not resolve it: social disapproval is itself expression, yet when it crushes dissent it undermines the conditions for free thought without any law being broken.</p>
+
+      <h3>Threat 3: Corporate Platform Power</h3>
+
+      <p>This is the threat Mill did not fully anticipate — and the one most central to contemporary debate. A handful of private corporations now control the infrastructure of public communication for billions. Facebook is estimated at roughly three billion monthly users, Instagram and WhatsApp at three billion or more each, YouTube at two and a half billion, TikTok near two billion. DataReportal's <em>Digital 2026</em> counts about 5.79 billion social media user identities worldwide — close to 70% of the population, though one person often holds several accounts <cite data-key="datareportal_digital_2026"></cite>. These platforms set their own rules through <strong>Terms of Service</strong>, enforce them through moderation teams and AI, and decide whose content is amplified, whose suppressed, and whose account suspended.</p>
+
+      <div class="table-wrapper">
+        <table>
+          <caption>Table 3.2 — Major Social Media Platforms: Reported Reach and Moderation Power</caption>
+          <thead>
+            <tr>
+              <th scope="col">Platform</th>
+              <th scope="col">Reported reach (and what is actually being counted)</th>
+              <th scope="col">Moderation Tools</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Facebook</td>
+              <td>~3.1 billion monthly actives (Meta stopped reporting Facebook-specific figures after Q3 2023)</td>
+              <td>Content removal, account bans, reduced distribution</td>
+            </tr>
+            <tr>
+              <td>Instagram</td>
+              <td>3+ billion monthly actives</td>
+              <td>Content removal, account bans, shadow-restrictions</td>
+            </tr>
+            <tr>
+              <td>YouTube</td>
+              <td>~2.5 billion monthly actives</td>
+              <td>Demonetization, video removal, strikes system</td>
+            </tr>
+            <tr>
+              <td>TikTok</td>
+              <td>~1.9–2 billion (ByteDance is privately held, so outside estimates only)</td>
+              <td>Content suppression, bans, "Not Recommended" flags</td>
+            </tr>
+            <tr>
+              <td>X/Twitter</td>
+              <td>~550–650 million (estimated; last audited disclosure was 237.8 million monetizable daily actives in Q2 2022)</td>
+              <td>Suspensions, "visibility limits," labels</td>
+            </tr>
+            <tr>
+              <td>Reddit</td>
+              <td>493.1 million weekly actives (Reddit does not report a monthly figure)</td>
+              <td>Removals, subreddit quarantines and bans</td>
+            </tr>
+            <tr>
+              <td>LinkedIn</td>
+              <td>1.2 billion <em>registered members</em>, not active users</td>
+              <td>Content removal, account restrictions</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>Read that table skeptically — it is a small lesson in how technical claims get built. Every row uses a different yardstick: monthly, daily, or weekly actives, or registered accounts, a much softer number that counts people who signed up once and never returned. Several companies have stopped publishing platform-level figures, and X has released nothing audited since the second quarter of 2022, so every later figure for it is an outside estimate. Lining these up in one column is convenient and slightly dishonest: it invites comparison of quantities never measured the same way. The useful question is not "which platform is biggest?" but "who counted, using what definition, and what did they have to gain?"</p>
+
+      <p>The constitutional problem is that the First Amendment protects against <em>government</em> censorship, not private censorship. A platform banning your account is no more a violation than a newspaper refusing your letter. But these platforms have taken on a public significance newspapers never had. When a sitting president lost his accounts on Twitter, Facebook, and YouTube within days in January 2021, private editorial decisions had public consequences that feel qualitatively different.</p>
+
+      <h3>Threat 4: Economic Barriers</h3>
+
+      <p>The internet has dramatically lowered the barriers to <em>producing</em> speech — anyone with a smartphone can broadcast to the world — but raised the barriers to being <em>heard</em>. Algorithms and attention economics now decide whose content reaches an audience: a post that gains early engagement is amplified to millions; one that doesn't is invisible within hours. Advertising-dependent outlets face pressure to please sponsors, and venture-funded platforms must generate returns that conflict with serving low-profit communities. Formal permission to speak coexists with severe inequality in who shapes the information environment.</p>
+
+      <div class="thought-questions">
+        <p class="box-label">Thought Questions</p>
+        <ol>
+          <li>Which of the four threats — government, social pressure, corporate platforms, or economic barriers — most endangers free expression today? Does your answer change with who you imagine as the speaker?</li>
+          <li>When someone is publicly shamed or "cancelled," is that an exercise of others' free speech, a form of social tyranny, or both? How would Mill separate legitimate criticism from illegitimate silencing?</li>
+          <li>Should a private company like Facebook or X have the same free speech obligations as a government? What are the strongest arguments on each side?</li>
+        </ol>
+      </div>
+
+    </section>
+
+    <!-- ── SECTION 4: LIMITS ─────────────────────────────── -->
+    <section id="limits" aria-labelledby="limits-heading">
+      <h2 id="limits-heading">The Limits of Free Expression</h2>
+
+      <p>Even Mill acknowledged that speech rights are not absolute. The question is where to draw the line — and different frameworks, legal systems, and communities draw it in different places.</p>
+
+      <h3>Mill's Corn Dealer Example</h3>
+
+      <div class="case-study">
+        <h4>Case Study: The Corn Dealer</h4>
+        <p>Mill's famous illustration of how context affects whether speech may be restricted. Consider the claim "corn dealers are starvers of the poor."</p>
+        <ul>
+          <li><strong>Acceptable:</strong> Publishing the opinion in a newspaper, where it can be read, considered, and debated.</li>
+          <li><strong>Unacceptable:</strong> Shouting it to an angry mob outside a corn dealer's house, where it may directly incite violence.</li>
+        </ul>
+        <p>The words are identical; what changes is context and imminence. Mill's principle is that speech directly inciting <em>imminent</em> harm to specific individuals may be restricted — but the bar is high, requiring both directness and immediacy.</p>
+      </div>
+
+      <p>American law has developed Mill's intuition into categories of constitutionally unprotected speech — speech judged to cause harms serious enough, with too little expressive value, to warrant protection.</p>
+
+      <div class="table-wrapper">
+        <table>
+          <caption>Table 3.3 — Categories of Unprotected Speech under U.S. Law</caption>
+          <thead>
+            <tr>
+              <th scope="col">Category</th>
+              <th scope="col">Definition</th>
+              <th scope="col">Example</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Incitement</strong></td>
+              <td>Directed to inciting imminent lawless action and likely to produce it (<em>Brandenburg v. Ohio</em>, 1969 <cite data-key="brandenburg_1969"></cite>)</td>
+              <td>"Attack that person right now!"</td>
+            </tr>
+            <tr>
+              <td><strong>True threats</strong></td>
+              <td>Serious intent to commit violence against identifiable target</td>
+              <td>Specific, credible death threats</td>
+            </tr>
+            <tr>
+              <td><strong>Defamation</strong></td>
+              <td>False statements of fact that harm reputation</td>
+              <td>Knowingly false accusations of crimes</td>
+            </tr>
+            <tr>
+              <td><strong>Fraud</strong></td>
+              <td>Deceptive speech causing material harm</td>
+              <td>False advertising, investment scams</td>
+            </tr>
+            <tr>
+              <td><strong>Obscenity</strong></td>
+              <td>Prurient, patently offensive, lacking serious value</td>
+              <td>Highly contested in practice</td>
+            </tr>
+            <tr>
+              <td><strong>Fighting words</strong></td>
+              <td>Direct provocations likely to cause immediate breach of peace</td>
+              <td>Face-to-face epithets meant to provoke</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>Notice what these categories have in common. Each identifies a concrete harm — a person attacked, a reputation destroyed, money taken by deception — rather than an idea that offends. That is Mill's harm principle doing legal work: American doctrine restricts speech for what it <em>does</em> to identifiable people, not for what it says. Notice also what is missing: no general category for lies, cruelty, or hatred as such, which is where American law parts company with most of the democratic world.</p>
+
+      <div class="thought-questions">
+        <p class="box-label">Thought Questions</p>
+        <ol>
+          <li>Are these six categories principled, or historical accidents another legal tradition would have carved up differently? Which seems least defensible to you?</li>
+          <li><em>Brandenburg</em> requires that incitement be aimed at <em>imminent</em> lawless action. Does "imminent" still mean anything when a post can reach millions over months and radicalize a reader you will never meet?</li>
+          <li>Mill's corn dealer example turns on context rather than content. What is the online equivalent of an angry mob outside a corn dealer's house — and is there one?</li>
+        </ol>
+      </div>
+
+      <h3>The Hate Speech Controversy</h3>
+
+      <p>One of the most contested questions in free speech law — and one where the United States is nearly unique among liberal democracies — is whether <strong>hate speech</strong> should receive constitutional protection. Most European countries, Canada, Australia, and many others restrict speech targeting racial, ethnic, religious, or other protected groups with enough hostility to constitute incitement to discrimination or violence. The United States does not, treating hate speech as protected unless it falls into one of the categories above.</p>
+
+      <p>The arguments for restriction emphasize that such speech causes real psychological harm, silences vulnerable groups, and undermines the equal citizenship democratic participation requires. Nazi propaganda before the Holocaust and Rwandan radio broadcasts before the genocide suggest hateful speech can contribute causally to mass atrocities; the harm principle, critics argue, should cover these harms.</p>
+
+      <p>The arguments against restriction emphasize the definitional problem: who decides what counts as "hate"? Such restrictions are often weaponized against the very groups they purport to protect — obscenity law was used for decades against gay and lesbian publications, most famously when the U.S. Post Office banned the magazine <em>ONE</em> as obscene in 1954, a ruling the Supreme Court reversed only in 1958; 1990s campus speech codes were repeatedly struck down as vague or overbroad. Critics also worry about chilling effects, and invoke Mill's counter-argument: the remedy for bad speech is <em>more speech</em>.</p>
+
+      <!-- Key Thinker: MacKinnon -->
+      <div class="key-thinker no-portrait">
+        <div class="thinker-bio">
+          <h3>Catharine MacKinnon (b. 1946)</h3>
+          <p>American feminist legal scholar and activist, MacKinnon is the most influential feminist critic of the Millian framework <cite data-key="mackinnon1993only"></cite>. Her work on sexual harassment established the now widely accepted theory that unwanted sexual conduct at work is sex discrimination under Title VII, and her later work argues that much pornography is itself a form of sex discrimination, silencing women by contributing to their subordination.</p>
+          <p>MacKinnon challenges the assumption that the marketplace of ideas is neutral between speakers. When speech systematically subordinates a group and strips it of credibility and voice, protecting that speech in the name of "free expression" protects the powerful at the expense of the marginalized. Her work is deeply controversial but has reshaped how scholars think about free speech and equality.</p>
+        </div>
+      </div>
+
+      <h3>The Silencing Argument</h3>
+
+      <div class="argument-box">
+        <h4>Argument 3: The Argument from Equal Speech</h4>
+        <ol>
+          <li>Free speech protections exist so that all persons can participate meaningfully in public discourse.</li>
+          <li>Some speech — systematic harassment, hate speech — drives targeted groups out of that discourse.</li>
+          <li>Tolerating speech that silences others undermines the purpose of the protections themselves.</li>
+          <li><strong>C. Therefore, restricting silencing speech can be justified <em>on free speech grounds</em>.</strong></li>
+        </ol>
+      </div>
+
+      <p>The silencing argument, developed by MacKinnon <cite data-key="mackinnon1993only"></cite>, Mari Matsuda <cite data-key="matsuda_words_wound"></cite>, and Jeremy Waldron <cite data-key="waldron2012harm"></cite>, turns Mill's own logic against his conclusions. The point of free speech protections, they argue, is not speech itself but the goods it produces: truth-seeking, self-government, human flourishing. If some speech systematically prevents vulnerable groups from participating, a consistent commitment to those values may require restricting it. The irony is structural: protecting free speech may require restricting some speech.</p>
+
+      <p>Research on online harassment shows why this dynamic matters in practice:</p>
+      <ul>
+        <li>Amnesty International's 2018 "Troll Patrol" study had volunteers hand-label 288,000 tweets sent to 778 women journalists and politicians in the UK and US, then extrapolated by machine learning to all 14.5 million tweets mentioning them: an estimated 7.1% were abusive or otherwise problematic — about 1.1 million tweets, one every thirty seconds across the year. Black women in the sample were 84% more likely than white women to be mentioned in such tweets <cite data-key="amnesty_troll_patrol_2018"></cite>.</li>
+        <li>Survey research finds that a substantial share of LGBTQ+ young people conceal their identities online after targeted harassment. They retain the right to speak but choose silence for safety — precisely what the silencing argument predicts.</li>
+        <li>Wikipedia, one of the internet's most open knowledge platforms, has a long-documented gender gap: editor surveys put the contributor base at roughly 80–90% male, with harassment of women editors a frequently cited factor.</li>
+      </ul>
+      <p>These examples do not settle the debate, but they give it urgency. If certain speakers are systematically driven from public discourse by harassment, the marketplace of ideas is not operating as Mill envisioned, with all voices participating on equal terms.</p>
+
+      <!-- Key Thinker: Matsuda -->
+      <div class="key-thinker no-portrait">
+        <div class="thinker-bio">
+          <h3>Mari Matsuda (b. 1956)</h3>
+          <p>American legal scholar and a founder of Critical Race Theory, Matsuda works at the intersection of race, law, and social justice <cite data-key="matsuda_words_wound"></cite>. She analyzes hate speech from the standpoint of those targeted by it — "looking to the bottom" — and contends that their experiences of silencing and subordination must anchor any adequate theory of free expression. She argues for restrictions carefully targeted at the most virulent racist speech, while preserving broad protection for political and artistic expression.</p>
+        </div>
+      </div>
+
+      <!-- Key Thinker: Waldron -->
+      <div class="key-thinker no-portrait">
+        <div class="thinker-bio">
+          <h3>Jeremy Waldron (b. 1953)</h3>
+          <p>New Zealand-born legal and political philosopher, Waldron offers perhaps the most rigorous liberal defense of hate speech laws <cite data-key="waldron2012harm"></cite>. What hate speech attacks, he argues, is not feelings but something more fundamental: the social standing of its targets as equal members of society. It is a sustained attempt to build a public environment in which certain groups are portrayed as less than fully human. Protecting people from this dignitary harm is required by the liberal commitment to equal citizenship.</p>
+        </div>
+      </div>
+
+      <div class="argument-box">
+        <h4>Objection: Counter-Speech Is the Better Remedy</h4>
+        <p>The classical response is Justice Louis Brandeis's dictum in <em>Whitney v. California</em> (1927) <cite data-key="whitney_1927"></cite>: "If there be time to expose through discussion the falsehood and fallacies, to avert the evil by the processes of education, the remedy to be applied is more speech, not enforced silence." Restricting hateful speech, on this view, is both ineffective (it drives views underground) and dangerous (it builds a censorship apparatus that can be turned against anyone). Better to amplify targeted groups' voices and strengthen civic norms than to let governments define which ideas are too dangerous.</p>
+      </div>
+
+      <div class="thought-questions">
+        <p class="box-label">Thought Questions</p>
+        <ol>
+          <li>The U.S. generally protects hate speech; most other liberal democracies do not. Which approach do you find more defensible, and why?</li>
+          <li>Does the silencing argument turn Mill's logic against itself? Or does it prove too much, justifying restrictions on any speech someone claims makes them less likely to join the debate?</li>
+          <li>Who should decide what counts as "silencing" speech — courts, platform moderators, affected communities? Does it matter who decides?</li>
+        </ol>
+      </div>
+
+    </section>
+
+    <!-- ── SECTION 5: HISTORICAL APPLICATIONS ─────────────────────────────── -->
+    <section id="history" aria-labelledby="history-heading">
+      <h2 id="history-heading">Historical Applications: Broadcast to Internet</h2>
+
+      <p>Every major communication technology has triggered a new round of free speech controversies, forcing societies to work out how Mill's principles translate into concrete regulation. The broadcast era is the most instructive case: it shows both what principled content regulation looks like and what happens when it disappears.</p>
+
+      <div class="table-wrapper">
+        <table>
+          <caption>Table 3.4 — Communication Technologies and Free Speech Challenges</caption>
+          <thead>
+            <tr>
+              <th scope="col">Technology</th>
+              <th scope="col">Era</th>
+              <th scope="col">Key Free Speech Challenge</th>
+              <th scope="col">Response</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Printing press</td>
+              <td>15th–17th c.</td>
+              <td>Unauthorized religious and political texts</td>
+              <td>Censorship, licensing, sedition laws</td>
+            </tr>
+            <tr>
+              <td>Telegraph/telephone</td>
+              <td>19th c.</td>
+              <td>Private control of public communications</td>
+              <td>Common carrier obligations: serve all customers equally</td>
+            </tr>
+            <tr>
+              <td>Radio/television</td>
+              <td>20th c.</td>
+              <td>Spectrum scarcity limits number of possible broadcasters</td>
+              <td>Government licensing, Fairness Doctrine (1949–1987)</td>
+            </tr>
+            <tr>
+              <td>Internet/social media</td>
+              <td>21st c.</td>
+              <td>Platform power, global reach, algorithmic amplification</td>
+              <td>Ongoing debate; Section 230, EU Digital Services Act</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>The Broadcast Era: Scarcity and Regulation</h3>
+
+      <p>Radio and television presented a structural challenge: the spectrum could accommodate only a limited number of simultaneous broadcasters without signals interfering. Unlike a printing press, which anyone could own, a broadcast license was a scarce government grant, and whoever held one reached an audience competitors could not. This scarcity rationale became the constitutional foundation for broadcast content regulation that would be clearly unconstitutional if applied to print.</p>
+
+      <p>Acting on that rationale, the FCC established the <strong>Fairness Doctrine</strong> in 1949, requiring license holders to cover "controversial issues of public importance" and to present contrasting viewpoints fairly. The theory was Millian: because scarcity keeps the marketplace of ideas from operating freely in broadcasting, licensees hold their frequencies as "public trustees" and must present multiple perspectives rather than promote their owners' views. Broadcasters argued from the start that this infringed their editorial freedom, and the Supreme Court addressed the question in a landmark case.</p>
+
+      <div class="case-study">
+        <h4>Case Study: <em>Red Lion Broadcasting Co. v. FCC</em> (1969)</h4>
+        <p>Red Lion Broadcasting aired a personal attack on a journalist, Fred Cook, during a right-wing radio program. Invoking the Fairness Doctrine, the FCC ordered the station to give Cook free airtime to respond; Red Lion refused and challenged its authority. The Supreme Court unanimously upheld the doctrine, ruling that listeners' interest in diverse viewpoints outweighed the broadcaster's editorial preferences <cite data-key="red_lion_1969"></cite>: "It is the right of the viewers and listeners, not the right of the broadcasters, which is paramount."</p>
+        <p>The holding depended entirely on scarcity: because not everyone who wants to broadcast can, licensees carry special obligations to serve the public interest. The Court noted that if spectrum became abundant, the constitutional calculus might differ.</p>
+      </div>
+
+      <p>In 1987, the Reagan-era FCC eliminated the Fairness Doctrine, concluding that cable had dissolved the scarcity rationale and that the doctrine chilled speech by pushing broadcasters to avoid controversy. What followed is not in dispute: one-sided talk radio, Fox News and MSNBC as openly partisan networks, the erosion of a shared factual baseline. Whether the repeal <em>caused</em> that shift, or merely removed one obstacle to a fragmentation cable and the internet were driving anyway, is much harder to establish — as is whether it was a Millian triumph or a policy mistake with serious democratic costs.</p>
+
+      <div class="thought-questions">
+        <p class="box-label">Thought Questions</p>
+        <ol>
+          <li>The Fairness Doctrine required broadcasters to present multiple viewpoints. Would a similar rule for social media be a good idea? What objections would Mill raise?</li>
+          <li><em>Red Lion</em> held that listeners' interest in diverse views can outweigh broadcasters' editorial freedom. Does that apply to algorithmic platforms whose recommendations shape what billions see?</li>
+          <li>Partisan media rose after the Fairness Doctrine's repeal. Is that correlation evidence of causation, or are other factors responsible?</li>
+        </ol>
+      </div>
+
+    </section>
+
+    <!-- ── SECTION 6: SOCIAL MEDIA ─────────────────────────────── -->
+    <section id="social-media" aria-labelledby="social-media-heading">
+      <h2 id="social-media-heading">Social Media Regulation</h2>
+
+      <p>Social media platforms occupy a strange constitutional position: private entities with First Amendment rights of their own, exercising public power over democratic discourse on a scale no broadcaster approached. How Mill's principles apply here is a central policy challenge of our era.</p>
+
+      <div class="argument-box">
+        <h3>Argument 4: The Public Square Argument</h3>
+        <ol>
+          <li>Meaningful free speech requires access to the forums where public discourse occurs.</li>
+          <li>Social media platforms have become the primary such forums in democratic societies.</li>
+          <li>Private corporate control of them allows arbitrary exclusion from democratic participation.</li>
+          <li><strong>C. Therefore, platforms should be subject to public regulation or public-interest obligations.</strong></li>
+        </ol>
+      </div>
+
+      <p>The second premise has some judicial support. In <em>Packingham v. North Carolina</em> (2017) <cite data-key="packingham_2017"></cite>, the Supreme Court struck down a state law barring registered sex offenders from social media; Justice Kennedy wrote that it "bars access to what for many are the principal sources for knowing current events, checking ads for employment, speaking and listening in the modern public square." That phrase is quoted constantly by people who want platforms treated as quasi-public infrastructure. But it struck down a <em>government</em> restriction; it did not bind platforms to the First Amendment, and the analogy does more work in rhetoric than in law.</p>
+
+      <p>The Court came closer to the real question in <em>Moody v. NetChoice</em> (2024) <cite data-key="moody_netchoice_2024"></cite>, on Florida and Texas laws limiting how large platforms may moderate user content. Nothing was finally settled — the Court sent both cases back on procedural grounds — but Justice Kagan's majority opinion was clear about the principle: when a platform curates a feed, deciding what to carry and how to arrange it, that is expressive activity of the same kind as a newspaper's editorial judgment, and the government cannot commandeer it. Any attempt to build the Public Square Argument into policy must get past that point.</p>
+
+      <h3>The Platform Dilemma</h3>
+
+      <p>Policymakers who consider regulating platforms run into a structural dilemma with no clean resolution in Mill's framework.</p>
+
+      <figure>
+        <div class="mermaid">
+flowchart LR
+    PROB["Platform<br/>Speech Problem"]
+    REG["Regulate<br/>platforms"]
+    NOREG["Don't regulate<br/>platforms"]
+    GCON["Government<br/>controls speech"]
+    CCON["Corporations<br/>control speech"]
+    PROB --> REG
+    PROB --> NOREG
+    REG --> GCON
+    NOREG --> CCON
+    style PROB fill:#d6f0e4,stroke:#1a6040
+    style REG fill:#f5f5d6,stroke:#888
+    style NOREG fill:#f5f5d6,stroke:#888
+    style GCON fill:#f5d6d6,stroke:#a00
+    style CCON fill:#f5d6d6,stroke:#a00
+        </div>
+        <figcaption>
+          Figure 3.2 — The platform regulation dilemma. Regulating platforms risks handing governments control over online speech; leaving them unregulated lets private corporations exercise similar control without democratic accountability.
+        </figcaption>
+      </figure>
+
+      <p>Neither horn is straightforwardly Millian, because Mill's framework was built around a government-as-censor threat that private platforms partially replace and partially transform.</p>
+
+      <h3>Section 230: The Law That Built the Internet</h3>
+
+      <div class="case-study">
+        <h4>Section 230, Communications Decency Act (1996)</h4>
+        <p>Section 230 provides that "no provider or user of an interactive computer service shall be treated as the publisher or speaker of any information provided by another information content provider" <cite data-key="cda230"></cite>. That sentence means platforms are generally not liable for what users post, even if it is defamatory, fraudulent, or harmful.</p>
+        <p>Without it, platforms would face an impossible choice: approve every post before publishing (becoming publishers liable for everything, unworkable at scale), or publish everything unmoderated (becoming cesspools of illegal content). Section 230 lets them moderate selectively without full publisher liability — the legal framework that made user-generated content possible.</p>
+        <p>Critics on the left say it gives platforms too much immunity, letting them profit from harmful content; critics on the right say platforms use their moderation discretion to suppress conservative voices. Both agree Section 230 needs reconsideration; they disagree about the direction.</p>
+      </div>
+
+      <h3>Deplatforming and Democratic Accountability</h3>
+
+      <div class="case-study">
+        <h4>Case Study: The Trump Social Media Bans (2021–2023)</h4>
+        <p>After the January 6, 2021 attack on the United States Capitol, three major platforms cut off President Donald Trump's accounts, citing the risk that his continued posting would incite further violence. The details differed, and the differences matter. Twitter announced a <em>permanent</em> suspension on 8 January. Facebook suspended him <em>indefinitely</em>, then referred the decision to its own Oversight Board, which criticized the open-ended penalty as improper and forced Meta to convert it into a fixed two-year suspension. YouTube suspended the channel indefinitely, saying it would restore access when the risk of violence receded.</p>
+        <p>The decision was controversial across the political spectrum. Supporters argued the platforms were exercising their legitimate right as private companies to enforce their Terms of Service, and that the incitement exception justified it on Millian grounds. Critics — including some who strongly opposed Trump — saw the near-simultaneous removal of a sitting president as a dangerous concentration of private editorial power.</p>
+        <p>The sequel complicates both stories. All three accounts were restored: X (formerly Twitter) in November 2022 after Elon Musk's acquisition, Meta in February 2023 at the end of the two-year term, and YouTube in March 2023. Each side can claim vindication. Defenders note that the platforms acted during an acute emergency and relaxed the restrictions once it passed — proportionate enforcement. Critics note that "permanent" turned out to mean "until the owner changed his mind": not principled decisions constrained by any rule, but revocable exercises of private discretion.</p>
+        <p>The episode crystallized a tension Mill's framework does not resolve. The harm principle tells us when speech may be restricted, but says little about <em>who</em> should decide — especially when the decider is a private corporation with billions in advertising revenue at stake and rules it can rewrite overnight <cite data-key="klonick2018governors"></cite>.</p>
+      </div>
+
+      <p>That leverage is not limited to individual accounts. When Australia's News Media Bargaining Code (2021) required digital platforms to pay publishers for content they host and link to, Facebook responded by temporarily blocking all news in Australia — including government health pages, emergency services, and domestic violence resources. Deals with publishers eventually followed, but the confrontation showed that a private platform can switch off news access for an entire country, a power Mill's government-focused framework gives little guidance for addressing.</p>
+
+      <h3>Algorithmic Amplification: Beyond Permission</h3>
+
+      <p>Perhaps the deepest challenge social media poses to Mill is one his marketplace metaphor barely anticipates: the question is not only what speech is <em>allowed</em> but what is <em>promoted</em>. Recommendation algorithms optimize for engagement — shares, comments, time spent — and outrage-inducing, emotionally charged content reliably outperforms calm, accurate reporting. That creates a structural incentive to amplify misinformation, extremism, and conflict whether or not any rule is violated.</p>
+
+      <p>This distinction between moderation (what is allowed) and amplification (what is boosted) exposes a gap in the Millian framework. A platform that algorithmically pushes vaccine misinformation to maximize engagement is doing something qualitatively different from failing to remove it — it is editorially endorsing it with a massive amplification budget. Whether amplification should face the same legal scrutiny as moderation is a live question in platform regulation.</p>
+
+      <div class="thought-questions">
+        <p class="box-label">Thought Questions</p>
+        <ol>
+          <li>When Twitter, Facebook, and YouTube removed a sitting U.S. president within days of one another, was that legitimate private editorial discretion, a dangerous concentration of corporate power, or both?</li>
+          <li>All three accounts were reinstated by 2023. Does that vindicate the platforms, showing the restrictions were temporary and proportionate — or their critics, showing that "permanent" meant only "until the company changed its mind"?</li>
+          <li>Is there a moral difference between a platform <em>allowing</em> misinformation and <em>algorithmically recommending</em> it to millions? Should the law treat these differently?</li>
+        </ol>
+      </div>
+
+    </section>
+
+    <!-- ── SECTION 7: AI ─────────────────────────────── -->
+    <section id="ai" aria-labelledby="ai-heading">
+      <h2 id="ai-heading">AI and the Future of Speech</h2>
+
+      <p>Artificial intelligence strains the vocabulary of free speech philosophy. Who is the "speaker" when a large language model produces text? Do the justifications for protecting speech — human autonomy, participation in truth-seeking — apply to systems with neither autonomy nor a stake in truth? And how do we regulate AI-generated speech without building a censorship infrastructure that can be turned against human expression?</p>
+
+      <h3>The Misfit Between Mill's Framework and AI Speech</h3>
+
+      <p>Recall Mill's two arguments. The argument from truth rests on free debate among fallible humans producing better epistemic outcomes than censorship; the argument from autonomy rests on restricting speech treating persons as incapable of judging for themselves. Neither maps cleanly onto AI. An AI system is not a person with dignity who deserves to express themselves, and it has no epistemic stake in truth-seeking. Its "speech" is the product of optimization over human data — very different from the human expression Mill was defending.</p>
+
+      <p>Yet AI-generated content interacts with the epistemic environment in ways that matter for Mill's framework. A model that confidently produces plausible misinformation at scale — medical advice, historical fabrications, fake quotes attributed to real people — degrades the environment the marketplace of ideas depends on, and deepfakes impersonating real people raise profound questions about speech, identity, and truth.</p>
+
+      <h3>Regulatory Proposals</h3>
+
+      <div class="table-wrapper">
+        <table>
+          <caption>Table 3.5 — Current Proposals for Regulating AI-Generated Speech</caption>
+          <thead>
+            <tr>
+              <th scope="col">Proposal</th>
+              <th scope="col">Description</th>
+              <th scope="col">Key Concern</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Disclosure requirements</strong></td>
+              <td>AI systems must identify themselves as AI; no impersonation of humans</td>
+              <td>Deception, manipulation of vulnerable users</td>
+            </tr>
+            <tr>
+              <td><strong>Liability frameworks</strong></td>
+              <td>Developers and deployers bear legal responsibility for AI-caused harms</td>
+              <td>Currently uncertain who is responsible</td>
+            </tr>
+            <tr>
+              <td><strong>Content restrictions</strong></td>
+              <td>Systems must refuse certain outputs (CSAM, weapons synthesis)</td>
+              <td>Who sets the restrictions, and how broadly</td>
+            </tr>
+            <tr>
+              <td><strong>Transparency mandates</strong></td>
+              <td>Developers must explain how systems generate responses and what data trained them</td>
+              <td>Commercial secrecy; technical complexity</td>
+            </tr>
+            <tr>
+              <td><strong>Watermarking</strong></td>
+              <td>AI-generated content must carry detectable markers of machine origin</td>
+              <td>Technical feasibility; ease of removal</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>Two of these proposals stopped being hypothetical in 2026. The European Union's AI Act — which sits alongside the Digital Services Act <cite data-key="dsa2022"></cite> — is being phased in over several years, and its Article 50 transparency rules took effect on 2 August 2026 <cite data-key="eu_ai_act_2024"></cite>. You must be told when you are interacting with an AI rather than a person, and synthetic image, audio, and video content, including deepfakes, must be machine-readably marked as artificially generated. That is a legal answer to the "who is speaking?" question: AI speech is not banned, but it may not pretend to be human.</p>
+
+      <p>The rest of the Act is frequently described inaccurately. Its Article 5 prohibitions — social scoring, some biometric categorization, manipulative exploitation of vulnerability — have applied since February 2025, and obligations for general-purpose models since August 2025, with fines from August 2026. But the heavily publicized <strong>high-risk</strong> obligations, covering AI used in hiring, credit scoring, and biometric identification, were due in August 2026 and were postponed to <strong>2 December 2027</strong> by the "Digital Omnibus on AI" regulation, in force since 27 July 2026 <cite data-key="eu_digital_omnibus_ai_2026"></cite>; embedded high-risk systems were pushed to August 2028. So the claim that "the EU AI Act is fully in force" is wrong. In force is the transparency layer, the part that most concerns speech; the part governing consequential decisions about people's lives is more than a year away.</p>
+
+      <div class="case-study">
+        <h4>Case Study: Chatbot "Jailbreaking" and the Autonomy Question</h4>
+        <p>Modern AI chatbots carry content policies that block certain kinds of assistance — synthesis instructions for dangerous substances, sexual content involving minors, guidance on committing violence. Users who want to bypass them have developed "jailbreaking" techniques: asking the model to roleplay a character "with no restrictions," embedding harmful requests in creative writing prompts, or encoding the request to obscure it.</p>
+        <p>This maps onto Mill's framework: who should decide what an AI system is "allowed" to say? If a developer's content policies are paternalistic — treating users as incapable of handling certain information — does that make them problematic on Millian autonomy grounds? Or does the nature of AI, deployed at once to millions including minors, bad actors, and vulnerable people, make the analogy to individual human speech misleading? The debate is the latest iteration of the oldest free speech question: when does preventing harm justify restricting expression?</p>
+      </div>
+
+      <div class="thought-questions">
+        <p class="box-label">Thought Questions</p>
+        <ol>
+          <li>Does AI-generated text count as "speech" in any morally relevant sense? Should the developer, the deployer, or the user bear responsibility when its output causes harm?</li>
+          <li>AI content restrictions are set by private companies without public input. Is that a free speech problem? Who, if anyone, should have democratic oversight of them?</li>
+          <li>The EU now requires that you be told when you are talking to a machine. Is that a restriction on the AI's speech, a protection of the listener's autonomy, or neither? How would Mill analyze a rule about who a speaker may pretend to be rather than what may be said?</li>
+        </ol>
+      </div>
+
+    </section>
+
+    <!-- ── SECTION 8: OBJECTIONS ─────────────────────────────── -->
+    <section id="objections" aria-labelledby="obj-heading">
+      <h2 id="obj-heading">Objections and Responses</h2>
+
+      <div class="argument-box">
+        <h3>Objection 1: The Marketplace Fails</h3>
+        <ul>
+          <li>Truth does <em>not</em> always win. A large study of Twitter cascades found that false news reached more people, and faster, than true news — and that human users, not bots, did most of the spreading <cite data-key="vosoughi_misinformation"></cite>.</li>
+          <li>Cognitive biases (confirmation bias, availability heuristic, in-group loyalty) favor emotionally resonant falsehoods over accurate but boring truths.</li>
+          <li>The attention economy rewards extremism, outrage, and novelty — not accuracy or nuance.</li>
+          <li>"More speech" in algorithmically curated environments can drown out truth rather than reveal it, because the algorithm serves engagement, not epistemics.</li>
+        </ul>
+        <p><strong>Mill's likely response:</strong> Mill had no naive faith in any market, economic or epistemic, and would grant that they fail. But the alternative — letting some authority decide which ideas are too dangerous to compete — is worse, because that authority is itself fallible and corruptible. Fix the conditions of the marketplace: reduce algorithmic distortion, improve media literacy, strengthen civic institutions.</p>
+      </div>
+
+      <div class="argument-box">
+        <h3>Objection 2: Power Imbalances Undermine Equal Speech</h3>
+        <ul>
+          <li>"Free speech" as a formal right is not the same as an equal real ability to speak and be heard.</li>
+          <li>Corporations, state actors, and well-funded interest groups can flood the environment with propaganda, drowning out individual voices.</li>
+          <li>Coordinated inauthentic behavior — bot networks, astroturfing, content farms — manufactures the appearance of public opinion.</li>
+          <li>Equal formal rights coexist with radical inequality in whose expression reaches an audience.</li>
+        </ul>
+        <p><strong>Mill's likely response:</strong> Mill was sensitive to power imbalances — his concern about "social tyranny" reflects an awareness that informal power, not just law, shapes who can speak effectively. He would likely argue that these imbalances justify structural reforms (antitrust enforcement against media consolidation, transparency for political advertising, platform design mandates) rather than content-based restrictions on particular speakers.</p>
+      </div>
+
+      <div class="thought-questions">
+        <p class="box-label">Thought Questions</p>
+        <ol>
+          <li>If you could show that restricting hate speech measurably reduced violence against targeted groups, would that suffice to justify the restriction on Millian grounds?</li>
+          <li>For purposes of free speech law, is there a real difference between a platform "allowing" content and "recommending" it to millions?</li>
+          <li>Where would Mill come down on social media regulation if he were writing <em>On Liberty</em> today, knowing about algorithmic amplification and platform monopolies?</li>
+        </ol>
+      </div>
+
+    </section>
+
+    <!-- ── KEY POINTS ─────────────────────────────── -->
+    <section id="key-points" aria-labelledby="kp-heading">
+      <h2 id="kp-heading">Key Points</h2>
+      <div class="key-points">
+        <p class="box-label">Key Points</p>
+        <ul>
+        <li><strong>The harm principle</strong> — that liberty may be restricted only to prevent harm to others — founds Mill's approach, and offense, disgust, and moral disapproval do not meet its threshold.</li>
+        <li><strong>The Argument from Truth</strong> holds that free debate among fallible speakers best discovers truth: we might be wrong, false views sharpen true ones, and suppression breeds "dead dogma."</li>
+        <li><strong>The Argument from Autonomy</strong> holds that restricting speech is paternalistic, treating adults as incapable of judging ideas and so violating their dignity as rational persons.</li>
+        <li><strong>Four threats</strong> face free expression — government censorship, social tyranny, corporate platform power, and economic barriers to being heard — of which Mill analyzed only the first two.</li>
+        <li><strong>The Silencing Argument</strong> of MacKinnon, Matsuda, and Waldron holds that hate speech and harassment drive targeted groups out of public discourse, undermining the values free speech protections serve.</li>
+        <li><strong>The marketplace of ideas</strong> assumes conditions — rough equality of access, audiences capable of rational evaluation — that may not hold where algorithms optimize for engagement over truth.</li>
+        <li><strong>Section 230</strong> immunizes platforms from liability for user content, enabling their growth while insulating them from accountability for harms they amplify.</li>
+        <li><strong>Algorithmic amplification</strong> is editorial power Mill did not anticipate: whether content is <em>promoted</em>, not just <em>permitted</em>, is a variable existing doctrine barely addresses.</li>
+        <li><strong>AI-generated speech</strong> fits Mill's framework poorly, since it assumes human speakers with autonomy and dignity; liability, disclosure, and content rules will require extending his principles rather than applying them.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ── REFERENCES ─────────────────────────────── -->
+    <section id="references" aria-labelledby="refs-heading">
+      <h2 id="refs-heading">References</h2>
+      <div id="bibliography"
+           data-keys="mill1859liberty mackinnon1993only matsuda_words_wound waldron2012harm cda230 dsa2022 klonick2018governors vosoughi_misinformation">
+      </div>
+    </section>
+
+  </main><!-- /.content-area -->
+
+  <footer class="chapter-footer">
+    <nav class="chapter-footer-nav" aria-label="Chapter navigation">
+      <a href="ch02_virtue_ethics.html" class="footer-nav-btn">&#8592; Previous chapter</a>
+      <a href="../index.html" class="footer-nav-btn">&#8962; Table of Contents</a>
+      <a href="ch04_intellectual_property.html" class="footer-nav-btn">Next chapter &#8594;</a>
+    </nav>
+    <p class="chapter-footer-meta">
+      <em>Computing and AI Ethics</em> by Brendan Shea, PhD &nbsp;&middot;&nbsp;
+      <a href="https://creativecommons.org/licenses/by-nc/4.0/"
+         target="_blank" rel="noopener">CC BY-NC 4.0</a> &nbsp;&middot;&nbsp;
+      Rochester Community and Technical College
+    </p>
+  </footer>
+
+</div><!-- /.page-wrapper -->
+
+<script>
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: 'base',
+    themeVariables: {
+      primaryColor: '#d6f0e4',
+      primaryTextColor: '#1a3a2a',
+      primaryBorderColor: '#1a6040',
+      lineColor: '#1a6040',
+      secondaryColor: '#f0faf5',
+      tertiaryColor: '#ffffff'
+    }
+  });
+</script>
+</body>
+</html>
