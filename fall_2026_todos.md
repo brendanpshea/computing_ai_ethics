@@ -157,6 +157,21 @@ All rows below were researched against current sources and applied. Highlights o
 - `ai_ethics_10_doomsday.tex` and `ai_ethics_11_robot_rights.tex` use `shrink` up to **25**, which silently scales text so font sizes visibly vary slide to slide (bad for projection and accessibility).
 - **Fix:** For any frame with `shrink > ~8`, split into two slides or cut text instead. The worst offenders: L10 "Ord's Risk Estimates" (shrink=16), "Bostrom" (18), "Campaign to Stop Killer Robots" (20), "Kargu-2" (20); L11 "R.U.R." (25), "Asimov" (20).
 
+#### 4.5a Follow-up 2026-08: `shrink` redefined, and the 13 slides that still need cuts
+`latex/lecture_preamble.tex` now redefines beamer's `shrink` key so it (a) compresses
+the y axis only, leaving type width and the text block alone, (b) applies only as much
+compression as the overrun actually requires instead of always the declared percentage,
+and (c) caps the squeeze at 20%, past which the remainder is applied as a normal
+uniform scale. Effect across the 12 decks: **33 frames are compressed at all**, most by
+5–15%, which reads as slightly tighter leading and nothing more. Overfull-vbox counts
+are unchanged or slightly better than before the change.
+
+The **13 frames that blow past the 20% cap** are the ones with genuinely too much
+content — they are the slides where type still ends up smaller than its neighbours, and
+each emits a `Past the vertical-squeeze cap` warning at build time. By page in the built
+PDFs: **L5** 13, 48; **L10** 11, 12; **L11** 5, 9, 14, 22, 24, 25, 26, 35, 38. Cutting a
+box or splitting the slide is the real fix for these.
+
 ### 4.6 Standardize the discussion-prompt idiom
 - Current mix: `\begin{alertblock}{?}` (L1–4), `\begin{alertblock}{Discussion}` (L5–7), `discussionbox` (L8–12), plus the preamble's unused `\discussionquestion` command.
 - **Fix:** Use `discussionbox` (gold, clearly non-threatening) everywhere for discussion prompts; reserve red `alertblock` for genuine warnings/key tensions. This is a mechanical find-and-replace per file. Then delete or repurpose the now-unused `\discussionquestion`/`\discussion` aliases in the preamble.

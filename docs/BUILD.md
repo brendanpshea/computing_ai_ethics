@@ -88,6 +88,29 @@ pdflatex -output-directory=PDFs latex\ai_ethics_01_history.tex
 
 `\includegraphics{images/...}` and `\addbibresource{refs.bib}` both resolve against the project root, so no paths inside `.tex` files need to change when compiling this way. Both the script and manual compilation **must be run from the project root** — setting `TEXINPUTS` to include `latex\` is what lets `\input{lecture_preamble.tex}` resolve.
 
+### What `[shrink=N]` does here
+
+The preamble redefines beamer's `shrink` key. Stock beamer scales the frame
+uniformly and pre-widens `\hsize`, so a slide that runs one line long comes out in
+smaller type than its neighbours; it also always applies the full declared
+percentage, whether or not the frame needed it. The redefined version compresses
+the **y axis only** — glyph widths and the text block are untouched — and only by
+as much as the overrun actually requires, so a frame that fits is left alone. The
+squeeze is capped at 20%; beyond that the remainder is applied as an ordinary
+uniform scale, which is where type does start to shrink.
+
+So `[shrink=N]` is a budget rather than an instruction. Two warnings matter when
+reading a build log:
+
+- `Frame compressed vertically by X percent instead of N` — the frame needed more
+  than you budgeted. Harmless below ~20%.
+- `Past the vertical-squeeze cap` — this slide has too much content and is now
+  being scaled down like any other over-full frame. Cut a box or split the slide.
+
+Both are `ClassWarning`s, so they survive into the `.log` even in
+`-interaction=nonstopmode`; `build-pdfs.sh` deletes logs on success, so pass
+`-NoCleanup` (PowerShell) or run `pdflatex` by hand to read them.
+
 ### Article mode (not maintained)
 
 The preamble and lectures contain `\mode<article>{...}` blocks for a `beamerarticle` handout build. **This build is not maintained or distributed** — the article-mode narrative blocks are incomplete in later lectures and nothing in this repo compiles them. The blocks are harmless in the normal presentation build (beamer ignores them); don't sink time into extending them.

@@ -96,6 +96,90 @@
 }
 
 % ------------------------------------------------------------------------------
+% [shrink=N]: compress vertically only, and only as much as needed
+% ------------------------------------------------------------------------------
+% Stock beamer does two things we do not want on these decks.
+%
+%   1. It scales uniformly (\pgftransformscale) and pre-widens \hsize by 1/factor,
+%      so a frame that overruns only vertically also comes out in smaller type
+%      with longer lines than every neighbouring slide. Our frames overflow
+%      because there is one line too many, not because they are too wide.
+%   2. It always applies the full declared percentage. The "only shrink as much
+%      as necessary" test is commented out in beamerbaseframesize.sty, so
+%      [shrink=15] shrinks by 15% even when 3% would have cleared the overflow.
+%
+% The redefinitions below scale the y axis (\pgftransformyscale, glyph widths and
+% the text block width untouched) and compute the factor from the actual overrun,
+% so a frame that fits is left alone entirely. The declared N becomes a budget
+% rather than a command: if clearing the overflow needs more than N, beamer says
+% so in a warning and that slide is a candidate for cutting.
+%
+% Anamorphic squeeze is capped at \beamer@maxsquash. Up to that point it reads as
+% tighter leading and nothing else; past it, text starts to look rubbery and any
+% photo on the slide is visibly flattened. A frame that needs more than the cap
+% takes the cap vertically and the remainder as an ordinary uniform scale -- i.e.
+% it degrades to stock beamer's behaviour rather than to a distorted slide.
+%
+% Written at top level rather than inside \mode<presentation>{...}: that form
+% reads its body as an argument, so catcodes are already fixed and the
+% \makeatletter never takes effect on the \...@... names below. The guard keeps
+% article mode (where beamer defines no such macro) out of it instead.
+\makeatletter
+\@ifundefined{beamer@shrinkframebox}{}{%
+    \def\beamer@maxsquash{0.8}%      most the y axis may be squeezed (20%)
+    \def\beamer@maxsquashinv{1.25}%  must be 1/\beamer@maxsquash
+    \define@key{beamerframe}{shrink}[0]{%
+        \def\beamer@shrinkpercentage{#1}%
+        \@tempdima=-#1pt%
+        \@tempdima=0.01\@tempdima%
+        \advance\@tempdima by1pt%
+        \edef\beamer@shrinkfactor{\strip@pt\@tempdima}%
+        \def\beamer@shrinkfactorinv{1}% no horizontal pre-widening
+        \beamer@shrinktrue%
+        \def\beamer@cramped{\itemsep0pt\topsep0.5pt\relax}}
+    \def\beamer@shrinkframebox{%
+        % Height AND depth: stock beamer looks at \ht alone, which it gets away
+        % with because it always scales. Since we scale only when the frame
+        % overruns, a [T] column or a graphic that hangs below the baseline has
+        % to count, or the frame is left alone and still runs off the slide.
+        \@tempdima=\ht\beamer@framebox%
+        \advance\@tempdima by\dp\beamer@framebox%
+        \ifdim\@tempdima>\beamer@frametextheight% only act if it really overflows
+            \@tempcnta=\@tempdima%
+            \divide\@tempcnta by 65536\relax%
+            \@tempdimc=\beamer@frametextheight%
+            \divide\@tempdimc by\@tempcnta\relax%
+            \ifdim\@tempdimc<\beamer@shrinkfactor pt%
+                \@tempdima=-100\@tempdimc%
+                \advance\@tempdima by100pt%
+                \ClassWarning{beamer}{Frame compressed vertically by \strip@pt\@tempdima\space
+                    percent instead of \beamer@shrinkpercentage\space percent -- consider cutting this slide}%
+            \fi%
+            % Split the needed factor into a capped vertical squeeze and, only if
+            % that is not enough, a uniform scale carrying the remainder.
+            \@tempdimb=1pt%
+            \ifdim\@tempdimc<\beamer@maxsquash pt%
+                \@tempdimb=\beamer@maxsquashinv\@tempdimc%
+                \@tempdimc=\beamer@maxsquash pt%
+                \ClassWarning{beamer}{Past the vertical-squeeze cap; the rest of this
+                    frame is being scaled down uniformly, so its type is smaller than
+                    the surrounding slides -- cut content here}%
+            \fi%
+            \edef\beamer@yfactortemp{\strip@pt\@tempdimc}%
+            \edef\beamer@factortemp{\strip@pt\@tempdimb}%
+            \setbox\beamer@framebox=\vbox to\beamer@frametextheight{%
+                \begin{pgfpicture}{0pt}{-\beamer@frametextheight}{0pt}{0pt}
+                    {\pgftransformscale{\beamer@factortemp}%
+                        \pgftransformyscale{\beamer@yfactortemp}%
+                        \pgftext[left,top]{\box\beamer@framebox}}%
+                \end{pgfpicture}%
+            }%
+        \fi%
+    }%
+}
+\makeatother
+
+% ------------------------------------------------------------------------------
 % Standard Colors for Boxes
 % ------------------------------------------------------------------------------
 % Consistent color scheme across all lectures for semantic elements
