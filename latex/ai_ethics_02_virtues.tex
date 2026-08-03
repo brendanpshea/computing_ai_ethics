@@ -19,6 +19,30 @@ This lecture examines how modern technology, particularly social media and artif
 % ===== SLIDE 1: Title =====
 \lecturetitleslide{images/fractal_02.png}
 
+
+% ====================
+% COLD OPEN
+% ====================
+% The data is on their own phones, so nothing here can go stale.
+
+\begin{frame}{Before We Begin: Take Out Your Phone}
+\textbf{Guess first, then check.} Write down two numbers before you look:
+\begin{enumerate}
+    \item Your \textbf{daily average screen time} over the past week
+    \item How many times you \textbf{picked the phone up} yesterday
+\end{enumerate}
+
+Now look them up --- iPhone: \emph{Settings $\rightarrow$ Screen Time}; Android: \emph{Settings $\rightarrow$ Digital Wellbeing}.
+
+\begin{alertblock}{Why we are starting here}
+Aristotle's central claim is that you become what you repeatedly do. If he is right, those two numbers are not a report about your phone. They are a report about \textbf{your character} --- and about the person the next four years are building.
+\end{alertblock}
+
+\begin{discussionbox}[Commit before we go on]
+Was your guess high or low? \textbf{Which direction did the class miss in}, and what would Aristotle make of the fact that we miss in that direction?
+\end{discussionbox}
+\end{frame}
+
 % ===== SLIDE 2: The Central Question =====
 \begin{frame}{Central Questions}
 \begin{itemize}
@@ -50,10 +74,6 @@ This lecture examines how modern technology, particularly social media and artif
     \item \textbf{Lectures 4--6 (IP, Crypto, Privacy)}: Platform design choices affect users' character---who is responsible?
     \item \textbf{Lectures 7--8 (AI, Work)}: AI systems that learn from human behavior may reinforce vices at scale.
 \end{itemize}
-
-\begin{discussionbox}[Discussion]
-Which virtues or vices do you think social media most reliably cultivates?
-\end{discussionbox}
 \end{frame}
 
 % ===== SLIDE 3: Introduction to Aristotle =====
@@ -191,10 +211,6 @@ Can be wrong? & No (constitutive) & Yes (can feel happy doing bad) & Yes (can be
     \node[below] at (8.5,-0.6) {\footnotesize Vice (Excess)};
 \end{tikzpicture}
 \end{center}
-
-\begin{discussionbox}[Discussion]
-Can you identify the mean between ``too much time spent online'' and ``too little''?
-\end{discussionbox}
 \end{frame}
 
 % ===== SLIDE 7: Intellectual vs. Moral Virtues =====
@@ -287,10 +303,6 @@ Phronesis \textit{cannot be reduced to rules or algorithms}---it requires human 
     \draw[->, thick, dashed] (actions2.south) to[out=-90,in=-90] (actions.south);
 \end{tikzpicture}
 \end{center}
-
-\begin{discussionbox}[Discussion]
-What character traits might daily social media use be cultivating in you?
-\end{discussionbox}
 \end{frame}
 
 % ===== IMAGE SLIDE: Raphael's School of Athens =====
@@ -576,10 +588,6 @@ Fix & Exposure to other views & Much harder---trust must be rebuilt \\
     \item Engagement-maximizing algorithms reward \textbf{confirmation bias}
     \item Undermines \textbf{intellectual humility} and \textbf{open-mindedness}
 \end{itemize}
-
-\begin{discussionbox}[Discussion]
-How often do you seek out viewpoints that challenge your own beliefs?
-\end{discussionbox}
 \end{frame}
 
 % ===== SLIDE 20: Premise 2d - AI and Intellectual Dependency =====
@@ -749,11 +757,6 @@ Minimization of authority & Flattened hierarchies, less restraint \\
 \bottomrule
 \end{tabular}
 \end{table}
-
-\vspace{0.1cm}
-\begin{discussionbox}[Discussion]
-The result is normalized cruelty---behavior unthinkable in person becomes routine online. Have you ever posted something you wouldn't say to someone's face?
-\end{discussionbox}
 \end{frame}
 
 % ===== SLIDE 26: Premise 2c - Outrage as Business Model =====
@@ -780,10 +783,6 @@ The result is normalized cruelty---behavior unthinkable in person becomes routin
     \draw[->, thick, dashed] (more.south) to[out=-90,in=-90] (content.south);
 \end{tikzpicture}
 \end{center}
-
-\begin{discussionbox}[Discussion]
-Have you ever shared something online primarily because it made you angry?
-\end{discussionbox}
 \end{frame}
 
 % ===== SLIDE 27: Premise 2d - Dishonesty and Performance =====
@@ -826,10 +825,6 @@ Temperance & Natural limits & Infinite scroll, autoplay \\
 \begin{alertblock}{The Habituation Problem}
 We are practicing outrage instead of empathy, cruelty instead of kindness, performance instead of authenticity. \textbf{We become what we practice.}
 \end{alertblock}
-
-\begin{discussionbox}[Discussion]
-What emotions does your social media feed most often evoke in you?
-\end{discussionbox}
 \end{frame}
 
 % ===== PART IV HEADER =====
@@ -899,10 +894,6 @@ Beyond individual virtues: the \textbf{whole flourishing life}
 
 {\scriptsize Illustrative sketch of the pattern Haidt describes---not plotted from the actual data.}
 \end{center}
-
-\begin{discussionbox}[Discussion]
-Have you noticed changes in your own or peers' mental health related to tech use?
-\end{discussionbox}
 \end{frame}
 
 % ===== SLIDE 31b: The Causation Debate =====
@@ -1079,6 +1070,20 @@ Seven months of evidence on the world's first under-16 social media ban:
 Does a law count as working if it is popular but unenforced? If partial compliance mainly costs the students who obeyed, is that fair?
 \end{discussionbox}
 \end{frame}
+% ===== YOU BE THE JUDGE =====
+\begin{frame}[shrink=8]{You Be the Judge: Designing a Phone for a 14-Year-Old}
+\begin{casestudybox}[The brief]
+\small
+You are on the product team shipping a phone aimed at \textbf{13--15 year olds}. The ship date is fixed and the hardware is done. You may remove exactly \textbf{three} software features. Nothing else is on the table.
+\end{casestudybox}
+
+\textbf{The menu}: infinite scroll \textbullet\ autoplay \textbullet\ streaks \textbullet\ push notifications \textbullet\ public like counts \textbullet\ beauty filters \textbullet\ the algorithmic feed \textbullet\ in-app purchases \textbullet\ disappearing messages
+
+\begin{discussionbox}[Defend your three]
+Not ``which is worst'' --- Aristotle's question. Each feature trains a \textbf{habit}. Name the habit yours would have built, and say what habit you are leaving in place because you ran out of cuts.
+\end{discussionbox}
+\end{frame}
+
 
 % ===== SLIDE 36: Vallor's Vision =====
 \begin{frame}{Vallor's Vision: Cultivating Technomoral Wisdom}
@@ -1100,10 +1105,6 @@ Technology as \textbf{pharmakon} (Greek: both poison and cure):
     \item \textbf{Moral ``operating systems''}: Explicit frameworks for tech use
 \end{itemize}
 \end{block}
-
-\begin{discussionbox}[Discussion]
-Which of these recommendations could you realistically implement this week?
-\end{discussionbox}
 \end{frame}
 
 % ===== PART VI HEADER =====

@@ -196,6 +196,50 @@ the bottom margin rather than losing text. Worth tidying eventually, not urgent.
 - Current mix: `\begin{alertblock}{?}` (L1–4), `\begin{alertblock}{Discussion}` (L5–7), `discussionbox` (L8–12), plus the preamble's unused `\discussionquestion` command.
 - **Fix:** Use `discussionbox` (gold, clearly non-threatening) everywhere for discussion prompts; reserve red `alertblock` for genuine warnings/key tensions. This is a mechanical find-and-replace per file. Then delete or repurpose the now-unused `\discussionquestion`/`\discussion` aliases in the preamble.
 
+#### 4.6a Note 2026-08: the aliases are not unused
+`\discussion{}` → `\discussionquestion{}` → `discussionbox` is a two-hop alias chain, and **L1 uses it fourteen times**. It renders identically to a `discussionbox`, so there is no student-facing inconsistency, but any script that counts prompts by grepping for `\begin{discussionbox}` will undercount L1 by more than half. Count both idioms.
+
+---
+
+## 5.5 Engagement pass — DONE 2026-08
+
+Three changes aimed at the late-high-school / early-college audience, made after a survey
+found the decks opened identically (Central Questions → definitions, every time) and that
+discussion prompts ranged from 11% of frames (L10) to 46% (L2).
+
+**Cold opens.** Every deck now opens with a hook before Central Questions — the students
+commit to an answer, *then* get the reveal. Seven are guess-and-reveal pairs (L1 the
+*Phaedrus* quote with the technology masked; L3 "which of these four is illegal";
+L4 "when did Mickey Mouse become public property"; L7 "which of these is AI"), the rest
+single slides built on something the students can check on their own device or decide on
+the spot (L2 screen-time, L6 location permissions, L8 "you never have to work again",
+L9 "point at the cloud", L10 write down two numbers, L11 the LaMDA framing, L12 the button).
+Where a hook needs a later payoff, the reveal is a slide already in the deck — L5's stone
+money, L10's Doomsday Clock, L11's LaMDA case study.
+
+**Prompt rebalance.** Pruned 22 weak prompts (mostly generic self-report that repeated a
+neighbour, plus the "Connections to Previous Lectures" openers now displaced by the cold
+opens) and added 12 where decks were thin. The spread went from **11–46% of frames to
+22–35%**, with most decks at 24–31%.
+
+**"You Be the Judge."** One decision slide per deck, each anchored to a case the deck
+already covers, with the class split into assigned benches: the Authors/Anthropic conduct
+split (L4), the Kargu-2 accountability gap (L10), the LaMDA hearing (L11), Ulbricht's
+sentence (L5), Clearview and a state AG (L6), a loot-box rule (L12), a moderation queue
+(L3), an automation memo (L8), a hospital board (L9), a phone designed for a 14-year-old
+(L2), a phone-ban school board with four dead consultants (L1), and four benches ruling
+on whether a system understands (L7).
+
+Decks grew by 2–3 slides each (573 → 650 pages total). All 12 still build with **zero
+cap warnings**; two L10 slides that tipped over from an added prompt were trimmed to fit.
+
+**Not done, deliberately:** no `pollbox` environment (the user declined for now — prompts
+use the existing gold `discussionbox`), and no modern-media anchors (*Her*, *Black Mirror*,
+*The Good Place*) in the fiction slides, which were suggested but left for the author since
+tone there is a judgment call.
+
+---
+
 ### 4.7 Standardize the closing summary frame
 - L1–L9: enumerate "Key Thinkers and Concepts"; L10–11: description-list "Key Concepts"; L12: a `conceptbox` "Key Points". The L10–11 description-list format is the strongest (bolded term → definition, good for studying).
 - **Fix:** Convert all to the description-list "Key Concepts" format.

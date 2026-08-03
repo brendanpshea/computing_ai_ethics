@@ -21,6 +21,28 @@ This lecture takes seriously the question of whether artificial intelligence pos
 % ============================================================
 \lecturetitleslide{images/fractal_10.png}
 
+
+% ====================
+% COLD OPEN
+% ====================
+% Both numbers get answered inside this deck: Ord's estimate in Part I, and the
+% Doomsday Clock a few slides later. Have them commit in writing first.
+
+\begin{frame}{Before We Begin: Write Down Two Numbers}
+No conferring, no phones. On a scrap of paper:
+
+\begin{enumerate}
+    \item The probability that \textbf{AI contributes to human extinction this century} --- your honest number, from 0 to 100
+    \item How many \textbf{seconds to midnight} the Doomsday Clock currently reads
+\end{enumerate}
+
+Fold it. We will come back to both, and you will get to see how far off you were --- and, more usefully, \textbf{which direction} the room was off in.
+
+\begin{discussionbox}[Commit before we go on]
+One thing only: was your first number \textbf{above or below 1\%}? Hands up. Look around the room before you settle on your own answer.
+\end{discussionbox}
+\end{frame}
+
 % ============================================================
 % CENTRAL QUESTIONS
 % ============================================================
@@ -124,6 +146,10 @@ Whatever final goal an AI pursues, certain \textbf{instrumental sub-goals} are n
 
 \vspace{0.25cm}
 Together: \emph{a sufficiently capable AI with the wrong objective is dangerous not because it is evil, but because it is effective.}
+
+\begin{discussionbox}[Discussion]
+If intelligence and goals really are independent, what does that imply about the phrase ``\textbf{smart enough to know better}?
+\end{discussionbox}
 \end{frame}
 
 \begin{frame}[shrink=11]{Yudkowsky's Warning: The Alignment Problem Is Unsolved}
@@ -284,25 +310,18 @@ The existential risk argument assumes AI will soon reach (or surpass) human-leve
 Before worrying about superintelligence, we should ask: \textbf{can these systems actually do what their creators claim?}
 \end{frame}
 
-\begin{frame}[shrink=18]{Stochastic Parrots and the Distraction Argument}
+\begin{frame}[shrink=8]{Stochastic Parrots and the Distraction Argument}
 \begin{objectionbox}[Bender \& Gebru --- Stochastic Parrots (2021)]
-Large language models do not ``understand'' text. They generate statistically plausible token sequences from massive corpora. An LLM:
-\begin{itemize}
-    \item has no semantics, no world model, no intentions
-    \item can be fluent and confident while being factually wrong
-    \item amplifies political, racial, and gender biases present in training data
-\end{itemize}
+Large language models do not ``understand'' text. They generate statistically plausible token sequences from massive corpora. An LLM has \textbf{no semantics, no world model, no intentions}; it can be fluent and confident while being factually wrong; and it amplifies the biases present in its training data.
 \vspace{0.1cm}
 \scriptsize\parencite{bender_stochastic_parrots_2021}
 \end{objectionbox}
 
-\vspace{0.2cm}
-\textbf{The distraction argument}: By centering extinction-risk discourse, the AI industry:
-\begin{itemize}
-    \item diverts attention from \emph{present} harms --- discrimination, surveillance, worker exploitation
-    \item signals alignment responsibility while continuing to deploy harmful systems \emph{now}
-    \item frames corporations as responsible AI stewards rather than profit-driven actors
-\end{itemize}
+\textbf{The distraction argument}: by centering extinction risk, the industry diverts attention from \emph{present} harms --- discrimination, surveillance, worker exploitation --- signals responsibility while still deploying, and frames itself as steward rather than profit-driven actor.
+
+\begin{discussionbox}[Discussion]
+Can a risk be \textbf{real} and a \textbf{distraction} at the same time? If so, who gets to decide which one we fund?
+\end{discussionbox}
 \end{frame}
 
 \begin{frame}{TESCREAL: The Ideological Roots of AI Doom}
@@ -469,6 +488,25 @@ The state & Possible under international law, but individual accountability disa
 
 \parencite{hrw_losing_humanity_2012}
 \end{frame}
+% ===== YOU BE THE JUDGE =====
+\begin{frame}[shrink=8]{You Be the Judge: Who Is Responsible?}
+A loitering munition attacks a retreating fighter with \textbf{no human in the loop}. A civilian nearby is killed. An inquiry convenes. Every candidate has a defense.
+
+\vspace{0.2em}
+\textbf{You have 100 points of responsibility. Distribute all of them:}
+\begin{itemize}
+    \item \textbf{The machine} --- but it has no agency to hold
+    \item \textbf{The programmer} --- who wrote the targeting logic two years and one war ago
+    \item \textbf{The commander} --- who launched it but did not choose this target
+    \item \textbf{The manufacturer} --- shielded by contract and by sovereign immunity
+    \item \textbf{The state} --- which can be liable while no individual ever is
+\end{itemize}
+
+\begin{discussionbox}[Then read your own answer back]
+If every \textbf{human} on your list came out near zero, you have just described a machine that can kill lawfully and unaccountably. Is that a bug in your reasoning, or a fact about the weapon?
+\end{discussionbox}
+\end{frame}
+
 
 % ===== IMAGE SLIDE: Campaign to Stop Killer Robots =====
 \begin{frame}[shrink=20]{Campaign to Stop Killer Robots}
@@ -539,23 +577,25 @@ If fully autonomous weapons are already deployed, does the debate about whether 
 \end{columns}
 \end{frame}
 
-\begin{frame}[shrink=10]{The Dual-Use Dilemma}
+\begin{frame}[shrink=8]{The Dual-Use Dilemma}
 \begin{conceptbox}[Dual-Use Research of Concern (DURC)]
-Research that can be used both to \emph{protect} public health (vaccines, diagnostics, therapeutics) and to \emph{create} biological threats (enhanced pathogens, targeted toxins). The same knowledge is simultaneously beneficial and potentially catastrophic.
+Research that can both \emph{protect} public health and \emph{create} biological threats. The same knowledge is simultaneously beneficial and potentially catastrophic.
 \end{conceptbox}
 
-\vspace{0.2cm}
 \textcite{sandbrink_ai_biological_misuse_2023} draws a critical distinction:
 
-\vspace{0.1cm}
 \begin{tabular}{@{}p{4.2cm}p{7.4cm}@{}}
 \toprule
 \textbf{Type of AI} & \textbf{Dual-Use Risk Profile} \\
 \midrule
-\textbf{LLMs} (GPT, Claude, etc.) & Primarily an \emph{information hazard}: make dangerous knowledge more accessible, but limited novel capability \\
-\textbf{Biological design tools} (AlphaFold, RFdiffusion, BindingDB) & More serious: can design \emph{novel} proteins, toxins, or pathogens that do not yet exist \\
+\textbf{LLMs} (GPT, Claude, etc.) & Primarily an \emph{information hazard}: dangerous knowledge becomes more accessible, but little novel capability \\
+\textbf{Biological design tools} (AlphaFold, RFdiffusion) & More serious: can design \emph{novel} proteins, toxins, or pathogens that do not yet exist \\
 \bottomrule
 \end{tabular}
+
+\begin{discussionbox}[Discussion]
+Every capability on this slide has a legitimate use. Where would you actually \textbf{draw the line}---and who should be trusted to enforce it?
+\end{discussionbox}
 \end{frame}
 
 \begin{frame}[shrink=7]{Case Study: The Nerve Agent Experiment (2022)}
@@ -722,6 +762,10 @@ Sunstein's alternative: \textbf{cost-benefit analysis} --- rigorously estimate a
   \draw[<->, thick, color=boxgold] (5.2, 1.0) -- (6.6, 1.0) node[midway, above, font=\scriptsize\bfseries, color=boxgold] {tension};
 \end{tikzpicture}
 \end{center}
+
+\begin{discussionbox}[Discussion]
+Unfold the paper from the start of class. Did your number move? \textbf{What moved it}---an argument, or the room?
+\end{discussionbox}
 \end{frame}
 
 % ============================================================

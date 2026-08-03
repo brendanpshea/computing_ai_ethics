@@ -19,6 +19,39 @@ This lecture provides a comprehensive introduction to artificial intelligence fr
 % Slide 1: Title
 \lecturetitleslide{images/fractal_07.png}
 
+
+% ====================
+% COLD OPEN
+% ====================
+% Sets up the Moving Goalposts slide, which supplies Tesler's Theorem.
+
+\begin{frame}{Before We Begin: Which of These Is Artificial Intelligence?}
+Hands up, yes or no, for each. \textbf{Commit} --- no ``it depends'' yet.
+
+\begin{enumerate}
+    \item A chess engine that beats every human alive
+    \item The spam filter that cleaned out your inbox this morning
+    \item A thermostat that learns your schedule
+    \item The autocomplete finishing your sentences as you text
+    \item ChatGPT
+    \item The system choosing which video you see next
+\end{enumerate}
+
+\begin{discussionbox}[Commit before we go on]
+Count your yes votes. Then say what \textbf{rule} you were applying --- there is one, even if you have not put it into words.
+\end{discussionbox}
+\end{frame}
+
+\begin{frame}{The Answer: All of Them, and Then None of Them}
+Every item on that list was called \textbf{artificial intelligence} by serious researchers when it was new. Most stopped being called AI at the moment they started working reliably.
+
+\begin{alertblock}{The pattern you just reproduced}
+Almost every class votes \textbf{no} on the chess engine and the spam filter and \textbf{yes} on ChatGPT. But Deep Blue beating Kasparov in 1997 was the AI story of the decade. What changed was not the chess engine. What changed was that we got used to it.
+\end{alertblock}
+
+This has a name --- \textbf{Tesler's Theorem}, which we will meet in a moment --- and it is a serious problem, not a joke. If ``AI'' names whatever we have not gotten used to yet, then every claim about what AI can or cannot do has a moving subject.
+\end{frame}
+
 % Slide 2: Learning Outcomes and Central Questions
 \begin{frame}{Central Questions}
 \begin{itemize}
@@ -86,6 +119,10 @@ Defining artificial intelligence matters profoundly for how we understand its ca
 
 \vspace{0.3em}
 The ``AI'' label carries weight: it influences funding decisions, public fear and hype, and regulatory responses. How we define AI shapes what we build, how we deploy it, and how we think about ourselves.
+
+\begin{discussionbox}[Discussion]
+If a law regulates ``artificial intelligence, who benefits from the definition being \textbf{vague}? Who benefits from it being \textbf{narrow}?
+\end{discussionbox}
 \end{frame}
 
 % Slide 4: The Moving Goalposts Problem
@@ -603,6 +640,10 @@ Systems that predict what you'll want to see, buy, or do.
 
 \vspace{0.2em}
 \textbf{Open question}: Are these systems intelligent, or are they sophisticated pattern matchers? Do they ``understand'' anything, or merely predict plausible next tokens?
+
+\begin{discussionbox}[Discussion]
+You have used one of these systems. Describe one moment it seemed to \textbf{understand} you---and then say what else could explain that moment.
+\end{discussionbox}
 \end{frame}
 
 \begin{frame}{Two Changes Worth Naming}
@@ -617,6 +658,10 @@ In 2026, for the first time, labs and governments withheld systems \emph{because
 
 \vspace{0.2em}
 These two pull in opposite directions---one disperses capability, the other tries to contain it. Both will matter when we reach questions of governance and risk.
+
+\begin{discussionbox}[Discussion]
+One of these forces disperses capability and the other tries to contain it. \textbf{Which one is winning right now}---and what would you look at to tell?
+\end{discussionbox}
 \end{frame}
 
 %% PART III: CLASSICAL DEBATES %%
@@ -1242,6 +1287,24 @@ LeCun & World models & True intelligence requires predictive models of reality \
 \vspace{0.2em}
 No consensus exists, but there's a movement away from human-likeness as the primary criterion toward capability-focused definitions.
 \end{frame}
+% ===== YOU BE THE JUDGE =====
+\begin{frame}[shrink=8]{You Be the Judge: Does It Understand?}
+A system holds a forty-minute conversation about a novel it was never explicitly taught. It picks up a joke, corrects itself, and asks a question nobody asked it to ask.
+
+\vspace{0.2em}
+\textbf{Four benches. Each must rule, and each must state its test:}
+\begin{itemize}
+    \item \textbf{Turing}: is there any behavioral question left that would separate it from a person?
+    \item \textbf{Searle}: is there anything here but symbol manipulation, and does the room understand Chinese?
+    \item \textbf{Dennett}: if it does everything understanding does, what is the leftover thing you are asking about?
+    \item \textbf{Floridi}: why assume it needs to understand at all in order to \textbf{act} on the world?
+\end{itemize}
+
+\begin{discussionbox}[The tiebreaker]
+Which bench's test could you \textbf{actually run} on a system in front of you tomorrow? A criterion nobody can apply is not doing the work you think it is.
+\end{discussionbox}
+\end{frame}
+
 
 % Slide 43: Comparing Definitions
 \begin{frame}{Comparing Definitions---What Counts as AI?}
@@ -1323,6 +1386,10 @@ Potentially conscious & Moral status, rights, preventing suffering, exploitation
 
 \vspace{0.1em}
 How we define AI shapes how we regulate it, deploy it, and hold people accountable for its effects.
+
+\begin{discussionbox}[Discussion]
+Of everything we have covered today, which \textbf{one} disagreement would you most want settled before the next capable system ships?
+\end{discussionbox}
 \end{frame}
 
 % Slide 40: Conclusion
