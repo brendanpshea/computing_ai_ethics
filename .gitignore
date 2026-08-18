@@ -28,6 +28,12 @@ PDFs/*-SAVE-ERROR
 PDFs/ai_ethics_*.pdf
 PDFs/bibliography.pdf
 
+# Stray output from compiling inside latex/ instead of the project root. The decks
+# resolve images/ and refs.bib relative to the ROOT, so a build started in latex/
+# produces a broken PDF (missing images, unresolved citations) in latex/PDFs/.
+# See .vscode/settings.json for the editor recipes that build from the right place.
+latex/PDFs/
+
 # OS
 .DS_Store
 Thumbs.db

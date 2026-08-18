@@ -1,0 +1,44 @@
+{
+  // The lecture decks reference images/ and refs.bib relative to the PROJECT ROOT,
+  // not to latex/. LaTeX Workshop's default recipes compile in the .tex file's own
+  // directory, which makes every \includegraphics and the bibliography fail to
+  // resolve (13 "File `images/...' not found" errors on lecture 1 alone, and a PDF
+  // roughly a sixth of the correct size because the images silently become draft
+  // boxes). The recipes below run from the root the same way build.ps1 does.
+  "latex-workshop.latex.outDir": "%WORKSPACE_FOLDER%/PDFs",
+  "latex-workshop.latex.autoBuild.run": "never",
+
+  "latex-workshop.latex.tools": [
+    {
+      "name": "pdflatex",
+      "command": "pdflatex",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-output-directory=%WORKSPACE_FOLDER%/PDFs",
+        "%DOC%"
+      ],
+      "env": { "TEXINPUTS": ".;%WORKSPACE_FOLDER%/latex;" },
+      "cwd": "%WORKSPACE_FOLDER%"
+    },
+    {
+      "name": "biber",
+      "command": "biber",
+      "args": ["%WORKSPACE_FOLDER%/PDFs/%DOCFILE%"],
+      "env": { "BIBINPUTS": "%WORKSPACE_FOLDER%;" },
+      "cwd": "%WORKSPACE_FOLDER%"
+    }
+  ],
+
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "deck: pdflatex > biber > pdflatex x2",
+      "tools": ["pdflatex", "biber", "pdflatex", "pdflatex"]
+    },
+    {
+      "name": "deck: pdflatex only (fast layout check, citations show [?])",
+      "tools": ["pdflatex"]
+    }
+  ]
+}
