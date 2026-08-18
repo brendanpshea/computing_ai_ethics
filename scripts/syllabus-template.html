@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="$lang$">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>$title$</title>
+$if(description)$
+  <meta name="description" content="$description$">
+$endif$
+  <meta name="author" content="$author$">
+  <link rel="stylesheet" href="../html/styles.css">
+  <style>
+    /* This page is not a numbered chapter, so it gets no body[data-chapter]
+       rule; define the two vars those rules would have supplied. */
+    body { --chapter-color: #002855; --chapter-light: #dce8f5; }
+    .syllabus-toc {
+      background: var(--gray-xlight, #f7f9fb);
+      border-left: 4px solid var(--chapter-color);
+      border-radius: 6px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 2.5rem;
+    }
+    .syllabus-toc > ul { margin: 0; padding-left: 1.1rem; }
+    .syllabus-toc ul ul { margin: .2rem 0 .4rem; }
+    .syllabus-toc li { margin: .15rem 0; }
+    .syllabus-toc-title {
+      font-family: var(--font-ui, sans-serif);
+      font-weight: 700; font-size: .95rem; letter-spacing: .02em;
+      text-transform: uppercase; color: var(--chapter-color);
+      margin-bottom: .5rem;
+    }
+    /* Wide calendar tables scroll rather than pushing the page sideways. */
+    .table-scroll { overflow-x: auto; }
+    @media print {
+      .top-nav, .syllabus-toc { display: none; }
+      a { color: inherit; text-decoration: none; }
+    }
+  </style>
+</head>
+
+<body>
+<div class="page-wrapper">
+
+  <nav class="top-nav" aria-label="Site navigation">
+    <a href="../index.html" class="nav-home">Computing &amp; AI Ethics</a>
+    <div class="chapter-nav">
+      <span class="nav-chapter">Syllabus</span>
+    </div>
+  </nav>
+
+  <header class="chapter-header">
+    <p class="chapter-eyebrow">$eyebrow$</p>
+    <h1>$maintitle$</h1>
+$if(subtitle)$
+    <p class="chapter-subtitle">$subtitle$</p>
+$endif$
+  </header>
+
+  <main class="content-area chapter-content">
+$if(toc)$
+    <nav class="syllabus-toc" aria-label="Contents">
+      <p class="syllabus-toc-title">Contents</p>
+$toc$
+    </nav>
+$endif$
+$body$
+  </main>
+
+</div>
+</body>
+</html>
