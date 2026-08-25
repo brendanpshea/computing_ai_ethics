@@ -1,26 +1,26 @@
-# Computing & AI Ethics 🤖
+# Computing & AI Ethics
 
 **PHIL 1150-71 | Fall 2026**
 
 ## Course Information
 
 - **Instructor:** Brendan Shea, Ph.D.
-- **Email:** Brendan.Shea@rctc.edu
-- **Phone:** 507-722-1146
+- **Email:** [Brendan.Shea@rctc.edu](mailto:Brendan.Shea@rctc.edu)
+- **Phone:** [507-722-1146](tel:5077221146)
 - **Office:** M2403Q
-- **Office Hours:** TBA
-- **Class Format:** Online
-- **Class Zoom Link:** See D2L.
+- **Office Hours:** TBA (posted in D2L; appointments available via Zoom and in-person)
+- **Class Format:** Online (Asynchronous with scheduled assessment windows)
+- **Class Zoom Link:** Accessible via D2L course page
 - **Term Dates:** Monday, August 24, 2026 – Friday, December 18, 2026
 - **Last Day to Drop (full-term):** Friday, August 28, 2026
 
-**Prerequisites:** None (However, this is a college-level class, so you should be comfortable with reading college-level texts and writing responses to these. See below for more details.)
+**Prerequisites:** None. (However, this is a college-level course; students should be comfortable reading college-level texts and composing analytical written responses.)
 
-## Course Description 📖
+## Course Description
 
 In a world increasingly reliant on technology, the ethical implications of computing and artificial intelligence (AI) are more relevant than ever. This course seeks to bridge the gap between technology and ethical inquiry, providing students with the tools to critically evaluate and address ethical dilemmas in various domains of computing, AI, and data science. The course covers a wide range of topics, from fundamental ethical theories to futuristic considerations in AI ethics. Topics include the history of computing, AI and machine learning basics, data privacy, algorithmic bias and fairness, surveillance, security, employment in the age of AI, bioethics in computing, ethics in video games and virtual reality, AI ethics in science fiction, and future policy and design considerations.
 
-## Course Content and Learning Outcomes 🎯
+## Course Content and Learning Outcomes
 
 ### Major Content Areas
 
@@ -32,8 +32,8 @@ In a world increasingly reliant on technology, the ethical implications of compu
    - Ethical challenges specific to AI
 5. Ethics and Data Privacy
 6. Algorithmic Bias and Fairness
-   - Racial, gender and other sorts of bias
-   - How to make algorithms fairer
+   - Racial, gender, and other forms of bias
+   - Methods to make algorithms fairer
 7. Surveillance and Security
    - Government surveillance vs. individual privacy
    - Ethical hacking
@@ -41,7 +41,7 @@ In a world increasingly reliant on technology, the ethical implications of compu
 9. Bioethics and Computing
 10. Ethics in Video Games and Virtual Reality
     - The impact of virtual worlds
-    - Representation of race and gender gaming
+    - Representation of race and gender in gaming
 11. AI Ethics in Science Fiction
     - Exploring ethical issues through fictional examples
     - Case studies (e.g., Asimov's Laws)
@@ -56,201 +56,221 @@ The student will be able to:
 1. Identify and critically evaluate major ethical theories and principles, and apply them to a range of ethical dilemmas, such as the Trolley Problem.
 2. Understand the history and evolution of computing from its earliest forms to present-day technologies, recognizing ethical considerations at each stage.
 3. Explain the basics of how AI and machine learning work, and identify the ethical challenges specific to AI, including potential bias and fairness issues.
-4. Discuss the concept of data privacy and be able to assess ethical considerations surrounding the collection and usage of personal data.
-5. Identify discuss instances of bias in algorithms and propose methods for making algorithms fairer and more equitable.
-6. Explain the implications of government surveillance versus individual privacy and be able to engage in debates about ethical hacking and cybersecurity.
+4. Discuss the concept of data privacy and assess ethical considerations surrounding the collection and usage of personal data.
+5. Identify and discuss instances of bias in algorithms and propose methods for making algorithms fairer and more equitable.
+6. Explain the implications of government surveillance versus individual privacy and engage in informed debates about ethical hacking and cybersecurity.
 7. Analyze the impact of AI and automation on employment and the gig economy, identifying both opportunities and ethical considerations.
 8. Evaluate the ethical implications of using computing technologies in healthcare and bioinformatics, including issues around medical data and informed consent.
 9. Recognize the ethical implications of video games and virtual reality, including issues related to representation, violence, and impact on behavior.
 
 ### Learning Outcomes (Minnesota Transfer Curriculum)
 
-**Goal 6 - The Humanities (Arts, Literature, and Philosophy)**
+#### Goal 6: The Humanities (Arts, Literature, and Philosophy)
 
 The student will be able to:
 
-1. Understand those works as expressions of individual and human values within a historical and social context.
+1. Understand works in the humanities as expressions of individual and human values within a historical and social context.
 2. Respond critically to works in the arts and humanities.
 3. Articulate an informed personal reaction to works in the arts and humanities.
 
-**Goal 9 - Ethical and Civic Responsibility**
+#### Goal 9: Ethical and Civic Responsibility
 
 The student will be able to:
 
 1. Examine, articulate, and apply their own ethical views.
-2. Understand and apply core concepts (e.g. politics, rights and obligations, justice, liberty) to specific issues.
+2. Understand and apply core concepts (e.g., politics, rights and obligations, justice, liberty) to specific issues.
 3. Analyze and reflect on the ethical dimensions of legal, social, and scientific issues.
 
 ### RCTC Core Outcomes
 
-This course contributes to meeting the following RCTC Core Learning Outcome(s):
+This course contributes to meeting the following RCTC Core Learning Outcome:
 
-- **Critical Thinking.** Students will think systematically and explore information thoroughly before accepting or formulating a position or conclusion.
+- **Critical Thinking:** Students will think systematically and explore information thoroughly before accepting or formulating a position or conclusion.
 
-## Required and Recommended Course Materials 📚
+## Required and Recommended Course Materials
 
-- All material (videos, reading, etc.) will be made available free online.
-- This course will require that you have reliable, regular internet access.
-- **A computer with a working webcam and microphone.** All four graded assessments are proctored.
-- **A smartphone or tablet.** The exams and essays use a dual-camera setup, so you'll need a second device running the Respondus Monitor app alongside your computer. See "Proctoring and Technology Requirements" below — please confirm you have this in Week 1.
+- **Textbook and Readings:** All course materials (textbook chapters, videos, case studies, and primary source readings) are Open Educational Resources (OER) and provided **free online**.
+- **Internet Access:** Reliable, regular high-speed internet access is required.
+- **Primary Computer:** A desktop or laptop computer (Windows or macOS) with a working webcam and microphone. (Required for proctored assessments).
+- **Secondary Mobile Device:** A smartphone or tablet capable of running the free Respondus Monitor mobile app for the dual-camera assessment configuration. See "Proctoring and Technology Requirements" below.
 
-## Grading and Course Policies 📊
+## Grading and Course Policies
 
 ### Grading Scale
 
-- **A:** 90.0 and above
-- **B:** 80.0-89.9
-- **C:** 70.0-79.9
-- **D:** 60.0-69.9
-- **F:** Below 60.0
+| Letter Grade | Percentage Range |
+|---|---|
+| **A** | 90.0% and above |
+| **B** | 80.0% – 89.9% |
+| **C** | 70.0% – 79.9% |
+| **D** | 60.0% – 69.9% |
+| **F** | Below 60.0% |
+
+: Grading Scale and Percentage Ranges
 
 ### Grade Breakdown
 
-Your final grade is a weighted average of the following:
+Your final grade is calculated based on the following weighted components:
 
-**Lectures and Readings on Perusall (30% total).** You'll receive credit for engaging with lectures and case studies on [www.perusall.com](http://www.perusall.com). There are no quizzes on Perusall — the work is annotation and discussion. Grading is based on a combination of (1) time spent actively working on the assignment and (2) the number and quality of your comments and replies to classmates.
+| Category | Weight | Description |
+|---|---|---|
+| **Lectures and Readings on Perusall** | 30% | Collaborative annotations and discussions on Perusall |
+| **PhilMates Mini-Lessons** | 10% | Interactive browser-based philosophy scenario modules |
+| **Objective Exams (2 exams)** | 30% | Midterm and Final objective exams (15% each; 70 minutes each) |
+| **Philosophy Essays (2 essays)** | 30% | Timed writing responses to selected case readings (15% each; 70 minutes each) |
+| **Total** | **100%** | |
 
-**PhilMates Mini-Lessons (10% total).** Short interactive lessons — roughly 30 minutes each — that I designed for this class. Instead of reading about a theory, you work through a story: you'll answer questions, make choices, and see how your own commitments hold up as the scenario develops. These are graded, but you can keep trying until you get things right, so everyone who puts in the time should end up with full credit. You'll launch them directly from D2L; there's no separate account or login. See "Using PhilMates" below.
+: Course Grade Breakdown and Assessment Weights
 
-**Objective Exams (30% total).** Two exams, each covering roughly half the course. These are objective (multiple choice, matching, and similar) and you'll have **70 minutes** to complete each. See "Proctoring and Technology Requirements" below.
+#### Component Details
 
-**Essays (30% total).** Two essays, **70 minutes** each. Each will give you a short reading about computing/AI ethics and ask you to respond to it. You'll write your response during the session — there's nothing to prepare or submit in advance. I'm grading the quality of your reasoning and your engagement with the reading, not the polish of your prose, so don't worry about typos. See "Proctoring and Technology Requirements" below.
+- **Lectures and Readings on Perusall (30% total):** You will receive credit for engaging with lectures and case studies on [Perusall (perusall.com)](https://www.perusall.com). There are no multiple-choice quizzes on Perusall; work consists of collaborative annotation and critical discussion. Grading evaluates (1) active engagement time and (2) the quality and thoughtfulness of your comments and replies to peers.
+- **PhilMates Mini-Lessons (10% total):** Short, interactive browser-based lessons (roughly 30 minutes each). Instead of merely reading about a theory, you work through an interactive scenario where your choices test your moral commitments. These are graded with unlimited attempts until mastery; students who complete the modules earn full credit. Launch directly through D2L without creating a separate account.
+- **Objective Exams (30% total):** Two exams covering course halves (Exam 1: Lectures 1–6; Exam 2: Lectures 7–12). Formats include multiple-choice, concept matching, and short answer. You have **70 minutes** to complete each exam. Taken online under proctoring.
+- **Essays (30% total):** Two timed essay responses (**70 minutes** each). You will be given a short reading on computing/AI ethics and asked to analyze and respond to its core arguments. Grading focuses on reasoning quality, understanding of course concepts, and substantive engagement rather than mechanical polish. Taken online under proctoring.
 
-There is no final project or presentation in this course.
+*Note: There is no final term paper or oral presentation in this course.*
 
-### Proctoring and Technology Requirements 🎥
+### Proctoring and Technology Requirements
 
-All four graded assessments — both exams and both essays — are taken in D2L using **Respondus LockDown Browser with Respondus Monitor**, in a **dual-camera** configuration. Here's what that means for you:
+All four graded assessments (Exams 1 & 2 and Essays 1 & 2) are completed in D2L using **Respondus LockDown Browser with Respondus Monitor** in a **dual-camera configuration**:
 
-- **LockDown Browser** is a special web browser that locks down your computer during the assessment. You won't be able to open other tabs, applications, or files. You'll download and install it (free) from a link in D2L.
-- **Respondus Monitor** records video and audio during the session using your computer's webcam.
-- **Dual camera** means a second recording device — your smartphone or tablet, running the free Respondus Monitor app — positioned to show your desk and workspace. You'll be prompted to set this up at the start of each session.
+- **LockDown Browser:** A customized browser that locks down the testing environment within D2L, preventing access to other applications, browsers, or files during the exam. (Free download link provided inside D2L).
+- **Respondus Monitor (Primary Camera):** Records video and audio via your computer's webcam throughout the testing session.
+- **Dual Camera (Secondary Device):** Your smartphone or tablet running the free Respondus Monitor app, positioned to display your desk workspace. Step-by-step setup prompts are provided before each assessment starts.
 
-**What you need:** a computer (Windows or Mac) with a working webcam and microphone, a smartphone or tablet for the second camera, reliable internet, and a quiet, well-lit space where you can work alone and uninterrupted for 70 minutes.
+**System Requirements:** A computer (Windows or Mac) with webcam and microphone, secondary mobile device, stable internet connection, and a quiet, well-lit private space for 70 uninterrupted minutes.
 
+**Testing Accommodations:** If you have an approved accommodation plan through Disability Support Services (such as extended time, screen reader compatibility, alternative testing environments, or assistive hardware), please contact me during Week 1 so accommodation settings can be configured in D2L prior to the first assessment.
 
-**Accommodations:** if you have an approved accommodation through Disability Support Services (extended time, a separate testing environment, etc.), let me know early in the semester so I can configure it in D2L before the first assessment.
+### Plagiarism and Academic Integrity
 
-### Plagiarism and Academic Integrity ⚖️
+All work submitted must reflect your own individual analysis and effort. Collaborating with unauthorized persons or using outside unauthorized resources during assessments is prohibited. Whenever outside sources or ideas are consulted, provide proper citations and attribution. If evidence indicates that academic dishonesty is more likely than not to have occurred, sanctions may include a failing grade on the assignment or in the course, alongside referral to the College conduct board. See the [RCTC Academic Integrity Policy](https://www.rctc.edu/policies/education/academic-integrity/) for full institutional procedures.
 
-Your work should be your own—please don't use your classmates, friends, parents, internet sites, etc., to help you write your papers or answer test questions. And when you do use outside sources, make sure to give appropriate citation and acknowledgment for any words, ideas, or arguments. If the preponderance of the evidence suggests cheating has occurred (that is, if the evidence indicates that this is *more likely than not*), you may receive a failing grade for the assignment (at minimum) or class as a whole.
+### Policy on Generative AI
 
-### Policy on Generative AI 🤖
+Generative AI systems (such as ChatGPT, Claude, Gemini, and Copilot) are valuable tools for modern education and professional life. You are welcome and encouraged to use generative AI as an informal study assistant—for example, to explain difficult philosophical concepts, generate practice quiz questions, or brainstorm counter-arguments during your weekly study.
 
-I encourage you to use generative AI (ChatGPT, Gemini, Claude, etc.) to help you understand class content when needed — mastering these tools will be important to almost any career path — and to work on your own projects (I've used it in my own projects, including for this course!). It's a legitimate study aid: ask it to explain a concept from a lecture, quiz you before an exam, or push back on your reading of an argument.
+However, generative AI use is **strictly prohibited** during all four graded assessments (both Objective Exams and both Essays). The timed, proctored environment exists to evaluate your personal critical thinking, ethical reasoning, and analytical voice.
 
-However, the use of generative AI is **ABSOLUTELY FORBIDDEN** on all four graded assessments — both exams and both essays. This is not an honor-system rule: these assessments are taken under LockDown Browser with dual-camera monitoring, which is precisely what makes it enforceable.
+### Attendance and Participation
 
-A word on why the course is built this way. The essays are timed, proctored, and written in a locked browser because that's the only remaining way I can see what *you* think about a reading. That's also the whole point of a philosophy course: the value is in your reasoning, and outsourcing it to a model means you leave with nothing.
+Active participation is essential in an online learning environment. Regular completion of Perusall discussions and PhilMates modules constitutes attendance. If a student misses more than one-third (1/3) of course assignments or fails to participate for an extended period without communication, a grade of FW (Unofficial Withdrawal / Failure to Attend) may be assigned, which can affect financial aid eligibility. Students seeking to drop or withdraw must adhere to official college deadlines.
 
-### Attendance 📅
+## Using Perusall
 
-Students in face-to-face classes should attend class regularly, while online students are expected to participate in class discussions and activities. If you miss more than 1/3 of the total class sessions (and/or class assignments), you may receive a failing grade of FW. This may endanger your ability to receive financial aid. You are responsible for withdrawing from the class if you decide not to continue. I am willing to make exceptions if circumstances require, but you must let me know about these promptly.
+Perusall is an interactive social annotation platform integrated into our course to facilitate collaborative reading and discussion.
 
-## Using Perusall 📝
+- Access Perusall directly via assignment links inside our D2L Brightspace course shell.
+- Read assigned texts and contribute thoughtful annotations, questions, reflections, and peer replies.
+- Direct link for additional information: [Perusall Platform](https://www.perusall.com).
 
-Perusall is a digital platform that we're using to enhance your learning. It allows you to collaboratively annotate readings and engage with your classmates and me. The goal is to make reading more interactive and to deepen your understanding of the material.
+## Using PhilMates
 
-You'll access Perusall through links provided in our D2L-Brightspace course. Once you click on these links, you'll be directed to the readings assigned for our class.
+[PhilMates](https://brendanpshea.github.io/philmates/) is a collection of open, interactive philosophy learning modules developed for this course.
 
-For each reading, you'll need to post annotations. These can be questions, comments, replies to comments of others, or reflections. Make sure to read others' annotations, too, and respond when you can. This is part of your active participation.
+- **D2L Integration:** Launch each mini-lesson directly from D2L. Grades automatically sync to the D2L gradebook upon completion.
+- **Flexible Progress:** Progress is automatically saved, enabling you to pause and resume work anytime before deadlines.
+- **Mastery-Based:** You may retry questions and scenarios until you master the concept and achieve full credit.
+- **Review Access:** Modules remain accessible throughout the semester for exam study and review.
 
-## Using PhilMates 🎲
+## Policy on Late Work
 
-[PhilMates](https://brendanpshea.github.io/philmates/) is a set of free, browser-based philosophy lessons I built for courses like this one. Each one takes a philosophical idea — the harm principle, moral status, virtue ethics, utilitarianism — and puts you inside a story where it matters, rather than describing it at you. You'll answer questions, make choices, and periodically get asked to revisit something you said earlier, which is often where the interesting part happens.
+Please review these guidelines before requesting deadline extensions:
 
-A few practical notes:
+- **Perusall Assignments & PhilMates Modules:** Submissions are accepted up to 48 hours (2 days) past the posted deadline for partial credit, which decays linearly over the 48-hour grace window.
+- **Exams and Essays:** Proctored assessments cannot be submitted late without prior instructor approval for documented emergencies or extenuating circumstances.
+- **Technical Emergencies During Proctoring:** If an unexpected technical failure occurs during a proctored assessment (e.g., power outage, internet loss, or hardware freeze), email the instructor immediately. Session logs in Respondus will be reviewed and appropriate reset accommodations will be provided without penalty.
+- **Emergency Exceptions:** If severe illness, family emergency, or significant personal hardship arises, contact the instructor as soon as possible to discuss tailored makeup arrangements.
 
-- **You'll launch them from D2L.** No account, no signup, no software to install. Your work reports back to the D2L gradebook automatically.
-- **You don't have to finish in one sitting.** Your progress is saved, so you can stop partway through and pick up where you left off.
-- **You can keep trying until you get it right.** These are graded, but a wrong answer isn't a penalty — it's the part where you find out you were wrong about something, which is the whole point. Anyone who works through them should get full credit.
-- **You can revisit them anytime,** including when you're studying for an exam.
+## Getting in Touch with Me
 
-The specific lessons and their due dates will be posted in D2L.
+Email is the primary and fastest method of communication:
 
-## Policy on Late Work ⏰
+- **Response Time:** Emails are generally answered within **one business day** for routine inquiries, and within **two business days** for complex academic questions. (Note: Emails sent over weekends or college holidays are answered on the next business day).
+- **Follow-up:** If you have not received a response after two business days, please send a polite follow-up email.
 
-**Please read the following *before* emailing me to request an extension on an assignment.**
+**Recommended Email Template:**
 
-If you miss an assignment or assessment due to a brief sickness, work conflict, class trip, computer malfunction, wedding, auto problem, court date, funeral, sporting event, etc., you do NOT need to email me (though it's okay if you want to give me a heads up). Here are my policies for making up missed or late work:
+```text
+Subject: PHIL 1150-71: [Brief topic, e.g., Question on Week 3 Reading]
 
-Perusall reading assignments can be submitted up to two days late for reduced credit. Credit declines "linearly" (basically, if you submit it one minute late, you get 99.9% of the credit; if you submit it 1.5 days late, you'll get almost no credit).
+Hello Dr. Shea,
 
-PhilMates mini-lessons follow the same two-day late window.
+My name is [Your Name] and I am in your PHIL 1150-71 Online class.
 
-Exams and essays cannot be taken late without explicit permission from me, and should be for a good reason; late exams and essays (if allowed) will receive reduced credit.
+I have a question regarding [specific assignment, reading, or concept]. I have reviewed [relevant course section / syllabus page], and wanted to clarify [your specific question].
 
-If a technical failure interrupts you *during* a proctored session — your internet drops, LockDown Browser crashes, your phone dies — email me as soon as it happens and I will look at the Respondus session log and sort it out. You will not be penalized for an equipment failure you told me about promptly. This is a separate matter from simply missing the assessment.
+Thank you,
+[Your Name]
+[Student ID Number, if inquiring about grades/records]
+```
 
-**I will make exceptions to these policies if you can demonstrate a genuine need.** Please talk to me if anything comes up that is preventing you from succeeding in class.
+## Course Calendar
 
-## Getting in Touch with Me 📧
-
-The best way to get ahold of me is by email, which I will aim to respond to within ONE working day (for simple questions) or TWO working days (for more complex ones). I don't generally check email on the weekends or holidays. If you don't hear from me by then, please try emailing me again. To help me provide you with quick, effective feedback, here's a general template for what I expect in an email.
-
-## Course Calendar 📅
-
-The course schedule will be posted on D2L. Here is an overview of the topics we'll be covering week-by-week. The rhythm is three lectures, then an assessment: essays fall in Weeks 5 and 13, exams in Weeks 9 and 17. The exams are cumulative over the lectures that precede them; the essays are not tied to particular lectures, since each supplies its own reading.
+The official course schedule is maintained in D2L Brightspace. The course follows a structured rhythm of three lecture modules followed by an assessment window. Objective exams cover preceding lecture modules; essays evaluate independent case readings.
 
 | Week | Dates | Topic | Notes |
 |---|---|---|---|
-| 1 | Aug 24 – Aug 28 | Syllabus, Course Orientation, and **proctoring practice run** | **Last day to drop (full-term): Fri, Aug 28** |
-| 2 | Aug 31 – Sep 4 | Lecture 1: Intro and History | |
-| 3 | Sep 7 – Sep 11 | Lecture 2: Technology and Virtues | Labor Day holiday – no classes Mon, Sep 7 |
-| 4 | Sep 14 – Sep 18 | Lecture 3: Free Speech Online | Faculty Development Day – no classes Wed, Sep 16 |
-| 5 | Sep 21 – Sep 25 | **Essay 1** | |
-| 6 | Sep 28 – Oct 2 | Lecture 4: Owning Ideas | |
-| 7 | Oct 5 – Oct 9 | Lecture 5: Digital Cash | Student Success Day – no classes Tues, Oct 6 |
-| 8 | Oct 12 – Oct 16 | Lecture 6: Surveillance and Privacy | Education Minnesota Conference – no classes Thur–Fri, Oct 15–16 |
-| 9 | Oct 19 – Oct 23 | **Exam 1** (covers Lectures 1–6) | |
-| 10 | Oct 26 – Oct 30 | Lecture 7: What Is AI? | |
-| 11 | Nov 2 – Nov 6 | Lecture 8: AI and the Future of Work and Art | General Election Tues, Nov 3 (classes meet as usual) |
-| 12 | Nov 9 – Nov 13 | Lecture 9: Environmental and Social Impact of AI | Veterans Day holiday – no classes Wed, Nov 11 |
-| 13 | Nov 16 – Nov 20 | **Essay 2** | |
-| 14 | Nov 23 – Nov 27 | Lecture 10: AI and the End of the World | Thanksgiving holiday – no classes Thur–Fri, Nov 26–27 |
-| 15 | Nov 30 – Dec 4 | Lecture 11: Robot Rights and the Moral Status of AI | |
-| 16 | Dec 7 – Dec 11 | Lecture 12: Games and Ethics | |
-| 17 | Dec 14 – Dec 18 | **Exam 2** (covers Lectures 7–12); Semester Ends | Fall semester ends Fri, Dec 18 |
+| 1 | Aug 24 – Aug 28 | Course Orientation, Syllabus Review, and Proctoring Practice Run | **Last day to drop full-term courses: Fri, Aug 28** |
+| 2 | Aug 31 – Sep 4 | Lecture 1: History and Foundations of Computing Ethics | Regular schedule |
+| 3 | Sep 7 – Sep 11 | Lecture 2: Technology, Values, and Virtue Ethics | **Labor Day holiday (no classes): Mon, Sep 7** |
+| 4 | Sep 14 – Sep 18 | Lecture 3: Free Speech, Expression, and Moderation Online | **Faculty Development Day (no classes): Wed, Sep 16** |
+| 5 | Sep 21 – Sep 25 | **Essay 1 (Proctored Writing Assessment)** | 70-minute timed essay window |
+| 6 | Sep 28 – Oct 2 | Lecture 4: Intellectual Property and Owning Ideas | Regular schedule |
+| 7 | Oct 5 – Oct 9 | Lecture 5: Cryptography, Digital Cash, and Privacy | **Student Success Day (no classes): Tues, Oct 6** |
+| 8 | Oct 12 – Oct 16 | Lecture 6: Surveillance, Security, and Ethical Hacking | **Education Minnesota Conference (no classes): Oct 15–16** |
+| 9 | Oct 19 – Oct 23 | **Exam 1 (Proctored Midterm Exam — Covers Lectures 1–6)** | 70-minute timed exam window |
+| 10 | Oct 26 – Oct 30 | Lecture 7: Foundations of Artificial Intelligence & Machine Learning | Regular schedule |
+| 11 | Nov 2 – Nov 6 | Lecture 8: AI, Automation, and the Future of Work and Art | General Election: Tues, Nov 3 (classes meet as usual) |
+| 12 | Nov 9 – Nov 13 | Lecture 9: Environmental and Social Impacts of Computing & AI | **Veterans Day holiday observed (no classes): Wed, Nov 11** |
+| 13 | Nov 16 – Nov 20 | **Essay 2 (Proctored Writing Assessment)** | 70-minute timed essay window |
+| 14 | Nov 23 – Nov 27 | Lecture 10: Existential Risk, AI Alignment, and the Future | **Thanksgiving holiday observed (no classes): Nov 26–27** |
+| 15 | Nov 30 – Dec 4 | Lecture 11: Moral Status of AI, Consciousness, and Robot Rights | Regular schedule |
+| 16 | Dec 7 – Dec 11 | Lecture 12: Ethics in Video Games, VR, and Virtual Worlds | Regular schedule |
+| 17 | Dec 14 – Dec 18 | **Exam 2 (Proctored Final Exam — Covers Lectures 7–12)** | **Fall semester concludes: Fri, Dec 18** |
+
+: Fall 2026 Weekly Course Schedule, Topics, and Key Deadlines
 
 ### Semester Dates at a Glance
 
-| Date | Event |
+| Date | Academic Event or Holiday |
 |---|---|
 | Mon, Aug 24, 2026 | Fall semester classes begin |
-| Fri, Aug 28, 2026 | Last day to drop (full-term courses) |
-| Mon, Sep 7, 2026 | Labor Day holiday – no classes |
-| Wed, Sep 16, 2026 | Faculty Development Day – no classes |
-| Tues, Oct 6, 2026 | Student Success Day – no classes |
-| Thur–Fri, Oct 15–16, 2026 | Education Minnesota Conference – no classes |
-| Tues, Nov 3, 2026 | General Election – classes meet as usual (no RCTC events 6–8pm) |
-| Wed, Nov 11, 2026 | Veterans Day holiday observed – no classes |
-| Thur–Fri, Nov 26–27, 2026 | Thanksgiving holiday observed – no classes |
-| Fri, Dec 18, 2026 | Fall semester ends |
+| Fri, Aug 28, 2026 | Last day to drop full-term courses with 100% refund |
+| Mon, Sep 7, 2026 | Labor Day holiday – College closed; no classes |
+| Wed, Sep 16, 2026 | Faculty Development Day – No classes scheduled |
+| Tues, Oct 6, 2026 | Student Success Day – No classes scheduled |
+| Thur–Fri, Oct 15–16, 2026 | Education Minnesota Conference – No classes scheduled |
+| Tues, Nov 3, 2026 | General Election – Classes meet as usual (no campus events 6:00–8:00 PM) |
+| Wed, Nov 11, 2026 | Veterans Day holiday observed – College closed; no classes |
+| Thur–Fri, Nov 26–27, 2026 | Thanksgiving holiday observed – College closed; no classes |
+| Fri, Dec 18, 2026 | Fall semester officially ends |
+
+: Fall 2026 Important Semester Dates and Campus Holidays
 
 ---
 
-## RCTC Common Policies ⚖️
-
-This course will be taught in accordance with the following policies, which apply to ALL RCTC courses. If you have any questions about these, please let me know!
+## RCTC Common Policies
 
 ### Academic Integrity Statement
 
-The primary academic mission of Rochester Community and Technical College (RCTC) is to provide quality learning opportunities for students. Acts of academic dishonesty undermine the educational process and the learning experience for the student and our college community. It is the responsibility of the student to complete their academic requirements with integrity and not engage in acts of cheating, plagiarism, or collusion. The College expects that students are submitting work and materials that reflects their individual learning and efforts within their course, program, and college academic requirements.
+The primary academic mission of Rochester Community and Technical College (RCTC) is to provide quality learning opportunities for students. Acts of academic dishonesty undermine the educational process and the learning experience for the student and our college community. It is the responsibility of the student to complete their academic requirements with integrity and not engage in acts of cheating, plagiarism, or collusion. The College expects that students are submitting work and materials that reflect their individual learning and efforts within their course, program, and college academic requirements.
 
-It is expected that RCTC students will understand and adhere to the concept of academic integrity and to the standards of conduct outlined within this [policy](https://www.rctc.edu/policies/education/academic-integrity/). Students who are found to have engaged in an act of academic dishonesty may face academic sanctions through the Academic Integrity Procedure and non-academic misconduct sanctions through the Code of Student Conduct.
+It is expected that RCTC students will understand and adhere to the concept of academic integrity and to the standards of conduct outline within this [policy](https://www.rctc.edu/policies/education/academic-integrity/) (Policy 3.6.2 Academic Integrity). Students who are found to have engaged in an act of academic dishonesty may face academic sanctions through the Academic Integrity Procedure and non-academic misconduct sanctions through the Code of Student Conduct.
 
 ### Americans with Disabilities Act
 
-Rochester Community and Technical College is committed to ensuring its programs, services and activities are accessible to individuals with disabilities, through its compliance with state and federal laws, and [System Policy](http://www.minnstate.edu/board/policy/1b04.html). Appropriate accommodations are provided to those qualified students with disabilities. If you believe you qualify for an academic accommodation, please contact the Director of Disability Support Services, Travis Kromminga at 507-280-2968 or through the Minnesota relay TTY 1-800-627-3529. The office can also be reached via e-mail at [travis.kromminga@rctc.edu](mailto:travis.kromminga@rctc.edu).
+Rochester Community and Technical College (RCTC) is committed to ensuring its programs, services, and activities are accessible to individuals with disabilities, through its compliance with state laws, federal laws, and [System Policy](https://www.minnstate.edu/board/policy/1b04.html). Appropriate accommodations are provided to those qualified students with disabilities. If you believe you qualify for academic accommodation, please contact the Director of Disability Support Services-Title II Coordinator, Travis Kromminga, at 507-280-2968 or through the Minnesota relay TTY 1-800-627-3529. The office can also be reached via email at [travis.kromminga@rctc.edu](mailto:travis.kromminga@rctc.edu).
 
 ### Military Friendly Statement
 
-Rochester Community and Technical College (RCTC) is a military friendly campus, pledging to do all we can to help military veterans transition into college to complete their educational goals. RCTC is proud to serve and honor our veterans and military service members and their families. Through the Veterans Resource Center, RCTC offers student veterans an on-campus point of contact with other veterans, and program information to assist them in making a successful transition into college. For assistance, students are encouraged to contact the Veterans Assistant Coordinator, Mark Larsen, at 507-779-9375 or e-mail at [mark.larsen@state.mn.us](mailto:mark.larsen@state.mn.us), or Othelmo da Silva, RCTC's VA certifying official at 507-285-7566 or email at [VeteranServices@rctc.edu](mailto:VeteranServices@rctc.edu).
+Rochester Community and Technical College (RCTC) is a military friendly campus, pledging to do all we can to help military veterans transition into college to complete their educational goals. RCTC is proud to serve and honor our veterans and military service members and their families. Through the Veterans Resource Center, RCTC offers students veterans an on-campus point of contact with other veterans, and program information to assist them in making a successful transition into college. For assistance, students are encouraged to contact the Veterans Assistant Coordinator, Mark Larsen, at 507-779-9375 or email at [mark.larsen@state.mn.us](mailto:mark.larsen@state.mn.us), or Othelmo da Silva, RCTC’s VA certifying official at 507-285-7566 or email [othelmo.dasilva@rctc.edu](mailto:othelmo.dasilva@rctc.edu).
 
 ### Title IX Statement
 
-Title IX of the Education Amendments of 1972 states: "No person in the United States shall, on the basis of sex, be excluded from participation in, be denied the benefits of, or be subjected to discrimination under any education program or activity receiving federal financial assistance." Today, Title IX ensures that sex-based discrimination, including that related to pregnancy/parenting, sexual orientation, and gender identity, is responded to promptly and effectively with a fair, transparent, and reliable process.
+Title IX of the Education Amendments of 1972 states: “No person in the United States shall, on the basis of sex, be excluded from participation in, be denied the benefits of, or be subjected to discrimination under any education program or activity receiving federal financial assistance.” Today, Title IX ensures that sex-based discrimination, including that related to pregnancy/parenting, sexual orientation, and gender identity, is responded to promptly and effectively with a fair, transparent, and reliable process.
 
-Anyone who believes there has been an act of discrimination, harassment, or violence on the basis of sex against any person or group in a college-sponsored program or activity may file a complaint through the [reporting form](https://cm.maxient.com/reportingform.php?RochesterCTC&layout_id=1) to the Title IX Coordinator, Dr. Teresa Brown. The coordinator may also be reached via email at <titleix@rctc.edu> or phone at 507-285-7217.
+Anyone who believes there has been an act of discrimination, harassment, or violence on the basis of sex against any person or group in a college-sponsored program or activity may file a complaint through the [reporting form](https://cm.maxient.com/reportingform.php?RochesterCTC&layout_id=1) to the Title IX Coordinator, Dr. Teresa Brown. The coordinator may also be reached via email at [titleix@rctc.edu](mailto:titleix@rctc.edu) or by phone at 507-285-7217.
 
-Pregnant and parenting students may reach out to the Title IX Coordinator to learn of their rights and available support. They may use the contact information above or submit a request via [this form](https://cm.maxient.com/reportingform.php?RochesterCTC&layout_id=15).
+Pregnant and parenting students may reach out to the Title IX Coordinator, Dr. Teresa Brown, to learn about their rights and available supports under [Minnesota State Board Procedure 1B.1.3](https://www.minnstate.edu/board/procedure/1b01p3.html) Access and Modifications for Pregnant and Parenting Students. Students may use the contact information above or submit a request via [this form](https://cm.maxient.com/reportingform.php?RochesterCTC&layout_id=15). Pregnant and parenting students may also contact Anfa Diiriye, the Parenting Student Navigator at [anfa.diiriye@rctc.edu](mailto:anfa.diiriye@rctc.edu) to learn about college and community resources that support parents and families.
