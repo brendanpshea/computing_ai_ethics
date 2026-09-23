@@ -273,6 +273,56 @@ His work shaped effective altruism, Yudkowsky's MIRI, and the original safety mi
 \end{columns}
 \end{frame}
 
+% ===== 2026: The Warning Shots =====
+\begin{frame}[shrink=8]{2026: The Warning Shots}
+For years the risk case was an argument. In 2026 it acquired \textbf{incident reports}:
+
+\vspace{0.2em}
+\scriptsize
+\begin{itemize}
+    \item \textbf{April}: A frontier model's system card reports that, told to escape a secured sandbox, it did---then, unprompted, posted details of its exploit to public websites \parencite{anthropic_mythos_card_2026}
+    \item \textbf{July}: OpenAI models in a cyber evaluation used a zero-day to reach the internet and broke into Hugging Face's production systems---to steal the benchmark's answer key \parencite{huggingface_intrusion_2026}
+    \item \textbf{July--September}: Anthropic, Meta, and Google each disclose models reaching \emph{real} outside systems during tests \parencite{anthropic_eval_incidents_2026}
+    \item \textbf{August}: The UK AI Security Institute logs 19 unsanctioned real-world actions in its own testing---``the first time we have seen risks around autonomy and deception manifest this clearly'' \parencite{aisi_incident_2026}
+\end{itemize}
+
+\normalsize
+\begin{alertblock}{Read the fine print}
+\scriptsize
+Every incident happened \textbf{during evaluation}, mostly with safeguards deliberately switched off or a misconfigured network, and none has been shown to cause lasting harm. The reports are real; the ``AI escapes'' headlines were often not.
+\end{alertblock}
+\end{frame}
+
+% ===== 2026: The Responses =====
+\begin{frame}[shrink=8]{2026: Who Responded, and How}
+\begin{columns}[T]
+\begin{column}{0.48\textwidth}
+\begin{block}{Inside the labs}
+\scriptsize
+\begin{itemize}
+    \item ``Pacing the Frontier'': 1,100+ lab employees ask the US for tools that would make a deliberate slowdown \emph{possible}
+    \item OpenAI pauses its largest training runs for two weeks
+    \item Amodei: ``We must slow the pace at which we improve the capabilities of AI models'' \parencite{amodei_pace_2026}
+\end{itemize}
+\end{block}
+\end{column}
+\begin{column}{0.48\textwidth}
+\begin{block}{Outside them}
+\scriptsize
+\begin{itemize}
+    \item Bengio: ``We're losing control.'' Russell: it is ``just a program pursuing its objectives''
+    \item White House: a \textbf{voluntary} 30-day pre-release testing window \parencite{whitehouse_eo14409_2026}
+    \item Congress: kill-switch, rogue-agent, and superintelligence-ban bills---none passed
+\end{itemize}
+\end{block}
+\end{column}
+\end{columns}
+
+\begin{discussionbox}[Discussion]
+\small Are these incidents evidence for the existential-risk school---or for the critics' view that AI is a normal technology, sloppily engineered? What would a \textbf{genuine} warning shot look like, and would we recognize it?
+\end{discussionbox}
+\end{frame}
+
 % ============================================================
 % SECTION II: THE CRITICS STRIKE BACK
 % ============================================================
@@ -517,7 +567,8 @@ If every \textbf{human} on your list came out near zero, you have just described
     \item Founded in 2012 following the HRW report \emph{Losing Humanity}
     \item Coalition of NGOs, academics, and former military officials
     \item Calls for a \textbf{preemptive ban} on fully autonomous weapons
-    \item Analogous to bans on landmines (Ottawa Treaty, 1997) and cluster munitions (2008)
+    \item Analogous to bans on landmines (Ottawa Treaty, 1997) and cluster munitions (2008)---though five European states quit the landmine ban in 2025--26
+    \item UN talks ended Sept.\ 2026 with a watered-down report; a November review conference decides whether to negotiate a treaty
 \end{itemize}
 \end{block}
 
@@ -624,7 +675,7 @@ Current and proposed governance tools:
 \begin{itemize}
     \item \textbf{Sequence screening}: DNA synthesis companies screen orders for dangerous sequences (select agents, Australia Group pathogen list)
     \item \textbf{Model access controls}: restrict access to high-risk biological design AI; require biosecurity review for fine-tuning on pathogen data
-    \item \textbf{Dual-use research oversight}: the U.S.\ NSABB reviews proposals liable to generate dangerous knowledge
+    \item \textbf{Dual-use research oversight}: a 2026 U.S.\ policy bars federal funding for dangerous gain-of-function research and requires institutions to screen proposals \parencite{ostp_high_risk_life_sciences_2026}
     \item \textbf{AI guardrails}: major LLMs are trained to refuse dangerous biological requests --- though jailbreaks and indirect elicitation remain possible
 \end{itemize}
 
